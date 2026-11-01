@@ -1,53 +1,41 @@
-﻿import { TestCard } from "@/components/test-card";
+import Link from "next/link";
+import { SiteHeader } from "@/components/site-header";
 
 const TESTS = [
   {
     href: "/persona",
     title: "PERSONA",
-    desc: "Personlighetstest basert på Big Five. 60 utsagn, ca. 10 minutter.",
-    accent: true,
-    oktag: "Flaggskips-test",
+    desc: "Personlighetstest basert på Big Five. 50 utsagn, ca. 10–15 minutter.",
+    tag: "Åpen nå",
+    enabled: true,
   },
   {
     href: "/evne",
     title: "IQ-/evnetest",
     desc: "Kognitiv profil: logikk, mønstre, hukommelse og verbal resonnering.",
-    accent: true,
-    oktag: "Estimat — ikke godkjent test",
+    tag: "Under bygging",
+    enabled: false,
   },
   {
     href: "/relasjoner",
     title: "Relasjoner",
     desc: "Kompatibilitet og samspill: vennskap, samliv, konflikthåndtering.",
-    accent: false,
-    oktag: "Kommer snart",
+    tag: "Under bygging",
+    enabled: false,
   },
   {
     href: "/play",
     title: "Play",
     desc: "Korte, delbare tester: arbeidsstil, under press, kreativitetsprofil.",
-    accent: false,
-    oktag: "Kommer snart",
+    tag: "Under bygging",
+    enabled: false,
   },
-] as const;
+];
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="flex items-center justify-between px-5 pt-6 pb-2 sm:px-8">
-        <span className="text-lg font-extrabold tracking-tight">
-          Brainarea
-        </span>
-        <nav className="flex gap-1 text-sm" aria-label="Språkvelger">
-          <button className="rounded-full px-3 py-1.5 font-semibold text-white" style={{ background: "var(--ba-accent)" }}>
-            NO
-          </button>
-          <button className="rounded-full px-3 py-1.5 text-gray-500 hover:bg-gray-200/60">
-            EN
-          </button>
-        </nav>
-      </header>
-
+      <SiteHeader />
       <main className="mx-auto w-full max-w-2xl flex-1 px-5 pt-8 pb-16 sm:px-8">
         <h1 className="text-3xl leading-tight font-extrabold tracking-tight sm:text-4xl">
           Test deg selv —{" "}
@@ -59,20 +47,47 @@ export default function Home() {
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {TESTS.map((t) => (
-            <TestCard
-              key={t.href}
-              href={t.href}
-              title={t.title}
-              desc={t.desc}
-              oktag={t.oktag}
-              accent={t.accent}
-            />
-          ))}
+          {TESTS.map((t) =>
+            t.enabled ? (
+              <Link
+                key={t.href}
+                href={t.href}
+                className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <h2 className="text-lg font-bold">{t.title}</h2>
+                  <span
+                    className="rounded-full px-2.5 py-1 text-[11px] font-semibold whitespace-nowrap text-white"
+                    style={{ background: "var(--ba-accent)" }}
+                  >
+                    {t.tag}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                  {t.desc}
+                </p>
+              </Link>
+            ) : (
+              <div
+                key={t.href}
+                className="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm opacity-60"
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <h2 className="text-lg font-bold">{t.title}</h2>
+                  <span className="rounded-full bg-gray-100 px-2.5 py-1 text-[11px] font-semibold whitespace-nowrap text-gray-500">
+                    {t.tag}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                  {t.desc}
+                </p>
+              </div>
+            )
+          )}
         </div>
 
         <p className="mt-10 text-xs leading-relaxed text-gray-500">
-          Testene er indikative selvinnsikts-verktøy, ikke medisinsk eller
+          Testene er indikative selvinnsikts-verktøy — ikke medisinsk eller
           psykologisk vurdering, og skal ikke brukes alene til ansettelse eller
           andre viktige beslutninger.
         </p>

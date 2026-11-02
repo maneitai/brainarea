@@ -55,7 +55,7 @@ export default function EnHome() {
                 <h2 className="text-lg font-bold">{t.title}</h2>
                 <span
                   className="rounded-full px-2.5 py-1 text-[11px] font-semibold whitespace-nowrap text-white"
-                  style={{ background: "var(--ba-accent)" }}
+                  style={{ background: "var(--ba-accent-strong)" }}
                 >
                   {t.tag}
                 </span>

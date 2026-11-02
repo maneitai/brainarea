@@ -39,7 +39,7 @@ export default function PlayPage() {
                   <h2 className="font-bold">{s.label}</h2>
                   <span
                     className="rounded-full px-2.5 py-1 text-[11px] font-semibold text-white"
-                    style={{ background: "var(--ba-accent)" }}
+                    style={{ background: "var(--ba-accent-strong)" }}
                   >
                     {s.time}
                   </span>

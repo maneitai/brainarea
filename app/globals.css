@@ -1,14 +1,96 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
+
+/* ============================================================
+   Brainarea — calm dark theme
+   Deep navy page, dark elevated cards, warm off-white text,
+   muted gray-blue secondary text, light indigo + coral accents.
+   All colors centralized here. Components reference the vars
+   via Tailwind classes (overridden below) or inline styles.
+   ============================================================ */
 
 :root {
-  --ba-bg: #fafaf8;
-  --ba-text: #1a1d29;
-  --ba-accent: #4f46e5;
-  --ba-accent-2: #f97362;
-  --ba-muted: #6b7280;
+  /* Surfaces */
+  --ba-bg: #101623;            /* page background — deep navy */
+  --ba-surface: #181f2e;       /* elevated card */
+  --ba-surface-2: #202839;     /* inner well / secondary button */
+  --ba-accent-soft: #293052;   /* selected state fill on dark */
+
+  /* Borders */
+  --ba-border: #303a52;        /* card borders */
+  --ba-border-soft: #242d40;   /* dividers, wells */
+
+  /* Text (warm off-white -> muted gray-blue ladder) */
+  --ba-text: #e9e7e2;          /* headings: warm off-white */
+  --ba-text-soft: #ccd1dd;     /* primary body copy */
+  --ba-text-muted: #a8b2c6;    /* gray-500 role */
+  --ba-text-dim: #94a0b5;      /* gray-400 role */
+  --ba-text-faint: #808ca3;    /* gray-300 role */
+  --ba-text-ghost: #6f7c93;    /* footer */
+
+  /* Accents */
+  --ba-accent: #8b95f7;        /* light indigo: on-dark text, strokes, bars */
+  --ba-accent-strong: #4f46e5; /* indigo fill carrying white text */
+  --ba-accent-2: #ef9282;      /* coral: reserved secondary accent */
+
+  /* Notice / retest / disclaimer (was amber-50 + amber-900) */
+  --ba-warn-bg: #2b2220;
+  --ba-warn-heading: #f0b6a6;
+  --ba-warn-text: #e0c4b8;
+
+  /* Strength callouts (was emerald-50 + emerald-800/900) */
+  --ba-ok-bg: #16261f;
+  --ba-ok-heading: #8fdcc0;
+  --ba-ok-text: #a9e8cf;
+  --ba-ok-watch: #7cc5a6;
+
+  /* Span keypad flash */
+  --ba-flash-ok: #34d399;
+  --ba-flash-fail: #f87171;
+}
+
+html {
+  color-scheme: dark;
 }
 
 body {
   background: var(--ba-bg);
   color: var(--ba-text);
+}
+
+/* ------------------------------------------------------------
+   Tailwind utility overrides.
+   Declared after import in @layer utilities: later rules in the
+   same layer win over Tailwind's own, no !important needed.
+   This re-skins the existing light-theme classes in place.
+   ------------------------------------------------------------ */
+@layer utilities {
+  .bg-white { background-color: var(--ba-surface); }
+  .bg-gray-50 { background-color: var(--ba-surface-2); }
+  .bg-gray-100 { background-color: var(--ba-border-soft); }
+  .bg-amber-50 { background-color: var(--ba-warn-bg); }
+  .bg-emerald-50 { background-color: var(--ba-ok-bg); }
+
+  .border-gray-200 { border-color: var(--ba-border); }
+  .border-gray-100 { border-color: var(--ba-border-soft); }
+
+  .text-gray-300 { color: var(--ba-text-faint); }
+  .text-gray-400 { color: var(--ba-text-dim); }
+  .text-gray-500 { color: var(--ba-text-muted); }
+  .text-gray-600 { color: var(--ba-text-soft); }
+  .text-amber-900 { color: var(--ba-warn-heading); }
+  .text-emerald-800 { color: var(--ba-ok-heading); }
+  .text-emerald-900 { color: var(--ba-ok-text); }
+}
+
+/* ------------------------------------------------------------
+   Print: the UI is dark, but "save as PDF" must stay legible.
+   ------------------------------------------------------------ */
+@media print {
+  html, body { background: #fff !important; }
+  * {
+    color: #111 !important;
+    background: transparent !important;
+    border-color: #999 !important;
+    box-shadow: none !important;
+  }
 }

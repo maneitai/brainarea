@@ -193,7 +193,7 @@ export function TestRun({
         <button
           onClick={start}
           className="mt-5 w-full rounded-xl px-5 py-4 text-base font-bold text-white sm:w-auto sm:px-8"
-          style={{ background: "var(--ba-accent)" }}
+          style={{ background: "var(--ba-accent-strong)" }}
         >
           {i18n.start}
         </button>
@@ -229,8 +229,8 @@ export function TestRun({
                 className="rounded-xl border px-4 py-3.5 text-left text-sm font-semibold transition sm:py-4"
                 style={
                   selected
-                    ? { borderColor: "var(--ba-accent)", color: "var(--ba-accent)", background: "#eef2ff" }
-                    : { borderColor: "#e5e7eb", color: "#374151", background: "#fff" }
+                    ? { borderColor: "var(--ba-accent)", color: "var(--ba-accent)", background: "var(--ba-accent-soft)" }
+                    : { borderColor: "var(--ba-border)", color: "var(--ba-text-soft)", background: "var(--ba-surface)" }
                 }
               >
                 {label[v]}
@@ -243,7 +243,7 @@ export function TestRun({
             onClick={() => setIdx((i) => Math.max(0, i - 1))}
             disabled={idx === 0}
             className="rounded-xl px-5 py-3 text-sm font-bold disabled:opacity-30"
-            style={{ background: "#f0efec" }}
+            style={{ background: "var(--ba-surface-2)" }}
           >
             {i18n.back}
           </button>
@@ -288,12 +288,12 @@ export function TestRun({
               <p className="text-xs font-bold tracking-wide text-emerald-800 uppercase">
                 {BAND_TITLE[locale].high} {strongest.name} (65–100)
               </p>
-              <p className="mt-1 text-sm leading-relaxed text-emerald-900" style={{ color: "#065f46" }}>
+              <p className="mt-1 text-sm leading-relaxed text-emerald-900" style={{ color: "var(--ba-ok-text)" }}>
                 <span className="font-semibold">{i18n.strength}: </span>
                 {strongest.high}
               </p>
               {strongest.low && (
-                <p className="mt-1.5 text-sm leading-relaxed" style={{ color: "#2f5e50" }}>
+                <p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--ba-ok-watch)" }}>
                   <span className="font-semibold">{i18n.watch}: </span>
                   {strongest.low}
                 </p>
@@ -308,7 +308,7 @@ export function TestRun({
               <p className="text-xs font-bold tracking-wide text-amber-900 uppercase">
                 {BAND_TITLE[locale].low} {weakest.name} (0–35)
               </p>
-              <p className="mt-1 text-sm leading-relaxed text-amber-900" style={{ color: "#92400e" }}>
+              <p className="mt-1 text-sm leading-relaxed text-amber-900" style={{ color: "var(--ba-warn-heading)" }}>
                 <span className="font-semibold">{i18n.strength}: </span>
                 {weakest.low && weakest.pct <= 35 ? weakest.low : weakest.high}
               </p>
@@ -323,21 +323,21 @@ export function TestRun({
           <button
             onClick={saveTxt}
             className="w-full rounded-xl px-5 py-3.5 text-sm font-bold text-white sm:w-auto"
-            style={{ background: "var(--ba-accent)" }}
+            style={{ background: "var(--ba-accent-strong)" }}
           >
             {i18n.saveResult}
           </button>
           <button
             onClick={() => window.print()}
             className="mt-2 w-full rounded-xl px-5 py-3.5 text-sm font-bold sm:mt-0 sm:w-auto"
-            style={{ background: "#f0efec" }}
+            style={{ background: "var(--ba-surface-2)" }}
           >
             {i18n.print}
           </button>
           <button
             onClick={start}
             className="mt-2 w-full rounded-xl px-5 py-3.5 text-sm font-bold sm:mt-0 sm:w-auto"
-            style={{ background: "#f0efec" }}
+            style={{ background: "var(--ba-surface-2)" }}
           >
             {i18n.retry}
           </button>

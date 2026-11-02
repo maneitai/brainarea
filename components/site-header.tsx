@@ -44,7 +44,7 @@ export function SiteHeader({ locale }: { locale?: "no" | "en" }) {
         ) : (
           <span
             className="rounded-full px-3 py-1.5 font-semibold text-white"
-            style={{ background: "var(--ba-accent)" }}
+            style={{ background: "var(--ba-accent-strong)" }}
           >
             NO
           </span>
@@ -52,7 +52,7 @@ export function SiteHeader({ locale }: { locale?: "no" | "en" }) {
         {isEn ? (
           <span
             className="rounded-full px-3 py-1.5 font-semibold text-white"
-            style={{ background: "var(--ba-accent)" }}
+            style={{ background: "var(--ba-accent-strong)" }}
           >
             EN
           </span>

@@ -235,7 +235,7 @@ export function IqRun({ locale = "no" }: { locale?: Locale }) {
         <button
           onClick={start}
           className="mt-5 w-full rounded-xl px-5 py-4 text-base font-bold text-white sm:w-auto sm:px-8"
-          style={{ background: "var(--ba-accent)" }}
+          style={{ background: "var(--ba-accent-strong)" }}
         >
           {t.start}
         </button>
@@ -272,8 +272,8 @@ export function IqRun({ locale = "no" }: { locale?: Locale }) {
                     className="rounded-xl border px-4 py-3.5 text-lg font-bold transition"
                     style={
                       selected
-                        ? { borderColor: "var(--ba-accent)", color: "var(--ba-accent)", background: "#eef2ff" }
-                        : { borderColor: "#e5e7eb", color: "#374151", background: "#fff" }
+                        ? { borderColor: "var(--ba-accent)", color: "var(--ba-accent)", background: "var(--ba-accent-soft)" }
+                        : { borderColor: "var(--ba-border)", color: "var(--ba-text-soft)", background: "var(--ba-surface)" }
                     }
                   >
                     {o}
@@ -307,8 +307,8 @@ export function IqRun({ locale = "no" }: { locale?: Locale }) {
                     className="rounded-xl border p-2 transition"
                     style={
                       selected
-                        ? { borderColor: "var(--ba-accent)", background: "#eef2ff" }
-                        : { borderColor: "#e5e7eb", background: "#fff" }
+                        ? { borderColor: "var(--ba-accent)", background: "var(--ba-accent-soft)" }
+                        : { borderColor: "var(--ba-border)", background: "var(--ba-surface)" }
                     }
                     aria-label={String(oi + 1)}
                   >
@@ -334,8 +334,8 @@ export function IqRun({ locale = "no" }: { locale?: Locale }) {
                     className="rounded-xl border px-4 py-3.5 text-left text-sm font-semibold transition"
                     style={
                       selected
-                        ? { borderColor: "var(--ba-accent)", color: "var(--ba-accent)", background: "#eef2ff" }
-                        : { borderColor: "#e5e7eb", color: "#374151", background: "#fff" }
+                        ? { borderColor: "var(--ba-accent)", color: "var(--ba-accent)", background: "var(--ba-accent-soft)" }
+                        : { borderColor: "var(--ba-border)", color: "var(--ba-text-soft)", background: "var(--ba-surface)" }
                     }
                   >
                     {o}
@@ -368,7 +368,7 @@ export function IqRun({ locale = "no" }: { locale?: Locale }) {
                 </p>
                 <span
                   className="mx-auto mt-2 block h-1.5 w-24 rounded-full"
-                  style={{ background: spanFlash === "ok" ? "#10b981" : spanFlash === "fail" ? "#ef4444" : "var(--ba-accent)" }}
+                  style={{ background: spanFlash === "ok" ? "var(--ba-flash-ok)" : spanFlash === "fail" ? "var(--ba-flash-fail)" : "var(--ba-accent)" }}
                 />
                 <div className="mx-auto mt-4 grid max-w-xs grid-cols-3 gap-2">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((k) => (
@@ -389,7 +389,7 @@ export function IqRun({ locale = "no" }: { locale?: Locale }) {
                   <button
                     onClick={spanSubmit}
                     className="col-span-2 rounded-xl py-3.5 text-sm font-bold text-white"
-                    style={{ background: "var(--ba-accent)" }}
+                    style={{ background: "var(--ba-accent-strong)" }}
                   >
                     {t.enter}
                   </button>
@@ -457,13 +457,13 @@ export function IqRun({ locale = "no" }: { locale?: Locale }) {
 
         <p className="mt-6 rounded-xl bg-amber-50 p-4 text-xs leading-relaxed text-amber-900">{t.disclaimer}</p>
         <div className="mt-5 gap-2 sm:flex">
-          <button onClick={saveTxt} className="w-full rounded-xl px-5 py-3.5 text-sm font-bold text-white sm:w-auto" style={{ background: "var(--ba-accent)" }}>
+          <button onClick={saveTxt} className="w-full rounded-xl px-5 py-3.5 text-sm font-bold text-white sm:w-auto" style={{ background: "var(--ba-accent-strong)" }}>
             {t.saveResult}
           </button>
-          <button onClick={() => window.print()} className="mt-2 w-full rounded-xl px-5 py-3.5 text-sm font-bold sm:mt-0 sm:w-auto" style={{ background: "#f0efec" }}>
+          <button onClick={() => window.print()} className="mt-2 w-full rounded-xl px-5 py-3.5 text-sm font-bold sm:mt-0 sm:w-auto" style={{ background: "var(--ba-surface-2)" }}>
             {t.print}
           </button>
-          <button onClick={start} className="mt-2 w-full rounded-xl px-5 py-3.5 text-sm font-bold sm:mt-0 sm:w-auto" style={{ background: "#f0efec" }}>
+          <button onClick={start} className="mt-2 w-full rounded-xl px-5 py-3.5 text-sm font-bold sm:mt-0 sm:w-auto" style={{ background: "var(--ba-surface-2)" }}>
             {t.retry}
           </button>
         </div>

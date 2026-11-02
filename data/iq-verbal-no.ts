@@ -1,0 +1,31 @@
+// Verbal bank (norsk) — stratified difficulty: d1 x2, d2 x2, d3 x2, d4 x1, d5 x1 = 8 drawn.
+import type { VerbalInput } from "@/lib/iq-engine";
+
+export const IQ_VERBAL_NO: VerbalInput[] = [
+  { id: "n1a", d: 1, q: "Stort ←→ ? — motsatt av stort", options: ["Liten", "Høy", "Lang", "Tung"], correct: "Liten" },
+  { id: "n1b", d: 1, q: "Het ←→ ? — motsatt av het", options: ["Kald", "Varm", "Våt", "Mjuk"], correct: "Kald" },
+  { id: "n1c", d: 1, q: "Dag ←→ ? — motsatt av dag", options: ["Natt", "Morgen", "Kveld", "Time"], correct: "Natt" },
+  { id: "n1d", d: 1, q: "Rask ←→ ? — motsatt av rask", options: ["Langsom", "Hurtig", "Rappr", "Livlig"], correct: "Langsom" },
+  { id: "n1e", d: 1, q: "Neste setning passer best til: «Et hus som står til salgs kalles et ___»", options: ["salgsobjekt", "verktøy", "håndbagasje", "kjøkken"], correct: "salgsobjekt" },
+  { id: "n1f", d: 1, q: "En hånd har fingre på samme måte som en fot har:", options: ["tær", "knær", "skuldre", "hår"], correct: "tær" },
+  { id: "n2a", d: 2, q: "Hva betyr «trassig»?", options: ["vill og ulydig", "trøtt og svak", "trygg og stille", "tungsinn"], correct: "vill og ulydig" },
+  { id: "n2b", d: 2, q: "Hva betyr «omhyggelig»?", options: ["nøyaktig og nøye", "glemsom", "hurtig og grov", "stille"], correct: "nøyaktig og nøye" },
+  { id: "n2c", d: 2, q: "En hund har pels på samme måte som en fugl har:", options: ["fjær", "fisk", "skjell", "hjerteklokker"], correct: "fjær" },
+  { id: "n2d", d: 2, q: "Løg : grønnsak :: solbær : ?", options: ["bær", "frukttre", "honning", "gress"], correct: "bær" },
+  { id: "n2e", d: 2, q: "Neste setning passer best til: «Noe som er fuktig er på en måte ganske ___»", options: ["vått", "hult", "tørt", "varmt"], correct: "vått" },
+  { id: "n2f", d: 2, q: "Skjære : fugl :: saks : ?", options: ["verktøy", "husdyr", "frø", "tre"], correct: "verktøy" },
+  { id: "n3a", d: 3, q: "En tøyle brukes sammen med:", options: ["hest", "hus", "hane", "hammer"], correct: "hest" },
+  { id: "n3b", d: 3, q: "Hva betyr «sagaklar» best tolket i moderne norsk?", options: ["fortellende og dramatisk", "fullstendig stille", "søt og små", "svært klar"], correct: "fortellende og dramatisk" },
+  { id: "n3c", d: 3, q: "Neste setning passer best til: «Å ha en snau i botten betyr vanligvis at man mangler ___»", options: ["penger", "fisk", "tre", "venner"], correct: "penger" },
+  { id: "n3d", d: 3, q: "Lokke : venn :: trussel : ?", options: ["skremme", "le", "drikke", "høre"], correct: "skremme" },
+  { id: "n3e", d: 3, q: "Hva betyr «vakt» i uttrykket «holde vakt»?", options: ["passiv tilsyn", "sofa", "en kort draks", "en liten fugl"], correct: "passiv tilsyn" },
+  { id: "n3f", d: 3, q: "En person som er «målsrett» er ofte også:", options: ["resultatorientert", "følelsesmøssig ustabil", "sparsomt interessert", "passivt vennlig"], correct: "resultatorientert" },
+  { id: "n4a", d: 4, q: "Hva betyr «fjern» i «fjern kontroll»?", options: ["avstandsstyrt", "fjellkald", "fjern lesestue", "fjern som fjell"], correct: "avstandsstyrt" },
+  { id: "n4b", d: 4, q: "Hva er en «appell» i juridisk språk?", options: ["anke", "advarsel", "appeloppfølging", "forklaring"], correct: "anke" },
+  { id: "n4c", d: 4, q: "Neste setning passer best til: «Å sette punktum for noe betyr å ___ det»", options: ["avslutte", "starte", "skrive ut", "flytte"], correct: "avslutte" },
+  { id: "n4d", d: 4, q: "Hvilket ord står nærmest til «subtil»?", options: ["diskret", "tydelig", "støyfull", "tung"], correct: "diskret" },
+  { id: "n5a", d: 5, q: "Hva betyr «tautologi»?", options: ["nødvendig dobbeltgjennomgang av samme mening", "studie av taus tale", "hypotese om tall", "læren om støy"], correct: "nødvendig dobbeltgjennomgang av samme mening" },
+  { id: "n5b", d: 5, q: "Hva er «antimikrobiell»?", options: ["som hemmer vekst av mikroorganismer", "som forstørrer mikrober", "som kun lukter mikrober", "som er mikroskopisk"], correct: "som hemmer vekst av mikroorganismer" },
+  { id: "n5c", d: 5, q: "Hvilket ord står nærmest til «paradoks»?", options: ["selvmotsigelse", "paradisfigur", "parasittdrift", "paradefront"], correct: "selvmotsigelse" },
+  { id: "n5d", d: 5, q: "«Ensfarget» : ensformig :: «ensidig» : ?", options: ["skjev", "tvegg", "bred", "fremmed"], correct: "skjev" },
+];

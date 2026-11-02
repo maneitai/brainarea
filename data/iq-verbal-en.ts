@@ -1,0 +1,31 @@
+// Verbal bank (English) — stratified difficulty: d1 x2, d2 x2, d3 x2, d4 x1, d5 x1 = 8 drawn.
+import type { VerbalInput } from "@/lib/iq-engine";
+
+export const IQ_VERBAL_EN: VerbalInput[] = [
+  { id: "e1a", d: 1, q: "Big is the opposite of…", options: ["Small", "Tall", "Long", "Heavy"], correct: "Small" },
+  { id: "e1b", d: 1, q: "Hot is the opposite of…", options: ["Cold", "Warm", "Wet", "Soft"], correct: "Cold" },
+  { id: "e1c", d: 1, q: "Day is the opposite of…", options: ["Night", "Morning", "Evening", "Hour"], correct: "Night" },
+  { id: "e1d", d: 1, q: "Fast is the opposite of…", options: ["Slow", "Quick", "Swift", "Lively"], correct: "Slow" },
+  { id: "e1e", d: 1, q: "Complete the sentence: «A house for sale is called a ___»", options: ["listing", "tool", "suitcase", "kitchen"], correct: "listing" },
+  { id: "e1f", d: 1, q: "A hand has fingers in the same way a foot has:", options: ["toes", "knees", "shoulders", "hair"], correct: "toes" },
+  { id: "e2a", d: 2, q: "What does «stubborn» mean?", options: ["willful and defiant", "tired and weak", "safe and quiet", "slow to think"], correct: "willful and defiant" },
+  { id: "e2b", d: 2, q: "What does «careful» mean?", options: ["exact and thorough", "forgetful", "quick and rough", "silent"], correct: "exact and thorough" },
+  { id: "e2c", d: 2, q: "A dog has fur in the same way a bird has:", options: ["feathers", "scales", "fur", "gills"], correct: "feathers" },
+  { id: "e2d", d: 2, q: "Onion : vegetable :: blackcurrant : ?", options: ["berry", "tree", "honey", "grass"], correct: "berry" },
+  { id: "e2e", d: 2, q: "Complete the sentence: «Something damp is somewhat ___»", options: ["wet", "hollow", "dry", "warm"], correct: "wet" },
+  { id: "e2f", d: 2, q: "Scissors cut paper in the same way a saw cuts:", options: ["wood", "birds", "clouds", "water"], correct: "wood" },
+  { id: "e3a", d: 3, q: "A rein is used together with:", options: ["a horse", "a house", "a rooster", "a hammer"], correct: "a horse" },
+  { id: "e3b", d: 3, q: "What does «hasty» mean?", options: ["done quickly without care", "very clean", "extremely heavy", "calm"], correct: "done quickly without care" },
+  { id: "e3c", d: 3, q: "Complete the sentence: «Short of cash usually means lacking ___»", options: ["money", "fish", "wood", "friends"], correct: "money" },
+  { id: "e3d", d: 3, q: "Lure : attract :: threaten : ?", options: ["frighten", "laugh", "drink", "listen"], correct: "frighten" },
+  { id: "e3e", d: 3, q: "What does «diligent» mean?", options: ["working with steady effort", "sleepy", "rich", "rude"], correct: "working with steady effort" },
+  { id: "e3f", d: 3, q: "A «goal-oriented» person is often also:", options: ["results-focused", "emotionally unstable", "rarely interested", "passive"], correct: "results-focused" },
+  { id: "e4a", d: 4, q: "What does «remote» mean in «remote control»?", options: ["operated from a distance", "far away mountain", "removed book", "distant as stone"], correct: "operated from a distance" },
+  { id: "e4b", d: 4, q: "What is an «appeal» in legal language?", options: ["request to a higher court", "warning", "follow-up", "explanation"], correct: "request to a higher court" },
+  { id: "e4c", d: 4, q: "Complete the sentence: «To draw a line under something means to ___ it»", options: ["close", "start", "underline", "move"], correct: "close" },
+  { id: "e4d", d: 4, q: "Which word is closest to «subtle»?", options: ["discreet", "obvious", "loud", "heavy"], correct: "discreet" },
+  { id: "e5a", d: 5, q: "What does «tautology» mean?", options: ["restating the same idea redundantly", "the study of silent speech", "a hypothesis about numbers", "the study of noise"], correct: "restating the same idea redundantly" },
+  { id: "e5b", d: 5, q: "What is «antimicrobial»?", options: ["inhibiting growth of microorganisms", "magnifying microbes", "only smelling of microbes", "microscopic"], correct: "inhibiting growth of microorganisms" },
+  { id: "e5c", d: 5, q: "Which word is closest to «paradox»?", options: ["self-contradiction", "paradise figure", "parasite activity", "parade front"], correct: "self-contradiction" },
+  { id: "e5d", d: 5, q: "«Monochrome» : uniform :: «one-sided» : ?", options: ["biased", "double-sided", "broad", "foreign"], correct: "biased" },
+];

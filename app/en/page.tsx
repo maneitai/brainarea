@@ -12,11 +12,11 @@ const TESTS_EN = [
     enabled: true,
   },
   {
-    href: "/en/",
+    href: "/en/evne/",
     title: "IQ / cognitive test",
-    desc: "Cognitive profile: logic, patterns, memory and verbal reasoning.",
-    tag: "Under construction",
-    enabled: false,
+    desc: "Four subtests with fresh questions every run. Shows an estimated ability band — not normed IQ.",
+    tag: "Open now",
+    enabled: true,
   },
   {
     href: "/en/",
@@ -87,7 +87,8 @@ export default function EnHome() {
         <p className="mt-10 text-xs leading-relaxed text-gray-500">
           The tests are indicative self-insight tools — not medical or
           psychological assessment, and not to be used alone for hiring or
-          other important decisions.
+          other important decisions. IQ scores are shown as estimated bands
+          only.
         </p>
       </main>
 

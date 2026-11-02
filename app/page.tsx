@@ -12,9 +12,9 @@ const TESTS = [
   {
     href: "/evne",
     title: "IQ-/evnetest",
-    desc: "Kognitiv profil: logikk, mønstre, hukommelse og verbal resonnering.",
-    tag: "Under bygging",
-    enabled: false,
+    desc: "Fire deltester med nye spørsmål hver gang. Viser estimert evnebånd — ikke normert IQ.",
+    tag: "Åpen nå",
+    enabled: true,
   },
   {
     href: "/relasjoner",
@@ -89,7 +89,7 @@ export default function Home() {
         <p className="mt-10 text-xs leading-relaxed text-gray-500">
           Testene er indikative selvinnsikts-verktøy — ikke medisinsk eller
           psykologisk vurdering, og skal ikke brukes alene til ansettelse eller
-          andre viktige beslutninger.
+          andre viktige beslutninger. IQ-skåren vises kun som estimatbånd.
         </p>
       </main>
 

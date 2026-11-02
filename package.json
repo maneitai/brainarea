@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --experimental-strip-types test-engine.test.mts"
+    "test": "node --experimental-strip-types test-engine.test.mts && node --experimental-strip-types test-iq-engine.mts"
   },
   "dependencies": {
     "next": "16.4.3",

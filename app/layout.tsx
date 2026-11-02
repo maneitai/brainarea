@@ -2,6 +2,7 @@
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://maneitai.github.io"),
   title: {
     default: "Brainarea — test deg selv",
     template: "%s | Brainarea",

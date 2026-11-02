@@ -1,34 +1,46 @@
 # Brainarea
 
-Gratis tester av personlighet, evner og relasjoner — bygget som en rask,
-mobil-først statisk side. Scoring skjer i nettleseren; ingen backend, ingen
-konto, ingen sporing av testsvarene.
+Free tests of personality, abilities and relationships. Next.js 16 + Tailwind 4,
+fully static export (`out/`). No backend — all scoring runs in the browser,
+answers are never sent anywhere.
 
-## Produktlinjer (v1)
-
-- **PERSONA** — personlighetstest (IPIP Big-Five, 50 utsagn, norsk)
-- **IQ-/evnetest** — kognitiv profil med estimatbånd, ikke normert IQ
-- **Relasjoner** — kompatibilitet og samspill
-- **Play** — korte delbare tester
-
-## Teknisk
-
-- Next.js 16 med statisk eksport (`next.config.ts` → `output: "export"`)
-- Tailwind CSS 4
-- Data-drevet testmotor: tester er spec-filer (`data/`), ikke kode per test
-- Målhosting: Cloudflare Pages (statisk output fra `out/`)
-
-## Metodikk (ærlighet)
-
-- Instrument: Goldberg (1992), IPIP Big-Five Factor Markers — public domain
-- Scoring: positive items 1–5, reverserte items 5–1, snitt per dimensjon
-- Ingen norske normer; resultatene er ikke persentiler mot befolkningen
-- Norsk arbeidsoversettelse er ikke psykometrisk validert
-
-## Utvikling
+## Commands
 
 ```bash
-npm install
-npm run dev    # lokal utvikling
-npm run build  # statisk build → out/
+npm ci            # install
+npm run build     # static export to out/
+npm test          # engine invariants (node --experimental-strip-types)
 ```
+
+## Local preview of the exported site
+
+Static export needs an HTTP server (not file://):
+
+```bash
+npx serve out
+```
+
+## Publishing to GitHub Pages (manual, at launch time)
+
+The site publishes from `main` via the manually triggered **pages** workflow:
+
+1. GitHub repo → **Settings → Pages → Source: GitHub Actions**.
+2. **Actions → pages → Run workflow** → branch `main` → **Run**.
+3. The workflow builds with `NEXT_PUBLIC_BASE_PATH=/brainarea` and deploys
+   `out/` to `https://maneitai.github.io/brainarea/`.
+
+No keys or tokens are needed — the build is fully local.
+
+## Hosting note
+
+GitHub Pages terms disallow running a general "online business" from Pages.
+A fully static site with no backend and no data collection fits project use
+now, but before commercial operation, advertising (AdSense) or user accounts,
+move to a proper host (e.g. Cloudflare Pages). Recorded decision: GitHub
+Pages is the launch channel for now; re-evaluate in the phase before ads.
+
+## Adding a new test
+
+1. Create `data/<name>.ts` with a `TestSpec` (items + dimensions).
+2. Create `app/<name>/page.tsx` rendering `TestRun` with the spec.
+3. `npm test` verifies engine invariants; `npm run build` verifies the route.

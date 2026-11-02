@@ -51,6 +51,7 @@ export function IqRun({ locale = "no" }: { locale?: Locale }) {
 
   const [res, setRes] = useState<ReturnType<typeof scoreIq> | null>(null);
   const spanBestRef = useRef<number>(0);
+  const advRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     try {
@@ -102,6 +103,7 @@ export function IqRun({ locale = "no" }: { locale?: Locale }) {
   }
 
   function advancePart() {
+    spanBestRef.current = 0;
     setPartIdx((p) => p + 1);
     setQIdx(0);
     setSpanIdx(0);
@@ -113,37 +115,31 @@ export function IqRun({ locale = "no" }: { locale?: Locale }) {
   // series / pattern / verbal answering
   function answer(v: number) {
     if (!q) return;
+    if (advRef.current) clearTimeout(advRef.current);
     if (partIdx === 0) {
       const it = q.series[qIdx];
       setChosen((c) => ({ ...c, [it.id]: v }));
-      setTimeout(() => {
+      advRef.current = setTimeout(() => {
         if (qIdx + 1 >= q.series.length) advancePart();
         else setQIdx((i) => i + 1);
       }, 200);
     } else if (partIdx === 1) {
       const it = q.pattern[qIdx];
       setChosen((c) => ({ ...c, [it.id]: v }));
-      setTimeout(() => {
+      advRef.current = setTimeout(() => {
         if (qIdx + 1 >= q.pattern.length) advancePart();
         else setQIdx((i) => i + 1);
       }, 200);
     } else if (partIdx === 2) {
       const it = q.verbal[qIdx];
       setChosen((c) => ({ ...c, [it.id]: v }));
-      setTimeout(() => {
-        if (qIdx + 1 >= q.verbal.length) startSpan();
+      advRef.current = setTimeout(() => {
+        if (qIdx + 1 >= q.verbal.length) advancePart();
         else setQIdx((i) => i + 1);
       }, 200);
     }
   }
 
-  function startSpan() {
-    spanBestRef.current = 0;
-    setSpanIdx(0);
-    setSpanPhase("show");
-    setSpanAt(0);
-    setSpanInput("");
-  }
 
   // span display ticker
   const run = phase === "run";

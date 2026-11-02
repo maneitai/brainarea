@@ -1,4 +1,4 @@
-﻿import type { NextConfig } from "next";
+import type { NextConfig } from "next";
 
 // For GitHub Pages project-site publishing, build with
 // NEXT_PUBLIC_BASE_PATH=/brainarea (set in .github/workflows/pages.yml).

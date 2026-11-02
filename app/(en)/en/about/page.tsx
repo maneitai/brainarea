@@ -66,7 +66,7 @@ export default function EnAboutPage() {
             85–100, 100–115, 115–130+). The bands are deliberately wide and are{" "}
             <strong>not validated</strong> against a norming group. This is not
             a normed IQ test and not an approved Mensa test. A legitimate
-            «normed IQ» claim requires a professional instrument administered by
+            &quot;normed IQ&quot; claim requires a professional instrument administered by
             a qualified professional — and we would also need to collect real
             score data from many users over time before such a scale could be
             defended.

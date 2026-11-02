@@ -60,7 +60,7 @@ export default function OmTestenePage() {
             regelgjenkjenning), verbal resonnering (ordkunnskap og analogier)
             og arbeidshukommelse (hukommelsesspant). Spørsmålene genereres
             parametrisk fra regelbaserte maler med tilfeldige verdier — det gir
-            nye, ekvivalente oppgaver ved hver runde ogbeskytter mot memorering.
+            nye, ekvivalente oppgaver ved hver runde og beskytter mot memorering.
           </p>
           <p className="mt-2 text-sm leading-relaxed text-gray-600">
             Skåren vises kun som grove estimatbånd (ca. 70–85, ca. 85–100,
@@ -68,7 +68,7 @@ export default function OmTestenePage() {
             <strong>ikke validert</strong> mot en normeringsgruppe. Dette er
             ikke en normert IQ-test og ikke en godkjent Mensa-test. Et ærlig
             krav om «normert IQ» krever et profesjonelt instrument lagt fram av
-            kvalifisert fagperson — og da må vi også samle reelle skåredatat fra
+            kvalifisert fagperson — og da må vi også samle reelle skåredata fra
             mange brukere over tid før en slik skalering kan forsvares.
           </p>
         </section>

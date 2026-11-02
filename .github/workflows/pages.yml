@@ -1,4 +1,4 @@
-﻿name: pages
+name: pages
 on:
   workflow_dispatch:
 permissions:

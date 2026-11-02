@@ -115,6 +115,8 @@ export function TestRun({
   const [answers, setAnswers] = useState<Record<string, Likert>>({});
   const [results, setResults] = useState<DimensionResult[] | null>(null);
 
+  const advRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   function start() {
     seedRef.current = Date.now();
     setOrder(drawItems(spec, drawCount, seedRef.current));
@@ -138,12 +140,13 @@ export function TestRun({
     if (!current) return;
     const next = { ...answers, [current.id]: v };
     setAnswers(next);
+    if (advRef.current) clearTimeout(advRef.current);
     const complete = order.every((it) => next[it.id] !== undefined);
     if (complete) {
       setResults(score(spec, order, next));
       setPhase("results");
     } else if (idx < order.length - 1) {
-      setTimeout(() => setIdx((i) => Math.min(i + 1, order.length - 1)), 180);
+      advRef.current = setTimeout(() => setIdx((i) => Math.min(i + 1, order.length - 1)), 180);
     }
   }
 

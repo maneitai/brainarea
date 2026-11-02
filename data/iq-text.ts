@@ -4,7 +4,7 @@ export const IQ_TEXT = {
   no: {
     title: "Kognitiv profil",
     intro:
-      "Fire deltester: tallrekker, figurmønstre, verbal resonnering og arbeidshukommelse. Trettiti spørsmål, rundt atten minutter. Ingen registrering, ingen resultater sendes noe sted.",
+      "Fire deltester: tallrekker, figurmønstre, verbal resonnering og arbeidshukommelse. Trettito oppgaver, rundt atten minutter. Ingen registrering, ingen resultater sendes noe sted.",
     bullets: [
       "Ingen registrering og ingenting sendes fra nettleseren din.",
       "Spørsmålene trekkes tilfeldig fra bankene ved teststart.",
@@ -43,15 +43,15 @@ export const IQ_TEXT = {
     span: "Hukommelsesspant",
     spanCorrect: "lengde",
     honesty: "Ærlighetsmerknad",
-    honestyBody: "Skåringsmodellen og båndene er ikke validert mot en normeringsgruppe. Nye spørsmål hver gang og retest etter ti dager gisper ikke skåren.",
+    honestyBody: "Skåringmodellen og båndene er ikke validert mot en normeringsgruppe. Nye spørsmål hver gang og retest etter ti dager redder ikke skåren.",
     methodTitle: "Metode og kilde",
-    methodBody: "Deltestene er inspirert av klassiske kognitive instrumenter (flytende resonnering, arbeshukommelsesspant, verbale matriser). Itembankene er laget for Brainarea og er ikke standardiserte mot befolkningen. Uttalelse om evner krever normert, profesjonelt instrument.",
+    methodBody: "Deltestene er inspirert av klassiske kognitive instrumenter (flytende resonnering, arbeidshukommelsesspant, verbale matriser). Itembankene er laget for Brainarea og er ikke standardiserte mot befolkningen. Uttalelse om evner krever normert, profesjonelt instrument.",
     methodBody2: "Skåren er et gjennomsnitt av prosentre per deltest (hukommelsesspant vektet separat), omgjort til grove IQ-bånd uten persentiler.",
   },
   en: {
     title: "Cognitive profile",
     intro:
-      "Four subtests: number series, figure patterns, verbal reasoning and working memory. Thirty questions, about eighteen minutes. No registration, nothing is sent anywhere.",
+      "Four subtests: number series, figure patterns, verbal reasoning and working memory. Thirty-two tasks, about eighteen minutes. No registration, nothing is sent anywhere.",
     bullets: [
       "No registration and nothing is sent from your browser.",
       "Questions are drawn randomly from the banks when you start.",

@@ -10,6 +10,8 @@ answers are never sent anywhere.
 npm ci            # install
 npm run build     # static export to out/
 npm test          # engine invariants (node --experimental-strip-types)
+node scripts/push.mjs "<message>"        # gates (npm test + build) -> commit -> push -> wait for CI green
+node scripts/push.mjs "<message>" --publish  # same, plus dispatches the manual pages workflow
 ```
 
 ## Local preview of the exported site

@@ -9,28 +9,24 @@ const TESTS_EN = [
     title: "PERSONA",
     desc: "Personality test based on the Big Five. 50 statements, about 10–15 minutes.",
     tag: "Open now",
-    enabled: true,
   },
   {
     href: "/en/evne/",
     title: "IQ / cognitive test",
-    desc: "Four subtests with fresh questions every run. Shows an estimated ability band — not normed IQ.",
+    desc: "Four subtests with fresh questions every run. Estimated ability band — not normed IQ.",
     tag: "Open now",
-    enabled: true,
   },
   {
-    href: "/en/",
-    title: "Relationships",
-    desc: "Compatibility and interplay: friendship, couples, conflict style.",
-    tag: "Under construction",
-    enabled: false,
+    href: "/en/relasjoner/",
+    title: "Connection style",
+    desc: "How you function in close relationships: closeness, openness, conflict, independence. 16 statements.",
+    tag: "Open now",
   },
   {
-    href: "/en/",
+    href: "/en/play/",
     title: "Play",
-    desc: "Short, shareable tests: work style, under pressure, creativity profile.",
-    tag: "Under construction",
-    enabled: false,
+    desc: "Short tests: work style, under pressure, creativity profile. 2–3 minutes each.",
+    tag: "Open now",
   },
 ];
 
@@ -49,40 +45,35 @@ export default function EnHome() {
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {TESTS_EN.map((t) =>
-            t.enabled ? (
-              <Link
-                key={t.href}
-                href={t.href}
-                className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-              >
-                <div className="flex items-start justify-between gap-2">
-                  <h2 className="text-lg font-bold">{t.title}</h2>
-                  <span
-                    className="rounded-full px-2.5 py-1 text-[11px] font-semibold whitespace-nowrap text-white"
-                    style={{ background: "var(--ba-accent)" }}
-                  >
-                    {t.tag}
-                  </span>
-                </div>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600">{t.desc}</p>
-              </Link>
-            ) : (
-              <div
-                key={t.title}
-                className="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm opacity-60"
-              >
-                <div className="flex items-start justify-between gap-2">
-                  <h2 className="text-lg font-bold">{t.title}</h2>
-                  <span className="rounded-full bg-gray-100 px-2.5 py-1 text-[11px] font-semibold whitespace-nowrap text-gray-500">
-                    {t.tag}
-                  </span>
-                </div>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600">{t.desc}</p>
+          {TESTS_EN.map((t) => (
+            <Link
+              key={t.href}
+              href={t.href}
+              className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+            >
+              <div className="flex items-start justify-between gap-2">
+                <h2 className="text-lg font-bold">{t.title}</h2>
+                <span
+                  className="rounded-full px-2.5 py-1 text-[11px] font-semibold whitespace-nowrap text-white"
+                  style={{ background: "var(--ba-accent)" }}
+                >
+                  {t.tag}
+                </span>
               </div>
-            )
-          )}
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">{t.desc}</p>
+            </Link>
+          ))}
         </div>
+
+        <p className="mt-6 text-sm">
+          <Link
+            href="/en/about/"
+            className="font-semibold underline"
+            style={{ color: "var(--ba-accent)" }}
+          >
+            How the tests work — method, sources and limitations
+          </Link>
+        </p>
 
         <p className="mt-10 text-xs leading-relaxed text-gray-500">
           The tests are indicative self-insight tools — not medical or

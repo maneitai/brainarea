@@ -1,0 +1,20 @@
+{
+  "step": "[BYGG] FASE 1, todo #3714: attention-check-mekanikk",
+  "module": "tests/engine/attention.js v1.0.0",
+  "total": 57,
+  "pass": 57,
+  "fail": 0,
+  "failures": [],
+  "thresholds": {
+    "straightline": "run >= 6 like likert-verdier i rekkefølge (i.i.d. 5-punkts sjanse for enkeltvindu på 6: 5^-5 = 0.032%)",
+    "timeFloor": "likert 2.0 s, ability/order 3.0 s per item (lesegulv); sesjons-fallback 0.5 × Σgulv",
+    "attention": "instruerte items (accepted-verdier): feil/ubesvart => high"
+  },
+  "principper": [
+    "deteksjon ≠ eksklusjon — ingen svar forkastes eller vektes",
+    "ingen fabrikasjon: ingen tid => ingen tidsflagg + note",
+    "per-item tid kun ved eksplisitt leveranse; sesjonsregel da inaktiv (ingen dobbelttell)"
+  ],
+  "kjentBegrensning": "terskler er dokumenterte forhåndsvalg, ikke kalibrert mot innsamlede data — kontrolleres av #3715/[VERIFISER] og FASE 2 QC-rapport",
+  "date": "2026-11-14"
+}

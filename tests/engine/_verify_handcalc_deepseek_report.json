@@ -1,0 +1,140 @@
+{
+  "step": "[VERIFISER DeepSeek] håndregning vs motor (todo leaf — FASE 1-scoring)",
+  "module": "tests/engine/scoring.js v1.0.0",
+  "handDerived": {
+    "U1": "θ=0.25 LUKKET FORM: b=[-1,0,0.5,1.5], y=[1,0,1,0] => Σσ(θ-b)=2 løses av pairs σ(1.25)+σ(-1.25)=1, σ(0.25)+σ(-0.25)=1. SE=1/sqrt(Σp(1-p))=1.0920794412, CI=θ±1.959964*SE (dobbeltsjekket med uavhengig biseksjon i Python).",
+    "U2": "b=[-1,0,0.5], y=[1,0,1]: uavhengig Python-biseksjon => θ=0.59570772886840, SE=1.271375656675, CI=[-1.896142788690, 3.087558246427]. OBS: første utkast hadde feil håndverdier (0.1664...) — verifikasjonen fanget feilen i MINE forventninger, motor viste seg korrekt. Σp=Σy=2.00000000 = MLE-betingelse.",
+    "U3": "A: (5+3)/omr 2..10 => 75; B sign=-1: raw -(2+4)=-6, omr -10..-2 => 50; kompositt (3*75+50)/4=68.75",
+    "U4": "raw 4+4+2=10 => høyeste band minScore<=10 er 8 (middels)"
+  },
+  "total": 27,
+  "pass": 27,
+  "fail": 0,
+  "results": [
+    {
+      "name": "U1 ok",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "U1 correctCount=2",
+      "pass": true
+    },
+    {
+      "name": "U1 proportion=0.5",
+      "pass": true
+    },
+    {
+      "name": "U1 theta=0.25 (lukket form)",
+      "pass": true,
+      "detail": "theta=0.25000000000000006"
+    },
+    {
+      "name": "U1 SE=1.0920794412",
+      "pass": true,
+      "detail": "se=1.0920794412352108"
+    },
+    {
+      "name": "U1 ci95=[-1.89043639, 2.39043639]",
+      "pass": true,
+      "detail": "ci=[-1.890436389961129,2.390436389961129]"
+    },
+    {
+      "name": "U1 skala raw=2 maxPossible=4",
+      "pass": true
+    },
+    {
+      "name": "U1 normalisert=50",
+      "pass": true
+    },
+    {
+      "name": "U1 coverage=1",
+      "pass": true
+    },
+    {
+      "name": "U1 notNormed-ærlighet",
+      "pass": true
+    },
+    {
+      "name": "U2 ok",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "U2 theta=0.59570772886840 (biseksjonsref)",
+      "pass": true,
+      "detail": "theta=0.5957077288683962"
+    },
+    {
+      "name": "U2 SE=1.271375656675",
+      "pass": true,
+      "detail": "se=1.27137565667452"
+    },
+    {
+      "name": "U2 ci95=[-1.896142788690, 3.087558246427]",
+      "pass": true,
+      "detail": "ci=[-1.8961427886900228,3.0875582464268154]"
+    },
+    {
+      "name": "U2 sum_p = sum_y = 2 (MLE-betingelse)",
+      "pass": true
+    },
+    {
+      "name": "U2 normalisert=66.66667 (raw 2 av 3)",
+      "pass": true
+    },
+    {
+      "name": "U2 coverage=1.0 (3/3 besvart, mangler bare maxItems-4th)",
+      "pass": true
+    },
+    {
+      "name": "U3 ok",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "U3 A: raw=8, min 2, max 10, norm 75",
+      "pass": true,
+      "detail": "{\"id\":\"A\",\"weight\":3,\"itemsAnswered\":2,\"coveragePct\":1,\"raw\":8,\"minPossible\":2,\"maxPossible\":10,\"normalized\":75,\"reversedCount\":0,\"itemIds\":[\"t-1\",\"t-2\"]}"
+    },
+    {
+      "name": "U3 B reversert: raw=-6, min -10, max -2, norm 50",
+      "pass": true,
+      "detail": "{\"id\":\"B\",\"weight\":1,\"itemsAnswered\":2,\"coveragePct\":1,\"raw\":-6,\"minPossible\":-10,\"maxPossible\":-2,\"normalized\":50,\"reversedCount\":2,\"itemIds\":[\"t-3\",\"t-4\"]}"
+    },
+    {
+      "name": "U3 reversedCount B=2",
+      "pass": true
+    },
+    {
+      "name": "U3 kompositt = (3*75+1*50)/4 = 68.75",
+      "pass": true
+    },
+    {
+      "name": "U3 warning norms ikke published",
+      "pass": true
+    },
+    {
+      "name": "U4 ok",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "U4 score=10, band middels",
+      "pass": true,
+      "detail": "{\"type\":\"threshold\",\"score\":10,\"bandId\":\"middels\",\"bandLabel\":\"Middels\",\"guidance\":null,\"disclaimer\":\"disclaimer.id\"}"
+    },
+    {
+      "name": "U4 disclaimer uendret",
+      "pass": true
+    },
+    {
+      "name": "U5 likert 7 => ok:false, ingen result",
+      "pass": true,
+      "detail": "[\"x-1: likert verdi 7 er ikke et av option values [1, 2, 3, 4, 5]\"]"
+    }
+  ],
+  "date": "2026-11-14",
+  "runBy": "todo-run TR-B254472C51F6-leaf [VERIFISER DeepSeek]",
+  "note": "U2-begivenheten: verifikatoren (denne) skrev feil håndreferanse i første utkast; motoren var korrekt. MLE-betingelsen Σp=Σy er verifisert eksakt i biseksjonsløsningen (metodeuavhengig)."
+}

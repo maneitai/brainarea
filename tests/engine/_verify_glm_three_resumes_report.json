@@ -1,0 +1,19 @@
+{
+  "step": "[VERIFISER GLM] Avbrudds-flyt: tre scenarier (midt i, siste spørsmål, etter resultat)",
+  "verdict_by": "GLM-verifiseringsfamilie — uavhengig harness, ikke byggemesterens stub",
+  "tested_against": "PRODUCTION brainarea/tests/engine/render.js v0.5.0 (md5 24A09A90C6211D2C1B988F23711C0596) + randomize.js (816DF79C…), node v24.19.0, vm + egen DOM-stub",
+  "total": 46,
+  "pass": 46,
+  "fail": 0,
+  "failures": [],
+  "what_resumes": [
+    "midt i oekt: samme trekk + idx + alle bokfoerte svar + rng-seed/teller; banner N/M; viser neste ubesvarte spoersmaal",
+    "avslutt-knapp: stopper visningen, beholder oekten i lagring (fortsett senere aeres), neste-knapp deaktivert",
+    "siste spoersmaal: gjenopptar paa ubesvart siste (24/25-banner), fullfoering fra der gir full payload",
+    "etter resultat: ingenting gjenopptas — ny oekt, null overlap mot fullfoert trekk, brukt-liste Set-idempotent"
+  ],
+  "limits": [
+    "stub-DOM i node-vm — ekte nettleser-QA er egne senere GLM-steg"
+  ],
+  "date": "2026-11-14"
+}

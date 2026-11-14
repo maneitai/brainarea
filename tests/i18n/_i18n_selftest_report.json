@@ -1,0 +1,12 @@
+{
+  "suite": "i18n-selftest",
+  "version": "1.0.0",
+  "todo": "#3716",
+  "pass": 22,
+  "fail": 0,
+  "failures": [],
+  "detail": {
+    "enKeyCount": 17,
+    "noKeyCount": 17
+  }
+}

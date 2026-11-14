@@ -1,7 +1,8 @@
-﻿import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import vm from 'node:vm';
 
-const ENG = 'F:/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/engine/';
+let ENG = 'F:/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/engine/';
+try { readFileSync(ENG + 'randomize.js'); } catch { ENG = '/mnt/f/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/engine/'; }
 
 /* ---- egen DOM-stub (uavhengig av byggemesterens stub) ---- */
 class El {
@@ -203,6 +204,6 @@ const report = { step: '[VERIFISER GLM] Avbrudds-flyt: tre scenarier (midt i, si
   ],
   limits: [ 'stub-DOM i node-vm — ekte nettleser-QA er egne senere GLM-steg' ],
   date: new Date().toISOString().slice(0, 10) };
-writeFileSync('F:/maneit/data/work/_delt/glm_verify_brainarea/engine/_verify_glm_three_resumes_report.json', JSON.stringify(report, null, 2));
+writeFileSync(new URL('./_verify_glm_three_resumes_report.json', import.meta.url), JSON.stringify(report, null, 2));
 console.log('GLM-THREE-RESUMES ' + pass + '/' + total + ' PASS');
 if(fails.length) process.exitCode = 1;

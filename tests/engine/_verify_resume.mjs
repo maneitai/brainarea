@@ -1,8 +1,10 @@
-﻿import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import vm from 'node:vm';
 
-const ENG = 'F:/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/engine/';
-const SCH = 'F:/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/schema/';
+let ENG = 'F:/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/engine/';
+try { readFileSync(ENG + 'randomize.js'); } catch { ENG = '/mnt/f/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/engine/'; }
+let SCH = 'F:/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/schema/';
+try { readFileSync(SCH + 'test-definition.schema.json'); } catch { SCH = '/mnt/f/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/schema/'; }
 
 /* ==== uavhengig DOM-stub (sama mal som _verify_repeat) ==== */
 class El {

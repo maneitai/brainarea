@@ -6,6 +6,8 @@ on:
 
 jobs:
   build:
+    # KJoeres bare naar Next.js-prosjektet finnes (fase-gjenoppbygging).
+    if: ${{ hashFiles('package.json') != '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

@@ -1,5 +1,5 @@
 /**
- * Brainarea test renderer v0.3 — [BYGG] FASE 2, todo leaf "Render: ett spørsmål per skjerm, progressbar, resterende tid."
+ * Brainarea test renderer v0.4 (seed-rng: ./randomize.js) — [BYGG] FASE 2, todo leaf "Render: ett spørsmål per skjerm, progressbar, resterende tid."
  *
  * Renset ES-modul (ingen dependencies). Statisk vevenn: <script type="module"> eller bunter.
  * Gjengir en test definert etter tests/schema/test-definition.schema.json (v1) som en
@@ -34,7 +34,9 @@
  * - Ingen auto-avansering (bevisst: eksplisitt Neste holder svarkontrakten deterministisk).
  */
 
-export const RENDER_VERSION = '0.3.0';
+import { makeCountedRng, newRngState, RNG_FIELD } from './randomize.js';
+
+export const RENDER_VERSION = '0.4.0';
 
 export const STORAGE_NS = 'brainarea:v1:';
 
@@ -298,7 +300,6 @@ export function mountRenderer(rootEl, def, opts = {}) {
   if (!errors.ok) throw new Error('render: ugyldig test-definisjon: ' + errors.errors.join('; '));
 
   const t = uiDict(resolveLang(def, opts.lang || 'no'), opts.dict);
-  const rng = opts.rng || Math.random;
   const now = opts.now || (() => Date.now());
   const storage = opts.storage || defaultStorage();
   const budget = opts.timeBudgetSeconds | 0;
@@ -313,11 +314,23 @@ export function mountRenderer(rootEl, def, opts = {}) {
     Array.isArray(session.itemIds) && session.itemIds.every((id) => idsSet.has(id)) &&
     session.idx <= session.itemIds.length;
   let usedIds = loadUsedIds(storage, def.id);
+  let rng;
   if (!validResume) {
+    // NY økt: seed + teller bor I økten (persistert sammen med den).
+    // opts.seedSeed (eksplisitt) = reproduserbar økt; ellers auto-seed.
+    const rngState = newRngState(opts.seedSeed);
+    rng = opts.rng || makeCountedRng(rngState);
     const sample = sampleSession(def, { usedIds, rng });
     if (sample.resetUsed) usedIds = [];
     session = newSessionState(def, resolveLang(def, opts.lang || 'no'), sample);
     session.startedAt = now(); // injisert klokke styrer økt-start (testbar tid)
+    session[RNG_FIELD] = rngState;
+    saveSession(storage, session);
+  } else {
+    // GJENOPPTAK: samme seed + samme teller = samme strøm der økten slapp.
+    const rngState = session[RNG_FIELD] || newRngState(opts.seedSeed); // gamle økter uten rng-felt
+    session[RNG_FIELD] = rngState;
+    rng = opts.rng || makeCountedRng(rngState);
     saveSession(storage, session);
   }
 

@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
 
 const HERE = fileURLToPath(new URL('.', import.meta.url));
-const ROOT = 'F:/maneit/prosjekter/filip-webside-prosjekter/brainarea';
+const ROOT = HERE.replace(/tests\/engine\/$/, ''); // repo-rot (portabel WSL/Windows)
 
 /* ============ minimal DOM-stub ============ */
 function makeDocStub() {
@@ -72,15 +72,36 @@ function makeDocStub() {
 
 /* ============ last render.js i vm-kontekst med stub ============ */
 function loadRender(doc) {
-  // vm.runInContext kjører som CommonJS-script: ES export-token strips (alle exports listes i __api)
-  const src = readFileSync(`${HERE}render.js`, 'utf8').replace(/^export\s+/gm, '');
+  // vm.runInContext kjører som CommonJS-script: ES export-token strips;
+  // randomize.js lastes FØRST i konteksten, render.js sin import-linje
+  // erstattes av destructure fra __rnd (import støttes ikke i vm-script).
   const ctx = vm.createContext({
     document: doc, console,
     setInterval: () => 0, clearInterval: () => {},
     Date, JSON, Math, String, Array, Object, Set, Map, Number, Boolean, RegExp,
   });
+  // NB: vm-skript deler det globale LEKSIKALE miljoet — const paa toppnivaa i script 1
+  // kolliderer med var i script 2. Derfor: toppnivaa const/let -> var i stubben.
+  // (I nettleseren er dette ES-modul-scope og kolliderer aldri.)
+  // mulberry32 kan ikke redeklareres — stub gi den alias-navn:
+  const rsrc = readFileSync(`${HERE}randomize.js`, 'utf8')
+    .replace(/^export\s+(const|let)\s+/gm, 'var ')
+    .replace(/^export\s+/gm, '')
+    .replace(/\bmulberry32\b/g, 'mulberry32x')
+    .replace(/\bmulberry32x\x27/g, "mulberry32'");  // (ingen strenger bruker navnet)
+  ;
   vm.runInContext(
-    src + "\n;globalThis.__api = { mountRenderer, validateTestDef, sampleSession, sessionSizeFor, shuffleInPlace, resolveLang, fmtTime, memoryStorage, RENDER_VERSION, STORAGE_NS };",
+    rsrc + "\n;globalThis.__rnd = { RANDOMIZE_VERSION, RNG_FIELD, RNG_STATE_VERSION, autoSeed, makeCountedRng, mulberry32x, newRngState, seedFromString, seededSample, seededShuffle };",
+    ctx, { filename: 'randomize.js' },
+  );
+  const src = readFileSync(`${HERE}render.js`, 'utf8')
+    .replace(/^export\s+(const|let)\s+/gm, 'var ')
+    .replace(/^export\s+/gm, '')
+    .replace(/^import\s+.*$/m, 'var RNG_FIELD = globalThis.__rnd.RNG_FIELD;')
+    .replace(/\bnewRngState\b(?=\()/g, 'globalThis.__rnd.newRngState')
+    .replace(/\bmakeCountedRng\b(?=\()/g, 'globalThis.__rnd.makeCountedRng');
+  vm.runInContext(
+    src + "\n;globalThis.__api = Object.assign({ mountRenderer, validateTestDef, sampleSession, sessionSizeFor, shuffleInPlace, resolveLang, fmtTime, memoryStorage, RENDER_VERSION, STORAGE_NS }, globalThis.__rnd);",
     ctx, { filename: 'render.js' },
   );
   return ctx.__api;
@@ -289,11 +310,76 @@ check('resolveLang direkte', api.resolveLang({ languages: ['no', 'en'] }, 'en') 
   check('gjenopptatt økt fullfører', hB.session.finished === true);
 }
 
+/* 8b. RANDOMISERING: seed + teller i økt; reproduserbarhet ved eksplisitt seed */
+{
+  const SEED_RNG = api.seedFromString('123'); // pin: FNV-1a('123') (beregnet, se randomize.js)
+  check('seedFromString pin 123', SEED_RNG === 1916298011);
+
+  // 1) Ny økt: rng-state bor i økten og persistes med den
+  const storeR1 = api.memoryStorage();
+  const docR1 = makeDocStub();
+  const apiR1 = loadRender(docR1);
+  const hR1 = apiR1.mountRenderer(docR1.createElement('div'), tdef, { lang: 'no', storage: storeR1, now: () => 1_700_100_000_000, onComplete: () => {} });
+  check('ny økt: rng-state i økten (seed + teller)', hR1.session.rng && typeof hR1.session.rng.seed === 'number' && hR1.session.rng.count > 0);
+  const countAfterMount = hR1.session.rng.count;
+  const firstItem = hR1.session.itemIds[0];
+  const gR1 = hR1._itemBox.children.find((c) => c.className === 'ba-options');
+  (gR1.children[0]).click();
+  hR1.next();
+  (gR1.children[0]).click();
+  hR1.next();
+  check('svar lagret + fremgang (2 spørsmål)', hR1.session.idx === 2 && hR1.session.answers[firstItem].kind === 'likert');
+  // likert-visning forbruker ingen draws → teller uendret etter svar/neste
+  check('teller uendret av likert-visning (count == ved mount)', hR1.session.rng.count === countAfterMount);
+
+  // 2) Gjenopptak: samme seed, teller videreføres (ikke restart av strømmen)
+  const hR2 = apiR1.mountRenderer(docR1.createElement('div'), tdef, { lang: 'no', storage: storeR1, now: () => 1_700_100_100_000, onComplete: () => {} });
+  check('gjenopptak: samme seed', hR2.session.rng.seed === hR1.session.rng.seed);
+  check('gjenopptak: teller videreført (ikke restartet)', hR2.session.rng.count === countAfterMount);
+  check('gjenopptak: samme itemIds + idx', JSON.stringify(hR2.session.itemIds) === JSON.stringify(hR1.session.itemIds) && hR2.session.idx === 2);
+
+  // 3) Eksplisitt seed: reproduserbar økt (sample + visningsstokk bitvis like)
+  const synBase = {
+    schemaVersion: 1, type: 'test-definition', id: 'syn-rng', family: 'evner',
+    languages: ['no'],
+    scoring: { type: 'g-score', metric: 'z100', ci95: true, maxItems: 6 },
+    dimensions: [{ id: 'g', label: 'g', labelLanguage: 'no', description: 'generell evne' }],
+    items: [],
+  };
+  for (let i = 1; i <= 6; i++) {
+    synBase.items.push({
+      id: `syn-${String(i).padStart(2, '0')}`, kind: 'ability', scales: [{ id: 'g', sign: 1 }],
+      variants: [{ lang: 'no', prompt: `Oppgave ${i}: hvilken er riktig?`,
+        options: [{ label: 'A' }, { label: 'B' }, { label: 'C' }], correctIndex: 1, difficulty: -0.5 }],
+    });
+  }
+  const docS1 = makeDocStub();
+  const apiS1 = loadRender(docS1);
+  const hS1 = apiS1.mountRenderer(docS1.createElement('div'), synBase, { lang: 'no', storage: api.memoryStorage(), seedSeed: SEED_RNG, now: () => 1_700_200_000_000, onComplete: () => {} });
+  const shuf1 = JSON.stringify(hS1.session.shuffle);
+  const sample1 = JSON.stringify(hS1.session.itemIds);
+  const cnt1 = hS1.session.rng.count;
+  const hS2 = apiS1.mountRenderer(docS1.createElement('div'), synBase, { lang: 'no', storage: api.memoryStorage(), seedSeed: SEED_RNG, now: () => 1_700_200_000_000, onComplete: () => {} });
+  check('eksplisitt seed: identisk sample', JSON.stringify(hS2.session.itemIds) === sample1);
+  check('eksplisitt seed: identiske visningsstokker', JSON.stringify(hS2.session.shuffle) === shuf1);
+  check('eksplisitt seed: identisk teller etter mount', hS2.session.rng.count === cnt1);
+  const hS3 = apiS1.mountRenderer(docS1.createElement('div'), synBase, { lang: 'no', storage: api.memoryStorage(), seedSeed: SEED_RNG + 1, now: () => 1_700_200_000_000, onComplete: () => {} });
+  check('ulik seed: ulik visning (sample eller stokk)', JSON.stringify(hS3.session.itemIds) !== sample1 || JSON.stringify(hS3.session.shuffle) !== shuf1);
+  hS1.destroy(); hS2.destroy(); hS3.destroy();
+
+  // 4) sampleSession-pin: samme seed → bitvis lik sample (rene funksjoner, uten økt)
+  const pinSample1 = JSON.stringify(apiR1.sampleSession(synBase, { usedIds: [], rng: apiR1.makeCountedRng(apiR1.newRngState(SEED_RNG)) }).itemIds);
+  const pinSample2 = JSON.stringify(apiR1.sampleSession(synBase, { usedIds: [], rng: apiR1.makeCountedRng(apiR1.newRngState(SEED_RNG)) }).itemIds);
+  check(`sampleSession pin (seed=${SEED_RNG}): ${pinSample1.slice(0, 30)}…`, pinSample1 === pinSample2 && pinSample1.length > 0);
+  hR1.destroy(); hR2.destroy();
+}
+
 /* ============ rapport ============ */
 const total = pass + failures.length;
 const report = {
-  step: 'Render: ett spørsmål per skjerm, progressbar, resterende tid',
-  renderVersion: '0.3.0',
+  step: 'Randomisering: seed-basert stokk av spørsmål + svaralternativer (render v0.3-oppførsel bevart; seed + teller lagt i økt)',
+  renderVersion: '0.4.0',
+  randomizeVersion: api.RANDOMIZE_VERSION,
   total, pass, fail: failures.length,
   failures,
   stubCoverage: [
@@ -301,10 +387,12 @@ const report = {
     'setInterval-timer kjøres ikke i selftest — tick drives via _tickForTest (deterministisk)',
     'visuelt layout/CSS-verifisering er umulig headless — ærlig begrensning, visuell QA senere',
     'localStorage erstattet av memoryStorage med samme grensesnitt',
+    'auto-seed avhenger av Date.now/Math.random — bevisst ulik per økt; reproduserbarhet gjelder eksplisitt seed',
+    'seed-reproduserbarhet gjelder mot uendret pool-innhold (pool-versjon knyttes på delbarhets-steg)',
   ],
   date: new Date().toISOString().slice(0, 10),
-  builtBy: "worker — todo leaf 'Render: ett spørsmål per skjerm, progressbar, resterende tid'",
+  builtBy: "worker — todo leaf 'Randomisering: seed-basert stokk av spørsmål + svaralternativer'",
 };
 writeFileSync(`${HERE}_render_selftest_report.json`, JSON.stringify(report, null, 2));
-console.log(`SELfTEST ${pass}/${total} PASS`);
+console.log(`SELFTEST ${pass}/${total} PASS`);
 if (failures.length) process.exitCode = 1;

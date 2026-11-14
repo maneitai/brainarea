@@ -1,0 +1,16 @@
+{
+  "step": "Render: ett spørsmål per skjerm, progressbar, resterende tid",
+  "renderVersion": "0.3.0",
+  "total": 60,
+  "pass": 60,
+  "fail": 0,
+  "failures": [],
+  "stubCoverage": [
+    "DOM-struktur, klikk, klasser/attributter, focus — dekket av stub",
+    "setInterval-timer kjøres ikke i selftest — tick drives via _tickForTest (deterministisk)",
+    "visuelt layout/CSS-verifisering er umulig headless — ærlig begrensning, visuell QA senere",
+    "localStorage erstattet av memoryStorage med samme grensesnitt"
+  ],
+  "date": "2026-11-14",
+  "builtBy": "worker — todo leaf 'Render: ett spørsmål per skjerm, progressbar, resterende tid'"
+}

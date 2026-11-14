@@ -48,3 +48,17 @@ Ukjent språk → resolves mot EN (aldri kast, aldri tom streng). Dette samsvare
 `_i18n_selftest.mjs` — kjør: `node tests/i18n/_i18n_selftest Selve` (Node ≥ 20, ingen deps).
 Dekker: nøkkel-grammatikk, EN-kompletthet, overlay-oppløsning, ukjent språk, fallback
 (aldrig kast/tom), note-id-match mot scoring, aria-tekst-mønstre (flytt X opp/ned).
+
+## page-navnerom (v1.1, todo #3718)
+
+- Nytt nøkkelrom: `page` (eies av hreflang/locale-byggesteget, todo #3718).
+- Grammatikk: `page.<rute>.<slot>` — rutene er `home, persona, evne, rel, play, about, privacy`
+  (samme rute-nøkler som app/locale.js ROUTES; EN-rutene ability/relations/about/privacy
+  er URL-navn, ikke i18n-nøkler).
+- Forbeholdte slots per rute: `title, desc, og.title, og.desc, h1, intro`, testrutene har
+  `before/lead/b1..b3/start/method{Heading,Body}/...`, home har `badge.open/card.*/methodLink/disclaimer/h1.a/h1.b`,
+  play har `badge.*/tile.*`, about/privacy har sine kopislotter (se en.js/no.js).
+- Alle synlige strenger på sidene resolver gjennom katalogen (getT): build-output skal ikke
+  inneholde tekst som mangler i18n-kilde — verifiseres av app/_verify_hreflang.mjs (V3).
+- EN = base også for page (komplett), NO = overlay (alle 128 page-nøkler dekket i no.js).
+- Selftest S1 er oppdatert til forventet ns-orden: ui, note, aria, page.

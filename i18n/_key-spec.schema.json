@@ -1,10 +1,17 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://brainarea.example/i18n/_key-spec.schema.json",
-  "title": "Brainarea i18n key-file spec v1",
-  "description": "Key-file contract for UI/note/aria strings. EN (en.js, kind=base) is complete at all times; any other language file (kind=overlay) resolves missing keys through EN. Key grammar: '<ns>.<name>' with ns in {ui, note, aria}; a new namespace is a spec-contract change. Placeholders {a} {b} are positional and their order is locked by EN. These files are the single source for engine UI strings; render.js BASE_DICT is generated from here (wiring in a later step).",
+  "title": "Brainarea i18n key-file spec v1.1",
+  "description": "Key-file contract for UI/note/aria strings. EN (en.js, kind=base) is complete at all times; any other language file (kind=overlay) resolves missing keys through EN. Key grammar: '<ns>.<name>' with ns in {ui, note, aria, page}; a new namespace is a spec-contract change. Placeholders {a} {b} are positional and their order is locked by EN. These files are the single source for engine UI strings; render.js BASE_DICT is generated from here (wiring in a later step).",
   "type": "object",
-  "required": ["lang", "kind", "ui", "note", "aria"],
+  "required": [
+    "lang",
+    "kind",
+    "ui",
+    "note",
+    "aria",
+    "page"
+  ],
   "additionalProperties": false,
   "properties": {
     "lang": {
@@ -14,51 +21,132 @@
     },
     "kind": {
       "description": "base = EN (must contain every key). overlay = other languages; missing keys resolve via EN.",
-      "enum": ["base", "overlay"]
+      "enum": [
+        "base",
+        "overlay"
+      ]
     },
     "ui": {
       "description": "Engine UI strings. Key set locked by render.js usage: questionOf and resume carry {a}/{b} placeholders.",
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "next", "finish", "questionOf", "timeLeft", "timeUsed", "timeExpired",
-        "orderHint", "orderSelect", "progressLabel", "resume", "resumeQuit", "resumeBye"
+        "next",
+        "finish",
+        "questionOf",
+        "timeLeft",
+        "timeUsed",
+        "timeExpired",
+        "orderHint",
+        "orderSelect",
+        "progressLabel",
+        "resume",
+        "resumeQuit",
+        "resumeBye"
       ],
       "properties": {
-        "next": { "type": "string", "minLength": 1 },
-        "finish": { "type": "string", "minLength": 1 },
-        "questionOf": { "type": "string", "minLength": 1, "pattern": "\\{a\\}[\\s\\S]*\\{b\\}" },
-        "timeLeft": { "type": "string", "minLength": 1 },
-        "timeUsed": { "type": "string", "minLength": 1 },
-        "timeExpired": { "type": "string", "minLength": 1 },
-        "orderHint": { "type": "string", "minLength": 1 },
-        "orderSelect": { "type": "string", "minLength": 1 },
-        "progressLabel": { "type": "string", "minLength": 1 },
-        "resume": { "type": "string", "minLength": 1, "pattern": "\\{a\\}[\\s\\S]*\\{b\\}" },
-        "resumeQuit": { "type": "string", "minLength": 1 },
-        "resumeBye": { "type": "string", "minLength": 1 }
+        "next": {
+          "type": "string",
+          "minLength": 1
+        },
+        "finish": {
+          "type": "string",
+          "minLength": 1
+        },
+        "questionOf": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\{a\\}[\\s\\S]*\\{b\\}"
+        },
+        "timeLeft": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeUsed": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeExpired": {
+          "type": "string",
+          "minLength": 1
+        },
+        "orderHint": {
+          "type": "string",
+          "minLength": 1
+        },
+        "orderSelect": {
+          "type": "string",
+          "minLength": 1
+        },
+        "progressLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resume": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\{a\\}[\\s\\S]*\\{b\\}"
+        },
+        "resumeQuit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resumeBye": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     },
     "note": {
       "description": "Scoring-note strings; key <id> must match result.notes[].id from scoring.js pushNote.",
       "type": "object",
       "additionalProperties": false,
-      "required": ["trait.not-normed", "threshold.screening", "gscore.not-normed"],
+      "required": [
+        "trait.not-normed",
+        "threshold.screening",
+        "gscore.not-normed"
+      ],
       "properties": {
-        "trait.not-normed": { "type": "string", "minLength": 1 },
-        "threshold.screening": { "type": "string", "minLength": 1 },
-        "gscore.not-normed": { "type": "string", "minLength": 1 }
+        "trait.not-normed": {
+          "type": "string",
+          "minLength": 1
+        },
+        "threshold.screening": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gscore.not-normed": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     },
     "aria": {
       "description": "Accessibility labels for synthesised order-move controls. {a} = element name, positional.",
       "type": "object",
       "additionalProperties": false,
-      "required": ["orderMoveUp", "orderMoveDown"],
+      "required": [
+        "orderMoveUp",
+        "orderMoveDown"
+      ],
       "properties": {
-        "orderMoveUp": { "type": "string", "minLength": 1, "pattern": "\\{a\\}" },
-        "orderMoveDown": { "type": "string", "minLength": 1, "pattern": "\\{a\\}" }
+        "orderMoveUp": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\{a\\}"
+        },
+        "orderMoveDown": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\{a\\}"
+        }
       }
+    },
+    "page": {
+      "description": "Page-level site content (titles, meta, landing copy), owner: hreflang/locale build step (todo #3718). Key name prefix names the route: '<route>.<slot>' — routes: home, persona, evne, rel, play, about, privacy. Slots reserved: title, desc, og.title, og.desc, h1, intro, badge.open, card.*, tile.*, badge.*, method* (see i18n/_spec.md).",
+      "type": "object",
+      "additionalProperties": true,
+      "minProperties": 1
     }
   }
 }

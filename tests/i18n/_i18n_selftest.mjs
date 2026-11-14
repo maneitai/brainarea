@@ -25,7 +25,7 @@ const enFlat = {};
 for (const [ns, names] of Object.entries(EN_KEYS)) for (const [k, v] of Object.entries(names)) enFlat[`${ns}.${k}`] = v;
 const enKeysList = Object.keys(enFlat).sort();
 check('S1.EN.complete (≥15 nøkler)', enKeysList.length >= 15);
-check('S1.EN.namespaces-orden (ui,note,aria)', JSON.stringify(Object.keys(EN_KEYS)) === JSON.stringify(['ui', 'note', 'aria']));
+check('S1.EN.namespaces-orden (ui,note,aria,page)', JSON.stringify(Object.keys(EN_KEYS)) === JSON.stringify(['ui', 'note', 'aria', 'page']));
 
 /* S2 — NO dekker ALLE EN-nøkler i katalogen (strukturell overlay-regel: hvert EN-navnerumsnøkkel må eksistere et sted) */
 const noFlat = {};

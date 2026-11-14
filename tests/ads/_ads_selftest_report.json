@@ -1,0 +1,18 @@
+{
+  "suite": "ads-selftest",
+  "version": "1.0.0",
+  "todo": "#3720",
+  "pass": 42,
+  "fail": 0,
+  "failures": [],
+  "detail": {
+    "formats": [
+      "medium_rectangle=300×250",
+      "large_rectangle=336×280",
+      "leaderboard=728×90",
+      "mobile_banner=320×50",
+      "in_feed=in-feed"
+    ],
+    "i18nKeys": 8
+  }
+}

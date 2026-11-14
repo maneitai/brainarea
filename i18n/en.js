@@ -173,6 +173,18 @@ export const KEYS = {
     'privacy.p.owner': 'Brainarea is a private website. The responsible publisher is reached at',
     'privacy.ownerLink': 'manieten@pm.me',
     'privacy.p.ownerTail': '. If cookies requiring consent are used, a consent tool will be installed and this document will describe your choices in detail.',
+    /* ad — ad-slot component ([BYGG] FASE 1, todo #3720). Real formats,
+       mock-marked per decision 11. Placement step (#3722) consumes
+       renderAd() slots; never in test flow, never between last question
+       and result, no popup/interstitial/sticky. */
+    'ad.label': 'Advertisement',
+    'ad.mockBadge': 'Mock ad',
+    'ad.disclaimer': 'Placeholder — no real advertising until Google AdSense is approved and activated.',
+    'ad.mock.medium_rectangle': 'Mock ad 300\u00d7250',
+    'ad.mock.large_rectangle': 'Mock ad 336\u00d7280',
+    'ad.mock.leaderboard': 'Mock ad 728\u00d790',
+    'ad.mock.mobile_banner': 'Mock ad 320\u00d750',
+    'ad.mock.in_feed': 'Mock in-feed ad (fluid width)',
     'privacy.updated': 'Last updated: November 2026',
   },
 };

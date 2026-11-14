@@ -167,6 +167,18 @@ export const KEYS = {
     'privacy.p.owner': 'Brainarea er en privat nettside. Ansvarlig utgiver nås på',
     'privacy.ownerLink': 'manieten@pm.me',
     'privacy.p.ownerTail': '. Brukes informasjonskapsler i et omfang som krever samtykke, et samtykkeverktøy legges inn og dette dokumentet beskriver da samtykkesvalget ditt i detalj.',
+    /* ad — annonseslot-komponent ([BYGG] FASE 1, todo #3720). Ekte formater,
+       merket mock etter beslutning 11. Plasseringssteget (#3722) forbruker
+       renderAd()-slots; aldri i testflyt, aldri mellom siste spÅrsmål og
+       resultat, ingen popup/interstitial/sticky. */
+    'ad.label': 'Annonse',
+    'ad.mockBadge': 'Mock-annonse',
+    'ad.disclaimer': 'Plassholder — ingen ekte annonser fÅr Google AdSense er godkjent og aktivert.',
+    'ad.mock.medium_rectangle': 'Mock-annonse 300\u00d7250',
+    'ad.mock.large_rectangle': 'Mock-annonse 336\u00d7280',
+    'ad.mock.leaderboard': 'Mock-annonse 728\u00d790',
+    'ad.mock.mobile_banner': 'Mock-annonse 320\u00d750',
+    'ad.mock.in_feed': 'Mock in-feed-annonse (flytende bredde)',
     'privacy.updated': 'Sist oppdatert: november 2026',
   },
 };

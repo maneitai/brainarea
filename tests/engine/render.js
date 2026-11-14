@@ -23,7 +23,12 @@
  *    Likert/threshold-tester sampler alle items (ingen sampling), rekkefølge shuffles per økt.
  * 3. ANNONSE-SPOR: footer inneholder <div class="ba-ad-slot" data-reserved="ads" hidden>.
  *    Annonse-steget fyller sporet; renderer endres ikke da.
- * 4. Gjenopptak: pågående økt lagres i storage; refresh mister ikke fremgang (krav: ingen konto).
+ * 4. GJENOPPTAK: pågående økt lagres i storage; refresh mister ikke fremgang (krav: ingen konto).
+ *    AVBRUDD (leaf 11): items bokføres i brukt-liste VED ØKTSTART, ikke ved finish — en
+ *    avbrutt økt må aldri gjenbruke sine spørsmål i neste økt (no-repeat på tvers av avbrudd).
+ *    finish() beholder Set-idempotent healing. Gjenopptak med fremgang viser banner
+ *    «fortsett der du slapp» med valgfri «avslutt nå»-knapp; avslutt BEHOLDER økten.
+ * 4a. brukt-liste dedupes ved les (Set) — listestørrelse forblir ren over mange økter.
  * 5. Order-kind: elementer shuffles per økt; svar = rekkefølgen brukeren sender inn.
  * 6. Ability: valgkort shuffles i visning; lagres som ORIGINAL option-indeks (data-nivå),
  *    ikke visningsposisjon.
@@ -36,7 +41,7 @@
 
 import { makeCountedRng, newRngState, RNG_FIELD } from './randomize.js';
 
-export const RENDER_VERSION = '0.4.0';
+export const RENDER_VERSION = '0.5.0';
 
 export const STORAGE_NS = 'brainarea:v1:';
 
@@ -203,7 +208,7 @@ export function loadUsedIds(store, testId) {
   try {
     const raw = store.getItem(STORAGE_NS + 'used:' + testId);
     const arr = raw ? JSON.parse(raw) : [];
-    return Array.isArray(arr) ? arr : [];
+    return Array.isArray(arr) ? Array.from(new Set(arr)) : []; // dedup ved les: brukt-liste forblir ren over mange økter
   } catch { return []; }
 }
 
@@ -220,6 +225,9 @@ const BASE_DICT = {
     'ui.orderHint': 'Sett elementene i riktig rekkefølge:',
     'ui.orderSelect': 'Velg et element, bruk pil-knappene for å flytte.',
     'ui.progressLabel': 'Testfremgang',
+    'ui.resume': 'Avbrutt økt funnet: {a}/{b} besvarte spørsmål. Fortsetter automatisk der du slapp. Kan avsluttes nedenfor.',
+    'ui.resumeQuit': 'Avslutt økten nå',
+    'ui.resumeBye': 'Økten er lagret på denne enheten — fortsett senere.',
   },
   en: {
     'ui.next': 'Next',
@@ -231,6 +239,9 @@ const BASE_DICT = {
     'ui.orderHint': 'Put the elements in the correct order:',
     'ui.orderSelect': 'Select an element, use the arrow buttons to move it.',
     'ui.progressLabel': 'Test progress',
+    'ui.resume': 'Interrupted session found: {a}/{b} answered questions. Continuing automatically where you left off. Can be ended below.',
+    'ui.resumeQuit': 'End the session now',
+    'ui.resumeBye': 'Session is saved on this device — continue later.',
   },
 };
 
@@ -286,6 +297,13 @@ const STYLES = `
 .ba-nav button:disabled{opacity:.45;cursor:not-allowed}
 .ba-ad-slot{min-height:0}
 .ba-terminal{margin-top:.75rem;color:var(--ba-dim)}
+.ba-resume{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;justify-content:space-between;
+  border:1px solid #22303f;border-radius:.5rem;background:#101822;color:var(--ba-fg);
+  padding:.6rem .8rem;margin-bottom:.75rem;max-width:40rem}
+.ba-resume-text{margin:0}
+.ba-resume-actions{display:flex}
+.ba-resume-quit{min-height:2.25rem;padding:.25rem .75rem;border-radius:.4rem;border:1px solid #22303f;cursor:pointer;font:inherit}
+.ba-resume-quit:focus-visible{outline:2px solid var(--ba-accent);outline-offset:1px}
 @media (prefers-reduced-motion: reduce){.ba-progressbar-fill{transition:none}}
 `;
 
@@ -313,6 +331,11 @@ export function mountRenderer(rootEl, def, opts = {}) {
   const validResume = session && !session.finished && session.testId === def.id &&
     Array.isArray(session.itemIds) && session.itemIds.every((id) => idsSet.has(id)) &&
     session.idx <= session.itemIds.length;
+  // avbruddsdeteksjon: gjenopptakbar økt med fremgang = "fortsett der du slapp"
+  const isResume = Boolean(validResume) &&
+    (session.idx > 0 || (session.answers && Object.keys(session.answers).length > 0));
+  const answeredCount = session && session.answers ? Object.keys(session.answers).length : 0;
+  const totalItems = session && Array.isArray(session.itemIds) ? session.itemIds.length : 0;
   let usedIds = loadUsedIds(storage, def.id);
   let rng;
   if (!validResume) {
@@ -321,7 +344,9 @@ export function mountRenderer(rootEl, def, opts = {}) {
     const rngState = newRngState(opts.seedSeed);
     rng = opts.rng || makeCountedRng(rngState);
     const sample = sampleSession(def, { usedIds, rng });
-    if (sample.resetUsed) usedIds = [];
+    if (sample.resetUsed) usedIds = sample.itemIds.slice(); // reset: brukt-liste starter på nytt med dagens økt
+    else usedIds = usedIds.concat(sample.itemIds); // umiddelbar bokføring: økt-items tilhører "brukt" straks de er skåret ut (avbrudd må ikke gjenbruke dem)
+    saveUsedIds(storage, def.id, usedIds); // persistert NÅ — tablukk uten fullføring respekterer no-repeat
     session = newSessionState(def, resolveLang(def, opts.lang || 'no'), sample);
     session.startedAt = now(); // injisert klokke styrer økt-start (testbar tid)
     session[RNG_FIELD] = rngState;
@@ -354,12 +379,55 @@ export function mountRenderer(rootEl, def, opts = {}) {
   adSlot.hidden = true;
   const nav = el('div', 'ba-nav');
   const nextBtn = document.createElement('button');
+  // resume-state: banner "fortsett der du slapp" påvises/skjules etter samtykke
+  const resumeText = isResume
+    ? t('ui.resume').replace('{a}', String(Math.min(answeredCount, totalItems))).replace('{b}', String(totalItems))
+    : null;
   nextBtn.textContent = t('ui.next');
   nextBtn.disabled = true;
   nav.appendChild(nextBtn);
   foot.appendChild(adSlot); foot.appendChild(nav);
   main.appendChild(head); main.appendChild(itemBox); main.appendChild(foot);
   rootEl.appendChild(main);
+
+  // resume-banner: vist bare når økt er gjenopptatt med fremgang — "fortsett der du slapp"
+  let resumeBanner = null;
+  let resumeQuitBtn = null;
+  function setResumeVisible(on) {
+    if (!resumeText) return;
+    if (on) {
+      if (!resumeBanner) {
+        resumeBanner = el('section', 'ba-resume');
+        resumeBanner.setAttribute('role', 'status');
+        const txt = el('p', 'ba-resume-text');
+        txt.textContent = resumeText;
+        resumeBanner.appendChild(txt);
+        const actions = el('div', 'ba-resume-actions');
+        resumeQuitBtn = document.createElement('button');
+        resumeQuitBtn.className = 'ba-opt ba-resume-quit';
+        resumeQuitBtn.textContent = t('ui.resumeQuit');
+        resumeQuitBtn.addEventListener('click', () => {
+          stopTimer();
+          setResumeVisible(false);
+          itemBox.textContent = '';
+          const bye = el('p', 'ba-terminal');
+          bye.textContent = t('ui.resumeBye');
+          itemBox.appendChild(bye);
+          nextBtn.disabled = true;
+        });
+        actions.appendChild(resumeQuitBtn);
+        resumeBanner.appendChild(actions);
+      }
+      if (rootEl.contains && !rootEl.contains(resumeBanner)) {
+        // banner over testen i ekte DOM; stub-DOM (uten insertBefore) degraderer til appendChild
+        if (typeof rootEl.insertBefore === 'function') rootEl.insertBefore(resumeBanner, main);
+        else rootEl.appendChild(resumeBanner);
+      }
+    } else if (resumeBanner && rootEl.contains && rootEl.contains(resumeBanner)) {
+      rootEl.removeChild(resumeBanner);
+    }
+  }
+  setResumeVisible(isResume);
 
   /* ---------- timer ---------- */
   let timerHandle = null;
@@ -553,11 +621,13 @@ export function mountRenderer(rootEl, def, opts = {}) {
     expired = Boolean(byTimeout);
     const finishedAt = now();
     const timeSpentSec = Math.max(0, (finishedAt - session.startedAt) / 1000);
-    // no-repeat-bokføring
+    // no-repeat-bokføring — idempotent: items er allerede bokført ved økt-start
+    // (avbruddssikkerhet), denne linjen gjør finish uavhengig healing og gamle sessjoner
     const merged = Array.from(new Set(usedIds.concat(session.itemIds)));
     saveUsedIds(storage, def.id, merged);
     clearSession(storage, def.id);
     stopTimer();
+    setResumeVisible(false); // fullført/utløpt økt: banner "fortsett der du slapp" fjernes
     if (expired) {
       const term = el('p', 'ba-terminal');
       term.textContent = t('ui.timeExpired');
@@ -593,5 +663,8 @@ export function mountRenderer(rootEl, def, opts = {}) {
     _barFill: barFill,
     _nextBtn: nextBtn,
     _itemBox: itemBox,
+    _setResumeVisible: setResumeVisible,
+    _resumeBanner: () => resumeBanner,
+    _resumeQuitBtn: () => resumeQuitBtn,
   };
 }

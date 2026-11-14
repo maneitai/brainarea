@@ -1,0 +1,13 @@
+{
+  "step": "[BYGG] FASE 1: Lokal lagring — avbrudd → gjenopptak på samme spørsmål (verify-resume)",
+  "total": 27,
+  "pass": 27,
+  "fail": 0,
+  "failures": [],
+  "notes": [
+    "brukt-liste bokfoeres ved oektstart (avbruddssikkert) + Set-merge i finish (idempotent)",
+    "gjenopptak: banner + avslutt-knapp; avslutt beholder oekten",
+    "W2 simulerer start-om-igjen-stien mot brukt-listen"
+  ],
+  "date": "2026-11-14"
+}

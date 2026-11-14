@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
 
 const HERE = fileURLToPath(new URL('.', import.meta.url));
-const ROOT = HERE.replace(/tests\/engine\/$/, ''); // repo-rot (portabel WSL/Windows)
+const ROOT = HERE.replace(/tests[\\\/]engine[\\\/]$/, ''); // repo-rot (portabel WSL/Windows — matcher begge skilletegn)
 
 /* ============ minimal DOM-stub ============ */
 function makeDocStub() {
@@ -377,8 +377,8 @@ check('resolveLang direkte', api.resolveLang({ languages: ['no', 'en'] }, 'en') 
 /* ============ rapport ============ */
 const total = pass + failures.length;
 const report = {
-  step: 'Randomisering: seed-basert stokk av spørsmål + svaralternativer (render v0.3-oppførsel bevart; seed + teller lagt i økt)',
-  renderVersion: '0.4.0',
+  step: 'Gjenopptak/avbrudd på samme spørsmål (render v0.5): brukt-liste ved øktstart, resume-banner, avslutt-knapp',
+  renderVersion: '0.5.0',
   randomizeVersion: api.RANDOMIZE_VERSION,
   total, pass, fail: failures.length,
   failures,

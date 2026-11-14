@@ -1,6 +1,6 @@
 {
-  "step": "Randomisering: seed-basert stokk av spørsmål + svaralternativer (render v0.3-oppførsel bevart; seed + teller lagt i økt)",
-  "renderVersion": "0.4.0",
+  "step": "Gjenopptak/avbrudd på samme spørsmål (render v0.5): brukt-liste ved øktstart, resume-banner, avslutt-knapp",
+  "renderVersion": "0.5.0",
   "randomizeVersion": "1.0.0",
   "total": 72,
   "pass": 72,

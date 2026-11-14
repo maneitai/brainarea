@@ -31,8 +31,39 @@ PASS D3.NO.leaderboard.dim-text
 PASS D3.NO.mobile_banner.dim-text
 PASS D4.NO.in-feed-fluid-text
 PASS D5.NO.in-feed-no-fixed-dims
-PASS E1.build-not-importing-ads-yet
-PASS E2.no-ad-markup-in-out-tree
-PASS E3.no-sticky-for-ads-today
+PASS E1.build-imports-ads-render-only
+PASS E2.ads-only-on-landing-routes
+PASS E3.ads-css-no-sticky-fixed
+PASS F1.out/index.html.exactly-2-ads-in-order
+PASS F2.out/index.html.in-feed-then-leaderboard
+PASS F3.out/index.html.both-mock-marked
+PASS F4.out/index.html.not-above-fold-after-intro-before-footer
+PASS F5.out/index.html.no-external-resources
+PASS F1.out/play/index.html.exactly-2-ads-in-order
+PASS F2.out/play/index.html.in-feed-then-leaderboard
+PASS F3.out/play/index.html.both-mock-marked
+PASS F4.out/play/index.html.not-above-fold-after-intro-before-footer
+PASS F5.out/play/index.html.no-external-resources
+PASS F1.out/om-testene/index.html.exactly-2-ads-in-order
+PASS F2.out/om-testene/index.html.in-feed-then-leaderboard
+PASS F3.out/om-testene/index.html.both-mock-marked
+PASS F4.out/om-testene/index.html.not-above-fold-after-intro-before-footer
+PASS F5.out/om-testene/index.html.no-external-resources
+PASS F1.out/en/index.html.exactly-2-ads-in-order
+PASS F2.out/en/index.html.in-feed-then-leaderboard
+PASS F3.out/en/index.html.both-mock-marked
+PASS F4.out/en/index.html.not-above-fold-after-intro-before-footer
+PASS F5.out/en/index.html.no-external-resources
+PASS F1.out/en/play/index.html.exactly-2-ads-in-order
+PASS F2.out/en/play/index.html.in-feed-then-leaderboard
+PASS F3.out/en/play/index.html.both-mock-marked
+PASS F4.out/en/play/index.html.not-above-fold-after-intro-before-footer
+PASS F5.out/en/play/index.html.no-external-resources
+PASS F1.out/en/about/index.html.exactly-2-ads-in-order
+PASS F2.out/en/about/index.html.in-feed-then-leaderboard
+PASS F3.out/en/about/index.html.both-mock-marked
+PASS F4.out/en/about/index.html.not-above-fold-after-intro-before-footer
+PASS F5.out/en/about/index.html.no-external-resources
+PASS F6.no-sticky-or-fixed-css-on-ba-ad
 ---
-VERDICT: pass - 36 checks OK
+VERDICT: pass - 67 checks OK

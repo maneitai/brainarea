@@ -123,9 +123,17 @@ for (const [file, text] of [['EN', en], ['NO', no]]) {
   check(`D5.${file}.in-feed-no-fixed-dims`, !/in_feed'?:\s*'[^']*(300|336|728|320)[^']*'/.test(text), 'in-feed must stay fluid');
 }
 
-/* ---------- E: scope boundaries — component-only delivery (placement = #3722) ---------- */
+/* ---------- E: scope boundaries — placement-transition (todo #3722) ----------
+ * Denne verifikatoren ble bygget for #3721 (komponent-only: build.js rørte ikke
+ * ads). #3722 er nøyaktig den dokumenterte overgangen (E-kommentar 2026-11-14:
+ * "336x280 result / 320×50 mobile placement CSS arrives with #3722"). Etter
+ * #3722 testes scope-grensene videre EKSAKT: build.js importerer kun renderAd
+ * ( aldri script/AdSense/aktivering), out-treet inneholder mock-annonser KUN
+ * på de tre landingsrutene home/play/about i begge locale — aldri på
+ * test-rutene (persona/evne/rel) eller privacy, og aldri script/iframe/img.
+ */
 const build = read('app/build.js');
-check('E1.build-not-importing-ads-yet', !/['"](\.\.?\/)?app\/ads\.js['"]|from ['"].*ads\.js['"]/.test(build), 'placement is #3722');
+check('E1.build-imports-ads-render-only', /import \{ renderAd \} from \'\.\/ads\.js\'/.test(build) && !/(adsbygoogle|googlesyndication|<script)/i.test(build), 'renderAd-import, ingen aktivering');
 let outHtml = [];
 try { outHtml = walkOut(join(ROOT, 'out')); } catch { outHtml = []; }
 function walkOut(dir) {
@@ -137,10 +145,47 @@ function walkOut(dir) {
   }
   return acc;
 }
-check('E2.no-ad-markup-in-out-tree', outHtml.length === 0, outHtml.join(', '));
+const LANDING_SET = ['out/index.html', 'out/play/index.html', 'out/om-testene/index.html', 'out/en/index.html', 'out/en/play/index.html', 'out/en/about/index.html'];
+const outSet = outHtml.map((p) => p.slice(ROOT.length + 1).replaceAll('\\', '/')).sort();
+check('E2.ads-only-on-landing-routes', JSON.stringify(outSet) === JSON.stringify([...LANDING_SET].sort()), outSet.join(', '));
 let css = '';
-try { css = read('app/site.css'); } catch { css = ''; }
-check('E3.no-sticky-for-ads-today', !/\.ba-ad[^{]*\{[^}]*sticky/i.test(css) && !css.includes('ba-ad'), '336x280 result / 320x50 mobile placement CSS arrives with #3722');
+try { css = read('app/site.css'); } catch { css = ''; }check('E3.ads-css-no-sticky-fixed', !/\.ba-ad[^{]*\{[^}]*(sticky|fixed|position\s*:\s*fixed)/i.test(css) && css.includes('.ba-ad{'), 'ingen sticky/fixed; CSS-leveranse med #3722');
+
+/* ---------- F: placement semantics (todo #3722, decision 11) ----------
+ * For each landing page (both locales): exactly 2 mock ads; in-feed first,
+ * leaderboard last right before the footer; first ad sits between sections
+ * (home: after the cards, before method/disclaimer — play/about: after the
+ * intro), never as the FIRST element of <main> (never above the fold as the
+ * first thing seen); no external resources. Decision 11:
+ * test flow ad-free (E2 excludes the test routes), never between the last
+ * question and the result (static pages only), no popup/interstitial/sticky
+ * (F5: no sticky/fixed CSS on .ba-ad, verified again here from the OUT tree).
+ */
+const LANDING = [
+  { rel: 'out/index.html', inFeed: 'home-after-cards', bottom: 'home-bottom' },
+  { rel: 'out/play/index.html', inFeed: 'play-intro-after', bottom: 'play-bottom' },
+  { rel: 'out/om-testene/index.html', inFeed: 'about-intro-after', bottom: 'about-bottom' },
+  { rel: 'out/en/index.html', inFeed: 'home-after-cards', bottom: 'home-bottom' },
+  { rel: 'out/en/play/index.html', inFeed: 'play-intro-after', bottom: 'play-bottom' },
+  { rel: 'out/en/about/index.html', inFeed: 'about-intro-after', bottom: 'about-bottom' },
+];
+for (const { rel, inFeed, bottom } of LANDING) {
+  const h = read(rel);
+  const slots = [...h.matchAll(/data-ba-slot="([a-z-]+)"/g)].map((x) => x[1]);
+  check(`F1.${rel}.exactly-2-ads-in-order`, slots.length === 2 && slots[0] === inFeed && slots[1] === bottom, slots.join(','));
+  const formats = [...h.matchAll(/data-ba-format="([a-z0-9x]+)"/g)].map((x) => x[1]);
+  check(`F2.${rel}.in-feed-then-leaderboard`, formats.length === 2 && formats[0] === 'fluid' && formats[1] === '728x90', formats.join(','));
+  check(`F3.${rel}.both-mock-marked`, (h.match(/data-ba-mock="1"/g) || []).length === 2);
+  const iMain = h.indexOf('<main');
+  const iFeed = h.indexOf(`data-ba-slot="${inFeed}"`);
+  const iFoot = h.indexOf('<footer');
+  const afterIntro = h.indexOf('</p>', iMain);
+  check(`F4.${rel}.not-above-fold-after-intro-before-footer`, iMain > -1 && h.indexOf('ba-ad', iMain) > iMain && h.indexOf('ba-ad', iMain) - iMain > 300 && iFeed > afterIntro && h.lastIndexOf('data-ba-slot', iFoot) > -1 && h.lastIndexOf('data-ba-ad', iFoot) > -1 && h.indexOf('data-ba-ad', iFeed) < (h.indexOf('data-ba-ad', iFoot) === -1 ? h.length : h.indexOf('data-ba-ad', iFoot)))
+    ;
+  check(`F5.${rel}.no-external-resources`, !/<script|<iframe|<img/i.test(h));
+}
+check('F6.no-sticky-or-fixed-css-on-ba-ad',
+  !/\.ba-ad[^{]*\{[^}]*(sticky|position\s*:\s*fixed)/i.test(read('out/site.css')));
 
 /* ---------- verdict + report ---------- */
 const verdict = failures.length === 0 ? 'pass' : 'fail';

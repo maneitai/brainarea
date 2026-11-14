@@ -25,6 +25,55 @@ export const RUTE_LISTE = [
 /** Test-rutene (brukes av engine-sjiktet; statiske sider har ingen). */
 export const TEST_ROUTES = RUTE_LISTE.filter((r) => r.testId !== null);
 
+/**
+ * Annonse-plasseringer ([BYGG] FASE 1, todo #3722) — beslutning 11 (preplan,
+ * GODKJENT): reklamen finansierer siden — plassert paa LANDINGSIDENE, aldri i
+ * testflyten, aldri mellom siste spoersmaal og resultat, aldri over folden som
+ * foerste element, ingen popup/interstitial/sticky.
+ *
+ * FASE 1 (denne plasseringen): kun de statiske landingsrutene home/play/about
+ * — to enheter per rute: in_feed mellom seksjonene (fluid, full kolonnebredde)
+ * + leaderboard nederst (siste slot foer footer). privacy faar INGEN annonse
+ * (annonse rett ved personvernteksten bryter aarepen forventning). Test-rutene
+ * (persona/evne/rel) er UTENFOR hele denne plasseringen: resultat-omraadet
+ * (evne-result-after / result-under, mock 336x280 + 320x50) er todo #3723 —
+ * adSlots() kaster hardt dersom noen proever aa plassere der.
+ *
+ * { format } er en beslutning-11-format-id (app/ads.js AD_FORMATS);
+ * { slot } er plasseringsnoekkel som emitres som data-ba-slot (kontrakt for
+ * senere aktivering). renderAd kalles i build.js — layout-slot-ene forblir
+ * plattformneutrale deskriptorer ({ kind: 'ad', format, slot }).
+ */
+const AD_PLACEMENTS = {
+  home: [
+    { format: 'in_feed', slot: 'home-after-cards' },
+    { format: 'leaderboard', slot: 'home-bottom' },
+  ],
+  play: [
+    { format: 'in_feed', slot: 'play-intro-after' },
+    { format: 'leaderboard', slot: 'play-bottom' },
+  ],
+  about: [
+    { format: 'in_feed', slot: 'about-intro-after' },
+    { format: 'leaderboard', slot: 'about-bottom' },
+  ],
+};
+
+/**
+ * Plasseringsliste for en rute — kaster paa test-ruter og ukjente ruter
+ * (beslutning 11-vakt: ingen annonser i testflyten, aldri).
+ */
+export function adSlots(route) {
+  if (TEST_ROUTES.some((r) => r.route === route)) {
+    throw new Error(`pages-data: annonse-plassering er nektet paa test-rute "${route}" (beslutning 11: testflyten er alltid annonsesfri)`);
+  }
+  const slots = AD_PLACEMENTS[route];
+  if (!slots) {
+    throw new Error(`pages-data: ukjent annonse-rute "${route}" (kjent: ${Object.keys(AD_PLACEMENTS).join(', ')})`);
+  }
+  return slots.map((s) => ({ kind: 'ad', ...s }));
+}
+
 /** Hjem-kortene: title/desc resolver per språk, href er locale-klar rute. */
 export function homeCards() {
   return [
@@ -53,10 +102,12 @@ export function layout(route, locale, t) {
       { kind: 'node', tag: 'p', cls: 'mt-3 text-base leading-relaxed text-gray-600 sm:text-lg', text: t('page.home.intro') },
       /* kortene + badges legges til i build.js fra CARD_FELT/innholdet over */
       { kind: 'cards', badgeKey: 'page.home.badge.open' },
+      adSlots('home')[0], /* in_feed: mellom kortseksjonen og metode/begrensninger */
       { kind: 'node', tag: 'p', cls: 'mt-6 text-sm', parts: [
         { text: t('page.home.methodLink'), tag: 'a', cls: 'font-semibold underline', style: 'color:var(--ba-accent)', href: link('about') },
       ] },
       { kind: 'node', tag: 'p', cls: 'mt-10 text-xs leading-relaxed text-gray-500', text: t('page.home.disclaimer') },
+      adSlots('home')[1], /* leaderboard: nederst, siste slot foer footer */
     ];
   }
 
@@ -121,6 +172,7 @@ export function layout(route, locale, t) {
       { kind: 'node', tag: 'h1', cls: 'text-3xl font-extrabold tracking-tight', text: t('page.play.h1') },
       { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-500', text: t('page.play.intro') },
       { kind: 'cards' },
+      ...adSlots('play'),
     ];
   }
 
@@ -152,6 +204,7 @@ export function layout(route, locale, t) {
       { kind: 'node', tag: 'h2', cls: 'mt-8 text-xl font-bold', text: t('page.about.h.privacy') },
       { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.about.p.privacy') },
       { kind: 'node', tag: 'p', cls: 'mt-8 text-xs leading-relaxed text-gray-500', text: t('page.about.tail') },
+      ...adSlots('about'),
     ];
   }
 

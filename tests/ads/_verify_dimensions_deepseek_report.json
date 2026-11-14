@@ -190,25 +190,180 @@
       "detail": "in-feed must stay fluid"
     },
     {
-      "name": "E1.build-not-importing-ads-yet",
+      "name": "E1.build-imports-ads-render-only",
       "pass": true,
-      "detail": "placement is #3722"
+      "detail": "renderAd-import, ingen aktivering"
     },
     {
-      "name": "E2.no-ad-markup-in-out-tree",
+      "name": "E2.ads-only-on-landing-routes",
       "pass": true,
-      "detail": ""
+      "detail": "out/en/about/index.html, out/en/index.html, out/en/play/index.html, out/index.html, out/om-testene/index.html, out/play/index.html"
     },
     {
-      "name": "E3.no-sticky-for-ads-today",
+      "name": "E3.ads-css-no-sticky-fixed",
       "pass": true,
-      "detail": "336x280 result / 320x50 mobile placement CSS arrives with #3722"
+      "detail": "ingen sticky/fixed; CSS-leveranse med #3722"
+    },
+    {
+      "name": "F1.out/index.html.exactly-2-ads-in-order",
+      "pass": true,
+      "detail": "home-after-cards,home-bottom"
+    },
+    {
+      "name": "F2.out/index.html.in-feed-then-leaderboard",
+      "pass": true,
+      "detail": "fluid,728x90"
+    },
+    {
+      "name": "F3.out/index.html.both-mock-marked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F4.out/index.html.not-above-fold-after-intro-before-footer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F5.out/index.html.no-external-resources",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F1.out/play/index.html.exactly-2-ads-in-order",
+      "pass": true,
+      "detail": "play-intro-after,play-bottom"
+    },
+    {
+      "name": "F2.out/play/index.html.in-feed-then-leaderboard",
+      "pass": true,
+      "detail": "fluid,728x90"
+    },
+    {
+      "name": "F3.out/play/index.html.both-mock-marked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F4.out/play/index.html.not-above-fold-after-intro-before-footer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F5.out/play/index.html.no-external-resources",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F1.out/om-testene/index.html.exactly-2-ads-in-order",
+      "pass": true,
+      "detail": "about-intro-after,about-bottom"
+    },
+    {
+      "name": "F2.out/om-testene/index.html.in-feed-then-leaderboard",
+      "pass": true,
+      "detail": "fluid,728x90"
+    },
+    {
+      "name": "F3.out/om-testene/index.html.both-mock-marked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F4.out/om-testene/index.html.not-above-fold-after-intro-before-footer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F5.out/om-testene/index.html.no-external-resources",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F1.out/en/index.html.exactly-2-ads-in-order",
+      "pass": true,
+      "detail": "home-after-cards,home-bottom"
+    },
+    {
+      "name": "F2.out/en/index.html.in-feed-then-leaderboard",
+      "pass": true,
+      "detail": "fluid,728x90"
+    },
+    {
+      "name": "F3.out/en/index.html.both-mock-marked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F4.out/en/index.html.not-above-fold-after-intro-before-footer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F5.out/en/index.html.no-external-resources",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F1.out/en/play/index.html.exactly-2-ads-in-order",
+      "pass": true,
+      "detail": "play-intro-after,play-bottom"
+    },
+    {
+      "name": "F2.out/en/play/index.html.in-feed-then-leaderboard",
+      "pass": true,
+      "detail": "fluid,728x90"
+    },
+    {
+      "name": "F3.out/en/play/index.html.both-mock-marked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F4.out/en/play/index.html.not-above-fold-after-intro-before-footer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F5.out/en/play/index.html.no-external-resources",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F1.out/en/about/index.html.exactly-2-ads-in-order",
+      "pass": true,
+      "detail": "about-intro-after,about-bottom"
+    },
+    {
+      "name": "F2.out/en/about/index.html.in-feed-then-leaderboard",
+      "pass": true,
+      "detail": "fluid,728x90"
+    },
+    {
+      "name": "F3.out/en/about/index.html.both-mock-marked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F4.out/en/about/index.html.not-above-fold-after-intro-before-footer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F5.out/en/about/index.html.no-external-resources",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F6.no-sticky-or-fixed-css-on-ba-ad",
+      "pass": true,
+      "detail": null
     }
   ],
-  "pass": 36,
+  "pass": 67,
   "fail": 0,
   "failures": [],
-  "root": "F:\\maneit\\prosjekter\\filip-webside-prosjekter\\brainarea",
+  "root": "/mnt/f/maneit/prosjekter/filip-webside-prosjekter/brainarea",
   "sources": [
     "app/ads.js",
     "i18n/en.js",

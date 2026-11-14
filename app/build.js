@@ -15,7 +15,8 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getT } from '../i18n/index.js';
 import { BASE, canonicalUrl, langSwitchHref, pathToLocale, localizedPath } from './locale.js';
-import { RUTE_LISTE, layout, homeCards, langSwitcher } from './pages-data.js';
+import { RUTE_LISTE, layout, homeCards, langSwitcher, adSlots } from './pages-data.js';
+import { renderAd } from './ads.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO = resolve(__dirname, '..');
@@ -35,6 +36,7 @@ function renderSlots(slots, ctx) {
     if (slot.kind === 'node') html.push(renderNode(slot, 4, ctx));
     else if (slot.kind === 'cards') html.push(renderCards(slot, ctx));
     else if (slot.kind === 'test-mount') html.push(renderTestMount(slot, ctx));
+    else if (slot.kind === 'ad') html.push(renderAd({ format: slot.format, slot: slot.slot, t: ctx.t }));
     else throw new Error('build: ukjent slot-kind ' + slot.kind);
   }
   return html.join('\n');

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "adhd-screening",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "no",
+    "en",
+    "de"
+  ],
+  "scoring": {
+    "type": "threshold",
+    "bands": [
+      {
+        "id": "low",
+        "minScore": 0,
+        "label": "Lav"
+      },
+      {
+        "id": "mid",
+        "minScore": 4,
+        "label": "Moderat"
+      },
+      {
+        "id": "top",
+        "minScore": 6,
+        "label": "Høy",
+        "guidance": "Vurder å ta den dype ADHD-screeningen."
+      }
+    ],
+    "disclaimer": "screening.not-diagnosis"
+  },
+  "dimensions": [
+    {
+      "id": "adhd-total",
+      "label": "ADHD-sumskår",
+      "labelLanguage": "no",
+      "description": "Sum av vektede itemscores."
+    }
+  ],
+  "items": [
+    {
+      "id": "ah-01",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg mister ofte tråden i samtaler.",
+      "options": [
+        {
+          "label": "Aldri",
+          "value": 1
+        },
+        {
+          "label": "Sjelden",
+          "value": 2
+        },
+        {
+          "label": "Av og til",
+          "value": 3
+        },
+        {
+          "label": "Ofte",
+          "value": 4
+        },
+        {
+          "label": "Veldig ofte",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd-total",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ah-02",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg starter oppgaver like før fristen.",
+      "options": [
+        {
+          "label": "Aldri",
+          "value": 1
+        },
+        {
+          "label": "Sjelden",
+          "value": 2
+        },
+        {
+          "label": "Av og til",
+          "value": 3
+        },
+        {
+          "label": "Ofte",
+          "value": 4
+        },
+        {
+          "label": "Veldig ofte",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd-total",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

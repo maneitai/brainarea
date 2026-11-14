@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "matrix-g-2",
+  "type": "test-definition",
+  "family": "evner",
+  "languages": [
+    "no",
+    "en"
+  ],
+  "scoring": {
+    "type": "g-score",
+    "metric": "z100",
+    "ci95": true,
+    "maxItems": 25
+  },
+  "dimensions": [
+    {
+      "id": "g",
+      "label": "g-skår",
+      "labelLanguage": "no",
+      "description": "Generell evne, rapportert som IQ-stil-metrikk."
+    }
+  ],
+  "items": [
+    {
+      "id": "mx-0001",
+      "kind": "ability",
+      "pool": "matrix4",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilken figur fullfører mønsteret?",
+          "options": [
+            {
+              "label": "A"
+            },
+            {
+              "label": "B"
+            },
+            {
+              "label": "C"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.5
+        },
+        {
+          "lang": "en",
+          "prompt": "Which figure completes the pattern?",
+          "options": [
+            {
+              "label": "A"
+            },
+            {
+              "label": "B"
+            },
+            {
+              "label": "C"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.5
+        }
+      ]
+    }
+  ]
+}

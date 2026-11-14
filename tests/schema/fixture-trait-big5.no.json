@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "id": "big5-matrix-50",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "no",
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "openness",
+        "weight": 1
+      },
+      {
+        "id": "conscientiousness",
+        "weight": 1
+      },
+      {
+        "id": "extraversion",
+        "weight": 1
+      },
+      {
+        "id": "agreeableness",
+        "weight": 1
+      },
+      {
+        "id": "neuroticism",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "openness",
+      "label": "Åpenhet",
+      "labelLanguage": "no",
+      "description": "Utforskende nysgjerrighet og fantasi."
+    },
+    {
+      "id": "conscientiousness",
+      "label": "Planlagthet",
+      "labelLanguage": "no",
+      "description": "Organisering, målretting og selvdisiplin."
+    },
+    {
+      "id": "extraversion",
+      "label": "Ekstroversjon",
+      "labelLanguage": "no",
+      "description": "Sosial energi og aktivitetsnivå."
+    },
+    {
+      "id": "agreeableness",
+      "label": "Medmenneskelighet",
+      "labelLanguage": "no",
+      "description": "Tillit, omsorg og samarbeid."
+    },
+    {
+      "id": "neuroticism",
+      "label": "Nevrotisisme",
+      "labelLanguage": "no",
+      "description": "Tendens til negative følelser."
+    }
+  ],
+  "items": [
+    {
+      "id": "bo-openness-01",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg utforsker ofte nye ideer bare for opplevelsen.",
+      "options": [
+        {
+          "label": "Aldri",
+          "value": 1
+        },
+        {
+          "label": "Sjelden",
+          "value": 2
+        },
+        {
+          "label": "Av og til",
+          "value": 3
+        },
+        {
+          "label": "Ofte",
+          "value": 4
+        },
+        {
+          "label": "Veldig ofte",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "bo-openness-02",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg foretrekker det kjente fremfor det ukjente.",
+      "options": [
+        {
+          "label": "Aldri",
+          "value": 1
+        },
+        {
+          "label": "Sjelden",
+          "value": 2
+        },
+        {
+          "label": "Av og til",
+          "value": 3
+        },
+        {
+          "label": "Ofte",
+          "value": 4
+        },
+        {
+          "label": "Veldig ofte",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "bc-order-01",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg fullfører oppgaver i god tid før fristen.",
+      "options": [
+        {
+          "label": "Aldri",
+          "value": 1
+        },
+        {
+          "label": "Sjelden",
+          "value": 2
+        },
+        {
+          "label": "Av og til",
+          "value": 3
+        },
+        {
+          "label": "Ofte",
+          "value": 4
+        },
+        {
+          "label": "Veldig ofte",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conscientiousness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "bc-order-02",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Kontoret mitt er ofte uorganisert.",
+      "options": [
+        {
+          "label": "Aldri",
+          "value": 1
+        },
+        {
+          "label": "Sjelden",
+          "value": 2
+        },
+        {
+          "label": "Av og til",
+          "value": 3
+        },
+        {
+          "label": "Ofte",
+          "value": 4
+        },
+        {
+          "label": "Veldig ofte",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conscientiousness",
+          "sign": -1
+        }
+      ]
+    }
+  ]
+}

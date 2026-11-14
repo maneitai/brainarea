@@ -1,0 +1,63 @@
+{
+  "step": "JSON-schema for test-definisjon (v1)",
+  "schemaPath": "tests/schema/test-definition.schema.json",
+  "fixtures": [
+    "fixture-trait-big5.no.json",
+    "fixture-threshold-adhd.no.json",
+    "fixture-gscore-matrix.no.json"
+  ],
+  "negativeFixtures": [
+    "missing scoring",
+    "bad scoring type",
+    "additional top-level property",
+    "single band",
+    "missing disclaimer",
+    "correctIndex > 7",
+    "bad metric",
+    "empty items",
+    "likert missing text",
+    "bad language code",
+    "bad item kind"
+  ],
+  "suiteSize": 14,
+  "suiteResult": "ALL PASS",
+  "suiteLog": [
+    "PASS trait golden (errors=0)",
+    "PASS threshold golden (errors=0)",
+    "PASS ability golden (errors=0)",
+    "PASS NEG missing scoring (errors=1)",
+    "PASS NEG bad scoring type (errors=1)",
+    "PASS NEG addl prop top (errors=1)",
+    "PASS NEG 1 band (errors=1)",
+    "PASS NEG missing disclaimer (errors=1)",
+    "PASS NEG correctIndex 0..7 (errors=1)",
+    "PASS NEG bad metric (errors=1)",
+    "PASS NEG empty items (errors=1)",
+    "PASS NEG likert missing text (errors=1)",
+    "PASS NEG bad lang code (errors=1)",
+    "PASS NEG bad kind (errors=2)"
+  ],
+  "schemaVsEngineChecks": {
+    "schema-expressible": [
+      "disclaimer required for threshold scoring",
+      "correctIndex bounded 0..7",
+      "option counts 2-7 (likert) / 2-8 (ability)",
+      "band minItems 2",
+      "items minItems 1",
+      "language-code patterns",
+      "oneOf scoring type",
+      "item kind oneOf + per-kind required fields"
+    ],
+    "engine load-time (documented in $defs.item.description; not expressible in JSON Schema)": [
+      "scale ids cross-referenced against dimensions",
+      "item/variant lang member of languages",
+      "option counts match across variants of same item",
+      "every scale has >=1 reverse-keyed item",
+      "item ids unique per file",
+      "pool refs resolve",
+      "correctIndex < len(options)"
+    ]
+  },
+  "builtBy": "worker - todo leaf 'JSON-schema for test-definisjon'",
+  "date": "2026-11-14"
+}

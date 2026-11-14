@@ -1,0 +1,438 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://brainarea.example/tests/schema/test-definition.schema.json",
+  "title": "Brainarea Test Definition v1",
+  "description": "One test (screening, personality, ability) as declarative data. The static engine renders any test purely from this file; adding a test never means touching engine code. Language rules: languages[] lists codes with COMPLETE content (order = fallback order); per-language display strings for dimension labels live in i18n keyed by dimension id; item text is inline per item (likert/order) or per variant (ability).",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "type",
+    "family",
+    "languages",
+    "scoring",
+    "dimensions",
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "description": "Schema version this document conforms to.",
+      "const": 1,
+      "type": "integer"
+    },
+    "id": {
+      "description": "Unique, language-neutral test id. Used in URLs, sharing payloads, analytics keys.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 60
+    },
+    "type": {
+      "description": "Document family discriminator.",
+      "const": "test-definition"
+    },
+    "family": {
+      "description": "Catalog track. v1 tracks: persona (personality), evner (ability/IQ), relations (relationship), pool (shared item pools).",
+      "enum": [
+        "persona",
+        "evner",
+        "relations",
+        "pool"
+      ]
+    },
+    "languages": {
+      "description": "Language codes with complete content for this test. Engine picks best match for user language, falls back to first entry.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+      }
+    },
+    "scoring": {
+      "description": "Scoring configuration, discriminated by scoring.type. trait=personality scales (continuous, percentile vs norms). threshold=screening bands with referral guidance (ADHD/autism/triage). g-score=ability tests (IQ-style metric, mean 100 SD 15, CI mandatory).",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/traitScoring"
+        },
+        {
+          "$ref": "#/$defs/thresholdScoring"
+        },
+        {
+          "$ref": "#/$defs/gScoreScoring"
+        }
+      ]
+    },
+    "dimensions": {
+      "description": "Dimension vocabulary. Every scale/trait/band id used in scoring and every scales[].id referenced by items MUST be declared here; engine validates the cross-reference at load time.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "labelLanguage",
+          "description"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "label": {
+            "description": "Primary label, anchored to labelLanguage; other languages resolve via i18n keyed by dimension id.",
+            "type": "string",
+            "minLength": 1
+          },
+          "labelLanguage": {
+            "description": "BCP47-style tag of the primary label.",
+            "type": "string",
+            "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+          },
+          "description": {
+            "description": "Short neutral description of what the dimension measures; shown on result pages.",
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "items": {
+      "description": "Full item pool for this test. Engine samples per session (randomization/no-repeat design is engine config, not test data). Reverse-keyed items (scales[].sign=-1) must exist for every scale to limit acquiescence bias; coverage check is a load-time engine validation.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    }
+  },
+  "$defs": {
+    "item": {
+      "description": "One question/task. Kind discriminates: likert (screening/personality), ability (parallel variants with per-variant answer key), order (sequence task, canonical order in data, shuffled at runtime). Engine load-time checks (beyond schema): correctIndex < len(options) per variant; every scale has >=1 reverse-keyed item (acquiescence); scale ids cross-referenced against dimensions; item/variant lang member of languages; option counts match across variants of same item; item ids unique per file; pool refs resolve.",
+      "type": "object",
+      "required": [
+        "id",
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "description": "Item id, unique within this file (engine enforces).",
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "maxLength": 80
+        },
+        "kind": {
+          "enum": [
+            "likert",
+            "ability",
+            "order"
+          ]
+        },
+        "pool": {
+          "description": "Optional shared pool reference. If set, item content lives in /tests/pool/<pool>.<poolItem>.<lang>.json and this record carries only metadata/sampling hints; engine merges content at load time.",
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "lang": {
+          "description": "Language code of inline content. Required for likert/order; must be one of test.languages (engine-validated).",
+          "type": "string",
+          "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+        },
+        "text": {
+          "description": "Likert: question text. One sentence, second person, no double-barrelled phrasing (QC enforces).",
+          "type": "string",
+          "minLength": 8
+        },
+        "options": {
+          "description": "Likert: response options (2-7) with raw values (1..7 typical). Anchor set count must match across languages for the same item.",
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 7,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "value"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "reverse": {
+          "description": "Likert convenience flag: fully reverse-keyed item, equivalent to scales[].sign=-1 for all scales listed. Engine normalizes to the scales representation.",
+          "type": "boolean",
+          "default": false
+        },
+        "variants": {
+          "description": "Ability: parallel variants of the same construct and difficulty; exactly one language per variant; answer key is per variant because surface differs across languages.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "lang",
+              "prompt",
+              "options",
+              "correctIndex",
+              "difficulty"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "lang": {
+                "type": "string",
+                "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+              },
+              "prompt": {
+                "type": "string",
+                "minLength": 1
+              },
+              "options": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 8,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "label"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              },
+              "correctIndex": {
+                "description": "Index into options of the correct answer. Schema enforces 0..7 (options maxItems 8); the REAL bound (correctIndex < len(options)) is an engine load-time check, listed above.",
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 7
+              },
+              "difficulty": {
+                "description": "IRT b (difficulty), placeholder value until calibration data exists. Normering replaces placeholders with measured values.",
+                "type": "number",
+                "minimum": -4,
+                "maximum": 4
+              }
+            }
+          }
+        },
+        "prompt": {
+          "description": "Order: task prompt.",
+          "type": "string",
+          "minLength": 1
+        },
+        "elements": {
+          "description": "Order: task elements in CORRECT canonical order; engine shuffles for presentation.",
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 12,
+          "items": {
+            "type": "string"
+          }
+        },
+        "scales": {
+          "description": "Which dimensions this item contributes to, with sign. sign=1: agreement/correct answer indicates more of the scale; sign=-1: reverse-keyed (or use reverse flag on Likert).",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "sign"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "sign": {
+                "enum": [
+                  1,
+                  -1
+                ]
+              }
+            }
+          }
+        }
+      },
+      "oneOf": [
+        {
+          "properties": {
+            "kind": {
+              "const": "likert"
+            }
+          },
+          "required": [
+            "lang",
+            "text",
+            "options",
+            "scales"
+          ]
+        },
+        {
+          "properties": {
+            "kind": {
+              "const": "ability"
+            }
+          },
+          "required": [
+            "variants",
+            "scales"
+          ]
+        },
+        {
+          "properties": {
+            "kind": {
+              "const": "order"
+            }
+          },
+          "required": [
+            "lang",
+            "prompt",
+            "elements",
+            "scales"
+          ]
+        }
+      ]
+    },
+    "traitScoring": {
+      "type": "object",
+      "required": [
+        "type",
+        "traits"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "trait"
+        },
+        "traits": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "weight": {
+                "description": "Weight in composite/overview reporting; default 1.",
+                "type": "number",
+                "minimum": 0,
+                "default": 1
+              }
+            }
+          }
+        },
+        "norms": {
+          "description": "Norm status: none=raw scores only (honest display), collecting=endpoint data gathering in progress, published=norms table attached. Preplan forbids showing percentiles based on norms that do not exist.",
+          "enum": [
+            "none",
+            "collecting",
+            "published"
+          ],
+          "default": "none"
+        },
+        "normsFile": {
+          "description": "Path to norms table JSON. Required when norms=published.",
+          "type": "string"
+        }
+      }
+    },
+    "thresholdScoring": {
+      "type": "object",
+      "required": [
+        "type",
+        "bands",
+        "disclaimer"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "threshold"
+        },
+        "bands": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "minScore",
+              "label"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "minScore": {
+                "description": "Inclusive lower bound of the band in weighted raw score.",
+                "type": "number"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "guidance": {
+                "description": "Required for top bands of screening tests: concrete next step (e.g. vurder utredning), never a diagnosis.",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimer": {
+          "description": "Fixed disclaimer id rendered verbatim on the result page. REQUIRED: every screening test declares which disclaimer it uses; engine refuses to render result pages without it.",
+          "type": "string"
+        }
+      }
+    },
+    "gScoreScoring": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "g-score"
+        },
+        "metric": {
+          "description": "Ability scores reported as IQ-style metric, mean 100, SD 15.",
+          "enum": [
+            "z100"
+          ],
+          "default": "z100"
+        },
+        "ci95": {
+          "description": "Report 95 pct confidence interval. Mandatory for ability scores; retest-honesty requires CI display, not point estimate alone.",
+          "type": "boolean"
+        },
+        "maxItems": {
+          "description": "Items offered per session from the pool (sampled without repeats across sessions until pool near-exhaustion).",
+          "type": "integer",
+          "minimum": 10
+        }
+      }
+    }
+  }
+}

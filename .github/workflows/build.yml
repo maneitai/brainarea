@@ -6,15 +6,18 @@ on:
 
 jobs:
   build:
-    # KJoeres bare naar Next.js-prosjektet finnes (fase-gjenoppbygging).
-    if: ${{ hashFiles('package.json') != '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
+      - name: Bygg Next.js-prosjektet hvis det finnes (tomt canvas = hopp over)
+        run: |
+          if [ -f package.json ]; then
+            npm ci
+            npm test
+            npm run build
+          else
+            echo "Tomt canvas: ingen package.json ennaa, bygg hoppes over."
+          fi

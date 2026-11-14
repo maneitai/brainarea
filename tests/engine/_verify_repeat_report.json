@@ -1,0 +1,30 @@
+﻿{
+  "step": "[VERIFISER] Kjoer samme test to ganger: bekreft ulikt trekk, identisk skaar. Rapporter maaltall.",
+  "verifiserer": "tests/engine/randomize.js v1.0.0 + render.js v0.4.0 (sampling, no-repeat, seed+teller, gjenopptak)",
+  "metode": "Uavhengig verifikasjonsskjript (_verify_repeat.mjs) skrevet for dette steget - lesner ikke paa selftest.mjs sin harness. 25 sjekker i 6 eksperimentblokker (X1-X6), ellers reprodusert produsentens egen selftest (72/72 PASS, via WSL - Windows-sti-haandtering gaar via WSL/node, ikke powershell).",
+  "suite": { "total": 25, "pass": 25, "fail": 0 },
+  "produsentSelftestReprodusert": { "total": 72, "pass": 72, "metode": "node selftest.mjs i WSL Ubuntu (Windows-rotsti-bug i selftest.mjs rotberegning - brukes ikke paa Windows; rapportert til hovedchat)" },
+  "maaltall": {
+    "X3_noRepeat_autoSeed": "60-item pool, 25 per oekt: oekt A vs B overlap=0; usedIds etter 2 oekter=50; reset-oekt C gaar tilbake til hele poolen (overlap(C,A)=13) og nullstiller bokfoering (used=25 etterpå)",
+    "X3_rawScores_autoSeed": "scores A,B,C = 9,8,11 (uloik trek fra samme pool - forventet atrosum-varians)",
+    "X4_identiskSeedReplay": "samme eksplisitte seed 3 loep: identisk trekk, identiske visningsstokker, identiske svar, EKSAKT identisk skaar (delta=0, maalt 4/4/4)",
+    "X4_ulikSeed": "ulik seed: ulikt trekk, maalt skaar 4 vs 10 (raw)",
+    "X5_traitInvarians": "likert/trait: alla items tas hver oekt (kun orden stokkes) - composite-skaar eksakt identisk tross ulik orden (delta=0, maalt)",
+    "X6_gjenopptak": "samme seed + persistert teller: samme itemIds/idx, neste ugenererte visning bitvis lik en sammenhengende kjoring. Teller ved gjenopptak 61->65 (posisjonsmerke mellom render-kall, IKKE stroemposisjon i seg selv)"
+  },
+  "tolkningKontra Operatoerens krav": {
+    "ulikt trekk": "BEKREFTET: auto-seed gir ulik rekkefoelge/stokk per oekt (X5b trait-orden, X3 overlap=0 paa pool)",
+    "identisk skaar": "bevisst nyansert: trait/likert = EKSAKT identisk skaar tross ulik orden (engine-kontrakt, delta=0). g-score pool = raw sums varierer mellom tilfeldige trek (9,8,11) - margin-stabilitet for evne-pooler er IKKE engine-ansvar alene: krever skoringstegets normals/vektings-lag (z100-metrikk, difficulty-vektet skoring) som legger senere paa brettet. Engine-leddet (determinisme, kontrakt, no-repeat, gjenopptak) er 100% verifisert."
+  },
+  "honestGaps": [
+    "g-score margin-stabilitet paa RAW sums er maalt til aa VARIERE (9,8,11 paa 25 av 60; 4 vs 10 paa replay-vs-ulik-seed) - dette er egenskapen skoringstegets normalisering maa fange; verifiseres foerst naar scoring-modulen ligger",
+    "difficulty-feltet i variants brukes ikke i naavaerende scoring-paths (scoring-modul ligger ikke ennaa)",
+    "visuell layout er umulig aa verifisere headless (stub DOM)"
+  ],
+  "artefakter": [
+    "tests/engine/_verify_repeat.mjs (25- sjekker, kan reise kjoeres)",
+    "tests/engine/_verify_repeat_report.json (denne rapporten)"
+  ],
+  "date": "2026-11-14",
+  "utfortAv": "todo-run worker (TR-55EB6FFDB1B9, steg 10-verifikator); modellfamilie ikke deklinert i rapporten - sjekk chat-run metadata for akkurat det"
+}

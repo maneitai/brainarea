@@ -1,0 +1,221 @@
+{
+  "todo": 3721,
+  "title": "[VERIFISER DeepSeek] Dimensjonsmaal av ads-komponenten mot beslutning 11",
+  "decision11": {
+    "fixed": {
+      "medium_rectangle": [
+        300,
+        250
+      ],
+      "large_rectangle": [
+        336,
+        280
+      ],
+      "leaderboard": [
+        728,
+        90
+      ],
+      "mobile_banner": [
+        320,
+        50
+      ]
+    },
+    "fluid": "in_feed"
+  },
+  "verdict": "pass",
+  "checks": [
+    {
+      "name": "A1.formats-count-is-5",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "A2.format-id-set-exact",
+      "pass": true,
+      "detail": "in_feed,large_rectangle,leaderboard,medium_rectangle,mobile_banner"
+    },
+    {
+      "name": "A3.medium_rectangle.dimensions-300x250",
+      "pass": true,
+      "detail": "exact"
+    },
+    {
+      "name": "A3.large_rectangle.dimensions-336x280",
+      "pass": true,
+      "detail": "exact"
+    },
+    {
+      "name": "A3.leaderboard.dimensions-728x90",
+      "pass": true,
+      "detail": "exact"
+    },
+    {
+      "name": "A3.mobile_banner.dimensions-320x50",
+      "pass": true,
+      "detail": "exact"
+    },
+    {
+      "name": "A3.in_feed.fluid",
+      "pass": true,
+      "detail": "w=null, fluid=true"
+    },
+    {
+      "name": "A4.in_feed.banded-height-130",
+      "pass": true,
+      "detail": "h=130"
+    },
+    {
+      "name": "A5.in_feed.spec-in-feed",
+      "pass": true,
+      "detail": "in-feed"
+    },
+    {
+      "name": "A6.no-stray-size-literals",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "B1.renderAd-found",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "B2.fixed-style-from-wh",
+      "pass": true,
+      "detail": "width/height emitted from w/h data"
+    },
+    {
+      "name": "B3.fluid-box-height-130",
+      "pass": true,
+      "detail": "in-feed banded height"
+    },
+    {
+      "name": "B4.data-ba-format-split",
+      "pass": true,
+      "detail": "data-ba-format=fluid | WxH"
+    },
+    {
+      "name": "B5.no-script-iframe-img",
+      "pass": true,
+      "detail": "mock renders pure static markup"
+    },
+    {
+      "name": "C1.mock-data-flag",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "C2.aria-label",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "C3.mock-badge-span",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "C4.disclaimer-span",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D1.en-8-ad-keys",
+      "pass": true,
+      "detail": "disclaimer,label,mock.in_feed,mock.large_rectangle,mock.leaderboard,mock.medium_rectangle,mock.mobile_banner,mockBadge"
+    },
+    {
+      "name": "D2.key-parity-en-no",
+      "pass": true,
+      "detail": "8 vs 8"
+    },
+    {
+      "name": "D3.EN.medium_rectangle.dim-text",
+      "pass": true,
+      "detail": "expected 300x250 in page.ad.mock.medium_rectangle"
+    },
+    {
+      "name": "D3.EN.large_rectangle.dim-text",
+      "pass": true,
+      "detail": "expected 336x280 in page.ad.mock.large_rectangle"
+    },
+    {
+      "name": "D3.EN.leaderboard.dim-text",
+      "pass": true,
+      "detail": "expected 728x90 in page.ad.mock.leaderboard"
+    },
+    {
+      "name": "D3.EN.mobile_banner.dim-text",
+      "pass": true,
+      "detail": "expected 320x50 in page.ad.mock.mobile_banner"
+    },
+    {
+      "name": "D4.EN.in-feed-fluid-text",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D5.EN.in-feed-no-fixed-dims",
+      "pass": true,
+      "detail": "in-feed must stay fluid"
+    },
+    {
+      "name": "D3.NO.medium_rectangle.dim-text",
+      "pass": true,
+      "detail": "expected 300x250 in page.ad.mock.medium_rectangle"
+    },
+    {
+      "name": "D3.NO.large_rectangle.dim-text",
+      "pass": true,
+      "detail": "expected 336x280 in page.ad.mock.large_rectangle"
+    },
+    {
+      "name": "D3.NO.leaderboard.dim-text",
+      "pass": true,
+      "detail": "expected 728x90 in page.ad.mock.leaderboard"
+    },
+    {
+      "name": "D3.NO.mobile_banner.dim-text",
+      "pass": true,
+      "detail": "expected 320x50 in page.ad.mock.mobile_banner"
+    },
+    {
+      "name": "D4.NO.in-feed-fluid-text",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D5.NO.in-feed-no-fixed-dims",
+      "pass": true,
+      "detail": "in-feed must stay fluid"
+    },
+    {
+      "name": "E1.build-not-importing-ads-yet",
+      "pass": true,
+      "detail": "placement is #3722"
+    },
+    {
+      "name": "E2.no-ad-markup-in-out-tree",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "E3.no-sticky-for-ads-today",
+      "pass": true,
+      "detail": "336x280 result / 320x50 mobile placement CSS arrives with #3722"
+    }
+  ],
+  "pass": 36,
+  "fail": 0,
+  "failures": [],
+  "root": "F:\\maneit\\prosjekter\\filip-webside-prosjekter\\brainarea",
+  "sources": [
+    "app/ads.js",
+    "i18n/en.js",
+    "i18n/no.js",
+    "app/build.js",
+    "out/ (scan)",
+    "app/site.css"
+  ],
+  "method": "source-text regex measurement (no import of app/ads.js), independent of #3720 selftest"
+}

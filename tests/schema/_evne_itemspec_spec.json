@@ -1,0 +1,191 @@
+{
+  "specVersion": 1,
+  "id": "evne-itemspec-v1",
+  "type": "itemspec-evner",
+  "status": "PROPOSED",
+  "statusMeaning": "Blir GJELDENDE etter samlet faseverifikasjon (#3813). Endringer etter det krever specVersion 2, dokumentert append-only.",
+  "date": "2026-11-15",
+  "boardLeaf": "#3736 [3-VEIS] FASE 2: Itemspec evner: 5–6 temaer, vanskelighetsgrad-stige",
+  "formalStatus": "Dette er en innholdsleveranse til [3-VEIS]-steget, ikke en 3-veis-kjede i seg selv. Anonym kritikk og syntese skjer enten i #3737-verifikasjonen eller i en egen 3-veis-kjede før #3813 — avgjøres av operatøren.",
+  "boardRefs": {
+    "retestVerify": "#3737 (kriteriet er pre-verifisert i denne spesifikasjonen: pool >= 5x trekk per tema)",
+    "poolBatches": ["#3748 (tema 1–2)", "#3749 (copyright-kontroll, batch 1)", "#3750 (tema 3–4)", "#3751 (batch 2)", "#3752 (tema 5–6)", "#3753 (bekrefter 5–6 temaer x 50 og total omfang)"],
+    "resultText": ["#3782 (resultattekst evner — estimat-språk, «beslutning 14»)", "#3783 (verifiserer)"],
+    "finalVerify": "#3813"
+  },
+  "goal": "Feste innholds- og datakontrakten for evnetest-sporet (family 'evner', scoring 'g-score') slik at pool-batchene #3748–#3752 kan autorere items uten å gjette: temaer, poolstørrelser, trekk, vanskelighetsstige, språkvarianter, id-mønster og alle motorrelevante felt er fastlagt her og sjekket mot test-definition.schema.json v1, scoring.js v1.0.0 og render.js v0.3.0.",
+  "planSources": [
+    "DOC-373E4AFEEB «Brainarea — fullverdig bygge- og lanseringsplan», fase 4 (deltester, pools større enn trekk, uttrekksregler, scoring NV-merket, retestbeskyttelse, IQ-disclaimer)",
+    "tests/schema/test-definition.schema.json v1 (kind 'ability' krever variants med prompt/options/correctIndex/difficulty; difficulty er IRT b i [-4, 4], dokumentert som placeholder til kalibrering)",
+    "tests/engine/scoring.js v1.0.0 (g-score: theta 1PL MLE over besvarte kind:'ability'-items, ci95 på theta-metrikken, iqScale er null og notNormed er true til normdata fra normerings-endpointen; note id note.gscore.not-normed)",
+    "tests/engine/render.js v0.3.0 (sesjonstimer via opts.timeBudgetSeconds; ability-alternativer shuffles i visning, svaret lagres som ORIGINAL option-indeks; sampling ekskluderer used-ids til 'near-exhaustion')",
+    "functions/normering.js v1.0.0 (anonym POST; AGE_BANDS/GENDERS-hvitelisten; lagring bare hvis NORMERING_KV-binding finnes — github.io gir stored:false i dag; skal senere levere populasjons-{mean, sd} for thetaToIq)",
+    "todo #3724 (normerings-endpoint, bygget, ikke deployet) og fase 10 i planen (kalibreringsprogram)",
+    "Søster-stegets konvensjoner (DOC-27AC907340): én fil per språk, alle items inline, id-mønster med 4-sifret løpenummer — her uten lisensforbehold, fordi alt innhold er originalt"
+  ],
+  "themeCountDecision": {
+    "value": 6,
+    "basis": "Brett-leddet sier selv «5–6 temaer». Planens fase 4 hadde 5 deltester. Tema 6 (formell deduksjon) legges til fordi det er tekstnaturlig i en tekstbærer, konstrukt-atskilt fra verbal resonnering (T3 er leksikalskt/kunnskapsbåren slutning; T6 er språkuavhengig formell logikk), og det gir rom mot retest-utmatting. Totalt trekk holdes på 44, innen planens «ca. 40 oppgaver, 20–30 minutter»."
+  },
+  "themes": [
+    {
+      "id": "T1",
+      "name": "Abstrakt matriselogikk",
+      "poolId": "evne-t1-matrise",
+      "idPrefix": "mx",
+      "poolMin": 50,
+      "draw": 8,
+      "optionsPerItem": 6,
+      "construct": "Mønsteridentifikasjon og regelekstraksjon i 3x3-matrise der siste celle mangler. Regelvokabular v1: rotasjon, refleksjon, progresjon (størrelse/antall), elementfølge, posisjonsskifte og enkle sett-operasjoner. Bærer i v1 er tekst/monospace-symbolmatrise (bokstaver og tallsymboler) — logikken er språkuavhengig, visningen trenger ingen figurer.",
+      "distractors": "«1-rule-off»-design: hver distraktor bryter eksakt ett regelledd. Ingen tilfeldige alternativer, ingen duplikatfasit.",
+      "note": "Figurbasert visning via SVG er FASE 4-utvidelse; se engineGaps.G2. Tekstbæreren er komplett og kan scores som den er."
+    },
+    {
+      "id": "T2",
+      "name": "Numerisk resonnering",
+      "poolId": "evne-t2-numerisk",
+      "idPrefix": "nm",
+      "poolMin": 50,
+      "draw": 8,
+      "optionsPerItem": 5,
+      "construct": "Tallsekvenser (aritmetisk, geometrisk, vekselregler, differenskjeder) og anvendte kortoppgaver (rate, prosent, forhold). Heltallsfasit. Distraktorer: off-by-one, operatornære og «regelbryting på ett ledd».",
+      "distractors": "Konstrukt-relevante feil som fanger regelglipp; ingen negative tall uten konstruktgrunnlag."
+    },
+    {
+      "id": "T3",
+      "name": "Verbal resonnering (analogi + leksikalsk logikk)",
+      "poolId": "evne-t3-verbal",
+      "idPrefix": "vr",
+      "poolMin": 50,
+      "draw": 8,
+      "optionsPerItem": 5,
+      "construct": "Analogipar, odd-one-out, klassifikasjon og ordforrådsnære slutninger. Forfattes SEPARAT per språk (NO og EN er egne items, ikke oversatt fra hverandre) — konstrukt-ekvivalensen dokumenteres per item-blokk i #3750-verifikasjonen.",
+      "distractors": "Semantisk nære alternativer som bryter regelen; ingen «alle/ingen»-utveier."
+    },
+    {
+      "id": "T4",
+      "name": "Romlig/relasjonell tenkning",
+      "poolId": "evne-t4-romlig",
+      "idPrefix": "sp",
+      "poolMin": 40,
+      "draw": 7,
+      "optionsPerItem": 5,
+      "construct": "Tekstbårne romlige puslespill: posisjonssporing (venstre/høyre/foran/bak), rotasjonsbeskrivelser, naborelasjoner og enkle foldingscenarier beskrevet i ord. Konstruktet er mental rotasjon og romlig transformasjon; bæreren er verbal tekst i v1.",
+      "distractors": "Speiling/rotasjonskonfusjoner — samme feilklasse som figurvarianter ville hatt.",
+      "note": "Samme visningsgap som T1 (engineGaps.G2)."
+    },
+    {
+      "id": "T5",
+      "name": "Sekvens og arbeidsminne",
+      "poolId": "evne-t5-sekvens",
+      "idPrefix": "sq",
+      "poolMin": 40,
+      "draw": 7,
+      "optionsPerItem": 5,
+      "construct": "Blandede bokstav-tall-sekvenser med dobbel regel, oppdateringsoppgaver («hva var verdien etter to steg?») og enkel to-lags sporing. Maks to parallelle regler per item i v1: holder konstruktet i arbeidsminne-spread og unngår at lesetid dominerer.",
+      "distractors": "Regeldel-brudd (fanger «fulgte bare regel 1»).",
+      "orderKindNote": "kind:'order' er motorsupported men ekskludert fra v1-sporet: scoring.js sin theta-estimator leser bare kind:'ability', så order-items ville gitt skår-bidrag uten theta-bidrag i samme sesjon. Reservert til ev. scoring v2-beslutning."
+    },
+    {
+      "id": "T6",
+      "name": "Formell deduksjon",
+      "poolId": "evne-t6-deduksjon",
+      "idPrefix": "dl",
+      "poolMin": 40,
+      "draw": 6,
+      "optionsPerItem": 4,
+      "construct": "Syllogismer (alle/noen/ingen), betingede regler (hvis–da) og liten kombinatorikk. Språkuavhengig logikk i kort tekstform (3–4 setninger) for å holde lesebyrden lav og isolere logikken.",
+      "distractors": "Kvantorforvirring (alle<->noen) og omvendt antecedent-konklusjon."
+    }
+  ],
+  "languagePlan": {
+    "languages": ["no", "en"],
+    "rule": "Søster-konvensjonen: én fil per språk (def-<poolId>.no.json / .en.json). Non-verbalt innhold (T1, T2, T4, T5, T6): prompt og valg bæres og oversettes; fasit-formuleringen er identisk per variant. T3 (verbal): forfattet separat per språk.",
+    "future": "DE/FR/NL/PL er strukturpreparert (alt innhold er data). normering.js sin språk-hviteliste utvides da — i dag gir ukjent språk hard 400."
+  },
+  "difficultyScale": {
+    "metric": "IRT 1PL difficulty (b), samme metrikk som schema-feltet difficulty og scoring.js estimateTheta1PL",
+    "bands": [
+      { "id": "L", "bRange": "[-2.0, -0.5>", "labelNo": "lett", "labelEn": "easy" },
+      { "id": "M", "bRange": "[-0.5, 0.5>", "labelNo": "middels", "labelEn": "medium" },
+      { "id": "H", "bRange": "[0.5, 2.0]", "labelNo": "vanskelig", "labelEn": "hard" }
+    ],
+    "contiguity": "Bandene dekker [-2.0, 2.0] kontinuerlig uten overlapp. Motor-vinduet ([-4, 4]) brukes ikke fullt ut: initialforankringen holdes konservativ til fase 10-kalibreringen måler reelle verdier.",
+    "placeholderStatus": "Alle b-verdier i pool-filene er ekspertankere («placeholder» per schema), ikke kalibrerte. Normering #3724 + fase 10 leverer målte verdier.",
+    "poolDistribution": {
+      "targetShares": { "L": 0.34, "M": 0.33, "H": 0.33 },
+      "tolerance": "|andel - mål| <= 0.15 per band per temapool ved batch-slutt; sjekkes i #3749/#3751/#3753."
+    },
+    "sessionQuotas": {
+      "8-trekk": { "L": 3, "M": 3, "H": 2 },
+      "7-trekk": { "L": 2, "M": 3, "H": 2 },
+      "6-trekk": { "L": 2, "M": 2, "H": 2 },
+      "note": "Kvotene er et krav til uttrekkssamplingen (session.samplingRule F2), ikke til poolen. Se engineGaps.G1."
+    }
+  },
+  "session": {
+    "taskCount": 44,
+    "composition": "44 = 8+8+8+7+7+6 (trekk per tema). Plan-anker: «ca. 40 oppgaver, 20–30 minutter» — v1 spesifiserer 44 som eksakt tall, «ca. 40» er planens sone.",
+    "timeBudgetSeconds": 1680,
+    "timeBudgetNote": "28 minutter [A]-forhåndsvalg innen planens 20–30-minuttersvindu, injiseres som opts.timeBudgetSeconds i render-oppsettet. Per-item-tid finnes ikke i motoren (engineGaps.G3), så speed-konstruksjoner er ekskludert fra v1-temaene.",
+    "samplingRules": [
+      "F1: trekk per tema = themes[].draw, totalt 44.",
+      "F2: kvote per vanskelighetsband per tema (sessionQuotas) — krever tema-stratifisert sampler. Dagens sampleSession (render.js) trekker flatt og støtter ikke bandkvoter (engineGaps.G1). Interim: flatt trekk aksepteres for pilot, bandrapport leveres i verifisering.",
+      "F3: ingen samme undertype to ganger på rad — undertype defineres per tema (T1/T4: regelledd-kombinasjon; T2/T5: sekvenstype; T3/T6: logikk-type). Implementeres i samme sampleroppgradering som F2.",
+      "F4: visningsrekkefølgen av svaralternativer shuffles av render v0.3; svaret lagres som original indeks — fasitintegritet er motor-garantert."
+    ]
+  },
+  "scoringContract": {
+    "defShape": "scoring = { type: 'g-score', metric: 'z100', ci95: true, maxItems: 44 }. Hvis FASE 4 velger per-tema def-filer, settes maxItems per tema (8/8/8/7/7/6) — begge deler er schema-kompatible; avgjørelsen tas i sampler-bygget.",
+    "theta": "1PL MLE over besvarte kind:'ability'-items; difficulty hentes fra valgt variant (scoring.js).",
+    "ci95": true,
+    "ci95Note": "CI-95 ligger på theta-metrikken (Wald på 1PL-informasjonen). IQ-skala-CI kan først beregnes når normerings-endpointen har levert populasjons-{mean, sd}.",
+    "iqScale": null,
+    "iqScaleRule": "iqScale forblir null til normdata foreligger (scoring.js setter notNormed:true og note.gscore.not-normed). ALDRI IQ-tall uten normdata. NB: #3724 er bygget, ikke deployet — github.io kjører ikke Functions, så lagring skjer ikke i dag.",
+    "rawFallback": "Alle-riktig/alle-feil gir theta null (MLE er uendelig) — da rapporteres bare raw/correctCount/proportion, aldri en fabrikkert theta (scoring.js v1.0.0 håndterer dette og pusher warning).",
+    "guessing": "Ikke gjettingskorrigert; 1/k-baseline nevnes i resultatteksten (#3782 eier), ikke i skårberegningen.",
+    "reliabilityTarget": "KR-20 >= 0.80 per temapool MÅLT på fase 10-kalibreringsdata. Pool-batchene sikrer konstrukt-homogenitet i forkant via distraktorreglene; alfa-målet er dermed en senere kontroll, ikke et byggekriterium i dag."
+  },
+  "retestDesign": {
+    "boardKriterium": "#3737: «er poolen planlagt stor nok for ulike spørsmål ved gjentak?»",
+    "engineRule": "render.js sampleSession ekskluderer item-ider brukt i tidligere sesjoner (localStorage per test) til pool-size <= draw -> 'near-exhaustion' reset (computeUsedReset).",
+    "verdict": "PRE-VERIFISERT PASS: T1 6.25x, T2 6.25x, T3 6.25x, T4 5.71x, T5 5.71x, T6 6.67x — alle >= 5x trekk. Ved samlet pool-min 270 og trekk 44 er gjenbruk per gjennomføring ca. 16.3%.",
+    "worstCaseFresh": "Etter 4 gjennomføringer uten reset: T1–T3 har 50-32=18 >= 8 igjen; T4/T5 har 40-28=12 >= 7; T6 har 40-24=16 >= 6. Retest-markering og 3-måneders-anbefaling er FASE 3-tekst (#3782)."
+  },
+  "copyrightControl": {
+    "basis": "Egne, originale items — ingen lisensavklaring nødvendig (i kontrast til ASRS/AQ/RAADS-R-sporet). Kloning av beskyttede instrumenter er likevel ekskludert:",
+    "forbidden": [
+      "Raven's Progressive Matrices: ingen reproduksjon av figurmatrisene eller deres regelsekvenser; våre matriser er tekstbårne med eget regelvokabular.",
+      "WAIS/WISC-subtester: ingen items mønstret etter Digit Span, Matrix Reasoning eller Block Design; instrumentnavn nevnes aldri i innhold eller markedsføring.",
+      "Mensa-admissionsoppgaver: ingen kopier fra offentlig delte Mensa-øvinger.",
+      "Kommercielle testbanker: ingen scraping eller kopiering."
+    ],
+    "verifyHooks": "#3749 (batch 1), #3751 (batch 2), #3753 (batch 3)."
+  },
+  "engineGaps": [
+    { "id": "G1", "gap": "sampleSession trekker flatt over hele items[]; ingen tema-/vanskelighetsstratifikasjon (samme begrensning i fixture-gscore-matrix.no.json «random sampling — no difficulty window yet»)." },
+    { "id": "G2", "gap": "Ingen SVG/figurvisning i schema v1 eller render v0.3 — T1 vises som monospace-symbolmatrise, T4 som ren tekst." },
+    { "id": "G3", "gap": "Kun sesjonstimer, ingen per-item klokke — speed-konstruksjoner er umålbare og ekskludert." }
+  ],
+  "engineGapMitigation": "Alle tre gapene er non-blokkerende for pool-batchene. Mitigering i FASE 4-build: G1 -> stratifisert sampler (temakvoter + bandkvoter + undertype-spredning), G2 -> svg-utvidelse i schema v1.1 + visningslag, G3 -> item-tid i schema v1.1 hvis speed-sporet prioriteres. Pool-batchene kan autorere uansett: alle felt de trenger (id, kind, variants, scales, difficulty) står fast i denne spesifikasjonen.",
+  "batchMapping": [
+    { "board": "#3748 (bygg) + #3749 (verifiser)", "themes": ["T1", "T2"], "omfang": "~100 items; T1+T2 pool-min = 100" },
+    { "board": "#3750 (bygg) + #3751 (verifiser)", "themes": ["T3", "T4"], "omfang": "~100 items; T3+T4 pool-min = 90, resten til T3-overbuild (T3 har allerede 50+)" },
+    { "board": "#3752 (bygg) + #3753 (verifiser)", "themes": ["T5", "T6"], "omfang": "~100 items; T5+T6 pool-min = 80, resten til T5-overbuild; #3753 bekrefter samlet omfang" }
+  ],
+  "poolTotalPlan": {
+    "poolMinSum": 270,
+    "batchOmfangTotal": 300,
+    "bufferNote": "Batch-omfang ~300 totalt (per brettet) mot poolmin 270 — bufferen gir margin mot avvisning under copyrightkontroll og QC."
+  },
+  "defFilePlan": {
+    "naming": "def-<poolId>.no.json / def-<poolId>.en.json per temapool, id-mønster for poolen: <prefix>-NNNN (4 sifre, 0-paddet, starter på 0001). Samledef def-evne-g-44.<lang>.json (scoring: maks 44) eller per-tema defs — avgjøres i sampler-bygget.",
+    "conventions": "Samme konvensjoner som søstersteget: én fil per språk, family 'evner', scoring 'g-score', dimensions = [g], alle items kind 'ability' med NO+EN-variants, items.id unike per fil (motor-garanti)."
+  },
+  "noteIds": ["note.gscore.not-normed"],
+  "normLinkage": { "endpoint": "functions/normering.js", "todo": "#3724", "status": "bygget, ikke deployet (github.io kjører ikke Functions; NORMERING_KV-binding mangler)" },
+  "selftestContract": {
+    "file": "tests/schema/_evne_itemspec_selftest.mjs",
+    "checks": "S1–S16: spec-JSON syntaktisk+intern-konsistent (temaer/draw/poolMin/toleranser), retest-verdict-beregning gjentatt, batch-mot-board-avstemming, engine-kontrakt-sjekk (scoring.js+render.js finnes; scoring g-score-sti kjørt på 2-item-probe L+H, 1 riktig 1 feil -> theta!=null, ci95-format, iqScale null, notNormed true, note id til stede), og copyrightforbud-listen non-tom."
+  }
+}

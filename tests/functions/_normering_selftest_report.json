@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-15",
+  "step": "[BYGG] FASE 1: Normerings-endpoint (#3724)",
+  "selftest": "functions/normering.js v1.0.0",
+  "total": 107,
+  "pass": 107,
+  "fail": 0,
+  "failures": []
+}

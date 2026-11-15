@@ -1,0 +1,232 @@
+{
+  "specVersion": 1,
+  "id": "rel-itemspec-v1",
+  "type": "itemspec-relasjoner",
+  "status": "PROPOSED",
+  "statusMeaning": "Blir GJELDENDE etter samlet faseverifikasjon (#3813). Endringer etter det krever specVersion 2, dokumentert append-only.",
+  "date": "2026-11-15",
+  "boardLeaf": "#3738 [3-VEIS] FASE 2: Itemspec relasjoner: dimensjoner, kompatibilitetsmodell.",
+  "formalStatus": "Dette er en innholdsleveranse til [3-VEIS]-steget, ikke en 3-veis-kjede i seg selv. Kritikk og syntese skjer i #3739-verifikasjonen («er kompatibilitetsmodellen begrunnet eller paafunnet?») eller en egen kjede for #3813 — avgjoes av operatoeren.",
+  "boardRefs": {
+    "verify": "#3739 (kryssles denne spec-en: dimensions-matching mot FASE 1-lasen og compatibilityModel-avveining)",
+    "poolBatches": [
+      "#3754 (batch 1 ~100 items)",
+      "#3755 (verifiser batch 1)",
+      "#3756 (batch 2 ~100 items)",
+      "#3757 (verifiser batch 2 + totalt omfang)"
+    ],
+    "resultText": [
+      "#3784 (resultattekst relasjoner — tredjepartslesbarhet)",
+      "#3785 (verifiserer)"
+    ],
+    "shareGraph": "#3790 (SVG/canvas-delgraf) — leser compatibilityModel-output",
+    "shareLink": "#3794 (#fragment-selv-boerende lenke) — transport-formatet identifikatorfrit",
+    "finalVerify": "#3813"
+  },
+  "goal": "Feste innholds- og datakontrakten for relasjonssporet (family 'relations', scoring 'trait') slik at pool-batchene #3754/#3756 kan autorere items uten aa gjette: 4 dimensjoner (FASE 1-laast), pool-stoerrelser, sign-simmetri, sesjonsform, id-moenster og kompatibilitetsmodellen med alle avveininger dokumentert — sjekket mot test-definition.schema.json v1, scoring.js v1.0.0, render.js v0.5.0 og FASE 1-i18n-landingen.",
+  "planSources": [
+    "DOC-373E4AFEEB 'Brainarea — fullverdig bygge- og lanseringsplan', fase 5: 'Par-kompatibilitetstest: resultatutveksling via URI-hash (komprimert resultatobjekt i lenken) — ingen backend, ingen lagrer resultater' [A]",
+    "FASE 1-i18n-landing (i18n/no.js, i18n/en.js, prod-eksport out/relasjoner + out/en/relations): rel.sporet er 'Samspill/Connection style' — fire dimensjoner (Noerhet, Aapenhet, Konflikthaandtering, Selvstendighet / Closeness, Openness, Conflict handling, Independence), 16 utsagn (4 per dimensjon), snittskaar; rel.methodBody: 'Positivt formulerte utsagn skaares 1–5, negative 5–1, og skaaren per dimensjon er gjennomsnittet av svarene dine'; rel.nonValidated: 'Utsagnene og skaaingen er ikke psykometrisk validert. Ingen persentiler mot befolkningen, og ingenting normaliseres.'",
+    "tests/schema/test-definition.schema.json v1 (traitScoring: traits[].weight default 1, norms enum none/collecting/published, normsFile kreves ved published; likert options 2–7 med integer values; item.pattern ^[a-z0-9]+(-[a-z0-9]+)*$)",
+    "tests/engine/scoring.js v1.0.0 (trait-sti: raw/minPossible/maxPossible over signerte alternativspenn [p-5m, 5p-m], normalized = 100*(raw-min)/(max-min), weights i kompositt, ubesvart => coverage-warning, aldri fabrikkert)",
+    "tests/engine/render.js v0.5.0 (validateTestDef: scale-cross-ref mot dimensions, likert text >= 1, options >= 2, item.lang i languages; sessionSizeFor: likert/threshold => alle items, shuffles; resolveLang: languages[0] = fallback)",
+    "functions/normering.js v1.0.0 (DEMOGRAPHICS_KEYS/AGE_BANDS/GENDERS-hvitelisten, testId-regex, MAX_ITEMS 512, anonymitet: 'FASE 1-hvitelistene er dokumenterte forhaandsvalg, utvides i FASE 2 naar itemspec-blokken fester sine kategorier')",
+    "Soester-stegets konvensjoner (DOC-27AC907340 + _evne_itemspec_spec.json): én fil per språk, alle items inline, id-moenster med 4-sifret loepenummer, status PROPOSED -> GJELDENDE ved #3813"
+  ],
+  "dimensionDecision": {
+    "value": {
+      "closeness": {
+        "labelNo": "Nærhet",
+        "labelEn": "Closeness",
+        "id": "closeness"
+      },
+      "openness": {
+        "labelNo": "Åpenhet",
+        "labelEn": "Openness",
+        "id": "openness"
+      },
+      "conflict": {
+        "labelNo": "Konflikthåndtering",
+        "labelEn": "Conflict handling",
+        "id": "conflict"
+      },
+      "independence": {
+        "labelNo": "Selvstendighet",
+        "labelEn": "Independence",
+        "id": "independence"
+      }
+    },
+    "basis": "FASE 1-lock: dimensjonsvokabularet er rendret live i prod i18n (no.js/en.js) OG eksportert i out/relasjoner + out/en/relations (rel.og.desc/rel.desc/rel.intro/home.card.rel.desc) samt i rel.lead. Itemspec-en MAAT matche dette — aa innfoere nye navn naa ville bryte FASE 1 rendring. Nye dimensjoner er FASE 4-specVersion 2-arbeid.",
+    "engineMapping": "scoring.js trait-sti: dimensions[].id === scoring.traits[].id, 4 traits weight 1 (komposit = jevnverdig gjennomsnitt av normaliserte skalaer med data)."
+  },
+  "sessionFormDecision": {
+    "value": {
+      "structure": 4,
+      "perDim": 4,
+      "signPattern": "+-+- per dimensjon",
+      "totalItems": 16,
+      "scoring": {
+        "type": "trait",
+        "traits": [
+          "closeness",
+          "openness",
+          "conflict",
+          "independence"
+        ],
+        "norms": "none"
+      },
+      "timeNote": "FASE 1-teksten lover 'ca. 3–4 minutter' (rel.og.desc 'ca. 3 minutter', rel.lead 'rundt fire minutter') — motor-tiden for 16 likert-items ligger godt innen den lovede sonen; ingen timebudget foeres (sessionSizeFor = alle items shuffles)"
+    },
+    "basis": "FASE 1-lock: rel.methodBody gir 16 utsagn, fire per dimensjon som EKSPLISITT lovlokket regel ('Positivt formulerte utsagn skaares 1–5, negative 5–1, og skaaren per dimensjon er gjennomsnittet av svarene dine'). render.sessionSizeFor (likert): alle items i en oeekt. 4x4 = 16 — ikke valg, avledet kontrakt.",
+    "signPatternNote": "+-+- per dimensjon er valgt over '--++', '--+-' o.l.: (i) jevn spreng av sign-kontekst — 8 likegyldige utsagn og 8 reverserte er symmetrisk, (ii) '2-2-4-4'-varianter (som Big Five-formene) har ujevn omgang og er vanskeligere aa forfate konsistent paa 4 items; (iii) p=m per dimensjon gir spennet [0,20] i motor-metrikken = identisk med tradisjonell avg-beregning (isomorfi-prov), saa snittskaares er EXAKT 'gjennomsnittet av svarene dine' som FASE 1-teksten lovet Brukeren."
+  },
+  "themes": [
+    {
+      "id": "R1",
+      "name": "Nærhet og tilknytning",
+      "idPrefix": "cl",
+      "dimension": "closeness",
+      "poolMin": 60,
+      "construct": "Opplevd nærhet, åpenhet for å nærme seg, omsorgssignaler og tillit til at nærhet blir mottatt — i vennskap OG samliv.",
+      "itemStyle": "Ett utsagn, forste-person, presens, 8–14 ord, ingen dobbeltsporsmal, ingen absolutter ('alltid'/'aldri').",
+      "exampleSeed": "Jeg synes det er naturlig å fortelle en nær person om hvordan jeg har det."
+    },
+    {
+      "id": "R2",
+      "name": "Åpenhet i samspill",
+      "idPrefix": "op",
+      "dimension": "openness",
+      "poolMin": 60,
+      "construct": "Ytring av egne behov og grenser, invitasjon til motpartens perspektiv, diskusjonsvillighet, apenhet for tilbakemelding.",
+      "itemStyle": "Som R1."
+    },
+    {
+      "id": "R3",
+      "name": "Konflikthåndtering",
+      "idPrefix": "cf",
+      "dimension": "conflict",
+      "poolMin": 60,
+      "construct": "Moete med uenighet: gjenopptaking vs. eskalering, direkte adressering, reparasjonsatferd etter konflikt, regulering av egne reaksjoner.",
+      "itemStyle": "Som R1 — men utsagn om konflikt MAA vaere formulerbart baade positivt og negativt; ingen item refererer ekstrem risiko eller vold (pool er forbruker-test, ikke sikkerhets-screening)."
+    },
+    {
+      "id": "R4",
+      "name": "Selvstendighet i parforhold og vennskap",
+      "idPrefix": "iv",
+      "dimension": "independence",
+      "poolMin": 60,
+      "construct": "Egen tid, egne venner/interesser, mobil eller koeer av autonomi i naere relasjoner (saavvalt samliv vennskap), balanse mellom fellesskap og 'vi'.",
+      "itemStyle": "Som R1 — spessielt: ingen item MAA normalisere enten ekstrem (full fusjon eller full uavhengighet); begge ender er gyldige profiler."
+    }
+  ],
+  "languagePlan": {
+    "languages": [
+      "no",
+      "en"
+    ],
+    "rule": "Soester-konvensjonen: én fil per språk (def-rel-16.no.json / def-rel-16.en.json). Utsagnene forfattes separat per spraak (egen oversettelse eller original per spraak — samme fridom som IPIP-leveransen dokumenterte: ingen offisiell oversettelse finnes)."
+  },
+  "session": {
+    "structure": 4,
+    "perDim": 4,
+    "signPattern": "+-+- per dimensjon",
+    "totalItems": 16,
+    "scoring": {
+      "type": "trait",
+      "traits": [
+        "closeness",
+        "openness",
+        "conflict",
+        "independence"
+      ],
+      "norms": "none"
+    },
+    "noTimeBudget": true,
+    "timeNote": "FASE 1-teksten lover 'ca. 3–4 minutter'. sessionSizeFor gir alle 16 items shuffles; ingen opts.timeBudgetSeconds foeres (evne-sporet eier timer-kontrakten)."
+  },
+  "poolDesign": {
+    "poolMinPerDim": 60,
+    "poolMinSum": 240,
+    "batchMapping": [
+      {
+        "board": "#3754 (bygg) + #3755 (verifisere)",
+        "themes": [
+          "R1",
+          "R2"
+        ],
+        "omfang": "~120 items (60+60), buffer mot sign-simmetri-QC"
+      },
+      {
+        "board": "#3756 (bygg) + #3757 (verifisere)",
+        "themes": [
+          "R3",
+          "R4"
+        ],
+        "omfang": "~120 items (60+60), buffer mot sign-simmetri-QC"
+      }
+    ],
+    "retestNote": "LIVE-deffen er en FAST 16-item test (alle items, shuffles - sessionSizeFor for likert), ikke tilfeldig-sampling, saa retest-utmatting gjelder ikke pool-stoerrelsen. Poolen (60 per dimensjon og 240 sum) er forfatterkorpus og utvalgskilde: FASE 4-item-analysen velger de 16 beste items (4 per dimensjon), og #3757 bekrefter samlet omfang.",
+    "poolQC": "sign-simmetri (4+ / 4- per 16-item dim-sett), ingen dobbeltsporsmal, ingen absolutter, en setning per item — kontrollene ligger i themes[].itemStyle og hektes i #3755/#3757."
+  },
+  "copyrightControl": {
+    "basis": "Alle utsagn er egne/original — ingen lisensavklaring nodvendig (kontrast til ASRS/AQ/RAADS-R-sporet: DOC-C8C02AD272 utelukket annonsesfinansiering og betalt employer-ramme for AQ og RAADS-R, og AQ-50/28 har ingen kjoprute; ingen lisenser fra kommersielle parforholdsinstrumenter er nodvendig fordi alt innhold i relasjonssporet er originalt).",
+    "forbidden": [
+      "Ingen items maa kopiere gjenkjennbare formuleringer fra kommersielle relasjons-/parforholdstester (Gottman-relasjonsprogrammenes instrumenter, 5 Love Languages, ENRICH, Prepare/Enrich) — forfattes fra konstruktbeskrivelsene i themes[], ikke fra eksterne item-formuleringer.",
+      "Ingen items maa gjengi ASRS/AQ/RAADS-R-formuleringer (sporet er relasjonsprofil, ikke screening).",
+      "Ingen instrumentnavn fra kommersielle instrumenter i innhold eller markedsfoering."
+    ],
+    "verifyHooks": "#3755 (batch 1), #3757 (batch 2)"
+  },
+  "compatibilityModel": {
+    "purpose": "FASE 2/5-kontrakten for par-skoring: fra to normalized-skalprofiler (result.scales[].normalized, 0–100 per dimensjon) til per-dimensjonskompatibilitet og en samlet skore + band. Kode: tests/schema/_rel_compat_model.mjs (referanseimplementasjon, ren funksjon, deterministisk). scoring.js parrer aldri to-oeKt-parring — kompatibilitetsmodulen kalles separat (FASE 3/4-visningslaget).",
+    "transport": "Identifikatorfrit via #fragment-lenke (#3794 eier kodingen; modellen tar kun to vektorer).",
+    "inputs": {
+      "a": "normalized-skar [0,100] per dimensjon (closeness/openness/conflict/independence)",
+      "b": "samme for parteren"
+    },
+    "outputs": "perDimension + overall (0–100, 1 desimal) + bandId i {band-strong >= 85, band-aligned >= 70, band-mixed >= 55, band-differing < 55}",
+    "dimensionRules": {
+      "closeness": "likhet (1 - |a-b|/100)",
+      "openness": "likhet (1 - |a-b|/100)",
+      "conflict": "toleranse: s=1 naar |a-b| <= 0.25; lineert fall til 0 naar |a-b| = 1",
+      "independence": "toleranse: s=1 innen |a-b| <= 0.35; lineert fall til 0"
+    },
+    "why": {
+      "similarityDims": "Noerhet/aapenhet er profilskalaer uten 'farlig' ende: at to personer skiller seg her er ikke et problem i seg selv, men samboende/samvaer-dynamikken er lettere naar forventningene ligger naert — dette er den klassiske like-matchingsprediksjonen (konsistent med 'similarity attracts'-literaturen; markert som avveining, ikke psykometrisk bevist — modellen gaar aldri fra skore til atferdsvarsler).",
+      "toleranceDims": "Konflikt/selvstendighet er prosessskalaer: likhet er IKKE malet. To personer som begge meider konflikt (begge lage paa konflikthandtering) kan ha like skorer men en stille eskalerende dynamikk — en ren likhetsformel ville gi hoest skore til en profil som er risikofylt. Toleranse-band sier: 'lik nok til at forventninger ikke kolliderer' i steden for 'identisk'.",
+      "tolTilt": "tol 0.25 (konflikt) er strammere enn 0.35 (selvstendighet) fordi konfliktdynamikk er mer interaktiv — moeter av eskalering/avslutning er gjensidig avhengig; selvstendighetsbehov kan leve side om side uten at den ene parten 'prosseserer' den andre. Dette er dokumenterte forhaandsvalg [A], kalibrerbare i FASE 10.",
+      "noDangerousMorphism": "Ingen 'farlig pairing'-varsler: modellen klassifiserer ALDRI relasjoner som 'usunne' — band-navn og brukertekster eies av #3784 og skal vaere tredjepartslesbare og ikke-diagnostiske.",
+      "notAPrediction": "Modellen er en deterministisk regnefunksjon over to selvinnsikts-profiler — ikke prediksjon av relasjonskvalitet, og aldri en erstatning for samlivsveiledning. rel.nonValidated-teksten ligger fra FASE 1 og gaelder ogsaa her."
+    },
+    "verdict": "Kompatibilitetsmodellen er BEGRUNNET i spec-en (her), ikke paafunnet: hver avveining har uttrykt basis, og alle band/verdteter er kalibrerbare. Det er #3739-kriteriet.",
+    "alphaTarget": "Cronbach's alpha >= 0.70 per dimensjon MAAALT paa fase 10-kalibreringsdata — pool-forfatternes QC (sign-simmetri, ingen dobbeltsporsmal, ingen absolutter) er forkant-kontroll; alfa-maaling er ikke byggekriterium i dag."
+  },
+  "normLinkage": {
+    "endpoint": "functions/normering.js",
+    "todo": "#3724",
+    "status": "bygget, ikke deployet (github.io kjører ikke Functions; NORMERING_KV-binding mangler)",
+    "normingNote": "FASE 1-hvitelistene (AGE_BANDS/GENDERS) er dokumenterte forhaandsvalg; itemspec-blokken fester ingen nye kategorier i denne leveransen — utvidelser skjer ved FASE-2-pool-QC hvis behov oppstaar."
+  },
+  "noteIds": [
+    "note.trait.not-normed"
+  ],
+  "engineGaps": [
+    {
+      "id": "RG-1",
+      "gap": "Motor v1 har ingen to-test-parringssti: compat-modulen er en egen ren funksjon (_rel_compat_model.mjs); visningslaget (FASE 3/4) importerer den. scoring.js urøres."
+    },
+    {
+      "id": "RG-2",
+      "gap": "render.resolveLang fallback er languages[0] — men i søster-konvensjonen er dette IKKE et gap for relasjonssporet: live-deffene kommer som def-rel-16.no.json (languages ['no']) og def-rel-16.en.json (languages ['en']) — likt def-ipip50-big5-familien. Batch-pool-filene følger samme én-språk-per-fil-mønster. Ingen item følgelig tjener språkfallback; hver fil er bærende i seg selv."
+    }
+  ],
+  "engineGapMitigation": "RG-1 er per-design (egen ren modul; scoring.js urørt). RG-2 er ikke et gap i én-fil-per-språk-konvensjonen — dokumentert for #3739-ledes kryssles.",
+  "defFilePlan": {
+    "naming": "To lag. (1) Batch-pool: een def-fil per dimensjon per spraak (def-rel-cl-60.no.json osv., family relations, traits = bare den ene dimensjonen, norms none) med id-mønster <prefix>-NNNN (4 sifre, 0-paddet, starter paa 0001): cl-0001..cl-0060, op-0001..op-0060, cf-0001..cf-0060, iv-0001..iv-0060. (2) Live-def ved lansering: def-rel-16.<lang>.json med de 16 utvalgte items (4 per dimensjon) — utvalget skjer i FASE 4-item-analysen, ikke i batchene.",
+    "conventions": "én fil per språk; family 'relations', scoring trait norms none; dimensions = 4 dim fra FASE 1-vokabularet; 16 items kind 'likert' inline, options = 5-anker NOYAKTIGHET-SKALAEN (1-5, gjenbruk byte-identisk fra def-ipip50-big5.<lang>.json for identisk visning)."
+  },
+  "selftestContract": {
+    "file": "tests/schema/_rel_itemspec_selftest.mjs",
+    "checks": "S0–S15: spec-JSON syntaktisk+intern-konsistent (toppfelt/dimensjoner/traits/pools/batches/id-mønster), FASE 1-i18n kryssles (4 dimensjonsnavn byte-exakt mot i18n no.js/en.js + rendered out/), engine-kontrakt-prov (compat-modul import + trait-sti probe via scoring.js), sign-simmetri-krav dokumentert, spenn-isomorf (p=m => [p-5m,5p-m]=[0,20]), copyrightforbud non-tom, normLinkage/noteIds."
+  }
+}

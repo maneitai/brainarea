@@ -1,0 +1,319 @@
+{
+  "specVersion": 1,
+  "id": "nd-itemspec-v1",
+  "type": "itemspec-neurodivergent",
+  "status": "PROPOSED",
+  "statusMeaning": "Blir GJELDENDE etter samlet faseverifikasjon (#3813). Endringer etter det krever specVersion 2, dokumentert append-only.",
+  "date": "2026-11-15",
+  "boardLeaf": "#3740 [3-VEIS] FASE 2: Itemspec neurodivergent: triage (ADHD/autisme/BEGGE/ingen) + dyp ADHD + dyp autisme.",
+  "formalStatus": "Dette er en innholdsleveranse til [3-VEIS]-steget, ikke en 3-veis-kjede i seg selv. Kritikk og syntese skjer i #3741-verifikasjonen («begge» gyldig utfall) og #3759-kryssleset, eller i en egen kjede for #3813 — avgjøres av operatøren.",
+  "boardRefs": {
+    "triagePool": [
+      "#3758 (triage-pool ~40 items)",
+      "#3759 (kryssles mot lisensbekreftelsen OG denne itemspec-en)"
+    ],
+    "adhdDeep": [
+      "#3760 (ADHD-dyp pool ~100 items)",
+      "#3761 (kryssles)"
+    ],
+    "autismDeep": [
+      "#3762 (autisme-dyp pool ~100 items)",
+      "#3763 (kryssles)"
+    ],
+    "noTranslation": [
+      "#3778 (FASE 3 NO-oversettelse neurodivergent)",
+      "#3779 (klinisk språk-kontroll)"
+    ],
+    "resultText": [
+      "#3786 (resultattekst neurodivergent — KUN generisk deling)",
+      "#3787 (streng ikke-diagnose-kontroll)"
+    ],
+    "finalVerify": "#3813",
+    "leaf": [
+      "#3740 (dette brett-leddet)"
+    ],
+    "triageVerify": [
+      "#3741 (kryssles: «begge» gyldig, hyppig utfall)"
+    ]
+  },
+  "goal": "Feste innholds- og datakontrakten for neurodivergent-sporet (triage + dyp ADHD + dyp autisme) slik at pool-batchene #3758/#3760/#3762 kan autorere items uten å gjette: ankerbeslutning per lisensverdikten (ASRS 6Q verbatim som ADHD-anker, originale autisme-items), triagemodellen (to akser -> fire utfall), sesjonsformer, id-mønster, scoringkontrakter og alle motorrelevante avveininger — sjekket mot test-definition.schema.json v1, scoring.js v1.0.0 og render.js v0.5.0.",
+  "planSources": [
+    "DOC-C8C02AD272 «Brainarea FASE 2 — Lisensdeliberasjon (#3732) ENDLIG VERDIKT» (GJELDENDE): §1 per instrument, §2 gjennomføringskontrakt ASRS/AQ/RAADS-R, §3 ankerbeslutning for triage, §4 åpent punkt (NYU-bekreftelse), §5 utlåsing av #3758/#3760/#3762, funn-id-er FND-CEEF8D5D90/FND-3ED8F5C44E/FND-86888E3010",
+    "DOC-7C6C0584B8 bevismateriale: NYU TOV-lisensside (license.tov.med.nyu.edu/product/asrs6Qscreener) hentet 2026-11-15, sha a9d103908195ef383b911dd78b283d8e0c74e66df2e181c04095fc4e6d325af5",
+    "DOC-373E4AFEEB «Brainarea — fullverdig bygge- og lanseringsplan» [B]: forbrukerside annonsefinansiert + separat employer-ramme, ærlig NV-markering, ingen diagnose-påstand",
+    "tests/schema/test-definition.schema.json v1 (traitScoring: traits[].id, traits[].weight 0.., norms none/collecting/published + disclaimer-kunnskap: disclaimer ER schema-felt kun under thresholdScoring — traitScoring har IKKE disclaimer; threshold bands med minScore/guidance; item pattern ^[a-z0-9]+(-[a-z0-9]+)*$; family enum persona/evner/relations/pool)",
+    "tests/engine/scoring.js v1.0.0 — verifisert i denne økten: threshold-sti summerer ALLE scaleIds til én total (linje ~350), trait-sti gir normalized per skala og komposit over normaliserte skalaer med data (tom skala faller ut), sign=-1 -> c=-value med minP/maxP speilet",
+    "tests/engine/render.js v0.5.0 — verifisert: sessionSizeFor (likert/threshold => alle items, shuffles), validateTestDef (scale-cross-ref mot dimensions, likert options >=2, dimension krever id/label/labelLanguage/description), resolveLang fallback languages[0]",
+    "tests/schema/fixture-threshold-adhd.no.json (threshold-formen: bands low/mid/top + guidance + disclaimer-screening.not-diagnosis, dimensions adhd-total, likert items)",
+    "Søster-konvensjoner (_evne_itemspec_spec.json + _rel_itemspec_spec.json, DOC-27AC907340): én fil per språk, alle items inline i pool-eksport, id-mønster med 4-sifret løpenummer, PROPOSED -> GJELDENDE ved #3813, ren modul som egen fil"
+  ],
+  "anchorDecision": {
+    "value": {
+      "adhdAnchor": "ASRS v1.1 6Q verbatim (shaded patient-versjon) som ADHD-anker",
+      "autismAnchor": "BYGG originale items (ingen ekstern skjema-gjengivelse)",
+      "referenceRule": "Referer der vi ikke gjengir: AQ/RAADS-R kan nevnes med navn + publisert cutoff + kilde (fakta, ikke opphavsbeskyttet form)"
+    },
+    "basis": "DOC-C8C02AD272 §3: ASRS er eneste instrument med dokumentert kommersiell fribruk (NYU TOV: «freely available for clinical and non-clinical use, including commercial use, but does require attribution»), null lisensrisiko, validert, offisiell NO-versjon (6Q_Norwegian_final.pdf). AQ: ARC tillater kun forskning — annonsefinansiering og betalt employer-ramme utelukker begge; AQ-50/28 har ingen dokumentert kjøpsrute. RAADS-R: ikke dokumentert fribruk; CC BY-NC arvet fra artikkelen er rimelig slutning, ikke bevist faktum, og NC utelukker begge inntektsrammene. Alle tre punktene er GJELDENTE beslutninger fra 3-veis-kjeden — ikke gjenutredes her.",
+    "asrsPlacement": {
+      "v1Triage": "ASRS-blokken er EKSPLISITT UTENFOR v1-triage-def — verdict §4: skriftlig NYU-bekreftelse på skjermbasert remediering (én-spørsmål-per-skjerm-UI) er uverifisert gråsone; før (b) er gjort bygges ASRS-blokken klar i repoet men settes ikke live. Triage v1 kjører derfor på Brainarea-originale supplement-items per akse.",
+      "adhdDeep": "ASRS-blokken er forankret som verbatim-anker i ADHD-dyp-poolen (#3760) — samme restrisiko-logg gjelder inntil NYU-bekreftelse foreligger; blokken bygges klar, live-settes ved bekreftelse. Dette er operatørens åpne beslutningspunkt, ikke en teknisk åpen sak.",
+      "noDoubleWork": "Dette er IKKE dobbeltarbeid mot lisenskjeden: kjeden eier ERVERV og BETINGELSER (§2), denne spec-en eier TEKNISK PLASSERING og DATAKONTRAKT for blokken (hvilke felt, hvilken scoringvei, hvilke note-id-er, hvor blokken bor i def-ene). Pool-forfatterne #3758/#3760 trenger nøyaktig denne koblingen for å ikke gjenoppfinne den."
+    },
+    "openPoints": [
+      "Verdict §4 gråsone: NYU skriftlig bekreftelse om skjermbasert remediering — Kris sin avgjørelse, blokkerer kun ASRS-live, ikke pool-byggene.",
+      "Outcode-grenser (55/40) er dokumenterte forhåndsvalg [A], kalibrerbare i FASE 10 — aldri kalt validert."
+    ]
+  },
+  "domainDecision": {
+    "value": {
+      "adhd": {
+        "id": "adhd",
+        "labelNo": "ADHD",
+        "labelEn": "ADHD"
+      },
+      "autism": {
+        "id": "autism",
+        "labelNo": "Autisme",
+        "labelEn": "Autism"
+      }
+    },
+    "basis": "To akser er brett-leddets eget vokabular (triage ADHD/autisme/BEGGE/ingen). Dimensjons-id-ene adhd/autism følger schema-pattern ^[a-z0-9]+(-[a-z0-9]+)*$ og er id-frie for konflikt med søster-sporenes skala-id-er (closeness/openness/conflict/independence, big5-domenene, g). Labels låses FØRST i FASE 3 (#3778) — i dag finnes ingen ND-tekster i FASE 1-landingen (verifisert: ingen adhd/autism/no neurodiv-treff i app/ eller out/), så i18n-kryssleset her knytter kun til den eksisterende key threshold.screening."
+  },
+  "triageSessionDecision": {
+    "value": {
+      "scoringType": "trait (IKKE threshold)",
+      "traits": [
+        "adhd",
+        "autism"
+      ],
+      "norms": "none",
+      "asrsPlaceholder": "ASRS-blokken (6 items, verbatim) er reservert plass i def-ene men HOLDES UTENFOR live-settet i v1 (gråsone §4). Når den settes live, holder trait-stien anker-skår og supplement-skår atskilt: blokken får egen skala (traits-entry asrs-anchor, weight 1) og triagemodellen leser supplement-akse + anker-skår som separate innganger — se triageModel.asrsIntegration.",
+      "supplementPerAxis": {
+        "pool": 20,
+        "liveDef": 3,
+        "itemStyle": "likert, options = 5-punkts NOYAKTIGHET-ankeret (Veldig unøyaktig=1, Middels unøyaktig=2, Hverken unøyaktig eller nøyaktig=3, Middels nøyaktig=4, Veldig nøyaktig=5), byte-identisk import fra def-ipip50-big5.<lang>.json",
+        "signKey": "alle positivt-keyed (screening i én retning; reversering er ikke konstruktrelevant her — dokumentert avvik, se engineGaps NG-4)"
+      },
+      "totalLiveItems": "v1: 6 supplement-items (3 per akse) — ASRS live-koblingen utvider til 12 uten strukturendring",
+      "noTimeBudget": true,
+      "outcodeModel": "fire utfall: none | adhd | autism | adhd-autism («begge»)"
+    },
+    "basis": "(i) trait-stien er den eneste som gir per-akse-skår uten modifikasjon av scoring.js (threshold summerer alle skalaer til én misvisende total — verifisert i denne økten); (ii) live-def-ene er LAVE fikse item-sett (sessionSizeFor likert => alle items shuffles), ikke sampling — retest-utmatting gjelder pool-størrelsen som forfatterkorpus, ikke bruken; (iii) 5-anker-skalaen gjenbrukes byte-identisk fra personlighetssporet for identisk visning og lavere QC-kost; (iv) «begge» må være naturlig utfall — #3741-kriteriet: modellen tillater utfallet uten spesialtilfelle i koden."
+  },
+  "triageModel": {
+    "purpose": "Fra to normalized akse-skår (0–100 per domene, fra trait-stiens result.scales[]) til fire utfall (none/ADHD/autisme/begge) med per-akse band — ren funksjon, deterministisk, aldri kast.",
+    "code": "tests/schema/_nd_triage_model.mjs (referanseimplementasjon, samme konvensjon som _rel_compat_model.mjs). scoring.js/motoren røres aldri; visningslaget (FASE 3/4) importerer modulen.",
+    "transport": "Identifikatorfritt: modellen tar bare to skårtall — resultatdeling følger #3794-konvensjonen (fragment-lenke), ingen persondata krysser grensen.",
+    "inputs": {
+      "adhd": "normalized 0–100 | null (ingen besvarte items på akse)",
+      "autism": "normalized 0–100 | null"
+    },
+    "outputs": "perAxis + outcode + nextSteps (testRef-id-er, ingen pros)",
+    "bands": {
+      "flagged": ">= 55",
+      "observed": "40–54 (vises som tekst, endrer IKKE utfall)",
+      "low": "< 40",
+      "noData": "null-skåret akse"
+    },
+    "outcodes": {
+      "out-none": "begge akser under 55 — ingen utfallstekst om ADHD/autisme",
+      "out-adhd": "kun ADHD-akse >= 55",
+      "out-autism": "kun autisme-akse >= 55",
+      "out-adhd-autism": "begge >= 55 («begge» — gyldig, forventet utfall)"
+    },
+    "why": {
+      "flaggedAt55": "Screening-ikke-diagnose-asymmetrien: terskelen settes LAVT nok til at omtrent halvparten av de som ville hatt nytte av en dyp-screening når den, og grensen er ærlig kalibrerbar. 55 er dokumentert forhåndsvalg [A], ikke klinisk cutoff — ingen kilder hevder valide cutoffs på våre originale items (de finnes ikke). Publiserte cutoffs (ASRS, AQ) refereres KUN som fakta i metodikkteksten, aldri brukt på originale skalaer.",
+      "observedBand": "Når en akse ligger 40–54 er 'litt forhøyede forekomst' en tekstsak for #3786/#3787 — ikke et nytt utfall. Fire utfall holder brett-leddets kontrakt (ADHD/autisme/BEGGE/ingen) og hindrer at resultatsiden eksploderer i kombinatorikk.",
+      "noDangerousMorphism": "Modellen klassifiserer aldri personen, bare forekomst-nivå på selvinnsikts-akser. Aldri diagnose, henvisning eller alvorlighetsgrad-påstand — det er #3779/#3787-kriteriene, og modellen gir dem ingen ammunisjon: output er 4-veis enum + band-id-er, ikke klinisk språk.",
+      "comorbidity": "Felles forekomst ADHD + autisme er velkjent empirisk («begge» er hyppig utfall i praksis). Modellen krever ingen eksklusjon: begge akser >= 55 gir out-adhd-autism naturlig, uten spesialtilfelle. Dette er #3741-kriteriet direkte.",
+      "thresholdTotalRejection": "threshold-scoring (type 'threshold') summerer alle skalaer til én total — ADHD+autisme-sumskår ville blandet konstruktene og gitt tallet ingen forklaring. Verifisert i denne økten mot scoring.js: samme svar gir threshold-score 14 men trait-komposit 62.5 når aksene skiller seg. Triag-def-en bruker trait; threshold-formen brukes først i dyp-ene, per domene, med én skala hver.",
+      "asrsIntegration": "Når ASRS-blokken settes live: anker-skår (asrs-anchor-skalaen, verbatim scoring) og supplement-akse (adhd) rapporteres ATSKILT i resultatet — triage-utfallet beregnes på supplement-akse, anker-skår vises separat med egen disclaimer. De to ALDRI kombinert til ett tall, ALDRI normalisert sammen, aldri ett «total-ND»-tall: ankeret og supplementet måler ulike instrumenter med ulik gyldighet."
+    },
+    "verdict": "Triage-modellen er BEGRUNNET i spec-en, ikke påfunnet: hver terskel har uttrykt basis, utfallslogikken er brett-leddets egen, og alle grenser er kalibrerbare. Det er #3759-kriteriet."
+  },
+  "deepPoolDecision": {
+    "structure": "To dype pooler, én per domene, hver med 3 temaer. Dyp-def-en sampler fra poolen (sessionSizeFor med maxItems => trekk), samme prinsipp som evne-sporet.",
+    "adhdThemes": [
+      {
+        "id": "DA1",
+        "name": "Oppmerksomhet og eksekutive funksjoner",
+        "construct": "Fokushold, distraksjoner, hukommelse i hverdagen, oppstarts-motstand, organisering (selvrapportert virkelighetsnærhet)",
+        "idPrefix": "da",
+        "poolMin": 40
+      },
+      {
+        "id": "DA2",
+        "name": "Hyperaktivitet og impulsivitet",
+        "construct": "Indre uro, motorisk rastløshet, vending-impuls, beslutnings-impuls, ventetoleranse",
+        "idPrefix": "da",
+        "poolMin": 35
+      },
+      {
+        "id": "DA3",
+        "name": "Hverdagsfungering og konsekvens",
+        "construct": "Følger av ovenstående i jobb/studier/hjem/administrasjon — funksjons-impact, ikke symtomtelling",
+        "idPrefix": "da",
+        "poolMin": 25
+      }
+    ],
+    "autismThemes": [
+      {
+        "id": "DS1",
+        "name": "Sosial kommunikasjon og resiprositet",
+        "construct": "Samtale-rytme, nonverbalt samspill, relasjonsbygging, tolking av sosiale signaler (selvrapportert)",
+        "idPrefix": "ds",
+        "poolMin": 40
+      },
+      {
+        "id": "DS2",
+        "name": "Repeterende atferd, sensorikk og interesser",
+        "construct": "Rutiner og endringsmotstand, fokuserende interesser, sensorisk toleranse/behov, stimulering",
+        "idPrefix": "ds",
+        "poolMin": 35
+      },
+      {
+        "id": "DS3",
+        "name": "Hverdagen, energi og tilpasning",
+        "construct": "Energiforbruk i sosiale settinger, masking-lignende tilpasning, restitusjon, omgivelses-tilpasninger",
+        "idPrefix": "ds",
+        "poolMin": 25
+      }
+    ],
+    "poolSum": {
+      "adhd": 100,
+      "autism": 100
+    },
+    "asrsAnchor": "ADHD-dyp inkluderer ASRS 6Q verbatim som egen blokk (traits-entry asrs-anchor, weight urelevant for dyptotal — dyptotal beregnes på originale supplement-items alene).",
+    "deepScoringShape": "trait per dyp-def (traits = de 3 tema-skalaene), komposit over normaliserte tema-skalaer med data; threshold-form med bands brukes KUN som visningslag om ønsket i FASE 4, aldri som skårberegningsgrunnlag for blandede konstrukter.",
+    "noDsmTranscription": "Items forfattes fra konstruktbeskrivelsene ovenfor — ALDRI fra DSM-5-kriterietekst (kopirett og ikke-diagnostisk vinkel begge deler). Konstruktbeskrivelsene er formålsskrevne, klinisk-tunge formuleringer (symtomliste-avlesning) er ekskludert i pool-QC (#3761/#3763).",
+    "selfReportStyle": "Same regel som personlighet/relasjonssporet: forste-person, presens, 8–14 ord, ingen dobbeltsporsmal, ingen absolutter ('alltid'/'aldri'), en setning per item — ingen item refererer ekstrem risiko, selvskade eller medisinering (forbruker-test, ikke sikkerhets-screening)."
+  },
+  "languagePlan": {
+    "languages": [
+      "no",
+      "en"
+    ],
+    "rule": "Søster-konvensjonen: én fil per språk, items forfattes separat per språk (ingen offisielle oversettelser finnes for originale items — samme fridom som IPIP-leveransen).",
+    "asrsSpecial": "FASE 3 (#3778): ASRS-blokken tar IKKE del i fri oversettelse — eneste tillatte NO-kilde er NYUs offisielle patient-facing 6Q_Norwegian_final.pdf (adopsjon verbatim, ikke nyoversettelse). DE samme (6Q_German_final.pdf). Dette er verdict §2-kontrakten, gjentatt her så pool-batchen ikke planlegger oversettelse av ankerelementene.",
+    "fase1Gap": "Ingen ND-tekster/labels finnes i FASE 1-landingen (verifisert i denne økten) — språk-vokabularet for sporet låses i FASE 3, ikke her. Denne spec-en låser kun datakontrakten."
+  },
+  "poolDesign": {
+    "triagePool": {
+      "board": "#3758 (~40 items)",
+      "batches": [
+        {
+          "board": "#3758 (bygg) + #3759 (verifisere)",
+          "scope": "ta-0001..ta-0020 (20 ADHD-items) + ts-0001..ts-0020 (20 autisme-items) = 40, ingen buffer-planlagt over brettets ~40"
+        }
+      ],
+      "selectionCriteria": "Live-def 3 per akse velges i FASE 4-item-analysen (temaspredning over temaene under, lesbarhet, null konstrukt-overlapp med ASRS-ankerets seks symptom-formuleringer)",
+      "themesTriageAdhd": [
+        "Daglig oppmerksomhet og distraksjones-sårbarhet",
+        "Impuls/urest i hverdagen",
+        "Funksjons-konsekvens i daglige gjøremål"
+      ],
+      "themesTriageAutism": [
+        "Sosialt samspill og resiprositet kortform",
+        "Rutine/sensorisk kortform",
+        "Energi og tilpasning kortform"
+      ]
+    },
+    "deepPools": [
+      {
+        "board": "#3760 (bygg) + #3761 (verifisere)",
+        "id": "dyp ADHD",
+        "prefix": "da",
+        "poolMin": 100,
+        "liveDefPlan": "trekk 24 (8+8+8 over DA1/DA2/DA3), ASRS-blokk legges som egen blokk inntil videre hengende utenfor trekket"
+      },
+      {
+        "board": "#3762 (bygg) + #3763 (verifisere)",
+        "id": "dyp autisme",
+        "prefix": "ds",
+        "poolMin": 100,
+        "liveDefPlan": "trekk 24 (8+8+8 over DS1/DS2/DS3)"
+      }
+    ],
+    "poolQC": "ingen dobbeltspørsmål, ingen absolutter, en setning per item, ingen klinisk-diagnostiske formuleringer, ingen DSM-avlesning — hektes i #3759/#3761/#3763."
+  },
+  "scoringContracts": {
+    "triage": "scoring = { type: 'trait', traits: [ { id: 'adhd', weight: 1 }, { id: 'autism', weight: 1 } ], norms: 'none' } og dimensions = [adhd, autism] med labelLanguage per def-språk. Kompositten gir en total-oversikt, men triage-utfallet beregnes i modulen på result.scales[] — aldri på komposit.",
+    "deepPools": "scoring = { type: 'trait', traits: [3 tema-id-er, weight 1], norms: 'none' } per dyp-def; maxItems-sti er trait-naturlig (samme skjema), sampling fra pool følger render.sampleSession med usedIds-exclusion — retest-praksis som evne-sporet.",
+    "asrsAnchorShape": "ASRS-blokken i def: 6 items kind 'likert' med verbatim-tekst og de skala-verdier patient-versjonen krever (skal transkriberes fra offisiell PDF ved #3760-bygg — IKKE diktet her). Egen traits-entry 'asrs-anchor' slik at ankeret aldri blandes inn i supplement-skårene. disclaimer og note-id-er følger engine (note.threshold.screening er bundet til threshold-sti — asrs-blokkens disclaimer håndteres som note/scoring.not-diagnosis-linje i visningslaget).",
+    "bandGuidance": "dyp-def-ene kan bruke bands-formen for visning (like fixture-threshold-adhd.no.json), men band-grenser er dokumenterte forhåndsvalgte [A] — aldri kalt cutoffs, aldri 'validated'."
+  },
+  "copyrightControl": {
+    "basis": "To kopirett-zoner i dette sporet: (1) ASRS-blokken er EKSTERN og lånt — kun per verdict §2-betingelser; (2) alle supplement- og dyp-items er egne originale — ingen lisensavklaring, men kloning-forbud gjelder.",
+    "forbidden": [
+      "ASRS: ingen reformulering, ellipse, omskrivning eller oversettelse ut over NYUs offisielle PDF-er; kun 6Q, aldri 18Q; attribusjonen (tre setninger NYU/Harvard) gjengis verbatim; NYUs bruksramme-gjengivelse i produktet; shaded patient-versjon kun.",
+      "AQ (50/28/10): null gjengivelse — navn + publisert cutoff + kilde er tillatt referanselinje (fakta).",
+      "RAADS-R: null gjengivelse — samme referanselinje-form som AQ; instrumentet nevnes maksimalt som 'etablerte screeninginstrumenter med publisert cutoffs, ikke gjengitt pga lisens'.",
+      "DSM-5/DSM-5-TR: kriterietekst aldri gjengitt eller parafrasert som items — items forfattes fra spec-enes konstruktbeskrivelser.",
+      "Andre kommersielle ND-instrumenter (DIVA-5, CAADID, Conners, SRS-2, CAT-Q som ferdig instrument osv.): null kopiering, null scraping, instrumentnavn aldri i innhold eller markedsføring.",
+      "Ingen items eller resultattanker som presenterer sporet som diagnostisk verktøy."
+    ],
+    "verifyHooks": [
+      "#3759 (triage-pool vs lisensbekreftelsen)",
+      "#3761 (ADHD-dyp)",
+      "#3763 (autisme-dyp)",
+      "#3779 + #3787 (FASE 3 språk/resultat-kontroll)"
+    ]
+  },
+  "normLinkage": {
+    "endpoint": "functions/normering.js",
+    "todo": "#3724",
+    "status": "bygget, ikke deployet (github.io kjører ikke Functions; NORMERING_KV-binding mangler)",
+    "normingNote": "FASE 1-hvitelistene (AGE_BANDS/GENDERS) er dokumenterte forhåndsvalg; denne itemspec-en fester ingen nye kategorier — utvidelser skjer ved FASE-2-pool-QC hvis behov oppstår."
+  },
+  "noteIds": [
+    "note.trait.not-normed",
+    "note.threshold.screening",
+    "scoring.not-diagnosis"
+  ],
+  "engineGaps": [
+    {
+      "id": "NG-1",
+      "gap": "Motor v1 har ingen to-akse-triage-sti: threshold summerer alle skalaer til én total. Mitigering per-design: triage-def bruker trait-sti + _nd_triage_model.mjs som egen ren funksjon; scoring.js urørt."
+    },
+    {
+      "id": "NG-2",
+      "gap": "ASRS-skjermremediering gråsone (verdict §4) — restrisiko-logg; skriftlig NYU-bekreftelse anbefalt før ASRS-blokken settes live."
+    },
+    {
+      "id": "NG-3",
+      "gap": "Ingen ND-sider/tekster i FASE 1-landingen — i18n-vokabular for sporet låses i FASE 3 (#3778), ikke her; kryssleset mot i18n er derfor begrenset til threshold.screening-key (verifisert eksisterende)."
+    },
+    {
+      "id": "NG-4",
+      "gap": "Schema-beskrivelsen anbefaler reverse-keyed items per skala; triage- og ASRS-formen er (og kan for ASRS' del IKKE være) reversert. Engine håndhever ikke reverserings-kravet (verifisert: validateTestDef sjekker kun scale-cross-ref). Avviket er dokumentert, ikke skjult."
+    },
+    {
+      "id": "NG-5",
+      "gap": "render shuffles alle likert items i økten — verdict §2-krevning 'publisert item-rekkefølge ekskluderes fra seed-randomisering' for ASRS-blokken kan ikke mekanisk håndheves i dag (ingen item.freezePosition i schema v1). Non-blokkerende for pool-bygg; motor-utvidelse (schema v1.1 flag) registreres hvis/ når ASRS går live."
+    }
+  ],
+  "engineGapMitigation": "NG-1 er per-design (egen modul, lik RG-1-konvensjonen). NG-2 er operatørens åpne punkt, blokkerer kun ASRS-live. NG-3 er en ærlig fase-grense. NG-4 kan ikke oppstå med ASRS (modifikasjon forbudt) og er bevisst valgt for supplement (screening i én retning). NG-5 berører ikke skårene (visningsrekkefølge påvirker ikke scoring) — frys er en visningskontrakt, løses i FASE 4-bygget hvis nødvendig.",
+  "defFilePlan": {
+    "naming": "Batch-pool: def-nd-triage-pool.<lang>.json (ta-/ts-prefiks, 4 sifre 0-paddet fra 0001), def-nd-adhd-dyp-pool.<lang>.json (da-), def-nd-autisme-dyp-pool.<lang>.json (ds-). Live-def: def-nd-triage.<lang>.json (6 supplement-items + ASRS-plassholder-kommentar), def-nd-adhd.<lang>.json (trekk 24 + asrs-anchor-blokk), def-nd-autisme.<lang>.json (trekk 24).",
+    "conventions": "én fil per språk; family 'pool' (schema enum tillater ikke egen 'neurodivergent'-verdi i v1 — sporet bor under 'pool' som adhd-screening-fixturen; egne family-verdi er FASE 4-specVersion 2-arbeid hvis ønsket); alle items inline i pool-eksport per søster-konvensjon; options = 5-anker importert byte-identisk fra def-ipip50-big5.<lang>.json."
+  },
+  "selftestContract": {
+    "file": "tests/schema/_nd_itemspec_selftest.mjs",
+    "checks": "S0–S14: spec-JSON konsistent (toppfelt/ankere/domener/prefikser/id-mønster), FASE 1-i18n kryssles (threshold.screening-key eksisterer), ekte engine-prover mot scoring.js (trait-sti med to akser: per-skala normalized + komposit-atferd; threshold-total divergens dokumentert med tall; sign-matematikk; coverage-ærlighet), triage-modulen håndregnet (utfall per band, «begge»-utfall, null-skalaer, ugyldig inndata, determinisme), AJV-validasjon av probe-defer (trait-form), noteIds/engineGaps-konsistens."
+  },
+  "provenance": {
+    "engineFactsVerified": [
+      "scoring.js threshold-sti summerer alle scaleIds (linje ~346–367) — lest i denne økten",
+      "scoring.js trait-komposit over normaliserte skalaer med data (linje ~325–335) — lest i denne økten",
+      "scoring.js sign=-1 -> c=-value, minP/maxP speilet (linje ~113–120) — lest i denne økten",
+      "render.js sessionSizeFor likert => alle items shuffles (linje ~111–115) — lest i denne økten",
+      "render.js validateTestDef: ingen reverserings-håndheving (linje ~52–94) — lest i denne økten",
+      "NYU TOV ASRS-lisensside hentet 2026-11-15 (sha i DOC-7C6C0584B8) — attribusjon/bruksramme verbatim-krav verifisert der"
+    ],
+    "sisterAnchors": [
+      "_evne_itemspec_spec.json (PROPOSED)",
+      "_rel_itemspec_spec.json (PROPOSED)",
+      "def-ipip50-big5.no.json + .en.json (prod)"
+    ]
+  }
+}

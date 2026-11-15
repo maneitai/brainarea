@@ -1,0 +1,3439 @@
+{
+ "schemaVersion": 1,
+ "id": "persona-pool-o-c",
+ "type": "test-definition",
+ "family": "pool",
+ "languages": [
+  "en"
+ ],
+ "scoring": {
+  "type": "trait",
+  "traits": [
+   {
+    "id": "openness",
+    "weight": 1
+   },
+   {
+    "id": "conscientiousness",
+    "weight": 1
+   }
+  ],
+  "norms": "none"
+ },
+ "dimensions": [
+  {
+   "id": "openness",
+   "label": "Openness",
+   "labelLanguage": "en",
+   "description": "Exploratory curiosity and imagination."
+  },
+  {
+   "id": "conscientiousness",
+   "label": "Conscientiousness",
+   "labelLanguage": "en",
+   "description": "Organization, goal orientation and self-discipline."
+  }
+ ],
+ "items": [
+  {
+   "id": "o-0001",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Have a rich vocabulary.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0002",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Have difficulty understanding abstract ideas.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0003",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Have a vivid imagination.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0004",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am not interested in abstract ideas.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0005",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Have excellent ideas.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0006",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am quick to understand things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0007",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Do not have a good imagination.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0008",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I look up how things work just to understand them better.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0009",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Try to avoid complex people.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0010",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Use difficult words.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0011",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Spend time reflecting on things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0012",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Have difficulty imagining things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0013",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am full of ideas.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0014",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Avoid difficult reading material.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0015",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Carry the conversation to a higher level.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0016",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Catch on to things quickly.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0017",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Will not probe deeply into a subject.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0018",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I notice patterns that others seem to miss.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0019",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Do not like art.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0020",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Can handle a lot of information.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0021",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Love to think up new ways of doing things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0022",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Avoid philosophical discussions.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0023",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Love to read challenging material.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0024",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Do not enjoy going to art museums.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0025",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am good at many things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0026",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Believe in the importance of art.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0027",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Tend to vote for conservative political candidates.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0028",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I like to visit places that are new to me.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0029",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Do not like poetry.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0030",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Tend to vote for liberal political candidates.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0031",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Enjoy hearing new ideas.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0032",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Rarely look for a deeper meaning in things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0033",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Enjoy thinking about things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0034",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Believe that too much tax money goes to support artists.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0035",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Can say things beautifully.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0036",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Enjoy wild flights of fantasy.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0037",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am not interested in theoretical discussions.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0038",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I enjoy learning about subjects outside my own field.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0039",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Rarely notice my emotional reactions.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0040",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Get excited by new ideas.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0041",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Love to daydream.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0042",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Don't understand people who get emotional.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0043",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Like to get lost in thought.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0044",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Prefer to stick with things that I know.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0045",
+   "kind": "likert",
+   "lang": "en",
+   "text": "See beauty in things that others might not notice.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0046",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Experience my emotions intensely.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0047",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Dislike changes.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0048",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I think about how things could be different.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0049",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am attached to conventional ways.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0050",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Prefer variety to routine.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0001",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am always prepared.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0002",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Leave my belongings around.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0003",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Pay attention to details.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0004",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Make a mess of things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0005",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Get chores done right away.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0006",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I trust myself to handle the tasks I take on.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0007",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Often forget to put things back in their proper place.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0008",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Like order.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0009",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Shirk my duties.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0010",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Follow a schedule.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0011",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am exacting in my work.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0012",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Neglect my duties.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0013",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I put things back where they belong.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0014",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Waste my time.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0015",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Do things according to a plan.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0016",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Continue until everything is perfect.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0017",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Do things in a half-way manner.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0018",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Make plans and stick to them.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0019",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Find it difficult to get down to work.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0020",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I follow through on the commitments I make.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0021",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Love order and regularity.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0022",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Leave a mess in my room.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0023",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Like to tidy up.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0024",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Do just enough work to get by.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0025",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Carry out my plans.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0026",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I push myself to reach the goals I set.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0027",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Don't see things through.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0028",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Complete tasks successfully.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0029",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Leave things unfinished.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0030",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Finish what I start.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0031",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Follow through with my plans.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0032",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Don't put my mind on the task at hand.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0033",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I start tasks early enough to finish them properly.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0034",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Need a push to get started.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0035",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Excel in what I do.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0036",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Handle tasks smoothly.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0037",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Break rules.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0038",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Know how to get things done.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0039",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Break my promises.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0040",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I think a task through before I begin.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0041",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Keep my promises.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0042",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Put little time and effort into my work.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0043",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Tell the truth.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0044",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Have difficulty starting tasks.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0045",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I keep my workspace in order.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0046",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Do more than what's expected of me.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0047",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Jump into things without thinking.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0048",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I give my best effort even on dull tasks.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0049",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Make rash decisions.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0050",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Work hard.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  }
+ ]
+}

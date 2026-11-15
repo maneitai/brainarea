@@ -1,0 +1,3439 @@
+{
+ "schemaVersion": 1,
+ "id": "persona-pool-o-c",
+ "type": "test-definition",
+ "family": "pool",
+ "languages": [
+  "no"
+ ],
+ "scoring": {
+  "type": "trait",
+  "traits": [
+   {
+    "id": "openness",
+    "weight": 1
+   },
+   {
+    "id": "conscientiousness",
+    "weight": 1
+   }
+  ],
+  "norms": "none"
+ },
+ "dimensions": [
+  {
+   "id": "openness",
+   "label": "Åpenhet",
+   "labelLanguage": "no",
+   "description": "Utforskende nysgjerrighet og fantasi."
+  },
+  {
+   "id": "conscientiousness",
+   "label": "Planmessighet",
+   "labelLanguage": "no",
+   "description": "Organisering, målrettethet og selvdisiplin."
+  }
+ ],
+ "items": [
+  {
+   "id": "o-0001",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg har et rikt ordforråd.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0002",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg har vanskelig for å forstå abstrakte ideer.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0003",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg har en levende fantasi.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0004",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg interesserer meg ikke for abstrakte ideer.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0005",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg har fremragende ideer.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0006",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg forstår ting raskt.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0007",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg har ikke god fantasi.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0008",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg slår opp hvordan ting fungerer bare for å forstå dem bedre.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0009",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg prøver å unngå kompliserte mennesker.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0010",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg bruker vanskelige ord.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0011",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg bruker tid på å reflektere over ting.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0012",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg har vanskelig for å forestille meg ting.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0013",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg er full av ideer.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0014",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg unngår krevende lesestoff.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0015",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg løfter samtalen til et høyere nivå.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0016",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg skjønner ting raskt.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0017",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg vil ikke grave dypt i et emne.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0018",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg legger merke til mønstre andre ser ut til å overse.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0019",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg liker ikke kunst.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0020",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg kan håndtere mye informasjon på en gang.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0021",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg elsker å finne på nye måter å gjøre ting på.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0022",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg unngår filosofiske diskusjoner.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0023",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg elsker å lese krevende stoff.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0024",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg trives ikke med å gå på kunstmuseer.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0025",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg er god på mange ting.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0026",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg tror på kunstens betydning.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0027",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg pleier å stemme på konservative politiske kandidater.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0028",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg liker å besøke steder som er nye for meg.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0029",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg liker ikke poesi.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0030",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg pleier å stemme på liberale politiske kandidater.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0031",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg liker å høre nye ideer.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0032",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg leter sjelden etter en dypere mening i ting.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0033",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg liker å tenke over ting.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0034",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg mener at for mye skattepenger går til å støtte artister.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0035",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg kan si ting på en vakker måte.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0036",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg nyter å la fantasien løpe fritt.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0037",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg interesserer meg ikke for teoretiske diskusjoner.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0038",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg liker å lære om emner utenfor mitt eget fagområde.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0039",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg legger sjelden merke til mine egne følelsesreaksjoner.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0040",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg blir begeistret for nye ideer.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0041",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg elsker å dagdrømme.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0042",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg forstår ikke mennesker som blir emosjonelle.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0043",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg liker å forsvinne inn i egne tanker.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0044",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg foretrekker å holde meg til det jeg kjenner.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0045",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg ser skjønnhet i ting andre kanskje ikke legger merke til.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0046",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg opplever følelsene mine intenst.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0047",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg misliker endringer.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0048",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg tenker på hvordan ting kunne vært annerledes.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0049",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg fester meg til tradisjonelle måter å gjøre ting på.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0050",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg foretrekker variasjon framfor rutine.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0001",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg er alltid forberedt.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0002",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg lar tingene mine ligge fritt framme.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0003",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg er nøye med detaljer.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0004",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg skaper rot.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0005",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg får gjøremål gjort med en gang.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0006",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg stoler på at jeg klarer oppgavene jeg tar på meg.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0007",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg glemmer ofte å legge ting tilbake der de hører hjemme.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0008",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg liker orden.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0009",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg sniker meg unna mine plikter.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0010",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg følger en fast plan.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0011",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg stiller høye krav til arbeidet mitt.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0012",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg forsømmer mine plikter.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0013",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg legger ting tilbake der de hører hjemme.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0014",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg sløser med tiden min.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0015",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg gjør ting etter en plan.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0016",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg fortsetter til alt er helt perfekt.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0017",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg gjør ting halvveis.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0018",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg lager planer og holder meg til dem.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0019",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg synes det er vanskelig å komme i gang med å jobbe.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0020",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg følger opp det jeg lover.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0021",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg elsker orden og faste rutiner.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0022",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg etterlater rot på rommet mitt.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0023",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg liker å rydde.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0024",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg gjør akkurat nok arbeid til å komme unna.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0025",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg gjennomfører planene mine.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0026",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg presser meg selv for å nå målene jeg setter meg.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0027",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg gir meg før ting er ferdige.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0028",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg fullfører oppgaver med hell.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0029",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg lar ting stå uferdige.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0030",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg fullfører det jeg begynner på.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0031",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg følger opp planene mine.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0032",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg klarer ikke å konsentrere meg om oppgaven som ligger foran.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0033",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg begynner oppgaver tidlig nok til å gjøre dem ordentlig ferdig.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0034",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg trenger et dytt for å komme i gang.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0035",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg utmerker meg i det jeg gjør.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0036",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg håndterer oppgaver problemfritt.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0037",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg bryter regler.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0038",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg vet hvordan ting blir gjort.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0039",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg bryter det jeg lover.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0040",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg tenker en oppgave gjennom før jeg begynner.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0041",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg holder det jeg lover.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0042",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg bruker liten tid og innsats på arbeidet mitt.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0043",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg sier sannheten.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0044",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg sliter med å sette i gang med oppgaver.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0045",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg holder arbeidsplassen min i orden.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0046",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg gjør mer enn det som forventes av meg.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0047",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg kaster meg ut i ting uten å tenke meg om.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0048",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg gir mitt beste selv på kjedelige oppgaver.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0049",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg tar overilade beslutninger.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0050",
+   "kind": "likert",
+   "lang": "no",
+   "text": "Jeg jobber hardt.",
+   "options": [
+    {
+     "label": "Veldig unøyaktig",
+     "value": 1
+    },
+    {
+     "label": "Middels unøyaktig",
+     "value": 2
+    },
+    {
+     "label": "Hverken unøyaktig eller nøyaktig",
+     "value": 3
+    },
+    {
+     "label": "Middels nøyaktig",
+     "value": 4
+    },
+    {
+     "label": "Veldig nøyaktig",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2619 @@
+{
+ "schemaVersion": 1,
+ "id": "persona-pool-n-rest",
+ "type": "test-definition",
+ "family": "pool",
+ "languages": [
+  "en"
+ ],
+ "scoring": {
+  "type": "trait",
+  "traits": [
+   {
+    "id": "openness",
+    "weight": 1
+   },
+   {
+    "id": "conscientiousness",
+    "weight": 1
+   },
+   {
+    "id": "extraversion",
+    "weight": 1
+   },
+   {
+    "id": "agreeableness",
+    "weight": 1
+   },
+   {
+    "id": "neuroticism",
+    "weight": 1
+   }
+  ],
+  "norms": "none"
+ },
+ "dimensions": [
+  {
+   "id": "openness",
+   "label": "Openness",
+   "labelLanguage": "en",
+   "description": "Exploratory curiosity and imagination."
+  },
+  {
+   "id": "conscientiousness",
+   "label": "Conscientiousness",
+   "labelLanguage": "en",
+   "description": "Organization, goal orientation and self-discipline."
+  },
+  {
+   "id": "extraversion",
+   "label": "Extraversion",
+   "labelLanguage": "en",
+   "description": "Social energy and activity level."
+  },
+  {
+   "id": "agreeableness",
+   "label": "Agreeableness",
+   "labelLanguage": "en",
+   "description": "Trust, compassion and cooperation."
+  },
+  {
+   "id": "neuroticism",
+   "label": "Neuroticism",
+   "labelLanguage": "en",
+   "description": "Tendency toward negative emotions."
+  }
+ ],
+ "items": [
+  {
+   "id": "n-0001",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Get stressed out easily.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0002",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am relaxed most of the time.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0003",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Worry about things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0004",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Seldom feel blue.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0005",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am easily disturbed.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0006",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Get upset easily.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0007",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Change my mood a lot.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0008",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Have frequent mood swings.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0009",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Get irritated easily.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0010",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Often feel blue.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0011",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am afraid of many things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0012",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Lose my temper.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0013",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am afraid to draw attention to myself.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0014",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Only feel comfortable with friends.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0015",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Go on binges.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0016",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Become overwhelmed by events.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0017",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Feel that I'm unable to deal with things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0018",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Panic easily.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0019",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Feel threatened easily.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0020",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Dislike myself.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0021",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am often down in the dumps.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0022",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am filled with doubts about things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0023",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Fear for the worst.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0024",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Get angry easily.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0025",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Get overwhelmed by emotions.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0026",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Take offense easily.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0027",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Get caught up in my problems.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0028",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Grumble about things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0029",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am not easily annoyed.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0030",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am not bothered by difficult social situations.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0031",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Rarely overindulge.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0032",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Easily resist temptations.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0033",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am able to control my cravings.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0034",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am not easily bothered by things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0035",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Rarely get irritated.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0036",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Seldom get mad.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0037",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Feel comfortable with myself.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0038",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am very pleased with myself.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0039",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am not easily frustrated.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0040",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Remain calm under pressure.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0041",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Rarely lose my composure.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0042",
+   "kind": "likert",
+   "lang": "en",
+   "text": "My mood can shift without warning.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0043",
+   "kind": "likert",
+   "lang": "en",
+   "text": "My worries interfere with my sleep.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0044",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Small setbacks can ruin my whole day.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0045",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I replay embarrassing moments in my mind.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0046",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I feel on edge in stressful situations.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0047",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Little things can make me lose my cool.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0048",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I expect things to go wrong.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "n-0049",
+   "kind": "likert",
+   "lang": "en",
+   "text": "My mood stays steady from day to day.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0050",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I let go of my worries quickly.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0051",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I stay composed when plans change.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0052",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I recover quickly from disappointment.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0053",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I am slow to anger.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0054",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Pressure rarely gets to me.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "n-0055",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Unexpected problems do not rattle me.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "neuroticism",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "e-0001",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I bring energy to group activities.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "extraversion",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "e-0002",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I start conversations with strangers.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "extraversion",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "e-0003",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I enjoy big social gatherings.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "extraversion",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "e-0004",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Would describe my experiences as somewhat dull.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "extraversion",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "e-0005",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Often feel uncomfortable around others.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "extraversion",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "a-0001",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Inquire about others' well-being.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "agreeableness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "a-0002",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Know how to comfort others.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "agreeableness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "a-0003",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Love children.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "agreeableness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "a-0004",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am out for my own personal gain.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "agreeableness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "a-0005",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Am not interested in other people's problems.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "agreeableness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0001",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I notice beauty in small everyday things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0002",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I often get lost in my own imagination.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0003",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I enjoy exploring ideas just for their own sake.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "o-0004",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I prefer familiar approaches over trying new ones.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "o-0005",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I find imaginative ideas impractical.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "openness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0001",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Mess things up.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0002",
+   "kind": "likert",
+   "lang": "en",
+   "text": "Rush into things.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": -1
+    }
+   ]
+  },
+  {
+   "id": "c-0003",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I finish my chores before I relax.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0004",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I keep track of what needs to get done.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  },
+  {
+   "id": "c-0005",
+   "kind": "likert",
+   "lang": "en",
+   "text": "I push myself to improve at things I care about.",
+   "options": [
+    {
+     "label": "Very Inaccurate",
+     "value": 1
+    },
+    {
+     "label": "Moderately Inaccurate",
+     "value": 2
+    },
+    {
+     "label": "Neither Accurate Nor Inaccurate",
+     "value": 3
+    },
+    {
+     "label": "Moderately Accurate",
+     "value": 4
+    },
+    {
+     "label": "Very Accurate",
+     "value": 5
+    }
+   ],
+   "scales": [
+    {
+     "id": "conscientiousness",
+     "sign": 1
+    }
+   ]
+  }
+ ]
+}

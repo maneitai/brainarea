@@ -228,6 +228,11 @@ export function layout(route, locale, t) {
       { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.privacy.p.owner'), parts: [
         { text: t('page.privacy.ownerLink'), tag: 'a', cls: 'font-semibold underline', style: 'color:var(--ba-accent)', href: 'mailto:manieten@pm.me', tailText: t('page.privacy.p.ownerTail') },
       ] },
+      { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-600', text: t('page.privacy.p.responsible') },
+      { kind: 'node', tag: 'section', cls: 'mt-8 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm', children: [
+        { kind: 'node', tag: 'h2', cls: 'text-xl font-bold', text: t('page.privacy.h.consent') },
+        { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-600', text: t('page.privacy.consentLine') },
+      ] },
       { kind: 'node', tag: 'p', cls: 'mt-8 text-xs text-gray-500', text: t('page.privacy.updated') },
     ];
   }

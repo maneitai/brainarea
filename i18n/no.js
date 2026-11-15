@@ -167,6 +167,21 @@ export const KEYS = {
     'privacy.p.owner': 'Brainarea er en privat nettside. Ansvarlig utgiver nås på',
     'privacy.ownerLink': 'manieten@pm.me',
     'privacy.p.ownerTail': '. Brukes informasjonskapsler i et omfang som krever samtykke, et samtykkeverktøy legges inn og dette dokumentet beskriver da samtykkesvalget ditt i detalj.',
+    /* privacy — personverntekst + GDPR-samtykkelinje ([BYGG] FASE 1, todo #3726).
+       Beskriver nøyaktig det normerings-endpointet (functions/normering.js, #3724)
+       godtar: språk, test-ID, itemsvar, tidsbruk, valgfri demografi — og ingenting
+       annet. Innsamlingen er IKKE koblet til UI i FASE 1 (endpointet validerer, men
+       lagrer ikke før FASE 4-livssyklusen), så vi varsler nå - før noe aktiveres. */
+    'privacy.h.updates': 'Nye endringer i datahåndteringen',
+    'privacy.p.updates': 'Denne siden beskriver dagens håndtering og planlagte endringer før de tas i bruk. Dersom vi i fremtiden vil samle inn svarene dine anonymt (språk, test-ID, individuelle svar, tidsbruk og frivillig demografi som aldersgruppe og kjønn) for å beregne gjennomsnitt i gruppen, vil det bli oppdatert her først: formålet er utelukkende statistikk som gjør testresultatene mer relevante, dataene sendes uten navn, e-post, cookier eller annen identifikasjon, og de kan ikke kobles til deg.',
+    'privacy.h.retention': 'Lagringstid og sletting',
+    'privacy.p.retention': 'Planlagt innsamling lagres i høyst 24 måneder, deretter slettes råsvarene automatisk; bare anonyme sammendrag (gjennomsnitt og spredning) beholdes. I dag sendes ingen testdata i det hele tatt, så det finnes ingen innsamlede svar å slette. Lokale tidsmerker i nettleseren din fjernes ved å tømme nettleserdata.',
+    'privacy.h.rights': 'Dine rettigheter',
+    'privacy.p.rights': 'Etter personvernforordningen (GDPR) har du rett til innsyn, retting, sletting, begrensning, dataportabilitet og innsigelse, samt rett til å klage til Datatilsynet. Så lenge vi ikke lagrer noe om deg, finnes det ingen data å utøve rettighetene mot. Klagerettigheten gjelder likevel — klage går til Datatilsynet. Hvis den planlagte anonyme innsamlingen aktiveres, gjelder rettighetene de innsamlede, ikke-personifiserbare datapostene: en enkelt post inneholder ikke personopplysninger, men vi dokumenterer likevel håndteringen i denne teksten.',
+    'privacy.h.responsible': 'Behandlingsansvarlig',
+    'privacy.p.responsible': 'Ansvarlig utgiver for brainarea.no er [BEHANDLINGSANSVARLIG — JURIDISK ENHET IKKE FASTSATT]. Kontakt inntil videre:',
+    'privacy.consentLine': 'Jeg samtykker til at mine testsvar kan sendes fullstendig anonymt (språk, test-ID, svar, tidsbruk og eventuell frivillig demografi) for statistisk normering — uten navn, e-post, cookier eller annen identifikasjon. Samtykke er frivillig; du kan ta testene uten å samtykke.',
+    'privacy.h.consent': 'Planlagt samtykkelinje (GDPR)',
     /* ad — annonseslot-komponent ([BYGG] FASE 1, todo #3720). Ekte formater,
        merket mock etter beslutning 11. Plasseringssteget (#3722) forbruker
        renderAd()-slots; aldri i testflyt, aldri mellom siste spÅrsmål og

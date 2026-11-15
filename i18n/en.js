@@ -173,6 +173,22 @@ export const KEYS = {
     'privacy.p.owner': 'Brainarea is a private website. The responsible publisher is reached at',
     'privacy.ownerLink': 'manieten@pm.me',
     'privacy.p.ownerTail': '. If cookies requiring consent are used, a consent tool will be installed and this document will describe your choices in detail.',
+    /* privacy — privacy text + GDPR consent line ([BYGG] FASE 1, todo #3726).
+       Describes exactly what the normering endpoint (functions/normering.js, #3724)
+       accepts: language, test ID, item answers, time used, optional demographics —
+       and nothing else. Collection is NOT wired to the UI in FASE 1 (the endpoint
+       validates but does not persist until the FASE 4 lifecycle), so we disclose
+       now — before anything is activated. */
+    'privacy.h.updates': 'Upcoming changes to data handling',
+    'privacy.p.updates': 'This page describes current handling and planned changes before they take effect. If we in the future collect your answers anonymously (language, test ID, individual answers, time used and optional demographics such as age band and gender) to compute group averages, it will be announced here first: the purpose is solely statistics that make test results more relevant, the data is sent without name, email, cookies or any other identifier, and it cannot be linked to you.',
+    'privacy.h.retention': 'Retention and deletion',
+    'privacy.p.retention': 'Planned collection is stored for at most 24 months, after which raw answers are deleted automatically; only anonymous summaries (averages and spread) are kept. Today no test data is sent at all, so there are no collected answers to delete. Local timestamps in your browser are removed by clearing browser data.',
+    'privacy.h.rights': 'Your rights',
+    'privacy.p.rights': 'Under the General Data Protection Regulation (GDPR) you have the right to access, rectification, erasure, restriction, data portability and objection, plus the right to complain to your national supervisory authority. As long as we store nothing about you there is no data to exercise the rights against. If the planned anonymous collection is activated, the rights apply to the collected, non-person-identifiable data records: a single record contains no personal data, but we still document the handling in this text.',
+    'privacy.h.responsible': 'Data controller',
+    'privacy.p.responsible': 'The responsible publisher of brainarea.no is [DATA CONTROLLER — LEGAL ENTITY NOT YET DEFINED]. Contact for now:',
+    'privacy.consentLine': 'I consent to my test answers being sent fully anonymised (language, test ID, answers, time used and any optional demographics) for statistical norming — with no name, email, cookies or other identifier. Consent is voluntary; you can take the tests without consenting.',
+    'privacy.h.consent': 'Planned consent line (GDPR)',
     /* ad — ad-slot component ([BYGG] FASE 1, todo #3720). Real formats,
        mock-marked per decision 11. Placement step (#3722) consumes
        renderAd() slots; never in test flow, never between last question

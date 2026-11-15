@@ -36,7 +36,7 @@ export const TEST_ROUTES = RUTE_LISTE.filter((r) => r.testId !== null);
  * + leaderboard nederst (siste slot foer footer). privacy faar INGEN annonse
  * (annonse rett ved personvernteksten bryter aarepen forventning). Test-rutene
  * (persona/evne/rel) er UTENFOR hele denne plasseringen: resultat-omraadet
- * (evne-result-after / result-under, mock 336x280 + 320x50) er todo #3723 —
+ * (evne-result-after / result-under, mock 336x280 + 320x50) er #3722-rest —
  * adSlots() kaster hardt dersom noen proever aa plassere der.
  *
  * { format } er en beslutning-11-format-id (app/ads.js AD_FORMATS);

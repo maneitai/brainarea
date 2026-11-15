@@ -61,3 +61,14 @@ Privacy: ingen annonser. Test-rutene (persona/evne/rel): ingen annonser og hard 
 - Script-basert vekslende in-feed-høyde (130px-båndet er der), dynamisk formathåndtering i
   out-treet — mock-kontrakten fikser dimensjonene; FASE 1 holder det statisk.
 - Resultat-plassering (evne-result-after / result-under, 336×280 + 320×50) = todo #3723.
+
+## Addendum (2026-11-15, etter omstruktureringen)
+
+Brettet ble omstrukturert etter dette steget: rutine-verifiseringer per byggesteg er
+erstattet med samlet faseverifikasjon (#3812 for FASE 1). Dermed:
+- Plasseringskontrollen som lå i #3723 (rute-for-rute: ingen annonse i testflyt,
+  ingen mellom siste spørsmål og resultat) er innhentet av #3812 — #3723 er skipped.
+- «Ved/under resultat» (evne-result-after 336×280 + result-under 320×50) kan ikke
+  bygges før resultatsurface finnes i kjøresjiktet (FASE 3). Resten er registrert
+  som eget steg (#3722-rest) som skal plasseres ETTER FASE 3 result-stegene.
+- Pekeren i app/pages-data.js-headeren er rettet fra #3723 til #3722-rest.

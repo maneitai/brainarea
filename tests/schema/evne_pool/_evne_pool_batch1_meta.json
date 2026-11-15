@@ -1,0 +1,3485 @@
+{
+  "metaVersion": 1,
+  "id": "evne-pool-batch1-meta",
+  "date": "2026-11-15",
+  "boardLeaf": "#3748 [3-VEIS] FASE 2: Evnepool batch 1: tema 1-2",
+  "generatedBy": "gen_evne_pool_batch1.py (deterministisk, ingen RNG)",
+  "spec": "tests/schema/_evne_itemspec_spec.json",
+  "files": {
+    "no": {
+      "t1": "def-evne-t1-matrise.no.json",
+      "t2": "def-evne-t2-numerisk.no.json"
+    },
+    "en": {
+      "t1": "def-evne-t1-matrise.en.json",
+      "t2": "def-evne-t2-numerisk.en.json"
+    }
+  },
+  "counts": {
+    "T1": 50,
+    "T2": 50
+  },
+  "bandShares": {
+    "T1.H": 16,
+    "T1.L": 17,
+    "T1.M": 17,
+    "T2.H": 16,
+    "T2.L": 17,
+    "T2.M": 17
+  },
+  "scoringNote": "Scoring uten maxItems: maks 44-tema-samling avgjores i sampler-bygget; per-tema maxItems 8 bryter schema-minimum 10. Funn rapportert.",
+  "items": [
+    {
+      "id": "mx-0001",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "count-across",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[<<<<]",
+      "correctIndex": 0,
+      "violations": [
+        "none",
+        "CC+1",
+        "CC-1",
+        "CC+2",
+        "CC-2",
+        "CC+3"
+      ],
+      "optionOrder": [
+        "[<<<<]",
+        "[<<<<<]",
+        "[<<<]",
+        "[<<<<<<]",
+        "[<<]",
+        "[<<<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0002",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "count-across",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[<<<]",
+      "correctIndex": 5,
+      "violations": [
+        "CC+1",
+        "CC-1",
+        "CC+2",
+        "CC-2",
+        "CC+3",
+        "none"
+      ],
+      "optionOrder": [
+        "[<<<<]",
+        "[<<]",
+        "[<<<<<]",
+        "[<]",
+        "[<<<<<<]",
+        "[<<<]"
+      ]
+    },
+    {
+      "id": "mx-0003",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "count-across",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 0,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[<<<<<]",
+      "correctIndex": 4,
+      "violations": [
+        "CC-1",
+        "CC+2",
+        "CC-2",
+        "CC+3",
+        "none",
+        "CC+1"
+      ],
+      "optionOrder": [
+        "[<<<<]",
+        "[<<<<<<<]",
+        "[<<<]",
+        "[<<<<<<<<]",
+        "[<<<<<]",
+        "[<<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0004",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "count-across",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 0,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[<<<<<<]",
+      "correctIndex": 3,
+      "violations": [
+        "CC+2",
+        "CC-2",
+        "CC-3",
+        "none",
+        "CC+1",
+        "CC-1"
+      ],
+      "optionOrder": [
+        "[<<<<<<<<]",
+        "[<<<<]",
+        "[<<<]",
+        "[<<<<<<]",
+        "[<<<<<<<]",
+        "[<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0005",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "count-across",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 3,
+      "correct": "[<<<<<]",
+      "correctIndex": 2,
+      "violations": [
+        "CC-2",
+        "CC+3",
+        "none",
+        "CC+1",
+        "CC-1",
+        "CC+2"
+      ],
+      "optionOrder": [
+        "[<<<]",
+        "[<<<<<<<<]",
+        "[<<<<<]",
+        "[<<<<<<]",
+        "[<<<<]",
+        "[<<<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0006",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "count-across",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[<<<<]",
+      "correctIndex": 1,
+      "violations": [
+        "CC+3",
+        "none",
+        "CC+1",
+        "CC-1",
+        "CC+2",
+        "CC-2"
+      ],
+      "optionOrder": [
+        "[<<<<<<<]",
+        "[<<<<]",
+        "[<<<<<]",
+        "[<<<]",
+        "[<<<<<<]",
+        "[<<]"
+      ]
+    },
+    {
+      "id": "mx-0007",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "count-across",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 3,
+      "correct": "[<<<<<]",
+      "correctIndex": 0,
+      "violations": [
+        "none",
+        "CC+1",
+        "CC-1",
+        "CC+2",
+        "CC-2",
+        "CC+3"
+      ],
+      "optionOrder": [
+        "[<<<<<]",
+        "[<<<<<<]",
+        "[<<<<]",
+        "[<<<<<<<]",
+        "[<<<]",
+        "[<<<<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0008",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "count-across",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 0,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[<<<<<]",
+      "correctIndex": 5,
+      "violations": [
+        "CC+1",
+        "CC-1",
+        "CC+2",
+        "CC-2",
+        "CC+3",
+        "none"
+      ],
+      "optionOrder": [
+        "[<<<<<<]",
+        "[<<<<]",
+        "[<<<<<<<]",
+        "[<<<]",
+        "[<<<<<<<<]",
+        "[<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0009",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "count-across",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 0,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[<<<<<<]",
+      "correctIndex": 4,
+      "violations": [
+        "CC-1",
+        "CC+2",
+        "CC-2",
+        "CC-3",
+        "none",
+        "CC+1"
+      ],
+      "optionOrder": [
+        "[<<<<<]",
+        "[<<<<<<<<]",
+        "[<<<<]",
+        "[<<<]",
+        "[<<<<<<]",
+        "[<<<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0010",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "count-down",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": -1,
+        "CC": 0
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 3,
+      "correct": "[<]",
+      "correctIndex": 3,
+      "violations": [
+        "RC+3",
+        "RC+4",
+        "RC+5",
+        "none",
+        "RC+1",
+        "RC+2"
+      ],
+      "optionOrder": [
+        "[<<<<]",
+        "[<<<<<]",
+        "[<<<<<<]",
+        "[<]",
+        "[<<]",
+        "[<<<]"
+      ]
+    },
+    {
+      "id": "mx-0011",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "count-down",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 1,
+        "CC": 0
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[<<<]",
+      "correctIndex": 2,
+      "violations": [
+        "RC-2",
+        "RC+3",
+        "none",
+        "RC+1",
+        "RC-1",
+        "RC+2"
+      ],
+      "optionOrder": [
+        "[<]",
+        "[<<<<<<]",
+        "[<<<]",
+        "[<<<<]",
+        "[<<]",
+        "[<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0012",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "count-down",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 1,
+        "CC": 0
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[<<<<]",
+      "correctIndex": 1,
+      "violations": [
+        "RC+3",
+        "none",
+        "RC+1",
+        "RC-1",
+        "RC+2",
+        "RC-2"
+      ],
+      "optionOrder": [
+        "[<<<<<<<]",
+        "[<<<<]",
+        "[<<<<<]",
+        "[<<<]",
+        "[<<<<<<]",
+        "[<<]"
+      ]
+    },
+    {
+      "id": "mx-0013",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "count-down",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 2,
+        "CC": 0
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[<<<<<]",
+      "correctIndex": 0,
+      "violations": [
+        "none",
+        "RC+1",
+        "RC-1",
+        "RC+2",
+        "RC-2",
+        "RC+3"
+      ],
+      "optionOrder": [
+        "[<<<<<]",
+        "[<<<<<<]",
+        "[<<<<]",
+        "[<<<<<<<]",
+        "[<<<]",
+        "[<<<<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0014",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "count-down",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 1,
+        "CC": 0
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[<<<]",
+      "correctIndex": 5,
+      "violations": [
+        "RC+1",
+        "RC-1",
+        "RC+2",
+        "RC-2",
+        "RC+3",
+        "none"
+      ],
+      "optionOrder": [
+        "[<<<<]",
+        "[<<]",
+        "[<<<<<]",
+        "[<]",
+        "[<<<<<<]",
+        "[<<<]"
+      ]
+    },
+    {
+      "id": "mx-0015",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "count-down",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 2,
+        "CC": 0
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[<<<<<<]",
+      "correctIndex": 4,
+      "violations": [
+        "RC-1",
+        "RC+2",
+        "RC-2",
+        "RC-3",
+        "none",
+        "RC+1"
+      ],
+      "optionOrder": [
+        "[<<<<<]",
+        "[<<<<<<<<]",
+        "[<<<<]",
+        "[<<<]",
+        "[<<<<<<]",
+        "[<<<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0016",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "count-down",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": -1,
+        "CC": 0
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 3,
+      "correct": "[<]",
+      "correctIndex": 3,
+      "violations": [
+        "RC+3",
+        "RC+4",
+        "RC+5",
+        "none",
+        "RC+1",
+        "RC+2"
+      ],
+      "optionOrder": [
+        "[<<<<]",
+        "[<<<<<]",
+        "[<<<<<<]",
+        "[<]",
+        "[<<]",
+        "[<<<]"
+      ]
+    },
+    {
+      "id": "mx-0017",
+      "theme": "T1",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "count-down",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 1,
+        "CC": 0
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[<<<<]",
+      "correctIndex": 2,
+      "violations": [
+        "RC-2",
+        "RC+3",
+        "none",
+        "RC+1",
+        "RC-1",
+        "RC+2"
+      ],
+      "optionOrder": [
+        "[<<]",
+        "[<<<<<<<]",
+        "[<<<<]",
+        "[<<<<<]",
+        "[<<<]",
+        "[<<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0018",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "R+cross",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[>>>]",
+      "correctIndex": 1,
+      "violations": [
+        "CC-1",
+        "none",
+        "RG+1",
+        "RG-1",
+        "RG+2",
+        "CC+1"
+      ],
+      "optionOrder": [
+        "[>>]",
+        "[>>>]",
+        "[vvv]",
+        "[^^^]",
+        "[<<<]",
+        "[>>>>]"
+      ]
+    },
+    {
+      "id": "mx-0019",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "R+cross",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 0,
+        "CC": 2
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[\\\\\\\\\\]",
+      "correctIndex": 0,
+      "violations": [
+        "none",
+        "RG+1",
+        "RG-1",
+        "RG+2",
+        "CC+1",
+        "CC-1"
+      ],
+      "optionOrder": [
+        "[\\\\\\\\\\]",
+        "[|||||]",
+        "[-----]",
+        "[/////]",
+        "[\\\\\\\\\\\\]",
+        "[\\\\\\\\]"
+      ]
+    },
+    {
+      "id": "mx-0020",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "R+cross",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 1,
+      "k0": 2,
+      "correct": "[vvvv]",
+      "correctIndex": 5,
+      "violations": [
+        "RG+1",
+        "RG-1",
+        "RG+2",
+        "CC+1",
+        "CC-1",
+        "none"
+      ],
+      "optionOrder": [
+        "[<<<<]",
+        "[>>>>]",
+        "[^^^^]",
+        "[vvvvv]",
+        "[vvv]",
+        "[vvvv]"
+      ]
+    },
+    {
+      "id": "mx-0021",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "R+cross",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[\\\\\\]",
+      "correctIndex": 4,
+      "violations": [
+        "RG-1",
+        "RG+2",
+        "CC+1",
+        "CC-1",
+        "none",
+        "RG+1"
+      ],
+      "optionOrder": [
+        "[---]",
+        "[///]",
+        "[\\\\\\\\]",
+        "[\\\\]",
+        "[\\\\\\]",
+        "[|||]"
+      ]
+    },
+    {
+      "id": "mx-0022",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "R+cross",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 0,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[>>>>>]",
+      "correctIndex": 3,
+      "violations": [
+        "RG+2",
+        "CC+1",
+        "CC-1",
+        "none",
+        "RG+1",
+        "RG-1"
+      ],
+      "optionOrder": [
+        "[<<<<<]",
+        "[>>>>>>]",
+        "[>>>>]",
+        "[>>>>>]",
+        "[vvvvv]",
+        "[^^^^^]"
+      ]
+    },
+    {
+      "id": "mx-0023",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "R+cross",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 1,
+      "k0": 2,
+      "correct": "[||||]",
+      "correctIndex": 2,
+      "violations": [
+        "CC+1",
+        "CC-1",
+        "none",
+        "RG+1",
+        "RG-1",
+        "RG+2"
+      ],
+      "optionOrder": [
+        "[|||||]",
+        "[|||]",
+        "[||||]",
+        "[////]",
+        "[\\\\\\\\]",
+        "[----]"
+      ]
+    },
+    {
+      "id": "mx-0024",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "D+cross",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 0,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[>>>>>]",
+      "correctIndex": 1,
+      "violations": [
+        "CC-1",
+        "none",
+        "CG+1",
+        "CG-1",
+        "CG+2",
+        "CC+1"
+      ],
+      "optionOrder": [
+        "[>>>>]",
+        "[>>>>>]",
+        "[vvvvv]",
+        "[^^^^^]",
+        "[<<<<<]",
+        "[>>>>>>]"
+      ]
+    },
+    {
+      "id": "mx-0025",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "D+cross",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[\\\\\\]",
+      "correctIndex": 0,
+      "violations": [
+        "none",
+        "CG+1",
+        "CG-1",
+        "CG+2",
+        "CC+1",
+        "CC-1"
+      ],
+      "optionOrder": [
+        "[\\\\\\]",
+        "[|||]",
+        "[---]",
+        "[///]",
+        "[\\\\\\\\]",
+        "[\\\\]"
+      ]
+    },
+    {
+      "id": "mx-0026",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "D+cross",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 2,
+      "k0": 2,
+      "correct": "[<<<<]",
+      "correctIndex": 5,
+      "violations": [
+        "CG+1",
+        "CG-1",
+        "CG+2",
+        "CC+1",
+        "CC-1",
+        "none"
+      ],
+      "optionOrder": [
+        "[^^^^]",
+        "[vvvv]",
+        "[>>>>]",
+        "[<<<<<]",
+        "[<<<]",
+        "[<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0027",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "D+cross",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 1,
+      "k0": 1,
+      "correct": "[|||]",
+      "correctIndex": 4,
+      "violations": [
+        "CG-1",
+        "CG+2",
+        "CC+1",
+        "CC-1",
+        "none",
+        "CG+1"
+      ],
+      "optionOrder": [
+        "[\\\\\\]",
+        "[---]",
+        "[||||]",
+        "[||]",
+        "[|||]",
+        "[///]"
+      ]
+    },
+    {
+      "id": "mx-0028",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "D+cross",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 0,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 1,
+      "k0": 1,
+      "correct": "[vvvvv]",
+      "correctIndex": 3,
+      "violations": [
+        "CG+2",
+        "CC+1",
+        "CC-1",
+        "none",
+        "CG+1",
+        "CG-1"
+      ],
+      "optionOrder": [
+        "[^^^^^]",
+        "[vvvvvv]",
+        "[vvvv]",
+        "[vvvvv]",
+        "[<<<<<]",
+        "[>>>>>]"
+      ]
+    },
+    {
+      "id": "mx-0029",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "D+cross",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 0,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 3,
+      "k0": 2,
+      "correct": "[----]",
+      "correctIndex": 2,
+      "violations": [
+        "CC+1",
+        "CC-1",
+        "none",
+        "CG+1",
+        "CG-1",
+        "CG+2"
+      ],
+      "optionOrder": [
+        "[-----]",
+        "[---]",
+        "[----]",
+        "[\\\\\\\\]",
+        "[////]",
+        "[||||]"
+      ]
+    },
+    {
+      "id": "mx-0030",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "dual-count",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 1,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[>>>>>]",
+      "correctIndex": 1,
+      "violations": [
+        "RC-1",
+        "none",
+        "CG+1",
+        "CG-1",
+        "CG+2",
+        "RC+1"
+      ],
+      "optionOrder": [
+        "[>>>>]",
+        "[>>>>>]",
+        "[vvvvv]",
+        "[^^^^^]",
+        "[<<<<<]",
+        "[>>>>>>]"
+      ]
+    },
+    {
+      "id": "mx-0031",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "dual-count",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 2,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[\\\\\\\\\\\\\\\\]",
+      "correctIndex": 0,
+      "violations": [
+        "none",
+        "CG+1",
+        "CG-1",
+        "CG+2",
+        "RC-1",
+        "RC-2"
+      ],
+      "optionOrder": [
+        "[\\\\\\\\\\\\\\\\]",
+        "[||||||||]",
+        "[--------]",
+        "[////////]",
+        "[\\\\\\\\\\\\\\]",
+        "[\\\\\\\\\\\\]"
+      ]
+    },
+    {
+      "id": "mx-0032",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "dual-count",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 1,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[>>>>>>>]",
+      "correctIndex": 5,
+      "violations": [
+        "CG+1",
+        "CG-1",
+        "CG+2",
+        "RC+1",
+        "RC-1",
+        "none"
+      ],
+      "optionOrder": [
+        "[vvvvvvv]",
+        "[^^^^^^^]",
+        "[<<<<<<<]",
+        "[>>>>>>>>]",
+        "[>>>>>>]",
+        "[>>>>>>>]"
+      ]
+    },
+    {
+      "id": "mx-0033",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "dual-count",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 1,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[\\\\\\\\\\]",
+      "correctIndex": 4,
+      "violations": [
+        "CG-1",
+        "CG+2",
+        "RC+1",
+        "RC-1",
+        "none",
+        "CG+1"
+      ],
+      "optionOrder": [
+        "[-----]",
+        "[/////]",
+        "[\\\\\\\\\\\\]",
+        "[\\\\\\\\]",
+        "[\\\\\\\\\\]",
+        "[|||||]"
+      ]
+    },
+    {
+      "id": "mx-0034",
+      "theme": "T1",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "dual-count",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 1,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[>>>>>>]",
+      "correctIndex": 3,
+      "violations": [
+        "CG+2",
+        "RC+1",
+        "RC-1",
+        "none",
+        "CG+1",
+        "CG-1"
+      ],
+      "optionOrder": [
+        "[<<<<<<]",
+        "[>>>>>>>]",
+        "[>>>>>]",
+        "[>>>>>>]",
+        "[vvvvvv]",
+        "[^^^^^^]"
+      ]
+    },
+    {
+      "id": "mx-0035",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "dual-glyph-RG",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 1,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[>>>>>]",
+      "correctIndex": 2,
+      "violations": [
+        "RC+1",
+        "RC-1",
+        "none",
+        "RG+1",
+        "RG-1",
+        "RG+2"
+      ],
+      "optionOrder": [
+        "[>>>>>>]",
+        "[>>>>]",
+        "[>>>>>]",
+        "[vvvvv]",
+        "[^^^^^]",
+        "[<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0036",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "dual-glyph-RG",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 2,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[\\\\\\\\\\\\\\]",
+      "correctIndex": 1,
+      "violations": [
+        "RC-1",
+        "none",
+        "RG+1",
+        "RG-1",
+        "RG+2",
+        "RC+1"
+      ],
+      "optionOrder": [
+        "[\\\\\\\\\\\\]",
+        "[\\\\\\\\\\\\\\]",
+        "[|||||||]",
+        "[-------]",
+        "[///////]",
+        "[\\\\\\\\\\\\\\\\]"
+      ]
+    },
+    {
+      "id": "mx-0037",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "dual-glyph-RG",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 1,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 2,
+      "k0": 1,
+      "correct": "[<<<<<<<]",
+      "correctIndex": 0,
+      "violations": [
+        "none",
+        "RG+1",
+        "RG-1",
+        "RG+2",
+        "RC+1",
+        "RC-1"
+      ],
+      "optionOrder": [
+        "[<<<<<<<]",
+        "[^^^^^^^]",
+        "[vvvvvvv]",
+        "[>>>>>>>]",
+        "[<<<<<<<<]",
+        "[<<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0038",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "dual-glyph-RG",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 2,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[\\\\\\\\\\\\\\]",
+      "correctIndex": 5,
+      "violations": [
+        "RG+1",
+        "RG-1",
+        "RG+2",
+        "RC+1",
+        "RC-1",
+        "none"
+      ],
+      "optionOrder": [
+        "[|||||||]",
+        "[-------]",
+        "[///////]",
+        "[\\\\\\\\\\\\\\\\]",
+        "[\\\\\\\\\\\\]",
+        "[\\\\\\\\\\\\\\]"
+      ]
+    },
+    {
+      "id": "mx-0039",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "dual-glyph-RG",
+      "axes": {
+        "RG": 1,
+        "CG": 0,
+        "RC": 1,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 1,
+      "k0": 1,
+      "correct": "[vvvvv]",
+      "correctIndex": 4,
+      "violations": [
+        "RG-1",
+        "RG+2",
+        "RC+1",
+        "RC-1",
+        "none",
+        "RG+1"
+      ],
+      "optionOrder": [
+        "[>>>>>]",
+        "[^^^^^]",
+        "[vvvvvv]",
+        "[vvvv]",
+        "[vvvvv]",
+        "[<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0040",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "dual-glyph-CG",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 1,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[>>>>>]",
+      "correctIndex": 3,
+      "violations": [
+        "CG+2",
+        "RC+1",
+        "RC-1",
+        "none",
+        "CG+1",
+        "CG-1"
+      ],
+      "optionOrder": [
+        "[<<<<<]",
+        "[>>>>>>]",
+        "[>>>>]",
+        "[>>>>>]",
+        "[vvvvv]",
+        "[^^^^^]"
+      ]
+    },
+    {
+      "id": "mx-0041",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "dual-glyph-CG",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 2,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[\\\\\\\\\\\\\\]",
+      "correctIndex": 2,
+      "violations": [
+        "RC+1",
+        "RC-1",
+        "none",
+        "CG+1",
+        "CG-1",
+        "CG+2"
+      ],
+      "optionOrder": [
+        "[\\\\\\\\\\\\\\\\]",
+        "[\\\\\\\\\\\\]",
+        "[\\\\\\\\\\\\\\]",
+        "[|||||||]",
+        "[-------]",
+        "[///////]"
+      ]
+    },
+    {
+      "id": "mx-0042",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "dual-glyph-CG",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 1,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 1,
+      "k0": 1,
+      "correct": "[vvvvvvv]",
+      "correctIndex": 1,
+      "violations": [
+        "RC-1",
+        "none",
+        "CG+1",
+        "CG-1",
+        "CG+2",
+        "RC+1"
+      ],
+      "optionOrder": [
+        "[vvvvvv]",
+        "[vvvvvvv]",
+        "[<<<<<<<]",
+        "[>>>>>>>]",
+        "[^^^^^^^]",
+        "[vvvvvvvv]"
+      ]
+    },
+    {
+      "id": "mx-0043",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "dual-glyph-CG",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 2,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 2,
+      "k0": 1,
+      "correct": "[///////]",
+      "correctIndex": 0,
+      "violations": [
+        "none",
+        "CG+1",
+        "CG-1",
+        "CG+2",
+        "RC+1",
+        "RC-1"
+      ],
+      "optionOrder": [
+        "[///////]",
+        "[-------]",
+        "[|||||||]",
+        "[\\\\\\\\\\\\\\]",
+        "[////////]",
+        "[//////]"
+      ]
+    },
+    {
+      "id": "mx-0044",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "dual-glyph-CG",
+      "axes": {
+        "RG": 0,
+        "CG": 1,
+        "RC": 1,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 3,
+      "k0": 1,
+      "correct": "[^^^^^]",
+      "correctIndex": 5,
+      "violations": [
+        "CG+1",
+        "CG-1",
+        "CG+2",
+        "RC+1",
+        "RC-1",
+        "none"
+      ],
+      "optionOrder": [
+        "[>>>>>]",
+        "[<<<<<]",
+        "[vvvvv]",
+        "[^^^^^^]",
+        "[^^^^]",
+        "[^^^^^]"
+      ]
+    },
+    {
+      "id": "mx-0045",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "full-count",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 1,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[<<<<<]",
+      "correctIndex": 4,
+      "violations": [
+        "RC-1",
+        "RC+2",
+        "RC-2",
+        "RC+3",
+        "none",
+        "RC+1"
+      ],
+      "optionOrder": [
+        "[<<<<]",
+        "[<<<<<<<]",
+        "[<<<]",
+        "[<<<<<<<<]",
+        "[<<<<<]",
+        "[<<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0046",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "full-count",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 2,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[///////]",
+      "correctIndex": 3,
+      "violations": [
+        "RC-2",
+        "RC-3",
+        "RC-4",
+        "none",
+        "RC+1",
+        "RC-1"
+      ],
+      "optionOrder": [
+        "[/////]",
+        "[////]",
+        "[///]",
+        "[///////]",
+        "[////////]",
+        "[//////]"
+      ]
+    },
+    {
+      "id": "mx-0047",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "full-count",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 1,
+        "CC": 2
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[<<<<<<<]",
+      "correctIndex": 2,
+      "violations": [
+        "RC-3",
+        "RC-4",
+        "none",
+        "RC+1",
+        "RC-1",
+        "RC-2"
+      ],
+      "optionOrder": [
+        "[<<<<]",
+        "[<<<]",
+        "[<<<<<<<]",
+        "[<<<<<<<<]",
+        "[<<<<<<]",
+        "[<<<<<]"
+      ]
+    },
+    {
+      "id": "mx-0048",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "full-count",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 2,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 1,
+      "correct": "[///////]",
+      "correctIndex": 1,
+      "violations": [
+        "RC-4",
+        "none",
+        "RC+1",
+        "RC-1",
+        "RC-2",
+        "RC-3"
+      ],
+      "optionOrder": [
+        "[///]",
+        "[///////]",
+        "[////////]",
+        "[//////]",
+        "[/////]",
+        "[////]"
+      ]
+    },
+    {
+      "id": "mx-0049",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "full-count",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 1,
+        "CC": 1
+      },
+      "cycle": "A",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[<<<<<<]",
+      "correctIndex": 0,
+      "violations": [
+        "none",
+        "RC+1",
+        "RC-1",
+        "RC+2",
+        "RC-2",
+        "RC-3"
+      ],
+      "optionOrder": [
+        "[<<<<<<]",
+        "[<<<<<<<]",
+        "[<<<<<]",
+        "[<<<<<<<<]",
+        "[<<<<]",
+        "[<<<]"
+      ]
+    },
+    {
+      "id": "mx-0050",
+      "theme": "T1",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "full-count",
+      "axes": {
+        "RG": 0,
+        "CG": 0,
+        "RC": 1,
+        "CC": 1
+      },
+      "cycle": "B",
+      "g0": 0,
+      "k0": 2,
+      "correct": "[//////]",
+      "correctIndex": 5,
+      "violations": [
+        "RC+1",
+        "RC-1",
+        "RC+2",
+        "RC-2",
+        "RC-3",
+        "none"
+      ],
+      "optionOrder": [
+        "[///////]",
+        "[/////]",
+        "[////////]",
+        "[////]",
+        "[///]",
+        "[//////]"
+      ]
+    },
+    {
+      "id": "nm-0001",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "arith",
+      "subtypeDesc": "arithmetic-progression",
+      "params": [
+        2,
+        3
+      ],
+      "seq": [
+        2,
+        5,
+        8,
+        11,
+        14
+      ],
+      "correct": 17,
+      "correctIndex": 4,
+      "violations": [
+        14,
+        20,
+        16,
+        18
+      ],
+      "optionOrder": [
+        "14",
+        "20",
+        "16",
+        "18",
+        "17"
+      ],
+      "difficulty": -1.75
+    },
+    {
+      "id": "nm-0002",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "arith",
+      "subtypeDesc": "arithmetic-progression",
+      "params": [
+        3,
+        4
+      ],
+      "seq": [
+        3,
+        7,
+        11,
+        15,
+        19
+      ],
+      "correct": 23,
+      "correctIndex": 3,
+      "violations": [
+        19,
+        27,
+        22,
+        24
+      ],
+      "optionOrder": [
+        "27",
+        "22",
+        "24",
+        "23",
+        "19"
+      ],
+      "difficulty": -1.55
+    },
+    {
+      "id": "nm-0003",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "arith",
+      "subtypeDesc": "arithmetic-progression",
+      "params": [
+        4,
+        5
+      ],
+      "seq": [
+        4,
+        9,
+        14,
+        19,
+        24
+      ],
+      "correct": 29,
+      "correctIndex": 2,
+      "violations": [
+        24,
+        34,
+        28,
+        30
+      ],
+      "optionOrder": [
+        "28",
+        "30",
+        "29",
+        "24",
+        "34"
+      ],
+      "difficulty": -1.35
+    },
+    {
+      "id": "nm-0004",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "arith",
+      "subtypeDesc": "arithmetic-progression",
+      "params": [
+        5,
+        6
+      ],
+      "seq": [
+        5,
+        11,
+        17,
+        23,
+        29
+      ],
+      "correct": 35,
+      "correctIndex": 1,
+      "violations": [
+        29,
+        41,
+        34,
+        36
+      ],
+      "optionOrder": [
+        "36",
+        "35",
+        "29",
+        "41",
+        "34"
+      ],
+      "difficulty": -1.15
+    },
+    {
+      "id": "nm-0005",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "arith",
+      "subtypeDesc": "arithmetic-progression",
+      "params": [
+        2,
+        4
+      ],
+      "seq": [
+        2,
+        6,
+        10,
+        14,
+        18
+      ],
+      "correct": 22,
+      "correctIndex": 0,
+      "violations": [
+        18,
+        26,
+        21,
+        23
+      ],
+      "optionOrder": [
+        "22",
+        "18",
+        "26",
+        "21",
+        "23"
+      ],
+      "difficulty": -1.75
+    },
+    {
+      "id": "nm-0006",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "arith",
+      "subtypeDesc": "arithmetic-progression",
+      "params": [
+        3,
+        5
+      ],
+      "seq": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "correct": 28,
+      "correctIndex": 4,
+      "violations": [
+        23,
+        33,
+        27,
+        29
+      ],
+      "optionOrder": [
+        "23",
+        "33",
+        "27",
+        "29",
+        "28"
+      ],
+      "difficulty": -1.55
+    },
+    {
+      "id": "nm-0007",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "arith",
+      "subtypeDesc": "arithmetic-progression",
+      "params": [
+        4,
+        6
+      ],
+      "seq": [
+        4,
+        10,
+        16,
+        22,
+        28
+      ],
+      "correct": 34,
+      "correctIndex": 3,
+      "violations": [
+        28,
+        40,
+        33,
+        35
+      ],
+      "optionOrder": [
+        "40",
+        "33",
+        "35",
+        "34",
+        "28"
+      ],
+      "difficulty": -1.35
+    },
+    {
+      "id": "nm-0008",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "arith",
+      "subtypeDesc": "arithmetic-progression",
+      "params": [
+        5,
+        3
+      ],
+      "seq": [
+        5,
+        8,
+        11,
+        14,
+        17
+      ],
+      "correct": 20,
+      "correctIndex": 2,
+      "violations": [
+        17,
+        23,
+        19,
+        21
+      ],
+      "optionOrder": [
+        "19",
+        "21",
+        "20",
+        "17",
+        "23"
+      ],
+      "difficulty": -1.15
+    },
+    {
+      "id": "nm-0009",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "arith",
+      "subtypeDesc": "arithmetic-progression",
+      "params": [
+        2,
+        5
+      ],
+      "seq": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "correct": 27,
+      "correctIndex": 1,
+      "violations": [
+        22,
+        32,
+        26,
+        28
+      ],
+      "optionOrder": [
+        "28",
+        "27",
+        "22",
+        "32",
+        "26"
+      ],
+      "difficulty": -1.75
+    },
+    {
+      "id": "nm-0010",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "geom",
+      "subtypeDesc": "geometric-progression",
+      "params": [
+        1,
+        2
+      ],
+      "seq": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "correct": 32,
+      "correctIndex": 0,
+      "violations": [
+        16,
+        33,
+        31,
+        64
+      ],
+      "optionOrder": [
+        "32",
+        "16",
+        "33",
+        "31",
+        "64"
+      ],
+      "difficulty": -1.55
+    },
+    {
+      "id": "nm-0011",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "geom",
+      "subtypeDesc": "geometric-progression",
+      "params": [
+        1,
+        3
+      ],
+      "seq": [
+        1,
+        3,
+        9,
+        27,
+        81
+      ],
+      "correct": 243,
+      "correctIndex": 4,
+      "violations": [
+        81,
+        244,
+        242,
+        729
+      ],
+      "optionOrder": [
+        "81",
+        "244",
+        "242",
+        "729",
+        "243"
+      ],
+      "difficulty": -1.35
+    },
+    {
+      "id": "nm-0012",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "geom",
+      "subtypeDesc": "geometric-progression",
+      "params": [
+        2,
+        2
+      ],
+      "seq": [
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "correct": 64,
+      "correctIndex": 3,
+      "violations": [
+        32,
+        65,
+        63,
+        128
+      ],
+      "optionOrder": [
+        "65",
+        "63",
+        "128",
+        "64",
+        "32"
+      ],
+      "difficulty": -1.15
+    },
+    {
+      "id": "nm-0013",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "geom",
+      "subtypeDesc": "geometric-progression",
+      "params": [
+        2,
+        3
+      ],
+      "seq": [
+        2,
+        6,
+        18,
+        54,
+        162
+      ],
+      "correct": 486,
+      "correctIndex": 2,
+      "violations": [
+        162,
+        487,
+        485,
+        1458
+      ],
+      "optionOrder": [
+        "485",
+        "1458",
+        "486",
+        "162",
+        "487"
+      ],
+      "difficulty": -1.75
+    },
+    {
+      "id": "nm-0014",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "geom",
+      "subtypeDesc": "geometric-progression",
+      "params": [
+        3,
+        2
+      ],
+      "seq": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "correct": 96,
+      "correctIndex": 1,
+      "violations": [
+        48,
+        97,
+        95,
+        192
+      ],
+      "optionOrder": [
+        "192",
+        "96",
+        "48",
+        "97",
+        "95"
+      ],
+      "difficulty": -1.55
+    },
+    {
+      "id": "nm-0015",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "geom",
+      "subtypeDesc": "geometric-progression",
+      "params": [
+        1,
+        2
+      ],
+      "seq": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "correct": 32,
+      "correctIndex": 0,
+      "violations": [
+        16,
+        33,
+        31,
+        64
+      ],
+      "optionOrder": [
+        "32",
+        "16",
+        "33",
+        "31",
+        "64"
+      ],
+      "difficulty": -1.35
+    },
+    {
+      "id": "nm-0016",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "geom",
+      "subtypeDesc": "geometric-progression",
+      "params": [
+        2,
+        2
+      ],
+      "seq": [
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "correct": 64,
+      "correctIndex": 4,
+      "violations": [
+        32,
+        65,
+        63,
+        128
+      ],
+      "optionOrder": [
+        "32",
+        "65",
+        "63",
+        "128",
+        "64"
+      ],
+      "difficulty": -1.15
+    },
+    {
+      "id": "nm-0017",
+      "theme": "T2",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "geom",
+      "subtypeDesc": "geometric-progression",
+      "params": [
+        3,
+        2
+      ],
+      "seq": [
+        3,
+        6,
+        12,
+        24,
+        48
+      ],
+      "correct": 96,
+      "correctIndex": 3,
+      "violations": [
+        48,
+        97,
+        95,
+        192
+      ],
+      "optionOrder": [
+        "97",
+        "95",
+        "192",
+        "96",
+        "48"
+      ],
+      "difficulty": -1.75
+    },
+    {
+      "id": "nm-0018",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "alternate",
+      "subtypeDesc": "alternating-diff",
+      "params": [
+        2,
+        3
+      ],
+      "seq": [
+        2,
+        5,
+        9,
+        12,
+        16
+      ],
+      "correct": 23,
+      "correctIndex": 2,
+      "violations": [
+        20,
+        26,
+        22,
+        24
+      ],
+      "optionOrder": [
+        "22",
+        "24",
+        "23",
+        "20",
+        "26"
+      ],
+      "difficulty": -0.4
+    },
+    {
+      "id": "nm-0019",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "alternate",
+      "subtypeDesc": "alternating-diff",
+      "params": [
+        3,
+        4
+      ],
+      "seq": [
+        3,
+        7,
+        12,
+        16,
+        21
+      ],
+      "correct": 30,
+      "correctIndex": 1,
+      "violations": [
+        27,
+        34,
+        29,
+        31
+      ],
+      "optionOrder": [
+        "31",
+        "30",
+        "27",
+        "34",
+        "29"
+      ],
+      "difficulty": -0.2
+    },
+    {
+      "id": "nm-0020",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "alternate",
+      "subtypeDesc": "alternating-diff",
+      "params": [
+        4,
+        5
+      ],
+      "seq": [
+        4,
+        9,
+        15,
+        20,
+        26
+      ],
+      "correct": 37,
+      "correctIndex": 0,
+      "violations": [
+        34,
+        42,
+        36,
+        38
+      ],
+      "optionOrder": [
+        "37",
+        "34",
+        "42",
+        "36",
+        "38"
+      ],
+      "difficulty": 0.0
+    },
+    {
+      "id": "nm-0021",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "alternate",
+      "subtypeDesc": "alternating-diff",
+      "params": [
+        2,
+        4
+      ],
+      "seq": [
+        2,
+        6,
+        11,
+        15,
+        20
+      ],
+      "correct": 29,
+      "correctIndex": 4,
+      "violations": [
+        26,
+        33,
+        28,
+        30
+      ],
+      "optionOrder": [
+        "26",
+        "33",
+        "28",
+        "30",
+        "29"
+      ],
+      "difficulty": 0.4
+    },
+    {
+      "id": "nm-0022",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "alternate",
+      "subtypeDesc": "alternating-diff",
+      "params": [
+        3,
+        5
+      ],
+      "seq": [
+        3,
+        8,
+        14,
+        19,
+        25
+      ],
+      "correct": 36,
+      "correctIndex": 3,
+      "violations": [
+        33,
+        41,
+        35,
+        37
+      ],
+      "optionOrder": [
+        "41",
+        "35",
+        "37",
+        "36",
+        "33"
+      ],
+      "difficulty": -0.4
+    },
+    {
+      "id": "nm-0023",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "alternate",
+      "subtypeDesc": "alternating-diff",
+      "params": [
+        2,
+        5
+      ],
+      "seq": [
+        2,
+        7,
+        13,
+        18,
+        24
+      ],
+      "correct": 35,
+      "correctIndex": 2,
+      "violations": [
+        32,
+        40,
+        34,
+        36
+      ],
+      "optionOrder": [
+        "34",
+        "36",
+        "35",
+        "32",
+        "40"
+      ],
+      "difficulty": -0.2
+    },
+    {
+      "id": "nm-0024",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "diffchain",
+      "subtypeDesc": "second-difference-chain",
+      "params": [
+        2,
+        2
+      ],
+      "seq": [
+        2,
+        4,
+        8,
+        14,
+        22
+      ],
+      "correct": 32,
+      "correctIndex": 1,
+      "violations": [
+        30,
+        26,
+        31,
+        33
+      ],
+      "optionOrder": [
+        "33",
+        "32",
+        "30",
+        "26",
+        "31"
+      ],
+      "difficulty": 0.0
+    },
+    {
+      "id": "nm-0025",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "diffchain",
+      "subtypeDesc": "second-difference-chain",
+      "params": [
+        3,
+        3
+      ],
+      "seq": [
+        3,
+        6,
+        12,
+        21,
+        33
+      ],
+      "correct": 48,
+      "correctIndex": 0,
+      "violations": [
+        45,
+        39,
+        47,
+        49
+      ],
+      "optionOrder": [
+        "48",
+        "45",
+        "39",
+        "47",
+        "49"
+      ],
+      "difficulty": 0.4
+    },
+    {
+      "id": "nm-0026",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "diffchain",
+      "subtypeDesc": "second-difference-chain",
+      "params": [
+        4,
+        4
+      ],
+      "seq": [
+        4,
+        8,
+        16,
+        28,
+        44
+      ],
+      "correct": 64,
+      "correctIndex": 4,
+      "violations": [
+        60,
+        52,
+        63,
+        65
+      ],
+      "optionOrder": [
+        "60",
+        "52",
+        "63",
+        "65",
+        "64"
+      ],
+      "difficulty": -0.4
+    },
+    {
+      "id": "nm-0027",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "diffchain",
+      "subtypeDesc": "second-difference-chain",
+      "params": [
+        2,
+        5
+      ],
+      "seq": [
+        2,
+        7,
+        17,
+        32,
+        52
+      ],
+      "correct": 77,
+      "correctIndex": 3,
+      "violations": [
+        72,
+        62,
+        76,
+        78
+      ],
+      "optionOrder": [
+        "62",
+        "76",
+        "78",
+        "77",
+        "72"
+      ],
+      "difficulty": -0.2
+    },
+    {
+      "id": "nm-0028",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "diffchain",
+      "subtypeDesc": "second-difference-chain",
+      "params": [
+        3,
+        2
+      ],
+      "seq": [
+        3,
+        5,
+        9,
+        15,
+        23
+      ],
+      "correct": 33,
+      "correctIndex": 2,
+      "violations": [
+        31,
+        27,
+        32,
+        34
+      ],
+      "optionOrder": [
+        "32",
+        "34",
+        "33",
+        "31",
+        "27"
+      ],
+      "difficulty": 0.0
+    },
+    {
+      "id": "nm-0029",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "diffchain",
+      "subtypeDesc": "second-difference-chain",
+      "params": [
+        4,
+        2
+      ],
+      "seq": [
+        4,
+        6,
+        10,
+        16,
+        24
+      ],
+      "correct": 34,
+      "correctIndex": 1,
+      "violations": [
+        32,
+        28,
+        33,
+        35
+      ],
+      "optionOrder": [
+        "35",
+        "34",
+        "32",
+        "28",
+        "33"
+      ],
+      "difficulty": 0.4
+    },
+    {
+      "id": "nm-0030",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "muladd",
+      "subtypeDesc": "multiply-add-alternating",
+      "params": [
+        1,
+        2
+      ],
+      "seq": [
+        1,
+        2,
+        4,
+        8,
+        10
+      ],
+      "correct": 20,
+      "correctIndex": 0,
+      "violations": [
+        12,
+        21,
+        19,
+        18
+      ],
+      "optionOrder": [
+        "20",
+        "12",
+        "21",
+        "19",
+        "18"
+      ],
+      "difficulty": -0.4
+    },
+    {
+      "id": "nm-0031",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "muladd",
+      "subtypeDesc": "multiply-add-alternating",
+      "params": [
+        2,
+        3
+      ],
+      "seq": [
+        2,
+        4,
+        7,
+        14,
+        17
+      ],
+      "correct": 34,
+      "correctIndex": 4,
+      "violations": [
+        20,
+        35,
+        33,
+        31
+      ],
+      "optionOrder": [
+        "20",
+        "35",
+        "33",
+        "31",
+        "34"
+      ],
+      "difficulty": -0.2
+    },
+    {
+      "id": "nm-0032",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "muladd",
+      "subtypeDesc": "multiply-add-alternating",
+      "params": [
+        1,
+        3
+      ],
+      "seq": [
+        1,
+        2,
+        5,
+        10,
+        13
+      ],
+      "correct": 26,
+      "correctIndex": 3,
+      "violations": [
+        16,
+        27,
+        25,
+        23
+      ],
+      "optionOrder": [
+        "27",
+        "25",
+        "23",
+        "26",
+        "16"
+      ],
+      "difficulty": 0.0
+    },
+    {
+      "id": "nm-0033",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "muladd",
+      "subtypeDesc": "multiply-add-alternating",
+      "params": [
+        3,
+        2
+      ],
+      "seq": [
+        3,
+        6,
+        8,
+        16,
+        18
+      ],
+      "correct": 36,
+      "correctIndex": 2,
+      "violations": [
+        20,
+        37,
+        35,
+        34
+      ],
+      "optionOrder": [
+        "35",
+        "34",
+        "36",
+        "20",
+        "37"
+      ],
+      "difficulty": 0.4
+    },
+    {
+      "id": "nm-0034",
+      "theme": "T2",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "muladd",
+      "subtypeDesc": "multiply-add-alternating",
+      "params": [
+        2,
+        1
+      ],
+      "seq": [
+        2,
+        4,
+        5,
+        10,
+        11
+      ],
+      "correct": 22,
+      "correctIndex": 1,
+      "violations": [
+        12,
+        23,
+        21,
+        33
+      ],
+      "optionOrder": [
+        "33",
+        "22",
+        "12",
+        "23",
+        "21"
+      ],
+      "difficulty": -0.4
+    },
+    {
+      "id": "nm-0035",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "dual",
+      "subtypeDesc": "interleaved-series",
+      "params": [
+        3,
+        2,
+        5,
+        4
+      ],
+      "seq": [
+        3,
+        5,
+        5,
+        9,
+        7
+      ],
+      "correct": 13,
+      "correctIndex": 0,
+      "violations": [
+        9,
+        17,
+        12,
+        14
+      ],
+      "optionOrder": [
+        "13",
+        "9",
+        "17",
+        "12",
+        "14"
+      ],
+      "difficulty": 0.6
+    },
+    {
+      "id": "nm-0036",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "dual",
+      "subtypeDesc": "interleaved-series",
+      "params": [
+        4,
+        3,
+        6,
+        5
+      ],
+      "seq": [
+        4,
+        6,
+        7,
+        11,
+        10
+      ],
+      "correct": 16,
+      "correctIndex": 4,
+      "violations": [
+        13,
+        21,
+        15,
+        17
+      ],
+      "optionOrder": [
+        "13",
+        "21",
+        "15",
+        "17",
+        "16"
+      ],
+      "difficulty": 0.9
+    },
+    {
+      "id": "nm-0037",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "dual",
+      "subtypeDesc": "interleaved-series",
+      "params": [
+        5,
+        2,
+        7,
+        4
+      ],
+      "seq": [
+        5,
+        7,
+        7,
+        11,
+        9
+      ],
+      "correct": 15,
+      "correctIndex": 3,
+      "violations": [
+        11,
+        19,
+        14,
+        16
+      ],
+      "optionOrder": [
+        "19",
+        "14",
+        "16",
+        "15",
+        "11"
+      ],
+      "difficulty": 1.3
+    },
+    {
+      "id": "nm-0038",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "dual",
+      "subtypeDesc": "interleaved-series",
+      "params": [
+        6,
+        4,
+        8,
+        5
+      ],
+      "seq": [
+        6,
+        8,
+        10,
+        13,
+        14
+      ],
+      "correct": 18,
+      "correctIndex": 2,
+      "violations": [
+        23,
+        17,
+        19,
+        21
+      ],
+      "optionOrder": [
+        "19",
+        "21",
+        "18",
+        "23",
+        "17"
+      ],
+      "difficulty": 1.7
+    },
+    {
+      "id": "nm-0039",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "dual",
+      "subtypeDesc": "interleaved-series",
+      "params": [
+        3,
+        5,
+        6,
+        6
+      ],
+      "seq": [
+        3,
+        6,
+        8,
+        12,
+        13
+      ],
+      "correct": 18,
+      "correctIndex": 1,
+      "violations": [
+        24,
+        17,
+        19,
+        21
+      ],
+      "optionOrder": [
+        "21",
+        "18",
+        "24",
+        "17",
+        "19"
+      ],
+      "difficulty": 0.6
+    },
+    {
+      "id": "nm-0040",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "dual",
+      "subtypeDesc": "interleaved-series",
+      "params": [
+        4,
+        2,
+        7,
+        5
+      ],
+      "seq": [
+        4,
+        7,
+        6,
+        12,
+        8
+      ],
+      "correct": 17,
+      "correctIndex": 0,
+      "violations": [
+        10,
+        22,
+        16,
+        18
+      ],
+      "optionOrder": [
+        "17",
+        "10",
+        "22",
+        "16",
+        "18"
+      ],
+      "difficulty": 0.9
+    },
+    {
+      "id": "nm-0041",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "fib-pairsum",
+      "subtypeDesc": "additive-pair-sum",
+      "params": [
+        1,
+        4
+      ],
+      "seq": [
+        1,
+        4,
+        5,
+        9
+      ],
+      "correct": 14,
+      "correctIndex": 4,
+      "violations": [
+        18,
+        13,
+        15,
+        17
+      ],
+      "optionOrder": [
+        "18",
+        "13",
+        "15",
+        "17",
+        "14"
+      ],
+      "difficulty": 1.3
+    },
+    {
+      "id": "nm-0042",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "fib-pairsum",
+      "subtypeDesc": "additive-pair-sum",
+      "params": [
+        2,
+        5
+      ],
+      "seq": [
+        2,
+        5,
+        7,
+        12
+      ],
+      "correct": 19,
+      "correctIndex": 3,
+      "violations": [
+        24,
+        17,
+        18,
+        20
+      ],
+      "optionOrder": [
+        "17",
+        "18",
+        "20",
+        "19",
+        "24"
+      ],
+      "difficulty": 1.7
+    },
+    {
+      "id": "nm-0043",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "fib-pairsum",
+      "subtypeDesc": "additive-pair-sum",
+      "params": [
+        3,
+        3
+      ],
+      "seq": [
+        3,
+        3,
+        6,
+        9
+      ],
+      "correct": 15,
+      "correctIndex": 2,
+      "violations": [
+        18,
+        12,
+        14,
+        16
+      ],
+      "optionOrder": [
+        "14",
+        "16",
+        "15",
+        "18",
+        "12"
+      ],
+      "difficulty": 0.6
+    },
+    {
+      "id": "nm-0044",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "fib-pairsum",
+      "subtypeDesc": "additive-pair-sum",
+      "params": [
+        2,
+        6
+      ],
+      "seq": [
+        2,
+        6,
+        8,
+        14
+      ],
+      "correct": 22,
+      "correctIndex": 1,
+      "violations": [
+        28,
+        20,
+        21,
+        23
+      ],
+      "optionOrder": [
+        "23",
+        "22",
+        "28",
+        "20",
+        "21"
+      ],
+      "difficulty": 0.9
+    },
+    {
+      "id": "nm-0045",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "fib-pairsum",
+      "subtypeDesc": "additive-pair-sum",
+      "params": [
+        4,
+        4
+      ],
+      "seq": [
+        4,
+        4,
+        8,
+        12
+      ],
+      "correct": 20,
+      "correctIndex": 0,
+      "violations": [
+        24,
+        16,
+        19,
+        21
+      ],
+      "optionOrder": [
+        "20",
+        "24",
+        "16",
+        "19",
+        "21"
+      ],
+      "difficulty": 1.3
+    },
+    {
+      "id": "nm-0046",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "quadratic-inc",
+      "subtypeDesc": "quadratic-increment",
+      "params": [
+        2
+      ],
+      "seq": [
+        2,
+        4,
+        8,
+        14,
+        22
+      ],
+      "correct": 32,
+      "correctIndex": 4,
+      "violations": [
+        30,
+        34,
+        31,
+        33
+      ],
+      "optionOrder": [
+        "30",
+        "34",
+        "31",
+        "33",
+        "32"
+      ],
+      "difficulty": 1.7
+    },
+    {
+      "id": "nm-0047",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "quadratic-inc",
+      "subtypeDesc": "quadratic-increment",
+      "params": [
+        4
+      ],
+      "seq": [
+        4,
+        8,
+        16,
+        28,
+        44
+      ],
+      "correct": 64,
+      "correctIndex": 3,
+      "violations": [
+        60,
+        68,
+        63,
+        65
+      ],
+      "optionOrder": [
+        "68",
+        "63",
+        "65",
+        "64",
+        "60"
+      ],
+      "difficulty": 0.6
+    },
+    {
+      "id": "nm-0048",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "quadratic-inc",
+      "subtypeDesc": "quadratic-increment",
+      "params": [
+        6
+      ],
+      "seq": [
+        6,
+        12,
+        24,
+        42,
+        66
+      ],
+      "correct": 96,
+      "correctIndex": 2,
+      "violations": [
+        90,
+        102,
+        95,
+        97
+      ],
+      "optionOrder": [
+        "95",
+        "97",
+        "96",
+        "90",
+        "102"
+      ],
+      "difficulty": 0.9
+    },
+    {
+      "id": "nm-0049",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "quadratic-inc",
+      "subtypeDesc": "quadratic-increment",
+      "params": [
+        8
+      ],
+      "seq": [
+        8,
+        16,
+        32,
+        56,
+        88
+      ],
+      "correct": 128,
+      "correctIndex": 1,
+      "violations": [
+        120,
+        136,
+        127,
+        129
+      ],
+      "optionOrder": [
+        "129",
+        "128",
+        "120",
+        "136",
+        "127"
+      ],
+      "difficulty": 1.3
+    },
+    {
+      "id": "nm-0050",
+      "theme": "T2",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "quadratic-inc",
+      "subtypeDesc": "quadratic-increment",
+      "params": [
+        10
+      ],
+      "seq": [
+        10,
+        20,
+        40,
+        70,
+        110
+      ],
+      "correct": 160,
+      "correctIndex": 0,
+      "violations": [
+        150,
+        170,
+        159,
+        161
+      ],
+      "optionOrder": [
+        "160",
+        "150",
+        "170",
+        "159",
+        "161"
+      ],
+      "difficulty": 1.7
+    }
+  ]
+}

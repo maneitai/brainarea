@@ -1,0 +1,1924 @@
+{
+  "schemaVersion": 1,
+  "id": "evne-t1-matrise",
+  "type": "test-definition",
+  "family": "evner",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "g-score",
+    "metric": "z100",
+    "ci95": true
+  },
+  "dimensions": [
+    {
+      "id": "g",
+      "label": "g score",
+      "labelLanguage": "en",
+      "description": "General ability, reported as IQ-style metric."
+    }
+  ],
+  "items": [
+    {
+      "id": "mx-0001",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<]     [<<]     [<<]\n [<<<]    [<<<]    [<<<]\n[<<<<]   [<<<<]      [?]",
+          "options": [
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "mx-0002",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [<]     [<]     [<]\n [<<]    [<<]    [<<]\n[<<<]   [<<<]     [?]",
+          "options": [
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            }
+          ],
+          "correctIndex": 5,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "mx-0003",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n    [<]       [<]       [<]\n  [<<<]     [<<<]     [<<<]\n[<<<<<]   [<<<<<]       [?]",
+          "options": [
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "mx-0004",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n    [<<]       [<<]       [<<]\n  [<<<<]     [<<<<]     [<<<<]\n[<<<<<<]   [<<<<<<]        [?]",
+          "options": [
+            {
+              "label": "[<<<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "mx-0005",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<<]     [<<<]     [<<<]\n [<<<<]    [<<<<]    [<<<<]\n[<<<<<]   [<<<<<]       [?]",
+          "options": [
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "mx-0006",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<]     [<<]     [<<]\n [<<<]    [<<<]    [<<<]\n[<<<<]   [<<<<]      [?]",
+          "options": [
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<]"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "mx-0007",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<<]     [<<<]     [<<<]\n [<<<<]    [<<<<]    [<<<<]\n[<<<<<]   [<<<<<]       [?]",
+          "options": [
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "mx-0008",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n    [<]       [<]       [<]\n  [<<<]     [<<<]     [<<<]\n[<<<<<]   [<<<<<]       [?]",
+          "options": [
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            }
+          ],
+          "correctIndex": 5,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "mx-0009",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n    [<<]       [<<]       [<<]\n  [<<<<]     [<<<<]     [<<<<]\n[<<<<<<]   [<<<<<<]        [?]",
+          "options": [
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "mx-0010",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [?]",
+          "options": [
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<]"
+            },
+            {
+              "label": "[<<]"
+            },
+            {
+              "label": "[<<<]"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "mx-0011",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [<]    [<<]   [<<<]\n  [<]    [<<]   [<<<]\n  [<]    [<<]     [?]",
+          "options": [
+            {
+              "label": "[<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "mx-0012",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]      [?]",
+          "options": [
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<]"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "mx-0013",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n    [<]     [<<<]   [<<<<<]\n    [<]     [<<<]   [<<<<<]\n    [<]     [<<<]       [?]",
+          "options": [
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "mx-0014",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [<]    [<<]   [<<<]\n  [<]    [<<]   [<<<]\n  [<]    [<<]     [?]",
+          "options": [
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            }
+          ],
+          "correctIndex": 5,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "mx-0015",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n    [<<]     [<<<<]   [<<<<<<]\n    [<<]     [<<<<]   [<<<<<<]\n    [<<]     [<<<<]        [?]",
+          "options": [
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "mx-0016",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [?]",
+          "options": [
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<]"
+            },
+            {
+              "label": "[<<]"
+            },
+            {
+              "label": "[<<<]"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "mx-0017",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]      [?]",
+          "options": [
+            {
+              "label": "[<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "mx-0018",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [<]     [^]     [>]\n [<<]    [^^]    [>>]\n[<<<]   [^^^]     [?]",
+          "options": [
+            {
+              "label": "[>>]"
+            },
+            {
+              "label": "[>>>]"
+            },
+            {
+              "label": "[vvv]"
+            },
+            {
+              "label": "[^^^]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[>>>>]"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "mx-0019",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n    [/]       [-]       [\\]\n  [///]     [---]     [\\\\\\]\n[/////]   [-----]       [?]",
+          "options": [
+            {
+              "label": "[\\\\\\\\\\]"
+            },
+            {
+              "label": "[|||||]"
+            },
+            {
+              "label": "[-----]"
+            },
+            {
+              "label": "[/////]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\\\\\]"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "mx-0020",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [^^]     [>>]     [vv]\n [^^^]    [>>>]    [vvv]\n[^^^^]   [>>>>]      [?]",
+          "options": [
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[>>>>]"
+            },
+            {
+              "label": "[^^^^]"
+            },
+            {
+              "label": "[vvvvv]"
+            },
+            {
+              "label": "[vvv]"
+            },
+            {
+              "label": "[vvvv]"
+            }
+          ],
+          "correctIndex": 5,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "mx-0021",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [/]     [-]     [\\]\n [//]    [--]    [\\\\]\n[///]   [---]     [?]",
+          "options": [
+            {
+              "label": "[---]"
+            },
+            {
+              "label": "[///]"
+            },
+            {
+              "label": "[\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\]"
+            },
+            {
+              "label": "[\\\\\\]"
+            },
+            {
+              "label": "[|||]"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "mx-0022",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n    [<]       [^]       [>]\n  [<<<]     [^^^]     [>>>]\n[<<<<<]   [^^^^^]       [?]",
+          "options": [
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[>>>>>>]"
+            },
+            {
+              "label": "[>>>>]"
+            },
+            {
+              "label": "[>>>>>]"
+            },
+            {
+              "label": "[vvvvv]"
+            },
+            {
+              "label": "[^^^^^]"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "mx-0023",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [--]     [\\\\]     [||]\n [---]    [\\\\\\]    [|||]\n[----]   [\\\\\\\\]      [?]",
+          "options": [
+            {
+              "label": "[|||||]"
+            },
+            {
+              "label": "[|||]"
+            },
+            {
+              "label": "[||||]"
+            },
+            {
+              "label": "[////]"
+            },
+            {
+              "label": "[\\\\\\\\]"
+            },
+            {
+              "label": "[----]"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "mx-0024",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n    [<]       [<]       [<]\n  [^^^]     [^^^]     [^^^]\n[>>>>>]   [>>>>>]       [?]",
+          "options": [
+            {
+              "label": "[>>>>]"
+            },
+            {
+              "label": "[>>>>>]"
+            },
+            {
+              "label": "[vvvvv]"
+            },
+            {
+              "label": "[^^^^^]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[>>>>>>]"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "mx-0025",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [/]     [/]     [/]\n [--]    [--]    [--]\n[\\\\\\]   [\\\\\\]     [?]",
+          "options": [
+            {
+              "label": "[\\\\\\]"
+            },
+            {
+              "label": "[|||]"
+            },
+            {
+              "label": "[---]"
+            },
+            {
+              "label": "[///]"
+            },
+            {
+              "label": "[\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\]"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "mx-0026",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [>>]     [>>]     [>>]\n [vvv]    [vvv]    [vvv]\n[<<<<]   [<<<<]      [?]",
+          "options": [
+            {
+              "label": "[^^^^]"
+            },
+            {
+              "label": "[vvvv]"
+            },
+            {
+              "label": "[>>>>]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            }
+          ],
+          "correctIndex": 5,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "mx-0027",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [-]     [-]     [-]\n [\\\\]    [\\\\]    [\\\\]\n[|||]   [|||]     [?]",
+          "options": [
+            {
+              "label": "[\\\\\\]"
+            },
+            {
+              "label": "[---]"
+            },
+            {
+              "label": "[||||]"
+            },
+            {
+              "label": "[||]"
+            },
+            {
+              "label": "[|||]"
+            },
+            {
+              "label": "[///]"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "mx-0028",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n    [^]       [^]       [^]\n  [>>>]     [>>>]     [>>>]\n[vvvvv]   [vvvvv]       [?]",
+          "options": [
+            {
+              "label": "[^^^^^]"
+            },
+            {
+              "label": "[vvvvvv]"
+            },
+            {
+              "label": "[vvvv]"
+            },
+            {
+              "label": "[vvvvv]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[>>>>>]"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "mx-0029",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n  [||]     [||]     [||]\n [///]    [///]    [///]\n[----]   [----]      [?]",
+          "options": [
+            {
+              "label": "[-----]"
+            },
+            {
+              "label": "[---]"
+            },
+            {
+              "label": "[----]"
+            },
+            {
+              "label": "[\\\\\\\\]"
+            },
+            {
+              "label": "[////]"
+            },
+            {
+              "label": "[||||]"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "mx-0030",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n   [<]     [<<]    [<<<]\n  [^^]    [^^^]   [^^^^]\n [>>>]   [>>>>]      [?]",
+          "options": [
+            {
+              "label": "[>>>>]"
+            },
+            {
+              "label": "[>>>>>]"
+            },
+            {
+              "label": "[vvvvv]"
+            },
+            {
+              "label": "[^^^^^]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[>>>>>>]"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "mx-0031",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [//]      [////]    [//////]\n    [---]     [-----]   [-------]\n   [\\\\\\\\]    [\\\\\\\\\\\\]         [?]",
+          "options": [
+            {
+              "label": "[\\\\\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[||||||||]"
+            },
+            {
+              "label": "[--------]"
+            },
+            {
+              "label": "[////////]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\]"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "mx-0032",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [<]       [<<]      [<<<]\n   [^^^]     [^^^^]    [^^^^^]\n [>>>>>]   [>>>>>>]        [?]",
+          "options": [
+            {
+              "label": "[vvvvvvv]"
+            },
+            {
+              "label": "[^^^^^^^]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[>>>>>>>>]"
+            },
+            {
+              "label": "[>>>>>>]"
+            },
+            {
+              "label": "[>>>>>>>]"
+            }
+          ],
+          "correctIndex": 5,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "mx-0033",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n   [/]     [//]    [///]\n  [--]    [---]   [----]\n [\\\\\\]   [\\\\\\\\]      [?]",
+          "options": [
+            {
+              "label": "[-----]"
+            },
+            {
+              "label": "[/////]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\\\\\\\]"
+            },
+            {
+              "label": "[|||||]"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "mx-0034",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n   [<<]     [<<<]    [<<<<]\n  [^^^]    [^^^^]   [^^^^^]\n [>>>>]   [>>>>>]       [?]",
+          "options": [
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[>>>>>>>]"
+            },
+            {
+              "label": "[>>>>>]"
+            },
+            {
+              "label": "[>>>>>>]"
+            },
+            {
+              "label": "[vvvvvv]"
+            },
+            {
+              "label": "[^^^^^^]"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "mx-0035",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n   [<]     [^^]    [>>>]\n  [<<]    [^^^]   [>>>>]\n [<<<]   [^^^^]      [?]",
+          "options": [
+            {
+              "label": "[>>>>>>]"
+            },
+            {
+              "label": "[>>>>]"
+            },
+            {
+              "label": "[>>>>>]"
+            },
+            {
+              "label": "[vvvvv]"
+            },
+            {
+              "label": "[^^^^^]"
+            },
+            {
+              "label": "[<<<<<]"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "mx-0036",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [/]      [---]    [\\\\\\\\\\]\n    [//]     [----]   [\\\\\\\\\\\\]\n   [///]    [-----]        [?]",
+          "options": [
+            {
+              "label": "[\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[|||||||]"
+            },
+            {
+              "label": "[-------]"
+            },
+            {
+              "label": "[///////]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\\\\\]"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "mx-0037",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [>]       [vv]      [<<<]\n   [>>>]     [vvvv]    [<<<<<]\n [>>>>>]   [vvvvvv]        [?]",
+          "options": [
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[^^^^^^^]"
+            },
+            {
+              "label": "[vvvvvvv]"
+            },
+            {
+              "label": "[>>>>>>>]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "mx-0038",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [/]      [---]    [\\\\\\\\\\]\n    [//]     [----]   [\\\\\\\\\\\\]\n   [///]    [-----]        [?]",
+          "options": [
+            {
+              "label": "[|||||||]"
+            },
+            {
+              "label": "[-------]"
+            },
+            {
+              "label": "[///////]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\\\]"
+            }
+          ],
+          "correctIndex": 5,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "mx-0039",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n   [^]     [>>]    [vvv]\n  [^^]    [>>>]   [vvvv]\n [^^^]   [>>>>]      [?]",
+          "options": [
+            {
+              "label": "[>>>>>]"
+            },
+            {
+              "label": "[^^^^^]"
+            },
+            {
+              "label": "[vvvvvv]"
+            },
+            {
+              "label": "[vvvv]"
+            },
+            {
+              "label": "[vvvvv]"
+            },
+            {
+              "label": "[<<<<<]"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "mx-0040",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n   [<]     [<<]    [<<<]\n  [^^]    [^^^]   [^^^^]\n [>>>]   [>>>>]      [?]",
+          "options": [
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[>>>>>>]"
+            },
+            {
+              "label": "[>>>>]"
+            },
+            {
+              "label": "[>>>>>]"
+            },
+            {
+              "label": "[vvvvv]"
+            },
+            {
+              "label": "[^^^^^]"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "mx-0041",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [/]      [///]    [/////]\n    [--]     [----]   [------]\n   [\\\\\\]    [\\\\\\\\\\]        [?]",
+          "options": [
+            {
+              "label": "[\\\\\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[|||||||]"
+            },
+            {
+              "label": "[-------]"
+            },
+            {
+              "label": "[///////]"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "mx-0042",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [^]       [^^]      [^^^]\n   [>>>]     [>>>>]    [>>>>>]\n [vvvvv]   [vvvvvv]        [?]",
+          "options": [
+            {
+              "label": "[vvvvvv]"
+            },
+            {
+              "label": "[vvvvvvv]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[>>>>>>>]"
+            },
+            {
+              "label": "[^^^^^^^]"
+            },
+            {
+              "label": "[vvvvvvvv]"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "mx-0043",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [\\]      [\\\\\\]    [\\\\\\\\\\]\n    [||]     [||||]   [||||||]\n   [///]    [/////]        [?]",
+          "options": [
+            {
+              "label": "[///////]"
+            },
+            {
+              "label": "[-------]"
+            },
+            {
+              "label": "[|||||||]"
+            },
+            {
+              "label": "[\\\\\\\\\\\\\\]"
+            },
+            {
+              "label": "[////////]"
+            },
+            {
+              "label": "[//////]"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "mx-0044",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n   [v]     [vv]    [vvv]\n  [<<]    [<<<]   [<<<<]\n [^^^]   [^^^^]      [?]",
+          "options": [
+            {
+              "label": "[>>>>>]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[vvvvv]"
+            },
+            {
+              "label": "[^^^^^^]"
+            },
+            {
+              "label": "[^^^^]"
+            },
+            {
+              "label": "[^^^^^]"
+            }
+          ],
+          "correctIndex": 5,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "mx-0045",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n   [<]     [<<]    [<<<]\n  [<<]    [<<<]   [<<<<]\n [<<<]   [<<<<]      [?]",
+          "options": [
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "mx-0046",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [/]      [///]    [/////]\n    [//]     [////]   [//////]\n   [///]    [/////]        [?]",
+          "options": [
+            {
+              "label": "[/////]"
+            },
+            {
+              "label": "[////]"
+            },
+            {
+              "label": "[///]"
+            },
+            {
+              "label": "[///////]"
+            },
+            {
+              "label": "[////////]"
+            },
+            {
+              "label": "[//////]"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "mx-0047",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [<]       [<<]      [<<<]\n   [<<<]     [<<<<]    [<<<<<]\n [<<<<<]   [<<<<<<]        [?]",
+          "options": [
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            },
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "mx-0048",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n     [/]      [///]    [/////]\n    [//]     [////]   [//////]\n   [///]    [/////]        [?]",
+          "options": [
+            {
+              "label": "[///]"
+            },
+            {
+              "label": "[///////]"
+            },
+            {
+              "label": "[////////]"
+            },
+            {
+              "label": "[//////]"
+            },
+            {
+              "label": "[/////]"
+            },
+            {
+              "label": "[////]"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "mx-0049",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n   [<<]     [<<<]    [<<<<]\n  [<<<]    [<<<<]   [<<<<<]\n [<<<<]   [<<<<<]       [?]",
+          "options": [
+            {
+              "label": "[<<<<<<]"
+            },
+            {
+              "label": "[<<<<<<<]"
+            },
+            {
+              "label": "[<<<<<]"
+            },
+            {
+              "label": "[<<<<<<<<]"
+            },
+            {
+              "label": "[<<<<]"
+            },
+            {
+              "label": "[<<<]"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "mx-0050",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which cell is missing from the grid? The rules run across and down.\n   [//]     [///]    [////]\n  [///]    [////]   [/////]\n [////]   [/////]       [?]",
+          "options": [
+            {
+              "label": "[///////]"
+            },
+            {
+              "label": "[/////]"
+            },
+            {
+              "label": "[////////]"
+            },
+            {
+              "label": "[////]"
+            },
+            {
+              "label": "[///]"
+            },
+            {
+              "label": "[//////]"
+            }
+          ],
+          "correctIndex": 5,
+          "difficulty": 1.7
+        }
+      ]
+    }
+  ]
+}

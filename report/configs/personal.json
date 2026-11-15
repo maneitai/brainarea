@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "frame": "personal",
+  "testIds": [],
+  "total": {
+    "trait": {
+      "heading": {
+        "no": "Ditt personlige bilde",
+        "en": "Your personal picture"
+      },
+      "normNote": {
+        "no": "Samme skårberegning som standard-rammen: prosent av skalaens omfang, ikke normert. Det personlige er lesingen av hva skårene kan si om deg — med alle forbeholdene fra standard-rammen intakt.",
+        "en": "Same score computation as the standard frame: percent of scale range, not normed. The personal part is the reading of what scores may say about you — with all standard-frame caveats intact."
+      },
+      "showBar": true
+    },
+    "threshold": {
+      "heading": {
+        "no": "Ditt resultat",
+        "en": "Your result"
+      },
+      "normNote": {
+        "no": "Selvrapporteringsscreening — ikke diagnose, ikke normert, ikke klinisk.",
+        "en": "Self-report screening — not a diagnosis, not normed, not clinical."
+      },
+      "forbidWord": [
+        "diagnose",
+        "diagnosis",
+        "diagnosed",
+        "klinisk",
+        "clinical",
+        "lidelse"
+      ]
+    },
+    "g-score": {
+      "heading": {
+        "no": "Ditt resultat",
+        "en": "Your result"
+      },
+      "normNote": {
+        "no": "Råtrekk og estimert evnenivå (theta) med usikkerhetsintervall — ikke normert IQ, ikke et sertifikat.",
+        "en": "Raw count and estimated ability level (theta) with uncertainty interval — not normed IQ, not a certificate."
+      }
+    }
+  },
+  "dimensions": {
+    "labels": {},
+    "graphic": "bar",
+    "midpointMarker": true,
+    "sort": "desc",
+    "graphicLabels": {
+      "percentOfRange": {
+        "no": "Prosent av skalaens omfang",
+        "en": "Percent of scale range"
+      },
+      "midpointLegend": {
+        "no": "50 = skalaens midtpunkt (ikke et gjennomsnitt)",
+        "en": "50 = the scale midpoint (not an average)"
+      },
+      "notComputable": {
+        "no": "Ikke beregnelig i denne økten",
+        "en": "Not computable in this session"
+      },
+      "axisStart": {
+        "no": "0",
+        "en": "0"
+      },
+      "axisEnd": {
+        "no": "100",
+        "en": "100"
+      }
+    }
+  },
+  "profileText": {},
+  "readingGuide": {
+    "title": {
+      "no": "Slik leser du dette personlig",
+      "en": "How to read this — personally"
+    },
+    "body": [
+      {
+        "no": "Denne rammen tolker skårene i første person og peker på hva de KAN bety for deg — den påstår aldri hva du ER. En score er en tendens i dine egne svar, ikke en sannhet om deg.",
+        "en": "This frame reads the scores in the first person and points at what they MAY mean for you — it never claims what you ARE. A score is a tendency in your own answers, not a truth about you."
+      },
+      {
+        "no": "Selvrapportering måler hvordan du oppfatter deg selv her og nå. Selvoppfatning endres — med humør, situasjon og erfaring. Test på nytt senere kan gi noe annet bilde, og det er innbygd i verktøyet, ikke en feil.",
+        "en": "Self-report measures how you perceive yourself here and now. Self-perception changes — with mood, situation and experience. Retesting later may give a different picture, and that is built into the tool, not a defect."
+      },
+      {
+        "no": "Midtpunktstreken (50) er skalaens midtpunkt, ikke et gjennomsnitt — se standard-rammen for hele lesingen av grafen.",
+        "en": "The midpoint line (50) is the scale's midpoint, not an average — see the standard frame for the full reading of the chart."
+      }
+    ]
+  },
+  "thirdParty": {
+    "title": {
+      "no": "For deg som ikke tok testen",
+      "en": "If you did not take the test"
+    },
+    "body": {
+      "no": "Dette er en persons egne svar om seg selv, på et gitt tidspunkt — ikke en objektiv måling av personen, og ikke sammenlignet med andre. Behandle teksten som personens egen beskrivelse av seg selv.",
+      "en": "This is one person's own answers about themselves, at one point in time — not an objective measurement of the person, and not compared to others. Treat the text as the person's own description of themselves."
+    }
+  },
+  "moodEffect": {
+    "text": {
+      "no": "Humør, stress og søvn når testen ble tatt kan farge svarene. Ta teksten som et øyeblikksbilde — gjenta gjerne, men forvent ikke identisk resultat.",
+      "en": "Mood, stress and sleep when taking the test can colour the answers. Treat the text as a snapshot — feel free to retest, but do not expect an identical result."
+    }
+  },
+  "disclosures": [
+    {
+      "id": "self-report",
+      "no": "Basert på selvrapportering — instrumentet er ikke psykometrisk validert i denne implementasjonen.",
+      "en": "Based on self-report — the instrument in this implementation is not psychometrically validated."
+    },
+    {
+      "id": "no-norms",
+      "no": "Ingen normer ble brukt: skårene er ikke prosentiler.",
+      "en": "No norms were applied: scores are not percentiles."
+    }
+  ],
+  "disclaimer": {
+    "no": "Brainarea er et indikativt selvinnsikt-verktøy for alminnelig interesse — ikke medisinsk eller psykologisk vurdering, og ikke egnet som eneste grunnlag for ansettelse eller andre viktige beslutninger.",
+    "en": "Brainarea is an indicative self-insight tool for general interest — not medical or psychological assessment, and not suitable as the sole basis for hiring or other important decisions."
+  }
+}

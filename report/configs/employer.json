@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "frame": "employer",
+  "testIds": [],
+  "total": {
+    "trait": {
+      "heading": {
+        "no": "Resultat — grunnlag for samtale",
+        "en": "Result — groundwork for a conversation"
+      },
+      "normNote": {
+        "no": "Skårene er prosent av skalaens omfang (0–100), ikke normert og ikke sammenlignet med andre. Midtpunktet (50) er skalaens midt, ikke gjennomsnittet i noen gruppe. Rapporten er utarbeidet som et felles, åpent utgangspunkt for en samtale mellom den testede og mottakeren.",
+        "en": "Scores are percent of the scale range (0–100), not normed and not compared with anyone. The midpoint (50) is the scale's middle, not any group's average. The report is prepared as one shared, open starting point for a conversation between the test-taker and the recipient."
+      },
+      "showBar": true
+    },
+    "threshold": {
+      "heading": {
+        "no": "Resultat — grunnlag for samtale",
+        "en": "Result — groundwork for a conversation"
+      },
+      "normNote": {
+        "no": "Svarene nedenfor er den testede sin egen selvrapportering. De er ikke en klinisk eller medisinsk vurdering og kan ikke brukes som screening av kandidater eller ansatte.",
+        "en": "The answers below are the test-taker's own self-report. They are not a clinical or medical assessment and must not be used to screen candidates or employees."
+      },
+      "forbidWord": [
+        "diagnose",
+        "diagnosis",
+        "diagnosed",
+        "klinisk",
+        "clinical",
+        "lidelse",
+        "egnet til ansettelse"
+      ]
+    },
+    "g-score": {
+      "heading": {
+        "no": "Resultat — grunnlag for samtale",
+        "en": "Result — groundwork for a conversation"
+      },
+      "normNote": {
+        "no": "Resultatet oppgis som råtrekk og estimert evnenivå (theta) med usikkerhetsintervall — det er ikke et normert IQ-tall, ikke et sertifikat, og det kan ikke brukes til utvelgelse.",
+        "en": "The result is a raw count and an estimated ability level (theta) with uncertainty interval — it is not a normed IQ number, not a certificate, and must not be used for selection."
+      }
+    }
+  },
+  "dimensions": {
+    "labels": {},
+    "graphic": "bar",
+    "midpointMarker": true,
+    "sort": "def",
+    "graphicLabels": {
+      "percentOfRange": {
+        "no": "Prosent av skalaens omfang",
+        "en": "Percent of scale range"
+      },
+      "midpointLegend": {
+        "no": "50 = skalaens midtpunkt (ikke et gjennomsnitt)",
+        "en": "50 = the scale midpoint (not an average)"
+      },
+      "notComputable": {
+        "no": "Ikke beregnelig i denne økten",
+        "en": "Not computable in this session"
+      },
+      "axisStart": {
+        "no": "0",
+        "en": "0"
+      },
+      "axisEnd": {
+        "no": "100",
+        "en": "100"
+      }
+    }
+  },
+  "readingGuide": {
+    "title": {
+      "no": "Slik leser du dette i en samtale",
+      "en": "How to read this — in a conversation"
+    },
+    "body": [
+      {
+        "no": "Grafen viser den testede sin egen selvrapportering per dimensjon: prosent av skalaens omfang (0–100). Midtpunktstreken (50) er skalaens midtpunkt — ikke et sammenligningsgrunnlag mot andre og ikke et krav om å ligge «på midten».",
+        "en": "The chart shows the test-taker's own self-report per dimension: percent of the scale range (0–100). The midpoint line (50) is the scale's midpoint — not a benchmark against others and not a requirement to sit 'in the middle'."
+      },
+      {
+        "no": "Bruk resultatet som samtalestart: «Hvordan opplevde du selv denne dimensjonen?» — ikke som konklusjon: «Du skårer lavt, derfor ...». Ingen skår alene begrunner en beslutning om en person.",
+        "en": "Use the result as a conversation starter: \"How did you experience this dimension yourself?\" — not as a conclusion: \"You scored low, therefore ...\". No score alone justifies a decision about a person."
+      },
+      {
+        "no": "Selvrapportering er et øyeblikksbilde og kan påvirkes av humør og situasjon når testen ble tatt. Spør heller om sammenhengen enn om tallet.",
+        "en": "A self-report is a snapshot and may be affected by mood and situation when the test was taken. Ask about the context rather than the number."
+      }
+    ]
+  },
+  "employer": {
+    "conversationBasis": {
+      "no": "Dette resultatet er et GRUNNLAG FOR SAMTALE mellom den testede og mottakeren. Det er ikke et ansettelsesverktøy og kan ikke brukes til utvelgelse eller vurdering av kandidater. Den testede har svart om seg selv — les resultatet som et selvportrett, ikke som en objektiv måling.",
+      "en": "This result is GROUNDWORK FOR A CONVERSATION between the test-taker and the recipient. It is not a hiring tool and must not be used for selection or candidate assessment. The test-taker answered about themselves — read the result as a self-portrait, not an objective measurement."
+    },
+    "prohibitions": [
+      "ansett",
+      "ansettelse",
+      "utvelgelse",
+      "shortlist",
+      "kandidat",
+      "hire",
+      "hiring",
+      "selection",
+      "candidate",
+      "diagnose",
+      "diagnosis",
+      "clinical",
+      "klinisk",
+      "screening"
+    ],
+    "noteParaphrases": {
+      "note.trait.not-normed": {
+        "no": "Skårene er prosent av skalaens omfang — de er ikke sammenlignet med en befolkningsgruppe og kan ikke brukes til å rangere noen.",
+        "en": "Scores are percent of the scale range — they are not compared with a population and must not be used to rank anyone."
+      },
+      "note.threshold.screening": {
+        "no": "Svarene er den testede sin egen selvrapportering — ikke en klinisk eller medisinsk vurdering.",
+        "en": "The answers are the test-taker's own self-report — not a clinical or medical assessment."
+      },
+      "note.gscore.not-normed": {
+        "no": "Resultatet er råtrekk og estimert evnenivå med usikkerhetsintervall — ikke et normert mål og ikke et sertifikat.",
+        "en": "The result is a raw count and an estimated ability level with uncertainty interval — not a normed measure and not a certificate."
+      }
+    }
+  },
+  "moodEffect": {
+    "text": {
+      "no": "Selvrapporteringen er et øyeblikksbilde — humør og situasjon når testen ble tatt kan påvirke resultatet. Les skårene deretter i samtalen.",
+      "en": "The self-report is a snapshot — mood and situation when taking the test may affect the result. Read the scores accordingly in the conversation."
+    }
+  },
+  "thirdParty": {
+    "title": {
+      "no": "For mottakeren av rapporten",
+      "en": "For the recipient of this report"
+    },
+    "body": {
+      "no": "Denne rapporten er basert på en persons egne, selvrapporterte svar i en nettbasert test. Poengene er prosent av skalaens omfang — ikke normerte målinger og ikke sammenlignet med andre. Midtpunktet (50) er skalaens midtpunkt, ikke et gruppegjennomsnitt. Rapporten er IKKE en medisinsk, psykologisk eller klinisk vurdering, og den kan ikke brukes som eneste grunnlag for en beslutning om personen.",
+      "en": "This report is based on a person's own, self-reported answers from a web test. The scores are percent of scale range — not normed measures and not compared with others. The midpoint (50) is the scale's midpoint, not a group average. The report is NOT a medical, psychological or clinical assessment, and must not be used as the sole basis for a decision about the person."
+    }
+  },
+  "disclosures": [
+    {
+      "id": "conversation-basis",
+      "no": "Grunnlag for samtale — ikke ansettelsesverktøy, ikke utvelgelse.",
+      "en": "Groundwork for a conversation — not a hiring tool, not selection."
+    },
+    {
+      "id": "self-report",
+      "no": "Basert på den testede sin egen selvrapportering.",
+      "en": "Based on the test-taker's own self-report."
+    },
+    {
+      "id": "no-norms",
+      "no": "Ingen normer ble brukt: skårene er ikke prosentiler og ikke sammenlignet med andre.",
+      "en": "No norms were applied: scores are not percentiles and not compared with anyone."
+    }
+  ],
+  "share": {
+    "enabled": true,
+    "title": {
+      "no": "Resultat — grunnlag for samtale",
+      "en": "Result — groundwork for a conversation"
+    }
+  },
+  "disclaimer": {
+    "no": "Brainarea er et indikativt selvinnsikt-verktøy for alminnelig interesse. Rapporten er ikke utvelgelses-, medisinsk- eller psykologisk vurdering og kan ikke brukes alene til noen beslutning om en person.",
+    "en": "Brainarea is an indicative self-insight tool for general interest. The report is not a selection, medical or psychological assessment and must not be used alone for any decision about a person."
+  }
+}

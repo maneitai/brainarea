@@ -1,0 +1,560 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://brainarea.example/report/report-config.schema.json",
+  "title": "Brainarea Report Frame Config v1",
+  "description": "One result frame (standard/personal/employer) as declarative data for the SINGLE renderer in report/renderer.mjs ([BYGG] FASE 1, todo #3728; renderer for the standard frame + config plumbing = todo #3730). Adding a frame never means touching renderer code. Quality contract baked into renderer: distinguishes scale midpoint from percent-of-maximum, presents nothing as normed/diagnostic/certified, mentions mood effects, readable by a third party who did not take the test. Language content is inline bilingual (no/en) — FASE 3 result-text steps (#3778..#3787) will replace the translated strings; configs stay structural.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "frame",
+    "testIds",
+    "total",
+    "dimensions",
+    "disclosures",
+    "disclaimer"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "frame": {
+      "description": "Frame discriminator.",
+      "enum": [
+        "standard",
+        "personal",
+        "employer"
+      ]
+    },
+    "testIds": {
+      "description": "Which test families this frame configures. Empty = all families (global frame).",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "total": {
+      "description": "How the total from scoring.js result.total is presented. One block per scoring type the frame exposes; unspecified types are NOT rendered (honest omission).",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "trait": {
+          "description": "result.total.type 'trait': composite is a weighted mean of 0-100 normalized scale scores (percent of scale range).",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "heading": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "no": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "normNote": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                }
+              }
+            },
+            "showBar": {
+              "type": "boolean"
+            }
+          }
+        },
+        "threshold": {
+          "description": "result.total.type 'threshold': raw score + band from def.bands; renderer shows band id/label verbatim and the def-sourced disclaimer id — never as diagnosis.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "heading": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                }
+              }
+            },
+            "normNote": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                }
+              }
+            },
+            "forbidWord": {
+              "description": "Substring blocklist (case-insensitive) for THIS block's rendered strings — renderer hard-fails on any hit.",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "g-score": {
+          "description": "result.total.type 'g-score': theta + CI on theta metric. iqScale is null by contract — renderer must not print a number as IQ.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "heading": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                }
+              }
+            },
+            "normNote": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "dimensions": {
+      "description": "How per-dimension scales[] rows (scoring.js: id, raw, normalized 0-100, weight, itemsAnswered) are rendered.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "labels",
+        "graphic"
+      ],
+      "properties": {
+        "labels": {
+          "description": "Dimension-id -> display label per language. Renderer falls back to dimension id (verbatim) when absent — never invents a name.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "graphic": {
+          "enum": [
+            "bar",
+            "none"
+          ]
+        },
+        "midpointMarker": {
+          "description": "True => bar shows the scale midpoint (50 on 0-100) with midpointLegend wording — the graphic must visually and verbally distinguish the scale midpoint from percent-of-maximum wording (percentOfRange).",
+          "type": "boolean"
+        },
+        "sort": {
+          "enum": [
+            "def",
+            "desc",
+            "asc"
+          ],
+          "default": "def"
+        },
+        "graphicLabels": {
+          "description": "Renderer-owned words for the bar graphic, per language (kept in config so every visible report word is config-sourced). percentOfRange pairs bars with percent-of-scale-range wording; midpointLegend explains the 50 marker as the scale midpoint (NOT a group average); notComputable covers degenerate/unanswered dimensions.",
+          "type": "object",
+          "required": [
+            "percentOfRange",
+            "midpointLegend",
+            "notComputable",
+            "axisStart",
+            "axisEnd"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "percentOfRange": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "midpointLegend": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "notComputable": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "axisStart": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                }
+              }
+            },
+            "axisEnd": {
+              "type": "object",
+              "required": [
+                "no",
+                "en"
+              ],
+              "properties": {
+                "no": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "profileText": {
+      "description": "Named result text (one entry per named profile band). FASE 3 (#3780+) fills language content; renderer requires no/eng parity.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "no",
+          "en"
+        ],
+        "properties": {
+          "no": {
+            "type": "string"
+          },
+          "en": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "readingGuide": {
+      "description": "'Slik leser du dette' section.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "object",
+          "required": [
+            "no",
+            "en"
+          ],
+          "properties": {
+            "no": {
+              "type": "string"
+            },
+            "en": {
+              "type": "string"
+            }
+          }
+        },
+        "body": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "no",
+              "en"
+            ],
+            "properties": {
+              "no": {
+                "type": "string",
+                "minLength": 1
+              },
+              "en": {
+                "type": "string"
+              }
+            }
+          },
+          "minItems": 0
+        }
+      }
+    },
+    "thirdParty": {
+      "description": "Context block so a person who did not take the test can read the result (three-party readability).",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "object",
+          "required": [
+            "no",
+            "en"
+          ],
+          "properties": {
+            "no": {
+              "type": "string"
+            },
+            "en": {
+              "type": "string"
+            }
+          }
+        },
+        "body": {
+          "type": "object",
+          "required": [
+            "no",
+            "en"
+          ],
+          "properties": {
+            "no": {
+              "type": "string"
+            },
+            "en": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "moodEffect": {
+      "description": "Mood-effect honesty note. Required true by renderer for standard frame (self-report mood/state effects must be mentioned).",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "object",
+          "required": [
+            "no",
+            "en"
+          ],
+          "properties": {
+            "no": {
+              "type": "string",
+              "minLength": 1
+            },
+            "en": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "disclosures": {
+      "description": "Disclosure ids rendered from config strings; renderer appends engine notes (result.notes) with its own ids.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "no",
+          "en"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "no": {
+            "type": "string"
+          },
+          "en": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "employer": {
+      "description": "Employer frame ONLY: must be framed as 'groundwork for a conversation', never screening/hiring (dok-avgjørelse). Renderer hard-fails on banned vocabulary.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "conversationBasis",
+        "prohibitions",
+        "noteParaphrases"
+      ],
+      "properties": {
+        "conversationBasis": {
+          "type": "object",
+          "required": [
+            "no",
+            "en"
+          ],
+          "properties": {
+            "no": {
+              "type": "string",
+              "minLength": 1
+            },
+            "en": {
+              "type": "string"
+            }
+          }
+        },
+        "prohibitions": {
+          "description": "Substring blocklist (case-insensitive) enforced against ALL config-sourced rendered strings in the employer frame (headings, notes, disclosures, thirdParty, disclaimer, profileText, readingGuide, graphicLabels) — the frame may never use hiring or diagnosis vocabulary in its own voice; dok-avgjørelse.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 4
+        },
+        "noteParaphrases": {
+          "description": "Employer frame NEVER quotes engine note texts verbatim (they contain screening/diagnosis vocabulary by design). Every note id the engine can emit (note.trait.not-normed, note.threshold.screening, note.gscore.not-normed) needs a bilingual paraphrase here; an unmapped emitted note id is a renderer hard-fail — no silent omission.",
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "no",
+              "en"
+            ],
+            "properties": {
+              "no": {
+                "type": "string",
+                "minLength": 1
+              },
+              "en": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "share": {
+      "description": "Share-card container fields (used by later share step).",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "title": {
+          "type": "object",
+          "required": [
+            "no",
+            "en"
+          ],
+          "properties": {
+            "no": {
+              "type": "string"
+            },
+            "en": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "disclaimer": {
+      "type": "object",
+      "required": [
+        "no",
+        "en"
+      ],
+      "properties": {
+        "no": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

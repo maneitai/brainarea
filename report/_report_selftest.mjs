@@ -10,6 +10,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { renderReport, scanBanned, RENDERER_VERSION } from './renderer.mjs';
+import { RESULT_TRAIT } from './_fixtures.mjs';
 
 const HERE = fileURLToPath(new URL('.', import.meta.url));
 let pass = 0; const failures = [];
@@ -48,21 +49,6 @@ ok('S3.standard.thirdParty', !!configs.standard.thirdParty?.body?.no);
 ok('S3.midtpunktLegend-adskilt', configs.standard.dimensions.graphicLabels.midpointLegend.no.includes('midtpunkt') && !configs.standard.dimensions.graphicLabels.midpointLegend.no.includes('gjennomsnittet'));
 ok('S3.percentOfRange-egen', configs.standard.dimensions.graphicLabels.percentOfRange.no.includes('omfang'));
 
-/* ---- scoring-fixture: miniatyr trait-resultat i scoringkontrakt v1 ---- */
-const RESULT_TRAIT = {
-  schemaVersion: 1, testId: 'fixture-big5', family: 'persona', lang: 'no', scoringType: 'trait',
-  completed: true, expired: false, timeSpentSec: 612, answeredCount: 50, totalItems: 50, coverage: 1,
-  scales: [
-    { id: 'ekstroversi', weight: 1, itemsAnswered: 10, raw: 30, minPossible: 10, maxPossible: 50, normalized: 50, reversedCount: 3, itemIds: [] },
-    { id: 'medmenneskelighet', weight: 1, itemsAnswered: 10, raw: 40, minPossible: 10, maxPossible: 50, normalized: 75, reversedCount: 2, itemIds: [] },
-    { id: 'planlegging', weight: 1, itemsAnswered: 10, raw: 18, minPossible: 10, maxPossible: 50, normalized: 20, reversedCount: 4, itemIds: [] },
-    { id: 'emosjonell-stabilitet', weight: 1, itemsAnswered: 10, raw: 25, minPossible: 10, maxPossible: 50, normalized: 37.5, reversedCount: 2, itemIds: [] },
-    { id: '\u00e5penhet', weight: 1, itemsAnswered: 10, raw: 46, minPossible: 10, maxPossible: 50, normalized: 90, reversedCount: 0, itemIds: [] },
-    { id: 'tom-skala', weight: 1, itemsAnswered: 0, raw: 0, minPossible: 0, maxPossible: 0, normalized: null, reversedCount: 0, itemIds: [] },
-  ],
-  total: { type: 'trait', composite: 54.5, norms: 'none', normsFile: null },
-  notes: [{ id: 'note.trait.not-normed', no: 'Sk\u00e5r er prosent av skala-omfang, ikke persentiler \u2014 ingen normer er brukt.', en: 'Score is percent of scale range, not percentiles \u2014 no norms are applied.' }],
-};
 const RESULT_THRESHOLD = { ...RESULT_TRAIT, scoringType: 'threshold', testId: 'fixture-adhd',
   total: { type: 'threshold', score: 14, bandId: 'moderat', bandLabel: 'Moderat omfang', guidance: null, disclaimer: 'disclaimer.triage' },
   notes: [{ id: 'note.threshold.screening', no: 'Screening, ikke diagnose \u2014 disclaimer id gjengis p\u00e5 resultatsiden.', en: 'Screening, not diagnosis \u2014 disclaimer id is rendered on the result page.' }], scales: RESULT_TRAIT.scales.slice(0, 2) };
@@ -144,6 +130,38 @@ ok('S10.svg-wellformed', (() => { try {
     if (open - selfc !== close) return false;
   }
   return true; } catch { return false; } })());
+
+
+/* ============ S11 — STANDARD-RAMMEN end-to-end (#3730) ============ */
+/* Kvalitetskravene fra stegeteksten, sjekket mot faktisk rendret output: */
+import { readFileSync as _rf } from 'node:fs';
+const std = renderReport(RESULT_TRAIT, configs.standard, { lang: 'no' });
+const stdHtml = std.html, stdSvg = std.svg;
+/* K1: grafen/teksten skiller skalaens midtpunkt fra prosent av maksimum */
+ok('S11.K1.midtpunkt-i-svg', stdSvg.includes('skalaens midtpunkt') && stdSvg.includes('stroke-dasharray'));
+ok('S11.K1.prosent-i-svg', stdSvg.includes('Prosent av skalaens omfang') && stdSvg.includes('%'));
+ok('S11.K1.legend-ikke-gjennomsnitt-kravleggende', stdSvg.includes('ikke et gjennomsnitt'));
+ok('S11.K1.trait-normNote-adskiller', stdHtml.includes('prosent av skalaens omfang') && stdHtml.includes('ikke prosentiler'));
+/* K2: resultater må ikke late som de er normerte, diagnostiske eller sertifiserte */
+const forbiddenClaim = [/\bpercentile-rank\b/i, /\bnormalisert\s+IQ\b/i, /IQ\s*[:=]\s*\d/, /certified/i, /diagnos[\w ]*:\s*\w+/i];
+ok('S11.K2.ingen-norm/diag/sert-paastand', forbiddenClaim.every((re) => !re.test(stdHtml) && !re.test(stdSvg)));
+ok('S11.K2.normNote-til-stede', stdHtml.includes('ikke normert mot en befolkningsgruppe'));
+ok('S11.K2.engine-note-gjengitt', stdHtml.includes('note.trait.not-normed'));
+/* K3: mood-effekt nevnes */
+ok('S11.K3.mood-i-html', /hum\u00f8r/i.test(stdHtml) || /mood/i.test(stdHtml));
+/* K4: tredjepartslesbar (en fremmed forstår resultatet) */
+ok('S11.K4.thirdParty-seksjon', stdHtml.includes('For deg som ikke tok testen'));
+ok('S11.K4.leseguide-til-stede', stdHtml.includes('Slik leser du dette') && (stdHtml.match(/ba-rep-guide/g) || []).length >= 1);
+ok('S11.K4.kontekstlinje', stdHtml.includes('[standard] fixture-big5'));
+ok('S11.K4.alle-begrensninger-i-tekst', stdHtml.includes('kan ikke brukes til ansettelse') || stdHtml.includes('hiring'));
+/* K5: håndregnet kompositt-sanity — 54.5 = (50+75+20+37.5+90)/5 med like vekter */
+ok('S11.K5.kompositt-synlig', stdHtml.includes('55 %') || stdHtml.includes('54.5 %'), 'composite round-trip');
+const avg = (50 + 75 + 20 + 37.5 + 90) / 5;
+ok('S11.K5.fixture-kompositt-matematikk', Math.abs(avg - RESULT_TRAIT.total.composite) < 1e-9, avg);
+/* K6: EN-versjon av standard-rammen er også komplett */
+const stdEn = renderReport(RESULT_TRAIT, configs.standard, { lang: 'en' });
+ok('S11.K6.en-komplett', stdEn.html.includes('How to read this') && stdEn.svg.includes('scale midpoint') && stdEn.html.includes('If you did not take the test'));
+ok('S11.K6.en-dim-ids-fallback-dokumentert', stdEn.svg.includes('ekstroversi')); /* id verbatim til FASE 3-labels */
 
 console.log(`\nSELFTEST ${pass} PASS / ${failures.length} FAIL`);
 if (failures.length) process.exit(1);

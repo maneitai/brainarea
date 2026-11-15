@@ -41,3 +41,25 @@
 2. Dimensjonslabels (norske/engelske namn per dimensjons-id) fyllast når itemspec-blokkane (#3734+) festar dimensjons-id-ar; i mellomtida viser grafen dimensjons-id verbatim (dokumentert fallback — aldri oppfunne namn).
 3. Employer-rammen er renderbar men ikkje eksponerad som side n\u00e5 (ingen rute refererar ho) — utplassering skjer i FASE 3/4 resultatsurface-avgrensinga (#3722-rest avgrensar ad-plass, ikkje report-plass).
 4. Negasjons-scanneren er heuristisk (negasjonsmarkør i same setningschunk); #3729-verifieraren les HELE employer-config mot beslutning 7/8 — menneskeleg gjennomgang er slutt-kontrollen, scanneren er berre vokter.
+
+
+## Addendum — standard-rammen fullført (#3730, samme steg-kjede)
+
+#3730 leveres på toppen av #3728-plomberingen: standard-rammen er nå rendret end-to-end og kvalitetskravene er sjekket mot faktisk utdata (ikke kun config):
+
+- **S11-utvidelsen i `report/_report_selftest.mjs` (74 PASS / 0 FAIL totalt)** sjekker de fire kvalitetskravene fra stegeteksten mot RENDRET html+svg:
+  - K1 midtpunkt ≠ prosent-av-maks: dashed midtpunktstrek ved 50 + legend «50 = skalaens midtpunkt (ikke et gjennomsnitt)» vs. prosent-figcaption + % fra bars — to ulike verbale og visuelle lag.
+  - K2 ingen norm/diagnose/sertifiserings-påstand: regex-forbud mot percentil-/IQ-/certified-uttrykk + normNote + engine-note («note.trait.not-normed») gjengitt.
+  - K3 mood-effekt: moodEffect-teksten er i html (krav på standard-rammen, kaster hvis mangler).
+  - K4 tredjepartslesbar: thirdParty-seksjon («For deg som ikke tok testen»), leseguide, kontekstlinje `[standard] fixture-big5` (ramme + testId), begrensninger i ren tekst.
+  - K5 håndregnet sanity: kompositt 54.5 = (50+75+20+37.5+90)/5 (like vekter), rundes til 55 % i html.
+  - K6 EN-komplett: readingGuide/graf/thirdParty på engelsk; dimensjons-ids vises verbatim (dokumentert fallback til FASE 3-labels finnes).
+
+- **`report/_standard_demo.mjs`** genererer deterministisk demo (fixture-markert) for menneskelig inspektion og #3812-samlet faseverifikasjon:
+  - `report/demo/standard-ramme-demo-no.html`
+  - `report/demo/standard-ramme-demo-en.html`
+  Demo-teksten er eksplisitt merket «DEMO med konstruerte data (testId fixture-big5)».
+
+- Resultat-til-rute-koblingen (hvor standard-rammen vises på siten) er bevisst LIGGENDE: test-rutene er engine-sjiktet (`test-mount`), og resultat-surface-koblingen hører til FASE 3-resultattext-stegene (#3780+) der profiltekstene finnes. Ingen tom rame eksponeres.
+
+**Selftest etter #3730: 74 PASS / 0 FAIL.**

@@ -1,0 +1,2752 @@
+[
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0001",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Am the life of the party.",
+  "no": "Jeg er den som setter liv til festen.",
+  "glossRef": "Jeg er den som setter liv til festen."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0002",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Feel comfortable around people.",
+  "no": "Jeg føler meg komfortabel rundt andre mennesker.",
+  "glossRef": "Jeg føler meg komfortabel rundt andre mennesker."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0003",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Start conversations.",
+  "no": "Jeg starter samtaler.",
+  "glossRef": "Jeg starter samtaler."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0004",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Talk to a lot of different people at parties.",
+  "no": "Jeg snakker med mange forskjellige mennesker på fester.",
+  "glossRef": "Jeg snakker med mange forskjellige mennesker på fester."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0005",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Don't mind being the center of attention.",
+  "no": "Det er greit for meg å stå i sentrum.",
+  "glossRef": "Det er greit for meg å stå i sentrum."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0006",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Make friends easily.",
+  "no": "Jeg får lett nye venner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0007",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Take charge.",
+  "no": "Jeg overtar styringen.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0008",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Know how to captivate people.",
+  "no": "Jeg vet hvordan jeg fengsler folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0009",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Feel at ease with people.",
+  "no": "Jeg er avslappet i selskap med folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0010",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Am skilled in handling social situations.",
+  "no": "Jeg er flink til å håndtere sosiale situasjoner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0011",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Warm up quickly to others.",
+  "no": "Jeg blir raskt varm med andre folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0012",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Cheer people up.",
+  "no": "Jeg muntre opp folk rundt meg.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0013",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Love large parties.",
+  "no": "Jeg elsker store selskaper.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0014",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Try to lead others.",
+  "no": "Jeg forsøker å lede andre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0015",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Take control of things.",
+  "no": "Jeg tar kontrollen over ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0016",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Am always busy.",
+  "no": "Jeg har alltid mye å gjøre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0017",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Am always on the go.",
+  "no": "Jeg er alltid på farten.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0018",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Do a lot in my spare time.",
+  "no": "Jeg gjør mye i fritiden.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0019",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Love excitement.",
+  "no": "Jeg elsker spenning.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0020",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Seek adventure.",
+  "no": "Jeg søker eventyr.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0021",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Enjoy being reckless.",
+  "no": "Jeg trives med å være dumdristig.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0022",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Act wild and crazy.",
+  "no": "Jeg oppfører meg vilt og ubundet.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0023",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Radiate joy.",
+  "no": "Jeg stråler av glede.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0024",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Have a lot of fun.",
+  "no": "Jeg more meg mye.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0025",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Love life.",
+  "no": "Jeg elsker livet.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0026",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "Look at the bright side of life.",
+  "no": "Jeg ser livet fra den lyse siden.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0027",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "I prefer to watch rather than take part at social gatherings.",
+  "no": "Jeg foretrekker å se på fremfor å delta på sosiale arrangementer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0028",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "I make new friends wherever I go.",
+  "no": "Jeg får nye venner overalt jeg kommer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0029",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "I speak my mind even among strangers.",
+  "no": "Jeg sier hva jeg mener også til folk jeg ikke kjenner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0030",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "I often take the first step in a conversation.",
+  "no": "Jeg tar ofte det første steget i en samtale.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0031",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "I bring a lot of energy into everything I do.",
+  "no": "Jeg legger mye energi i alt jeg gjør.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0032",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Don't talk a lot.",
+  "no": "Jeg snakker ikke mye.",
+  "glossRef": "Jeg snakker ikke mye."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0033",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Keep in the background.",
+  "no": "Jeg holder meg i bakgrunnen.",
+  "glossRef": "Jeg holder meg i bakgrunnen."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0034",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Have little to say.",
+  "no": "Jeg har lite å si.",
+  "glossRef": "Jeg har lite å si."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0035",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Don't like to draw attention to myself.",
+  "no": "Jeg liker ikke å trekke oppmerksomhet mot meg selv.",
+  "glossRef": "Jeg liker ikke å trekke oppmerksomhet mot meg selv."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0036",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Am quiet around strangers.",
+  "no": "Jeg er stille rundt fremmede.",
+  "glossRef": "Jeg er stille rundt fremmede."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0037",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Avoid contacts with others.",
+  "no": "Jeg unngår kontakt med andre folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0038",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Am hard to get to know.",
+  "no": "Det er vanskelig å bli kjent med meg.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0039",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Retreat from others.",
+  "no": "Jeg trekker meg unna folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0040",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Find it difficult to approach others.",
+  "no": "Jeg synes det er vanskelig å ta kontakt med folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0041",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Keep others at a distance.",
+  "no": "Jeg holder andre på avstand.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0042",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Prefer to be alone.",
+  "no": "Jeg foretrekker å være alene.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0043",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Avoid crowds.",
+  "no": "Jeg unngår folkemengder.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0044",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Wait for others to lead the way.",
+  "no": "Jeg venter på at andre skal lede an.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0045",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "I avoid situations where I meet new people.",
+  "no": "Jeg unngår situasjoner der jeg møter nye mennesker.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0046",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "I go quiet in groups.",
+  "no": "Jeg blir stille i grupper.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0047",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "I feel drained after a whole day around other people.",
+  "no": "Jeg føler meg utkjørt etter en hel dag sammen med andre folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0048",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "I find it tiring to keep a conversation going.",
+  "no": "Jeg blir slitt av å holde en samtale i gang.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0049",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "I would rather stay home than go to a party.",
+  "no": "Jeg foretrekker å være hjemme fremfor å dra på fest.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "e-0050",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "I turn down invitations to social events.",
+  "no": "Jeg takker nei til invitasjoner til sosiale arrangementer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0001",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Am interested in people.",
+  "no": "Jeg er interessert i andre mennesker.",
+  "glossRef": "Jeg er interessert i andre mennesker."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0002",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Sympathize with others' feelings.",
+  "no": "Jeg sympatiserer med andres følelser.",
+  "glossRef": "Jeg sympatiserer med andres følelser."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0003",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Have a soft heart.",
+  "no": "Jeg har et mykt hjerte.",
+  "glossRef": "Jeg har et mykt hjerte."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0004",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Take time out for others.",
+  "no": "Jeg tar meg tid til andre.",
+  "glossRef": "Jeg tar meg tid til andre."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0005",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Feel others' emotions.",
+  "no": "Jeg merker andres følelser.",
+  "glossRef": "Jeg merker andres følelser."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0006",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Make people feel at ease.",
+  "no": "Jeg får andre til å føle seg vel.",
+  "glossRef": "Jeg får andre til å føle seg vel."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0007",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Have a good word for everyone.",
+  "no": "Jeg har et godt ord for alle.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0008",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Respect others.",
+  "no": "Jeg viser respekt for folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0009",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Accept people as they are.",
+  "no": "Jeg aksepterer folk slik de er.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0010",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Am concerned about others.",
+  "no": "Jeg er opptatt av hvordan andre har det.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0011",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Am easy to satisfy.",
+  "no": "Det er lett å gjøre meg fornøyd.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0012",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Treat all people equally.",
+  "no": "Jeg behandler alle folk likt.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0013",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Trust others.",
+  "no": "Jeg stoler på folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0014",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Believe that others have good intentions.",
+  "no": "Jeg tror folk har gode intensjoner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0015",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Trust what people say.",
+  "no": "Jeg stoler på det folk sier.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0016",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "I forgive people easily.",
+  "no": "Jeg tilgir folk lett.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0017",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "I put other people's needs before my own.",
+  "no": "Jeg setter andres behov foran mine egne.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0018",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "I go out of my way to make others feel welcome.",
+  "no": "Jeg går langt for at andre skal føle seg velkomne.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0019",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "I enjoy doing small favors for others.",
+  "no": "Jeg trives med å gjøre små tjenester for andre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0020",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "I try to see the best in people.",
+  "no": "Jeg prøver å se det beste i folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0021",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "I lend things to others without hesitation.",
+  "no": "Jeg låner bort ting til andre uten å nøle.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0022",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "I am patient with people who take time to understand.",
+  "no": "Jeg er tålmodig med folk som bruker tid på å forstå.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0023",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "I adapt easily to other people's plans.",
+  "no": "Jeg tilpasser meg lett andres planer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0024",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "I make newcomers feel included.",
+  "no": " Jeg ser til at nye folk føler seg inkludert.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0025",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "I think people are generally worth trusting.",
+  "no": "Jeg tror folk generelt er verdt å stole på.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0026",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Am not really interested in others.",
+  "no": "Jeg er ikke synderlig interessert i andre.",
+  "glossRef": "Jeg er ikke synderlig interessert i andre."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0027",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Insult people.",
+  "no": "Jeg fornærmer folk.",
+  "glossRef": "Jeg fornærmer folk."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0028",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Am not really interested in other people's problems.",
+  "no": "Jeg er egentlig ikke interessert i andres problemer.",
+  "glossRef": "Jeg er egentlig ikke interessert i andres problemer."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0029",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Feel little concern for others.",
+  "no": "Jeg bryr meg lite om andre.",
+  "glossRef": "Jeg bryr meg lite om andre."
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0030",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Have a sharp tongue.",
+  "no": "Jeg har en skarp tunge.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0031",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Cut others to pieces.",
+  "no": "Jeg kritiserer folk brutalt.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0032",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Suspect hidden motives in others.",
+  "no": "Jeg mistenker skjulte motiver hos folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0033",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Get back at others.",
+  "no": "Jeg gir igjen på folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0034",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Believe that I am better than others.",
+  "no": "Jeg tror jeg er bedre enn andre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0035",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Contradict others.",
+  "no": "Jeg motsier folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0036",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Make demands on others.",
+  "no": "Jeg stiller krav til andre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0037",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Hold a grudge.",
+  "no": "Jeg holder nag.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0038",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Distrust people.",
+  "no": "Jeg stoler ikke på folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0039",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Use others for my own ends.",
+  "no": "Jeg bruker andre til mine egne formål.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0040",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Cheat to get ahead.",
+  "no": "Jeg jukser for å komme videre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0041",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Take advantage of others.",
+  "no": "Jeg utnytter andre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0042",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Obstruct others' plans.",
+  "no": "Jeg motarbeider andres planer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0043",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Am indifferent to the feelings of others.",
+  "no": "Jeg er likegyldig til andres følelser.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0044",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Take no time for others.",
+  "no": "Jeg tar meg ikke tid til andre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0045",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Love a good fight.",
+  "no": "Jeg elsker en tøff krangel.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0046",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Yell at people.",
+  "no": "Jeg skriker på folk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0047",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Think highly of myself.",
+  "no": "Jeg har høye tanker om meg selv.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0048",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Have a high opinion of myself.",
+  "no": "Jeg har et høyt syn på meg selv.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0049",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Boast about my virtues.",
+  "no": "Jeg skryter av mine dyder.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "e-a",
+  "id": "a-0050",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Try not to think about the needy.",
+  "no": "Jeg prøver å ikke tenke på de trengende.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0001",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Have a rich vocabulary.",
+  "no": "Jeg har et rikt ordforråd.",
+  "glossRef": "Jeg har et rikt ordforråd."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0002",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Have difficulty understanding abstract ideas.",
+  "no": "Jeg har vanskelig for å forstå abstrakte ideer.",
+  "glossRef": "Jeg har vanskelig for å forstå abstrakte ideer."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0003",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Have a vivid imagination.",
+  "no": "Jeg har en levende fantasi.",
+  "glossRef": "Jeg har en levende fantasi."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0004",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Am not interested in abstract ideas.",
+  "no": "Jeg interesserer meg ikke for abstrakte ideer.",
+  "glossRef": "Jeg interesserer meg ikke for abstrakte ideer."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0005",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Have excellent ideas.",
+  "no": "Jeg har fremragende ideer.",
+  "glossRef": "Jeg har fremragende ideer."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0006",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Am quick to understand things.",
+  "no": "Jeg forstår ting raskt.",
+  "glossRef": "Jeg forstår ting raskt."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0007",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Do not have a good imagination.",
+  "no": "Jeg har ikke god fantasi.",
+  "glossRef": "Jeg har ikke god fantasi."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0008",
+  "sign": 1,
+  "dim": "openness",
+  "en": "I look up how things work just to understand them better.",
+  "no": "Jeg slår opp hvordan ting fungerer bare for å forstå dem bedre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0009",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Try to avoid complex people.",
+  "no": "Jeg prøver å unngå kompliserte mennesker.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0010",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Use difficult words.",
+  "no": "Jeg bruker vanskelige ord.",
+  "glossRef": "Jeg bruker vanskelige ord."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0011",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Spend time reflecting on things.",
+  "no": "Jeg bruker tid på å reflektere over ting.",
+  "glossRef": "Jeg bruker tid på å reflektere over ting."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0012",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Have difficulty imagining things.",
+  "no": "Jeg har vanskelig for å forestille meg ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0013",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Am full of ideas.",
+  "no": "Jeg er full av ideer.",
+  "glossRef": "Jeg er full av ideer."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0014",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Avoid difficult reading material.",
+  "no": "Jeg unngår krevende lesestoff.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0015",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Carry the conversation to a higher level.",
+  "no": "Jeg løfter samtalen til et høyere nivå.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0016",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Catch on to things quickly.",
+  "no": "Jeg skjønner ting raskt.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0017",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Will not probe deeply into a subject.",
+  "no": "Jeg vil ikke grave dypt i et emne.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0018",
+  "sign": 1,
+  "dim": "openness",
+  "en": "I notice patterns that others seem to miss.",
+  "no": "Jeg legger merke til mønstre andre ser ut til å overse.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0019",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Do not like art.",
+  "no": "Jeg liker ikke kunst.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0020",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Can handle a lot of information.",
+  "no": "Jeg kan håndtere mye informasjon på en gang.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0021",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Love to think up new ways of doing things.",
+  "no": "Jeg elsker å finne på nye måter å gjøre ting på.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0022",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Avoid philosophical discussions.",
+  "no": "Jeg unngår filosofiske diskusjoner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0023",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Love to read challenging material.",
+  "no": "Jeg elsker å lese krevende stoff.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0024",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Do not enjoy going to art museums.",
+  "no": "Jeg trives ikke med å gå på kunstmuseer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0025",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Am good at many things.",
+  "no": "Jeg er god på mange ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0026",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Believe in the importance of art.",
+  "no": "Jeg tror på kunstens betydning.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0027",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Tend to vote for conservative political candidates.",
+  "no": "Jeg pleier å stemme på konservative politiske kandidater.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0028",
+  "sign": 1,
+  "dim": "openness",
+  "en": "I like to visit places that are new to me.",
+  "no": "Jeg liker å besøke steder som er nye for meg.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0029",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Do not like poetry.",
+  "no": "Jeg liker ikke poesi.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0030",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Tend to vote for liberal political candidates.",
+  "no": "Jeg pleier å stemme på liberale politiske kandidater.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0031",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Enjoy hearing new ideas.",
+  "no": "Jeg liker å høre nye ideer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0032",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Rarely look for a deeper meaning in things.",
+  "no": "Jeg leter sjelden etter en dypere mening i ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0033",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Enjoy thinking about things.",
+  "no": "Jeg liker å tenke over ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0034",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Believe that too much tax money goes to support artists.",
+  "no": "Jeg mener at for mye skattepenger går til å støtte artister.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0035",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Can say things beautifully.",
+  "no": "Jeg kan si ting på en vakker måte.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0036",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Enjoy wild flights of fantasy.",
+  "no": "Jeg nyter å la fantasien løpe fritt.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0037",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Am not interested in theoretical discussions.",
+  "no": "Jeg interesserer meg ikke for teoretiske diskusjoner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0038",
+  "sign": 1,
+  "dim": "openness",
+  "en": "I enjoy learning about subjects outside my own field.",
+  "no": "Jeg liker å lære om emner utenfor mitt eget fagområde.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0039",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Rarely notice my emotional reactions.",
+  "no": "Jeg legger sjelden merke til mine egne følelsesreaksjoner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0040",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Get excited by new ideas.",
+  "no": "Jeg blir begeistret for nye ideer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0041",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Love to daydream.",
+  "no": "Jeg elsker å dagdrømme.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0042",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Don't understand people who get emotional.",
+  "no": "Jeg forstår ikke mennesker som blir emosjonelle.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0043",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Like to get lost in thought.",
+  "no": "Jeg liker å forsvinne inn i egne tanker.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0044",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Prefer to stick with things that I know.",
+  "no": "Jeg foretrekker å holde meg til det jeg kjenner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0045",
+  "sign": 1,
+  "dim": "openness",
+  "en": "See beauty in things that others might not notice.",
+  "no": "Jeg ser skjønnhet i ting andre kanskje ikke legger merke til.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0046",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Experience my emotions intensely.",
+  "no": "Jeg opplever følelsene mine intenst.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0047",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Dislike changes.",
+  "no": "Jeg misliker endringer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0048",
+  "sign": 1,
+  "dim": "openness",
+  "en": "I think about how things could be different.",
+  "no": "Jeg tenker på hvordan ting kunne vært annerledes.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0049",
+  "sign": -1,
+  "dim": "openness",
+  "en": "Am attached to conventional ways.",
+  "no": "Jeg fester meg til tradisjonelle måter å gjøre ting på.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "o-0050",
+  "sign": 1,
+  "dim": "openness",
+  "en": "Prefer variety to routine.",
+  "no": "Jeg foretrekker variasjon framfor rutine.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0001",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Am always prepared.",
+  "no": "Jeg er alltid forberedt.",
+  "glossRef": "Jeg er alltid forberedt."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0002",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Leave my belongings around.",
+  "no": "Jeg lar tingene mine ligge fritt framme.",
+  "glossRef": "Jeg lar tingene mine ligge fritt framme."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0003",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Pay attention to details.",
+  "no": "Jeg er nøye med detaljer.",
+  "glossRef": "Jeg er nøye med detaljer."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0004",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Make a mess of things.",
+  "no": "Jeg skaper rot.",
+  "glossRef": "Jeg skaper rot."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0005",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Get chores done right away.",
+  "no": "Jeg får gjøremål gjort med en gang.",
+  "glossRef": "Jeg får gjøremål gjort med en gang."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0006",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I trust myself to handle the tasks I take on.",
+  "no": "Jeg stoler på at jeg klarer oppgavene jeg tar på meg.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0007",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Often forget to put things back in their proper place.",
+  "no": "Jeg glemmer ofte å legge ting tilbake der de hører hjemme.",
+  "glossRef": "Jeg glemmer ofte å legge ting tilbake der de hører hjemme."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0008",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Like order.",
+  "no": "Jeg liker orden.",
+  "glossRef": "Jeg liker orden."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0009",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Shirk my duties.",
+  "no": "Jeg sniker meg unna mine plikter.",
+  "glossRef": "Jeg sniker meg unna mine plikter."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0010",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Follow a schedule.",
+  "no": "Jeg følger en fast plan.",
+  "glossRef": "Jeg følger en fast plan."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0011",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Am exacting in my work.",
+  "no": "Jeg stiller høye krav til arbeidet mitt.",
+  "glossRef": "Jeg stiller høye krav til arbeidet mitt."
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0012",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Neglect my duties.",
+  "no": "Jeg forsømmer mine plikter.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0013",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I put things back where they belong.",
+  "no": "Jeg legger ting tilbake der de hører hjemme.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0014",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Waste my time.",
+  "no": "Jeg sløser med tiden min.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0015",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Do things according to a plan.",
+  "no": "Jeg gjør ting etter en plan.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0016",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Continue until everything is perfect.",
+  "no": "Jeg fortsetter til alt er helt perfekt.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0017",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Do things in a half-way manner.",
+  "no": "Jeg gjør ting halvveis.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0018",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Make plans and stick to them.",
+  "no": "Jeg lager planer og holder meg til dem.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0019",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Find it difficult to get down to work.",
+  "no": "Jeg synes det er vanskelig å komme i gang med å jobbe.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0020",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I follow through on the commitments I make.",
+  "no": "Jeg følger opp det jeg lover.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0021",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Love order and regularity.",
+  "no": "Jeg elsker orden og faste rutiner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0022",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Leave a mess in my room.",
+  "no": "Jeg etterlater rot på rommet mitt.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0023",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Like to tidy up.",
+  "no": "Jeg liker å rydde.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0024",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Do just enough work to get by.",
+  "no": "Jeg gjør akkurat nok arbeid til å komme unna.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0025",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Carry out my plans.",
+  "no": "Jeg gjennomfører planene mine.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0026",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I push myself to reach the goals I set.",
+  "no": "Jeg presser meg selv for å nå målene jeg setter meg.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0027",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Don't see things through.",
+  "no": "Jeg gir meg før ting er ferdige.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0028",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Complete tasks successfully.",
+  "no": "Jeg fullfører oppgaver med hell.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0029",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Leave things unfinished.",
+  "no": "Jeg lar ting stå uferdige.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0030",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Finish what I start.",
+  "no": "Jeg fullfører det jeg begynner på.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0031",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Follow through with my plans.",
+  "no": "Jeg følger opp planene mine.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0032",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Don't put my mind on the task at hand.",
+  "no": "Jeg klarer ikke å konsentrere meg om oppgaven som ligger foran.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0033",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I start tasks early enough to finish them properly.",
+  "no": "Jeg begynner oppgaver tidlig nok til å gjøre dem ordentlig ferdig.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0034",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Need a push to get started.",
+  "no": "Jeg trenger et dytt for å komme i gang.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0035",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Excel in what I do.",
+  "no": "Jeg utmerker meg i det jeg gjør.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0036",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Handle tasks smoothly.",
+  "no": "Jeg håndterer oppgaver problemfritt.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0037",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Break rules.",
+  "no": "Jeg bryter regler.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0038",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Know how to get things done.",
+  "no": "Jeg vet hvordan ting blir gjort.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0039",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Break my promises.",
+  "no": "Jeg bryter det jeg lover.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0040",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I think a task through before I begin.",
+  "no": "Jeg tenker en oppgave gjennom før jeg begynner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0041",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Keep my promises.",
+  "no": "Jeg holder det jeg lover.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0042",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Put little time and effort into my work.",
+  "no": "Jeg bruker liten tid og innsats på arbeidet mitt.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0043",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Tell the truth.",
+  "no": "Jeg sier sannheten.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0044",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Have difficulty starting tasks.",
+  "no": "Jeg sliter med å sette i gang med oppgaver.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0045",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I keep my workspace in order.",
+  "no": "Jeg holder arbeidsplassen min i orden.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0046",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Do more than what's expected of me.",
+  "no": "Jeg gjør mer enn det som forventes av meg.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0047",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Jump into things without thinking.",
+  "no": "Jeg kaster meg ut i ting uten å tenke meg om.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0048",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I give my best effort even on dull tasks.",
+  "no": "Jeg gir mitt beste selv på kjedelige oppgaver.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0049",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Make rash decisions.",
+  "no": "Jeg tar overilade beslutninger.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "o-c",
+  "id": "c-0050",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "Work hard.",
+  "no": "Jeg jobber hardt.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0001",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Get stressed out easily.",
+  "no": "Jeg blir lett stresset.",
+  "glossRef": "Jeg blir lett stresset."
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0002",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Am relaxed most of the time.",
+  "no": "Jeg er avslappet det meste av tiden.",
+  "glossRef": "Jeg er avslappet det meste av tiden."
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0003",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Worry about things.",
+  "no": "Jeg bekymrer meg for ting.",
+  "glossRef": "Jeg bekymrer meg for ting."
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0004",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Seldom feel blue.",
+  "no": "Jeg føler meg sjelden nedstemt.",
+  "glossRef": "Jeg føler meg sjelden nedstemt."
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0005",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Am easily disturbed.",
+  "no": "Jeg blir lett foruroliget.",
+  "glossRef": "Jeg blir lett foruroliget."
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0006",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Get upset easily.",
+  "no": "Jeg blir lett opprørt.",
+  "glossRef": "Jeg blir lett opprørt."
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0007",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Change my mood a lot.",
+  "no": "Humøret mitt veksler mye.",
+  "glossRef": "Humøret mitt veksler mye."
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0008",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Have frequent mood swings.",
+  "no": "Jeg har hyppige humørsvingninger.",
+  "glossRef": "Jeg har hyppige humørsvingninger."
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0009",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Get irritated easily.",
+  "no": "Jeg blir lett irritert.",
+  "glossRef": "Jeg blir lett irritert."
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0010",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Often feel blue.",
+  "no": "Jeg føler meg ofte nedstemt.",
+  "glossRef": "Jeg føler meg ofte nedstemt."
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0011",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Am afraid of many things.",
+  "no": "Jeg er redd for mange ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0012",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Lose my temper.",
+  "no": "Jeg mister humøret.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0013",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Am afraid to draw attention to myself.",
+  "no": "Jeg er redd for å trekke oppmerksomheten til meg selv.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0014",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Only feel comfortable with friends.",
+  "no": "Jeg føler meg bare komfortabel sammen med venner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0015",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Go on binges.",
+  "no": "Jeg går på spiseorgier.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0016",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Become overwhelmed by events.",
+  "no": "Jeg blir overveldet av det som skjer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0017",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Feel that I'm unable to deal with things.",
+  "no": "Jeg føler at jeg ikke klarer å takle tingene.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0018",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Panic easily.",
+  "no": "Jeg går lett i panikk.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0019",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Feel threatened easily.",
+  "no": "Jeg føler meg lett truet.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0020",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Dislike myself.",
+  "no": "Jeg misliker meg selv.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0021",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Am often down in the dumps.",
+  "no": "Jeg er ofte ked av det.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0022",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Am filled with doubts about things.",
+  "no": "Jeg er full av tvil om tingene.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0023",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Fear for the worst.",
+  "no": "Jeg frykter det verste.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0024",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Get angry easily.",
+  "no": "Jeg blir lett sint.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0025",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Get overwhelmed by emotions.",
+  "no": "Jeg blir overveldet av følelsene mine.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0026",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Take offense easily.",
+  "no": "Jeg blir lett fornærmet.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0027",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Get caught up in my problems.",
+  "no": "Jeg gruer meg opp i problemene mine.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0028",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Grumble about things.",
+  "no": "Jeg surmeler over ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0029",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Am not easily annoyed.",
+  "no": "Jeg blir ikke lett irritert.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0030",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Am not bothered by difficult social situations.",
+  "no": "Vanskelige sosiale situasjoner forstyrrer meg ikke.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0031",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Rarely overindulge.",
+  "no": "Jeg overdriver sjelden.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0032",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Easily resist temptations.",
+  "no": "Jeg motstår lett fristelser.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0033",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Am able to control my cravings.",
+  "no": "Jeg klarer å kontrollere mine lyster.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0034",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Am not easily bothered by things.",
+  "no": "Jeg lar meg ikke lett forstyrre av ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0035",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Rarely get irritated.",
+  "no": "Jeg blir sjelden irritert.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0036",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Seldom get mad.",
+  "no": "Jeg blir sjelden sint.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0037",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Feel comfortable with myself.",
+  "no": "Jeg føler meg komfortabel med meg selv.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0038",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Am very pleased with myself.",
+  "no": "Jeg er meget fornøyd med meg selv.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0039",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Am not easily frustrated.",
+  "no": "Jeg blir ikke lett frustrert.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0040",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Remain calm under pressure.",
+  "no": "Jeg holder roen under press.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0041",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Rarely lose my composure.",
+  "no": "Jeg mister sjelden fatningen.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0042",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "My mood can shift without warning.",
+  "no": "Humøret mitt kan skifte uten forvarsel.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0043",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "My worries interfere with my sleep.",
+  "no": "Bekymringene mine går ut over søvnen.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0044",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Small setbacks can ruin my whole day.",
+  "no": "Små tilbakeslag kan ødelegge hele dagen min.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0045",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "I replay embarrassing moments in my mind.",
+  "no": "Jeg spiller pinlige øyeblikk på nytt i hodet.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0046",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "I feel on edge in stressful situations.",
+  "no": "Jeg er anspent i stressende situasjoner.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0047",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "Little things can make me lose my cool.",
+  "no": "Småting kan få meg til å miste roen.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0048",
+  "sign": 1,
+  "dim": "neuroticism",
+  "en": "I expect things to go wrong.",
+  "no": "Jeg regner med at ting går galt.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0049",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "My mood stays steady from day to day.",
+  "no": "Humøret mitt er stabilt fra dag til dag.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0050",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "I let go of my worries quickly.",
+  "no": "Jeg kvitter meg raskt med bekymringene mine.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0051",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "I stay composed when plans change.",
+  "no": "Jeg holder fatningen når planer endres.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0052",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "I recover quickly from disappointment.",
+  "no": "Jeg kommer raskt til hektene etter skuffelser.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0053",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "I am slow to anger.",
+  "no": "Jeg er sein til å bli sint.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0054",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Pressure rarely gets to me.",
+  "no": "Press påvirker meg sjelden.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "n-0055",
+  "sign": -1,
+  "dim": "neuroticism",
+  "en": "Unexpected problems do not rattle me.",
+  "no": "Uventede problemer setter meg ikke ut av spilled.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "e-0001",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "I bring energy to group activities.",
+  "no": "Jeg bidrar med energi i gruppeaktiviteter.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "e-0002",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "I start conversations with strangers.",
+  "no": "Jeg starter samtaler med fremmede.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "e-0003",
+  "sign": 1,
+  "dim": "extraversion",
+  "en": "I enjoy big social gatherings.",
+  "no": "Jeg trives med store sosiale sammenkomster.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "e-0004",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Would describe my experiences as somewhat dull.",
+  "no": "Jeg vil beskrive opplevelsene mine som noe kjedelige.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "e-0005",
+  "sign": -1,
+  "dim": "extraversion",
+  "en": "Often feel uncomfortable around others.",
+  "no": "Jeg føler meg ofte ukomfortabel sammen med andre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "a-0001",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Inquire about others' well-being.",
+  "no": "Jeg spør andre hvordan det står til.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "a-0002",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Know how to comfort others.",
+  "no": "Jeg vet hvordan jeg kan trøste andre.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "a-0003",
+  "sign": 1,
+  "dim": "agreeableness",
+  "en": "Love children.",
+  "no": "Jeg er glad i barn.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "a-0004",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Am out for my own personal gain.",
+  "no": "Jeg er ute for min egen vinning.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "a-0005",
+  "sign": -1,
+  "dim": "agreeableness",
+  "en": "Am not interested in other people's problems.",
+  "no": "Jeg er ikke interessert i andre menneskers problemer.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "o-0001",
+  "sign": 1,
+  "dim": "openness",
+  "en": "I notice beauty in small everyday things.",
+  "no": "Jeg legger merke til skjønnhet i små hverdagslige ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "o-0002",
+  "sign": 1,
+  "dim": "openness",
+  "en": "I often get lost in my own imagination.",
+  "no": "Jeg drömmer ofte bort i min egen fantasi.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "o-0003",
+  "sign": 1,
+  "dim": "openness",
+  "en": "I enjoy exploring ideas just for their own sake.",
+  "no": "Jeg liker å utforske ideer for ideenes egen skyld.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "o-0004",
+  "sign": -1,
+  "dim": "openness",
+  "en": "I prefer familiar approaches over trying new ones.",
+  "no": "Jeg foretrekker kjente tilnærminger fremfor å prøve nye.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "o-0005",
+  "sign": -1,
+  "dim": "openness",
+  "en": "I find imaginative ideas impractical.",
+  "no": "Jeg synes fantasifulle ideer er upraktiske.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "c-0001",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Mess things up.",
+  "no": "Jeg roter til ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "c-0002",
+  "sign": -1,
+  "dim": "conscientiousness",
+  "en": "Rush into things.",
+  "no": "Jeg kaster meg ut i ting.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "c-0003",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I finish my chores before I relax.",
+  "no": "Jeg fullfører gjøremålene mine før jeg slapper av.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "c-0004",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I keep track of what needs to get done.",
+  "no": "Jeg holder oversikt over det som må gjøres.",
+  "glossRef": null
+ },
+ {
+  "pool": "persona",
+  "batch": "n-rest",
+  "id": "c-0005",
+  "sign": 1,
+  "dim": "conscientiousness",
+  "en": "I push myself to improve at things I care about.",
+  "no": "Jeg presser meg selv til å bli bedre i det jeg bryr meg om.",
+  "glossRef": null
+ }
+]

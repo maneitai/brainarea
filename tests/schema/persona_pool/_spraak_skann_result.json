@@ -1,0 +1,17 @@
+[
+ {
+  "id": "n-0021",
+  "class": "danish-ked",
+  "en": "Am often down in the dumps.",
+  "no": "Jeg er ofte ked av det."
+ },
+ {
+  "id": "o-0002",
+  "class": "non-no-char",
+  "en": "I often get lost in my own imagination.",
+  "no": "Jeg drömmer ofte bort i min egen fantasi.",
+  "chars": [
+   "ö"
+  ]
+ }
+]

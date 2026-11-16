@@ -243,7 +243,7 @@
       "id": "e-0007",
       "kind": "likert",
       "lang": "no",
-      "text": "Jeg overtar styringen.",
+      "text": "Jeg tar styringen.",
       "options": [
         {
           "label": "Veldig unøyaktig",
@@ -379,7 +379,7 @@
       "id": "e-0011",
       "kind": "likert",
       "lang": "no",
-      "text": "Jeg blir raskt varm med andre folk.",
+      "text": "Jeg kommer raskt på god fot med andre.",
       "options": [
         {
           "label": "Veldig unøyaktig",
@@ -413,7 +413,7 @@
       "id": "e-0012",
       "kind": "likert",
       "lang": "no",
-      "text": "Jeg muntre opp folk rundt meg.",
+      "text": "Jeg munterer opp folk rundt meg.",
       "options": [
         {
           "label": "Veldig unøyaktig",
@@ -447,7 +447,7 @@
       "id": "e-0013",
       "kind": "likert",
       "lang": "no",
-      "text": "Jeg elsker store selskaper.",
+      "text": "Jeg elsker store fester.",
       "options": [
         {
           "label": "Veldig unøyaktig",
@@ -1467,7 +1467,7 @@
       "id": "e-0043",
       "kind": "likert",
       "lang": "no",
-      "text": "Jeg unngår folkemengder.",
+      "text": "Jeg unngår store folkemengder.",
       "options": [
         {
           "label": "Veldig unøyaktig",
@@ -1603,7 +1603,7 @@
       "id": "e-0047",
       "kind": "likert",
       "lang": "no",
-      "text": "Jeg føler meg utkjørt etter en hel dag sammen med andre folk.",
+      "text": "Jeg føler meg utmattet etter en hel dag sammen med andre.",
       "options": [
         {
           "label": "Veldig unøyaktig",
@@ -2521,7 +2521,7 @@
       "id": "a-0024",
       "kind": "likert",
       "lang": "no",
-      "text": " Jeg ser til at nye folk føler seg inkludert.",
+      "text": "Jeg ser til at nye folk føler seg inkludert.",
       "options": [
         {
           "label": "Veldig unøyaktig",
@@ -3235,7 +3235,7 @@
       "id": "a-0045",
       "kind": "likert",
       "lang": "no",
-      "text": "Jeg elsker en tøff krangel.",
+      "text": "Jeg liker en skikkelig krangel.",
       "options": [
         {
           "label": "Veldig unøyaktig",
@@ -3337,7 +3337,7 @@
       "id": "a-0048",
       "kind": "likert",
       "lang": "no",
-      "text": "Jeg har et høyt syn på meg selv.",
+      "text": "Jeg har høyt selvbilde.",
       "options": [
         {
           "label": "Veldig unøyaktig",

@@ -1,0 +1,220 @@
+{
+  "specVersion": 1,
+  "id": "fase3-personality-no-translation-verdict",
+  "type": "translation-qa-verdict",
+  "status": "GJELDENDE",
+  "date": "2026-11-16",
+  "run": "TR-8761D5A3C80F",
+  "scope": "275 items i persona_pool (e-a 100, o-c 100, n-rest 75). EN-siden er frossen (verbatim fra ipip.ori.org public domain + 34 originale; EN-endringer er utenfor dette stegets mandat). 50 NO-tekster er gloss-låst verbatim mot live-defen (def-ipip50-big5.no.json) og kan ikke endres her (paritetskrav S13/S14).",
+  "metode": "Tre-familier-kjede (utkast-verdict -> anonym kritikk -> syntese) med metodeskille in-context: ask_agent-spawning fra todo-run-kontekst feilet ('ukjent chat' — samme feilmodus som #3764-pin-forespørselen), så uavhengigheten er METODESKILT, ikke kontekstskilt. Pin-forslag: re-kjør en ekte B-familie-simulering via ask_agent fra hovedchatten.",
+  "summary": {
+    "rettelser": 16,
+    "klasse_i": 4,
+    "klasse_ii": 5,
+    "klasse_iii": 7,
+    "holds": 5
+  },
+  "rettelser": [
+    {
+      "pool": "e-a",
+      "id": "a-0024",
+      "klasse": "i",
+      "before": " Jeg ser til at nye folk føler seg inkludert.",
+      "after": "Jeg ser til at nye folk føler seg inkludert.",
+      "grunn": "innledende mellomrom",
+      "familie": "A"
+    },
+    {
+      "pool": "e-a",
+      "id": "e-0007",
+      "klasse": "ii",
+      "before": "Jeg overtar styringen.",
+      "after": "Jeg tar styringen.",
+      "grunn": "EN 'Take charge.' er generell ledelsestakelse; 'overtar' antar eksisterende leder",
+      "familie": "B"
+    },
+    {
+      "pool": "e-a",
+      "id": "e-0011",
+      "klasse": "iii",
+      "before": "Jeg blir raskt varm med andre folk.",
+      "after": "Jeg kommer raskt på god fot med andre.",
+      "grunn": "etablert idiom for EN 'Warm up quickly to others'",
+      "familie": "B"
+    },
+    {
+      "pool": "e-a",
+      "id": "e-0012",
+      "klasse": "i",
+      "before": "Jeg muntre opp folk rundt meg.",
+      "after": "Jeg munterer opp folk rundt meg.",
+      "grunn": "bøyingsbug (presens av 'muntere opp')",
+      "familie": "A"
+    },
+    {
+      "pool": "e-a",
+      "id": "e-0013",
+      "klasse": "iii",
+      "before": "Jeg elsker store selskaper.",
+      "after": "Jeg elsker store fester.",
+      "grunn": "EN 'Love large parties.' 'selskap' kan leses som firma; 'fester' er entydig",
+      "familie": "A"
+    },
+    {
+      "pool": "e-a",
+      "id": "e-0043",
+      "klasse": "iii",
+      "before": "Jeg unngår folkemengder.",
+      "after": "Jeg unngår store folkemengder.",
+      "grunn": "EN 'Avoid crowds.' naturlig norsk komparativ ledd; registerfest mot e-a-folkelig stil",
+      "familie": "A"
+    },
+    {
+      "pool": "e-a",
+      "id": "e-0047",
+      "klasse": "iii",
+      "before": "Jeg føler meg utkjørt etter en hel dag sammen med andre folk.",
+      "after": "Jeg føler meg utmattet etter en hel dag sammen med andre.",
+      "grunn": "EN 'feel drained' er utmattelse; 'utkjørt' er prestasjonsutmattelse",
+      "familie": "A"
+    },
+    {
+      "pool": "e-a",
+      "id": "a-0045",
+      "klasse": "ii",
+      "before": "Jeg elsker en tøff krangel.",
+      "after": "Jeg liker en skikkelig krangel.",
+      "grunn": "EN 'Love a good fight.' måler konfliktlyst; 'tøff krangel' + 'elsker' overdriver; 'skikkelig krangel' beholder aggression-flavor",
+      "familie": "B+syntese"
+    },
+    {
+      "pool": "e-a",
+      "id": "a-0048",
+      "klasse": "iii",
+      "before": "Jeg har et høyt syn på meg selv.",
+      "after": "Jeg har høyt selvbilde.",
+      "grunn": "anglisisme-bortskaffelse; holder NO-tekst adskilt fra søsteritem a-0047 'Jeg har høye tanker om meg selv.'",
+      "familie": "B+syntese"
+    },
+    {
+      "pool": "o-c",
+      "id": "c-0032",
+      "klasse": "iii",
+      "before": "Jeg klarer ikke å konsentrere meg om oppgaven som ligger foran.",
+      "after": "Jeg klarer ikke konsentrere meg om det jeg holder på med.",
+      "grunn": "EN 'Don't put my mind on the task at hand.' kortere, naturligere oppgave-fokus",
+      "familie": "B+syntese"
+    },
+    {
+      "pool": "n-rest",
+      "id": "n-0012",
+      "klasse": "ii",
+      "before": "Jeg mister humøret.",
+      "after": "Jeg mister besinningen.",
+      "grunn": "EN 'Lose my temper.' er sinneutbrudd; 'mister humøret' leses som blir sliten/gretten",
+      "familie": "B+syntese"
+    },
+    {
+      "pool": "n-rest",
+      "id": "n-0021",
+      "klasse": "i",
+      "before": "Jeg er ofte ked av det.",
+      "after": "Jeg er ofte nedstemt.",
+      "grunn": "danskism ('ked af det') + konsistens med gloss-søster n-0010 'Jeg føler meg ofte nedstemt.'",
+      "familie": "A+B"
+    },
+    {
+      "pool": "n-rest",
+      "id": "o-0002",
+      "klasse": "i",
+      "before": "Jeg drömmer ofte bort i min egen fantasi.",
+      "after": "Jeg drømmer ofte bort i min egen fantasi.",
+      "grunn": "svensk vokal ö -> o/ø",
+      "familie": "A"
+    },
+    {
+      "pool": "n-rest",
+      "id": "n-0055",
+      "klasse": "iii",
+      "before": "Uventede problemer setter meg ikke ut av spilled.",
+      "after": "Uventede problemer ryster meg ikke.",
+      "grunn": "EN 'do not rattle me'; 'ut av spilled' er spill-metafor brukt feil; 'ryster' er tett korrespondanse",
+      "familie": "B+syntese"
+    },
+    {
+      "pool": "o-c",
+      "id": "dimension.conscientiousness.label",
+      "klasse": "ii",
+      "before": "Planmessighet",
+      "after": "Planlagthet",
+      "grunn": "etikett-divergens mellom pooler og live-def; samme construct-id må ha samme etikett i ett produkt",
+      "familie": "B+syntese (konsistens = korrekthet)"
+    },
+    {
+      "pool": "o-c",
+      "id": "dimension.conscientiousness.description",
+      "klasse": "ii",
+      "before": "Organisering, målrettethet og selvdisiplin.",
+      "after": "Organisering, målretting og selvdisiplin.",
+      "grunn": "samordnes med live-def (og 'målrettethet' er uetablert form)",
+      "familie": "B+syntese (konsistens = korrekthet)"
+    }
+  ],
+  "holds": [
+    {
+      "pool": "e-a",
+      "id": "a-0031",
+      "no": "Jeg kritiserer folk brutalt.",
+      "en": "Cut others to pieces.",
+      "grunn": "metaforen har ingen etablert NO-motpart; funksjonelt ekvivalent"
+    },
+    {
+      "pool": "n-rest",
+      "id": "n-0015",
+      "no": "Jeg går på spiseorgier.",
+      "en": "Go on binges.",
+      "grunn": "'spiseorgier' er innarbeidet for binge eating (N1-facet); smalning til mat er facet-tro; litt klinisk register, godkjent med tvil"
+    },
+    {
+      "pool": "e-a",
+      "id": "e-0038",
+      "no": "Det er vanskelig å bli kjent med meg.",
+      "en": "Am hard to get to know.",
+      "grunn": "presis og naturlig"
+    },
+    {
+      "pool": "n-rest",
+      "id": "n-0030",
+      "no": "Vanskelige sosiale situasjoner forstyrrer meg ikke.",
+      "en": "Am not bothered by difficult social situations.",
+      "grunn": "'forstyrrer' noe upresis, men meningen bæres; minimal-intervensjon"
+    },
+    {
+      "pool": "e-a",
+      "id": "a-0030",
+      "no": "Jeg har en skarp tunge.",
+      "en": "Have a sharp tongue.",
+      "grunn": "forståelig og kort; 'vond tunge'-alternativet er dialektladet"
+    }
+  ],
+  "uttalelser": {
+    "gloss-låste": "Ingen ekte bokmålsfeil blant de 50 gloss-låste (verifisert: 0 avvik mot live-def). To av dem (n-0010 'nedstemt') ga register-motpartner for n-0021-rettingen.",
+    "dim-etiketter": "conscientiousness = Planlagthet i ALLE defs (live, e-a berører ikke C, o-c, n-rest). beskrivelse = live-defens ordlyd. Enforce i dette steget for alle pool-filer som kan berøre resultatsurface.",
+    "option-labels": "NO 'Hverken unøyaktig eller nøyaktig' avviker i leddrekkefølge fra EN, men er semantisk identisk OG låst mot live-def (S5 options-identitet). Ikke-rørbart fra pool-nivå; dokumentert som live-side-sak (#3716/FASE 1-eid).",
+    "folk-register": "e-a's folkelig 'folk'-register (27 tekster) er en bevisst, dokumentert stilkvote — ikke harmoniseres mot o-c/n-rest i dette steget. Kollisjon med formelle kontekster (employer-ramme) håndteres av render/språk-sjikt, ikke item-tekster.",
+    "id-kollisjoner": "ESKALERES (design-hull, ikke språk): a-0001..a-0005 / e-0001..e-0005 finnes i både e-a og n-rest med ulike tekster; samme mønster o/c-0001..0005 mellom o-c og n-rest. Selftester skriker ikke (per-pool-scope), men tvers-pool-oppslag per id er tvetydig i alle senere fase-ledd som nøkler på id."
+  },
+  "regresjon": {
+    "persona_selftest_batch1": "ALL PASS",
+    "persona_selftest_batch2": "ALL PASS",
+    "persona_selftest_batch3": "ALL PASS",
+    "engine_selftest": "72/72 PASS",
+    "ipip50_selftest": "ALL PASS",
+    "nd_itemspec_selftest": "ALL PASS",
+    "normering_selftest": "107/107 PASS"
+  },
+  "pins": [
+    "ekte B-familie-simulering via ask_agent fra hovedchatt-kontekst (metodeskilt uavhengighet nedgradert her)",
+    "id-kollisjons-steg: tvers-pool unike item-id-er (e/a/o/c-0001..0005 dobbeltbruket e-a vs n-rest)"
+  ]
+}

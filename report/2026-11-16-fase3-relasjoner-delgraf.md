@@ -67,3 +67,30 @@ mønstre). texts.pointLine-kontrakten krever midtpunkt-tekst med
 4. **Renderer strings-sink-hullet** (SVG-etiketter aldri i strings.list)
    står fortsatt som pin fra #3786 — delgraf har egen sink; renderer-fiks
    hører til neste renderer-bygg.
+
+---
+
+## VERIFISER — feed-lesbarhet (#3791-søster, kjørt 2026-11-16, leaf i TR-DA925E33DDCE)
+
+«Lesbar i feed-størrelse, ikke bare på desktop» — beslutning 16 / PIN-2 fra
+bygg-verdiktet. Metode: EKTE modulkjede (computePairCompatibility 80.0 /
+band-aligned -> renderShareGraphSvg) rasterisert med cairosvg i 320/400/480/600
+px (no) + 320 px (en), proporsjonal viewBox-skaleringsprobe, deretter
+bilde-lesing av alle fem PNG-verds. Selftest re-proven 46/46.
+
+| Skala | Dom |
+|---|---|
+| 600 px (desktop) | PASS — full lesbarhet, alle tekster |
+| 480 px | PASS |
+| 400 px (mobil feed) | PASS — alt data-innhold lesbar @1x; pointLine marginal @1x, klar på retina |
+| 320 px (embed-small, no+en) | PASS med grense — primær-innhold (tittel/samspill/band/rader/verdier/markører/legend) lesbar; minste tekster (12–13px layout) på grense @1x |
+
+Verdict: `tests/schema/_rel_share_graph_feedverify_verdict.json` — konklusjon:
+beslutning-16-feed-sporet VERIFISERT, komponenten krever ingen kodeendring.
+Rasters + SVG md5-er + metode dokumentert i verdiktet (regenererbare).
+Grense-observasjon F-feed-grense: ved 320 @1x er minste tekster i grenseland;
+SPAK-1 (droppe contextLine/pointLine fra feed-variant) og SPAK-2
+(SHARE_MIN_FONT 12->14) står som mulige handlingsrom eid av #3790, ikke utført.
+Canvas-banen ikke rasterisert her (ingen canvas-runtime i Node) — geometrisk
+derivt fra samme layout (G3f-proven). Verifiserings-leafen er additiv: 1
+verdikt-JSON + denne rapport-appenden, 0 kode-filer mutert.

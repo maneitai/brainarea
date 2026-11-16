@@ -1,0 +1,52 @@
+{
+  "specVersion": 1,
+  "id": "fase3-rel-sharegraph-feedverify-verdict",
+  "mandat": "soester #3791 [VERIFISER GLM]: 'Les delgrafen mot beslutning 16 — lesbar i feed-størrelse, ikke bare på desktop.' (til bygg #3790 / commit 86de50b)",
+  "date": "2026-11-16",
+  "run": "leaf i TR-DA925E33DDCE (iterasjon 1)",
+  "metode": [
+    "EKTE modulkjede i prod-treet: _rel_compat_model.mjs computePairCompatibility(demo-fixture A/B) -> 80.0 / band-aligned -> renderShareGraphSvg(compat, demo-TEXTS, demo-LABELS, lang, profilvektorer)",
+    "rasterisering med cairosvg (WSL venv, 1x): 320 / 400 / 480 / 600 px bredde for no, 320 px for en — proporsjonal viewBox-skaleringsprobe",
+    "bilde-lesing (GLM-visuell vurdering) per skala: tittel, contextLine, overall-tall, band-navn, 4 radetiketter, verdikolonne, profilmarkører, legend, pointLine",
+    "selftest re-proven i økten: node tests/schema/_rel_share_graph_selftest.mjs -> 46/46 PASS"
+  ],
+  "result": {
+    "600px": "PASS — full lesbarhet, alle 20+ tekster klare (desktop-paritet mot #3790-eksportene)",
+    "480px": "PASS — full lesbarhet",
+    "400px": "PASS(mobil-feed) — data-innhold (tittel/samspill 80,0/band/rader/verdier/legend) lesbar ved 1x; pointLine (12px->8px) marginal ved 1x, klar ved retina 2x+ (feed-konteksten som gjelder)",
+    "320px": "PASS(embed-small, med grense registrert) — primær-innholdsflaten (tittel, samspill-TALL 30px->16px, band 14px->7,5px, radetiketter 13px->6,9px, verditall, markørformer, legend) lesbar; de minste tekstene (12-13px layout) på lesbarhets-grense ved 1x",
+    "sprakPar": "en-320 og no-320 identisk lesbarhetsmønster; lengste etikett 'Konflikthåndtering' (18 tegn) vs 'Conflict handling' (16) — ingen clipping i 148px LEFT-kolonnen ved noen skala",
+    "skaleringskontrakt": "renderShareGraphSvg 600x426 viewBox proporsjonalt ned til 320 (0,53x) — forhold 426/600 beholdt, ingen layout-tekstmangel ved 1x-raster",
+    "minstFontTavle": {
+      "SHARE_MIN_FONT": 12,
+      "layoutPx": { "akse0/100": 12, "dimEtikett": 13, "verdi": 13, "legend": 12, "pointLine": 12, "contextLine": 12, "band": 14, "tittel": 17, "overall": 30 },
+      "ved320_1x": { "dimEtikett": 6.9, "legend/pointLine": 6.4, "band": 7.5, "tittel": 9.1, "overall": 16 }
+    }
+  },
+  "funn": [
+    {
+      "id": "F-feed-grense",
+      "kind": "observasjon (klasse 0/1, ikke avvik)",
+      "tekst": "Ved 320px @1x er de minste tekstene (12-13px layout-koordinater) på absolutt lesbarhets-grense; primary reading (skalaer + tall + band) holder. På retina-skjermer — som er det reelle feed-mediet (iOS/Android embeds renderes 2x-3x device-px) — klarer alle tekster seg. Ved 400px (vanlig mobil feed CSS-bredde) er alt data-innhold lesbar selv ved 1x."
+    }
+  ],
+  "spakerIkkeUtført": [
+    "SPAK-1 (eies #3790, ikke utført her): feed-variant kunne droppe contextLine+pointLine fra grafen (2 tekster) — frigjør ~20px vertikalt til større fonts ved samme H",
+    "SPAK-2 (eies #3790, ikke utført her): SHARE_MIN_FONT 12->14 med bevart H=426 — radene har plass (ROW_H=64 vs font+2)"
+  ],
+  "bevis": {
+    "selftest": "46/46 PASS re-kjørt i økten (prod-treet, WSL node v22.22.1)",
+    "compatFixture": "80.0 / band-aligned identisk med #3790-selvtestet G1b — fixture uroet",
+    "rasterMd5": { "share-no.svg": "cc0989c928c63bbf1d8c4bcf7686a289", "share-en.svg": "734aba55c6fe2beed314010d6335520f" },
+    "rasterFiler": "/mnt/f/maneit/data/work/_delt/_feedcheck/share-{no,en}.svg + share-no-{320,400,480,600}.png + share-en-320.png (regenererbare; kommandoen dokumentert i metode)",
+    "bildeLesing": "5 PNG-visninger lest av GLM i økten (320 no/en, 400, 480, 600)",
+    "regresjon": "verifiserings-leafen er ren dokumentasjon + raster-artefakter utenfor prod-treet; ingen kode mutert — arver #3790-regresjonen (13/13 suiter) uroet"
+  },
+  "konklusjon": "Beslutning-16-feed-sporet VERIFISERT: delgrafen er lesbar i feed-størrelse (400px fullt; 320px primær-innhold) og ikke bare på desktop. De innebygde garantiene (600x426 viewBox, >=12px min-font) holder på avstanden; komponenten krever ingen kodeendring for delbarhets-kravet.",
+  "pins": [
+    "PIN-feed: grensen ved 320 @1x er registrert som F-feed-grense — hvis FASE 4-transport (#3794) leverer embeds i <400 CSS-px, aktiver SPAK-1 eller SPAK-2 (eies #3790)",
+    "PIN-canvas: canvas-banen har samme geometri (selftest G3f-proven) men er ikke rasterisert her (ingen canvas-runtime i Node) — SVG-beviset er det fulle; geometrisk derivert for canvas",
+    "PIN-skala: rasterene er 1x cairosvg; retina-feed-rendering er IKKE her bevist ved bilde — sannsynnet er godt (device-px-multiplum) men det er en slutning, ikke et bilde"
+  ],
+  "environment": { "runner": "WSL node v22.22.1 + cairosvg venv /tmp/vv", "prodTrae": "additivt: 1 verdict-JSON + rapport-append, 0 kode-filer" }
+}

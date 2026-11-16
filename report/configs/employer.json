@@ -45,7 +45,28 @@
     }
   },
   "dimensions": {
-    "labels": {},
+    "labels": {
+          "openness": {
+            "no": "Åpenhet",
+            "en": "Openness"
+          },
+          "conscientiousness": {
+            "no": "Planlagthet",
+            "en": "Conscientiousness"
+          },
+          "extraversion": {
+            "no": "Ekstroversjon",
+            "en": "Extraversion"
+          },
+          "agreeableness": {
+            "no": "Medmenneskelighet",
+            "en": "Agreeableness"
+          },
+          "neuroticism": {
+            "no": "Nevrotisisme",
+            "en": "Neuroticism"
+          }
+        },
     "graphic": "bar",
     "midpointMarker": true,
     "sort": "def",

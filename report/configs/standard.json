@@ -45,7 +45,28 @@
     }
   },
   "dimensions": {
-    "labels": {},
+    "labels": {
+          "openness": {
+            "no": "Åpenhet",
+            "en": "Openness"
+          },
+          "conscientiousness": {
+            "no": "Planlagthet",
+            "en": "Conscientiousness"
+          },
+          "extraversion": {
+            "no": "Ekstroversjon",
+            "en": "Extraversion"
+          },
+          "agreeableness": {
+            "no": "Medmenneskelighet",
+            "en": "Agreeableness"
+          },
+          "neuroticism": {
+            "no": "Nevrotisisme",
+            "en": "Neuroticism"
+          }
+        },
     "graphic": "bar",
     "midpointMarker": true,
     "sort": "def",
@@ -88,8 +109,8 @@
         "en": "Your scores are not compared with others (no norms) and they say nothing about what you can or cannot do. They are not percentiles and not a measure of intelligence."
       },
       {
-        "no": "Humor og tilstand kan påvirke hvordan en test av deg svarer — humøret ditt når du tar testen kan skyve et par prosentpoeng opp eller ned. Ta resultatet som et øyeblikksbilde, ikke en fastsatt egenskap.",
-        "en": "Mood and state can affect how a test taken of you comes out — your mood while taking the test may push a few percentage points up or down. Treat the result as a snapshot, not a fixed trait."
+        "no": "Humør og tilstand kan påvirke svarene dine i en test — humøret når du tar den kan flytte skårene opp eller ned. Ta resultatet som et øyeblikksbilde, ikke en fastsatt egenskap.",
+        "en": "Mood and state can affect how you answer a test — how you feel while taking it can move your scores up or down. Treat the result as a snapshot, not a fixed trait."
       },
       {
         "no": "Denne rapporten er laget for at du (og eventuelt noen du deler den med) skal forstå resultatet uten å ha sett testene. Alle begrensninger står her i teksten.",
@@ -103,7 +124,7 @@
       "en": "If you did not take the test"
     },
     "body": {
-      "no": "Rapporten er basert på selvrapporterte svar i en nettbasert test. Det innebærer at: (1) svarene er ikke normert — prosent-tallet viser avstand fra skalaens start (0), ikke sammenligning med andre; (2) «midtpunkt» = skalaens midte (50), ikke gjennomsnittet i en gruppe; (3) resultatet er ikke medisinsk, psykologisk eller klinisk vurdert og kan ikke brukes til ansettelse eller andre viktige beslutninger; (4) en persons humør når testen ble tatt kan påvirke resultatet.",
+      "no": "Rapporten er basert på selvrapporterte svar i en nettbasert test. Det innebærer at: (1) svarene er ikke normert — prosenttallet viser avstand fra skalaens start (0), ikke sammenligning med andre; (2) «midtpunkt» = skalaens midte (50), ikke gjennomsnittet i en gruppe; (3) resultatet er ikke medisinsk, psykologisk eller klinisk vurdert og kan ikke brukes til ansettelse eller andre viktige beslutninger; (4) en persons humør når testen ble tatt kan påvirke resultatet.",
       "en": "The report is based on self-reported answers from a web test. That means: (1) scores are not normed — the percent shows distance from the scale's start (0), not a comparison with others; (2) 'midpoint' = the scale's middle (50), not a group average; (3) the result is not medically, psychologically or clinically assessed and cannot be used for hiring or other important decisions; (4) a person's mood when taking the test may affect the result."
     }
   },

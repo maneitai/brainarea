@@ -44,7 +44,28 @@
     }
   },
   "dimensions": {
-    "labels": {},
+    "labels": {
+          "openness": {
+            "no": "Åpenhet",
+            "en": "Openness"
+          },
+          "conscientiousness": {
+            "no": "Planlagthet",
+            "en": "Conscientiousness"
+          },
+          "extraversion": {
+            "no": "Ekstroversjon",
+            "en": "Extraversion"
+          },
+          "agreeableness": {
+            "no": "Medmenneskelighet",
+            "en": "Agreeableness"
+          },
+          "neuroticism": {
+            "no": "Nevrotisisme",
+            "en": "Neuroticism"
+          }
+        },
     "graphic": "bar",
     "midpointMarker": true,
     "sort": "desc",
@@ -87,8 +108,8 @@
         "en": "Self-report measures how you perceive yourself here and now. Self-perception changes — with mood, situation and experience. Retesting later may give a different picture, and that is built into the tool, not a defect."
       },
       {
-        "no": "Midtpunktstreken (50) er skalaens midtpunkt, ikke et gjennomsnitt — se standard-rammen for hele lesingen av grafen.",
-        "en": "The midpoint line (50) is the scale's midpoint, not an average — see the standard frame for the full reading of the chart."
+        "no": "Midtpunktstreken (50) er skalaens midtpunkt, ikke et gjennomsnitt — les standard-rammens veiledning til grafen.",
+        "en": "The midpoint line (50) is the scale's midpoint, not an average — read the standard frame's guide to the chart."
       }
     ]
   },

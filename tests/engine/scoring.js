@@ -412,8 +412,8 @@ export function scoreTest(def, payload, opts = {}) {
       notNormed: true,
     };
     pushNote('note.gscore.not-normed',
-      'Kun råtrekk og theta (1PL over item-difficulty—placeholder verdier før kalibrering). IQ-skala (M=100, SD=15) krever normdata: ikke et IQ-tall. Gjenoppgitt ikke-kortest mulig intervall i theta-metrikken.',
-      'Raw count and theta only (1PL over placeholder item difficulties). Not an IQ number — the z100 metric requires norm data from the normering endpoint.');
+      'Resultatet oppgis som råtrekk og estimert evnenivå (theta) med usikkerhetsintervall. Det er ikke et normert IQ-tall: IQ-skala (M=100, SD=15) krever normdata fra normerings-endpointen. Usikkerhetsintervallet er Wald-intervall (±1,96·SE) på theta-metrikken.',
+      'The result is given as a raw count and an estimated ability level (theta) with an uncertainty interval. It is not a normed IQ number: an IQ scale (M=100, SD=15) requires norm data from the norming endpoint. The uncertainty interval is a Wald interval (±1.96·SE) on the theta metric.');
   }
 
   const result = {

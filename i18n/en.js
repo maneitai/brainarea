@@ -39,7 +39,7 @@ export const KEYS = {
   note: {
     'trait.not-normed': 'Score is percent of scale range, not percentiles — no norms are applied.',
     'threshold.screening': 'Screening, not diagnosis — disclaimer id is rendered on the result page.',
-    'gscore.not-normed': 'Raw count and theta only (1PL over placeholder item difficulties). Not an IQ number — the z100 metric requires norm data from the normering endpoint.',
+    'gscore.not-normed': 'The result is given as a raw count and an estimated ability level (theta) with an uncertainty interval. It is not a normed IQ number: an IQ scale (M=100, SD=15) requires norm data from the norming endpoint. The uncertainty interval is a Wald interval (±1.96·SE) on the theta metric.',
   },
   aria: {
     'orderMoveUp': 'move {a} up',

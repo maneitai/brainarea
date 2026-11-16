@@ -42,7 +42,7 @@
  *    utelatelse). Standard/personlig: notatets no/en-tekst fra result.notes verbatim.
  */
 
-export const RENDERER_VERSION = '1.0.0';
+export const RENDERER_VERSION = '1.0.1'; /* 1.0.1: g-score theta null => ingen theta-tekst (FASE 3 resultattekst evner/IQ, funn F2) */
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -219,7 +219,9 @@ function renderTotalGscore(result, frameCfg, lang, strings) {
     const p = Number.isFinite(t.proportion) ? `${Math.round(t.proportion * 100)} %` : null;
     const th = Number.isFinite(t.theta) ? t.theta.toFixed(2) : null;
     const ci = Array.isArray(t.ci95) && t.ci95.length === 2 && t.ci95.every(Number.isFinite) ? t.ci95.map((x) => Number(x).toFixed(2)).join(' – ') : null;
-    const body = p ? `${t.correctCount}/${t.answeredCount} (${p}), θ ≈ ${th}` : `${t.correctCount}/${t.answeredCount}`;
+    /* FASE3 #3782 F2: theta-betegnelse kun naar faktisk estimert — aldri 'θ ≈ null' i rendret rapport */
+    const base = `${t.correctCount}/${t.answeredCount}${p ? ` (${p})` : ''}`;
+    const body = th !== null ? `${base}, θ ≈ ${th}` : base;
     lines.push(`  <p class="ba-rep-gscore">${esc(body)}</p>`);
     strings.push(body);
     if (ci) {

@@ -1,0 +1,77 @@
+{
+  "_kommentar": "3-VEIS FASE 3 resultattekst evner/IQ — estimat-språk, retest-intervall, 'måler ikke intelligens'-skoping (todo-run TR-4CF9780358E4 iterasjon 1). Søster til _fase3_resultattekst_verify_verdict.json (personlighet, #3780/#3781). Metodeskilt A/B/C in-context.",
+  "verdictId": "fase3-gscore-resultattekst-verdict",
+  "type": "translation-qa-verdict",
+  "status": "GJELDENDE",
+  "date": "2026-11-16",
+  "omfang": "g-score/evne-sporet av FASE 3-resultattekstene: total.g-score-teksty + evne-relevant narrativ (g-heading, normNote, leseguide, thirdParty, conversationBasis, noteParaphrase) i alle 3 rammekonfiger (standard/personal/employer), dimensions.labels['g'] i alle 3, og engine-note note.gscore.not-normed (scoring.js byte-synkronisert mot i18n no/en). Item-lagene (t1-t5 pools) dekkes av _fase3_evne_verdict.json + troskaps-søsteren. Renderer endret kun som bugfix (1.0.0 -> 1.0.1, funn F2) — ingen kontraktendring.",
+  "metoder": [
+    "A: mekanisk skann + ordliste-pass: 232 konfig- og note-strenger; mojibake-signaturer 0, klasse-artefakter 0; kjente korrupt-klassemarkører (oe->AA-familien, glippe av, himlen, Følgjen, ferje, 'to:') 0 treff; A-funnet 'måltall ' var egen marker-feilklassifisering (ordet er tilsiktet og korrekt norsk i employer-paraphrasen).",
+    "B: deterministisk harness tests/schema/_fase3_gscore_verify.mjs (54 sjekker): ekte scoringpath scoreTest(def-evne-t1-matrise.no, 50 ability-svar, hver 5. feil) -> korrekt 40/50, theta estimert med CI95, skala g normalisert 80 -> renderReport alle 6 rammekonfig x no/en kombinasjoner + alle-feil/alle-riktig degenerat-path.",
+    "C: syntese: 5 funn (F1-F5) alle RETTET, 3 holds arvet/dokumentert, 3 pins."
+  ],
+  "ekte-scoringpath": "korrekt 40/50 (80 %), theta estimert med CI95, labels['g'] rendret i alle 6 kombine no/en, 0 rå skala-id 'g' synlige, scanBanned 0 brudd i alle 6 rendringer, iqScale aldri i output; degenerat-path (alle feil): theta null => råtrekk 0/50 rendret uten theta-tekst",
+  "funn": [
+    {
+      "id": "F1",
+      "klasse": "i (mangler) på personlighet-trådens skrivesteg",
+      "status": "RETTET",
+      "funn": "Det personlighets-sporade skrivesteget (#3780, commit 17dffc3) endret personal-/employer-leseguide og thirdParty-tekster til å hevde at rapporten måler 'selvrapportering'/'egen selvrapportering' og at retest-ustabilitet er innbygd i verktøyet — uten skoping til selvrapporteringstester. For evnetester er svarene objektive oppgavesvar (riktig/feil); påstandene var falske for family evner. Ingen selftest fanget det: pin-hull registrert (selftester låser struktur, ikke semantikk).",
+      "rettelsen": "R3: leseguide + thirdParty i alle 3 rammer skopet til to testtyper: selvrapportering (personlighet, triage — humør-sårbar, ikke intelligensmål, ingen prosentiler) vs oppgavetester med riktige svar (evner — råtrekk + estimat med usikkerhet, gjenspeiler testens oppgavesett, ikke en helhetsvurdering av intelligens). Pin-avklarende: 'måler ikke intelligens'-kravet gjelder nå eksplisitt begge deler, med korrekt mekanisme per type."
+    },
+    {
+      "id": "F2",
+      "klasse": "ii (avvik, renderer-mekanikk)",
+      "status": "RETTET",
+      "funn": "Ved degenerert theta (alle svar riktige eller alle feil — 1PL MLE udefinert) rendret renderTotalGscore bokstavelig 'θ ≈ null' i rapporten. E-harness E4 fanget det første gang (path aldri rammet av fixtures: rapport-selftesten bruker theta 0.41).",
+      "rettelsen": "renderer.mjs renderTotalGscore: theta-betegnelse og CI95 kun når theta faktisk estimert (th !== null). Råtrekk rendres uten theta-tekst, ingen fabrikkert estimat. RENDERER_VERSION 1.0.0 -> 1.0.1. scoring.js og render-kontrakt uroet (27+27, 5/5)."
+    },
+    {
+      "id": "F3",
+      "klasse": "i (mangler)",
+      "status": "RETTET",
+      "funn": "Alle tre rammekonfigene hadde g-score-heading 'Ditt resultat' — samme identitet som threshold-blokken, feil identitet for evneresultatet (trait heter 'Din profil').",
+      "rettelsen": "R1: heading 'Ditt evneresultat' / 'Your ability-test result' i standard+personal; employer beholdt 'Resultat — grunnlag for samtale'."
+    },
+    {
+      "id": "F4",
+      "klasse": "i (mangler)",
+      "status": "RETTET",
+      "funn": "Rendererens skala-etikett-fallback ville vise rå id 'g' når config mangler labels['g'] — et enkeltbokstav-token uten betydning for fremmedleseren i grafen over evneresultater.",
+      "rettelsen": "R4: labels['g'] = 'Generell evne (g)' / 'General ability (g)' i alle 3 configs, fundamentert i def-evne-*.json dimensions[0] label/description ('Generell evne, rapportert som IQ-stil-metrikk'). Troskap mot live-def verifisert i E-harness R4-blokk."
+    },
+    {
+      "id": "F5",
+      "klasse": "i (mangler) — engine-note",
+      "status": "RETTET",
+      "funn": "Engine-note note.gscore.not-normed (rendres verbatim i standard/personal med note-id-prefiks) var rotete skrevet: 'Gjenoppgitt ikke-kortest mulig intervall i theta-metrikken' (uklar) og dobbel IQ-fornektelse i én note.",
+      "rettelsen": "R5: note-tekst omformulert no/en: 'Resultatet oppgis som råtrekk og estimert evnenivå (theta) med usikkerhetsintervall. Det er ikke et normert IQ-tall: IQ-skala (M=100, SD=15) krever normdata fra normerings-endpointen. Usikkerhetsintervallet er Wald-intervall (±1,96·SE) på theta-metrikken.' — byte-synkronisert i scoring.js + i18n/no.js + i18n/en.js (byte-paritetsjekk kjørt)."
+    }
+  ],
+  "holds": [
+    {
+      "id": "H1",
+      "status": "GJELDENDE dokumentert",
+      "tekst": "note-id-prefiks ('note.gscore.not-normed' som synlig token i output) er renderer-kontrakt siden #3728 (notematchability i employer-paraphrase-logikk; anker S11.K2). Utenfor dette steget: krever renderer-versjon + schema-punch. Arvet fra personlighet-søster-verdikten uendret."
+    },
+    {
+      "id": "H2",
+      "status": "GJELDENDE dokumentert",
+      "tekst": "testId-fotnoten ('[standard] evne-t1-matrise') + demo-fixture-banner er tilsiktet sporbarhet, ikke støy (arvet hold)."
+    },
+    {
+      "id": "H3",
+      "status": "GJELDENDE dokumentert",
+      "tekst": "profileText forblir tom i alle 3 configs — ingen pool leverer navngitte profiler; pin videreføres til FASE 4 resultat-surface (arvet uendret). Renderer nekter fortsatt å oppfinne profiltekst; evne-sporet er ikke påvirket."
+    }
+  ],
+  "pins": [
+    "P1: navngitte profiltekster (profileText) må designes som skala-band + forfattes per språk — FASE 4 resultat-surface (arvet fra #3780-pin, videreført).",
+    "P2: selftest-hull registrert som kunnskap: rapport-selftester låser struktur (render-kontrakt/normNote-tilstede), ikke semantisk identitet/family-skoping — ny E-harness tests/schema/_fase3_gscore_verify.mjs (54 sjekker) dekker dette sporet for kommende FASE 3/4-steg.",
+    "P3: normerings-endpoint er mock-verifisert (107/107) men aldri live (FASE 4-livssyklus, GAP-1); g-score-tekstene påpeker i dag eksplisitt manglende normdata — ved normering-kontrakt-binding må disse tekstene re-leses."
+  ],
+  "regresjon": {
+    "kjort_live_i_denne_okten": "report 74/74, scoring del1 27/27 + del2 27/27 + integrasjon 5/5, i18n 22/22, engine 72/72, attention 57/57, resume 27/27, repeat 25/25, handcalc 27/27, glm-three-resumes 46/46, ipip50 ALL, evne itemspec ALL, evne-batch1/2/t5 ALL PASS, nd 78/78, persona ×3 ALL, psykometrisk 31/31, rel-verify ren, normering 107/107, ads 42/42, puzzle 99/99, puzzle-validitet 24/24, hreflang 171 PASS, SSG build 14 pages med out/ byte-identisk (0 git-diff), E-harness _fase3_gscore_verify 54/54, A-skann 232 strenger ren",
+    "baseline_kjort_før_endring": "report 74/74, scoring del1+del2 27+27, integrasjon 5/5 — baseline re-avledet i økten, ikke kun antatt"
+  }
+}

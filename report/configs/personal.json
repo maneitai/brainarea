@@ -34,38 +34,42 @@
     },
     "g-score": {
       "heading": {
-        "no": "Ditt resultat",
-        "en": "Your result"
+        "no": "Ditt evneresultat",
+        "en": "Your ability-test result"
       },
       "normNote": {
-        "no": "Råtrekk og estimert evnenivå (theta) med usikkerhetsintervall — ikke normert IQ, ikke et sertifikat.",
-        "en": "Raw count and estimated ability level (theta) with uncertainty interval — not normed IQ, not a certificate."
+        "no": "Samme skårberegning som standard-rammen: råtrekk (antall riktige svar) og et estimat av evnenivå (theta) med usikkerhetsintervall — ikke et normert IQ-tall, ikke et sertifikat. Gjentar du testen, kan estimatet bli noe annet.",
+        "en": "Same computation as the standard frame: a raw count (number of correct answers) and an estimated ability level (theta) with an uncertainty interval — not a normed IQ number, not a certificate. Retaking may yield a somewhat different estimate."
       }
     }
   },
   "dimensions": {
     "labels": {
-          "openness": {
-            "no": "Åpenhet",
-            "en": "Openness"
-          },
-          "conscientiousness": {
-            "no": "Planlagthet",
-            "en": "Conscientiousness"
-          },
-          "extraversion": {
-            "no": "Ekstroversjon",
-            "en": "Extraversion"
-          },
-          "agreeableness": {
-            "no": "Medmenneskelighet",
-            "en": "Agreeableness"
-          },
-          "neuroticism": {
-            "no": "Nevrotisisme",
-            "en": "Neuroticism"
-          }
-        },
+      "g": {
+        "no": "Generell evne (g)",
+        "en": "General ability (g)"
+      },
+      "openness": {
+        "no": "Åpenhet",
+        "en": "Openness"
+      },
+      "conscientiousness": {
+        "no": "Planlagthet",
+        "en": "Conscientiousness"
+      },
+      "extraversion": {
+        "no": "Ekstroversjon",
+        "en": "Extraversion"
+      },
+      "agreeableness": {
+        "no": "Medmenneskelighet",
+        "en": "Agreeableness"
+      },
+      "neuroticism": {
+        "no": "Nevrotisisme",
+        "en": "Neuroticism"
+      }
+    },
     "graphic": "bar",
     "midpointMarker": true,
     "sort": "desc",
@@ -104,8 +108,8 @@
         "en": "This frame reads the scores in the first person and points at what they MAY mean for you — it never claims what you ARE. A score is a tendency in your own answers, not a truth about you."
       },
       {
-        "no": "Selvrapportering måler hvordan du oppfatter deg selv her og nå. Selvoppfatning endres — med humør, situasjon og erfaring. Test på nytt senere kan gi noe annet bilde, og det er innbygd i verktøyet, ikke en feil.",
-        "en": "Self-report measures how you perceive yourself here and now. Self-perception changes — with mood, situation and experience. Retesting later may give a different picture, and that is built into the tool, not a defect."
+        "no": "Selvrapportering måler hvordan du oppfatter deg selv her og nå, og selvoppfatning endres — med humør, situasjon og erfaring; test på nytt senere kan gi noe annet bilde, og det er innbygd i verktøyet, ikke en feil. Evnetester måler i stedet oppgaveutførelse: svarene er riktige eller feil, og resultatet gis som råtrekk og estimat med usikkerhetsintervall — også en ny gjennomføring kan gi noe annet tall.",
+        "en": "Self-report measures how you perceive yourself here and now, and self-perception changes — with mood, situation and experience; retesting later may give a different picture, and that is built into the tool, not a defect. Ability tests instead measure task performance: answers are right or wrong, and the result is given as a raw count and an estimate with an uncertainty interval — retaking can also give a somewhat different figure."
       },
       {
         "no": "Midtpunktstreken (50) er skalaens midtpunkt, ikke et gjennomsnitt — les standard-rammens veiledning til grafen.",
@@ -119,8 +123,8 @@
       "en": "If you did not take the test"
     },
     "body": {
-      "no": "Dette er en persons egne svar om seg selv, på et gitt tidspunkt — ikke en objektiv måling av personen, og ikke sammenlignet med andre. Behandle teksten som personens egen beskrivelse av seg selv.",
-      "en": "This is one person's own answers about themselves, at one point in time — not an objective measurement of the person, and not compared to others. Treat the text as the person's own description of themselves."
+      "no": "Dette er en persons egne svar i en nettbasert test, på ett gitt tidspunkt. For selvrapporteringstester er svarene personens egen beskrivelse av seg selv — ikke en objektiv måling. For evnetester er resultatet råtrekk og estimater fra oppgavene i akkurat denne testen. Ingen av delene er normert eller sammenlignet med andre.",
+      "en": "This is one person's own answers in a web test, at one point in time. For self-report tests the answers are the person's own description of themselves — not an objective measurement. For ability tests the result is a raw count and estimates from the tasks in this particular test. Neither is normed or compared with others."
     }
   },
   "moodEffect": {

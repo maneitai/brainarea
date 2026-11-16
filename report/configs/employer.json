@@ -39,34 +39,38 @@
         "en": "Result — groundwork for a conversation"
       },
       "normNote": {
-        "no": "Resultatet oppgis som råtrekk og estimert evnenivå (theta) med usikkerhetsintervall — det er ikke et normert IQ-tall, ikke et sertifikat, og det kan ikke brukes til utvelgelse.",
-        "en": "The result is a raw count and an estimated ability level (theta) with uncertainty interval — it is not a normed IQ number, not a certificate, and must not be used for selection."
+        "no": "Resultatet er råtrekk (antall riktige svar) og et estimat av evnenivå (theta) med usikkerhetsintervall. Det er ikke et normert IQ-tall, ikke et sertifikat, og det kan ikke brukes til utvelgelse.",
+        "en": "The result is a raw count (number of correct answers) and an estimated ability level (theta) with an uncertainty interval. It is not a normed IQ number, not a certificate, and must not be used for selection."
       }
     }
   },
   "dimensions": {
     "labels": {
-          "openness": {
-            "no": "Åpenhet",
-            "en": "Openness"
-          },
-          "conscientiousness": {
-            "no": "Planlagthet",
-            "en": "Conscientiousness"
-          },
-          "extraversion": {
-            "no": "Ekstroversjon",
-            "en": "Extraversion"
-          },
-          "agreeableness": {
-            "no": "Medmenneskelighet",
-            "en": "Agreeableness"
-          },
-          "neuroticism": {
-            "no": "Nevrotisisme",
-            "en": "Neuroticism"
-          }
-        },
+      "g": {
+        "no": "Generell evne (g)",
+        "en": "General ability (g)"
+      },
+      "openness": {
+        "no": "Åpenhet",
+        "en": "Openness"
+      },
+      "conscientiousness": {
+        "no": "Planlagthet",
+        "en": "Conscientiousness"
+      },
+      "extraversion": {
+        "no": "Ekstroversjon",
+        "en": "Extraversion"
+      },
+      "agreeableness": {
+        "no": "Medmenneskelighet",
+        "en": "Agreeableness"
+      },
+      "neuroticism": {
+        "no": "Nevrotisisme",
+        "en": "Neuroticism"
+      }
+    },
     "graphic": "bar",
     "midpointMarker": true,
     "sort": "def",
@@ -100,23 +104,23 @@
     },
     "body": [
       {
-        "no": "Grafen viser den testede sin egen selvrapportering per dimensjon: prosent av skalaens omfang (0–100). Midtpunktstreken (50) er skalaens midtpunkt — ikke et sammenligningsgrunnlag mot andre og ikke et krav om å ligge «på midten».",
-        "en": "The chart shows the test-taker's own self-report per dimension: percent of the scale range (0–100). The midpoint line (50) is the scale's midpoint — not a benchmark against others and not a requirement to sit 'in the middle'."
+        "no": "Grafen viser den testede sine skår per dimensjon som prosent av skalaens omfang (0–100): for selvrapporteringstester er det den testede sin egen rapportering; for evnetester er det andelen riktige oppgaver. Midtpunktstreken (50) er skalaens midtpunkt — ikke et sammenligningsgrunnlag mot andre og ikke et krav om å ligge «på midten».",
+        "en": "The chart shows the test-taker's scores per dimension as percent of the scale range (0–100): for self-report tests it is the test-taker's own reporting; for ability tests it is the share of tasks answered correctly. The midpoint line (50) is the scale's midpoint — not a benchmark against others and not a requirement to sit 'in the middle'."
       },
       {
         "no": "Bruk resultatet som samtalestart: «Hvordan opplevde du selv denne dimensjonen?» — ikke som konklusjon: «Du skårer lavt, derfor ...». Ingen skår alene begrunner en beslutning om en person.",
         "en": "Use the result as a conversation starter: \"How did you experience this dimension yourself?\" — not as a conclusion: \"You scored low, therefore ...\". No score alone justifies a decision about a person."
       },
       {
-        "no": "Selvrapportering er et øyeblikksbilde og kan påvirkes av humør og situasjon når testen ble tatt. Spør heller om sammenhengen enn om tallet.",
-        "en": "A self-report is a snapshot and may be affected by mood and situation when the test was taken. Ask about the context rather than the number."
+        "no": "Selvrapportering er et øyeblikksbilde og kan påvirkes av humør og situasjon når testen ble tatt. Evneresultater er estimater med usikkerhet og gjenspeiler testens oppgavesett. I begge tilfeller: spør heller om sammenhengen enn om tallet.",
+        "en": "A self-report is a snapshot and may be affected by mood and situation when the test was taken. Ability results are estimates with uncertainty and reflect this test's set of tasks. In both cases: ask about the context rather than the number."
       }
     ]
   },
   "employer": {
     "conversationBasis": {
-      "no": "Dette resultatet er et GRUNNLAG FOR SAMTALE mellom den testede og mottakeren. Det er ikke et ansettelsesverktøy og kan ikke brukes til utvelgelse eller vurdering av kandidater. Den testede har svart om seg selv — les resultatet som et selvportrett, ikke som en objektiv måling.",
-      "en": "This result is GROUNDWORK FOR A CONVERSATION between the test-taker and the recipient. It is not a hiring tool and must not be used for selection or candidate assessment. The test-taker answered about themselves — read the result as a self-portrait, not an objective measurement."
+      "no": "Dette resultatet er et GRUNNLAG FOR SAMTALE mellom den testede og mottakeren. Det er ikke et ansettelsesverktøy og kan ikke brukes til utvelgelse eller vurdering av kandidater. For selvrapporteringstester har den testede svart om seg selv — les resultatet som et selvportrett. For evnetester er det råtrekk og estimater fra denne testens oppgavesett. Les i begge tilfeller resultatet som samtaleåpner, ikke som en objektiv måling av personen.",
+      "en": "This result is GROUNDWORK FOR A CONVERSATION between the test-taker and the recipient. It is not a hiring tool and must not be used for selection or candidate assessment. For self-report tests, the test-taker answered about themselves — read the result as a self-portrait. For ability tests, it is a raw count and estimates from this test's set of tasks. In both cases, read the result as a conversation opener, not as an objective measurement of the person."
     },
     "prohibitions": [
       "ansett",
@@ -144,8 +148,8 @@
         "en": "The answers are the test-taker's own self-report — not a clinical or medical assessment."
       },
       "note.gscore.not-normed": {
-        "no": "Resultatet er råtrekk og estimert evnenivå med usikkerhetsintervall — ikke et normert mål og ikke et sertifikat.",
-        "en": "The result is a raw count and an estimated ability level with uncertainty interval — not a normed measure and not a certificate."
+        "no": "Resultatet er antall riktige svar og estimert evnenivå med usikkerhetsintervall — ikke et normert måltall og ikke et sertifikat.",
+        "en": "The result is the number of correct answers and an estimated ability level with an uncertainty interval — not a normed measure and not a certificate."
       }
     }
   },
@@ -161,8 +165,8 @@
       "en": "For the recipient of this report"
     },
     "body": {
-      "no": "Denne rapporten er basert på en persons egne, selvrapporterte svar i en nettbasert test. Poengene er prosent av skalaens omfang — ikke normerte målinger og ikke sammenlignet med andre. Midtpunktet (50) er skalaens midtpunkt, ikke et gruppegjennomsnitt. Rapporten er IKKE en medisinsk, psykologisk eller klinisk vurdering, og den kan ikke brukes som eneste grunnlag for en beslutning om personen.",
-      "en": "This report is based on a person's own, self-reported answers from a web test. The scores are percent of scale range — not normed measures and not compared with others. The midpoint (50) is the scale's midpoint, not a group average. The report is NOT a medical, psychological or clinical assessment, and must not be used as the sole basis for a decision about the person."
+      "no": "Denne rapporten er basert på en persons egne svar i en nettbasert test: for selvrapporteringstester er det personens egen beskrivelse av seg selv; for evnetester er det råtrekk og estimater fra oppgavene i akkurat denne testen. Skårene er prosent av skalaens omfang — ikke normerte målinger og ikke sammenlignet med andre. Midtpunktet (50) er skalaens midtpunkt, ikke et gruppegjennomsnitt. Rapporten er IKKE en medisinsk, psykologisk eller klinisk vurdering, og den kan ikke brukes som eneste grunnlag for en beslutning om personen.",
+      "en": "This report is based on a person's own answers in a web test: for self-report tests it is the person's own description of themselves; for ability tests it is a raw count and estimates from the tasks in this particular test. Scores are percent of scale range — not normed measures and not compared with others. The midpoint (50) is the scale's midpoint, not a group average. The report is NOT a medical, psychological or clinical assessment, and must not be used as the sole basis for a decision about the person."
     }
   },
   "disclosures": [

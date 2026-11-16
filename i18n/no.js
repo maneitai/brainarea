@@ -33,7 +33,7 @@ export const KEYS = {
   note: {
     'trait.not-normed': 'Skår er prosent av skala-omfang, ikke persentiler — ingen normer er brukt.',
     'threshold.screening': 'Screening, ikke diagnose — disclaimer-id gjengis på resultatsiden.',
-    'gscore.not-normed': 'Kun råtrekk og theta (1PL over item-difficulty—placeholder verdier før kalibrering). IQ-skala (M=100, SD=15) krever normdata: ikke et IQ-tall. Gjenoppgitt ikke-kortest mulig intervall i theta-metrikken.',
+    'gscore.not-normed': 'Resultatet oppgis som råtrekk og estimert evnenivå (theta) med usikkerhetsintervall. Det er ikke et normert IQ-tall: IQ-skala (M=100, SD=15) krever normdata fra normerings-endpointen. Usikkerhetsintervallet er Wald-intervall (±1,96·SE) på theta-metrikken.',
   },
   aria: {
     'orderMoveUp': 'flytt {a} opp',

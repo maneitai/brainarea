@@ -1,0 +1,30 @@
+{
+  "step": "FASE 3 [VERIFISER DeepSeek] PDF 3rd-party-lesbarhet (leaf i 41-stegs kjeden, TR-DA925E33DDCE steg 38/41)",
+  "question": "Generer én PDF, les den — mangler den kontekst en tredjepart trenger?",
+  "verdict": "JA — fire konkrete hull provet; ingen av dem er writer-logikkfeil",
+  "date": "2026-11-16",
+  "harness": "tests/schema/_fase3_pdf_3rdparty_verify.mjs",
+  "result": "64 PASS / 0 FAIL, byte-deterministisk (2 kjoeringer identiske stdout, md5 736c8765b90b4add81347380bb28c80b)",
+  "method": {
+    "V0": "xref-basert objektlokasjon (binærsikker, 15/15 objekter), klassifisering kun paa dict-deler",
+    "V1": "font-ordnekontrakt: /DW 1000 + ingen /W + /CIDToGIDMap /Identity => uniform advance 1.0 em/tegn for kodepunkt >= 82",
+    "V1b": "fontdata er i fila (sfnt, 82 glyfer, format-4 cmap, hmtx 82 metrikker) men descriptor-diktet mangler /Type /FontDescriptor + /FontFile2",
+    "V2": "viser-geometri: 25/24 paragraflinjer (no/en) ender forbi sidekanten; worst endX 1051.2 pt pa 595.28 pt-side",
+    "V3": "alt innhold verbatim i content-streams — tap er viser-metrikk, ikke tapte bytes",
+    "V4": "fullfoerings-kontekst (completed/expired/coverage/timeSpentSec/answeredCount/besvarte/fullfoerte): 0 treff i rendret innhold",
+    "V5": "demo-badge: 0 treff i demo-PDF-ene",
+    "V6": "struktur-hull bevist mot kilde: brainarea-pdf.mjs:653 (kun /DW, ingen /W) og :655 (descriptor uten /Type /FontDescriptor + /FontFile2)",
+    "V7": "avhengighets-provet: embedded hmtx 37/39 distinkte vidder (min 563/569 < upem/2) — metrikken ikke 'alle 1 em'; uniform advance isolert til /DW-fallbacken"
+  },
+  "findings": [
+    { "id": "F-C", "class": "i", "what": "Paragraflinjer klippes midt i ord: /DW 1000 uten /W gir uniform 8.8 pt/tegn; 63 tegn til x=602.4 pt paa 595.28-side; worst 1051.2 pt; 4 uavh. ben (dikt, MuPDF+PDFium, raster, kilde). FIX: /W med HELTALLS-CID-er (hex-CID prova og ignorert; integer-CID ga full bredde — probe-bevist). PIN til neste writer-bygg." },
+    { "id": "F-D", "class": "i", "what": "Descriptor-dikt mangler /Type /FontDescriptor og /FontFile2 — viser kan ikke binde fontdata, fonten substitueres. FIX: skriv full FontDescriptor-dikt. PIN til neste writer-bygg." },
+    { "id": "F-E", "class": "ii", "what": "Fullfoerings-kontekst mangler i PDF: ingen completed/expired/coverage/timeSpentSec/answeredCount i rendret innhold. Design-avgjoerelse eies av renderer-siden (operatoer), ikke verifiser-steg." },
+    { "id": "F-F", "class": "ii", "through": "DEMO-badge mangler i demo-PDF-ene (G4-kontrakten krever den paa HTML-flaten, men PDF-demoene leser som ekte rapport). Design-avgjoerelse eies av operatoer." }
+  ],
+  "regression": {
+    "writer": "uroet: _fase3_pdf_selftest 105/105, _report_selftest 74/74, _fase3_nd_resulttext_verify 226/226, demo-PDF md5 uendret (no 78a08e8a365ccd4ec9e8ac36a9644b38, en 525cdfa3305679c522089f8dc81528fa)",
+    "prod": "additivt: 1 ny fil + rapport-append; speil _delt/brainarea synket"
+  },
+  "priorArt": "report/2026-11-16-fase3-pdf.md (105/105 writer-intern) — denne prova PDF-en UTFRA"
+}

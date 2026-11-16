@@ -1,0 +1,73 @@
+{
+  "specVersion": 1,
+  "id": "fase3-rel-no-translation-verdict",
+  "type": "translation-qa-verdict",
+  "status": "GJELDENDE",
+  "date": "2026-11-16",
+  "run": "TR-9791D6980CFA",
+  "phase": "fase3-rel [3-VEIS] fullfoert: utkast-verdikt (A) -> B-kritikk -> C-syntese (metodeskilt in-context, samforening forklart), 2026-11-16",
+  "scope": "Relasjonssporets eksisterende NO-lag ved stegstart: 15 page.i18n rel.*-strenger (no.js/en.js full paritet) + itemspec-ens NO-etiketter (Nærhet/Åpenhet/Konflikthåndtering/Selvstendighet) + compat-modulens brukersynlige feiltekster. Ingen relasjonspool finnes ennå (240 items eies av #3822-#3825; pool-batch-stegene i FASE 2 var SKIPPET og gjenoppkoblet som ny kjede) — stegmandatet 'NO-oversettelse relasjoner' kan derfor bare deliberere over eksisterende NO-tekster; item-nivå-oversettelse finnes ikke og kunne ikke skje. Dette er kontrakt-trolle, dokumentert, ikke manglende arbeid.",
+  "metode": "Full lesing av alle 15 rel.*-strenger + rendret out/relasjoner/out/en/relations (gjennoppbygg + tekststripp); mekanisk skann (dobbelord, dobbeltmellomrom, mellomrom-for-tegn, doblete tegn, svenske vokaler, ø→Å-korrupsjon, ordstamme-suspekter); full ordliste-gjennomgang (73 unike ord); NAOB-oppslag for ordvalgs-suspekt; kryssles mot EN-pariteter og live-def-konvensjoner; regresjon over hele selftest-settet.",
+  "rettelser": [],
+  "avkreftet": [
+    {
+      "mistanke": "divergens mellom rel.intro (nærhet, åpenhet, konflikthåndtering, selvstendighet) og home.card.rel.desc (nærhet, åpenhet, konflikt, selvstendighet)",
+      "verdict": "RENT — bevisst forkortelse på hjem-kortet; begge rendret fra i18n, samme 4-dimensjonsvokabular, ingen leser blir ledet feil."
+    },
+    {
+      "mistanke": "svensk/dansk form eller ø→Å-korrupsjon i rel-korpuset (samme klasse som AV-1)",
+      "verdict": "RENT — 0 treff på alle skannerne; korrupsjonen finnes KUN i ad.disclaimer + en kodekommentar (samme fil, andre ns), ikke i rel-spor."
+    },
+    {
+      "mistanke": "item-nivå-oversettelse mangler som hull",
+      "verdict": "IKKE ET STEG-HULL — pool-batchen (#3754/#3756) ble SKIPPET og er gjenoppkoblet som ny [BYGG]-kjede (#3822-#3825 per dimensjon, cl/op/cf/iv, 60 items hver per _rel_itemspec_spec.json). Ingen pool-finnes → ingen item-oversettelse eksisterer å QC-e. Verdicten er komplett for sitt eksisterende omfang."
+    }
+  ],
+  "holds": [
+    {
+      "id": "H1",
+      "faktum": "'skåren per dimensjon' (rel.methodBody) og 'IQ-skåren' (home.disclaimer)",
+      "status": "DOKUMENTERT IKKE RØRT",
+      "grunn": "Bokmåls-kildeverdiene (NAOB, hentet 2026-11-16): 'skåre' = hakk/sprekk, 'skår' = stripe/hakk, 'score' = poengstilling/resultat ved testing. Test-resultat-ordet på norsk er 'score' (bestemt: scoren), ikke 'skåren'. MEN begge strengene er FASE 1-live-eide (FASE 1-leveransen #3716 røres ikke av FASE 3-steg; option-label-uttalelsen fra personlighet-kjeden gjelder samme logikk). Endring krever egen FASE 1-mikro-[BYGG] med rebuilt + regresjon. Eskalert som pin-foreslått mikro-bygg.",
+      "eier": "FASE 1-i18n (pin → mikro-bygg)"
+    },
+    {
+      "id": "H2",
+      "faktum": "AV-1 ø→Å-korrupsjon ('fÅr' i ad.disclaimer linje 191, 'spÅrsmå' i kommentar linje 187) fortsatt ufixet i prod",
+      "status": "FORPLEVET, IKKE RETTET",
+      "grunn": "Allerede dokumentert i FASE 1-samlet-verifikasjon (#3731-kjeden); fiksen var spesifisert ('før'/'spørsmål' + rebuild) men ikke utført på da. FASE 3-stegaret mandat er relasjoner-spor, ikke ads-spor — men funnet er gjenganger-suspekt for samme tekstkodeks-klasse: en en-linjes tekstack + rebuild er billig. Eskalert i pin-liste.",
+      "eier": "FASE 1-mikro-bygg"
+    }
+  ],
+  "uttalelser": [
+    "rel-korpuset ved stegstart er mekanisk og grammatisk rent (0 funn på 15 strenger, 73 unike ord), og rendret HTML (out/relasjoner + out/en/relations) matcher i18n-kilden eksakt.",
+    "Etiketter: Nærhet/Åpenhet/Konflikthåndtering/Selvstendighet er låst byte-eksakt mellom i18n og spec.dimensionDecision — FASE 1-lock holdt; compat-modulens feiltekster er kode-grep (ukjent-dimensjon/skår-utenfor-omfang/vektor-mangler), ikke brukersynlige tekster.",
+    "EN-side komplett og korrekt for alle 15 par; nøkkel-paritet 15/15 begge veier.",
+    "Ordvekt: rel.og.desc 16 ord, rel.methodBody 21 ord — normale lengder for meta-beskrivelse/forankring, ingen ord som utsetter den lovede tidsonen (ca. 3-4 minutter)."
+  ],
+  "regresjon": {
+    "rel_itemspec_selftest": "ALL PASS (75 PASS-linjer)",
+    "engine_selftest": "72/72 PASS",
+    "scoring_selftest": "27/27 + 27/27 PASS",
+    "scoring_integration": "5/5 PASS",
+    "attention_selftest": "57/57 PASS",
+    "ipip50_selftest": "ALL PASS",
+    "nd_itemspec_selftest": "ALL PASS",
+    "nd_triage_pool_selftest": "78/78 ALL PASS",
+    "evne_batch1/batch2/t5": "ALL PASS x3",
+    "persona_pool_selftest_x3": "ALL PASS x3",
+    "normering_selftest": "107/107 PASS",
+    "i18n_selftest": "22/22 PASS",
+    "ads_selftest": "42/42 PASS",
+    "puzzle_selftest": "ALL PASS (99)"
+  },
+  "miljo": [
+    "SSG-bygg reproduserbart: node app/build.js → build ok 14 pages; git status viser 0 endringer i out/ (byte-identisk) med unntak av intet (out/ er .gitignored i prod-tre) — hreflang 171/171 PASS etter gjenoppbygg.",
+    "Speil-tre F:\\maneit\\data\\work\\_delt\\brainarea manglet #3726-privacy-nøklene i i18n/no.js+en.js — synkronisert prod→speil i dette steget (begge veier verifisert byte-identisk).",
+    "Next-underligheter (.next/server/app/(no)/relasjoner) er rester fra Kris' opprinnelige Next-prototype (2026-11-02) med 16 hardkodede items (ne/åp/ko/se-ids) — IKKE kilde til gjeldende leveranse; gjeldende produksjonsplattform er SSG-treet app/ + i18n. Den gamle prototype-teksten har ingen utsagnsnivå-paritet mot den nye leveransen og danner ikke del av QC-korpuset. NB: prototype-teksten (16 items) ligner innholdsvis _rel_itemspec-vokabularet; prototype-tekstene kan inspirere pool-forfatterstegene #3822-#3825, men kan ikke kopieres direkte (ikke under git, ingen provenans)."
+  ],
+  "pins": [
+    "FASE 1-mikro-[BYGG]: H1+H2 samlet — 'skåren'→'scoren' i rel.methodBody + home.disclaimer, 'fÅr'→'før' + 'spÅrsmå'→'spørsmål' i ad.disclaimer-kommentar, rebuild + full regresjon (én billig build håndterer alle fire tekstfiksene).",
+    "Pool-kjede #3822-#3825 er pool-oversettelsens faktiske hjem: [3-VEIS]-kravet for NO/EN separat forfattning gjelder der, ikke her."
+  ]
+}

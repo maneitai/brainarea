@@ -1,0 +1,41 @@
+{
+  "specVersion": 1,
+  "id": "fase3-rel-sharegraph-verdict",
+  "mandat": "todo #3790 [BYGG] FASE 3: SVG/canvas-delgraf-komponent. Soester-verifisering #3791 [VERIFISER GLM] Les delgrafen mot beslutning 16 — lesbar i feed-størrelse, ikke bare på desktop.",
+  "date": "2026-11-16",
+  "leveranse": [
+    "tests/schema/_rel_share_graph.mjs (delen: komponent v1 — shareGraphLayout + renderShareGraphSvg + drawShareGraphCanvas + shareGraphStrings + fmtOverall)",
+    "tests/schema/_rel_share_graph_selftest.mjs (46/46 PASS, deterministisk)",
+    "tests/schema/_rel_share_graph_demo.mjs + demo/share-graf-demo-no.html + demo/share-graf-demo-en.html (fixture-markert, byte-deterministisk regenererbar)",
+    "report/2026-11-16-fase3-relasjoner-delgraf.md"
+  ],
+  "leser": {
+    "compatModul": "tests/schema/_rel_compat_model.mjs (computePairCompatibility) — utdata { ok, version, perDimension, overall 0-100 1 des, bandId } er delgrafens ENESTE datakontrakt; E-harness kjører gjennom EKTE modul-funksjon, ikke kopierte tall.",
+    "itemspec": "tests/schema/_rel_itemspec_spec.json compatibilityModel (outputs/bands/dimensionRules/why.noDangerousMorphism) + boardRefs.shareGraph = #3790 'leser compatibilityModel-output'.",
+    "beslutning16": "arkivert låst beslutningsliste (chat_working_memory #561): 'Delbarhet = hardt krav: SVG/canvas-delgraf, PDF, tredjepartslesbar resultattekst, ligner-på-profiler (illustrasjons-merket, aldri er-som)'. #3791-mandatet legger til: 'lesbar i feed-størrelse, ikke bare på desktop'.",
+    "rendererKonvensjoner": "report/renderer.mjs: L() aldri stille EN-fallback; fallback = id verbatim aldri oppfunne navn (l.120-121); strings-sink for ban-scan; kast på konfigfeil; midtpunkt ≠ gjennomsnitt (kvalitetskontrakt #1); escape-konvensjon."
+  },
+  "result": {
+    "SVG": "renderShareGraphSvg(compat, texts, labels, lang, profileVectors?, opts?) -> deterministisk SVG-streng 600x426 viewBox; role=img + <title>; byte-md5-stabil; well-formed (tag-par-prov); minste font 12; kaster på konfigfeil (renderer-konvensjon), null ved ok:false-compat.",
+    "CANVAS": "drawShareGraphCanvas(...ctx...) -> KASTER ALDRI: { ok:false, error } ved manglende ctx/degen compat/strictVectors-brudd; ellers { ok:true, ops } — ops = full deterministisk kall-liste (fillRect/fillText/arc/... i tegnerorden), samme geometri som layout (y-proven i G3f).",
+    "LAYOOUT": "shareGraphLayout gir GEOMETRI-GARANTIENE: SHARE_W=600, SHARE_H=426, SHARE_MIN_FONT=12 eksportert for #3791; per-dim sPct/valTxt/marks/etiketter; band-navn løst via labels.bands, fallback bandId verbatim.",
+    "stringsSink": "shareGraphStrings() leverer ALLE synlige strenger i tegnerorden (G5a proven: XML-tekstnoder er delmengde av sinken) — ban-scan-dekningshull fra renderer strings-sink (ND-verifiser-funn F1, pin til renderer-bygg) gjentas IKKE her.",
+    "eierskap": "band-NAVN og brukertekster eies av #3784 (labels.bands er config, ikke kode); dimensjons-etiketter byte-låst til FASE 1-vokabularet når levert (Nærhet/Åpenhet/Konflikthåndtering/Selvstendighet); fallback = id verbatim.",
+    "beslutning16Spor": "SVG-størrelse 600x426 med viewBox - proporsjonal skalering i feed-kontekst; tittel 17px, samlet/bånd-tekster 14-30px, alle andre tekster >=12px; canvas-banen eksporteres for visningslaget; EKTE lesbarhetsvurdering (bilde-lesing i feed) er #3791-søsterstegets mandat [klasse: bevisst avgrenset].",
+    "ikkeDiagnostisk": "identifikatorfri kontrakt: input er kun skor + tekster (G6-proven); ingen 'usunn'-klassifikasjon — band-navn er relasjons-samspill-vokabular (Stort/Godt/Blandet/Ulike mønstre), modelens why.noDangerousMorphism arvet; nonValidated-tekst påkrevd via texts.pointLine-kontrakt i demo."
+  },
+  "bevis": {
+    "harness": "node tests/schema/_rel_share_graph_selftest.mjs -> DELGRAF SELFTEST 46 PASS / 0 FAIL (2 kjoeringer identiske stdout-md5 87ff9fcd)",
+    "ekteCompat": "G1a 100/band-strong identiske profiler; G1b handregnet (C50/O80/K50/I50 vs C90/O40/K30/I70) -> per-dim 0.6/0.6/1/1 -> overall 80.0 band-aligned — gjennom EKTE _rel_compat_model.mjs (data-URL-import, samme metode som itemspec-selftest S9)",
+    "determinisme": "G2b SVG byte-md5 lik over kjoeringer; G3c canvas ops JSON-lik; demo-regenerering byte-lik (882849f2/df13ec2c)",
+    "regresjon": "13/13 suiter OK i økten: report 74, engine 72, integrasjon 5, attention, ipip 58/58-family, rel-itemspec ALL, rel-verify 88, rel-3rdp 214, nd 226, nd-3rdp 326, gscore 54, estimat 70+, sharegraph 46. SSG 14 pages byte-identisk (0 diff vs out/). Standard-demo uroet. nd-pool 78/78.",
+    "prodTraeUrort": "Rapportlaget (report/*) og engine urørt — hele steget er ADDITIV tests/schema-delen: 4 nye filer, 0 muterte."
+  },
+  "pins": [
+    "PIN-1: band-navnene i demo (Stort/Godt/Blandet/Ulike mønstre) er DEMO-vokabular — #3784 eier de renderte band-tekstene; endres de 3784-vokabularet, må demo/labels-forekomster følge (harness låser kun fallback-orden: bandId verbatim).",
+    "PIN-2: eksakt feed-leseproven (screenshot-skala, kontrast i mørkt tema) eies av #3791 [VERIFISER GLM]; denne komponenten leverer de målbare garantiene (600x426, >=12px, viewBox-skalerbar) som #3791 tester mot.",
+    "PIN-3: #3794 (#fragment-transport) tar identifikatorfri koding av profilvektorene; delgraf-komponenten tar bare dekodede vektorer — koble i FASE 4 par-flyten.",
+    "PIN-4: renderer.mjs strings-sink-dekningshull (SVG-etiketter aldri i strings.list) er fortsatt open pin fra ND-verifiser #3786 — delgraf har egen sink; renderer-vokteren får sin fiks først i neste renderer-bygg."
+  ],
+  "environment": { "runner": "WSL node v22.22.1 i prod-treet", "prodCommit": "se git-log", "speil": "_delt/brainarea synket" }
+}

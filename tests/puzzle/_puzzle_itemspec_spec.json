@@ -1,0 +1,122 @@
+{
+  "specVersion": 1,
+  "id": "puzzle-itemspec-v1",
+  "type": "itemspec-puzzle",
+  "status": "PROPOSED",
+  "statusMeaning": "Blir GJELDENDE etter verifisering. Endringer etter det krever specVersion 2, dokumentert append-only.",
+  "date": "2026-11-16",
+  "boardLeaf": "#3765 [BYGG] FASE 2: Puzzle bygges etter det godkjente designet (spillbar prototype med progresjon). Overlapper #3832 (pool-steg) i leveransen: generator + selftest er pool-stegets leveranse per designkontrakt v1.1 §5.",
+  "designSources": [
+    "tests/puzzle/_puzzle_design_v1_1.md (3-VEIS v1.1, GODKJENT MED BETINGELSER)",
+    "DOC-A7A491D0D0 (deliberasjonsrapport, 5 bygg-betingelser)",
+    "tests/schema/test-definition.schema.json v1 (family 'pool', ability-variants)",
+    "tests/engine/scoring.js v1.0.0 (g-score: theta/ci95/iqScale null/notNormed, allowPartial)",
+    "tests/engine/render.js v0.5.0 (validateTestDef, STORAGE-ns, used-ids-konvensjon)",
+    "functions/normering.js v1.0.0 (TEST_ID_RE, anonym POST, betinget KV-lagring)",
+    "opprinnelige normer: tests/schema/_evne_itemspec_spec.json og evne_pool-konvensjonen (gen_*.py + selftest_*.mjs, en fil per spraak, dual-path)"
+  ],
+  "identity": {
+    "testId": "puzzle-v1",
+    "defIdNo": "puzzle-v1",
+    "defIdEn": "puzzle-v1",
+    "idPrefixPerType": { "s1": "pz-s1", "s2": "pz-s2", "s3": "pz-s3" },
+    "idPattern": "pz-s<k><band><01..10>",
+    "family": "pool",
+    "rationale": "family='pool': puzzle-trekker er sporet, ikke i katalogen test-rute per #3765; family 'evner' er katalogsporet. testId 'puzzle-v1' matcher normering.js TEST_ID_RE."
+  },
+  "pool": {
+    "total": 90,
+    "perType": { "s1": 30, "s2": 30, "s3": 30 },
+    "perBand": { "L": 30, "M": 30, "H": 30 },
+    "perBandPerTypeMin": 10,
+    "bandTolerance": 0.15,
+    "bands": { "L": [-2.0, -0.5], "M": [-0.5, 0.5], "H": [0.5, 2.0] },
+    "bandWindowHalf": 0.15,
+    "bFormula": "lo + (bandWindowHalf/2) + slotIndex*( (window- (bandWindowHalf)) / (perBandPerType... se meta.slotStep 0.15) ",
+    "bSlots": "L: -1.925 + 0.15*i ; M: -0.425 + 0.15*i ; H: 0.575 + 0.15*i (i=0..9). Alle b i vindaugene, ingen b pa vinduskanten."
+  },
+  "subtypes": {
+    "s1": {
+      "name": "Sekvensfortsettelse",
+      "construct": "Tallregel paa siffer-attributten; form-attributten sykler deterministisk og bærer ingen regelbyrde. L: aritmetisk +c. M: vekslende delta (+c1/-c2, c1!=c2). H: konstant andre-differens (delta +c, øker med k per steg)."
+    },
+    "s2": {
+      "name": "Oppdateringsregel",
+      "construct": "Eksplisitt overgangsregel: siffer d[i+1]=(d[i]+k) mod 10, form flytter +s per steg (s i v1: 1..3). Banda skiller seg i (k,s)-kompleksitet."
+    },
+    "s3": {
+      "name": "Sporingsregel",
+      "construct": "To parallelle regler annenhvert ledd (partall-posisjon = sub-X, oddetall-posisjon = sub-Y). Svar = neste ledd av sub-X. L: kun X-form beveger seg, Y-siffer steg. M: begge attributter i bevegelse pa X/Y. H: ulike steg og form-forskyvninger per sub-sekvens."
+    },
+    "tiles": { "digits": "0-9 (mod 10, ingen negative)", "shapes": ["○", "□", "△", "◇"], "letters": "FORBUDT i v1 (B5: ingen bokstav-tiles, spraakparitet blir eksakt)" }
+  },
+  "options": {
+    "perItem": 4,
+    "distractorPolicy": "1-rule-off: hver distraktor bryter eksakt ett regelledd (siffer off-by-one, deltarule-bytte, form-stall/-feilsteg, sub-sekvensforvirring i s3). Ingen duplikatlabels, fasit-reavledning fra regelparametre i meta.",
+    "correctIndexSpread": "correctIndex = j mod 4 per (subtype, band) slot — deterministisk spredning, ingen RNG."
+  },
+  "standardRun": {
+    "floors": 16,
+    "curve": [7, 5, 4],
+    "curveBands": ["L", "M", "H"],
+    "curveStrictlyMonotone": true,
+    "retry": { "fromFloor": 9, "attemptsExtra": 1, "note": "Etasje < 9: kun forsok 1. Etasje >= 9 (inkl. foerste M etasje 8? NEI — etasje 8 er forsok-1-kun per C-residual #3; etasje >= 9 gir ett ekstra forsok). Fasit vises aldri; dobbeltfeil => kort reveal og videre." },
+    "firstResponseContract": "score-payload inneholder KUN foerste respons per item; retry-svar bor i game-state (attempts) og kan ALDRI naa payload-et.",
+    "scoring": { "def": "g-score sessjons-subsett-def (samma feltstruktur, items = de 16 trekte)", "expected": "theta + ci95 (bred, aehrlig), iqScale null, notNormed true, note.id note.gscore.not-normed arvet" },
+    "normering": { "endpoint": "functions/normering.js", "testId": "puzzle-v1", "answers": "rekkefolgetro liste over foerste-respons-indekser i itemIds-orden", "durationSec": "hesjon-integer" }
+  },
+  "endless": {
+    "unlock": "kun etter fullfoert standard run",
+    "slide": "trekk k (0-basert): k<8 -> L, k<16 -> M, k<24 -> H, k>=24 -> H-tyngde (2 av 3 H, ellers M)",
+    "noRepeat": "used-ids i localStorage per oekt (computeUsedReset-konvensjonen); naer-uttmming -> reset",
+    "score": "highscore (antall riktige), eksplisitt ikke en testskår",
+    "excluded": "endless-emitter ALDRI score-payload og ALDRI normering-payload"
+  },
+  "shareCard": {
+    "numeric": false,
+    "fields": ["etasje-rekord X/16", "best-run", "fullfort-tid eller nivaa naadd", "tekst-du-faar-lengre"],
+    "forbidden": ["theta", "ci95", "skaala", "IQ", "prosent"],
+    "ogDependency": "OG-generator puzzle-variant (#3796) — ikke bygget her"
+  },
+  "a11y": {
+    "shapeColorRedundancy": "hver tile er siffer+form; form skiller alltid fra farge alene",
+    "palette": {
+      "PAGE_BG": "#0b0f14", "BOARD_BG": "#101820", "GLYPH": "#e8f4ff", "TEXT": "#d7e4ee",
+      "GOOD": "#7de2a6", "BAD": "#ff9a9a", "MUTED": "#9fb4c7", "BANNER_BG": "#10303a",
+      "BANNER_TXT": "#c8f4f6", "ACCENT": "#39d0d8", "BORDER": "#2c3a48"
+    },
+    "minContrast": 4.5,
+    "measuredPreCheck": "alle par < min 4.5 (glyf/bord 16.03, text/bord 13.82, good 11.33, bad 8.81, muted/bann 6.53, tekst/side 14.85, aksent/side 10.24, banner 11.77)",
+    "touchTargetPx": 48,
+    "keyboard": "tallstaster 1-4 pluss piler/enter",
+    "aria": "aria-label paa alle tiles og alternativer, progressbar aria"
+  },
+  "strings": {
+    "note": "Egen PLAYER i tests/puzzle; UI-tekster bor i spillerens PLAYER_STRINGS — i18n-katalogen (ENGINE ns 'ui/note/aria', page-ns) er #3716/#3718-kontrakten og røres ikke av spilleren. Side-promotion er et eget brettsteg.",
+    "firstResponseLanguage": "Resultatspraak (NO+EN) INNEHOLDER usikkerhetsbånd-frasen 'usikkerhetsbåndet er bredt ved 16 spørsmål' / 'the uncertainty band is wide at 16 questions' og INGEN fraser som lover normalisert skår/CI-nøyaktighet.",
+    "forbiddenFrases": ["normalisert skå", "normert", "IQ-tall", "percentile", "exact", "exactly measured", "nøyaktig målt"]
+  },
+  "storage": {
+    "keyPrefix": "brainarea:puzzle-v1:",
+    "stateVersion": 1,
+    "resume": "runState ser (v, mode, floorIdx, floorItemIds, firstAnswers, attempts, bestRun, currentRun, levelReached, usedIds, startedAt, elapsed) — deserialize validerer v og mode; refresh midt-i-etasje gjenopptar samma etasje",
+    "gameySeparation": "streak/nivaa/endless lagres adskilt fra skaaring og naar ALDRI payload"
+  },
+  "privacy": {
+    "noAccount": true,
+    "localState": true,
+    "normeringFields": ["anonym testId", "svar-liste", "durationSec", "valgfri ageBand/gender"],
+    "note": "Puzzlespesifikke felter (sesjonslengde, tid per item, lokal rekord) dokumentert her; #3726 tekstutvidelse er eget brettsteg."
+  },
+  "verificationAnchor": "#3766 spilltest eies av eget steg; denne leveransen gir spilltest-ankeret: tidlig-M-atferd (etasje 8 ingen retry), refresh-midt-i-etasje-kontrakt, dobbelt-fail-reveal",
+  "copyright": {
+    "status": "originnalt innhold",
+    "bannedScan": ["raven", "_progressive matrices", "waais", "wisc", "wechsler", "mensa", "digit span", "n-back"],
+    "hitsRequired": 0
+  },
+  "openPointsToOperator": [
+    "Annonse: standard mode forblir annonsefri (beslutning 11); evtl. statisk slot KUN i endless mode [OP-beslutning, ikke bygget her]",
+    "OG delekort-bilde (#3796-avhengighet) har ingen eier ennå",
+    "i18n side-promotion (page-ns) for /puzzle-rute er eget steg; denne leveransen er spilleren i tests/puzzle"
+  ]
+}

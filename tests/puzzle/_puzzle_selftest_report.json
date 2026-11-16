@@ -1,0 +1,505 @@
+{
+  "selftest": "puzzle-v1",
+  "date": "2026-11-16",
+  "prodTree": "/mnt/f/maneit/prosjekter/filip-webside-prosjekter/brainarea",
+  "total": 99,
+  "failed": 0,
+  "failures": [],
+  "results": [
+    {
+      "name": "A1 no: 90 items",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A2 no: unike id-er",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A3 no: alle b i IRT-vinduene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A4 no: 4 unike options per item",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A4b no: def.id + family pool",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A1 en: 90 items",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A2 en: unike id-er",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A3 en: alle b i IRT-vinduene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A4 en: 4 unike options per item",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A4b en: def.id + family pool",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A5 band-toleranse <= 0.15 per band per undertype",
+      "pass": true,
+      "detail": "{\"s1\":{\"L\":10,\"M\":10,\"H\":10},\"s2\":{\"L\":10,\"M\":10,\"H\":10},\"s3\":{\"L\":10,\"M\":10,\"H\":10}}"
+    },
+    {
+      "name": "A6 standard-trekk band-orden eksakt 7L/5M/4H",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A7 CURVE 16 lang",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A8 7/5/4-sum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A9 strengt monotone blokker (L-blokken, M, H i orden)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A10 fasit-reavledning stemmer for alle 90",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A11 correctIndex peker på reavledet fasit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A12 NO/EN-paritet: samme fasit-indeks i begge defs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "B1 no: AJV schema v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "B2 no: validateTestDef ok",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "B1 en: AJV schema v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "B2 en: validateTestDef ok",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "C1 testId matcher TEST_ID_RE",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "C2 testId == def.id (begge spraak)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D1a run ferdig etter 16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D1b payload.testId",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D1c scoreTest ok",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D1d alle-riktig: theta null (aehrlig MLE)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D1e iqScale null + notNormed true",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D1f note.gscore.not-normed til stede",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D2a scoreTest ok (blandet monster)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D2b theta tall + ci95-par",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D2b2 riktig-antall 11 av 16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "D3 alle-feil: theta null (aehrlig)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E1 etasje 1: ingen retry — closed + reveal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E2a etasje 9: feil foerst -> retry, ingen reveal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E2b dobbeltfeil -> closed + reveal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E2c firstAnswers = foerste respons",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E2d attempts inneholder retry-svar (game-state only)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E2e payload inneholder KUN foerste respons",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E2f retry-utganger aldri i payload (game-state only)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E2g attempts-naakel finnes ikke i payload-serien",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E2h scoreTest godtar payload-et",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E3a retry loest etasjen",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E3b bestRun teller retry-loest (8+1=9)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E3c etasje 10 gir retry (>= 9)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E3d levelReached >= 9 spor naadd etasje",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F1 NO/EN samme noekkel-sett",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F2 NO usikkerhetsbaand-frase",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F3 EN usikkerhetsbaand-frase",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F4 ingen loende skoer-fraser (nektelse i kontekst kreves)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F5 delekort uten theta/skala/IQ-tokens",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F6 delekort numericScore null",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F7 delekort-tekst nevner best-run og etasje",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "G1 GLYPH/BOARD_BG >= 4.5 (malt 16.03)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "G1 TEXT/PAGE_BG >= 4.5 (malt 14.85)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "G1 GOOD/BOARD_BG >= 4.5 (malt 11.33)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "G1 BAD/BOARD_BG >= 4.5 (malt 8.81)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "G1 MUTED/PAGE_BG >= 4.5 (malt 8.99)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "G1 BANNER_TXT/BANNER_BG >= 4.5 (malt 11.77)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "G1 ACCENT/PAGE_BG >= 4.5 (malt 10.24)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "G1 TEXT/BOARD_BG >= 4.5 (malt 13.82)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "G1 MUTED/BANNER_BG >= 4.5 (malt 6.53)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "G2 alle tall + former i poolen (ingen bokstaver)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H1 validatePostPayload godtar puzzle-v1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H2 entry.testId",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H3 answers 16 elementer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H4 POST 200",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H5 aehrlig stored:false uten NORMERING_KV",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H6 endless emitter aldri normering-payload",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H7 answers-elementer er foerste-respons 0..3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "I1 40 endless-trekk: band-glir + uten gjentakelse",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "I2 computeUsedReset ved naer-uttmming",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "I3 computeUsedReset under tak beholder",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "I4 endless riktig -> fortsetter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "I5 endless feil -> closed + highscore 1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "I6 endless klarer aldri score-payload",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "I7 endless-tekst erklarer ikke-en-test",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J1 deserialize beholder foerste-respons",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J2 floor null etter deserialize",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J3 openFloor etter resume apner samme etasje",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J4 bestRun/levelReached overlevr",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J5 fullfoert run rundtur: payload-lik",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J6 fremmed state-versjon avvises",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J7 korrupt correctIndex avvises",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "K1 copyright-skann 0 treff",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "L1 def.no bitvist lik over kjoringer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "L2 def.en bitvist lik",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "L3 meta bitvist lik",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "L4 disken er bitvist lik nygenerering (def.no)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M1 alle 16 standard-trekk finnes i poolen",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M2 id-moenster overalt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M3 RETRY_FROM_FLOOR = 9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M4 etasje 8 er foerste M",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M5 PLAYER versjonsfelt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "N PASS tests/engine/_scoring_selftest.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "N tests/engine/_render_selftest.mjs finnes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "N PASS tests/schema/_evne_itemspec_selftest.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "N PASS tests/functions/_normering_selftest.mjs",
+      "pass": true,
+      "detail": null
+    }
+  ]
+}

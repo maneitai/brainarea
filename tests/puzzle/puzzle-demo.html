@@ -1,0 +1,411 @@
+<!doctype html>
+<!--
+  puzzle-demo.html — spillbar prototype for «Sekvensmester / Sequence Master» (puzzle-v1).
+  [BYGG] FASE 2, #3765. Designkontrakt: _puzzle_design_v1_1.md (v1.1, GODKJENT MED BETINGELSER).
+
+  Kjøring (statisk server i repo-roten):
+    python3 -m http.server 8060
+    -> http://localhost:8060/tests/puzzle/puzzle-demo.html
+
+  - Tynn wrapper over puzzle-player.mjs (ren state machine) + def-puzzle-v1.<lang>.json.
+  - Standard mode: 16 etasjer (7L/5M/4H), retry fra etasje 9, første-respons-skår.
+  - Endless mode: låses opp etter fullført run, aldrig scoring/normering.
+  - Resume: runState i localStorage; refresh midt-i-etasje gjenåpner samme etasje.
+  - Annonser: ingen i spillflyten (beslutning 11). Delekort: tallløst; OG-bilde er
+    #3796-avhengighet (ikke bygget her).
+  - A11y: farge+form-redundans, kontrast målt >= 4.5:1 (selftestet), tastatur 1-4,
+    aria-labels, touch >= 48px. Ingen tidspress.
+-->
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sekvensmester — puzzle-v1 | Brainarea</title>
+<style>
+  :root {
+    --PAGE_BG:#0b0f14; --BOARD_BG:#101820; --GLYPH:#e8f4ff; --TEXT:#d7e4ee;
+    --GOOD:#7de2a6; --BAD:#ff9a9a; --MUTED:#9fb4c7; --BANNER_BG:#10303a;
+    --BANNER_TXT:#c8f4f6; --ACCENT:#39d0d8; --BORDER:#2c3a48;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; background:var(--PAGE_BG); color:var(--TEXT);
+         font:16px/1.6 system-ui, sans-serif; display:flex; justify-content:center; }
+  .app { width:100%; max-width:640px; padding:16px; }
+  h1 { color:var(--GLYPH); font-size:1.35rem; margin:.2rem 0 .6rem; }
+  .board { background:var(--BOARD_BG); border:1px solid var(--BORDER); border-radius:14px;
+           padding:14px; margin-bottom:12px; }
+  .banner { background:var(--BANNER_BG); color:var(--BANNER_TXT); border-radius:10px;
+            padding:10px 12px; margin-bottom:12px; }
+  .tiles { display:flex; flex-wrap:wrap; gap:8px; }
+  .tile { width:52px; height:62px; border-radius:10px; background:var(--BOARD_BG);
+          border:1px solid var(--BORDER); color:var(--GLYPH);
+          display:flex; align-items:center; justify-content:center; font-size:1.6rem; }
+  .tile.next { color:var(--ACCENT); border-style:dashed; }
+  .tile.reveal { background:rgba(57,208,216,.18); }
+  .opts { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:14px; }
+  button { min-height:48px; min-width:48px; border-radius:10px; cursor:pointer;
+           border:1px solid var(--BORDER); color:var(--TEXT); background:var(--BOARD_BG);
+           font-size:1.25rem; }
+  button.opt:hover { border-color:var(--ACCENT); }
+  button.primary { color:var(--PAGE_BG); background:var(--ACCENT); border-color:var(--ACCENT);
+                   font-size:1rem; font-weight:600; padding:10px 16px; }
+  .progress { height:8px; background:var(--BOARD_BG); border-radius:6px; overflow:hidden; }
+  .progress > div { height:100%; background:var(--ACCENT); transition:width .2s; }
+  .status { min-height:1.4rem; margin-top:10px; }
+  .status.ok { color:var(--GOOD); } .status.bad { color:var(--BAD); }
+  .muted { color:var(--MUTED); font-size:.88rem; }
+  .hidden { display:none; }
+  input[type="button"].lang { position:absolute; top:10px; right:10px; font-size:.8rem; min-height:32px; }
+</style>
+</head>
+<body>
+<div class="app">
+  <input class="lang" id="langBtn" type="button" value="EN" aria-label="Switch language">
+  <h1 id="title"></h1>
+  <div id="bannerBox" class="banner hidden"></div>
+
+  <section id="startScreen">
+    <div class="board">
+      <p id="startLead" class="muted"></p>
+      <button id="startBtn" class="primary"></button>
+    </div>
+  </section>
+
+  <section id="gameScreen" class="hidden">
+    <div class="progress" id="progressBar" role="progressbar" aria-label=""></div>
+    <p id="floorLabel" class="muted"></p>
+    <div class="board">
+      <p id="tileRowLabel" class="muted" aria-hidden="true"></p>
+      <div class="tiles" id="tileRow" role="img" aria-label=""></div>
+      <div class="opts" id="opts"></div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <button id="nextBtn" class="primary hidden"></button>
+    </div>
+    <p class="muted" id="retryNote"></p>
+  </section>
+
+  <section id="resultScreen" class="hidden">
+    <div class="board">
+      <p id="resultIntro"></p>
+      <p id="resultLevel" style="font-size:1.2rem;color:var(--GLYPH)"></p>
+      <p id="resultBest" class="muted"></p>
+      <button id="shareBtn" class="primary"></button>
+      <p id="shareText" class="muted"></p>
+    </div>
+    <div class="board">
+      <p id="endlessNote" class="muted"></p>
+      <button id="endlessBtn" class="primary"></button>
+      <p id="endlessScore" class="muted"></p>
+    </div>
+    <button id="restartBtn"></button>
+  </section>
+
+  <section id="endlessScreen" class="hidden">
+    <div class="board">
+      <p id="endlessTileLabel" class="muted" aria-hidden="true"></p>
+      <div class="tiles" id="endlessTileRow" role="img" aria-label=""></div>
+      <div class="opts" id="endlessOpts"></div>
+      <p id="endlessStatus" class="status" role="status" aria-live="polite"></p>
+      <p id="endlessRun" class="muted"></p>
+    </div>
+    <button id="endlessLeave" class="primary"></button>
+  </section>
+</div>
+
+<script type="module">
+import {
+  PLAYER_STRINGS, TEST_ID, STORAGE_KEY_PREFIX, RETRY_FROM_FLOOR,
+  CURVE, STANDARD_FLOOR_IDS, initStandardRun, openFloor, submitChoice, advance,
+  buildScorePayload, buildNormeringPayload, buildShareCard,
+  initEndlessRun, endlessPick, submitEndless, serialize, deserialize,
+} from './puzzle-player.mjs';
+import { scoreTest } from '../engine/scoring.js';
+
+const DEFS = {
+  no: (await import('./def-puzzle-v1.no.json', { with: { type: 'json' } })).default,
+  en: (await import('./def-puzzle-v1.en.json', { with: { type: 'json' } })).default,
+};
+
+let lang = localStorage.getItem(STORAGE_KEY_PREFIX + 'lang') || 'no';
+let state = null;
+let timer = null;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const fmtKey = (key, ...args) => {
+  let s = PLAYER_STRINGS[lang][key] || PLAYER_STRINGS.no[key] || key;
+  return s.replace(/\{a\}/g, String(args[0] ?? '')).replace(/\{b\}/g, String(args[1] ?? '')).replace(/\{c\}/g, String(args[2] ?? ''));
+};
+const show = (id) => {
+  for (const s of ['startScreen', 'gameScreen', 'resultScreen', 'endlessScreen']) {
+    $(s).classList.toggle('hidden', s !== id);
+  }
+};
+$('langBtn').value = lang === 'no' ? 'EN' : 'NO';
+
+function paintTile(el, gl) {
+  el.textContent = gl;
+  el.classList.add('tile');
+  const digit = gl[0], shape = gl.slice(1);
+  el.setAttribute('aria-label', (lang === 'no' ? 'flis ' : 'tile ') + digit + ', ' + shape);
+}
+
+function renderStatic() {
+  document.documentElement.lang = lang;
+  $('title').textContent = fmtKey('game.title');
+  $('startLead').textContent = lang === 'no'
+    ? '16 etasjer med sekvenspuzzler. Fra etasje 9 får du ett forsøk til. Svaret ditt telles fra første valg.'
+    : '16 floors of sequence puzzles. From floor 9 you get one more attempt. Scoring uses your first choice.';
+  $('startBtn').textContent = fmtKey('game.start');
+  $('retryNote').textContent = fmtKey('game.retryAvailable').replace(/[.。]$/, '') + (lang === 'no' ? ' (fra etasje 9)' : ' (from floor 9)');
+  $('endlessNote').textContent = fmtKey('game.endlessNotTest');
+  $('restartBtn').textContent = fmtKey('game.restart');
+}
+
+function saveState() {
+  if (!state) return;
+  if (state.mode === 'standard') localStorage.setItem(STORAGE_KEY_PREFIX + 'standard', serialize(state));
+}
+
+function loadSave() {
+  const raw = localStorage.getItem(STORAGE_KEY_PREFIX + 'standard');
+  if (!raw) return null;
+  try { return deserialize(raw, DEFS[lang], lang); } catch { return null; }
+}
+
+function startTimer() {
+  clearInterval(timer);
+  timer = setInterval(() => { state.elapsedSec += 1; }, 1000);
+}
+
+/* ---------------- standard mode ---------------- */
+
+function startNew() {
+  state = initStandardRun(DEFS[lang], lang);
+  state.startedAt = Date.now();
+  saveState();
+  startTimer();
+  openFloor(state);
+  renderFloor();
+}
+
+function resume() {
+  state = loadSave();
+  if (!state) return startNew();
+  const floorNo = Math.min(state.floorIdx + 1, 16);
+  $('bannerBox').classList.remove('hidden');
+  $('bannerBox').textContent = fmtKey('game.resumeBanner', floorNo);
+  startTimer();
+  if (!state.finished) { openFloor(state); renderFloor(); }
+  else renderResult();
+}
+
+function renderFloor() {
+  show('gameScreen');
+  $('resultScreen').classList.add('hidden');
+  const floorNo = state.floorIdx + 1;
+  $('gameScreen').classList.remove('hidden');
+  const pct = Math.round(((state.floorIdx) / 16) * 100);
+  $('progressBar').firstElementChild && ($('progressBar').innerHTML = '<div style="width:' + pct + '%"></div>');
+  $('progressBar').setAttribute('aria-valuenow', String(pct));
+  $('progressBar').setAttribute('aria-label', fmtKey('game.a11y.progressLabel'));
+  $('floorLabel').textContent = fmtKey('game.floorProgress', floorNo, 16)
+    + ' · ' + (lang === 'no' ? 'rekkefølge: ' : 'band: ') + CURVE[state.floorIdx]
+    + ' · ' + (lang === 'no' ? 'beste feilfrie strekk: ' : 'best run: ') + state.bestRun;
+  const item = DEFS[lang].items.find((i) => i.id === state.floor.itemId);
+  const v = item.variants[0];
+  const seq = v.prompt.split(': ')[1].split(' ');
+  const tiles = seq.slice(0, seq.length - 1);
+  const row = $('tileRow');
+  row.innerHTML = '';
+  $('tileRow').setAttribute('aria-label', fmtKey('game.a11y.tileRow'));
+  $('tileRowLabel').textContent = lang === 'no' ? 'Sekvensen:' : 'The sequence:';
+  for (const gl of tiles) {
+    const el = document.createElement('div');
+    paintTile(el, gl);
+    row.appendChild(el);
+  }
+  const q = document.createElement('div');
+  paintTile(q, '?');
+  q.classList.add('next');
+  row.appendChild(q);
+  const opts = $('opts');
+  opts.innerHTML = '';
+  v.options.forEach((o, ix) => {
+    const b = document.createElement('button');
+    b.className = 'opt';
+    paintTile(b, o.label);
+    b.setAttribute('aria-label', fmtKey('game.a11y.option', ix + 1, o.label));
+    b.onclick = () => choose(ix);
+    opts.appendChild(b);
+  });
+  $('status').textContent = '';
+  $('status').className = 'status';
+  $('nextBtn').classList.add('hidden');
+  $('retryNote').textContent = floorNo >= RETRY_FROM_FLOOR
+    ? fmtKey('game.retryAvailable')
+    : (lang === 'no' ? 'Ett forsøk i denne etasjen.' : 'One attempt on this floor.');
+}
+
+function choose(ix) {
+  const res = submitChoice(state, ix);
+  if (res.outcome === 'retry') {
+    $('status').textContent = fmtKey('game.retryAvailable');
+    $('status').className = 'status';
+    return;
+  }
+  saveState();
+  if (res.outcome === 'solved') {
+    $('status').textContent = fmtKey('game.floorSolved');
+    $('status').className = 'status ok';
+  } else {
+    $('status').textContent = fmtKey('game.floorMissed');
+    $('status').className = 'status bad';
+    // dobbeltfeil-reveal: kort visning av riktig flis (etasjen er allerede lukket)
+    const v = DEFS[lang].items.find((i) => i.id === state.floor.itemId).variants[0];
+    const correct = v.options[v.correctIndex].label;
+    const el = document.createElement('div');
+    paintTile(el, correct);
+    el.classList.add('reveal');
+    $('tileRow').appendChild(el);
+    setTimeout(() => el.remove(), 900);
+  }
+  for (const b of $('opts').children) b.disabled = true;
+  $('nextBtn').classList.remove('hidden');
+  $('nextBtn').textContent = state.floorIdx + 1 >= 16 ? fmtKey('game.finishStandard') : fmtKey('game.continue');
+  $('nextBtn').onclick = () => {
+    const r = advance(state);
+    saveState();
+    if (r.finished) { clearInterval(timer); renderResult(); }
+    else { openFloor(state); renderFloor(); }
+  };
+}
+
+function renderResult() {
+  show('resultScreen');
+  $('gameScreen').classList.add('hidden');
+  $('endlessScreen').classList.add('hidden');
+  const scored = scoreTest(DEFS[lang], buildScorePayload(state, Date.now(), state.elapsedSec));
+  const t = scored.result.total;
+  $('resultIntro').textContent = fmtKey('result.thetaIntro')
+    + (t.theta !== null && t.ci95 ? ' (' + (lang === 'no' ? 'estimat ' : 'estimate ') + t.theta.toFixed(2)
+      + (lang === 'no' ? ', bredt bånd ' : ', wide band ') + t.ci95[0].toFixed(2) + ' – ' + t.ci95[1].toFixed(2) + ')' : '');
+  $('resultLevel').textContent = fmtKey('result.levelReached', state.levelReached, 16);
+  $('resultBest').textContent = fmtKey('result.bestRun', state.bestRun);
+  const card = buildShareCard(state, lang, PLAYER_STRINGS[lang]);
+  $('shareBtn').onclick = () => {
+    $('shareText').textContent = card.text;
+    try { navigator.clipboard && navigator.clipboard.writeText(card.text); } catch {}
+  };
+  $('endlessBtn').textContent = fmtKey('game.endlessStart');
+  $('endlessBtn').onclick = startEndless;
+  // normering: anonym POST (ærlig stored:false på github.io i dag) — første-respons-rekke
+  const np = buildNormeringPayload(state, state.elapsedSec);
+  try {
+    fetch('/normering', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(np) });
+  } catch {}
+}
+
+/* ---------------- endless mode ---------------- */
+
+let endless = null;
+
+function startEndless() {
+  endless = initEndlessRun(lang);
+  endless.startedAt = Date.now();
+  show('endlessScreen');
+  renderEndless();
+}
+
+function renderEndless() {
+  if (endless.finished) {
+    $('endlessStatus').textContent = fmtKey('game.endlessHighscore', endless.highscore);
+    $('endlessStatus').className = 'status';
+    $('endlessOpts').innerHTML = '';
+    return;
+  }
+  const id = endlessPick(endless.idx, endless.usedIds, DEFS[lang].items.map((i) => i.id).sort());
+  if (!id) { // naer-uttømming -> reset (computeUsedReset-konvensjonen)
+    endless.usedIds = [];
+    return renderEndless();
+  }
+  endless.currentItemId = id;
+  const item = DEFS[lang].items.find((i) => i.id === id);
+  const v = item.variants[0];
+  const seq = v.prompt.split(': ')[1].split(' ');
+  const row = $('endlessTileRow');
+  row.innerHTML = '';
+  $('endlessTileLabel').textContent = lang === 'no' ? 'Sekvensen:' : 'The sequence:';
+  row.setAttribute('aria-label', fmtKey('game.a11y.tileRow'));
+  for (const gl of seq.slice(0, seq.length - 1)) {
+    const el = document.createElement('div');
+    paintTile(el, gl);
+    row.appendChild(el);
+  }
+  const qEl = document.createElement('div');
+  paintTile(qEl, '?');
+  qEl.classList.add('next');
+  row.appendChild(qEl);
+  const opts = $('endlessOpts');
+  opts.innerHTML = '';
+  v.options.forEach((o, ix) => {
+    const b = document.createElement('button');
+    b.className = 'opt';
+    paintTile(b, o.label);
+    b.setAttribute('aria-label', fmtKey('game.a11y.option', ix + 1, o.label));
+    b.onclick = () => endlessChoose(ix, v.correctIndex);
+    opts.appendChild(b);
+  });
+  $('endlessStatus').textContent = '';
+  $('endlessRun').textContent = fmtKey('game.endlessHighscore', endless.highscore)
+    + (lang === 'no' ? ' · nå: ' : ' · now: ') + endless.currentRun;
+}
+
+function endlessChoose(ix, correctIndex) {
+  const id = endless.currentItemId;
+  const r = submitEndless(endless, id, ix, correctIndex);
+  if (r.outcome === 'solved') { renderEndless(); return; }
+  localStorage.setItem(STORAGE_KEY_PREFIX + 'endless', String(endless.highscore));
+  renderEndless();
+}
+
+/* ---------------- start + resume ---------------- */
+
+$('startBtn').onclick = () => { localStorage.removeItem(STORAGE_KEY_PREFIX + 'standard'); startNew(); };
+$('restartBtn').onclick = () => { localStorage.removeItem(STORAGE_KEY_PREFIX + 'standard'); startNew(); };
+$('endlessLeave').onclick = () => { show('resultScreen'); };
+$('langBtn').onclick = () => {
+  lang = lang === 'no' ? 'en' : 'no';
+  localStorage.setItem(STORAGE_KEY_PREFIX + 'lang', lang);
+  document.documentElement.lang = lang;
+  location.reload();
+};
+
+/* tastatur: tallstaster 1-4 velger alternativ (a11y-kravet) */
+document.addEventListener('keydown', (ev) => {
+  const optIx = ['1', '2', '3', '4'].indexOf(ev.key);
+  if (optIx === -1) return;
+  const active = ['gameScreen', 'endlessScreen'].find((s) => !$(s).classList.contains('hidden'));
+  if (!active) return;
+  const btns = $(active === 'gameScreen' ? 'opts' : 'endlessOpts').querySelectorAll('button');
+  if (btns[optIx]) { ev.preventDefault(); btns[optIx].click(); }
+});
+
+renderStatic();
+const saved = loadSave();
+if (saved && !saved.finished) {
+  show('startScreen');
+  $('bannerBox').classList.remove('hidden');
+  $('bannerBox').textContent = fmtKey('game.resumeBanner', Math.min(saved.floorIdx + 1, 16));
+  const resumeBtn = document.createElement('button');
+  resumeBtn.className = 'primary';
+  resumeBtn.textContent = lang === 'no' ? 'Gjenoppta' : 'Resume';
+  resumeBtn.onclick = () => { $('bannerBox').classList.add('hidden'); resume(); };
+  $('startScreen').querySelector('.board').appendChild(document.createElement('br'));
+  $('startScreen').querySelector('.board').appendChild(resumeBtn);
+} else {
+  show('startScreen');
+}
+</script>
+</body>
+</html>

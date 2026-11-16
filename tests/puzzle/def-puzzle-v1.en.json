@@ -1,0 +1,2904 @@
+{
+  "schemaVersion": 1,
+  "id": "puzzle-v1",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "g-score",
+    "metric": "z100",
+    "ci95": true
+  },
+  "dimensions": [
+    {
+      "id": "g",
+      "label": "g-score",
+      "labelLanguage": "en",
+      "description": "General ability, reported as theta with a wide uncertainty band (not normed)."
+    }
+  ],
+  "items": [
+    {
+      "id": "pz-s1h01",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 0△ 0◇ 1○ 3□ 6△ 0◇ ?",
+          "options": [
+            {
+              "label": "5○"
+            },
+            {
+              "label": "6○"
+            },
+            {
+              "label": "5□"
+            },
+            {
+              "label": "0○"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.575
+        }
+      ]
+    },
+    {
+      "id": "pz-s1h02",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 2◇ 3○ 6□ 1△ 8◇ 7○ ?",
+          "options": [
+            {
+              "label": "9□"
+            },
+            {
+              "label": "8□"
+            },
+            {
+              "label": "8△"
+            },
+            {
+              "label": "0□"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.708
+        }
+      ]
+    },
+    {
+      "id": "pz-s1h03",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 4○ 6□ 9△ 3◇ 8○ 4□ ?",
+          "options": [
+            {
+              "label": "1◇"
+            },
+            {
+              "label": "2△"
+            },
+            {
+              "label": "1△"
+            },
+            {
+              "label": "8△"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.842
+        }
+      ]
+    },
+    {
+      "id": "pz-s1h04",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 1□ 1△ 3◇ 7○ 3□ 1△ ?",
+          "options": [
+            {
+              "label": "3◇"
+            },
+            {
+              "label": "2◇"
+            },
+            {
+              "label": "1○"
+            },
+            {
+              "label": "1◇"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.975
+        }
+      ]
+    },
+    {
+      "id": "pz-s1h05",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 3△ 4◇ 6○ 9□ 3△ 8◇ ?",
+          "options": [
+            {
+              "label": "4○"
+            },
+            {
+              "label": "5○"
+            },
+            {
+              "label": "4□"
+            },
+            {
+              "label": "0○"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.108
+        }
+      ]
+    },
+    {
+      "id": "pz-s1h06",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 0◇ 2○ 6□ 2△ 0◇ 0○ ?",
+          "options": [
+            {
+              "label": "3□"
+            },
+            {
+              "label": "2□"
+            },
+            {
+              "label": "2△"
+            },
+            {
+              "label": "4□"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.242
+        }
+      ]
+    },
+    {
+      "id": "pz-s1h07",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 2○ 2□ 3△ 5◇ 8○ 2□ ?",
+          "options": [
+            {
+              "label": "7◇"
+            },
+            {
+              "label": "8△"
+            },
+            {
+              "label": "7△"
+            },
+            {
+              "label": "2△"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.375
+        }
+      ]
+    },
+    {
+      "id": "pz-s1h08",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 4□ 5△ 8◇ 3○ 0□ 9△ ?",
+          "options": [
+            {
+              "label": "2◇"
+            },
+            {
+              "label": "1◇"
+            },
+            {
+              "label": "0○"
+            },
+            {
+              "label": "0◇"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.508
+        }
+      ]
+    },
+    {
+      "id": "pz-s1h09",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 1△ 3◇ 6○ 0□ 5△ 1◇ ?",
+          "options": [
+            {
+              "label": "8○"
+            },
+            {
+              "label": "9○"
+            },
+            {
+              "label": "8□"
+            },
+            {
+              "label": "5○"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.642
+        }
+      ]
+    },
+    {
+      "id": "pz-s1h10",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 3◇ 3○ 5□ 9△ 5◇ 3○ ?",
+          "options": [
+            {
+              "label": "4□"
+            },
+            {
+              "label": "3□"
+            },
+            {
+              "label": "3△"
+            },
+            {
+              "label": "5□"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.775
+        }
+      ]
+    },
+    {
+      "id": "pz-s1l01",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 1○ 2□ 3△ 4◇ 5○ 6□ ?",
+          "options": [
+            {
+              "label": "7△"
+            },
+            {
+              "label": "8△"
+            },
+            {
+              "label": "7□"
+            },
+            {
+              "label": "3△"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.925
+        }
+      ]
+    },
+    {
+      "id": "pz-s1l02",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 4□ 6△ 8◇ 0○ 2□ 4△ ?",
+          "options": [
+            {
+              "label": "7◇"
+            },
+            {
+              "label": "6◇"
+            },
+            {
+              "label": "6△"
+            },
+            {
+              "label": "2◇"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.792
+        }
+      ]
+    },
+    {
+      "id": "pz-s1l03",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 0△ 3◇ 6○ 9□ 2△ 5◇ ?",
+          "options": [
+            {
+              "label": "8◇"
+            },
+            {
+              "label": "9○"
+            },
+            {
+              "label": "8○"
+            },
+            {
+              "label": "4○"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.658
+        }
+      ]
+    },
+    {
+      "id": "pz-s1l04",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 0◇ 1○ 2□ 3△ 4◇ 5○ ?",
+          "options": [
+            {
+              "label": "2□"
+            },
+            {
+              "label": "7□"
+            },
+            {
+              "label": "6○"
+            },
+            {
+              "label": "6□"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.525
+        }
+      ]
+    },
+    {
+      "id": "pz-s1l05",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 3○ 5□ 7△ 9◇ 1○ 3□ ?",
+          "options": [
+            {
+              "label": "5△"
+            },
+            {
+              "label": "6△"
+            },
+            {
+              "label": "5□"
+            },
+            {
+              "label": "1△"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.392
+        }
+      ]
+    },
+    {
+      "id": "pz-s1l06",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 6□ 9△ 2◇ 5○ 8□ 1△ ?",
+          "options": [
+            {
+              "label": "5◇"
+            },
+            {
+              "label": "4◇"
+            },
+            {
+              "label": "4△"
+            },
+            {
+              "label": "0◇"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.258
+        }
+      ]
+    },
+    {
+      "id": "pz-s1l07",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 6△ 7◇ 8○ 9□ 0△ 1◇ ?",
+          "options": [
+            {
+              "label": "2◇"
+            },
+            {
+              "label": "3○"
+            },
+            {
+              "label": "2○"
+            },
+            {
+              "label": "8○"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.125
+        }
+      ]
+    },
+    {
+      "id": "pz-s1l08",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 2◇ 4○ 6□ 8△ 0◇ 2○ ?",
+          "options": [
+            {
+              "label": "0□"
+            },
+            {
+              "label": "5□"
+            },
+            {
+              "label": "4○"
+            },
+            {
+              "label": "4□"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.992
+        }
+      ]
+    },
+    {
+      "id": "pz-s1l09",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 5○ 8□ 1△ 4◇ 7○ 0□ ?",
+          "options": [
+            {
+              "label": "3△"
+            },
+            {
+              "label": "4△"
+            },
+            {
+              "label": "3□"
+            },
+            {
+              "label": "9△"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.858
+        }
+      ]
+    },
+    {
+      "id": "pz-s1l10",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 5□ 6△ 7◇ 8○ 9□ 0△ ?",
+          "options": [
+            {
+              "label": "2◇"
+            },
+            {
+              "label": "1◇"
+            },
+            {
+              "label": "1△"
+            },
+            {
+              "label": "7◇"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.725
+        }
+      ]
+    },
+    {
+      "id": "pz-s1m01",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 1□ 2△ 0◇ 1○ 9□ 0△ ?",
+          "options": [
+            {
+              "label": "8◇"
+            },
+            {
+              "label": "1◇"
+            },
+            {
+              "label": "8○"
+            },
+            {
+              "label": "0◇"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.425
+        }
+      ]
+    },
+    {
+      "id": "pz-s1m02",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 5△ 7◇ 4○ 6□ 3△ 5◇ ?",
+          "options": [
+            {
+              "label": "7○"
+            },
+            {
+              "label": "2○"
+            },
+            {
+              "label": "2□"
+            },
+            {
+              "label": "5○"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.347
+        }
+      ]
+    },
+    {
+      "id": "pz-s1m03",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 1◇ 4○ 3□ 6△ 5◇ 8○ ?",
+          "options": [
+            {
+              "label": "7△"
+            },
+            {
+              "label": "1□"
+            },
+            {
+              "label": "7□"
+            },
+            {
+              "label": "8□"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.269
+        }
+      ]
+    },
+    {
+      "id": "pz-s1m04",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 2○ 3□ 1△ 2◇ 0○ 1□ ?",
+          "options": [
+            {
+              "label": "1△"
+            },
+            {
+              "label": "2△"
+            },
+            {
+              "label": "9◇"
+            },
+            {
+              "label": "9△"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.192
+        }
+      ]
+    },
+    {
+      "id": "pz-s1m05",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 6□ 8△ 5◇ 7○ 4□ 6△ ?",
+          "options": [
+            {
+              "label": "3◇"
+            },
+            {
+              "label": "8◇"
+            },
+            {
+              "label": "3○"
+            },
+            {
+              "label": "6◇"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.114
+        }
+      ]
+    },
+    {
+      "id": "pz-s1m06",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 2△ 5◇ 4○ 7□ 6△ 9◇ ?",
+          "options": [
+            {
+              "label": "2○"
+            },
+            {
+              "label": "8○"
+            },
+            {
+              "label": "8□"
+            },
+            {
+              "label": "9○"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.036
+        }
+      ]
+    },
+    {
+      "id": "pz-s1m07",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 3◇ 4○ 2□ 3△ 1◇ 2○ ?",
+          "options": [
+            {
+              "label": "0△"
+            },
+            {
+              "label": "3□"
+            },
+            {
+              "label": "0□"
+            },
+            {
+              "label": "2□"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.042
+        }
+      ]
+    },
+    {
+      "id": "pz-s1m08",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 7○ 9□ 6△ 8◇ 5○ 7□ ?",
+          "options": [
+            {
+              "label": "7△"
+            },
+            {
+              "label": "9△"
+            },
+            {
+              "label": "4◇"
+            },
+            {
+              "label": "4△"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.119
+        }
+      ]
+    },
+    {
+      "id": "pz-s1m09",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 3□ 6△ 5◇ 8○ 7□ 0△ ?",
+          "options": [
+            {
+              "label": "9◇"
+            },
+            {
+              "label": "3◇"
+            },
+            {
+              "label": "9○"
+            },
+            {
+              "label": "0◇"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.197
+        }
+      ]
+    },
+    {
+      "id": "pz-s1m10",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The sequence follows a fixed rule for the digit and a fixed rule for the shape. Which tile comes next: 4△ 5◇ 3○ 4□ 2△ 3◇ ?",
+          "options": [
+            {
+              "label": "4○"
+            },
+            {
+              "label": "1○"
+            },
+            {
+              "label": "1□"
+            },
+            {
+              "label": "3○"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.275
+        }
+      ]
+    },
+    {
+      "id": "pz-s2h01",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 5○ 0◇ 5△ 0□ 5○ 0◇ ?",
+          "options": [
+            {
+              "label": "5△"
+            },
+            {
+              "label": "6△"
+            },
+            {
+              "label": "5◇"
+            },
+            {
+              "label": "7◇"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.575
+        }
+      ]
+    },
+    {
+      "id": "pz-s2h02",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 0□ 6○ 2◇ 8△ 4□ 0○ ?",
+          "options": [
+            {
+              "label": "7◇"
+            },
+            {
+              "label": "6◇"
+            },
+            {
+              "label": "6○"
+            },
+            {
+              "label": "8○"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.708
+        }
+      ]
+    },
+    {
+      "id": "pz-s2h03",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 5△ 2□ 9○ 6◇ 3△ 0□ ?",
+          "options": [
+            {
+              "label": "7□"
+            },
+            {
+              "label": "8○"
+            },
+            {
+              "label": "7○"
+            },
+            {
+              "label": "9□"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.842
+        }
+      ]
+    },
+    {
+      "id": "pz-s2h04",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 7◇ 2△ 7□ 2○ 7◇ 2△ ?",
+          "options": [
+            {
+              "label": "9△"
+            },
+            {
+              "label": "8□"
+            },
+            {
+              "label": "7△"
+            },
+            {
+              "label": "7□"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.975
+        }
+      ]
+    },
+    {
+      "id": "pz-s2h05",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 2○ 8◇ 4△ 0□ 6○ 2◇ ?",
+          "options": [
+            {
+              "label": "8△"
+            },
+            {
+              "label": "9△"
+            },
+            {
+              "label": "8◇"
+            },
+            {
+              "label": "0◇"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.108
+        }
+      ]
+    },
+    {
+      "id": "pz-s2h06",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 7□ 4○ 1◇ 8△ 5□ 2○ ?",
+          "options": [
+            {
+              "label": "0◇"
+            },
+            {
+              "label": "9◇"
+            },
+            {
+              "label": "9○"
+            },
+            {
+              "label": "1○"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.242
+        }
+      ]
+    },
+    {
+      "id": "pz-s2h07",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 9△ 4□ 9○ 4◇ 9△ 4□ ?",
+          "options": [
+            {
+              "label": "9□"
+            },
+            {
+              "label": "0○"
+            },
+            {
+              "label": "9○"
+            },
+            {
+              "label": "1□"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.375
+        }
+      ]
+    },
+    {
+      "id": "pz-s2h08",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 4◇ 0△ 6□ 2○ 8◇ 4△ ?",
+          "options": [
+            {
+              "label": "2△"
+            },
+            {
+              "label": "1□"
+            },
+            {
+              "label": "0△"
+            },
+            {
+              "label": "0□"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.508
+        }
+      ]
+    },
+    {
+      "id": "pz-s2h09",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 9○ 6◇ 3△ 0□ 7○ 4◇ ?",
+          "options": [
+            {
+              "label": "1△"
+            },
+            {
+              "label": "2△"
+            },
+            {
+              "label": "1◇"
+            },
+            {
+              "label": "3◇"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.642
+        }
+      ]
+    },
+    {
+      "id": "pz-s2h10",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 1□ 6○ 1◇ 6△ 1□ 6○ ?",
+          "options": [
+            {
+              "label": "2◇"
+            },
+            {
+              "label": "1◇"
+            },
+            {
+              "label": "1○"
+            },
+            {
+              "label": "3○"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.775
+        }
+      ]
+    },
+    {
+      "id": "pz-s2l01",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 1○ 2□ 3△ 4◇ 5○ 6□ ?",
+          "options": [
+            {
+              "label": "7△"
+            },
+            {
+              "label": "8△"
+            },
+            {
+              "label": "7◇"
+            },
+            {
+              "label": "9◇"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.925
+        }
+      ]
+    },
+    {
+      "id": "pz-s2l02",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 6□ 8△ 0◇ 2○ 4□ 6△ ?",
+          "options": [
+            {
+              "label": "9◇"
+            },
+            {
+              "label": "8◇"
+            },
+            {
+              "label": "8○"
+            },
+            {
+              "label": "0○"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.792
+        }
+      ]
+    },
+    {
+      "id": "pz-s2l03",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 9△ 0◇ 1○ 2□ 3△ 4◇ ?",
+          "options": [
+            {
+              "label": "5□"
+            },
+            {
+              "label": "6○"
+            },
+            {
+              "label": "5○"
+            },
+            {
+              "label": "7□"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.658
+        }
+      ]
+    },
+    {
+      "id": "pz-s2l04",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 4◇ 6○ 8□ 0△ 2◇ 4○ ?",
+          "options": [
+            {
+              "label": "8△"
+            },
+            {
+              "label": "7□"
+            },
+            {
+              "label": "6△"
+            },
+            {
+              "label": "6□"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.525
+        }
+      ]
+    },
+    {
+      "id": "pz-s2l05",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 7○ 8□ 9△ 0◇ 1○ 2□ ?",
+          "options": [
+            {
+              "label": "3△"
+            },
+            {
+              "label": "4△"
+            },
+            {
+              "label": "3◇"
+            },
+            {
+              "label": "5◇"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.392
+        }
+      ]
+    },
+    {
+      "id": "pz-s2l06",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 2□ 4△ 6◇ 8○ 0□ 2△ ?",
+          "options": [
+            {
+              "label": "5◇"
+            },
+            {
+              "label": "4◇"
+            },
+            {
+              "label": "4○"
+            },
+            {
+              "label": "6○"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.258
+        }
+      ]
+    },
+    {
+      "id": "pz-s2l07",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 5△ 6◇ 7○ 8□ 9△ 0◇ ?",
+          "options": [
+            {
+              "label": "1□"
+            },
+            {
+              "label": "2○"
+            },
+            {
+              "label": "1○"
+            },
+            {
+              "label": "3□"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.125
+        }
+      ]
+    },
+    {
+      "id": "pz-s2l08",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 0◇ 2○ 4□ 6△ 8◇ 0○ ?",
+          "options": [
+            {
+              "label": "4△"
+            },
+            {
+              "label": "3□"
+            },
+            {
+              "label": "2△"
+            },
+            {
+              "label": "2□"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.992
+        }
+      ]
+    },
+    {
+      "id": "pz-s2l09",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 3○ 4□ 5△ 6◇ 7○ 8□ ?",
+          "options": [
+            {
+              "label": "9△"
+            },
+            {
+              "label": "0△"
+            },
+            {
+              "label": "9◇"
+            },
+            {
+              "label": "1◇"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.858
+        }
+      ]
+    },
+    {
+      "id": "pz-s2l10",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 8□ 0△ 2◇ 4○ 6□ 8△ ?",
+          "options": [
+            {
+              "label": "1◇"
+            },
+            {
+              "label": "0◇"
+            },
+            {
+              "label": "0○"
+            },
+            {
+              "label": "2○"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.725
+        }
+      ]
+    },
+    {
+      "id": "pz-s2m01",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 3○ 6△ 9○ 2△ 5○ 8△ ?",
+          "options": [
+            {
+              "label": "1○"
+            },
+            {
+              "label": "2○"
+            },
+            {
+              "label": "1□"
+            },
+            {
+              "label": "3□"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.425
+        }
+      ]
+    },
+    {
+      "id": "pz-s2m02",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 8□ 2◇ 6□ 0◇ 4□ 8◇ ?",
+          "options": [
+            {
+              "label": "3□"
+            },
+            {
+              "label": "2□"
+            },
+            {
+              "label": "2△"
+            },
+            {
+              "label": "4△"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.347
+        }
+      ]
+    },
+    {
+      "id": "pz-s2m03",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 1△ 4○ 7△ 0○ 3△ 6○ ?",
+          "options": [
+            {
+              "label": "9◇"
+            },
+            {
+              "label": "0△"
+            },
+            {
+              "label": "9△"
+            },
+            {
+              "label": "1◇"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.269
+        }
+      ]
+    },
+    {
+      "id": "pz-s2m04",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 6◇ 0□ 4◇ 8□ 2◇ 6□ ?",
+          "options": [
+            {
+              "label": "2○"
+            },
+            {
+              "label": "1◇"
+            },
+            {
+              "label": "0○"
+            },
+            {
+              "label": "0◇"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.192
+        }
+      ]
+    },
+    {
+      "id": "pz-s2m05",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 9○ 2△ 5○ 8△ 1○ 4△ ?",
+          "options": [
+            {
+              "label": "7○"
+            },
+            {
+              "label": "8○"
+            },
+            {
+              "label": "7□"
+            },
+            {
+              "label": "9□"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.114
+        }
+      ]
+    },
+    {
+      "id": "pz-s2m06",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 4□ 8◇ 2□ 6◇ 0□ 4◇ ?",
+          "options": [
+            {
+              "label": "9□"
+            },
+            {
+              "label": "8□"
+            },
+            {
+              "label": "8△"
+            },
+            {
+              "label": "0△"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.036
+        }
+      ]
+    },
+    {
+      "id": "pz-s2m07",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 7△ 0○ 3△ 6○ 9△ 2○ ?",
+          "options": [
+            {
+              "label": "5◇"
+            },
+            {
+              "label": "6△"
+            },
+            {
+              "label": "5△"
+            },
+            {
+              "label": "7◇"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.042
+        }
+      ]
+    },
+    {
+      "id": "pz-s2m08",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 2◇ 6□ 0◇ 4□ 8◇ 2□ ?",
+          "options": [
+            {
+              "label": "8○"
+            },
+            {
+              "label": "7◇"
+            },
+            {
+              "label": "6○"
+            },
+            {
+              "label": "6◇"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.119
+        }
+      ]
+    },
+    {
+      "id": "pz-s2m09",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 5○ 8△ 1○ 4△ 7○ 0△ ?",
+          "options": [
+            {
+              "label": "3○"
+            },
+            {
+              "label": "4○"
+            },
+            {
+              "label": "3□"
+            },
+            {
+              "label": "5□"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.197
+        }
+      ]
+    },
+    {
+      "id": "pz-s2m10",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Each next tile follows a fixed change rule for both digit and shape. Which tile comes next: 0□ 4◇ 8□ 2◇ 6□ 0◇ ?",
+          "options": [
+            {
+              "label": "5□"
+            },
+            {
+              "label": "4□"
+            },
+            {
+              "label": "4△"
+            },
+            {
+              "label": "6△"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.275
+        }
+      ]
+    },
+    {
+      "id": "pz-s3h01",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 2○ 4△ 4□ 8○ 6△ 2△ 8◇ ?",
+          "options": [
+            {
+              "label": "0○"
+            },
+            {
+              "label": "1○"
+            },
+            {
+              "label": "0□"
+            },
+            {
+              "label": "6○"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.575
+        }
+      ]
+    },
+    {
+      "id": "pz-s3h02",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 6□ 0◇ 9△ 5□ 2◇ 0◇ 5○ ?",
+          "options": [
+            {
+              "label": "9□"
+            },
+            {
+              "label": "8□"
+            },
+            {
+              "label": "8△"
+            },
+            {
+              "label": "5□"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.708
+        }
+      ]
+    },
+    {
+      "id": "pz-s3h03",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 8△ 4○ 0◇ 8△ 2○ 2○ 4□ ?",
+          "options": [
+            {
+              "label": "6◇"
+            },
+            {
+              "label": "7△"
+            },
+            {
+              "label": "6△"
+            },
+            {
+              "label": "8△"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.842
+        }
+      ]
+    },
+    {
+      "id": "pz-s3h04",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 2◇ 0□ 5○ 5◇ 8□ 0□ 1△ ?",
+          "options": [
+            {
+              "label": "6◇"
+            },
+            {
+              "label": "5◇"
+            },
+            {
+              "label": "4○"
+            },
+            {
+              "label": "4◇"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.975
+        }
+      ]
+    },
+    {
+      "id": "pz-s3h05",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 4○ 4△ 6□ 8○ 8△ 2△ 0◇ ?",
+          "options": [
+            {
+              "label": "2○"
+            },
+            {
+              "label": "3○"
+            },
+            {
+              "label": "2□"
+            },
+            {
+              "label": "6○"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.108
+        }
+      ]
+    },
+    {
+      "id": "pz-s3h06",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 8□ 0◇ 1△ 5□ 4◇ 0◇ 7○ ?",
+          "options": [
+            {
+              "label": "1□"
+            },
+            {
+              "label": "0□"
+            },
+            {
+              "label": "0△"
+            },
+            {
+              "label": "5□"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.242
+        }
+      ]
+    },
+    {
+      "id": "pz-s3h07",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 0△ 4○ 2◇ 8△ 4○ 2○ 6□ ?",
+          "options": [
+            {
+              "label": "8◇"
+            },
+            {
+              "label": "9△"
+            },
+            {
+              "label": "8△"
+            },
+            {
+              "label": "6△"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.375
+        }
+      ]
+    },
+    {
+      "id": "pz-s3h08",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 4◇ 0□ 7○ 5◇ 0□ 0□ 3△ ?",
+          "options": [
+            {
+              "label": "5◇"
+            },
+            {
+              "label": "7◇"
+            },
+            {
+              "label": "6○"
+            },
+            {
+              "label": "6◇"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.508
+        }
+      ]
+    },
+    {
+      "id": "pz-s3h09",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 6○ 4△ 8□ 8○ 0△ 2△ 2◇ ?",
+          "options": [
+            {
+              "label": "4○"
+            },
+            {
+              "label": "5○"
+            },
+            {
+              "label": "4□"
+            },
+            {
+              "label": "6○"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.642
+        }
+      ]
+    },
+    {
+      "id": "pz-s3h10",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 0□ 0◇ 3△ 5□ 6◇ 0◇ 9○ ?",
+          "options": [
+            {
+              "label": "3□"
+            },
+            {
+              "label": "2□"
+            },
+            {
+              "label": "2△"
+            },
+            {
+              "label": "5□"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.775
+        }
+      ]
+    },
+    {
+      "id": "pz-s3l01",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 1○ 2△ 2□ 4△ 3△ 6△ 4◇ ?",
+          "options": [
+            {
+              "label": "5○"
+            },
+            {
+              "label": "6○"
+            },
+            {
+              "label": "5□"
+            },
+            {
+              "label": "8△"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.925
+        }
+      ]
+    },
+    {
+      "id": "pz-s3l02",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 4□ 7◇ 5△ 9◇ 6◇ 1◇ 7○ ?",
+          "options": [
+            {
+              "label": "9□"
+            },
+            {
+              "label": "8□"
+            },
+            {
+              "label": "8△"
+            },
+            {
+              "label": "3◇"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.792
+        }
+      ]
+    },
+    {
+      "id": "pz-s3l03",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 7△ 2○ 8◇ 4○ 9○ 6○ 0□ ?",
+          "options": [
+            {
+              "label": "1◇"
+            },
+            {
+              "label": "2△"
+            },
+            {
+              "label": "1△"
+            },
+            {
+              "label": "8○"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.658
+        }
+      ]
+    },
+    {
+      "id": "pz-s3l04",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 0◇ 7□ 1○ 9□ 2□ 1□ 3△ ?",
+          "options": [
+            {
+              "label": "3□"
+            },
+            {
+              "label": "5◇"
+            },
+            {
+              "label": "4○"
+            },
+            {
+              "label": "4◇"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.525
+        }
+      ]
+    },
+    {
+      "id": "pz-s3l05",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 3○ 2△ 4□ 4△ 5△ 6△ 6◇ ?",
+          "options": [
+            {
+              "label": "7○"
+            },
+            {
+              "label": "8○"
+            },
+            {
+              "label": "7□"
+            },
+            {
+              "label": "8△"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.392
+        }
+      ]
+    },
+    {
+      "id": "pz-s3l06",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 6□ 7◇ 7△ 9◇ 8◇ 1◇ 9○ ?",
+          "options": [
+            {
+              "label": "1□"
+            },
+            {
+              "label": "0□"
+            },
+            {
+              "label": "0△"
+            },
+            {
+              "label": "3◇"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.258
+        }
+      ]
+    },
+    {
+      "id": "pz-s3l07",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 9△ 2○ 0◇ 4○ 1○ 6○ 2□ ?",
+          "options": [
+            {
+              "label": "3◇"
+            },
+            {
+              "label": "4△"
+            },
+            {
+              "label": "3△"
+            },
+            {
+              "label": "8○"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.125
+        }
+      ]
+    },
+    {
+      "id": "pz-s3l08",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 2◇ 7□ 3○ 9□ 4□ 1□ 5△ ?",
+          "options": [
+            {
+              "label": "3□"
+            },
+            {
+              "label": "7◇"
+            },
+            {
+              "label": "6○"
+            },
+            {
+              "label": "6◇"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.992
+        }
+      ]
+    },
+    {
+      "id": "pz-s3l09",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 5○ 2△ 6□ 4△ 7△ 6△ 8◇ ?",
+          "options": [
+            {
+              "label": "9○"
+            },
+            {
+              "label": "0○"
+            },
+            {
+              "label": "9□"
+            },
+            {
+              "label": "8△"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.858
+        }
+      ]
+    },
+    {
+      "id": "pz-s3l10",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 8□ 7◇ 9△ 9◇ 0◇ 1◇ 1○ ?",
+          "options": [
+            {
+              "label": "3□"
+            },
+            {
+              "label": "2□"
+            },
+            {
+              "label": "2△"
+            },
+            {
+              "label": "3◇"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.725
+        }
+      ]
+    },
+    {
+      "id": "pz-s3m01",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 2○ 1△ 4□ 2◇ 6△ 3○ 8◇ ?",
+          "options": [
+            {
+              "label": "0○"
+            },
+            {
+              "label": "1○"
+            },
+            {
+              "label": "0□"
+            },
+            {
+              "label": "4□"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.425
+        }
+      ]
+    },
+    {
+      "id": "pz-s3m02",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 5□ 6◇ 7△ 7○ 9◇ 8□ 1○ ?",
+          "options": [
+            {
+              "label": "4□"
+            },
+            {
+              "label": "3□"
+            },
+            {
+              "label": "3△"
+            },
+            {
+              "label": "9△"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.347
+        }
+      ]
+    },
+    {
+      "id": "pz-s3m03",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 8△ 1○ 0◇ 2□ 2○ 3△ 4□ ?",
+          "options": [
+            {
+              "label": "6◇"
+            },
+            {
+              "label": "7△"
+            },
+            {
+              "label": "6△"
+            },
+            {
+              "label": "4◇"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.269
+        }
+      ]
+    },
+    {
+      "id": "pz-s3m04",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 1◇ 6□ 3○ 7△ 5□ 8◇ 7△ ?",
+          "options": [
+            {
+              "label": "0○"
+            },
+            {
+              "label": "0◇"
+            },
+            {
+              "label": "9○"
+            },
+            {
+              "label": "9◇"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.192
+        }
+      ]
+    },
+    {
+      "id": "pz-s3m05",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 4○ 1△ 6□ 2◇ 8△ 3○ 0◇ ?",
+          "options": [
+            {
+              "label": "2○"
+            },
+            {
+              "label": "3○"
+            },
+            {
+              "label": "2□"
+            },
+            {
+              "label": "4□"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.114
+        }
+      ]
+    },
+    {
+      "id": "pz-s3m06",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 7□ 6◇ 9△ 7○ 1◇ 8□ 3○ ?",
+          "options": [
+            {
+              "label": "6□"
+            },
+            {
+              "label": "5□"
+            },
+            {
+              "label": "5△"
+            },
+            {
+              "label": "9△"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.036
+        }
+      ]
+    },
+    {
+      "id": "pz-s3m07",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 0△ 1○ 2◇ 2□ 4○ 3△ 6□ ?",
+          "options": [
+            {
+              "label": "8◇"
+            },
+            {
+              "label": "9△"
+            },
+            {
+              "label": "8△"
+            },
+            {
+              "label": "4◇"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.042
+        }
+      ]
+    },
+    {
+      "id": "pz-s3m08",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 3◇ 6□ 5○ 7△ 7□ 8◇ 9△ ?",
+          "options": [
+            {
+              "label": "9○"
+            },
+            {
+              "label": "2◇"
+            },
+            {
+              "label": "1○"
+            },
+            {
+              "label": "1◇"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.119
+        }
+      ]
+    },
+    {
+      "id": "pz-s3m09",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 6○ 1△ 8□ 2◇ 0△ 3○ 2◇ ?",
+          "options": [
+            {
+              "label": "4○"
+            },
+            {
+              "label": "5○"
+            },
+            {
+              "label": "4□"
+            },
+            {
+              "label": "5□"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.197
+        }
+      ]
+    },
+    {
+      "id": "pz-s3m10",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Two rules alternate between positions in the sequence. Which tile comes next: 9□ 6◇ 1△ 7○ 3◇ 8□ 5○ ?",
+          "options": [
+            {
+              "label": "8□"
+            },
+            {
+              "label": "7□"
+            },
+            {
+              "label": "7△"
+            },
+            {
+              "label": "9△"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.275
+        }
+      ]
+    }
+  ]
+}

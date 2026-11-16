@@ -1,0 +1,2611 @@
+{
+  "poolVersion": "puzzle-pool-v1",
+  "generator": "gen_puzzle_pool.py",
+  "date": "2026-11-16",
+  "testId": "puzzle-v1",
+  "deterministic": true,
+  "noRng": true,
+  "counts": {
+    "total": 90,
+    "perType": {
+      "s1": 30,
+      "s2": 30,
+      "s3": 30
+    },
+    "perBand": {
+      "L": 30,
+      "M": 30,
+      "H": 30
+    },
+    "perBandPerType": 10
+  },
+  "bands": {
+    "L": [
+      -2.0,
+      -0.5
+    ],
+    "M": [
+      -0.5,
+      0.5
+    ],
+    "H": [
+      0.5,
+      2.0
+    ]
+  },
+  "bSlots": "b = base + step*i: L base -1.925 step 0.1333; M base -0.425 step 0.0778; H base 0.575 step 0.1333 (i=0..9) — alle b midt i IRT-vinduene",
+  "optionsPerItem": 4,
+  "distractorPolicy": "1-rule-off: hver distraktor bryter eksakt ett regelledd",
+  "items": {
+    "pz-s1l01": {
+      "subtype": "s1",
+      "band": "L",
+      "b": -1.925,
+      "rule": {
+        "kind": "arith",
+        "a0": 1,
+        "c": 1,
+        "off": 0
+      },
+      "tilesShown": [
+        "1○",
+        "2□",
+        "3△",
+        "4◇",
+        "5○",
+        "6□"
+      ],
+      "correctGlyph": "7△",
+      "distractorGlyphs": [
+        "8△",
+        "7□",
+        "3△"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s1l02": {
+      "subtype": "s1",
+      "band": "L",
+      "b": -1.792,
+      "rule": {
+        "kind": "arith",
+        "a0": 4,
+        "c": 2,
+        "off": 1
+      },
+      "tilesShown": [
+        "4□",
+        "6△",
+        "8◇",
+        "0○",
+        "2□",
+        "4△"
+      ],
+      "correctGlyph": "6◇",
+      "distractorGlyphs": [
+        "7◇",
+        "6△",
+        "2◇"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s1l03": {
+      "subtype": "s1",
+      "band": "L",
+      "b": -1.658,
+      "rule": {
+        "kind": "arith",
+        "a0": 0,
+        "c": 3,
+        "off": 2
+      },
+      "tilesShown": [
+        "0△",
+        "3◇",
+        "6○",
+        "9□",
+        "2△",
+        "5◇"
+      ],
+      "correctGlyph": "8○",
+      "distractorGlyphs": [
+        "9○",
+        "8◇",
+        "4○"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s1l04": {
+      "subtype": "s1",
+      "band": "L",
+      "b": -1.525,
+      "rule": {
+        "kind": "arith",
+        "a0": 0,
+        "c": 1,
+        "off": 3
+      },
+      "tilesShown": [
+        "0◇",
+        "1○",
+        "2□",
+        "3△",
+        "4◇",
+        "5○"
+      ],
+      "correctGlyph": "6□",
+      "distractorGlyphs": [
+        "7□",
+        "6○",
+        "2□"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s1l05": {
+      "subtype": "s1",
+      "band": "L",
+      "b": -1.392,
+      "rule": {
+        "kind": "arith",
+        "a0": 3,
+        "c": 2,
+        "off": 0
+      },
+      "tilesShown": [
+        "3○",
+        "5□",
+        "7△",
+        "9◇",
+        "1○",
+        "3□"
+      ],
+      "correctGlyph": "5△",
+      "distractorGlyphs": [
+        "6△",
+        "5□",
+        "1△"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s1l06": {
+      "subtype": "s1",
+      "band": "L",
+      "b": -1.258,
+      "rule": {
+        "kind": "arith",
+        "a0": 6,
+        "c": 3,
+        "off": 1
+      },
+      "tilesShown": [
+        "6□",
+        "9△",
+        "2◇",
+        "5○",
+        "8□",
+        "1△"
+      ],
+      "correctGlyph": "4◇",
+      "distractorGlyphs": [
+        "5◇",
+        "4△",
+        "0◇"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s1l07": {
+      "subtype": "s1",
+      "band": "L",
+      "b": -1.125,
+      "rule": {
+        "kind": "arith",
+        "a0": 6,
+        "c": 1,
+        "off": 2
+      },
+      "tilesShown": [
+        "6△",
+        "7◇",
+        "8○",
+        "9□",
+        "0△",
+        "1◇"
+      ],
+      "correctGlyph": "2○",
+      "distractorGlyphs": [
+        "3○",
+        "2◇",
+        "8○"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s1l08": {
+      "subtype": "s1",
+      "band": "L",
+      "b": -0.992,
+      "rule": {
+        "kind": "arith",
+        "a0": 2,
+        "c": 2,
+        "off": 3
+      },
+      "tilesShown": [
+        "2◇",
+        "4○",
+        "6□",
+        "8△",
+        "0◇",
+        "2○"
+      ],
+      "correctGlyph": "4□",
+      "distractorGlyphs": [
+        "5□",
+        "4○",
+        "0□"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s1l09": {
+      "subtype": "s1",
+      "band": "L",
+      "b": -0.858,
+      "rule": {
+        "kind": "arith",
+        "a0": 5,
+        "c": 3,
+        "off": 0
+      },
+      "tilesShown": [
+        "5○",
+        "8□",
+        "1△",
+        "4◇",
+        "7○",
+        "0□"
+      ],
+      "correctGlyph": "3△",
+      "distractorGlyphs": [
+        "4△",
+        "3□",
+        "9△"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s1l10": {
+      "subtype": "s1",
+      "band": "L",
+      "b": -0.725,
+      "rule": {
+        "kind": "arith",
+        "a0": 5,
+        "c": 1,
+        "off": 1
+      },
+      "tilesShown": [
+        "5□",
+        "6△",
+        "7◇",
+        "8○",
+        "9□",
+        "0△"
+      ],
+      "correctGlyph": "1◇",
+      "distractorGlyphs": [
+        "2◇",
+        "1△",
+        "7◇"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s1m01": {
+      "subtype": "s1",
+      "band": "M",
+      "b": -0.425,
+      "rule": {
+        "kind": "alt",
+        "a0": 1,
+        "c1": 1,
+        "c2": 2,
+        "off": 1
+      },
+      "tilesShown": [
+        "1□",
+        "2△",
+        "0◇",
+        "1○",
+        "9□",
+        "0△"
+      ],
+      "correctGlyph": "8◇",
+      "distractorGlyphs": [
+        "1◇",
+        "8○",
+        "0◇"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s1m02": {
+      "subtype": "s1",
+      "band": "M",
+      "b": -0.347,
+      "rule": {
+        "kind": "alt",
+        "a0": 5,
+        "c1": 2,
+        "c2": 3,
+        "off": 2
+      },
+      "tilesShown": [
+        "5△",
+        "7◇",
+        "4○",
+        "6□",
+        "3△",
+        "5◇"
+      ],
+      "correctGlyph": "2○",
+      "distractorGlyphs": [
+        "7○",
+        "2□",
+        "5○"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s1m03": {
+      "subtype": "s1",
+      "band": "M",
+      "b": -0.269,
+      "rule": {
+        "kind": "alt",
+        "a0": 1,
+        "c1": 3,
+        "c2": 1,
+        "off": 3
+      },
+      "tilesShown": [
+        "1◇",
+        "4○",
+        "3□",
+        "6△",
+        "5◇",
+        "8○"
+      ],
+      "correctGlyph": "7□",
+      "distractorGlyphs": [
+        "1□",
+        "7△",
+        "8□"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s1m04": {
+      "subtype": "s1",
+      "band": "M",
+      "b": -0.192,
+      "rule": {
+        "kind": "alt",
+        "a0": 2,
+        "c1": 1,
+        "c2": 2,
+        "off": 0
+      },
+      "tilesShown": [
+        "2○",
+        "3□",
+        "1△",
+        "2◇",
+        "0○",
+        "1□"
+      ],
+      "correctGlyph": "9△",
+      "distractorGlyphs": [
+        "2△",
+        "9◇",
+        "1△"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s1m05": {
+      "subtype": "s1",
+      "band": "M",
+      "b": -0.114,
+      "rule": {
+        "kind": "alt",
+        "a0": 6,
+        "c1": 2,
+        "c2": 3,
+        "off": 1
+      },
+      "tilesShown": [
+        "6□",
+        "8△",
+        "5◇",
+        "7○",
+        "4□",
+        "6△"
+      ],
+      "correctGlyph": "3◇",
+      "distractorGlyphs": [
+        "8◇",
+        "3○",
+        "6◇"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s1m06": {
+      "subtype": "s1",
+      "band": "M",
+      "b": -0.036,
+      "rule": {
+        "kind": "alt",
+        "a0": 2,
+        "c1": 3,
+        "c2": 1,
+        "off": 2
+      },
+      "tilesShown": [
+        "2△",
+        "5◇",
+        "4○",
+        "7□",
+        "6△",
+        "9◇"
+      ],
+      "correctGlyph": "8○",
+      "distractorGlyphs": [
+        "2○",
+        "8□",
+        "9○"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s1m07": {
+      "subtype": "s1",
+      "band": "M",
+      "b": 0.042,
+      "rule": {
+        "kind": "alt",
+        "a0": 3,
+        "c1": 1,
+        "c2": 2,
+        "off": 3
+      },
+      "tilesShown": [
+        "3◇",
+        "4○",
+        "2□",
+        "3△",
+        "1◇",
+        "2○"
+      ],
+      "correctGlyph": "0□",
+      "distractorGlyphs": [
+        "3□",
+        "0△",
+        "2□"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s1m08": {
+      "subtype": "s1",
+      "band": "M",
+      "b": 0.119,
+      "rule": {
+        "kind": "alt",
+        "a0": 7,
+        "c1": 2,
+        "c2": 3,
+        "off": 0
+      },
+      "tilesShown": [
+        "7○",
+        "9□",
+        "6△",
+        "8◇",
+        "5○",
+        "7□"
+      ],
+      "correctGlyph": "4△",
+      "distractorGlyphs": [
+        "9△",
+        "4◇",
+        "7△"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s1m09": {
+      "subtype": "s1",
+      "band": "M",
+      "b": 0.197,
+      "rule": {
+        "kind": "alt",
+        "a0": 3,
+        "c1": 3,
+        "c2": 1,
+        "off": 1
+      },
+      "tilesShown": [
+        "3□",
+        "6△",
+        "5◇",
+        "8○",
+        "7□",
+        "0△"
+      ],
+      "correctGlyph": "9◇",
+      "distractorGlyphs": [
+        "3◇",
+        "9○",
+        "0◇"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s1m10": {
+      "subtype": "s1",
+      "band": "M",
+      "b": 0.275,
+      "rule": {
+        "kind": "alt",
+        "a0": 4,
+        "c1": 1,
+        "c2": 2,
+        "off": 2
+      },
+      "tilesShown": [
+        "4△",
+        "5◇",
+        "3○",
+        "4□",
+        "2△",
+        "3◇"
+      ],
+      "correctGlyph": "1○",
+      "distractorGlyphs": [
+        "4○",
+        "1□",
+        "3○"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s1h01": {
+      "subtype": "s1",
+      "band": "H",
+      "b": 0.575,
+      "rule": {
+        "kind": "quad",
+        "a0": 0,
+        "c0": 0,
+        "c": 1,
+        "off": 2
+      },
+      "tilesShown": [
+        "0△",
+        "0◇",
+        "1○",
+        "3□",
+        "6△",
+        "0◇"
+      ],
+      "correctGlyph": "5○",
+      "distractorGlyphs": [
+        "6○",
+        "5□",
+        "0○"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s1h02": {
+      "subtype": "s1",
+      "band": "H",
+      "b": 0.708,
+      "rule": {
+        "kind": "quad",
+        "a0": 2,
+        "c0": 1,
+        "c": 2,
+        "off": 3
+      },
+      "tilesShown": [
+        "2◇",
+        "3○",
+        "6□",
+        "1△",
+        "8◇",
+        "7○"
+      ],
+      "correctGlyph": "8□",
+      "distractorGlyphs": [
+        "9□",
+        "8△",
+        "0□"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s1h03": {
+      "subtype": "s1",
+      "band": "H",
+      "b": 0.842,
+      "rule": {
+        "kind": "quad",
+        "a0": 4,
+        "c0": 2,
+        "c": 1,
+        "off": 0
+      },
+      "tilesShown": [
+        "4○",
+        "6□",
+        "9△",
+        "3◇",
+        "8○",
+        "4□"
+      ],
+      "correctGlyph": "1△",
+      "distractorGlyphs": [
+        "2△",
+        "1◇",
+        "8△"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s1h04": {
+      "subtype": "s1",
+      "band": "H",
+      "b": 0.975,
+      "rule": {
+        "kind": "quad",
+        "a0": 1,
+        "c0": 0,
+        "c": 2,
+        "off": 1
+      },
+      "tilesShown": [
+        "1□",
+        "1△",
+        "3◇",
+        "7○",
+        "3□",
+        "1△"
+      ],
+      "correctGlyph": "1◇",
+      "distractorGlyphs": [
+        "2◇",
+        "1○",
+        "3◇"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s1h05": {
+      "subtype": "s1",
+      "band": "H",
+      "b": 1.108,
+      "rule": {
+        "kind": "quad",
+        "a0": 3,
+        "c0": 1,
+        "c": 1,
+        "off": 2
+      },
+      "tilesShown": [
+        "3△",
+        "4◇",
+        "6○",
+        "9□",
+        "3△",
+        "8◇"
+      ],
+      "correctGlyph": "4○",
+      "distractorGlyphs": [
+        "5○",
+        "4□",
+        "0○"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s1h06": {
+      "subtype": "s1",
+      "band": "H",
+      "b": 1.242,
+      "rule": {
+        "kind": "quad",
+        "a0": 0,
+        "c0": 2,
+        "c": 2,
+        "off": 3
+      },
+      "tilesShown": [
+        "0◇",
+        "2○",
+        "6□",
+        "2△",
+        "0◇",
+        "0○"
+      ],
+      "correctGlyph": "2□",
+      "distractorGlyphs": [
+        "3□",
+        "2△",
+        "4□"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s1h07": {
+      "subtype": "s1",
+      "band": "H",
+      "b": 1.375,
+      "rule": {
+        "kind": "quad",
+        "a0": 2,
+        "c0": 0,
+        "c": 1,
+        "off": 0
+      },
+      "tilesShown": [
+        "2○",
+        "2□",
+        "3△",
+        "5◇",
+        "8○",
+        "2□"
+      ],
+      "correctGlyph": "7△",
+      "distractorGlyphs": [
+        "8△",
+        "7◇",
+        "2△"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s1h08": {
+      "subtype": "s1",
+      "band": "H",
+      "b": 1.508,
+      "rule": {
+        "kind": "quad",
+        "a0": 4,
+        "c0": 1,
+        "c": 2,
+        "off": 1
+      },
+      "tilesShown": [
+        "4□",
+        "5△",
+        "8◇",
+        "3○",
+        "0□",
+        "9△"
+      ],
+      "correctGlyph": "0◇",
+      "distractorGlyphs": [
+        "1◇",
+        "0○",
+        "2◇"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s1h09": {
+      "subtype": "s1",
+      "band": "H",
+      "b": 1.642,
+      "rule": {
+        "kind": "quad",
+        "a0": 1,
+        "c0": 2,
+        "c": 1,
+        "off": 2
+      },
+      "tilesShown": [
+        "1△",
+        "3◇",
+        "6○",
+        "0□",
+        "5△",
+        "1◇"
+      ],
+      "correctGlyph": "8○",
+      "distractorGlyphs": [
+        "9○",
+        "8□",
+        "5○"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s1h10": {
+      "subtype": "s1",
+      "band": "H",
+      "b": 1.775,
+      "rule": {
+        "kind": "quad",
+        "a0": 3,
+        "c0": 0,
+        "c": 2,
+        "off": 3
+      },
+      "tilesShown": [
+        "3◇",
+        "3○",
+        "5□",
+        "9△",
+        "5◇",
+        "3○"
+      ],
+      "correctGlyph": "3□",
+      "distractorGlyphs": [
+        "4□",
+        "3△",
+        "5□"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s2l01": {
+      "subtype": "s2",
+      "band": "L",
+      "b": -1.925,
+      "rule": {
+        "kind": "update",
+        "a0": 1,
+        "k": 1,
+        "s": 1,
+        "off": 0
+      },
+      "tilesShown": [
+        "1○",
+        "2□",
+        "3△",
+        "4◇",
+        "5○",
+        "6□"
+      ],
+      "correctGlyph": "7△",
+      "distractorGlyphs": [
+        "8△",
+        "7◇",
+        "9◇"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s2l02": {
+      "subtype": "s2",
+      "band": "L",
+      "b": -1.792,
+      "rule": {
+        "kind": "update",
+        "a0": 6,
+        "k": 2,
+        "s": 1,
+        "off": 1
+      },
+      "tilesShown": [
+        "6□",
+        "8△",
+        "0◇",
+        "2○",
+        "4□",
+        "6△"
+      ],
+      "correctGlyph": "8◇",
+      "distractorGlyphs": [
+        "9◇",
+        "8○",
+        "0○"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s2l03": {
+      "subtype": "s2",
+      "band": "L",
+      "b": -1.658,
+      "rule": {
+        "kind": "update",
+        "a0": 9,
+        "k": 1,
+        "s": 1,
+        "off": 2
+      },
+      "tilesShown": [
+        "9△",
+        "0◇",
+        "1○",
+        "2□",
+        "3△",
+        "4◇"
+      ],
+      "correctGlyph": "5○",
+      "distractorGlyphs": [
+        "6○",
+        "5□",
+        "7□"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s2l04": {
+      "subtype": "s2",
+      "band": "L",
+      "b": -1.525,
+      "rule": {
+        "kind": "update",
+        "a0": 4,
+        "k": 2,
+        "s": 1,
+        "off": 3
+      },
+      "tilesShown": [
+        "4◇",
+        "6○",
+        "8□",
+        "0△",
+        "2◇",
+        "4○"
+      ],
+      "correctGlyph": "6□",
+      "distractorGlyphs": [
+        "7□",
+        "6△",
+        "8△"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s2l05": {
+      "subtype": "s2",
+      "band": "L",
+      "b": -1.392,
+      "rule": {
+        "kind": "update",
+        "a0": 7,
+        "k": 1,
+        "s": 1,
+        "off": 0
+      },
+      "tilesShown": [
+        "7○",
+        "8□",
+        "9△",
+        "0◇",
+        "1○",
+        "2□"
+      ],
+      "correctGlyph": "3△",
+      "distractorGlyphs": [
+        "4△",
+        "3◇",
+        "5◇"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s2l06": {
+      "subtype": "s2",
+      "band": "L",
+      "b": -1.258,
+      "rule": {
+        "kind": "update",
+        "a0": 2,
+        "k": 2,
+        "s": 1,
+        "off": 1
+      },
+      "tilesShown": [
+        "2□",
+        "4△",
+        "6◇",
+        "8○",
+        "0□",
+        "2△"
+      ],
+      "correctGlyph": "4◇",
+      "distractorGlyphs": [
+        "5◇",
+        "4○",
+        "6○"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s2l07": {
+      "subtype": "s2",
+      "band": "L",
+      "b": -1.125,
+      "rule": {
+        "kind": "update",
+        "a0": 5,
+        "k": 1,
+        "s": 1,
+        "off": 2
+      },
+      "tilesShown": [
+        "5△",
+        "6◇",
+        "7○",
+        "8□",
+        "9△",
+        "0◇"
+      ],
+      "correctGlyph": "1○",
+      "distractorGlyphs": [
+        "2○",
+        "1□",
+        "3□"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s2l08": {
+      "subtype": "s2",
+      "band": "L",
+      "b": -0.992,
+      "rule": {
+        "kind": "update",
+        "a0": 0,
+        "k": 2,
+        "s": 1,
+        "off": 3
+      },
+      "tilesShown": [
+        "0◇",
+        "2○",
+        "4□",
+        "6△",
+        "8◇",
+        "0○"
+      ],
+      "correctGlyph": "2□",
+      "distractorGlyphs": [
+        "3□",
+        "2△",
+        "4△"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s2l09": {
+      "subtype": "s2",
+      "band": "L",
+      "b": -0.858,
+      "rule": {
+        "kind": "update",
+        "a0": 3,
+        "k": 1,
+        "s": 1,
+        "off": 0
+      },
+      "tilesShown": [
+        "3○",
+        "4□",
+        "5△",
+        "6◇",
+        "7○",
+        "8□"
+      ],
+      "correctGlyph": "9△",
+      "distractorGlyphs": [
+        "0△",
+        "9◇",
+        "1◇"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s2l10": {
+      "subtype": "s2",
+      "band": "L",
+      "b": -0.725,
+      "rule": {
+        "kind": "update",
+        "a0": 8,
+        "k": 2,
+        "s": 1,
+        "off": 1
+      },
+      "tilesShown": [
+        "8□",
+        "0△",
+        "2◇",
+        "4○",
+        "6□",
+        "8△"
+      ],
+      "correctGlyph": "0◇",
+      "distractorGlyphs": [
+        "1◇",
+        "0○",
+        "2○"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s2m01": {
+      "subtype": "s2",
+      "band": "M",
+      "b": -0.425,
+      "rule": {
+        "kind": "update",
+        "a0": 3,
+        "k": 3,
+        "s": 2,
+        "off": 0
+      },
+      "tilesShown": [
+        "3○",
+        "6△",
+        "9○",
+        "2△",
+        "5○",
+        "8△"
+      ],
+      "correctGlyph": "1○",
+      "distractorGlyphs": [
+        "2○",
+        "1□",
+        "3□"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s2m02": {
+      "subtype": "s2",
+      "band": "M",
+      "b": -0.347,
+      "rule": {
+        "kind": "update",
+        "a0": 8,
+        "k": 4,
+        "s": 2,
+        "off": 1
+      },
+      "tilesShown": [
+        "8□",
+        "2◇",
+        "6□",
+        "0◇",
+        "4□",
+        "8◇"
+      ],
+      "correctGlyph": "2□",
+      "distractorGlyphs": [
+        "3□",
+        "2△",
+        "4△"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s2m03": {
+      "subtype": "s2",
+      "band": "M",
+      "b": -0.269,
+      "rule": {
+        "kind": "update",
+        "a0": 1,
+        "k": 3,
+        "s": 2,
+        "off": 2
+      },
+      "tilesShown": [
+        "1△",
+        "4○",
+        "7△",
+        "0○",
+        "3△",
+        "6○"
+      ],
+      "correctGlyph": "9△",
+      "distractorGlyphs": [
+        "0△",
+        "9◇",
+        "1◇"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s2m04": {
+      "subtype": "s2",
+      "band": "M",
+      "b": -0.192,
+      "rule": {
+        "kind": "update",
+        "a0": 6,
+        "k": 4,
+        "s": 2,
+        "off": 3
+      },
+      "tilesShown": [
+        "6◇",
+        "0□",
+        "4◇",
+        "8□",
+        "2◇",
+        "6□"
+      ],
+      "correctGlyph": "0◇",
+      "distractorGlyphs": [
+        "1◇",
+        "0○",
+        "2○"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s2m05": {
+      "subtype": "s2",
+      "band": "M",
+      "b": -0.114,
+      "rule": {
+        "kind": "update",
+        "a0": 9,
+        "k": 3,
+        "s": 2,
+        "off": 0
+      },
+      "tilesShown": [
+        "9○",
+        "2△",
+        "5○",
+        "8△",
+        "1○",
+        "4△"
+      ],
+      "correctGlyph": "7○",
+      "distractorGlyphs": [
+        "8○",
+        "7□",
+        "9□"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s2m06": {
+      "subtype": "s2",
+      "band": "M",
+      "b": -0.036,
+      "rule": {
+        "kind": "update",
+        "a0": 4,
+        "k": 4,
+        "s": 2,
+        "off": 1
+      },
+      "tilesShown": [
+        "4□",
+        "8◇",
+        "2□",
+        "6◇",
+        "0□",
+        "4◇"
+      ],
+      "correctGlyph": "8□",
+      "distractorGlyphs": [
+        "9□",
+        "8△",
+        "0△"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s2m07": {
+      "subtype": "s2",
+      "band": "M",
+      "b": 0.042,
+      "rule": {
+        "kind": "update",
+        "a0": 7,
+        "k": 3,
+        "s": 2,
+        "off": 2
+      },
+      "tilesShown": [
+        "7△",
+        "0○",
+        "3△",
+        "6○",
+        "9△",
+        "2○"
+      ],
+      "correctGlyph": "5△",
+      "distractorGlyphs": [
+        "6△",
+        "5◇",
+        "7◇"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s2m08": {
+      "subtype": "s2",
+      "band": "M",
+      "b": 0.119,
+      "rule": {
+        "kind": "update",
+        "a0": 2,
+        "k": 4,
+        "s": 2,
+        "off": 3
+      },
+      "tilesShown": [
+        "2◇",
+        "6□",
+        "0◇",
+        "4□",
+        "8◇",
+        "2□"
+      ],
+      "correctGlyph": "6◇",
+      "distractorGlyphs": [
+        "7◇",
+        "6○",
+        "8○"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s2m09": {
+      "subtype": "s2",
+      "band": "M",
+      "b": 0.197,
+      "rule": {
+        "kind": "update",
+        "a0": 5,
+        "k": 3,
+        "s": 2,
+        "off": 0
+      },
+      "tilesShown": [
+        "5○",
+        "8△",
+        "1○",
+        "4△",
+        "7○",
+        "0△"
+      ],
+      "correctGlyph": "3○",
+      "distractorGlyphs": [
+        "4○",
+        "3□",
+        "5□"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s2m10": {
+      "subtype": "s2",
+      "band": "M",
+      "b": 0.275,
+      "rule": {
+        "kind": "update",
+        "a0": 0,
+        "k": 4,
+        "s": 2,
+        "off": 1
+      },
+      "tilesShown": [
+        "0□",
+        "4◇",
+        "8□",
+        "2◇",
+        "6□",
+        "0◇"
+      ],
+      "correctGlyph": "4□",
+      "distractorGlyphs": [
+        "5□",
+        "4△",
+        "6△"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s2h01": {
+      "subtype": "s2",
+      "band": "H",
+      "b": 0.575,
+      "rule": {
+        "kind": "update",
+        "a0": 5,
+        "k": 5,
+        "s": 3,
+        "off": 0
+      },
+      "tilesShown": [
+        "5○",
+        "0◇",
+        "5△",
+        "0□",
+        "5○",
+        "0◇"
+      ],
+      "correctGlyph": "5△",
+      "distractorGlyphs": [
+        "6△",
+        "5◇",
+        "7◇"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s2h02": {
+      "subtype": "s2",
+      "band": "H",
+      "b": 0.708,
+      "rule": {
+        "kind": "update",
+        "a0": 0,
+        "k": 6,
+        "s": 3,
+        "off": 1
+      },
+      "tilesShown": [
+        "0□",
+        "6○",
+        "2◇",
+        "8△",
+        "4□",
+        "0○"
+      ],
+      "correctGlyph": "6◇",
+      "distractorGlyphs": [
+        "7◇",
+        "6○",
+        "8○"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s2h03": {
+      "subtype": "s2",
+      "band": "H",
+      "b": 0.842,
+      "rule": {
+        "kind": "update",
+        "a0": 5,
+        "k": 7,
+        "s": 3,
+        "off": 2
+      },
+      "tilesShown": [
+        "5△",
+        "2□",
+        "9○",
+        "6◇",
+        "3△",
+        "0□"
+      ],
+      "correctGlyph": "7○",
+      "distractorGlyphs": [
+        "8○",
+        "7□",
+        "9□"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s2h04": {
+      "subtype": "s2",
+      "band": "H",
+      "b": 0.975,
+      "rule": {
+        "kind": "update",
+        "a0": 7,
+        "k": 5,
+        "s": 3,
+        "off": 3
+      },
+      "tilesShown": [
+        "7◇",
+        "2△",
+        "7□",
+        "2○",
+        "7◇",
+        "2△"
+      ],
+      "correctGlyph": "7□",
+      "distractorGlyphs": [
+        "8□",
+        "7△",
+        "9△"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s2h05": {
+      "subtype": "s2",
+      "band": "H",
+      "b": 1.108,
+      "rule": {
+        "kind": "update",
+        "a0": 2,
+        "k": 6,
+        "s": 3,
+        "off": 0
+      },
+      "tilesShown": [
+        "2○",
+        "8◇",
+        "4△",
+        "0□",
+        "6○",
+        "2◇"
+      ],
+      "correctGlyph": "8△",
+      "distractorGlyphs": [
+        "9△",
+        "8◇",
+        "0◇"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s2h06": {
+      "subtype": "s2",
+      "band": "H",
+      "b": 1.242,
+      "rule": {
+        "kind": "update",
+        "a0": 7,
+        "k": 7,
+        "s": 3,
+        "off": 1
+      },
+      "tilesShown": [
+        "7□",
+        "4○",
+        "1◇",
+        "8△",
+        "5□",
+        "2○"
+      ],
+      "correctGlyph": "9◇",
+      "distractorGlyphs": [
+        "0◇",
+        "9○",
+        "1○"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s2h07": {
+      "subtype": "s2",
+      "band": "H",
+      "b": 1.375,
+      "rule": {
+        "kind": "update",
+        "a0": 9,
+        "k": 5,
+        "s": 3,
+        "off": 2
+      },
+      "tilesShown": [
+        "9△",
+        "4□",
+        "9○",
+        "4◇",
+        "9△",
+        "4□"
+      ],
+      "correctGlyph": "9○",
+      "distractorGlyphs": [
+        "0○",
+        "9□",
+        "1□"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s2h08": {
+      "subtype": "s2",
+      "band": "H",
+      "b": 1.508,
+      "rule": {
+        "kind": "update",
+        "a0": 4,
+        "k": 6,
+        "s": 3,
+        "off": 3
+      },
+      "tilesShown": [
+        "4◇",
+        "0△",
+        "6□",
+        "2○",
+        "8◇",
+        "4△"
+      ],
+      "correctGlyph": "0□",
+      "distractorGlyphs": [
+        "1□",
+        "0△",
+        "2△"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s2h09": {
+      "subtype": "s2",
+      "band": "H",
+      "b": 1.642,
+      "rule": {
+        "kind": "update",
+        "a0": 9,
+        "k": 7,
+        "s": 3,
+        "off": 0
+      },
+      "tilesShown": [
+        "9○",
+        "6◇",
+        "3△",
+        "0□",
+        "7○",
+        "4◇"
+      ],
+      "correctGlyph": "1△",
+      "distractorGlyphs": [
+        "2△",
+        "1◇",
+        "3◇"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s2h10": {
+      "subtype": "s2",
+      "band": "H",
+      "b": 1.775,
+      "rule": {
+        "kind": "update",
+        "a0": 1,
+        "k": 5,
+        "s": 3,
+        "off": 1
+      },
+      "tilesShown": [
+        "1□",
+        "6○",
+        "1◇",
+        "6△",
+        "1□",
+        "6○"
+      ],
+      "correctGlyph": "1◇",
+      "distractorGlyphs": [
+        "2◇",
+        "1○",
+        "3○"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s3l01": {
+      "subtype": "s3",
+      "band": "L",
+      "b": -1.925,
+      "rule": {
+        "kind": "track",
+        "x0": 1,
+        "y0": 2,
+        "a": 1,
+        "b": 2,
+        "sa": 1,
+        "sb": 0,
+        "xoff": 0,
+        "yoff": 2
+      },
+      "tilesShown": [
+        "1○",
+        "2△",
+        "2□",
+        "4△",
+        "3△",
+        "6△",
+        "4◇"
+      ],
+      "correctGlyph": "5○",
+      "distractorGlyphs": [
+        "6○",
+        "5□",
+        "8△"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s3l02": {
+      "subtype": "s3",
+      "band": "L",
+      "b": -1.792,
+      "rule": {
+        "kind": "track",
+        "x0": 4,
+        "y0": 7,
+        "a": 1,
+        "b": 2,
+        "sa": 1,
+        "sb": 0,
+        "xoff": 1,
+        "yoff": 3
+      },
+      "tilesShown": [
+        "4□",
+        "7◇",
+        "5△",
+        "9◇",
+        "6◇",
+        "1◇",
+        "7○"
+      ],
+      "correctGlyph": "8□",
+      "distractorGlyphs": [
+        "9□",
+        "8△",
+        "3◇"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s3l03": {
+      "subtype": "s3",
+      "band": "L",
+      "b": -1.658,
+      "rule": {
+        "kind": "track",
+        "x0": 7,
+        "y0": 2,
+        "a": 1,
+        "b": 2,
+        "sa": 1,
+        "sb": 0,
+        "xoff": 2,
+        "yoff": 0
+      },
+      "tilesShown": [
+        "7△",
+        "2○",
+        "8◇",
+        "4○",
+        "9○",
+        "6○",
+        "0□"
+      ],
+      "correctGlyph": "1△",
+      "distractorGlyphs": [
+        "2△",
+        "1◇",
+        "8○"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s3l04": {
+      "subtype": "s3",
+      "band": "L",
+      "b": -1.525,
+      "rule": {
+        "kind": "track",
+        "x0": 0,
+        "y0": 7,
+        "a": 1,
+        "b": 2,
+        "sa": 1,
+        "sb": 0,
+        "xoff": 3,
+        "yoff": 1
+      },
+      "tilesShown": [
+        "0◇",
+        "7□",
+        "1○",
+        "9□",
+        "2□",
+        "1□",
+        "3△"
+      ],
+      "correctGlyph": "4◇",
+      "distractorGlyphs": [
+        "5◇",
+        "4○",
+        "3□"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s3l05": {
+      "subtype": "s3",
+      "band": "L",
+      "b": -1.392,
+      "rule": {
+        "kind": "track",
+        "x0": 3,
+        "y0": 2,
+        "a": 1,
+        "b": 2,
+        "sa": 1,
+        "sb": 0,
+        "xoff": 0,
+        "yoff": 2
+      },
+      "tilesShown": [
+        "3○",
+        "2△",
+        "4□",
+        "4△",
+        "5△",
+        "6△",
+        "6◇"
+      ],
+      "correctGlyph": "7○",
+      "distractorGlyphs": [
+        "8○",
+        "7□",
+        "8△"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s3l06": {
+      "subtype": "s3",
+      "band": "L",
+      "b": -1.258,
+      "rule": {
+        "kind": "track",
+        "x0": 6,
+        "y0": 7,
+        "a": 1,
+        "b": 2,
+        "sa": 1,
+        "sb": 0,
+        "xoff": 1,
+        "yoff": 3
+      },
+      "tilesShown": [
+        "6□",
+        "7◇",
+        "7△",
+        "9◇",
+        "8◇",
+        "1◇",
+        "9○"
+      ],
+      "correctGlyph": "0□",
+      "distractorGlyphs": [
+        "1□",
+        "0△",
+        "3◇"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s3l07": {
+      "subtype": "s3",
+      "band": "L",
+      "b": -1.125,
+      "rule": {
+        "kind": "track",
+        "x0": 9,
+        "y0": 2,
+        "a": 1,
+        "b": 2,
+        "sa": 1,
+        "sb": 0,
+        "xoff": 2,
+        "yoff": 0
+      },
+      "tilesShown": [
+        "9△",
+        "2○",
+        "0◇",
+        "4○",
+        "1○",
+        "6○",
+        "2□"
+      ],
+      "correctGlyph": "3△",
+      "distractorGlyphs": [
+        "4△",
+        "3◇",
+        "8○"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s3l08": {
+      "subtype": "s3",
+      "band": "L",
+      "b": -0.992,
+      "rule": {
+        "kind": "track",
+        "x0": 2,
+        "y0": 7,
+        "a": 1,
+        "b": 2,
+        "sa": 1,
+        "sb": 0,
+        "xoff": 3,
+        "yoff": 1
+      },
+      "tilesShown": [
+        "2◇",
+        "7□",
+        "3○",
+        "9□",
+        "4□",
+        "1□",
+        "5△"
+      ],
+      "correctGlyph": "6◇",
+      "distractorGlyphs": [
+        "7◇",
+        "6○",
+        "3□"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s3l09": {
+      "subtype": "s3",
+      "band": "L",
+      "b": -0.858,
+      "rule": {
+        "kind": "track",
+        "x0": 5,
+        "y0": 2,
+        "a": 1,
+        "b": 2,
+        "sa": 1,
+        "sb": 0,
+        "xoff": 0,
+        "yoff": 2
+      },
+      "tilesShown": [
+        "5○",
+        "2△",
+        "6□",
+        "4△",
+        "7△",
+        "6△",
+        "8◇"
+      ],
+      "correctGlyph": "9○",
+      "distractorGlyphs": [
+        "0○",
+        "9□",
+        "8△"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s3l10": {
+      "subtype": "s3",
+      "band": "L",
+      "b": -0.725,
+      "rule": {
+        "kind": "track",
+        "x0": 8,
+        "y0": 7,
+        "a": 1,
+        "b": 2,
+        "sa": 1,
+        "sb": 0,
+        "xoff": 1,
+        "yoff": 3
+      },
+      "tilesShown": [
+        "8□",
+        "7◇",
+        "9△",
+        "9◇",
+        "0◇",
+        "1◇",
+        "1○"
+      ],
+      "correctGlyph": "2□",
+      "distractorGlyphs": [
+        "3□",
+        "2△",
+        "3◇"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s3m01": {
+      "subtype": "s3",
+      "band": "M",
+      "b": -0.425,
+      "rule": {
+        "kind": "track",
+        "x0": 2,
+        "y0": 1,
+        "a": 2,
+        "b": 1,
+        "sa": 1,
+        "sb": 1,
+        "xoff": 0,
+        "yoff": 2
+      },
+      "tilesShown": [
+        "2○",
+        "1△",
+        "4□",
+        "2◇",
+        "6△",
+        "3○",
+        "8◇"
+      ],
+      "correctGlyph": "0○",
+      "distractorGlyphs": [
+        "1○",
+        "0□",
+        "4□"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s3m02": {
+      "subtype": "s3",
+      "band": "M",
+      "b": -0.347,
+      "rule": {
+        "kind": "track",
+        "x0": 5,
+        "y0": 6,
+        "a": 2,
+        "b": 1,
+        "sa": 1,
+        "sb": 1,
+        "xoff": 1,
+        "yoff": 3
+      },
+      "tilesShown": [
+        "5□",
+        "6◇",
+        "7△",
+        "7○",
+        "9◇",
+        "8□",
+        "1○"
+      ],
+      "correctGlyph": "3□",
+      "distractorGlyphs": [
+        "4□",
+        "3△",
+        "9△"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s3m03": {
+      "subtype": "s3",
+      "band": "M",
+      "b": -0.269,
+      "rule": {
+        "kind": "track",
+        "x0": 8,
+        "y0": 1,
+        "a": 2,
+        "b": 1,
+        "sa": 1,
+        "sb": 1,
+        "xoff": 2,
+        "yoff": 0
+      },
+      "tilesShown": [
+        "8△",
+        "1○",
+        "0◇",
+        "2□",
+        "2○",
+        "3△",
+        "4□"
+      ],
+      "correctGlyph": "6△",
+      "distractorGlyphs": [
+        "7△",
+        "6◇",
+        "4◇"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s3m04": {
+      "subtype": "s3",
+      "band": "M",
+      "b": -0.192,
+      "rule": {
+        "kind": "track",
+        "x0": 1,
+        "y0": 6,
+        "a": 2,
+        "b": 1,
+        "sa": 1,
+        "sb": 1,
+        "xoff": 3,
+        "yoff": 1
+      },
+      "tilesShown": [
+        "1◇",
+        "6□",
+        "3○",
+        "7△",
+        "5□",
+        "8◇",
+        "7△"
+      ],
+      "correctGlyph": "9◇",
+      "distractorGlyphs": [
+        "0◇",
+        "9○",
+        "0○"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s3m05": {
+      "subtype": "s3",
+      "band": "M",
+      "b": -0.114,
+      "rule": {
+        "kind": "track",
+        "x0": 4,
+        "y0": 1,
+        "a": 2,
+        "b": 1,
+        "sa": 1,
+        "sb": 1,
+        "xoff": 0,
+        "yoff": 2
+      },
+      "tilesShown": [
+        "4○",
+        "1△",
+        "6□",
+        "2◇",
+        "8△",
+        "3○",
+        "0◇"
+      ],
+      "correctGlyph": "2○",
+      "distractorGlyphs": [
+        "3○",
+        "2□",
+        "4□"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s3m06": {
+      "subtype": "s3",
+      "band": "M",
+      "b": -0.036,
+      "rule": {
+        "kind": "track",
+        "x0": 7,
+        "y0": 6,
+        "a": 2,
+        "b": 1,
+        "sa": 1,
+        "sb": 1,
+        "xoff": 1,
+        "yoff": 3
+      },
+      "tilesShown": [
+        "7□",
+        "6◇",
+        "9△",
+        "7○",
+        "1◇",
+        "8□",
+        "3○"
+      ],
+      "correctGlyph": "5□",
+      "distractorGlyphs": [
+        "6□",
+        "5△",
+        "9△"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s3m07": {
+      "subtype": "s3",
+      "band": "M",
+      "b": 0.042,
+      "rule": {
+        "kind": "track",
+        "x0": 0,
+        "y0": 1,
+        "a": 2,
+        "b": 1,
+        "sa": 1,
+        "sb": 1,
+        "xoff": 2,
+        "yoff": 0
+      },
+      "tilesShown": [
+        "0△",
+        "1○",
+        "2◇",
+        "2□",
+        "4○",
+        "3△",
+        "6□"
+      ],
+      "correctGlyph": "8△",
+      "distractorGlyphs": [
+        "9△",
+        "8◇",
+        "4◇"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s3m08": {
+      "subtype": "s3",
+      "band": "M",
+      "b": 0.119,
+      "rule": {
+        "kind": "track",
+        "x0": 3,
+        "y0": 6,
+        "a": 2,
+        "b": 1,
+        "sa": 1,
+        "sb": 1,
+        "xoff": 3,
+        "yoff": 1
+      },
+      "tilesShown": [
+        "3◇",
+        "6□",
+        "5○",
+        "7△",
+        "7□",
+        "8◇",
+        "9△"
+      ],
+      "correctGlyph": "1◇",
+      "distractorGlyphs": [
+        "2◇",
+        "1○",
+        "9○"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s3m09": {
+      "subtype": "s3",
+      "band": "M",
+      "b": 0.197,
+      "rule": {
+        "kind": "track",
+        "x0": 6,
+        "y0": 1,
+        "a": 2,
+        "b": 1,
+        "sa": 1,
+        "sb": 1,
+        "xoff": 0,
+        "yoff": 2
+      },
+      "tilesShown": [
+        "6○",
+        "1△",
+        "8□",
+        "2◇",
+        "0△",
+        "3○",
+        "2◇"
+      ],
+      "correctGlyph": "4○",
+      "distractorGlyphs": [
+        "5○",
+        "4□",
+        "5□"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s3m10": {
+      "subtype": "s3",
+      "band": "M",
+      "b": 0.275,
+      "rule": {
+        "kind": "track",
+        "x0": 9,
+        "y0": 6,
+        "a": 2,
+        "b": 1,
+        "sa": 1,
+        "sb": 1,
+        "xoff": 1,
+        "yoff": 3
+      },
+      "tilesShown": [
+        "9□",
+        "6◇",
+        "1△",
+        "7○",
+        "3◇",
+        "8□",
+        "5○"
+      ],
+      "correctGlyph": "7□",
+      "distractorGlyphs": [
+        "8□",
+        "7△",
+        "9△"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s3h01": {
+      "subtype": "s3",
+      "band": "H",
+      "b": 0.575,
+      "rule": {
+        "kind": "track",
+        "x0": 2,
+        "y0": 4,
+        "a": 2,
+        "b": 4,
+        "sa": 1,
+        "sb": 2,
+        "xoff": 0,
+        "yoff": 2
+      },
+      "tilesShown": [
+        "2○",
+        "4△",
+        "4□",
+        "8○",
+        "6△",
+        "2△",
+        "8◇"
+      ],
+      "correctGlyph": "0○",
+      "distractorGlyphs": [
+        "1○",
+        "0□",
+        "6○"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s3h02": {
+      "subtype": "s3",
+      "band": "H",
+      "b": 0.708,
+      "rule": {
+        "kind": "track",
+        "x0": 6,
+        "y0": 0,
+        "a": 3,
+        "b": 5,
+        "sa": 1,
+        "sb": 2,
+        "xoff": 1,
+        "yoff": 3
+      },
+      "tilesShown": [
+        "6□",
+        "0◇",
+        "9△",
+        "5□",
+        "2◇",
+        "0◇",
+        "5○"
+      ],
+      "correctGlyph": "8□",
+      "distractorGlyphs": [
+        "9□",
+        "8△",
+        "5□"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s3h03": {
+      "subtype": "s3",
+      "band": "H",
+      "b": 0.842,
+      "rule": {
+        "kind": "track",
+        "x0": 8,
+        "y0": 4,
+        "a": 2,
+        "b": 4,
+        "sa": 1,
+        "sb": 2,
+        "xoff": 2,
+        "yoff": 0
+      },
+      "tilesShown": [
+        "8△",
+        "4○",
+        "0◇",
+        "8△",
+        "2○",
+        "2○",
+        "4□"
+      ],
+      "correctGlyph": "6△",
+      "distractorGlyphs": [
+        "7△",
+        "6◇",
+        "8△"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s3h04": {
+      "subtype": "s3",
+      "band": "H",
+      "b": 0.975,
+      "rule": {
+        "kind": "track",
+        "x0": 2,
+        "y0": 0,
+        "a": 3,
+        "b": 5,
+        "sa": 1,
+        "sb": 2,
+        "xoff": 3,
+        "yoff": 1
+      },
+      "tilesShown": [
+        "2◇",
+        "0□",
+        "5○",
+        "5◇",
+        "8□",
+        "0□",
+        "1△"
+      ],
+      "correctGlyph": "4◇",
+      "distractorGlyphs": [
+        "5◇",
+        "4○",
+        "6◇"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s3h05": {
+      "subtype": "s3",
+      "band": "H",
+      "b": 1.108,
+      "rule": {
+        "kind": "track",
+        "x0": 4,
+        "y0": 4,
+        "a": 2,
+        "b": 4,
+        "sa": 1,
+        "sb": 2,
+        "xoff": 0,
+        "yoff": 2
+      },
+      "tilesShown": [
+        "4○",
+        "4△",
+        "6□",
+        "8○",
+        "8△",
+        "2△",
+        "0◇"
+      ],
+      "correctGlyph": "2○",
+      "distractorGlyphs": [
+        "3○",
+        "2□",
+        "6○"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s3h06": {
+      "subtype": "s3",
+      "band": "H",
+      "b": 1.242,
+      "rule": {
+        "kind": "track",
+        "x0": 8,
+        "y0": 0,
+        "a": 3,
+        "b": 5,
+        "sa": 1,
+        "sb": 2,
+        "xoff": 1,
+        "yoff": 3
+      },
+      "tilesShown": [
+        "8□",
+        "0◇",
+        "1△",
+        "5□",
+        "4◇",
+        "0◇",
+        "7○"
+      ],
+      "correctGlyph": "0□",
+      "distractorGlyphs": [
+        "1□",
+        "0△",
+        "5□"
+      ],
+      "correctIndex": 1
+    },
+    "pz-s3h07": {
+      "subtype": "s3",
+      "band": "H",
+      "b": 1.375,
+      "rule": {
+        "kind": "track",
+        "x0": 0,
+        "y0": 4,
+        "a": 2,
+        "b": 4,
+        "sa": 1,
+        "sb": 2,
+        "xoff": 2,
+        "yoff": 0
+      },
+      "tilesShown": [
+        "0△",
+        "4○",
+        "2◇",
+        "8△",
+        "4○",
+        "2○",
+        "6□"
+      ],
+      "correctGlyph": "8△",
+      "distractorGlyphs": [
+        "9△",
+        "8◇",
+        "6△"
+      ],
+      "correctIndex": 2
+    },
+    "pz-s3h08": {
+      "subtype": "s3",
+      "band": "H",
+      "b": 1.508,
+      "rule": {
+        "kind": "track",
+        "x0": 4,
+        "y0": 0,
+        "a": 3,
+        "b": 5,
+        "sa": 1,
+        "sb": 2,
+        "xoff": 3,
+        "yoff": 1
+      },
+      "tilesShown": [
+        "4◇",
+        "0□",
+        "7○",
+        "5◇",
+        "0□",
+        "0□",
+        "3△"
+      ],
+      "correctGlyph": "6◇",
+      "distractorGlyphs": [
+        "7◇",
+        "6○",
+        "5◇"
+      ],
+      "correctIndex": 3
+    },
+    "pz-s3h09": {
+      "subtype": "s3",
+      "band": "H",
+      "b": 1.642,
+      "rule": {
+        "kind": "track",
+        "x0": 6,
+        "y0": 4,
+        "a": 2,
+        "b": 4,
+        "sa": 1,
+        "sb": 2,
+        "xoff": 0,
+        "yoff": 2
+      },
+      "tilesShown": [
+        "6○",
+        "4△",
+        "8□",
+        "8○",
+        "0△",
+        "2△",
+        "2◇"
+      ],
+      "correctGlyph": "4○",
+      "distractorGlyphs": [
+        "5○",
+        "4□",
+        "6○"
+      ],
+      "correctIndex": 0
+    },
+    "pz-s3h10": {
+      "subtype": "s3",
+      "band": "H",
+      "b": 1.775,
+      "rule": {
+        "kind": "track",
+        "x0": 0,
+        "y0": 0,
+        "a": 3,
+        "b": 5,
+        "sa": 1,
+        "sb": 2,
+        "xoff": 1,
+        "yoff": 3
+      },
+      "tilesShown": [
+        "0□",
+        "0◇",
+        "3△",
+        "5□",
+        "6◇",
+        "0◇",
+        "9○"
+      ],
+      "correctGlyph": "2□",
+      "distractorGlyphs": [
+        "3□",
+        "2△",
+        "5□"
+      ],
+      "correctIndex": 1
+    }
+  }
+}

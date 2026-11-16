@@ -1,0 +1,1424 @@
+{
+  "schemaVersion": 1,
+  "id": "evne-t5-sekvens",
+  "type": "test-definition",
+  "family": "evner",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "g-score",
+    "metric": "z100",
+    "ci95": true
+  },
+  "dimensions": [
+    {
+      "id": "g",
+      "label": "g-skår",
+      "labelLanguage": "no",
+      "description": "Generell evne, rapportert som IQ-stil-metrikk."
+    }
+  ],
+  "items": [
+    {
+      "id": "sq-0001",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 2, B 4, C 6, D 8, E 10, ?",
+          "options": [
+            {
+              "label": "E 12"
+            },
+            {
+              "label": "F 12"
+            },
+            {
+              "label": "F 10"
+            },
+            {
+              "label": "E 10"
+            },
+            {
+              "label": "G 12"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sq-0002",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: C 1, D 3, E 5, F 7, G 9, ?",
+          "options": [
+            {
+              "label": "H 9"
+            },
+            {
+              "label": "G 9"
+            },
+            {
+              "label": "I 11"
+            },
+            {
+              "label": "H 11"
+            },
+            {
+              "label": "H 13"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sq-0003",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 3, B 5, C 7, D 9, E 11, ?",
+          "options": [
+            {
+              "label": "F 13"
+            },
+            {
+              "label": "E 11"
+            },
+            {
+              "label": "G 13"
+            },
+            {
+              "label": "F 15"
+            },
+            {
+              "label": "G 15"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "sq-0004",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 2, C 3, D 4, E 5, F 6, ?",
+          "options": [
+            {
+              "label": "F 7"
+            },
+            {
+              "label": "G 6"
+            },
+            {
+              "label": "F 6"
+            },
+            {
+              "label": "H 7"
+            },
+            {
+              "label": "G 7"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "sq-0005",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: D 4, E 6, F 8, G 10, H 12, ?",
+          "options": [
+            {
+              "label": "I 12"
+            },
+            {
+              "label": "H 12"
+            },
+            {
+              "label": "I 14"
+            },
+            {
+              "label": "J 14"
+            },
+            {
+              "label": "I 16"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sq-0006",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 5, C 10, D 15, E 20, F 25, ?",
+          "options": [
+            {
+              "label": "F 25"
+            },
+            {
+              "label": "G 30"
+            },
+            {
+              "label": "H 30"
+            },
+            {
+              "label": "G 35"
+            },
+            {
+              "label": "H 35"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sq-0007",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 1, C 2, E 3, G 4, I 5, ?",
+          "options": [
+            {
+              "label": "I 6"
+            },
+            {
+              "label": "K 5"
+            },
+            {
+              "label": "I 5"
+            },
+            {
+              "label": "K 6"
+            },
+            {
+              "label": "M 6"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "sq-0008",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 3. Anvend først regel 1 (+2), deretter regel 2 (x2). Hva er resultatet?",
+          "options": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "sq-0009",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 2. Anvend først regel 1 (+3), deretter regel 2 (+2). Hva er resultatet?",
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sq-0010",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 5. Anvend først regel 1 (-1), deretter regel 2 (x3). Hva er resultatet?",
+          "options": [
+            {
+              "label": "14"
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "13"
+            },
+            {
+              "label": "5"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sq-0011",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 4. Anvend først regel 1 (x2), deretter regel 2 (+1). Hva er resultatet?",
+          "options": [
+            {
+              "label": "8"
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "16"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "sq-0012",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 6. Anvend først regel 1 (+4), deretter regel 2 (-2). Hva er resultatet?",
+          "options": [
+            {
+              "label": "4"
+            },
+            {
+              "label": "14"
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "6"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "sq-0013",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Teller A starter på 1 og legger til 3 for hvert skritt: 1, 4, 7, 10. Teller B starter på 2 og legger til 1 for hvert skritt: 2, 3, 4, 5. Hvor mange har teller A?",
+          "options": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "11"
+            },
+            {
+              "label": "1"
+            },
+            {
+              "label": "13"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sq-0014",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Teller A starter på 0 og legger til 2 for hvert skritt: 0, 2, 4, 6, 8. Teller B starter på 5 og legger til 1 for hvert skritt: 5, 6, 7, 8, 9. Hvor mange har teller B?",
+          "options": [
+            {
+              "label": "11"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "9"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sq-0015",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 2, B 4, C 8, D 16, E 32, ?",
+          "options": [
+            {
+              "label": "F 32"
+            },
+            {
+              "label": "E 32"
+            },
+            {
+              "label": "F 64"
+            },
+            {
+              "label": "G 64"
+            },
+            {
+              "label": "F 128"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sq-0016",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: Z 9, Y 7, X 5, W 3, V 1, ?",
+          "options": [
+            {
+              "label": "V 1"
+            },
+            {
+              "label": "U -1"
+            },
+            {
+              "label": "T -1"
+            },
+            {
+              "label": "U -3"
+            },
+            {
+              "label": "T -3"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "sq-0017",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 3, E 5, H 7, K 9, N 11, ?",
+          "options": [
+            {
+              "label": "N 13"
+            },
+            {
+              "label": "Q 11"
+            },
+            {
+              "label": "N 11"
+            },
+            {
+              "label": "Q 13"
+            },
+            {
+              "label": "T 13"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "sq-0018",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 4, B 6, D 8, E 10, G 12, ?",
+          "options": [
+            {
+              "label": "H 14"
+            },
+            {
+              "label": "H 12"
+            },
+            {
+              "label": "G 12"
+            },
+            {
+              "label": "J 14"
+            },
+            {
+              "label": "H 16"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sq-0019",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: C 3, F 6, I 9, L 12, O 15, ?",
+          "options": [
+            {
+              "label": "O 15"
+            },
+            {
+              "label": "U 18"
+            },
+            {
+              "label": "R 21"
+            },
+            {
+              "label": "U 21"
+            },
+            {
+              "label": "R 18"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sq-0020",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 4. Anvend først regel 1 (x3), deretter regel 2 (-1). Hva er resultatet?",
+          "options": [
+            {
+              "label": "12"
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "11"
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "36"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "sq-0021",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 5. Anvend først regel 1 (x2), deretter regel 2 (+7). Hva er resultatet?",
+          "options": [
+            {
+              "label": "12"
+            },
+            {
+              "label": "17"
+            },
+            {
+              "label": "24"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "18"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "sq-0022",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 7. Anvend først regel 1 (-2), deretter regel 2 (x2). Hva er resultatet?",
+          "options": [
+            {
+              "label": "12"
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "11"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sq-0023",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 3. Anvend først regel 1 (x4), deretter regel 2 (-5). Hva er resultatet?",
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "-2"
+            },
+            {
+              "label": "-8"
+            },
+            {
+              "label": "48"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sq-0024",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Teller A starter på 2 og legger til 1 for hvert skritt: 2, 3, 4, 5, 6. Teller B starter på 1 og legger til 3 for hvert skritt: 1, 4, 7, 10, 13. Hvor mange har teller B?",
+          "options": [
+            {
+              "label": "14"
+            },
+            {
+              "label": "1"
+            },
+            {
+              "label": "16"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "13"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "sq-0025",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Teller A starter på 5 og trekker fra 1 for hvert skritt: 5, 4, 3, 2, 1, 0. Teller B starter på 0 og legger til 2 for hvert skritt: 0, 2, 4, 6, 8, 10. Hvor mange har teller A?",
+          "options": [
+            {
+              "label": "5"
+            },
+            {
+              "label": "-1"
+            },
+            {
+              "label": "0"
+            },
+            {
+              "label": "1"
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "sq-0026",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Teller A starter på 1 og legger til 4 for hvert skritt: 1, 5, 9, 13. Teller B starter på 3 og legger til 2 for hvert skritt: 3, 5, 7, 9. Hvor mange har teller A?",
+          "options": [
+            {
+              "label": "9"
+            },
+            {
+              "label": "13"
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "1"
+            },
+            {
+              "label": "17"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sq-0027",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Teller A starter på 6 og legger til 2 for hvert skritt: 6, 8, 10, 12, 14. Teller B starter på 2 og legger til 3 for hvert skritt: 2, 5, 8, 11, 14. Hvor mange har teller B?",
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "17"
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "14"
+            },
+            {
+              "label": "11"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sq-0028",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: P 4, Q 8, R 16, S 32, T 64, ?",
+          "options": [
+            {
+              "label": "U 128"
+            },
+            {
+              "label": "T 128"
+            },
+            {
+              "label": "U 64"
+            },
+            {
+              "label": "T 64"
+            },
+            {
+              "label": "V 128"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "sq-0029",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: M 12, K 10, I 8, G 6, E 4, ?",
+          "options": [
+            {
+              "label": "C 4"
+            },
+            {
+              "label": "E 4"
+            },
+            {
+              "label": "A 2"
+            },
+            {
+              "label": "C 0"
+            },
+            {
+              "label": "C 2"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "sq-0030",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 1, C 3, E 9, G 27, I 81, ?",
+          "options": [
+            {
+              "label": "I 81"
+            },
+            {
+              "label": "M 243"
+            },
+            {
+              "label": "K 243"
+            },
+            {
+              "label": "K 729"
+            },
+            {
+              "label": "M 729"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "sq-0031",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 6, C 10, A 14, B 18, Z 22, ?",
+          "options": [
+            {
+              "label": "Z 26"
+            },
+            {
+              "label": "A 26"
+            },
+            {
+              "label": "A 22"
+            },
+            {
+              "label": "Z 22"
+            },
+            {
+              "label": "Y 26"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "sq-0032",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: X 2, W 4, V 6, U 8, T 10, ?",
+          "options": [
+            {
+              "label": "S 10"
+            },
+            {
+              "label": "T 10"
+            },
+            {
+              "label": "R 12"
+            },
+            {
+              "label": "S 12"
+            },
+            {
+              "label": "S 14"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "sq-0033",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 2. Anvend først regel 1 (x5), deretter regel 2 (-3). Hva er resultatet?",
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "-1"
+            },
+            {
+              "label": "-5"
+            },
+            {
+              "label": "50"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "sq-0034",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 4. Anvend først regel 1 (x3), deretter regel 2 (-2). Hva er resultatet?",
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "36"
+            },
+            {
+              "label": "11"
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "sq-0035",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 5. Anvend først regel 1 (x2), deretter regel 2 (-6). Hva er resultatet?",
+          "options": [
+            {
+              "label": "-2"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "10"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "sq-0036",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Starttallet er 4. Anvend først regel 1 (x3), deretter regel 2 (+8). Hva er resultatet?",
+          "options": [
+            {
+              "label": "12"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "36"
+            },
+            {
+              "label": "21"
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "sq-0037",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Teller A starter på 1 og legger til 5 for hvert skritt: 1, 6, 11, 16, 21. Teller B starter på 7 og trekker fra 1 for hvert skritt: 7, 6, 5, 4, 3. Hvor mange har teller A?",
+          "options": [
+            {
+              "label": "20"
+            },
+            {
+              "label": "1"
+            },
+            {
+              "label": "26"
+            },
+            {
+              "label": "21"
+            },
+            {
+              "label": "22"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "sq-0038",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Teller A starter på 9 og trekker fra 2 for hvert skritt: 9, 7, 5, 3. Teller B starter på 8 og trekker fra 2 for hvert skritt: 8, 6, 4, 2. Hvor mange har teller B?",
+          "options": [
+            {
+              "label": "2"
+            },
+            {
+              "label": "8"
+            },
+            {
+              "label": "0"
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "sq-0039",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Teller A starter på 4 og legger til 3 for hvert skritt: 4, 7, 10, 13, 16, 19. Teller B starter på 1 og legger til 5 for hvert skritt: 1, 6, 11, 16, 21, 26. Hvor mange har teller A?",
+          "options": [
+            {
+              "label": "26"
+            },
+            {
+              "label": "24"
+            },
+            {
+              "label": "4"
+            },
+            {
+              "label": "22"
+            },
+            {
+              "label": "19"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "sq-0040",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Teller A starter på 8 og trekker fra 1 for hvert skritt: 8, 7, 6, 5, 4. Teller B starter på 5 og legger til 2 for hvert skritt: 5, 7, 9, 11, 13. Hvor mange har teller B?",
+          "options": [
+            {
+              "label": "12"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "13"
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "14"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.6
+        }
+      ]
+    }
+  ]
+}

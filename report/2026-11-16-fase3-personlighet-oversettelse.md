@@ -56,3 +56,19 @@ Persona-batch selftests 1/2/3: ALL PASS ×3. Engine selftest 72/72. IPIP-50 self
 
 1. Ekte B-familie-simulering (ask_agent fra hovedchatt-kontekst).
 2. Id-kollisjons-steg (tvers-pool item-id-uniqueness) før FASE-nivå som nøkler tvers pools.
+
+## 13. Verifikasjons-appendiks (sister-verifisering, TR-D23E8303E811 — [VERIFISER]-leaf)
+
+Uavhengig maskinverifikasjon av spørsmålet «er tilpasningen psykometrisk gyldig, ikke bare språklig pen?» — deterministisk harness `tests/schema/persona_pool/_fase3_psykometrisk_verify.mjs`, **31/31 PASS**:
+
+- **Nøkling-integritet er oversettelses-uavhengig:** alle 275 items har kind + scales(id,sign) + option-verdisekvens identisk EN↔NO. Skåringsmatematikken (sign, reversering, verdiskala) er strukturelt uforandret av oversettelsen — et nytt lag av garanti utover språk-QA.
+- **Polaritets-audit:** 9 regex-flagg undersøkt manuelt — 7 er morfologiske/idiomatiske false positives (distrust→«ikke», unable→«ikke», turn down→«takker nei», avoid→«unngå» osv.); 2 er ekte restruktureringer fra negasjon til positiv form (e-0005, c-0027) — begge beholder EN-sign, så polaritet-flip-fella (klassisk oversettelsesfeil som dreper scoring) er ikke trådt inn.
+- **Balanse bevart:** 5×55 items tvers pools (E/A/O/C/N 55 hver), negativandel 40–50% per pool:dim (sign-vindu 30–70% PASS).
+- **Gloss-lag:** 50/50 låste items byte-paritet mot live-def (0 avvik); fordeling e-a 20 / o-c 20 / n-rest 10; **0 av 16 rettelser rører gloss-laget.**
+- **Options-kontrakt (S5):** alle 275 NO-optionsett == live-NO OG alle 275 EN-optionsett == live-EN; option-verdisekvenser identiske tvers språk.
+- **Rettelser/holds:** 16/16 anvendt med korrekt pool-nøkling (inkl. begge `dimension.*`-feltene: Planlagthet + målretting); holds 5/5 uendret; 0 identiske NO-tekster tvers pools; 0 skandinaviske artefakter; review-sheet bekreftet som pre-fix snapshot — avvikende rader == akkurat de 13 item-rettede.
+- **Id-kollisjonen (§5) empirisk gående:** o-0002 eksisterer i både o-c og n-rest med ulike tekster («Jeg har vanskelig for å forstå abstrakte ideer.» / «Jeg drømmer ofte bort i min egen fantasi.») — første verifikasjonsprobe tråkket i den umiddelbart. Styrker pin-forslaget i §8 punkt 2.
+
+**Avgrensning — hva «gyldig» betyr her:** verifisert er strukturell/nøklings-gyldighet: oversettelsen bevarer målestrukturen identisk og kan ikke ha introdusert scoring-skjevhet, og låst lag er arvet. Ikke bevist av dette leddet (måles empirisk, ikke av oversettelse-QA, i tråd med planlagt kjede): alpha på NO-trafikk (FASE 2-estimatene gjelder EN-side til parvis respondens foreligger — fase 10 / #3724), konstrukt-gyldighet av NO-formuleringene mot kriteriedata (FASE 4), normer. Verdict: **passer psykometrisk nivå på alt som kan verifiseres uten ny data; empirisk NO-validering gjenstår som planlagt arbeid, ikke som mangel i denne leveransen.**
+
+Regresjon i verifikasjonsleddet: persona-batch selftests 3× ALL PASS, ipip50 ALL PASS. Scratch-verifikasjonsprober fjernet; kun deterministisk harness beholdt.

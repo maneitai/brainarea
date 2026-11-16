@@ -1,0 +1,47 @@
+{
+  "doc": "_fase3_nd_resulttext_verdict",
+  "status": "GJELDENDE",
+  "date": "2026-11-16",
+  "steg": "[3-VEIS] FASE 3: Resultattekst neurodivergent — KUN generisk deling, henvisning-ansvarsfraskrivelse (todo #3786 i kjede #3778..#3787; søster til #3780/#3782/#3783/#3785)",
+  "mandat": "itemspec boardRefs.resultText: '#3786 (resultattekst neurodivergent — KUN generisk deling)' + '#3787 (streng ikke-diagnose-kontroll)'. Triage-modellen (_nd_triage_model.mjs) eksplisitt: 'ingen klinisk språk, ingen alvorlighetsgrad, ingen henvisningstekst — resultattekst er #3786/#3787 sitt område'. Triagemodellens transport: '#3794-konvensjonen (fragment-lenke), ingen persondata krysser grensen'.",
+  "metode": "A = config/renderer/def/meta-les + substrat-kontrakt-les (itemspec, lisensverdict, triage-modell) | B = python round-trip-redigering av report/configs (byte-stil bevart) med assert per anker | C = deterministisk harness _fase3_nd_resulttext_verify.mjs 226/226 med EKTE scoringpath mot live pool-def def-nd-triage-pool.no.json (40 items, 2 akser) + triage-modellens fire utfall.",
+  "funn": [
+    {
+      "id": "F1",
+      "klasse": "i (mangler)",
+      "hvor": "report/configs/{standard,personal,employer}.json dimensions.labels",
+      "funn": "ND-akse-etikettene adhd/autism manglet i alle 3 configs — renderer-fallback (renderer.mjs labelOf, linje 120-121) ville rendret rå id ('adhd'/'autism') i grafen for triage-resultater. Nøyaktig samme hull as rel-F1 (#3785). Live def (nd-triage-pool) finnes allerede (78/78 selftest), så hullet er reelt, ikke hypotetisk.",
+      "rettelse": "R1: 2/2 akse-etiketter no/en i alle 3 configs, låst byte-eksakt til itemspec domainDecision-etikettene og live def-filene: ADHD/ADHD, Autisme/Autism. Fallback-lagen provet begge veier i harness V2 (labels slettet => rå id synlig; labels til stede => 2/2 byte-låst)."
+    },
+    {
+      "id": "F2",
+      "klasse": "i (mangler)",
+      "hvor": "alle 3 configs disclosures[]",
+      "funn": "Ingen tekstlag sa at et resultat aldri er en henvisning, og ingenting beskrev delte resultater som generiske — mens triage-sporet nettopp produserer utfallstekst (fire utfall + 'neste steg'-peker) og deling følger #3794-fragmentkonvensjonen. Det tok #3786-mandatene (KUN generisk deling, henvisning-ansvarsfraskrivelse) inn i tekstene tredjeparter faktisk leser.",
+      "rettelse": "R2: to disclosures lagt til i alle 3 configs, no/en: 'not-referral' (resultatet er aldri en henvisning — ingen anbefaling om utredning, erstatter ikke helsepersonell) og 'generic-share' (delte resultater er generiske, ingen persondata, ikke dokumentasjon/vurdering av en person). Renderer rendrer disclosures rått (renderer.mjs:302-307) — verifisert i alle 6 rammespraak-rendringer."
+    }
+  ],
+  "hypoteserAvkreftet": [
+    "Hypotese 'renderer trenger ny disclosure-kontrakt': AVKREFTET — disclosures rendres generisk per config-entry (id + no/en); ingen renderer-endring trengt, bare data.",
+    "Hypotese 'forbudsvokteren trenger utvidelse for ND-sporet': AVKREFTET (i dette stegets omfang) — threshold-blokkens forbidWord + employer-prohibitions fanger diagnostisk vokabular på konfig-nivå; rendret output skannet i harness V4 (token-vindu + setningsnivå-negasjon, 13 forbudstermer × 24 renders): alle treff ligger i negert klausul, håndrefert per kontekst (dump i rapporten).",
+    "Hypotese 'trait-kompositt for triage er misvisende og må skjules i tekstlaget': AVKREFTET SOM STEG-OMFANG — normNote-lagene forklarer allerede at samletallet er vektet gjennomsnitt av dimensjonsprosentene (#3782-R1), og triage-utfallet beregnes på akse-skårene (aldri komposit) per itemspec scoringContracts + triage-model-why. Tekstlaget beholder forklaringen; utfalls-avlesning er visningslagets (FASE 4) oppgave."
+  ],
+  "holds": [
+    "ASRS-blokken (6Q) finnes i ingen def (verdict #3732 §4: NYU-bekreftelse på skjermbasert remediering mangler) — når den settes live, rendres anker-skår separat med egen disclaimer (itemspec triageSessionDecision.asrsPlaceholder + asrsIntegration). Tekstlaget i dette steget forutsetter ikke ASRS og røres ikke før den blokken live-settes (pin)",
+    "Triagemodellens utfallstekst (out-none/out-adhd/out-autism/out-adhd-autism visningstekster) er ikke forfattet ennå — dette steget leverer deling/ansvarsfraskrevelse-laget, ikke utfalls-lesetekster. Utfalls-tekstene er FASE 4 resultat-surface (sammen med navngitte profiltekster pin fra #3780). OBSERVED-bandet 40-54 er dokumentert 'tekst-område (#3786)' i modellen: denne forpligtelsen dekkes av disclosures+disclaimer-laget, men per-utfalls-lese-tekster mangler fortsatt og hjemmes her — pin",
+    "'klinisk evaluert'/'screening' rester i employer-prohibitions er utdatert mot nye disclosures? — NEI: 'not-referral' inneholder 'utredning' som står i negert klausul ('ingen anbefaling om utredning'), og employer-prohibitions inneholder ikke 'utredning'/'referral' — skannet, ingen klipp. Forholder seg til #3787 (streng ikke-diagnose-kontroll) som egen søster-steg: den eier dypt-dypt-svaret av diagnostisk vokabular på tvers av alle lag."
+  ],
+  "pins": [
+    "FASE 4 resultat-surface: utfalls-lesetekster per outcode + OBSERVED-band + navngitte profiltekster (pin videreført fra #3780) — én leveranse, ikke flere lag",
+    "ASRS-live: når NYU-bekreftelsen foreligger og blokken settes live, re-les disclosures + disclaimer-lagen mot anker-visningens adskilte disclaimer-krav (itemspec asrsIntegration)",
+    "Normerings-binding (videreført fra #3785): ved norms=published må 'ikke persentiler'-avvisningene i trait-normNote + disclosures re-les; da blir 'generic-share'/'not-referral' også kvantifiserings-atte stedet",
+    "Delings-transport (#3794): fragment-lenke-kodingen eies av #3794; dette steget knytter bare tekstlaget. Ved implementering: koden skal bære skårene (identifikatorfritt) — 'generic-share'-disclosure-forpligtelsen avhenger av at det holdes."
+  ],
+  "bevis": {
+    "harness": "tests/schema/_fase3_nd_resulttext_verify.mjs 226/226 PASS, deterministisk (2 kjøringer, identisk output). V1: ekte scoringpath mot nd-triage-pool (40 items, uniform midt => begge akser 50) rendret i alle 6 rammespraak, 2/2 ND-etiketter byte-låst, 0 rå id, henvisning-+deling-disclosures rendret i alle 6. V2: fallback-lagen provet begge veier. V3: triage-modellens fire utfall generert gjennom EKTE payloads (lav/adhd-høy/autism-høy/begge) og rendret 4×6=24 ganger, outcodes = enum-bare. V4: forbuds-skann (diagnos*/henvis*/referral/utredning/assessment/klinisk/clinical/lidelse) over 24 renders med token-vindu + setningsnivå-fallback — 0 påstående kontekst, alle kontekster håndrefert. V5: identifikatorfri render (ingen item-tekst, ingen personfelt, likert-kun).",
+    "regresjon": "report 74/74 · engine 72/72 · scoring 27+27 · integrasjon 5/5 · attention 57/57 · resume 27 · repeat 25 · handcalc 27 · glm 46 · i18n 22 · ipip50 ALL · nd-triage-pool 78/78 · rel-verify 88 + 3rdparty 214 · gscore 54 · estimat 76 · psykometrisk 31 · normering 107 (tre kjøringer; én transient D.engine-72-blipp i parallelt F:-IO, ikke reproduserbar) · ads 42 · puzzle 99 · hreflang (kjørt via i18n + SSG) · SSG rebuild byte-identisk (out/ 0 diff) · demo regenerert (2 filer, nye disclosures + ND-vokabular i config-tekstlagene)",
+    "ssg": "out/ byte-identisk: report-configs er ikke kilde for out/; ND-sporet har ingen offentlig testflate ennå (pin: V2-kontrakt i _fase3_rel_resulttext_3rdparty_verify.mjs flipper ved triage-lansering)"
+  },
+  "omfang": "Dette steget leverer rapportteks-lagets ND-finale: etiketter (R1) + disclosures (R2). Item-lagene for dyp ADHD/dyp autisme bygges i #3826–#3831 og de QC-er sine egne tekster. ASRS-6Q er lisensbundet verbatim-adopsjon (verdict #3732), aldri oversettelsesobjekt.",
+  "verificerer": "#3786-mandatet (KUN generisk deling + henvisning-ansvarsfraskrivelse) — #3787 (streng ikke-diagnose-kontroll) er søster-steg og gjenstår bevisst."
+}

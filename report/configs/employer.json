@@ -81,6 +81,14 @@
       "independence": {
         "no": "Selvstendighet",
         "en": "Independence"
+      },
+      "adhd": {
+        "no": "ADHD",
+        "en": "ADHD"
+      },
+      "autism": {
+        "no": "Autisme",
+        "en": "Autism"
       }
     },
     "graphic": "bar",
@@ -196,6 +204,16 @@
       "id": "no-norms",
       "no": "Ingen normer ble brukt: skårene er ikke persentiler og ikke sammenlignet med andre.",
       "en": "No norms were applied: scores are not percentiles and not compared with anyone."
+    },
+    {
+      "id": "not-referral",
+      "no": "Et resultat her er aldri en henvisning — det gir ingen anbefaling om utredning og erstatter ikke helsepersonell.",
+      "en": "A result here is never a referral — it gives no recommendation for further assessment and does not replace healthcare professionals."
+    },
+    {
+      "id": "generic-share",
+      "no": "Resultater som deles er generiske: de bærer ingen persondata og er ikke dokumentasjon eller vurdering av en person.",
+      "en": "Shared results are generic: they carry no personal data and are not documentation or an assessment of a person."
     }
   ],
   "share": {

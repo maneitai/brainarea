@@ -5,7 +5,7 @@
  */
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { BASE, canonicalUrl, langSwitchHref, pathToLocale, ROUTES, LOCALES } from './locale.js';
 import { RUTE_LISTE } from './pages-data.js';
 
@@ -37,8 +37,8 @@ const htmlFiles = allFiles.filter((f) => f.endsWith('.html'));
 ok('V1.only-expected-html', htmlFiles.length === expectedPairs.length + 1, htmlFiles.length + ' vs ' + (expectedPairs.length + 1)); /* +1 = 404.html */
 
 /* Load EN+NO i18n values for tekst-inventar. */
-const { KEYS: EN_KEYS } = await import(join(__dirname, '..', 'i18n', 'en.js'));
-const { KEYS: NO_KEYS } = await import(join(__dirname, '..', 'i18n', 'no.js'));
+const { KEYS: EN_KEYS } = await import(pathToFileURL(join(__dirname, '..', 'i18n', 'en.js')).href);
+const { KEYS: NO_KEYS } = await import(pathToFileURL(join(__dirname, '..', 'i18n', 'no.js')).href);
 const flat = (K) => { const o = []; for (const [ns, names] of Object.entries(K)) for (const v of Object.values(names)) o.push(v); return o; };
 const ALLOW = new Set(['Brainarea', '(c) 2026 Brainarea']);
 /* switcher-chrome kommer fra pages-data.langSwitcher(), ikke i18n-katalogen: */

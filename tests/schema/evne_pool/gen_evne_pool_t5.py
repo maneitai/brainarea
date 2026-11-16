@@ -240,7 +240,7 @@ def build_all():
                 c_lbl = f"{lpos(correct[0])} {correct[1]}"
                 code_lbl = [(c, f"{lpos(p)} {t}") for (c, (p, t)) in codes]
                 chosen = uniq_labels(c_lbl, code_lbl, ph, 4)
-                prompt_no = (f"Følgjen er bygget på en fast regel for bokstavene og en fast "
+                prompt_no = (f"Følgen er bygget på en fast regel for bokstavene og en fast "
                              f"regel for tallene. Hvilket ledd kommer sist: "
                              + ", ".join(f"{lpos(p)} {t}" for (p, t) in
                                          seq_chain(it)[:it['nlead'] + 1]) + ", ?")

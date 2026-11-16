@@ -32,7 +32,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 2, B 4, C 6, D 8, E 10, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 2, B 4, C 6, D 8, E 10, ?",
           "options": [
             {
               "label": "E 12"
@@ -67,7 +67,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: C 1, D 3, E 5, F 7, G 9, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: C 1, D 3, E 5, F 7, G 9, ?",
           "options": [
             {
               "label": "H 9"
@@ -102,7 +102,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 3, B 5, C 7, D 9, E 11, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 3, B 5, C 7, D 9, E 11, ?",
           "options": [
             {
               "label": "F 13"
@@ -137,7 +137,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 2, C 3, D 4, E 5, F 6, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 2, C 3, D 4, E 5, F 6, ?",
           "options": [
             {
               "label": "F 7"
@@ -172,7 +172,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: D 4, E 6, F 8, G 10, H 12, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: D 4, E 6, F 8, G 10, H 12, ?",
           "options": [
             {
               "label": "I 12"
@@ -207,7 +207,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 5, C 10, D 15, E 20, F 25, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 5, C 10, D 15, E 20, F 25, ?",
           "options": [
             {
               "label": "F 25"
@@ -242,7 +242,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 1, C 2, E 3, G 4, I 5, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 1, C 2, E 3, G 4, I 5, ?",
           "options": [
             {
               "label": "I 6"
@@ -522,7 +522,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 2, B 4, C 8, D 16, E 32, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 2, B 4, C 8, D 16, E 32, ?",
           "options": [
             {
               "label": "F 32"
@@ -557,7 +557,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: Z 9, Y 7, X 5, W 3, V 1, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: Z 9, Y 7, X 5, W 3, V 1, ?",
           "options": [
             {
               "label": "V 1"
@@ -592,7 +592,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 3, E 5, H 7, K 9, N 11, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 3, E 5, H 7, K 9, N 11, ?",
           "options": [
             {
               "label": "N 13"
@@ -627,7 +627,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 4, B 6, D 8, E 10, G 12, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 4, B 6, D 8, E 10, G 12, ?",
           "options": [
             {
               "label": "H 14"
@@ -662,7 +662,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: C 3, F 6, I 9, L 12, O 15, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: C 3, F 6, I 9, L 12, O 15, ?",
           "options": [
             {
               "label": "O 15"
@@ -977,7 +977,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: P 4, Q 8, R 16, S 32, T 64, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: P 4, Q 8, R 16, S 32, T 64, ?",
           "options": [
             {
               "label": "U 128"
@@ -1012,7 +1012,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: M 12, K 10, I 8, G 6, E 4, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: M 12, K 10, I 8, G 6, E 4, ?",
           "options": [
             {
               "label": "C 4"
@@ -1047,7 +1047,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 1, C 3, E 9, G 27, I 81, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 1, C 3, E 9, G 27, I 81, ?",
           "options": [
             {
               "label": "I 81"
@@ -1082,7 +1082,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 6, C 10, A 14, B 18, Z 22, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 6, C 10, A 14, B 18, Z 22, ?",
           "options": [
             {
               "label": "Z 26"
@@ -1117,7 +1117,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: X 2, W 4, V 6, U 8, T 10, ?",
+          "prompt": "Følgen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: X 2, W 4, V 6, U 8, T 10, ?",
           "options": [
             {
               "label": "S 10"

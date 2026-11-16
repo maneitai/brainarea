@@ -14,7 +14,7 @@
  * E — BYGG-DETERMINISME: to bygg til temp, bitvis identiske.
  * F — KONTRAKT: functions/normering.js finnes, .gitkeep urørt.
  */
-import { readFileSync, writeFileSync, mkdtempSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdtempSync, rmSync, readdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import { join, dirname, resolve } from 'node:path';
@@ -251,7 +251,14 @@ const body = async (r) => JSON.parse(await r.text());
 // ---------- E: BYGG-DETERMINISME ----------
 {
   const hashDir = (dir) => {
-    const listing = execFileSync('find', [dir, '-type', 'f'], { encoding: 'utf-8' }).trim().split('\n').sort();
+    let listing;
+    try { listing = execFileSync('find', [dir, '-type', 'f'], { encoding: 'utf-8' }).trim().split('\n'); }
+    catch {
+      // Windows: GNU-find finnes ikke ? node-native rekursiv listing med samme semantikk (relative stier skilt ut i hash-loopen)
+      const walk = (d, rel) => readdirSync(d, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? walk(join(d, e.name), rel + '/' + e.name) : [rel + '/' + e.name]);
+      listing = walk(dir, '').map((r) => join(dir, r.slice(1)));
+    }
+    listing.sort();
     const h = createHash('sha256');
     for (const fAbs of listing) {
       const rel = fAbs.slice(dir.length + 1); // sti UTEMP dir-navn — ellers hasher jeg det tilfeldige temp-navnet

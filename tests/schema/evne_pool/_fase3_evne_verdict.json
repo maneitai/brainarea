@@ -1,0 +1,151 @@
+{
+  "specVersion": 1,
+  "id": "fase3-evne-no-translation-verdict-utkast",
+  "type": "translation-qa-verdict",
+  "status": "UTKAST_A",
+  "date": "2026-11-16",
+  "run": "TR-D2CA262EE725",
+  "phase": "fase3-evne [3-VEIS] steg 1 av 3 (utkast-verdikt)",
+  "scope": "230 items i evne_pool (t1 50, t2 50, t3 50, t4 40, t5 40). t3 er forfattet separat per spraak per spec.languagePlan ? deler av t3 er parallelle originaler (vr-0007 hode/fot, vr-0041 navn, vr-0045 15->18 frukter), ikke oversettelser: forskjell i stimulus-styrke mellom spraakpar er der MED design, ikke avvik. EN-side er frossen i dette steget (t1/t2/t4/t5 er spraknoytrale i valg; prompt-baaring EN->NO per konvensjon).",
+  "metode": "Full lesing av alt NO-tekstinnhold (230 prompts + 1150 labels) med handkontroll av alle svarnoekler t2/t4/t5; uavhengig programmatisk re-avledning av t2 (50/50 fasit bekreftet under generatorens dokumenterte familievalk: arith/geom/alternate/diffchain/muladd/dual/fib-pairsum/quadratic-inc); struktur-paritet EN==NO per pool (id-mengder, kind, correctIndex, options-antall); korrekturskann (svensk/dansk-former, dobbeltbestemt form, tverrbokstav); duplikat- og vanskelighetsanalyse over identisk stimulus.",
+  "rettelser": [
+    {
+      "pool": "t5",
+      "n": 17,
+      "klasse": "i",
+      "before": "Følgjen",
+      "after": "Følgen",
+      "grunn": "dobbelbestemt form feil: 'sekvensen/følgen' er -en bestemt; 'Følgjen' er ugyldig form (kun -a-/neuter-ord får -et). Traf alle 17 seq-malitems og prompt-gjentakelsen i update/track-items.",
+      "familie": "A",
+      "stoerer": 17,
+      "bevis": "gen_evne_pool_t5.py hadde samme feil i malstrengen ? rettet ogsaa der, ellers gjeninnfoeres ved regenerering; def-evne-t5-sekvens.no.json 17 hopp -> 0"
+    },
+    {
+      "pool": "t4",
+      "item": "sp-0018",
+      "klasse": "i",
+      "before": "himlen",
+      "after": "himmelen",
+      "grunn": "dansk/svensk form; bokmaal er 'himmelen'",
+      "familie": "A",
+      "stoerer": 1,
+      "bevis": "gen_evne_pool_batch2.py hadde samme feil ? rettet ogsaa der; batch2-metatext speilet"
+    },
+    {
+      "pool": "t4",
+      "item": "sp-0034",
+      "klasse": "i",
+      "before": "Mia har to:nummer fra hver ende",
+      "after": "Mia har to numre, ett fra hver ende",
+      "grunn": "kolon/typo: 'to:nummer' er en brutt frase ? mangler mellomrom, kolon er skrivefeil, 'ett nummer fra hver ende' er den korrekte konstruksjonen for en person midt i 5-punkt-kao",
+      "familie": "A",
+      "stoerer": 1,
+      "bevis": "EN har 'Mia has two numbers, one from either end'; NO-option 3 var eneste med kolon-tegn i hele NO-korpuset (verifisert)"
+    }
+  ],
+  "avkreftet": [
+    {
+      "item": "vr-0039",
+      "mistanke": "rekkefoelge-avlesning",
+      "verdict": "RENT ? faasit 'rød, grønn, gul' følger reglene (gul til høyre for grønn, grønn til høyre for rød); foerste avlesning var min feil"
+    },
+    {
+      "item": "sp-0011",
+      "mistanke": "'hjemme'-distraktor",
+      "verdict": "RENT ? EN har 'home' samme posisjon; regelen 'hagen ligger vest for gjerdet' + 'vender mot oest' -> hagen bak er gyldig; 'hjemme' er distrahør, ikke fasit"
+    },
+    {
+      "item": "nm-0018..0023 + nm-0030..0034",
+      "mistanke": "faasit-avvik (interleave/muladd)",
+      "verdict": "RENT ? 50/50 t2-fasit re-avledet under dokumenterte familievalk; L-bandets 4-talls-rekker er arith/geom med 5 ledd vist som 4 + 'mangler et tall' konvensjon"
+    },
+    {
+      "item": "vr-0046/vr-0041/vr-0045",
+      "mistanke": "EN/NO-stimulus-divergens",
+      "verdict": "RENT PER DESIGN ? t3 er forfattet separat per spraak per spec.languagePlan; runde-fire-EN / runde-to-NO er parallelle originaler"
+    },
+    {
+      "item": "mx/nn duplikat-par (10 t1 + 5 t2 grupper)",
+      "mistanke": "oversettelses-dubletter",
+      "verdict": "IKKE ET OVERSETTELSESAVVIK ? id-mengder og correctIndex identiske tvers spraak; duplikatet eksisterer identisk i EN. Men: det ER et pool-design-spor (se poolDesignSpor under), ikke i dette stegets re-korrektur-mandat (EN-side frossen)."
+    }
+  ],
+  "poolDesignSpor": [
+    {
+      "pool": "t1",
+      "items": [
+        "mx-0010",
+        "mx-0016"
+      ],
+      "sammendrag": "identisk stimulus (samme aksjer, samme violations-orden i meta) men mx-0016 har b=-1.15 vs mx-0010 b=-1.55 ? vanskelighetsbandidt feiltildelt: meta-konvensjonen gir k0=3 -> b=-1.55 (alle tolv count-down-L items foelger malen). mx-0016 avviker fra egen konvensjon uten dokumentert grunn"
+    },
+    {
+      "pool": "t1",
+      "sammendrag": "9 andre grupper med identisk stimulus har ulik b ? der er stimulus lik men violations/distraktorer varierer (design): b-variasjon mellom ulike option-sets er bevisst pool-strategi, skilt fra mx-0016 ved at violations-orden der er ULIK"
+    },
+    {
+      "pool": "t2",
+      "items": [
+        "nm-0014",
+        "nm-0017",
+        "nm-0024",
+        "nm-0046",
+        "nm-0026",
+        "nm-0047"
+      ],
+      "sammendrag": "samme stimulus, ulike option-sets, b spriyer inntil 1.7 ? samme spor-klasse (stimulus-identitet mangler, option-set fører fasit-identiteten); annerledes: t2-parene har konsekvent ULIK correctIndex og option-orden, t1-parene har IDENTISK correctIndex med rotert option-orden"
+    },
+    {
+      "vurdering": "[Utkast-verdict] Ikke et oversettelsesavvik og ikke i korrige-mandatet (EN frossen; pools er allerede validert av FASE 2-selvtester som ikke setter stimulus-uniqueness-krav). Anbefaling til syntese: registrer som pin til FASE 4 normering ? parvis responsdata paa stimulus-identiske items med b-spreng 1.7 gaar utover IRT-håndterbarhet. Alternativ B-fam-kritikk-utfall: oekonomi ved regenerering av 2-3 items med variantstimulus"
+    }
+  ],
+  "holds": [
+    {
+      "item": "nr-0009 (t2)",
+      "tekst": "4, 8, 16, 28, 44 ? diffs 4,8,12 (+4-kjede) som er diffchain [2,2] med forskyvet start; familen er dokumentert, men 4-talls diff-progresjon er aapen for tvil mellom 'add-4-chain' og 'dual' ? beheolder fasit 64 (v+5c) som er konvensjonen"
+    },
+    {
+      "item": "sq-0007/0017",
+      "tekst": "bokstav-sprang +3 (A,C,E,G,I) er en annen regel-art enn 'nestebokstav'; i mangel av undertype-krav i meta er det akseptert"
+    },
+    {
+      "item": "sp-0031 v sp-0021",
+      "tekst": "3-4-5-konstruksjonen (Pythagoras) gjentar med ulike verdier ? klassisk gjenbruk, ingen regelbrudd"
+    }
+  ],
+  "uttalelser": {
+    "gloss": "N/A ? evne-poolen har ingen live-def-gloss-lags-binding (det er unikt for personlighet/IPIP)",
+    "parite": "EN==NO strukturell paritet verifisert per pool: id-mengder identiske, correctIndex identiske 230/230 (etter patch options-innhold uendret)",
+    "labels": "t1/t2/t4/t5 labels er spraknoytrale per konvensjon (symboler/tall) og identiske tvers spraak ? verifisert; t3-labels spraak-baerende og forfattet separat",
+    "t3_konvensjon": "spec.languagePlan.rule bekreftet: 'T3 (verbal): forfattet separat per spraak' ? dermed er parallelle originaler en designtilstand"
+  },
+  "regresjon": {
+    "evne batch1": "ALL PASS (post-patch, mal-string laast i selftest)",
+    "evne batch2": "ALL PASS",
+    "evne t5": "ALL PASS",
+    "engine": "72/72",
+    "attention": "57/57",
+    "scoring-del1": "27/27",
+    "scoring-del2": "27/27",
+    "integrasjon": "5/5",
+    "ipip50": "ALL PASS",
+    "nd_triage": "78/78 (FIKSET: gen newline=LF ? Windows-CRLF brakk S13 byte-paritet; forklarer pre-eksisterende 3 S13-feil som #3770-loggen ikke had)",
+    "normering": "107/107 (FIKSET: GNU-find fallback node-native walk)",
+    "hreflang": "171/171 (FIKSET: pathToFileURL paa Windows dynamisk import)",
+    "puzzle": "99/99 (FIKSET: python3->python fallback i L-determinisme)"
+  },
+  "puzzle_99_fiks": "harness-miljoe, ikke pool",
+  "pins": [
+    {
+      "pin": "stimulus-uniqueness i evne_pool (10 t1 + 5 t2 grupper)",
+      "hvor": "FASE 4 normering / pool-design-revisjon",
+      "hvorfor": "IRT-baaring krever enten stimulus-uniqueness eller dokumentert multi-stimulus-haandtering; b-spreng paa 1.7 mellom stimulus-identiske t2-items er den stoerte risikoen"
+    },
+    {
+      "pin": "mx-0016 b=-1.15 vs egen -1.55-konvensjon",
+      "hvor": "FASE 4 normering",
+      "hvorfor": "moet mot L-band malen; eneste violations-identiske par"
+    }
+  ],
+  "avslutning": "Utkast-verdikt for fase3-evne. 3 klasse-i-rettinger anvendt (t5 17x, t4 1x + 1x) + generatorene + batch2-meta synkronisert for regenerability. 5 mistanker avkreftet med bevis. Regressjonsbrettet fullt groennt etter 3 miljoe-fikser i harness-laget (nd/puzzle/normering/hreflang) ? ingen av dem pool-feil, alle pre-eksisterende Windows-miljoe-gaps i samme klasse som #3737 herdet."
+}

@@ -1,0 +1,4932 @@
+[
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0001",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<]     [<<]     [<<]\n [<<<]    [<<<]    [<<<]\n[<<<<]   [<<<<]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [<<]     [<<]     [<<]\n [<<<]    [<<<]    [<<<]\n[<<<<]   [<<<<]      [?]",
+  "enOps": [
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<]",
+   "[<<<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<]",
+   "[<<<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0002",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [<]     [<]     [<]\n [<<]    [<<]    [<<]\n[<<<]   [<<<]     [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [<]     [<]     [<]\n [<<]    [<<]    [<<]\n[<<<]   [<<<]     [?]",
+  "enOps": [
+   "[<<<<]",
+   "[<<]",
+   "[<<<<<]",
+   "[<]",
+   "[<<<<<<]",
+   "[<<<]"
+  ],
+  "noOps": [
+   "[<<<<]",
+   "[<<]",
+   "[<<<<<]",
+   "[<]",
+   "[<<<<<<]",
+   "[<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0003",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n    [<]       [<]       [<]\n  [<<<]     [<<<]     [<<<]\n[<<<<<]   [<<<<<]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n    [<]       [<]       [<]\n  [<<<]     [<<<]     [<<<]\n[<<<<<]   [<<<<<]       [?]",
+  "enOps": [
+   "[<<<<]",
+   "[<<<<<<<]",
+   "[<<<]",
+   "[<<<<<<<<]",
+   "[<<<<<]",
+   "[<<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<]",
+   "[<<<<<<<]",
+   "[<<<]",
+   "[<<<<<<<<]",
+   "[<<<<<]",
+   "[<<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0004",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n    [<<]       [<<]       [<<]\n  [<<<<]     [<<<<]     [<<<<]\n[<<<<<<]   [<<<<<<]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n    [<<]       [<<]       [<<]\n  [<<<<]     [<<<<]     [<<<<]\n[<<<<<<]   [<<<<<<]        [?]",
+  "enOps": [
+   "[<<<<<<<<]",
+   "[<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<<<<<<]",
+   "[<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<<<<<]",
+   "[<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<<<<<<]",
+   "[<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0005",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<<]     [<<<]     [<<<]\n [<<<<]    [<<<<]    [<<<<]\n[<<<<<]   [<<<<<]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [<<<]     [<<<]     [<<<]\n [<<<<]    [<<<<]    [<<<<]\n[<<<<<]   [<<<<<]       [?]",
+  "enOps": [
+   "[<<<]",
+   "[<<<<<<<<]",
+   "[<<<<<]",
+   "[<<<<<<]",
+   "[<<<<]",
+   "[<<<<<<<]"
+  ],
+  "noOps": [
+   "[<<<]",
+   "[<<<<<<<<]",
+   "[<<<<<]",
+   "[<<<<<<]",
+   "[<<<<]",
+   "[<<<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0006",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<]     [<<]     [<<]\n [<<<]    [<<<]    [<<<]\n[<<<<]   [<<<<]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [<<]     [<<]     [<<]\n [<<<]    [<<<]    [<<<]\n[<<<<]   [<<<<]      [?]",
+  "enOps": [
+   "[<<<<<<<]",
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<]"
+  ],
+  "noOps": [
+   "[<<<<<<<]",
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0007",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<<]     [<<<]     [<<<]\n [<<<<]    [<<<<]    [<<<<]\n[<<<<<]   [<<<<<]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [<<<]     [<<<]     [<<<]\n [<<<<]    [<<<<]    [<<<<]\n[<<<<<]   [<<<<<]       [?]",
+  "enOps": [
+   "[<<<<<]",
+   "[<<<<<<]",
+   "[<<<<]",
+   "[<<<<<<<]",
+   "[<<<]",
+   "[<<<<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<<]",
+   "[<<<<<<]",
+   "[<<<<]",
+   "[<<<<<<<]",
+   "[<<<]",
+   "[<<<<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0008",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n    [<]       [<]       [<]\n  [<<<]     [<<<]     [<<<]\n[<<<<<]   [<<<<<]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n    [<]       [<]       [<]\n  [<<<]     [<<<]     [<<<]\n[<<<<<]   [<<<<<]       [?]",
+  "enOps": [
+   "[<<<<<<]",
+   "[<<<<]",
+   "[<<<<<<<]",
+   "[<<<]",
+   "[<<<<<<<<]",
+   "[<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<<<]",
+   "[<<<<]",
+   "[<<<<<<<]",
+   "[<<<]",
+   "[<<<<<<<<]",
+   "[<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0009",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n    [<<]       [<<]       [<<]\n  [<<<<]     [<<<<]     [<<<<]\n[<<<<<<]   [<<<<<<]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n    [<<]       [<<]       [<<]\n  [<<<<]     [<<<<]     [<<<<]\n[<<<<<<]   [<<<<<<]        [?]",
+  "enOps": [
+   "[<<<<<]",
+   "[<<<<<<<<]",
+   "[<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<<]",
+   "[<<<<<<<<]",
+   "[<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0010",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [?]",
+  "enOps": [
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<<<<]",
+   "[<]",
+   "[<<]",
+   "[<<<]"
+  ],
+  "noOps": [
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<<<<]",
+   "[<]",
+   "[<<]",
+   "[<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0011",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [<]    [<<]   [<<<]\n  [<]    [<<]   [<<<]\n  [<]    [<<]     [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [<]    [<<]   [<<<]\n  [<]    [<<]   [<<<]\n  [<]    [<<]     [?]",
+  "enOps": [
+   "[<]",
+   "[<<<<<<]",
+   "[<<<]",
+   "[<<<<]",
+   "[<<]",
+   "[<<<<<]"
+  ],
+  "noOps": [
+   "[<]",
+   "[<<<<<<]",
+   "[<<<]",
+   "[<<<<]",
+   "[<<]",
+   "[<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0012",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]      [?]",
+  "enOps": [
+   "[<<<<<<<]",
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<]"
+  ],
+  "noOps": [
+   "[<<<<<<<]",
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0013",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n    [<]     [<<<]   [<<<<<]\n    [<]     [<<<]   [<<<<<]\n    [<]     [<<<]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n    [<]     [<<<]   [<<<<<]\n    [<]     [<<<]   [<<<<<]\n    [<]     [<<<]       [?]",
+  "enOps": [
+   "[<<<<<]",
+   "[<<<<<<]",
+   "[<<<<]",
+   "[<<<<<<<]",
+   "[<<<]",
+   "[<<<<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<<]",
+   "[<<<<<<]",
+   "[<<<<]",
+   "[<<<<<<<]",
+   "[<<<]",
+   "[<<<<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0014",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [<]    [<<]   [<<<]\n  [<]    [<<]   [<<<]\n  [<]    [<<]     [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [<]    [<<]   [<<<]\n  [<]    [<<]   [<<<]\n  [<]    [<<]     [?]",
+  "enOps": [
+   "[<<<<]",
+   "[<<]",
+   "[<<<<<]",
+   "[<]",
+   "[<<<<<<]",
+   "[<<<]"
+  ],
+  "noOps": [
+   "[<<<<]",
+   "[<<]",
+   "[<<<<<]",
+   "[<]",
+   "[<<<<<<]",
+   "[<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0015",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n    [<<]     [<<<<]   [<<<<<<]\n    [<<]     [<<<<]   [<<<<<<]\n    [<<]     [<<<<]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n    [<<]     [<<<<]   [<<<<<<]\n    [<<]     [<<<<]   [<<<<<<]\n    [<<]     [<<<<]        [?]",
+  "enOps": [
+   "[<<<<<]",
+   "[<<<<<<<<]",
+   "[<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<<]",
+   "[<<<<<<<<]",
+   "[<<<<]",
+   "[<<<]",
+   "[<<<<<<]",
+   "[<<<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0016",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [<]\n[<<<]    [<<]     [?]",
+  "enOps": [
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<<<<]",
+   "[<]",
+   "[<<]",
+   "[<<<]"
+  ],
+  "noOps": [
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<<<<]",
+   "[<]",
+   "[<<]",
+   "[<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0017",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]   [<<<<]\n  [<<]    [<<<]      [?]",
+  "enOps": [
+   "[<<]",
+   "[<<<<<<<]",
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<]",
+   "[<<<<<<]"
+  ],
+  "noOps": [
+   "[<<]",
+   "[<<<<<<<]",
+   "[<<<<]",
+   "[<<<<<]",
+   "[<<<]",
+   "[<<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0018",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [<]     [^]     [>]\n [<<]    [^^]    [>>]\n[<<<]   [^^^]     [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [<]     [^]     [>]\n [<<]    [^^]    [>>]\n[<<<]   [^^^]     [?]",
+  "enOps": [
+   "[>>]",
+   "[>>>]",
+   "[vvv]",
+   "[^^^]",
+   "[<<<]",
+   "[>>>>]"
+  ],
+  "noOps": [
+   "[>>]",
+   "[>>>]",
+   "[vvv]",
+   "[^^^]",
+   "[<<<]",
+   "[>>>>]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0019",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n    [/]       [-]       [\\]\n  [///]     [---]     [\\\\\\]\n[/////]   [-----]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n    [/]       [-]       [\\]\n  [///]     [---]     [\\\\\\]\n[/////]   [-----]       [?]",
+  "enOps": [
+   "[\\\\\\\\\\]",
+   "[|||||]",
+   "[-----]",
+   "[/////]",
+   "[\\\\\\\\\\\\]",
+   "[\\\\\\\\]"
+  ],
+  "noOps": [
+   "[\\\\\\\\\\]",
+   "[|||||]",
+   "[-----]",
+   "[/////]",
+   "[\\\\\\\\\\\\]",
+   "[\\\\\\\\]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0020",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [^^]     [>>]     [vv]\n [^^^]    [>>>]    [vvv]\n[^^^^]   [>>>>]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [^^]     [>>]     [vv]\n [^^^]    [>>>]    [vvv]\n[^^^^]   [>>>>]      [?]",
+  "enOps": [
+   "[<<<<]",
+   "[>>>>]",
+   "[^^^^]",
+   "[vvvvv]",
+   "[vvv]",
+   "[vvvv]"
+  ],
+  "noOps": [
+   "[<<<<]",
+   "[>>>>]",
+   "[^^^^]",
+   "[vvvvv]",
+   "[vvv]",
+   "[vvvv]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0021",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [/]     [-]     [\\]\n [//]    [--]    [\\\\]\n[///]   [---]     [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [/]     [-]     [\\]\n [//]    [--]    [\\\\]\n[///]   [---]     [?]",
+  "enOps": [
+   "[---]",
+   "[///]",
+   "[\\\\\\\\]",
+   "[\\\\]",
+   "[\\\\\\]",
+   "[|||]"
+  ],
+  "noOps": [
+   "[---]",
+   "[///]",
+   "[\\\\\\\\]",
+   "[\\\\]",
+   "[\\\\\\]",
+   "[|||]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0022",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n    [<]       [^]       [>]\n  [<<<]     [^^^]     [>>>]\n[<<<<<]   [^^^^^]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n    [<]       [^]       [>]\n  [<<<]     [^^^]     [>>>]\n[<<<<<]   [^^^^^]       [?]",
+  "enOps": [
+   "[<<<<<]",
+   "[>>>>>>]",
+   "[>>>>]",
+   "[>>>>>]",
+   "[vvvvv]",
+   "[^^^^^]"
+  ],
+  "noOps": [
+   "[<<<<<]",
+   "[>>>>>>]",
+   "[>>>>]",
+   "[>>>>>]",
+   "[vvvvv]",
+   "[^^^^^]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0023",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [--]     [\\\\]     [||]\n [---]    [\\\\\\]    [|||]\n[----]   [\\\\\\\\]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [--]     [\\\\]     [||]\n [---]    [\\\\\\]    [|||]\n[----]   [\\\\\\\\]      [?]",
+  "enOps": [
+   "[|||||]",
+   "[|||]",
+   "[||||]",
+   "[////]",
+   "[\\\\\\\\]",
+   "[----]"
+  ],
+  "noOps": [
+   "[|||||]",
+   "[|||]",
+   "[||||]",
+   "[////]",
+   "[\\\\\\\\]",
+   "[----]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0024",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n    [<]       [<]       [<]\n  [^^^]     [^^^]     [^^^]\n[>>>>>]   [>>>>>]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n    [<]       [<]       [<]\n  [^^^]     [^^^]     [^^^]\n[>>>>>]   [>>>>>]       [?]",
+  "enOps": [
+   "[>>>>]",
+   "[>>>>>]",
+   "[vvvvv]",
+   "[^^^^^]",
+   "[<<<<<]",
+   "[>>>>>>]"
+  ],
+  "noOps": [
+   "[>>>>]",
+   "[>>>>>]",
+   "[vvvvv]",
+   "[^^^^^]",
+   "[<<<<<]",
+   "[>>>>>>]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0025",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [/]     [/]     [/]\n [--]    [--]    [--]\n[\\\\\\]   [\\\\\\]     [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [/]     [/]     [/]\n [--]    [--]    [--]\n[\\\\\\]   [\\\\\\]     [?]",
+  "enOps": [
+   "[\\\\\\]",
+   "[|||]",
+   "[---]",
+   "[///]",
+   "[\\\\\\\\]",
+   "[\\\\]"
+  ],
+  "noOps": [
+   "[\\\\\\]",
+   "[|||]",
+   "[---]",
+   "[///]",
+   "[\\\\\\\\]",
+   "[\\\\]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0026",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [>>]     [>>]     [>>]\n [vvv]    [vvv]    [vvv]\n[<<<<]   [<<<<]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [>>]     [>>]     [>>]\n [vvv]    [vvv]    [vvv]\n[<<<<]   [<<<<]      [?]",
+  "enOps": [
+   "[^^^^]",
+   "[vvvv]",
+   "[>>>>]",
+   "[<<<<<]",
+   "[<<<]",
+   "[<<<<]"
+  ],
+  "noOps": [
+   "[^^^^]",
+   "[vvvv]",
+   "[>>>>]",
+   "[<<<<<]",
+   "[<<<]",
+   "[<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0027",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [-]     [-]     [-]\n [\\\\]    [\\\\]    [\\\\]\n[|||]   [|||]     [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [-]     [-]     [-]\n [\\\\]    [\\\\]    [\\\\]\n[|||]   [|||]     [?]",
+  "enOps": [
+   "[\\\\\\]",
+   "[---]",
+   "[||||]",
+   "[||]",
+   "[|||]",
+   "[///]"
+  ],
+  "noOps": [
+   "[\\\\\\]",
+   "[---]",
+   "[||||]",
+   "[||]",
+   "[|||]",
+   "[///]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0028",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n    [^]       [^]       [^]\n  [>>>]     [>>>]     [>>>]\n[vvvvv]   [vvvvv]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n    [^]       [^]       [^]\n  [>>>]     [>>>]     [>>>]\n[vvvvv]   [vvvvv]       [?]",
+  "enOps": [
+   "[^^^^^]",
+   "[vvvvvv]",
+   "[vvvv]",
+   "[vvvvv]",
+   "[<<<<<]",
+   "[>>>>>]"
+  ],
+  "noOps": [
+   "[^^^^^]",
+   "[vvvvvv]",
+   "[vvvv]",
+   "[vvvvv]",
+   "[<<<<<]",
+   "[>>>>>]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0029",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n  [||]     [||]     [||]\n [///]    [///]    [///]\n[----]   [----]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n  [||]     [||]     [||]\n [///]    [///]    [///]\n[----]   [----]      [?]",
+  "enOps": [
+   "[-----]",
+   "[---]",
+   "[----]",
+   "[\\\\\\\\]",
+   "[////]",
+   "[||||]"
+  ],
+  "noOps": [
+   "[-----]",
+   "[---]",
+   "[----]",
+   "[\\\\\\\\]",
+   "[////]",
+   "[||||]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0030",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n   [<]     [<<]    [<<<]\n  [^^]    [^^^]   [^^^^]\n [>>>]   [>>>>]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n   [<]     [<<]    [<<<]\n  [^^]    [^^^]   [^^^^]\n [>>>]   [>>>>]      [?]",
+  "enOps": [
+   "[>>>>]",
+   "[>>>>>]",
+   "[vvvvv]",
+   "[^^^^^]",
+   "[<<<<<]",
+   "[>>>>>>]"
+  ],
+  "noOps": [
+   "[>>>>]",
+   "[>>>>>]",
+   "[vvvvv]",
+   "[^^^^^]",
+   "[<<<<<]",
+   "[>>>>>>]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0031",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [//]      [////]    [//////]\n    [---]     [-----]   [-------]\n   [\\\\\\\\]    [\\\\\\\\\\\\]         [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [//]      [////]    [//////]\n    [---]     [-----]   [-------]\n   [\\\\\\\\]    [\\\\\\\\\\\\]         [?]",
+  "enOps": [
+   "[\\\\\\\\\\\\\\\\]",
+   "[||||||||]",
+   "[--------]",
+   "[////////]",
+   "[\\\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\]"
+  ],
+  "noOps": [
+   "[\\\\\\\\\\\\\\\\]",
+   "[||||||||]",
+   "[--------]",
+   "[////////]",
+   "[\\\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0032",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [<]       [<<]      [<<<]\n   [^^^]     [^^^^]    [^^^^^]\n [>>>>>]   [>>>>>>]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [<]       [<<]      [<<<]\n   [^^^]     [^^^^]    [^^^^^]\n [>>>>>]   [>>>>>>]        [?]",
+  "enOps": [
+   "[vvvvvvv]",
+   "[^^^^^^^]",
+   "[<<<<<<<]",
+   "[>>>>>>>>]",
+   "[>>>>>>]",
+   "[>>>>>>>]"
+  ],
+  "noOps": [
+   "[vvvvvvv]",
+   "[^^^^^^^]",
+   "[<<<<<<<]",
+   "[>>>>>>>>]",
+   "[>>>>>>]",
+   "[>>>>>>>]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0033",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n   [/]     [//]    [///]\n  [--]    [---]   [----]\n [\\\\\\]   [\\\\\\\\]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n   [/]     [//]    [///]\n  [--]    [---]   [----]\n [\\\\\\]   [\\\\\\\\]      [?]",
+  "enOps": [
+   "[-----]",
+   "[/////]",
+   "[\\\\\\\\\\\\]",
+   "[\\\\\\\\]",
+   "[\\\\\\\\\\]",
+   "[|||||]"
+  ],
+  "noOps": [
+   "[-----]",
+   "[/////]",
+   "[\\\\\\\\\\\\]",
+   "[\\\\\\\\]",
+   "[\\\\\\\\\\]",
+   "[|||||]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0034",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n   [<<]     [<<<]    [<<<<]\n  [^^^]    [^^^^]   [^^^^^]\n [>>>>]   [>>>>>]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n   [<<]     [<<<]    [<<<<]\n  [^^^]    [^^^^]   [^^^^^]\n [>>>>]   [>>>>>]       [?]",
+  "enOps": [
+   "[<<<<<<]",
+   "[>>>>>>>]",
+   "[>>>>>]",
+   "[>>>>>>]",
+   "[vvvvvv]",
+   "[^^^^^^]"
+  ],
+  "noOps": [
+   "[<<<<<<]",
+   "[>>>>>>>]",
+   "[>>>>>]",
+   "[>>>>>>]",
+   "[vvvvvv]",
+   "[^^^^^^]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0035",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n   [<]     [^^]    [>>>]\n  [<<]    [^^^]   [>>>>]\n [<<<]   [^^^^]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n   [<]     [^^]    [>>>]\n  [<<]    [^^^]   [>>>>]\n [<<<]   [^^^^]      [?]",
+  "enOps": [
+   "[>>>>>>]",
+   "[>>>>]",
+   "[>>>>>]",
+   "[vvvvv]",
+   "[^^^^^]",
+   "[<<<<<]"
+  ],
+  "noOps": [
+   "[>>>>>>]",
+   "[>>>>]",
+   "[>>>>>]",
+   "[vvvvv]",
+   "[^^^^^]",
+   "[<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0036",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [/]      [---]    [\\\\\\\\\\]\n    [//]     [----]   [\\\\\\\\\\\\]\n   [///]    [-----]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [/]      [---]    [\\\\\\\\\\]\n    [//]     [----]   [\\\\\\\\\\\\]\n   [///]    [-----]        [?]",
+  "enOps": [
+   "[\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\\\]",
+   "[|||||||]",
+   "[-------]",
+   "[///////]",
+   "[\\\\\\\\\\\\\\\\]"
+  ],
+  "noOps": [
+   "[\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\\\]",
+   "[|||||||]",
+   "[-------]",
+   "[///////]",
+   "[\\\\\\\\\\\\\\\\]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0037",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [>]       [vv]      [<<<]\n   [>>>]     [vvvv]    [<<<<<]\n [>>>>>]   [vvvvvv]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [>]       [vv]      [<<<]\n   [>>>]     [vvvv]    [<<<<<]\n [>>>>>]   [vvvvvv]        [?]",
+  "enOps": [
+   "[<<<<<<<]",
+   "[^^^^^^^]",
+   "[vvvvvvv]",
+   "[>>>>>>>]",
+   "[<<<<<<<<]",
+   "[<<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<<<<]",
+   "[^^^^^^^]",
+   "[vvvvvvv]",
+   "[>>>>>>>]",
+   "[<<<<<<<<]",
+   "[<<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0038",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [/]      [---]    [\\\\\\\\\\]\n    [//]     [----]   [\\\\\\\\\\\\]\n   [///]    [-----]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [/]      [---]    [\\\\\\\\\\]\n    [//]     [----]   [\\\\\\\\\\\\]\n   [///]    [-----]        [?]",
+  "enOps": [
+   "[|||||||]",
+   "[-------]",
+   "[///////]",
+   "[\\\\\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\\\]"
+  ],
+  "noOps": [
+   "[|||||||]",
+   "[-------]",
+   "[///////]",
+   "[\\\\\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\\\]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0039",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n   [^]     [>>]    [vvv]\n  [^^]    [>>>]   [vvvv]\n [^^^]   [>>>>]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n   [^]     [>>]    [vvv]\n  [^^]    [>>>]   [vvvv]\n [^^^]   [>>>>]      [?]",
+  "enOps": [
+   "[>>>>>]",
+   "[^^^^^]",
+   "[vvvvvv]",
+   "[vvvv]",
+   "[vvvvv]",
+   "[<<<<<]"
+  ],
+  "noOps": [
+   "[>>>>>]",
+   "[^^^^^]",
+   "[vvvvvv]",
+   "[vvvv]",
+   "[vvvvv]",
+   "[<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0040",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n   [<]     [<<]    [<<<]\n  [^^]    [^^^]   [^^^^]\n [>>>]   [>>>>]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n   [<]     [<<]    [<<<]\n  [^^]    [^^^]   [^^^^]\n [>>>]   [>>>>]      [?]",
+  "enOps": [
+   "[<<<<<]",
+   "[>>>>>>]",
+   "[>>>>]",
+   "[>>>>>]",
+   "[vvvvv]",
+   "[^^^^^]"
+  ],
+  "noOps": [
+   "[<<<<<]",
+   "[>>>>>>]",
+   "[>>>>]",
+   "[>>>>>]",
+   "[vvvvv]",
+   "[^^^^^]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0041",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [/]      [///]    [/////]\n    [--]     [----]   [------]\n   [\\\\\\]    [\\\\\\\\\\]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [/]      [///]    [/////]\n    [--]     [----]   [------]\n   [\\\\\\]    [\\\\\\\\\\]        [?]",
+  "enOps": [
+   "[\\\\\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\\\]",
+   "[|||||||]",
+   "[-------]",
+   "[///////]"
+  ],
+  "noOps": [
+   "[\\\\\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\]",
+   "[\\\\\\\\\\\\\\]",
+   "[|||||||]",
+   "[-------]",
+   "[///////]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0042",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [^]       [^^]      [^^^]\n   [>>>]     [>>>>]    [>>>>>]\n [vvvvv]   [vvvvvv]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [^]       [^^]      [^^^]\n   [>>>]     [>>>>]    [>>>>>]\n [vvvvv]   [vvvvvv]        [?]",
+  "enOps": [
+   "[vvvvvv]",
+   "[vvvvvvv]",
+   "[<<<<<<<]",
+   "[>>>>>>>]",
+   "[^^^^^^^]",
+   "[vvvvvvvv]"
+  ],
+  "noOps": [
+   "[vvvvvv]",
+   "[vvvvvvv]",
+   "[<<<<<<<]",
+   "[>>>>>>>]",
+   "[^^^^^^^]",
+   "[vvvvvvvv]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0043",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [\\]      [\\\\\\]    [\\\\\\\\\\]\n    [||]     [||||]   [||||||]\n   [///]    [/////]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [\\]      [\\\\\\]    [\\\\\\\\\\]\n    [||]     [||||]   [||||||]\n   [///]    [/////]        [?]",
+  "enOps": [
+   "[///////]",
+   "[-------]",
+   "[|||||||]",
+   "[\\\\\\\\\\\\\\]",
+   "[////////]",
+   "[//////]"
+  ],
+  "noOps": [
+   "[///////]",
+   "[-------]",
+   "[|||||||]",
+   "[\\\\\\\\\\\\\\]",
+   "[////////]",
+   "[//////]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0044",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n   [v]     [vv]    [vvv]\n  [<<]    [<<<]   [<<<<]\n [^^^]   [^^^^]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n   [v]     [vv]    [vvv]\n  [<<]    [<<<]   [<<<<]\n [^^^]   [^^^^]      [?]",
+  "enOps": [
+   "[>>>>>]",
+   "[<<<<<]",
+   "[vvvvv]",
+   "[^^^^^^]",
+   "[^^^^]",
+   "[^^^^^]"
+  ],
+  "noOps": [
+   "[>>>>>]",
+   "[<<<<<]",
+   "[vvvvv]",
+   "[^^^^^^]",
+   "[^^^^]",
+   "[^^^^^]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0045",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n   [<]     [<<]    [<<<]\n  [<<]    [<<<]   [<<<<]\n [<<<]   [<<<<]      [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n   [<]     [<<]    [<<<]\n  [<<]    [<<<]   [<<<<]\n [<<<]   [<<<<]      [?]",
+  "enOps": [
+   "[<<<<]",
+   "[<<<<<<<]",
+   "[<<<]",
+   "[<<<<<<<<]",
+   "[<<<<<]",
+   "[<<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<]",
+   "[<<<<<<<]",
+   "[<<<]",
+   "[<<<<<<<<]",
+   "[<<<<<]",
+   "[<<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0046",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [/]      [///]    [/////]\n    [//]     [////]   [//////]\n   [///]    [/////]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [/]      [///]    [/////]\n    [//]     [////]   [//////]\n   [///]    [/////]        [?]",
+  "enOps": [
+   "[/////]",
+   "[////]",
+   "[///]",
+   "[///////]",
+   "[////////]",
+   "[//////]"
+  ],
+  "noOps": [
+   "[/////]",
+   "[////]",
+   "[///]",
+   "[///////]",
+   "[////////]",
+   "[//////]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0047",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [<]       [<<]      [<<<]\n   [<<<]     [<<<<]    [<<<<<]\n [<<<<<]   [<<<<<<]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [<]       [<<]      [<<<]\n   [<<<]     [<<<<]    [<<<<<]\n [<<<<<]   [<<<<<<]        [?]",
+  "enOps": [
+   "[<<<<]",
+   "[<<<]",
+   "[<<<<<<<]",
+   "[<<<<<<<<]",
+   "[<<<<<<]",
+   "[<<<<<]"
+  ],
+  "noOps": [
+   "[<<<<]",
+   "[<<<]",
+   "[<<<<<<<]",
+   "[<<<<<<<<]",
+   "[<<<<<<]",
+   "[<<<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0048",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n     [/]      [///]    [/////]\n    [//]     [////]   [//////]\n   [///]    [/////]        [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n     [/]      [///]    [/////]\n    [//]     [////]   [//////]\n   [///]    [/////]        [?]",
+  "enOps": [
+   "[///]",
+   "[///////]",
+   "[////////]",
+   "[//////]",
+   "[/////]",
+   "[////]"
+  ],
+  "noOps": [
+   "[///]",
+   "[///////]",
+   "[////////]",
+   "[//////]",
+   "[/////]",
+   "[////]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0049",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n   [<<]     [<<<]    [<<<<]\n  [<<<]    [<<<<]   [<<<<<]\n [<<<<]   [<<<<<]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n   [<<]     [<<<]    [<<<<]\n  [<<<]    [<<<<]   [<<<<<]\n [<<<<]   [<<<<<]       [?]",
+  "enOps": [
+   "[<<<<<<]",
+   "[<<<<<<<]",
+   "[<<<<<]",
+   "[<<<<<<<<]",
+   "[<<<<]",
+   "[<<<]"
+  ],
+  "noOps": [
+   "[<<<<<<]",
+   "[<<<<<<<]",
+   "[<<<<<]",
+   "[<<<<<<<<]",
+   "[<<<<]",
+   "[<<<]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t1-matrise",
+  "id": "mx-0050",
+  "enPrompt": "Which cell is missing from the grid? The rules run across and down.\n   [//]     [///]    [////]\n  [///]    [////]   [/////]\n [////]   [/////]       [?]",
+  "noPrompt": "Hvilken celle mangler i rutenettet? Reglene gjelder bortover og nedover.\n   [//]     [///]    [////]\n  [///]    [////]   [/////]\n [////]   [/////]       [?]",
+  "enOps": [
+   "[///////]",
+   "[/////]",
+   "[////////]",
+   "[////]",
+   "[///]",
+   "[//////]"
+  ],
+  "noOps": [
+   "[///////]",
+   "[/////]",
+   "[////////]",
+   "[////]",
+   "[///]",
+   "[//////]"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0001",
+  "enPrompt": "Which number is missing in the sequence?\n2, 5, 8, 11, 14, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 5, 8, 11, 14, ?",
+  "enOps": [
+   "14",
+   "20",
+   "16",
+   "18",
+   "17"
+  ],
+  "noOps": [
+   "14",
+   "20",
+   "16",
+   "18",
+   "17"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0002",
+  "enPrompt": "Which number is missing in the sequence?\n3, 7, 11, 15, 19, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 7, 11, 15, 19, ?",
+  "enOps": [
+   "27",
+   "22",
+   "24",
+   "23",
+   "19"
+  ],
+  "noOps": [
+   "27",
+   "22",
+   "24",
+   "23",
+   "19"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0003",
+  "enPrompt": "Which number is missing in the sequence?\n4, 9, 14, 19, 24, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n4, 9, 14, 19, 24, ?",
+  "enOps": [
+   "28",
+   "30",
+   "29",
+   "24",
+   "34"
+  ],
+  "noOps": [
+   "28",
+   "30",
+   "29",
+   "24",
+   "34"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0004",
+  "enPrompt": "Which number is missing in the sequence?\n5, 11, 17, 23, 29, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n5, 11, 17, 23, 29, ?",
+  "enOps": [
+   "36",
+   "35",
+   "29",
+   "41",
+   "34"
+  ],
+  "noOps": [
+   "36",
+   "35",
+   "29",
+   "41",
+   "34"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0005",
+  "enPrompt": "Which number is missing in the sequence?\n2, 6, 10, 14, 18, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 6, 10, 14, 18, ?",
+  "enOps": [
+   "22",
+   "18",
+   "26",
+   "21",
+   "23"
+  ],
+  "noOps": [
+   "22",
+   "18",
+   "26",
+   "21",
+   "23"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0006",
+  "enPrompt": "Which number is missing in the sequence?\n3, 8, 13, 18, 23, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 8, 13, 18, 23, ?",
+  "enOps": [
+   "23",
+   "33",
+   "27",
+   "29",
+   "28"
+  ],
+  "noOps": [
+   "23",
+   "33",
+   "27",
+   "29",
+   "28"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0007",
+  "enPrompt": "Which number is missing in the sequence?\n4, 10, 16, 22, 28, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n4, 10, 16, 22, 28, ?",
+  "enOps": [
+   "40",
+   "33",
+   "35",
+   "34",
+   "28"
+  ],
+  "noOps": [
+   "40",
+   "33",
+   "35",
+   "34",
+   "28"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0008",
+  "enPrompt": "Which number is missing in the sequence?\n5, 8, 11, 14, 17, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n5, 8, 11, 14, 17, ?",
+  "enOps": [
+   "19",
+   "21",
+   "20",
+   "17",
+   "23"
+  ],
+  "noOps": [
+   "19",
+   "21",
+   "20",
+   "17",
+   "23"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0009",
+  "enPrompt": "Which number is missing in the sequence?\n2, 7, 12, 17, 22, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 7, 12, 17, 22, ?",
+  "enOps": [
+   "28",
+   "27",
+   "22",
+   "32",
+   "26"
+  ],
+  "noOps": [
+   "28",
+   "27",
+   "22",
+   "32",
+   "26"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0010",
+  "enPrompt": "Which number is missing in the sequence?\n1, 2, 4, 8, 16, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n1, 2, 4, 8, 16, ?",
+  "enOps": [
+   "32",
+   "16",
+   "33",
+   "31",
+   "64"
+  ],
+  "noOps": [
+   "32",
+   "16",
+   "33",
+   "31",
+   "64"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0011",
+  "enPrompt": "Which number is missing in the sequence?\n1, 3, 9, 27, 81, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n1, 3, 9, 27, 81, ?",
+  "enOps": [
+   "81",
+   "244",
+   "242",
+   "729",
+   "243"
+  ],
+  "noOps": [
+   "81",
+   "244",
+   "242",
+   "729",
+   "243"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0012",
+  "enPrompt": "Which number is missing in the sequence?\n2, 4, 8, 16, 32, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 4, 8, 16, 32, ?",
+  "enOps": [
+   "65",
+   "63",
+   "128",
+   "64",
+   "32"
+  ],
+  "noOps": [
+   "65",
+   "63",
+   "128",
+   "64",
+   "32"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0013",
+  "enPrompt": "Which number is missing in the sequence?\n2, 6, 18, 54, 162, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 6, 18, 54, 162, ?",
+  "enOps": [
+   "485",
+   "1458",
+   "486",
+   "162",
+   "487"
+  ],
+  "noOps": [
+   "485",
+   "1458",
+   "486",
+   "162",
+   "487"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0014",
+  "enPrompt": "Which number is missing in the sequence?\n3, 6, 12, 24, 48, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 6, 12, 24, 48, ?",
+  "enOps": [
+   "192",
+   "96",
+   "48",
+   "97",
+   "95"
+  ],
+  "noOps": [
+   "192",
+   "96",
+   "48",
+   "97",
+   "95"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0015",
+  "enPrompt": "Which number is missing in the sequence?\n1, 2, 4, 8, 16, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n1, 2, 4, 8, 16, ?",
+  "enOps": [
+   "32",
+   "16",
+   "33",
+   "31",
+   "64"
+  ],
+  "noOps": [
+   "32",
+   "16",
+   "33",
+   "31",
+   "64"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0016",
+  "enPrompt": "Which number is missing in the sequence?\n2, 4, 8, 16, 32, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 4, 8, 16, 32, ?",
+  "enOps": [
+   "32",
+   "65",
+   "63",
+   "128",
+   "64"
+  ],
+  "noOps": [
+   "32",
+   "65",
+   "63",
+   "128",
+   "64"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0017",
+  "enPrompt": "Which number is missing in the sequence?\n3, 6, 12, 24, 48, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 6, 12, 24, 48, ?",
+  "enOps": [
+   "97",
+   "95",
+   "192",
+   "96",
+   "48"
+  ],
+  "noOps": [
+   "97",
+   "95",
+   "192",
+   "96",
+   "48"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0018",
+  "enPrompt": "Which number is missing in the sequence?\n2, 5, 9, 12, 16, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 5, 9, 12, 16, ?",
+  "enOps": [
+   "22",
+   "24",
+   "23",
+   "20",
+   "26"
+  ],
+  "noOps": [
+   "22",
+   "24",
+   "23",
+   "20",
+   "26"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0019",
+  "enPrompt": "Which number is missing in the sequence?\n3, 7, 12, 16, 21, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 7, 12, 16, 21, ?",
+  "enOps": [
+   "31",
+   "30",
+   "27",
+   "34",
+   "29"
+  ],
+  "noOps": [
+   "31",
+   "30",
+   "27",
+   "34",
+   "29"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0020",
+  "enPrompt": "Which number is missing in the sequence?\n4, 9, 15, 20, 26, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n4, 9, 15, 20, 26, ?",
+  "enOps": [
+   "37",
+   "34",
+   "42",
+   "36",
+   "38"
+  ],
+  "noOps": [
+   "37",
+   "34",
+   "42",
+   "36",
+   "38"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0021",
+  "enPrompt": "Which number is missing in the sequence?\n2, 6, 11, 15, 20, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 6, 11, 15, 20, ?",
+  "enOps": [
+   "26",
+   "33",
+   "28",
+   "30",
+   "29"
+  ],
+  "noOps": [
+   "26",
+   "33",
+   "28",
+   "30",
+   "29"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0022",
+  "enPrompt": "Which number is missing in the sequence?\n3, 8, 14, 19, 25, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 8, 14, 19, 25, ?",
+  "enOps": [
+   "41",
+   "35",
+   "37",
+   "36",
+   "33"
+  ],
+  "noOps": [
+   "41",
+   "35",
+   "37",
+   "36",
+   "33"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0023",
+  "enPrompt": "Which number is missing in the sequence?\n2, 7, 13, 18, 24, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 7, 13, 18, 24, ?",
+  "enOps": [
+   "34",
+   "36",
+   "35",
+   "32",
+   "40"
+  ],
+  "noOps": [
+   "34",
+   "36",
+   "35",
+   "32",
+   "40"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0024",
+  "enPrompt": "Which number is missing in the sequence?\n2, 4, 8, 14, 22, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 4, 8, 14, 22, ?",
+  "enOps": [
+   "33",
+   "32",
+   "30",
+   "26",
+   "31"
+  ],
+  "noOps": [
+   "33",
+   "32",
+   "30",
+   "26",
+   "31"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0025",
+  "enPrompt": "Which number is missing in the sequence?\n3, 6, 12, 21, 33, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 6, 12, 21, 33, ?",
+  "enOps": [
+   "48",
+   "45",
+   "39",
+   "47",
+   "49"
+  ],
+  "noOps": [
+   "48",
+   "45",
+   "39",
+   "47",
+   "49"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0026",
+  "enPrompt": "Which number is missing in the sequence?\n4, 8, 16, 28, 44, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n4, 8, 16, 28, 44, ?",
+  "enOps": [
+   "60",
+   "52",
+   "63",
+   "65",
+   "64"
+  ],
+  "noOps": [
+   "60",
+   "52",
+   "63",
+   "65",
+   "64"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0027",
+  "enPrompt": "Which number is missing in the sequence?\n2, 7, 17, 32, 52, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 7, 17, 32, 52, ?",
+  "enOps": [
+   "62",
+   "76",
+   "78",
+   "77",
+   "72"
+  ],
+  "noOps": [
+   "62",
+   "76",
+   "78",
+   "77",
+   "72"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0028",
+  "enPrompt": "Which number is missing in the sequence?\n3, 5, 9, 15, 23, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 5, 9, 15, 23, ?",
+  "enOps": [
+   "32",
+   "34",
+   "33",
+   "31",
+   "27"
+  ],
+  "noOps": [
+   "32",
+   "34",
+   "33",
+   "31",
+   "27"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0029",
+  "enPrompt": "Which number is missing in the sequence?\n4, 6, 10, 16, 24, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n4, 6, 10, 16, 24, ?",
+  "enOps": [
+   "35",
+   "34",
+   "32",
+   "28",
+   "33"
+  ],
+  "noOps": [
+   "35",
+   "34",
+   "32",
+   "28",
+   "33"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0030",
+  "enPrompt": "Which number is missing in the sequence?\n1, 2, 4, 8, 10, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n1, 2, 4, 8, 10, ?",
+  "enOps": [
+   "20",
+   "12",
+   "21",
+   "19",
+   "18"
+  ],
+  "noOps": [
+   "20",
+   "12",
+   "21",
+   "19",
+   "18"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0031",
+  "enPrompt": "Which number is missing in the sequence?\n2, 4, 7, 14, 17, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 4, 7, 14, 17, ?",
+  "enOps": [
+   "20",
+   "35",
+   "33",
+   "31",
+   "34"
+  ],
+  "noOps": [
+   "20",
+   "35",
+   "33",
+   "31",
+   "34"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0032",
+  "enPrompt": "Which number is missing in the sequence?\n1, 2, 5, 10, 13, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n1, 2, 5, 10, 13, ?",
+  "enOps": [
+   "27",
+   "25",
+   "23",
+   "26",
+   "16"
+  ],
+  "noOps": [
+   "27",
+   "25",
+   "23",
+   "26",
+   "16"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0033",
+  "enPrompt": "Which number is missing in the sequence?\n3, 6, 8, 16, 18, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 6, 8, 16, 18, ?",
+  "enOps": [
+   "35",
+   "34",
+   "36",
+   "20",
+   "37"
+  ],
+  "noOps": [
+   "35",
+   "34",
+   "36",
+   "20",
+   "37"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0034",
+  "enPrompt": "Which number is missing in the sequence?\n2, 4, 5, 10, 11, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 4, 5, 10, 11, ?",
+  "enOps": [
+   "33",
+   "22",
+   "12",
+   "23",
+   "21"
+  ],
+  "noOps": [
+   "33",
+   "22",
+   "12",
+   "23",
+   "21"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0035",
+  "enPrompt": "Which number is missing in the sequence?\n3, 5, 5, 9, 7, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 5, 5, 9, 7, ?",
+  "enOps": [
+   "13",
+   "9",
+   "17",
+   "12",
+   "14"
+  ],
+  "noOps": [
+   "13",
+   "9",
+   "17",
+   "12",
+   "14"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0036",
+  "enPrompt": "Which number is missing in the sequence?\n4, 6, 7, 11, 10, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n4, 6, 7, 11, 10, ?",
+  "enOps": [
+   "13",
+   "21",
+   "15",
+   "17",
+   "16"
+  ],
+  "noOps": [
+   "13",
+   "21",
+   "15",
+   "17",
+   "16"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0037",
+  "enPrompt": "Which number is missing in the sequence?\n5, 7, 7, 11, 9, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n5, 7, 7, 11, 9, ?",
+  "enOps": [
+   "19",
+   "14",
+   "16",
+   "15",
+   "11"
+  ],
+  "noOps": [
+   "19",
+   "14",
+   "16",
+   "15",
+   "11"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0038",
+  "enPrompt": "Which number is missing in the sequence?\n6, 8, 10, 13, 14, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n6, 8, 10, 13, 14, ?",
+  "enOps": [
+   "19",
+   "21",
+   "18",
+   "23",
+   "17"
+  ],
+  "noOps": [
+   "19",
+   "21",
+   "18",
+   "23",
+   "17"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0039",
+  "enPrompt": "Which number is missing in the sequence?\n3, 6, 8, 12, 13, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 6, 8, 12, 13, ?",
+  "enOps": [
+   "21",
+   "18",
+   "24",
+   "17",
+   "19"
+  ],
+  "noOps": [
+   "21",
+   "18",
+   "24",
+   "17",
+   "19"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0040",
+  "enPrompt": "Which number is missing in the sequence?\n4, 7, 6, 12, 8, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n4, 7, 6, 12, 8, ?",
+  "enOps": [
+   "17",
+   "10",
+   "22",
+   "16",
+   "18"
+  ],
+  "noOps": [
+   "17",
+   "10",
+   "22",
+   "16",
+   "18"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0041",
+  "enPrompt": "Which number is missing in the sequence?\n1, 4, 5, 9, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n1, 4, 5, 9, ?",
+  "enOps": [
+   "18",
+   "13",
+   "15",
+   "17",
+   "14"
+  ],
+  "noOps": [
+   "18",
+   "13",
+   "15",
+   "17",
+   "14"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0042",
+  "enPrompt": "Which number is missing in the sequence?\n2, 5, 7, 12, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 5, 7, 12, ?",
+  "enOps": [
+   "17",
+   "18",
+   "20",
+   "19",
+   "24"
+  ],
+  "noOps": [
+   "17",
+   "18",
+   "20",
+   "19",
+   "24"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0043",
+  "enPrompt": "Which number is missing in the sequence?\n3, 3, 6, 9, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n3, 3, 6, 9, ?",
+  "enOps": [
+   "14",
+   "16",
+   "15",
+   "18",
+   "12"
+  ],
+  "noOps": [
+   "14",
+   "16",
+   "15",
+   "18",
+   "12"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0044",
+  "enPrompt": "Which number is missing in the sequence?\n2, 6, 8, 14, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 6, 8, 14, ?",
+  "enOps": [
+   "23",
+   "22",
+   "28",
+   "20",
+   "21"
+  ],
+  "noOps": [
+   "23",
+   "22",
+   "28",
+   "20",
+   "21"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0045",
+  "enPrompt": "Which number is missing in the sequence?\n4, 4, 8, 12, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n4, 4, 8, 12, ?",
+  "enOps": [
+   "20",
+   "24",
+   "16",
+   "19",
+   "21"
+  ],
+  "noOps": [
+   "20",
+   "24",
+   "16",
+   "19",
+   "21"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0046",
+  "enPrompt": "Which number is missing in the sequence?\n2, 4, 8, 14, 22, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n2, 4, 8, 14, 22, ?",
+  "enOps": [
+   "30",
+   "34",
+   "31",
+   "33",
+   "32"
+  ],
+  "noOps": [
+   "30",
+   "34",
+   "31",
+   "33",
+   "32"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0047",
+  "enPrompt": "Which number is missing in the sequence?\n4, 8, 16, 28, 44, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n4, 8, 16, 28, 44, ?",
+  "enOps": [
+   "68",
+   "63",
+   "65",
+   "64",
+   "60"
+  ],
+  "noOps": [
+   "68",
+   "63",
+   "65",
+   "64",
+   "60"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0048",
+  "enPrompt": "Which number is missing in the sequence?\n6, 12, 24, 42, 66, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n6, 12, 24, 42, 66, ?",
+  "enOps": [
+   "95",
+   "97",
+   "96",
+   "90",
+   "102"
+  ],
+  "noOps": [
+   "95",
+   "97",
+   "96",
+   "90",
+   "102"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0049",
+  "enPrompt": "Which number is missing in the sequence?\n8, 16, 32, 56, 88, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n8, 16, 32, 56, 88, ?",
+  "enOps": [
+   "129",
+   "128",
+   "120",
+   "136",
+   "127"
+  ],
+  "noOps": [
+   "129",
+   "128",
+   "120",
+   "136",
+   "127"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t2-numerisk",
+  "id": "nm-0050",
+  "enPrompt": "Which number is missing in the sequence?\n10, 20, 40, 70, 110, ?",
+  "noPrompt": "Hvilket tall mangler i rekken?\n10, 20, 40, 70, 110, ?",
+  "enOps": [
+   "160",
+   "150",
+   "170",
+   "159",
+   "161"
+  ],
+  "noOps": [
+   "160",
+   "150",
+   "170",
+   "159",
+   "161"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0001",
+  "enPrompt": "Which word does not belong with the others: apple, banana, pear, carrot, grape?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: eple, banan, pære, gulrot, drue?",
+  "enOps": [
+   "apple",
+   "carrot",
+   "banana",
+   "pear",
+   "grape"
+  ],
+  "noOps": [
+   "eple",
+   "gulrot",
+   "banan",
+   "pære",
+   "drue"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0002",
+  "enPrompt": "Which word does not belong with the others: red, green, blue, round, yellow?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: rød, grønn, blå, rund, gul?",
+  "enOps": [
+   "red",
+   "green",
+   "blue",
+   "yellow",
+   "round"
+  ],
+  "noOps": [
+   "rød",
+   "grønn",
+   "blå",
+   "gul",
+   "rund"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0003",
+  "enPrompt": "Which word does not belong with the others: book, newspaper, magazine, letter, stone?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: bok, avis, blad, brev, stein?",
+  "enOps": [
+   "stone",
+   "book",
+   "newspaper",
+   "magazine",
+   "letter"
+  ],
+  "noOps": [
+   "stein",
+   "bok",
+   "avis",
+   "blad",
+   "brev"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0004",
+  "enPrompt": "Which word does not belong with the others: violin, cello, trumpet, viola, double bass?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: fiolin, cello, trombone, bratsj, kontrabass?",
+  "enOps": [
+   "violin",
+   "cello",
+   "viola",
+   "double bass",
+   "trumpet"
+  ],
+  "noOps": [
+   "fiolin",
+   "cello",
+   "bratsj",
+   "kontrabass",
+   "trombone"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0005",
+  "enPrompt": "Which word does not belong with the others: dog, cat, horse, rabbit, eagle?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: hund, katt, hest, kanin, ørn?",
+  "enOps": [
+   "dog",
+   "cat",
+   "eagle",
+   "horse",
+   "rabbit"
+  ],
+  "noOps": [
+   "hund",
+   "katt",
+   "ørn",
+   "hest",
+   "kanin"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0006",
+  "enPrompt": "Which word does not belong with the others: hammer, saw, screwdriver, drill, nail?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: hammer, sag, skrutrekker, boremaskin, spiker?",
+  "enOps": [
+   "hammer",
+   "nail",
+   "saw",
+   "screwdriver",
+   "drill"
+  ],
+  "noOps": [
+   "hammer",
+   "spiker",
+   "sag",
+   "skrutrekker",
+   "boremaskin"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0007",
+  "enPrompt": "Complete the analogy: hand : glove :: foot : ?",
+  "noPrompt": "Fullfør analogien: hånd : hanske :: hode : ?",
+  "enOps": [
+   "head",
+   "belt",
+   "scarf",
+   "sock",
+   "knee"
+  ],
+  "noOps": [
+   "sko",
+   "belte",
+   "skjerf",
+   "lue",
+   "briller"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0008",
+  "enPrompt": "Complete the analogy: puppy : dog :: kitten : ?",
+  "noPrompt": "Fullfør analogien: valp : hund :: kattunge : ?",
+  "enOps": [
+   "wolf",
+   "cat",
+   "lion",
+   "mouse",
+   "goat"
+  ],
+  "noOps": [
+   "ulv",
+   "katt",
+   "løve",
+   "mus",
+   "geit"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0009",
+  "enPrompt": "Complete the analogy: plane : sky :: boat : ?",
+  "noPrompt": "Fullfør analogien: fly : himmel :: skip : ?",
+  "enOps": [
+   "land",
+   "railway",
+   "garage",
+   "road",
+   "water"
+  ],
+  "noOps": [
+   "land",
+   "jernbane",
+   "garasje",
+   "vei",
+   "hav"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0010",
+  "enPrompt": "Complete the analogy: pencil : paper :: paint : ?",
+  "noPrompt": "Fullfør analogien: blyant : papir :: maling : ?",
+  "enOps": [
+   "brush",
+   "bucket",
+   "wall",
+   "eraser",
+   "hand"
+  ],
+  "noOps": [
+   "pensel",
+   "bøtte",
+   "vegg",
+   "viskelær",
+   "hånd"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0011",
+  "enPrompt": "Complete the analogy: meow : cat :: bark : ?",
+  "noPrompt": "Fullfør analogien: mjau : katt :: bjeff : ?",
+  "enOps": [
+   "bird",
+   "dog",
+   "horse",
+   "sheep",
+   "mouse"
+  ],
+  "noOps": [
+   "fugl",
+   "hund",
+   "hest",
+   "sau",
+   "mus"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0012",
+  "enPrompt": "Complete the analogy: mother : daughter :: father : ?",
+  "noPrompt": "Fullfør analogien: mor : datter :: far : ?",
+  "enOps": [
+   "mother",
+   "brother",
+   "uncle",
+   "son",
+   "grandfather"
+  ],
+  "noOps": [
+   "mor",
+   "bror",
+   "onkel",
+   "sønn",
+   "farfar"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0013",
+  "enPrompt": "Which word goes with the others: car, bus, bicycle, train?",
+  "noPrompt": "Hvilket ord hører sammen med de andre: bil, buss, sykkel, tog?",
+  "enOps": [
+   "spade",
+   "plane",
+   "bed",
+   "cup",
+   "stone"
+  ],
+  "noOps": [
+   "spade",
+   "fly",
+   "seng",
+   "kopp",
+   "stein"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0014",
+  "enPrompt": "Which word goes with the others: apple, pear, plum, apricot?",
+  "noPrompt": "Hvilket ord hører sammen med de andre: eple, pære, plomme, aprikos?",
+  "enOps": [
+   "carrot",
+   "potato",
+   "onion",
+   "tomato",
+   "banana"
+  ],
+  "noOps": [
+   "gulrot",
+   "potet",
+   "løk",
+   "tomat",
+   "banan"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0015",
+  "enPrompt": "Which word goes with the others: oak, spruce, pine?",
+  "noPrompt": "Hvilket ord hører sammen med de andre: eik, gran, furu?",
+  "enOps": [
+   "rose",
+   "grass",
+   "birch",
+   "moss",
+   "seaweed"
+  ],
+  "noOps": [
+   "rose",
+   "gress",
+   "bjørk",
+   "mose",
+   "tang"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0016",
+  "enPrompt": "Which word goes with the others: red, blue, green?",
+  "noPrompt": "Hvilket ord hører sammen med de andre: rød, blå, grønn?",
+  "enOps": [
+   "table",
+   "yellow",
+   "fast",
+   "cold",
+   "box"
+  ],
+  "noOps": [
+   "bord",
+   "gul",
+   "rask",
+   "kald",
+   "boks"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0017",
+  "enPrompt": "Which word goes with the others: January, March, May?",
+  "noPrompt": "Hvilket ord hører sammen med de andre: januar, mars, mai?",
+  "enOps": [
+   "Tuesday",
+   "Christmas",
+   "summer",
+   "July",
+   "Friday"
+  ],
+  "noOps": [
+   "tirsdag",
+   "jul",
+   "vår",
+   "juli",
+   "fredag"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0018",
+  "enPrompt": "Complete the analogy: eye : see :: ear : ?",
+  "noPrompt": "Fullfør analogien: øye : se :: øre : ?",
+  "enOps": [
+   "smell",
+   "hear",
+   "speak",
+   "head",
+   "mouth"
+  ],
+  "noOps": [
+   "lukte",
+   "høre",
+   "snakke",
+   "hode",
+   "munn"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0019",
+  "enPrompt": "Complete the analogy: hungry : eat :: thirsty : ?",
+  "noPrompt": "Fullfør analogien: sulten : spise :: tørst : ?",
+  "enOps": [
+   "sleep",
+   "walk",
+   "read",
+   "hurry",
+   "drink"
+  ],
+  "noOps": [
+   "sove",
+   "gå",
+   "lese",
+   "skynde seg",
+   "drikke"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0020",
+  "enPrompt": "Complete the analogy: painter : picture :: composer : ?",
+  "noPrompt": "Fullfør analogien: maler : bilde :: komponist : ?",
+  "enOps": [
+   "baton",
+   "orchestra",
+   "symphony",
+   "hall",
+   "instrument"
+  ],
+  "noOps": [
+   "batong",
+   "orkester",
+   "symfoni",
+   "sal",
+   "instrument"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0021",
+  "enPrompt": "Complete the analogy: teacher : school :: doctor : ?",
+  "noPrompt": "Fullfør analogien: lærer : skole :: lege : ?",
+  "enOps": [
+   "medicine",
+   "hospital",
+   "patient",
+   "disease",
+   "waiting room"
+  ],
+  "noOps": [
+   "medisin",
+   "sykehus",
+   "pasient",
+   "sykdom",
+   "venterom"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0022",
+  "enPrompt": "Complete the analogy: hen : egg :: cow : ?",
+  "noPrompt": "Fullfør analogien: høne : egg :: ku : ?",
+  "enOps": [
+   "calf",
+   "grass",
+   "meadow",
+   "milk",
+   "barn"
+  ],
+  "noOps": [
+   "kalv",
+   "gress",
+   "eng",
+   "melk",
+   "fjøs"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0023",
+  "enPrompt": "Every plant in the greenhouse is watered each morning. The orchid is in the greenhouse. What follows?",
+  "noPrompt": "Alle planter i drivhuset trenger vanning hver morgen. Orkidéen står i drivhuset. Hva følger?",
+  "enOps": [
+   "The orchid is not watered.",
+   "The orchid is watered each morning.",
+   "Some plants in the greenhouse are watered.",
+   "The orchid is not a plant.",
+   "The greenhouse is watered."
+  ],
+  "noOps": [
+   "Orkidéen trenger ikke vanning.",
+   "Orkidéen trenger vanning hver morgen.",
+   "Noen planter i drivhuset trenger vanning.",
+   "Orkidéen er ikke en plante.",
+   "Drivhuset trenger vanning."
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0024",
+  "enPrompt": "Only members may borrow from the Solvoll library. Jon has a library card there. What follows?",
+  "noPrompt": "Kun medlemmer kan låne fra biblioteket på Solvoll. Jon har lånekort der. Hva følger?",
+  "enOps": [
+   "Jon lives in Solvoll.",
+   "Jon may not borrow there.",
+   "Everyone with a card works there.",
+   "Jon owns the library.",
+   "Jon is a member."
+  ],
+  "noOps": [
+   "Jon bor på Solvoll.",
+   "Jon kan ikke låne der.",
+   "Alle med lånekort jobber der.",
+   "Jon eier biblioteket.",
+   "Jon er medlem."
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0025",
+  "enPrompt": "Every Wednesday at eight the choir meets in the parish hall. Today is Wednesday at eight. What follows?",
+  "noPrompt": "Hver onsdag klokken åtte samles koret i menighetshuset. I dag er onsdag klokken åtte. Hva følger?",
+  "enOps": [
+   "The choir rehearses every evening.",
+   "The parish hall is closed.",
+   "The choir is meeting in the parish hall now.",
+   "The choir meets at nine.",
+   "Today is Sunday."
+  ],
+  "noOps": [
+   "Koret øver hver kveld.",
+   "Menighetshuset er stengt.",
+   "Koret samles i menighetshuset nå.",
+   "Koret samler seg klokken ni.",
+   "I dag er søndag."
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0026",
+  "enPrompt": "Espen is taller than Vera. Vera is taller than Nils. What follows?",
+  "noPrompt": "Espen er høyere enn Vera. Vera er høyere enn Nils. Hva følger?",
+  "enOps": [
+   "Nils is taller than Espen.",
+   "Espen is taller than Nils.",
+   "Vera is the tallest.",
+   "Nils and Espen are equally tall.",
+   "Vera is the shortest."
+  ],
+  "noOps": [
+   "Nils er høyere enn Espen.",
+   "Espen er høyere enn Nils.",
+   "Vera er den høyeste.",
+   "Nils og Espen er like høy.",
+   "Vera er den korteste."
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0027",
+  "enPrompt": "Kari does not take part in the marathon. Everyone who takes part in the marathon trains five times a week. What follows about Kari's training?",
+  "noPrompt": "Kari deltar ikke i maratonløpet. Alle som deltar i maratonløpet trener fem ganger i uken. Hva følger om Karis trening?",
+  "enOps": [
+   "Kari trains five times a week.",
+   "Kari never trains.",
+   "No participants train five times a week.",
+   "It cannot be determined from the text.",
+   "Kari runs the marathon."
+  ],
+  "noOps": [
+   "Kari trener fem ganger i uken.",
+   "Kari trener aldri.",
+   "Ingen deltakere trener fem ganger i uken.",
+   "Det lar seg ikke fastslå fra teksten.",
+   "Kari løper maraton."
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0028",
+  "enPrompt": "Whenever the wind blows from the north-west, the ferry is rerouted to the long crossing. The gauge at the pier now shows a north-westerly wind. What follows?",
+  "noPrompt": "Hver gang det blåser fra nordvest, legges ferjeferden om til den lange ruta. Vindmåleren på kaia viser nordvestvind nå. Hva følger?",
+  "enOps": [
+   "The ferry is taking the short crossing now.",
+   "The ferry is being rerouted to the long crossing now.",
+   "The gauge is broken.",
+   "The ferry is in dry dock today.",
+   "The long crossing is used only in summer."
+  ],
+  "noOps": [
+   "Ferjeferden går den korte ruta nå.",
+   "Ferjeferden legges om til den lange ruta nå.",
+   "Vindmåleren er ødelagt.",
+   "Ferga ligger i dokk i dag.",
+   "Den lange ruta brukes bare om sommeren."
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0029",
+  "enPrompt": "Which word does not belong with the others: violin, viola, cello, harp, double bass?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: fiolin, bratsj, cello, harpe, kontrabass?",
+  "enOps": [
+   "violin",
+   "viola",
+   "cello",
+   "double bass",
+   "harp"
+  ],
+  "noOps": [
+   "fiolin",
+   "bratsj",
+   "cello",
+   "kontrabass",
+   "harpe"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0030",
+  "enPrompt": "Which word does not belong with the others: acid, base, salt, metal, oxide?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: syre, base, salt, metall, oksid?",
+  "enOps": [
+   "acid",
+   "base",
+   "metal",
+   "salt",
+   "oxide"
+  ],
+  "noOps": [
+   "syre",
+   "base",
+   "metall",
+   "salt",
+   "oksid"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0031",
+  "enPrompt": "Which word does not belong with the others: rain, snow, sleet, hail, fog?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: regn, snø, sludd, hagl, skodde?",
+  "enOps": [
+   "rain",
+   "fog",
+   "snow",
+   "sleet",
+   "hail"
+  ],
+  "noOps": [
+   "regn",
+   "skodde",
+   "snø",
+   "sludd",
+   "hagl"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0032",
+  "enPrompt": "Which word does not belong with the others: bricklayer, carpenter, plumber, electrician, architect?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: murer, tømrer, rørlegger, elektriker, arkitekt?",
+  "enOps": [
+   "bricklayer",
+   "carpenter",
+   "plumber",
+   "architect",
+   "electrician"
+  ],
+  "noOps": [
+   "murer",
+   "tømrer",
+   "rørlegger",
+   "arkitekt",
+   "elektriker"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0033",
+  "enPrompt": "Which word does not belong with the others: lion, tiger, cheetah, jaguar, wolf?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: løve, tiger, gepard, jaguar, ulv?",
+  "enOps": [
+   "wolf",
+   "lion",
+   "tiger",
+   "cheetah",
+   "jaguar"
+  ],
+  "noOps": [
+   "ulv",
+   "løve",
+   "tiger",
+   "gepard",
+   "jaguar"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0034",
+  "enPrompt": "Which word does not belong with the others: thermometer, barometer, kilometre, hygrometer, speedometer?",
+  "noPrompt": "Hvilket ord hører ikke hjemme med de andre: termometer, barometer, kilometer, hygrometer, hastighetsmåler?",
+  "enOps": [
+   "thermometer",
+   "barometer",
+   "hygrometer",
+   "speedometer",
+   "kilometre"
+  ],
+  "noOps": [
+   "termometer",
+   "barometer",
+   "hygrometer",
+   "hastighetsmåler",
+   "kilometer"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0035",
+  "enPrompt": "Complete the analogy: seed : plant :: chrysalis : ?",
+  "noPrompt": "Fullfør analogien: frø : plante :: puppe : ?",
+  "enOps": [
+   "larva",
+   "cocoon",
+   "butterfly",
+   "honey",
+   "feather"
+  ],
+  "noOps": [
+   "larve",
+   "kokong",
+   "sommerfugl",
+   "honning",
+   "fjær"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0036",
+  "enPrompt": "Complete the analogy: shadow : light :: silence : ?",
+  "noPrompt": "Fullfør analogien: skygge : lys :: stille : ?",
+  "enOps": [
+   "movement",
+   "sound",
+   "water",
+   "wind",
+   "heat"
+  ],
+  "noOps": [
+   "bevegelse",
+   "lyd",
+   "vann",
+   "vind",
+   "varme"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0037",
+  "enPrompt": "Complete the analogy: dictionary : words :: atlas : ?",
+  "noPrompt": "Fullfør analogien: ordbok : ord :: atlas : ?",
+  "enOps": [
+   "globe",
+   "countries",
+   "shelf",
+   "maps",
+   "booklet"
+  ],
+  "noOps": [
+   "globus",
+   "land",
+   "hylle",
+   "kart",
+   "hefte"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0038",
+  "enPrompt": "Complete the analogy: fuel : engine :: food : ?",
+  "noPrompt": "Fullfør analogien: brensel : motor :: mat : ?",
+  "enOps": [
+   "kitchen",
+   "body",
+   "stomach",
+   "hunger",
+   "recipe"
+  ],
+  "noOps": [
+   "kjøkken",
+   "kropp",
+   "mage",
+   "sult",
+   "oppskrift"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0039",
+  "enPrompt": "On the shelf the books stand in blocks by colour. The outermost block on the left is red. The yellow block stands to the right of the green one. The green block stands to the right of the red one. No other colour is used. Which order do the books stand in, from the left?",
+  "noPrompt": "På hylla står bøkene i blokker etter farge. Blokken ytterst til venstre er rød. Den gule blokken står til høyre for den grønne. Den grønne blokken står til høyre for den røde. Ingen annen farge brukes. Hvilken rekkefølge får bøkene i, fra venstre?",
+  "enOps": [
+   "red, yellow, green",
+   "green, red, yellow",
+   "yellow, green, red",
+   "green, yellow, red",
+   "red, green, yellow"
+  ],
+  "noOps": [
+   "rød, gul, grønn",
+   "grønn, rød, gul",
+   "gul, grønn, rød",
+   "grønn, gul, rød",
+   "rød, grønn, gul"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0040",
+  "enPrompt": "In the choir, Anna has a lower voice than Bente, and Bente has a lower voice than Carmen. Dina sings exactly as low as Anna. What follows?",
+  "noPrompt": "I koret har Anna lavere stemme enn Bente, og Bente har lavere stemme enn Carmen. Dina synger akkurat like lavt som Anna. Hva følger?",
+  "enOps": [
+   "Anna has the highest voice.",
+   "Bente sings as low as Carmen.",
+   "Carmen has the highest voice.",
+   "Dina has a lower voice than Bente.",
+   "Carmen and Anna are equal."
+  ],
+  "noOps": [
+   "Anna har den høyeste stemmen.",
+   "Bente synger like lavt som Carmen.",
+   "Carmen har den høyeste stemmen.",
+   "Dina har lavere stemme enn Bente.",
+   "Carmen og Anna er like."
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0041",
+  "enPrompt": "Tom is older than Sue. Sue is older than Rita. Ben is younger than Rita. Who is the youngest?",
+  "noPrompt": "Kai er eldre enn Leif. Leif er eldre enn Mia. Odd er yngre enn Mia. Hvem er yngst?",
+  "enOps": [
+   "Rita",
+   "Ben",
+   "Sue",
+   "Tom",
+   "Ben and Rita are the same age"
+  ],
+  "noOps": [
+   "Mia",
+   "Odd",
+   "Leif",
+   "Kai",
+   "Odd og Mia er like gamle"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0042",
+  "enPrompt": "In this text, a \"mountain lynx\" is a lynx that lives above the forest line. The lynx photographed on the Hardangervidda lives above the forest line. What follows?",
+  "noPrompt": "En «fjellgaupe» er i denne teksten en gaupe som lever over skoggrenen. Gaupen som ble fotografert på Hardangervidda lever over skoggrenen. Hva følger?",
+  "enOps": [
+   "It was not a mountain lynx.",
+   "Mountain lynxes live only on the Hardangervidda.",
+   "Lynxes below the forest line are mountain lynxes.",
+   "It was a mountain lynx.",
+   "The Hardangervidda lies below the forest line."
+  ],
+  "noOps": [
+   "Det var ingen fjellgaupe.",
+   "Fjellgauper lever bare på Hardangervidda.",
+   "Gauper under skoggrenen er fjellgauper.",
+   "Det var en fjellgaupe.",
+   "Hardangervidda ligger under skoggrenen."
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0043",
+  "enPrompt": "The club has a rule: anyone who is late three times within the same month loses their place the following month. Per was late twice in April and once in May. What follows about June?",
+  "noPrompt": "Klubben har regelen: den som er sen tre ganger i én og samme måned, mister plassen den følgende måneden. Per var sen to ganger i april og én gang i mai. Hva følger om juni?",
+  "enOps": [
+   "Per loses his place in June.",
+   "Per does not lose his place in June.",
+   "Per loses his place in May.",
+   "April and May are counted together as three.",
+   "A single lateness in May triggers the loss."
+  ],
+  "noOps": [
+   "Per mister plassen i juni.",
+   "Per mister ikke plassen i juni.",
+   "Per mister plassen i mai.",
+   "April og mai telles sammen til tre senheter.",
+   "En enkel senhet i mai utløser tap av plassen."
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0044",
+  "enPrompt": "The lookout tower stands due north of the lake. The cabin stands due south of the lake. What follows?",
+  "noPrompt": "Utsiktstårnet ligger rett nord for sjøen. Koia ligger rett sør for sjøen. Hva følger?",
+  "enOps": [
+   "The tower lies south of the lake.",
+   "The cabin lies north of the lake.",
+   "The tower and the cabin stand side by side.",
+   "The cabin lies east of the tower.",
+   "The lake lies between the tower and the cabin."
+  ],
+  "noOps": [
+   "Tårnet ligger sør for sjøen.",
+   "Koia ligger nord for sjøen.",
+   "Tårnet og koia ligger side om side.",
+   "Koia ligger øst for tårnet.",
+   "Sjøen ligger mellom tårnet og koia."
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0045",
+  "enPrompt": "A basket contains only apples and pears. The number of apples is twice the number of pears, and there are fifteen fruits in total. How many pears are there?",
+  "noPrompt": "En kurv inneholder bare epler og pærer. Antall epler er det dobbelte av antall pærer, og det er atten frukter til sammen. Hvor mange pærer er det?",
+  "enOps": [
+   "10",
+   "15",
+   "5",
+   "30",
+   "3"
+  ],
+  "noOps": [
+   "9",
+   "12",
+   "6",
+   "36",
+   "4"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0046",
+  "enPrompt": "A tournament consists of four rounds. Each round lasts 20 minutes with a 5-minute break between rounds. The tournament started at 18:00. When does round four end?",
+  "noPrompt": "En turnering består av fire runder. Hver runde varer 20 minutter, og det er 5 minutters pause mellom rundene. Turneringen startet klokken 18:00. Når slutter runde to?",
+  "enOps": [
+   "19:30",
+   "19:35",
+   "19:20",
+   "20:00",
+   "19:15"
+  ],
+  "noOps": [
+   "18:40",
+   "18:45",
+   "18:25",
+   "19:10",
+   "18:50"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0047",
+  "enPrompt": "Which word goes with the others: hurry, rush, speed?",
+  "noPrompt": "Hvilket ord hører sammen med de andre: ile, haste, skunde?",
+  "enOps": [
+   "linger",
+   "stroll",
+   "wait",
+   "dash",
+   "loiter"
+  ],
+  "noOps": [
+   "slappe av",
+   "rusle",
+   "dvæle",
+   "skynde seg",
+   "vente"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0048",
+  "enPrompt": "Which word goes with the others: big, wide, tall, thick?",
+  "noPrompt": "Hvilket ord hører sammen med de andre: stor, bred, høy, tykk?",
+  "enOps": [
+   "slender",
+   "spacious",
+   "narrow",
+   "short-lived",
+   "lightweight"
+  ],
+  "noOps": [
+   "spinkel",
+   "omfattende",
+   "smal",
+   "kortlivet",
+   "lettvekts"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0049",
+  "enPrompt": "Which word goes with the others: hook, bend, arc, curve?",
+  "noPrompt": "Hvilket ord hører sammen med de andre: hake, krok, bue, sving?",
+  "enOps": [
+   "straight line",
+   "sharp angle",
+   "flat dot",
+   "ruler",
+   "curvature"
+  ],
+  "noOps": [
+   "rett strek",
+   "spiss vinkel",
+   "flat prikk",
+   "linjale",
+   "krumning"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t3-verbal",
+  "id": "vr-0050",
+  "enPrompt": "Which word goes with the others: moonlight, lunar eclipse, moon phase?",
+  "noPrompt": "Hvilket ord hører sammen med de andre: måneskinn, måneformørkelse, månefase?",
+  "enOps": [
+   "Sunday",
+   "sea wave",
+   "moon ring",
+   "daily rhythm",
+   "season"
+  ],
+  "noOps": [
+   "søndag",
+   "havbølge",
+   "månering",
+   "døgnrytme",
+   "årstid"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0001",
+  "enPrompt": "Nilla holds a red ball in her left hand and a blue ball in her right hand. What does she have in her right hand?",
+  "noPrompt": "Nilla holder en rød ball i venstre hånd og en blå ball i høyre hånd. Hva har hun i høyre hånd?",
+  "enOps": [
+   "the red ball",
+   "the blue ball",
+   "no ball",
+   "both balls",
+   "a green ball"
+  ],
+  "noOps": [
+   "den røde ballen",
+   "den blå ballen",
+   "ingen ball",
+   "begge ballene",
+   "en grønn ball"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0002",
+  "enPrompt": "Ola is standing facing north. Which compass direction is on his right-hand side?",
+  "noPrompt": "Ola står og vender ansiktet mot nord. Hvilken himmelretning er på hans høyre side?",
+  "enOps": [
+   "west",
+   "south",
+   "north",
+   "east",
+   "none — he faces north"
+  ],
+  "noOps": [
+   "vest",
+   "sør",
+   "nord",
+   "øst",
+   "ingen — han vender mot nord"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0003",
+  "enPrompt": "The cat lies in front of the stove. The dog lies behind the stove. What lies between them, if nothing else is in the room?",
+  "noPrompt": "Katten ligger foran peisen. Hunden ligger bak peisen. Hva ligger mellom dem, hvis ingenting annet er i rommet?",
+  "enOps": [
+   "the stove",
+   "the cat",
+   "the dog",
+   "nothing",
+   "a rug"
+  ],
+  "noOps": [
+   "peisen",
+   "katten",
+   "hunden",
+   "ingenting",
+   "et teppe"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0004",
+  "enPrompt": "Per stands in front of Kari in the queue, and Nils stands behind Kari. Who stands furthest forward?",
+  "noPrompt": "Per står foran Kari i køen, og Nils står bak Kari. Hvem står lengst fremme?",
+  "enOps": [
+   "Kari",
+   "Nils",
+   "Per and Nils are equally far forward",
+   "the order cannot be determined",
+   "Per"
+  ],
+  "noOps": [
+   "Kari",
+   "Nils",
+   "Per og Nils er like fremme",
+   "rekkefølgen kan ikke avgjøres",
+   "Per"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0005",
+  "enPrompt": "You see the letter R in a mirror. What do you see?",
+  "noPrompt": "Du ser bokstaven R i et speil. Hva ser du?",
+  "enOps": [
+   "R as normal",
+   "the letter P",
+   "R mirrored",
+   "the letter B",
+   "R upside down"
+  ],
+  "noOps": [
+   "R som normalt",
+   "bokstaven P",
+   "R speilvendt",
+   "bokstaven B",
+   "R opp-ned"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0006",
+  "enPrompt": "The knife lies to the left of the fork. The spoon lies to the right of the fork. Which utensil lies in the middle?",
+  "noPrompt": "Kniven ligger til venstre for gaffelen. Skeen ligger til høyre for gaffelen. Hvilket redskap ligger i midten?",
+  "enOps": [
+   "the knife",
+   "the fork",
+   "the spoon",
+   "none lies in the middle",
+   "the order is arbitrary"
+  ],
+  "noOps": [
+   "kniven",
+   "gaffelen",
+   "skeen",
+   "ingen ligger i midten",
+   "de ligger i vilkårlig rekkefølge"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0007",
+  "enPrompt": "The school is north of the home. The shop is south of the home. What lies furthest south?",
+  "noPrompt": "Skolen ligger nord for hjemmet. Butikken ligger sør for hjemmet. Hva ligger lengst sør?",
+  "enOps": [
+   "the school",
+   "the home",
+   "the shop and the school are equal",
+   "the shop",
+   "all three lie on an east-west line"
+  ],
+  "noOps": [
+   "skolen",
+   "hjemmet",
+   "butikken og skolen er like",
+   "butikken",
+   "alle tre ligger på linje øst-vest"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0008",
+  "enPrompt": "The minute hand points straight up, at twelve. Fifteen minutes later — where does it point?",
+  "noPrompt": "Minuttviseren peker rett opp, mot klokken tolv. Femten minutter senere — hvor peker den?",
+  "enOps": [
+   "to the right, at three",
+   "to the left, at nine",
+   "still at twelve",
+   "at six",
+   "it stands still"
+  ],
+  "noOps": [
+   "mot høyre, mot klokken tre",
+   "mot venstre, mot klokken ni",
+   "fortsatt mot tolv",
+   "mot klokken seks",
+   "den står stille"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0009",
+  "enPrompt": "The door is straight in front of Anna. The window is straight behind her. What does Anna see after turning all the way around?",
+  "noPrompt": "Døren er rett foran Anna. Vinduet er rett bak henne. Hva ser Anna når hun har snudd seg en hel omgang?",
+  "enOps": [
+   "the window",
+   "both the door and the window",
+   "neither the door nor the window",
+   "it depends on how fast she turns",
+   "the door"
+  ],
+  "noOps": [
+   "vinduet",
+   "både døren og vinduet",
+   "hverken døren eller vinduet",
+   "det avhenger av hvor raskt hun snur seg",
+   "døren"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0010",
+  "enPrompt": "Bjørn has his back to us. He raises his right hand. On which side do we see the hand?",
+  "noPrompt": "Bjørn vender oss ryggen. Han løfter høyre hånd. På hvilken side ser vi hånden?",
+  "enOps": [
+   "on our left side",
+   "right in front of us",
+   "on our right side",
+   "on both sides",
+   "he cannot raise a hand with his back to us"
+  ],
+  "noOps": [
+   "på vår venstre side",
+   "like foran oss",
+   "på vår høyre side",
+   "på begge sider",
+   "han kan ikke løfte en hånd med ryggen til"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0011",
+  "enPrompt": "You are standing at the fence facing east. The garden lies west of the fence. What is behind you?",
+  "noPrompt": "Du står ved gjerdet og vender ansiktet mot øst. Hagen ligger vest for gjerdet. Hva har du bak deg?",
+  "enOps": [
+   "the fence",
+   "the garden",
+   "home",
+   "west",
+   "since you face east there is nothing behind you"
+  ],
+  "noOps": [
+   "gjerdet",
+   "hagen",
+   "hjemme",
+   "vest",
+   "siden du vender mot øst har du ingenting bak deg"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0012",
+  "enPrompt": "An arrow points at three o'clock. It rotates 90 degrees clockwise. Where does it point now?",
+  "noPrompt": "En pil peker mot klokken tre. Den roteres 90 grader med urviseren. Hvor peker pilen nå?",
+  "enOps": [
+   "at twelve o'clock",
+   "still at three",
+   "at nine o'clock",
+   "at six o'clock",
+   "it points diagonally up"
+  ],
+  "noOps": [
+   "mot klokken tolv",
+   "fortsatt mot tre",
+   "mot klokken ni",
+   "mot klokken seks",
+   "den peker skrått opp"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0013",
+  "enPrompt": "The cubes are stacked like this: the red cube at the bottom, the blue one on top of it, and the yellow one at the top. Which colour is the cube in the middle?",
+  "noPrompt": "Kubene stables slik: den røde kuben ligger nederst, den blå kommer ovenpå, og den gule ligger øverst. Hvilken farge har kuben i midten?",
+  "enOps": [
+   "blue",
+   "red",
+   "yellow",
+   "none — there are only two cubes",
+   "all three colours"
+  ],
+  "noOps": [
+   "blå",
+   "rød",
+   "gul",
+   "ingen — det er bare to kuber",
+   "alle tre fargene"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0014",
+  "enPrompt": "Both the shelf and the table stand along the wall. The shelf stands to the left of the door, and the table stands to the right of the door. What stands between the shelf and the table?",
+  "noPrompt": "Både hylla og bordet står langs veggen. Hylla står til venstre for døra, og bordet står til høyre for døra. Hva står mellom hylla og bordet?",
+  "enOps": [
+   "the wall",
+   "nothing",
+   "the table",
+   "the shelf",
+   "the door"
+  ],
+  "noOps": [
+   "veggen",
+   "ingenting",
+   "bordet",
+   "hylla",
+   "døra"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0015",
+  "enPrompt": "A sign with an arrow points at nine o'clock. The sign is rotated half a turn. Where does the arrow point now?",
+  "noPrompt": "Et skilt med pil peker mot klokken ni. Skiltet roteres en halv omgang. Hvor peker pilen nå?",
+  "enOps": [
+   "still at nine",
+   "at twelve o'clock",
+   "at three o'clock",
+   "at six o'clock",
+   "it points straight up"
+  ],
+  "noOps": [
+   "fortsatt mot ni",
+   "mot klokken tolv",
+   "mot klokken tre",
+   "mot klokken seks",
+   "den peker rett opp"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0016",
+  "enPrompt": "Four people stand in a line: Ane in front of Berit, Berit in front of Camilla, and Camilla in front of Dina. Who stands second from the front?",
+  "noPrompt": "Fire personer står i rekke: Ane står foran Berit, Berit foran Camilla, og Camilla foran Dina. Hvem står som nummer to fra fremst?",
+  "enOps": [
+   "Ane",
+   "Berit",
+   "Camilla",
+   "Dina",
+   "the line is circular, so there is no number two"
+  ],
+  "noOps": [
+   "Ane",
+   "Berit",
+   "Camilla",
+   "Dina",
+   "rekken er sirkelformet, så det finnes ikke en nummer to"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0017",
+  "enPrompt": "A sheet is folded once from left to right, making it double. Then one hole is punched through it. How many holes are there when the sheet is unfolded again?",
+  "noPrompt": "Et ark foldes én gang fra venstre mot høyre, så det blir dobbelt. Deretter lages ett hull gjennom arket. Hvor mange hull er det når arket foldes ut igjen?",
+  "enOps": [
+   "one hole",
+   "four holes",
+   "no holes",
+   "two holes",
+   "the holes lie only on one half"
+  ],
+  "noOps": [
+   "ett hull",
+   "fire hull",
+   "ingen hull",
+   "to hull",
+   "hullene ligger bare på den ene halvdelen"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0018",
+  "enPrompt": "From the tower you see the church to the north and the windmill to the south. You turn 90 degrees clockwise. What do you see now?",
+  "noPrompt": "Fra tårnet ser du kirken mot nord og vindmøllen mot sør. Du snur deg 90 grader med urviseren. Hva ser du nå?",
+  "enOps": [
+   "neither the church nor the windmill",
+   "the church",
+   "the windmill",
+   "both the church and the windmill",
+   "the sky"
+  ],
+  "noOps": [
+   "verken kirken eller vindmøllen",
+   "kirken",
+   "vindmøllen",
+   "både kirken og vindmøllen",
+   "himlen"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0019",
+  "enPrompt": "From X the road runs 2 km north to Y, and from there 2 km east to Z. In which direction is Z from X?",
+  "noPrompt": "Fra X går veien 2 km nord til Y, og derfra 2 km øst til Z. Hvilken retning er Z fra X?",
+  "enOps": [
+   "south-east",
+   "north",
+   "east",
+   "Z is equally far from X in every direction",
+   "north-east"
+  ],
+  "noOps": [
+   "sørøst",
+   "nord",
+   "øst",
+   "Z ligger like langt fra X i alle retninger",
+   "nordøst"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0020",
+  "enPrompt": "Four people sit around a round table, clockwise: Pernille, Quentin, Ragna, Signe. Who sits directly opposite Pernille?",
+  "noPrompt": "Fire personer sitter rundt et rundt bord, i rekkefølge med urviseren: Pernille, Quentin, Ragna, Signe. Hvem sitter rett overfor Pernille?",
+  "enOps": [
+   "Quentin",
+   "Signe",
+   "Ragna",
+   "none — the table has only three seats",
+   "Pernille"
+  ],
+  "noOps": [
+   "Quentin",
+   "Signe",
+   "Ragna",
+   "ingen — bordet har bare tre plasser",
+   "Pernille"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0021",
+  "enPrompt": "A car drives 3 km north, turns around and drives 2 km south. How far from the starting point does the car end up, and in which direction?",
+  "noPrompt": "En bil kjører 3 km mot nord, snur og kjører 2 km mot sør. Hvor langt fra startpunktet ender bilen, og i hvilken retning?",
+  "enOps": [
+   "1 km south",
+   "1 km north",
+   "at the starting point",
+   "5 km north",
+   "3 km south"
+  ],
+  "noOps": [
+   "1 km mot sør",
+   "1 km mot nord",
+   "på startpunktet",
+   "5 km mot nord",
+   "3 km mot sør"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0022",
+  "enPrompt": "At a junction an east-west road crosses a north-south road. The church lies north of the east-west road and west of the north-south road. In which corner does the church lie?",
+  "noPrompt": "Ved en korsvei går en vei øst-vest og en vei nord-sør. Kirken ligger nord for øst-vest-veien og vest for nord-sør-veien. I hvilket hjørne ligger kirken?",
+  "enOps": [
+   "in the north-east corner",
+   "in the south-west corner",
+   "in the south-east corner",
+   "in the north-west corner",
+   "in the middle of the junction"
+  ],
+  "noOps": [
+   "i nordøst-hjørnet",
+   "i sørvest-hjørnet",
+   "i sørøst-hjørnet",
+   "i nordvest-hjørnet",
+   "midt i krysset"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0023",
+  "enPrompt": "Five houses lie along the road, numbered 1 to 5, where house 1 is nearest the junction and house 5 the furthest away. You walk from the junction to house 3. How many houses do you pass on the way?",
+  "noPrompt": "Fem hus ligger langs veien, nummerert 1 til 5, der hus 1 er nærmest krysset og hus 5 er det fjerneste. Du går fra krysset til hus 3. Hvor mange hus har du passert på veien?",
+  "enOps": [
+   "two houses — number 1 and 2",
+   "three houses",
+   "five houses",
+   "no houses",
+   "four houses"
+  ],
+  "noOps": [
+   "to hus — nummer 1 og 2",
+   "tre hus",
+   "fem hus",
+   "ingen hus",
+   "fire hus"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0024",
+  "enPrompt": "A square sheet is folded once from left to right and then once from bottom to top. Then one hole is punched. How many holes are there when the sheet is unfolded?",
+  "noPrompt": "Et kvadratisk ark foldes én gang fra venstre til høyre og deretter én gang nedenfra og opp. Så lages ett hull. Hvor mange hull er det når arket foldes ut?",
+  "enOps": [
+   "two holes",
+   "eight holes",
+   "one hole",
+   "the holes lie only along the edge",
+   "four holes"
+  ],
+  "noOps": [
+   "to hull",
+   "åtte hull",
+   "ett hull",
+   "hullene ligger bare langs kanten",
+   "fire hull"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0025",
+  "enPrompt": "The hand points at twelve o'clock. It rotates 90 degrees counterclockwise. Where does it point now?",
+  "noPrompt": "Viseren peker mot klokken tolv. Den roteres 90 grader mot urviseren. Hvor peker den nå?",
+  "enOps": [
+   "at three o'clock",
+   "between eleven and one",
+   "at nine o'clock",
+   "still at twelve",
+   "at six o'clock"
+  ],
+  "noOps": [
+   "mot klokken tre",
+   "like mellom elleve og ett",
+   "mot klokken ni",
+   "fortsatt mot tolv",
+   "mot klokken seks"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0026",
+  "enPrompt": "Walk 1 km east, 2 km north, 1 km west and 2 km south. Where are you then?",
+  "noPrompt": "Gå 1 km øst, 2 km nord, 1 km vest og 2 km sør. Hvor befinner du deg da?",
+  "enOps": [
+   "1 km east of the starting point",
+   "at the starting point",
+   "2 km north of the starting point",
+   "4 km from the starting point",
+   "west of the starting point"
+  ],
+  "noOps": [
+   "1 km øst for startpunktet",
+   "på startpunktet",
+   "2 km nord for startpunktet",
+   "4 km fra startpunktet",
+   "vest for startpunktet"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0027",
+  "enPrompt": "Eva lives east of the school, and Fred lives south of the school. They meet at the school and walk together to Eva's. In which direction do they walk?",
+  "noPrompt": "Eva bor øst for skolen, og Fred bor sør for skolen. De møtes på skolen og går sammen til Eva. Hvilken retning går de?",
+  "enOps": [
+   "southwards",
+   "south-eastwards",
+   "westwards",
+   "eastwards",
+   "they must part ways at the crossing"
+  ],
+  "noOps": [
+   "sørover",
+   "sørøstover",
+   "vestover",
+   "østover",
+   "de må skille lag ved krysset"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0028",
+  "enPrompt": "A bus route runs from the terminal: first 3 km north, then 2 km east, and finally 3 km north. In which direction is the final stop from the terminal?",
+  "noPrompt": "En buss ruter fra terminalen: først 3 km nord, deretter 2 km øst, og til slutt 3 km nord. Hvilken retning er endestasjonen fra terminalen?",
+  "enOps": [
+   "north-east",
+   "south-east",
+   "north",
+   "east",
+   "the route forms a circle"
+  ],
+  "noOps": [
+   "nordøst",
+   "sørøst",
+   "nord",
+   "øst",
+   "ruten danner en sirkel"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0029",
+  "enPrompt": "A cross has one arm painted red. The red arm points south. The cross is rotated 180 degrees. Where does the red arm point now?",
+  "noPrompt": "Et kors har én arm malt rød. Den røde armen peker mot sør. Korset roteres 180 grader. Hvor peker den røde armen nå?",
+  "enOps": [
+   "still south",
+   "east",
+   "west",
+   "the arm is now hidden behind the cross",
+   "north"
+  ],
+  "noOps": [
+   "fortsatt mot sør",
+   "mot øst",
+   "mot vest",
+   "armen er nå skjult bak korset",
+   "mot nord"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0030",
+  "enPrompt": "You are facing south. Which compass direction does your left hand point toward?",
+  "noPrompt": "Du vender ansiktet mot sør. Hvilken himmelretning peker din venstre hånd mot?",
+  "enOps": [
+   "west",
+   "north",
+   "east",
+   "south",
+   "hands do not point toward compass directions"
+  ],
+  "noOps": [
+   "vest",
+   "nord",
+   "øst",
+   "sør",
+   "hender peker ikke mot himmelretninger"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0031",
+  "enPrompt": "From the cabin it is 3 km as the crow flies to the river, due north. From the river it is 4 km as the crow flies to the mountain, due east. How far is it as the crow flies from the cabin to the mountain?",
+  "noPrompt": "Fra hytta er det 3 km i luftlinje til elva, rett nord. Fra elva er det 4 km i luftlinje til fjellet, rett øst. Hvor langt er det i luftlinje fra hytta til fjellet?",
+  "enOps": [
+   "7 km",
+   "5 km",
+   "4 km",
+   "12 km",
+   "1 km"
+  ],
+  "noOps": [
+   "7 km",
+   "5 km",
+   "4 km",
+   "12 km",
+   "1 km"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0032",
+  "enPrompt": "A blank sheet is folded three times, each time from left to right. Then one hole is punched. How many holes are there when the sheet is unfolded?",
+  "noPrompt": "Et strøket ark foldes tre ganger, hver gang fra venstre mot høyre. Så lages ett hull. Hvor mange hull er det når arket foldes ut?",
+  "enOps": [
+   "four holes",
+   "two holes",
+   "one hole",
+   "eight holes",
+   "the hole disappears in the folding"
+  ],
+  "noOps": [
+   "fire hull",
+   "to hull",
+   "ett hull",
+   "åtte hull",
+   "hullet blir borte ved foldingen"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0033",
+  "enPrompt": "You walk 4 km north, turn 90 degrees right and walk 4 km, turn 90 degrees right and walk 4 km, turn 90 degrees right and walk 4 km. Where are you in relation to the starting point?",
+  "noPrompt": "Du går 4 km mot nord, snur 90 grader til høyre og går 4 km, snur 90 grader til høyre og går 4 km, snur 90 grader til høyre og går 4 km. Hvor befinner du deg i forhold til startpunktet?",
+  "enOps": [
+   "at the starting point",
+   "4 km east",
+   "4 km north",
+   "8 km from the starting point",
+   "the route is open at one end"
+  ],
+  "noOps": [
+   "på startpunktet",
+   "4 km mot øst",
+   "4 km mot nord",
+   "8 km fra startpunktet",
+   "ruten er åpen i én ende"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0034",
+  "enPrompt": "Nine people stand in a queue. Mia stands in the middle of the queue. Which number does Mia have from the front?",
+  "noPrompt": "Ni personer står i en kø. Mia står midt i køen. Hvilket nummer har Mia fra fremst?",
+  "enOps": [
+   "number four",
+   "number six",
+   "number nine",
+   "Mia has two numbers, one from either end",
+   "number five"
+  ],
+  "noOps": [
+   "nummer fire",
+   "nummer seks",
+   "nummer ni",
+   "Mia har to:nummer fra hver ende",
+   "nummer fem"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0035",
+  "enPrompt": "The church lies due north of the point P, 3 km away. The station lies due east of P, 4 km away. In which direction from the station does the church lie?",
+  "noPrompt": "Kirken ligger rett nord for punktet P, 3 km unna. Stasjonen ligger rett øst for P, 4 km unna. I hvilken retning fra stasjonen ligger kirken?",
+  "enOps": [
+   "south-east",
+   "north",
+   "north-west",
+   "west",
+   "it cannot be determined without a map"
+  ],
+  "noOps": [
+   "sørøst",
+   "nord",
+   "nordvest",
+   "vest",
+   "det kan ikke avgjøres uten kart"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0036",
+  "enPrompt": "A sign points north. It is rotated 30 degrees clockwise, three times in a row. Where does the sign point afterwards?",
+  "noPrompt": "Et skilt peker mot nord. Det roteres 30 grader med urviseren, tre ganger på rad. Hvor peker skiltet etterpå?",
+  "enOps": [
+   "west",
+   "east",
+   "between north and east",
+   "still north",
+   "south"
+  ],
+  "noOps": [
+   "mot vest",
+   "mot øst",
+   "mellom nord og øst",
+   "fortsatt mot nord",
+   "mot sør"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0037",
+  "enPrompt": "Normally the path runs 5 km due south from the house to the beach. The bridge is closed, so you must first walk 3 km west, then 5 km south and finally 3 km east. How much longer does the trip become?",
+  "noPrompt": "Vanligvis går stien 5 km rett sør fra huset til stranda. Broen er stengt, så du må først gå 3 km vest, deretter 5 km sør og til slutt 3 km øst. Hvor mye lengre blir turen?",
+  "enOps": [
+   "3 km",
+   "5 km",
+   "8 km",
+   "6 km",
+   "the trip is not longer"
+  ],
+  "noOps": [
+   "3 km",
+   "5 km",
+   "8 km",
+   "6 km",
+   "turen blir ikke lengre"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0038",
+  "enPrompt": "A word is written on a sheet of paper. You hold the paper up to a strong light and read the text through the paper, from behind. What does the text look like from this side?",
+  "noPrompt": "Et ord er skrevet på et papir. Du holder papiret opp mot et sterkt lys og leser teksten gjennom papiret, bakfra. Hvordan ser teksten ut fra denne siden?",
+  "enOps": [
+   "mirrored — left and right swapped",
+   "unchanged",
+   "upside down, with top and bottom swapped",
+   "rotated 90 degrees",
+   "the text is gone — the paper is just lighter"
+  ],
+  "noOps": [
+   "speilvendt — venstre og høyre byttet",
+   "uendret",
+   "opp-ned, med topp og bunn byttet",
+   "rotert 90 grader",
+   "teksten er borte — papiret lysner bare"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0039",
+  "enPrompt": "A die lies with \"1\" on top and \"2\" facing you (front). The die is rolled a quarter turn forward, so the front side becomes the top. Which side now faces up?",
+  "noPrompt": "En terning ligger med «1» på toppen og «2» mot deg (foran). Terningen rulles en kvart omgang framover, så den foran-siden blir topp. Hvilken side vender nå opp?",
+  "enOps": [
+   "1 — the die is still on the same side",
+   "6 — the bottom comes up",
+   "3",
+   "5",
+   "2"
+  ],
+  "noOps": [
+   "1 — terningen står fortsatt på samme side",
+   "6 — undersiden kommer opp",
+   "3",
+   "5",
+   "2"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t4-romlig",
+  "id": "sp-0040",
+  "enPrompt": "A square room has four doors, one in each wall. You stand in the middle of the room facing the north door. The east door is locked, and you turn 90 degrees to the left to walk toward the next door. Toward which door are you facing then?",
+  "noPrompt": "Et firkantet rom har fire dører, én i hver vegg. Du står midt i rommet og vender mot norddøren. Østdøren er låst, og du vender deg 90 grader til venstre for å gå mot neste dør. Mot hvilken dør vender du da?",
+  "enOps": [
+   "the north door",
+   "the south door",
+   "the west door",
+   "the east door",
+   "directions do not exist in the middle of a room"
+  ],
+  "noOps": [
+   "norddøren",
+   "sørdøren",
+   "vestdøren",
+   "østdøren",
+   "midt i rommet finnes ikke retninger"
+  ],
+  "labelsParitet": "OVERSATT"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0001",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: A 2, B 4, C 6, D 8, E 10, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 2, B 4, C 6, D 8, E 10, ?",
+  "enOps": [
+   "E 12",
+   "F 12",
+   "F 10",
+   "E 10",
+   "G 12"
+  ],
+  "noOps": [
+   "E 12",
+   "F 12",
+   "F 10",
+   "E 10",
+   "G 12"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0002",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: C 1, D 3, E 5, F 7, G 9, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: C 1, D 3, E 5, F 7, G 9, ?",
+  "enOps": [
+   "H 9",
+   "G 9",
+   "I 11",
+   "H 11",
+   "H 13"
+  ],
+  "noOps": [
+   "H 9",
+   "G 9",
+   "I 11",
+   "H 11",
+   "H 13"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0003",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: A 3, B 5, C 7, D 9, E 11, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 3, B 5, C 7, D 9, E 11, ?",
+  "enOps": [
+   "F 13",
+   "E 11",
+   "G 13",
+   "F 15",
+   "G 15"
+  ],
+  "noOps": [
+   "F 13",
+   "E 11",
+   "G 13",
+   "F 15",
+   "G 15"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0004",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: B 2, C 3, D 4, E 5, F 6, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 2, C 3, D 4, E 5, F 6, ?",
+  "enOps": [
+   "F 7",
+   "G 6",
+   "F 6",
+   "H 7",
+   "G 7"
+  ],
+  "noOps": [
+   "F 7",
+   "G 6",
+   "F 6",
+   "H 7",
+   "G 7"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0005",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: D 4, E 6, F 8, G 10, H 12, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: D 4, E 6, F 8, G 10, H 12, ?",
+  "enOps": [
+   "I 12",
+   "H 12",
+   "I 14",
+   "J 14",
+   "I 16"
+  ],
+  "noOps": [
+   "I 12",
+   "H 12",
+   "I 14",
+   "J 14",
+   "I 16"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0006",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: B 5, C 10, D 15, E 20, F 25, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 5, C 10, D 15, E 20, F 25, ?",
+  "enOps": [
+   "F 25",
+   "G 30",
+   "H 30",
+   "G 35",
+   "H 35"
+  ],
+  "noOps": [
+   "F 25",
+   "G 30",
+   "H 30",
+   "G 35",
+   "H 35"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0007",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: A 1, C 2, E 3, G 4, I 5, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 1, C 2, E 3, G 4, I 5, ?",
+  "enOps": [
+   "I 6",
+   "K 5",
+   "I 5",
+   "K 6",
+   "M 6"
+  ],
+  "noOps": [
+   "I 6",
+   "K 5",
+   "I 5",
+   "K 6",
+   "M 6"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0008",
+  "enPrompt": "The starting number is 3. First apply rule 1 (+2), then rule 2 (x2). What is the result?",
+  "noPrompt": "Starttallet er 3. Anvend først regel 1 (+2), deretter regel 2 (x2). Hva er resultatet?",
+  "enOps": [
+   "10",
+   "5",
+   "6",
+   "8",
+   "7"
+  ],
+  "noOps": [
+   "10",
+   "5",
+   "6",
+   "8",
+   "7"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0009",
+  "enPrompt": "The starting number is 2. First apply rule 1 (+3), then rule 2 (+2). What is the result?",
+  "noPrompt": "Starttallet er 2. Anvend først regel 1 (+3), deretter regel 2 (+2). Hva er resultatet?",
+  "enOps": [
+   "4",
+   "8",
+   "2",
+   "5",
+   "7"
+  ],
+  "noOps": [
+   "4",
+   "8",
+   "2",
+   "5",
+   "7"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0010",
+  "enPrompt": "The starting number is 5. First apply rule 1 (-1), then rule 2 (x3). What is the result?",
+  "noPrompt": "Starttallet er 5. Anvend først regel 1 (-1), deretter regel 2 (x3). Hva er resultatet?",
+  "enOps": [
+   "14",
+   "3",
+   "12",
+   "13",
+   "5"
+  ],
+  "noOps": [
+   "14",
+   "3",
+   "12",
+   "13",
+   "5"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0011",
+  "enPrompt": "The starting number is 4. First apply rule 1 (x2), then rule 2 (+1). What is the result?",
+  "noPrompt": "Starttallet er 4. Anvend først regel 1 (x2), deretter regel 2 (+1). Hva er resultatet?",
+  "enOps": [
+   "8",
+   "9",
+   "5",
+   "10",
+   "16"
+  ],
+  "noOps": [
+   "8",
+   "9",
+   "5",
+   "10",
+   "16"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0012",
+  "enPrompt": "The starting number is 6. First apply rule 1 (+4), then rule 2 (-2). What is the result?",
+  "noPrompt": "Starttallet er 6. Anvend først regel 1 (+4), deretter regel 2 (-2). Hva er resultatet?",
+  "enOps": [
+   "4",
+   "14",
+   "9",
+   "8",
+   "6"
+  ],
+  "noOps": [
+   "4",
+   "14",
+   "9",
+   "8",
+   "6"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0013",
+  "enPrompt": "Counter A starts at 1 and adds 3 each step: 1, 4, 7, 10. Counter B starts at 2 and adds 1 each step: 2, 3, 4, 5. How many does counter A have?",
+  "noPrompt": "Teller A starter på 1 og legger til 3 for hvert skritt: 1, 4, 7, 10. Teller B starter på 2 og legger til 1 for hvert skritt: 2, 3, 4, 5. Hvor mange har teller A?",
+  "enOps": [
+   "10",
+   "5",
+   "11",
+   "1",
+   "13"
+  ],
+  "noOps": [
+   "10",
+   "5",
+   "11",
+   "1",
+   "13"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0014",
+  "enPrompt": "Counter A starts at 0 and adds 2 each step: 0, 2, 4, 6, 8. Counter B starts at 5 and adds 1 each step: 5, 6, 7, 8, 9. How many does counter B have?",
+  "noPrompt": "Teller A starter på 0 og legger til 2 for hvert skritt: 0, 2, 4, 6, 8. Teller B starter på 5 og legger til 1 for hvert skritt: 5, 6, 7, 8, 9. Hvor mange har teller B?",
+  "enOps": [
+   "11",
+   "5",
+   "10",
+   "8",
+   "9"
+  ],
+  "noOps": [
+   "11",
+   "5",
+   "10",
+   "8",
+   "9"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0015",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: A 2, B 4, C 8, D 16, E 32, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 2, B 4, C 8, D 16, E 32, ?",
+  "enOps": [
+   "F 32",
+   "E 32",
+   "F 64",
+   "G 64",
+   "F 128"
+  ],
+  "noOps": [
+   "F 32",
+   "E 32",
+   "F 64",
+   "G 64",
+   "F 128"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0016",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: Z 9, Y 7, X 5, W 3, V 1, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: Z 9, Y 7, X 5, W 3, V 1, ?",
+  "enOps": [
+   "V 1",
+   "U -1",
+   "T -1",
+   "U -3",
+   "T -3"
+  ],
+  "noOps": [
+   "V 1",
+   "U -1",
+   "T -1",
+   "U -3",
+   "T -3"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0017",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: B 3, E 5, H 7, K 9, N 11, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 3, E 5, H 7, K 9, N 11, ?",
+  "enOps": [
+   "N 13",
+   "Q 11",
+   "N 11",
+   "Q 13",
+   "T 13"
+  ],
+  "noOps": [
+   "N 13",
+   "Q 11",
+   "N 11",
+   "Q 13",
+   "T 13"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0018",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: A 4, B 6, D 8, E 10, G 12, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 4, B 6, D 8, E 10, G 12, ?",
+  "enOps": [
+   "H 14",
+   "H 12",
+   "G 12",
+   "J 14",
+   "H 16"
+  ],
+  "noOps": [
+   "H 14",
+   "H 12",
+   "G 12",
+   "J 14",
+   "H 16"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0019",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: C 3, F 6, I 9, L 12, O 15, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: C 3, F 6, I 9, L 12, O 15, ?",
+  "enOps": [
+   "O 15",
+   "U 18",
+   "R 21",
+   "U 21",
+   "R 18"
+  ],
+  "noOps": [
+   "O 15",
+   "U 18",
+   "R 21",
+   "U 21",
+   "R 18"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0020",
+  "enPrompt": "The starting number is 4. First apply rule 1 (x3), then rule 2 (-1). What is the result?",
+  "noPrompt": "Starttallet er 4. Anvend først regel 1 (x3), deretter regel 2 (-1). Hva er resultatet?",
+  "enOps": [
+   "12",
+   "3",
+   "11",
+   "9",
+   "36"
+  ],
+  "noOps": [
+   "12",
+   "3",
+   "11",
+   "9",
+   "36"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0021",
+  "enPrompt": "The starting number is 5. First apply rule 1 (x2), then rule 2 (+7). What is the result?",
+  "noPrompt": "Starttallet er 5. Anvend først regel 1 (x2), deretter regel 2 (+7). Hva er resultatet?",
+  "enOps": [
+   "12",
+   "17",
+   "24",
+   "20",
+   "18"
+  ],
+  "noOps": [
+   "12",
+   "17",
+   "24",
+   "20",
+   "18"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0022",
+  "enPrompt": "The starting number is 7. First apply rule 1 (-2), then rule 2 (x2). What is the result?",
+  "noPrompt": "Starttallet er 7. Anvend først regel 1 (-2), deretter regel 2 (x2). Hva er resultatet?",
+  "enOps": [
+   "12",
+   "3",
+   "11",
+   "10",
+   "7"
+  ],
+  "noOps": [
+   "12",
+   "3",
+   "11",
+   "10",
+   "7"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0023",
+  "enPrompt": "The starting number is 3. First apply rule 1 (x4), then rule 2 (-5). What is the result?",
+  "noPrompt": "Starttallet er 3. Anvend først regel 1 (x4), deretter regel 2 (-5). Hva er resultatet?",
+  "enOps": [
+   "7",
+   "12",
+   "-2",
+   "-8",
+   "48"
+  ],
+  "noOps": [
+   "7",
+   "12",
+   "-2",
+   "-8",
+   "48"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0024",
+  "enPrompt": "Counter A starts at 2 and adds 1 each step: 2, 3, 4, 5, 6. Counter B starts at 1 and adds 3 each step: 1, 4, 7, 10, 13. How many does counter B have?",
+  "noPrompt": "Teller A starter på 2 og legger til 1 for hvert skritt: 2, 3, 4, 5, 6. Teller B starter på 1 og legger til 3 for hvert skritt: 1, 4, 7, 10, 13. Hvor mange har teller B?",
+  "enOps": [
+   "14",
+   "1",
+   "16",
+   "10",
+   "13"
+  ],
+  "noOps": [
+   "14",
+   "1",
+   "16",
+   "10",
+   "13"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0025",
+  "enPrompt": "Counter A starts at 5 and subtracts 1 each step: 5, 4, 3, 2, 1, 0. Counter B starts at 0 and adds 2 each step: 0, 2, 4, 6, 8, 10. How many does counter A have?",
+  "noPrompt": "Teller A starter på 5 og trekker fra 1 for hvert skritt: 5, 4, 3, 2, 1, 0. Teller B starter på 0 og legger til 2 for hvert skritt: 0, 2, 4, 6, 8, 10. Hvor mange har teller A?",
+  "enOps": [
+   "5",
+   "-1",
+   "0",
+   "1",
+   "10"
+  ],
+  "noOps": [
+   "5",
+   "-1",
+   "0",
+   "1",
+   "10"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0026",
+  "enPrompt": "Counter A starts at 1 and adds 4 each step: 1, 5, 9, 13. Counter B starts at 3 and adds 2 each step: 3, 5, 7, 9. How many does counter A have?",
+  "noPrompt": "Teller A starter på 1 og legger til 4 for hvert skritt: 1, 5, 9, 13. Teller B starter på 3 og legger til 2 for hvert skritt: 3, 5, 7, 9. Hvor mange har teller A?",
+  "enOps": [
+   "9",
+   "13",
+   "15",
+   "1",
+   "17"
+  ],
+  "noOps": [
+   "9",
+   "13",
+   "15",
+   "1",
+   "17"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0027",
+  "enPrompt": "Counter A starts at 6 and adds 2 each step: 6, 8, 10, 12, 14. Counter B starts at 2 and adds 3 each step: 2, 5, 8, 11, 14. How many does counter B have?",
+  "noPrompt": "Teller A starter på 6 og legger til 2 for hvert skritt: 6, 8, 10, 12, 14. Teller B starter på 2 og legger til 3 for hvert skritt: 2, 5, 8, 11, 14. Hvor mange har teller B?",
+  "enOps": [
+   "2",
+   "17",
+   "15",
+   "14",
+   "11"
+  ],
+  "noOps": [
+   "2",
+   "17",
+   "15",
+   "14",
+   "11"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0028",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: P 4, Q 8, R 16, S 32, T 64, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: P 4, Q 8, R 16, S 32, T 64, ?",
+  "enOps": [
+   "U 128",
+   "T 128",
+   "U 64",
+   "T 64",
+   "V 128"
+  ],
+  "noOps": [
+   "U 128",
+   "T 128",
+   "U 64",
+   "T 64",
+   "V 128"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0029",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: M 12, K 10, I 8, G 6, E 4, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: M 12, K 10, I 8, G 6, E 4, ?",
+  "enOps": [
+   "C 4",
+   "E 4",
+   "A 2",
+   "C 0",
+   "C 2"
+  ],
+  "noOps": [
+   "C 4",
+   "E 4",
+   "A 2",
+   "C 0",
+   "C 2"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0030",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: A 1, C 3, E 9, G 27, I 81, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: A 1, C 3, E 9, G 27, I 81, ?",
+  "enOps": [
+   "I 81",
+   "M 243",
+   "K 243",
+   "K 729",
+   "M 729"
+  ],
+  "noOps": [
+   "I 81",
+   "M 243",
+   "K 243",
+   "K 729",
+   "M 729"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0031",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: B 6, C 10, A 14, B 18, Z 22, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: B 6, C 10, A 14, B 18, Z 22, ?",
+  "enOps": [
+   "Z 26",
+   "A 26",
+   "A 22",
+   "Z 22",
+   "Y 26"
+  ],
+  "noOps": [
+   "Z 26",
+   "A 26",
+   "A 22",
+   "Z 22",
+   "Y 26"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0032",
+  "enPrompt": "The sequence follows one fixed rule for the letters and one fixed rule for the numbers. Which entry comes next: X 2, W 4, V 6, U 8, T 10, ?",
+  "noPrompt": "Følgjen er bygget på en fast regel for bokstavene og en fast regel for tallene. Hvilket ledd kommer sist: X 2, W 4, V 6, U 8, T 10, ?",
+  "enOps": [
+   "S 10",
+   "T 10",
+   "R 12",
+   "S 12",
+   "S 14"
+  ],
+  "noOps": [
+   "S 10",
+   "T 10",
+   "R 12",
+   "S 12",
+   "S 14"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0033",
+  "enPrompt": "The starting number is 2. First apply rule 1 (x5), then rule 2 (-3). What is the result?",
+  "noPrompt": "Starttallet er 2. Anvend først regel 1 (x5), deretter regel 2 (-3). Hva er resultatet?",
+  "enOps": [
+   "7",
+   "10",
+   "-1",
+   "-5",
+   "50"
+  ],
+  "noOps": [
+   "7",
+   "10",
+   "-1",
+   "-5",
+   "50"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0034",
+  "enPrompt": "The starting number is 4. First apply rule 1 (x3), then rule 2 (-2). What is the result?",
+  "noPrompt": "Starttallet er 4. Anvend først regel 1 (x3), deretter regel 2 (-2). Hva er resultatet?",
+  "enOps": [
+   "2",
+   "6",
+   "36",
+   "11",
+   "10"
+  ],
+  "noOps": [
+   "2",
+   "6",
+   "36",
+   "11",
+   "10"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0035",
+  "enPrompt": "The starting number is 5. First apply rule 1 (x2), then rule 2 (-6). What is the result?",
+  "noPrompt": "Starttallet er 5. Anvend først regel 1 (x2), deretter regel 2 (-6). Hva er resultatet?",
+  "enOps": [
+   "-2",
+   "20",
+   "4",
+   "5",
+   "10"
+  ],
+  "noOps": [
+   "-2",
+   "20",
+   "4",
+   "5",
+   "10"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0036",
+  "enPrompt": "The starting number is 4. First apply rule 1 (x3), then rule 2 (+8). What is the result?",
+  "noPrompt": "Starttallet er 4. Anvend først regel 1 (x3), deretter regel 2 (+8). Hva er resultatet?",
+  "enOps": [
+   "12",
+   "20",
+   "36",
+   "21",
+   "4"
+  ],
+  "noOps": [
+   "12",
+   "20",
+   "36",
+   "21",
+   "4"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0037",
+  "enPrompt": "Counter A starts at 1 and adds 5 each step: 1, 6, 11, 16, 21. Counter B starts at 7 and subtracts 1 each step: 7, 6, 5, 4, 3. How many does counter A have?",
+  "noPrompt": "Teller A starter på 1 og legger til 5 for hvert skritt: 1, 6, 11, 16, 21. Teller B starter på 7 og trekker fra 1 for hvert skritt: 7, 6, 5, 4, 3. Hvor mange har teller A?",
+  "enOps": [
+   "20",
+   "1",
+   "26",
+   "21",
+   "22"
+  ],
+  "noOps": [
+   "20",
+   "1",
+   "26",
+   "21",
+   "22"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0038",
+  "enPrompt": "Counter A starts at 9 and subtracts 2 each step: 9, 7, 5, 3. Counter B starts at 8 and subtracts 2 each step: 8, 6, 4, 2. How many does counter B have?",
+  "noPrompt": "Teller A starter på 9 og trekker fra 2 for hvert skritt: 9, 7, 5, 3. Teller B starter på 8 og trekker fra 2 for hvert skritt: 8, 6, 4, 2. Hvor mange har teller B?",
+  "enOps": [
+   "2",
+   "8",
+   "0",
+   "3",
+   "4"
+  ],
+  "noOps": [
+   "2",
+   "8",
+   "0",
+   "3",
+   "4"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0039",
+  "enPrompt": "Counter A starts at 4 and adds 3 each step: 4, 7, 10, 13, 16, 19. Counter B starts at 1 and adds 5 each step: 1, 6, 11, 16, 21, 26. How many does counter A have?",
+  "noPrompt": "Teller A starter på 4 og legger til 3 for hvert skritt: 4, 7, 10, 13, 16, 19. Teller B starter på 1 og legger til 5 for hvert skritt: 1, 6, 11, 16, 21, 26. Hvor mange har teller A?",
+  "enOps": [
+   "26",
+   "24",
+   "4",
+   "22",
+   "19"
+  ],
+  "noOps": [
+   "26",
+   "24",
+   "4",
+   "22",
+   "19"
+  ],
+  "labelsParitet": "IDENTISK"
+ },
+ {
+  "pool": "t5-sekvens",
+  "id": "sq-0040",
+  "enPrompt": "Counter A starts at 8 and subtracts 1 each step: 8, 7, 6, 5, 4. Counter B starts at 5 and adds 2 each step: 5, 7, 9, 11, 13. How many does counter B have?",
+  "noPrompt": "Teller A starter på 8 og trekker fra 1 for hvert skritt: 8, 7, 6, 5, 4. Teller B starter på 5 og legger til 2 for hvert skritt: 5, 7, 9, 11, 13. Hvor mange har teller B?",
+  "enOps": [
+   "12",
+   "5",
+   "13",
+   "15",
+   "14"
+  ],
+  "noOps": [
+   "12",
+   "5",
+   "13",
+   "15",
+   "14"
+  ],
+  "labelsParitet": "IDENTISK"
+ }
+]

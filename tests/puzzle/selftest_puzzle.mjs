@@ -456,8 +456,12 @@ group('L determinisme');
 {
   const base = mkdtempSync(join(tmpdir(), 'pzd-'));
   try {
-    execFileSync('python3', [join(HERE, 'gen_puzzle_pool.py'), join(base, '1')], { stdio: 'pipe' });
-    execFileSync('python3', [join(HERE, 'gen_puzzle_pool.py'), join(base, '2')], { stdio: 'pipe' });
+    const runGen = (out) => {
+      try { execFileSync('python3', [join(HERE, 'gen_puzzle_pool.py'), out], { stdio: 'pipe' }); }
+      catch { execFileSync('python', [join(HERE, 'gen_puzzle_pool.py'), out], { stdio: 'pipe' }); }
+    };
+    runGen(join(base, '1'));
+    runGen(join(base, '2'));
     const same = (n) => readFileSync(join(base, '1', n)).equals(readFileSync(join(base, '2', n)));
     done('L1 def.no bitvist lik over kjoringer', same('def-puzzle-v1.no.json'));
     done('L2 def.en bitvist lik', same('def-puzzle-v1.en.json'));

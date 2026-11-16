@@ -141,7 +141,7 @@ const stdHtml = std.html, stdSvg = std.svg;
 ok('S11.K1.midtpunkt-i-svg', stdSvg.includes('skalaens midtpunkt') && stdSvg.includes('stroke-dasharray'));
 ok('S11.K1.prosent-i-svg', stdSvg.includes('Prosent av skalaens omfang') && stdSvg.includes('%'));
 ok('S11.K1.legend-ikke-gjennomsnitt-kravleggende', stdSvg.includes('ikke et gjennomsnitt'));
-ok('S11.K1.trait-normNote-adskiller', stdHtml.includes('prosent av skalaens omfang') && stdHtml.includes('ikke prosentiler'));
+ok('S11.K1.trait-normNote-adskiller', stdHtml.includes('prosent av skalaens omfang') && stdHtml.includes('ikke persentiler'));
 /* K2: resultater må ikke late som de er normerte, diagnostiske eller sertifiserte */
 const forbiddenClaim = [/\bpercentile-rank\b/i, /\bnormalisert\s+IQ\b/i, /IQ\s*[:=]\s*\d/, /certified/i, /diagnos[\w ]*:\s*\w+/i];
 ok('S11.K2.ingen-norm/diag/sert-paastand', forbiddenClaim.every((re) => !re.test(stdHtml) && !re.test(stdSvg)));

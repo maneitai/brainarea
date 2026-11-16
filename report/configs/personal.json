@@ -68,6 +68,18 @@
       "neuroticism": {
         "no": "Nevrotisisme",
         "en": "Neuroticism"
+      },
+      "closeness": {
+        "no": "Nærhet",
+        "en": "Closeness"
+      },
+      "conflict": {
+        "no": "Konflikthåndtering",
+        "en": "Conflict handling"
+      },
+      "independence": {
+        "no": "Selvstendighet",
+        "en": "Independence"
       }
     },
     "graphic": "bar",
@@ -123,8 +135,8 @@
       "en": "If you did not take the test"
     },
     "body": {
-      "no": "Dette er en persons egne svar i en nettbasert test, på ett gitt tidspunkt. For selvrapporteringstester er svarene personens egen beskrivelse av seg selv — ikke en objektiv måling. For evnetester er resultatet råtrekk og estimater fra oppgavene i akkurat denne testen. Ingen av delene er normert eller sammenlignet med andre.",
-      "en": "This is one person's own answers in a web test, at one point in time. For self-report tests the answers are the person's own description of themselves — not an objective measurement. For ability tests the result is a raw count and estimates from the tasks in this particular test. Neither is normed or compared with others."
+      "no": "Dette er en persons egne svar i en nettbasert test, på ett gitt tidspunkt. For selvrapporteringstester (personlighet, relasjoner, triage) er svarene personens egen beskrivelse av seg selv — ikke en objektiv måling. For evnetester er resultatet råtrekk og estimater fra oppgavene i akkurat denne testen. Ingen av delene er normert eller sammenlignet med andre.",
+      "en": "This is one person's own answers in a web test, at one point in time. For self-report tests (personality, relations, triage) the answers are the person's own description of themselves — not an objective measurement. For ability tests the result is a raw count and estimates from the tasks in this particular test. Neither is normed or compared with others."
     }
   },
   "moodEffect": {
@@ -141,7 +153,7 @@
     },
     {
       "id": "no-norms",
-      "no": "Ingen normer ble brukt: skårene er ikke prosentiler.",
+      "no": "Ingen normer ble brukt: skårene er ikke persentiler.",
       "en": "No norms were applied: scores are not percentiles."
     }
   ],

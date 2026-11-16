@@ -69,6 +69,18 @@
       "neuroticism": {
         "no": "Nevrotisisme",
         "en": "Neuroticism"
+      },
+      "closeness": {
+        "no": "Nærhet",
+        "en": "Closeness"
+      },
+      "conflict": {
+        "no": "Konflikthåndtering",
+        "en": "Conflict handling"
+      },
+      "independence": {
+        "no": "Selvstendighet",
+        "en": "Independence"
       }
     },
     "graphic": "bar",
@@ -119,8 +131,8 @@
   },
   "employer": {
     "conversationBasis": {
-      "no": "Dette resultatet er et GRUNNLAG FOR SAMTALE mellom den testede og mottakeren. Det er ikke et ansettelsesverktøy og kan ikke brukes til utvelgelse eller vurdering av kandidater. For selvrapporteringstester har den testede svart om seg selv — les resultatet som et selvportrett. For evnetester er det råtrekk og estimater fra denne testens oppgavesett. Les i begge tilfeller resultatet som samtaleåpner, ikke som en objektiv måling av personen.",
-      "en": "This result is GROUNDWORK FOR A CONVERSATION between the test-taker and the recipient. It is not a hiring tool and must not be used for selection or candidate assessment. For self-report tests, the test-taker answered about themselves — read the result as a self-portrait. For ability tests, it is a raw count and estimates from this test's set of tasks. In both cases, read the result as a conversation opener, not as an objective measurement of the person."
+      "no": "Dette resultatet er et GRUNNLAG FOR SAMTALE mellom den testede og mottakeren. Det er ikke et ansettelsesverktøy og kan ikke brukes til utvelgelse eller vurdering av kandidater. For selvrapporteringstester (personlighet, relasjoner, triage) har den testede svart om seg selv — les resultatet som et selvportrett. For evnetester er det råtrekk og estimater fra denne testens oppgavesett. Les i begge tilfeller resultatet som samtaleåpner, ikke som en objektiv måling av personen.",
+      "en": "This result is GROUNDWORK FOR A CONVERSATION between the test-taker and the recipient. It is not a hiring tool and must not be used for selection or candidate assessment. For self-report tests (personality, relations, triage), the test-taker answered about themselves — read the result as a self-portrait. For ability tests, it is a raw count and estimates from this test's set of tasks. In both cases, read the result as a conversation opener, not as an objective measurement of the person."
     },
     "prohibitions": [
       "ansett",
@@ -182,7 +194,7 @@
     },
     {
       "id": "no-norms",
-      "no": "Ingen normer ble brukt: skårene er ikke prosentiler og ikke sammenlignet med andre.",
+      "no": "Ingen normer ble brukt: skårene er ikke persentiler og ikke sammenlignet med andre.",
       "en": "No norms were applied: scores are not percentiles and not compared with anyone."
     }
   ],

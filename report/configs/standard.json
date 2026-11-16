@@ -9,7 +9,7 @@
         "en": "Your profile"
       },
       "normNote": {
-        "no": "Skårene angir prosent av skalaens omfang (0–100) — de er ikke prosentiler, ikke normert mot en befolkningsgruppe og ikke diagnostiske. Midtpunktet på skalaen (50) er skalaens midt, ikke et gjennomsnitt over andre. Samletallet er gjennomsnittet av dimensjonsprosentene dine (like vekter).",
+        "no": "Skårene angir prosent av skalaens omfang (0–100) — de er ikke persentiler, ikke normert mot en befolkningsgruppe og ikke diagnostiske. Midtpunktet på skalaen (50) er skalaens midt, ikke et gjennomsnitt over andre. Samletallet er gjennomsnittet av dimensjonsprosentene dine (like vekter).",
         "en": "Scores are percent of the scale range (0–100) — not percentiles, not normed against a population, and not diagnostic. The scale midpoint (50) is the middle of the scale, not an average over others. The overall figure is the average of your dimension percentages (equal weights)."
       },
       "showBar": true
@@ -69,6 +69,18 @@
       "neuroticism": {
         "no": "Nevrotisisme",
         "en": "Neuroticism"
+      },
+      "closeness": {
+        "no": "Nærhet",
+        "en": "Closeness"
+      },
+      "conflict": {
+        "no": "Konflikthåndtering",
+        "en": "Conflict handling"
+      },
+      "independence": {
+        "no": "Selvstendighet",
+        "en": "Independence"
       }
     },
     "graphic": "bar",
@@ -109,8 +121,8 @@
         "en": "Each bar runs from 0 to 100 and shows how much of that dimension's scale range your answers cover. The midpoint line (50) is only the middle of the scale. Above or below the midpoint does not mean 'good' or 'bad' — only that your answers sit on one or the other side of the scale's middle."
       },
       {
-        "no": "Testene her er av to typer: selvrapportering (personlighet, triage) og oppgavetester med riktige svar (evner). Selvrapporterte skår sier ingenting om hva du kan eller ikke kan gjøre — de er ikke prosentiler og ikke et intelligensmål. Evneresultater er råtrekk og estimater med usikkerhetsintervall — heller ikke de er prosentiler, og de gjenspeiler testens begrensede oppgavesett, ikke en helhetsvurdering av intelligens.",
-        "en": "The tests here come in two types: self-report (personality, triage) and tasks with correct answers (ability). Self-reported scores say nothing about what you can or cannot do — they are not percentiles and not a measure of intelligence. Ability results are raw counts and estimates with an uncertainty interval — they are not percentiles either, and they reflect this test's limited set of tasks, not an overall assessment of intelligence."
+        "no": "Testene her er av to typer: selvrapportering (personlighet, relasjoner, triage) og oppgavetester med riktige svar (evner). Selvrapporterte skår sier ingenting om hva du kan eller ikke kan gjøre — de er ikke persentiler og ikke et intelligensmål. Evneresultater er råtrekk og estimater med usikkerhetsintervall — heller ikke de er persentiler, og de gjenspeiler testens begrensede oppgavesett, ikke en helhetsvurdering av intelligens.",
+        "en": "The tests here come in two types: self-report (personality, relations, triage) and tasks with correct answers (ability). Self-reported scores say nothing about what you can or cannot do — they are not percentiles and not a measure of intelligence. Ability results are raw counts and estimates with an uncertainty interval — they are not percentiles either, and they reflect this test's limited set of tasks, not an overall assessment of intelligence."
       },
       {
         "no": "Humør og tilstand kan påvirke svarene dine i en test — humøret når du tar den kan flytte skårene opp eller ned. Ta resultatet som et øyeblikksbilde, ikke en fastsatt egenskap.",
@@ -128,8 +140,8 @@
       "en": "If you did not take the test"
     },
     "body": {
-      "no": "Denne rapporten er basert på en persons egne svar i en nettbasert test. Tester her er av to typer: selvrapportering (personens oppfatning av seg selv — kan farges av humør og situasjon) og oppgavetester med riktige svar (evner — råtrekk og estimater med usikkerhet). Skårene er ikke normert: de er ikke prosentiler, ikke sammenlignet med andre, og «midtpunktet» i en graf er skalaens midte (50), ikke et gruppegjennomsnitt. Resultatet er ikke medisinsk, psykologisk eller klinisk vurdert og kan ikke brukes til ansettelse eller andre viktige beslutninger.",
-      "en": "This report is based on a person's own answers in a web test. The tests come in two types: self-report (the person's own view of themselves — may be coloured by mood and situation) and tasks with correct answers (ability — raw counts and estimates with uncertainty). Scores are not normed: they are not percentiles, not compared with others, and the 'midpoint' of a chart is the middle of the scale (50), not a group average. The result is not medically, psychologically or clinically assessed and cannot be used for hiring or other important decisions."
+      "no": "Denne rapporten er basert på en persons egne svar i en nettbasert test. Tester her er av to typer: selvrapportering (personlighet, relasjoner, triage: personens oppfatning av seg selv — kan farges av humør og situasjon) og oppgavetester med riktige svar (evner — råtrekk og estimater med usikkerhet). Skårene er ikke normert: de er ikke persentiler, ikke sammenlignet med andre, og «midtpunktet» i en graf er skalaens midte (50), ikke et gruppegjennomsnitt. Resultatet er ikke medisinsk, psykologisk eller klinisk vurdert og kan ikke brukes til ansettelse eller andre viktige beslutninger.",
+      "en": "This report is based on a person's own answers in a web test. The tests come in two types: self-report (personality, relations, triage: the person's own view of themselves — may be coloured by mood and situation) and tasks with correct answers (ability — raw counts and estimates with uncertainty). Scores are not normed: they are not percentiles, not compared with others, and the 'midpoint' of a chart is the middle of the scale (50), not a group average. The result is not medically, psychologically or clinically assessed and cannot be used for hiring or other important decisions."
     }
   },
   "moodEffect": {
@@ -146,7 +158,7 @@
     },
     {
       "id": "no-norms",
-      "no": "Ingen normer ble brukt: skårene er ikke prosentiler.",
+      "no": "Ingen normer ble brukt: skårene er ikke persentiler.",
       "en": "No norms were applied: scores are not percentiles."
     }
   ],

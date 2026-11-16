@@ -102,7 +102,7 @@ function basePayload(def, answers = {}, overrides = {}) {
   // kompositt: vekter alle 1 => gjennomsnitt av de to skalaene med data (andre har 0 items)
   const composit = r.result.total.composite;
   check('S2 t8: kompositt = gjennomsnitt av skalaer med data', nearly(composit, 62.5));
-  check('S2 t9: norms none => ingen prosentilnoter, not.trait.not-normed finnes',
+  check('S2 t9: norms none => ingen persentilnoter, not.trait.not-normed finnes',
     r.result.total.norms === 'none' && r.result.notes.some((n) => n.id === 'note.trait.not-normed'));
   check('S2 t10: 2 ubrukte traits gir warning', r.warnings.filter((w) => w.includes('ingen besvarte items')).length === 3);
 

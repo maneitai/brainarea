@@ -1,0 +1,48 @@
+{
+  "doc": "_fase3_rel_resulttext_verdict",
+  "status": "GJELDENDE",
+  "date": "2026-11-16",
+  "steg": "[3-VEIS] FASE 3: Resultattekst relasjoner — tredjepartslesbarhet (søster-steg til #3782/#3783, kjede i run TR-FAE96A45F277)",
+  "metode": "A = config/renderer-les + NAOB-kontroll (substrat-kilder hentet 2026-11-16: persentil = recommandert skjema-form, prosentil = crossref-form) | B = whitelistet parse-redigering med flat-field-diff og hard assert per anker | C = deterministisk E-harness med ekte scoringpath (16-item rel-16-fixture, uniform midt-svar => alle skalaer nøyaktig 50).",
+  "funn": [
+    {
+      "id": "F1",
+      "klasse": "i",
+      "hvor": "report/configs/{standard,personal,employer}.json dimensions.labels",
+      "funn": "Rel-dims closeness/conflict/independence manglet etiketter; renderer-fallback ville rendret rå id ('closeness' osv.) i grafen for rel-resultater. openness var dekket kun ved id-kollisjon med Big Five-etiketten (verdi identisk).",
+      "rettelse": "R1: 4/4 rel-dims no/en i alle 3 configs, låst byte-eksakt til FASE 1-locked vokabular (i18n rel.intro/rel.desc/rel.og.desc + spec.dimensionDecision-etikett-verdikt): Nærhet/Closeness, Åpenhet/Openness, Konflikthåndtering/Conflict handling, Selvstendighet/Independence."
+    },
+    {
+      "id": "F2",
+      "klasse": "i/ii",
+      "hvor": "configs (6 NO-forekomster) vs scoring.js note vs scoring.js dev-note",
+      "funn": "Formsplit i persentil-terminologien: alle 6 config-forekomster brukte 'prosentiler'; scoring.js engine-note brukte 'persentiler' (NAOB-recommandert skjema-form); scoring.js comment/warnings brukte 'prosentiler'. i18n not-lag brukte 'persentiler'.",
+      "rettelse": "R2: 6 config-forekomster 'prosentiler'->'persentiler'. scoring.js-note uroet (rett form). 'prosentiler' i scoring.js comment + norms-published-warning dokumentert som hold (dev-note/debug-warning, aldri rendret i rapport-output). Selftest-token oppdatert (S11.K1.trait-normNote-adskiller + S2 t9-kommentar)."
+    },
+    {
+      "id": "F3",
+      "klasse": "i",
+      "hvor": "standard readingGuide.body[1], standard+personal thirdParty.body, employer employer.conversationBasis (no/en)",
+      "funn": "Enumerasjonen av selvrapporteringstyper navnet 'personlighet, triage' (leseguide) eller ingen enumerasjon (thirdParty/conversationBasis) — relasjonstesten (FASE 1-locked dim-vokabular rendret live i out/relasjoner) sto ikke nevnt i tekstlagene tredjepartsleseren faktisk ser.",
+      "rettelse": "R3: enumerasjon utvidet til '(personlighet, relasjoner, triage)' i alle 6 ankerset (leseguide+thirdParty no/en, personal thirdParty no/en, employer conversationBasis no/en). Employer leseguide beholder funksjonsforklaringen (per-type mekanisme), som nevner selvrapportering + evnetester generisk — bevisst uendret (søster-monster: employer-tekstene leses i samtalen, ikke som testkatalog)."
+    }
+  ],
+  "holds": [
+    "Rel-item-laget finnes ikke ennå: FASE 2-pool-leddene #3754/#3756 er skippet og gjenoppkoblet som [BYGG]-kjeden #3822–#3825. Item-tekst-QC for relasjoner hører til de verifiseringsleddene; dette steget satt etikett-laget ferdig så renderer aldri viser rå dim-id når defene kommer.",
+    "'prosentiler' i scoring.js kommentar (linje 26-27) + norms-published-warning (linje 338) beholdt — dev-note/debug-output, aldri rendret i rapport. CRLF-bevarende fil, byte-presisjon veier høyere enn terminologisk uniformitet i kodekommentarer."
+  ],
+  "pins": [
+    "Normerings-binding (FASE 4/GAP-1): ved norms=published-kontrakt må trait-normNote/disclosed persentil-avvisningene re-leses (da blir 'ikke persentiler' en kvantifiserings-paastand som trenger ny grunnvold).",
+    "_fase3_rel_resulttext_verify.mjs (88 checks, ekte scoringpath, scanBanned-negert kontekst) gjenbrukes i #3822–#3825-verifiseringsleddene."
+  ],
+  "bevis": {
+    "harness": "tests/schema/_fase3_rel_resulttext_verify.mjs 88/88 PASS",
+    "regresjon": "report 74/74 · scoring 27+27 · engine 72/72 · i18n 22/22 · attention 57/57 · integrasjon 5/5 · resume 27 · repeat 25 · handcalc 27 · glm-resumes 46 · ipip50/evne/nd/rel itemspec ALL · person x3 ALL · psykometrisk 31 · normering 107 · ads 42+67 · puzzle 99+24 · hreflang 171 · SSG 14 pages byte-identisk (out/ 0 git-diff) · demo regenerert (2x, updated tekster)",
+    "ssg": "out/ byte-identisk: report-configs er ikke kilde for out/; relasjonstesten sin live-side bruker i18n rel.* som er uendret i dette steget."
+  },
+  "kilder": [
+    "NAOB: skår/persentil/proentil-søkeresultat (hentet 2026-11-16, substrat + web_fetch)",
+    "tests/schema/_fase3_rel_no_verdict.json (rel-oversettelses-QC, 0 rettelser, 3 avkreftinger, F4 speil-sync)",
+    "tests/schema/_rel_itemspec_spec.json (FASE 1-locked dim-vokabular, engineMapping, defFilePlan)"
+  ]
+}

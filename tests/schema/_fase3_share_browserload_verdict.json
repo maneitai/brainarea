@@ -1,0 +1,45 @@
+{
+ "browser": "chromium-1248 (ekte Windows-binært), fersk profil — tom user-data-dir, ingen cookies/cache/localStorage",
+ "freshProfile": true,
+ "results": [
+  {
+   "name": "rel -> demo/share-graf-demo-no.html",
+   "httpishStatus": 200,
+   "hash": "#d=eyJ2IjoxLCJ0IjoicmVsIiwiZCI6W1s2MDAwMDAsNzAwMDAwLDEwMDAwM",
+   "hashIsShare": true,
+   "title": "Delgraf-demo (fixture) | Brainarea",
+   "bodyLen": 551,
+   "headings": [
+    "DEMO med konstruerte data (Person 1 / Person 2). Viser delgr",
+    "SVG viewBox 600×426. Skalerer proporsjonalt til feed-størrel"
+   ],
+   "imgs": 0,
+   "svgCount": 1,
+   "emptyBody": false
+  },
+  {
+   "name": "nd  -> demo/share-graf-demo-en.html",
+   "httpishStatus": 200,
+   "hash": "#d=eyJ2IjoxLCJ0IjoibmQiLCJkIjpbWzY1MDAwMCw3MjAwMDBdXX0",
+   "hashIsShare": true,
+   "title": "Share graph demo (fixture) | Brainarea",
+   "bodyLen": 562,
+   "headings": [
+    "DEMO with constructed data (Person 1 / Person 2). Shows the ",
+    "SVG viewBox 600×426. Skalerer proporsjonalt til feed-størrel"
+   ],
+   "imgs": 0,
+   "svgCount": 1,
+   "emptyBody": false
+  }
+ ],
+ "noFragmentControl": {
+  "bodyLen": 551,
+  "empty": false
+ },
+ "errors": [],
+ "urls": [
+  "file:///F:/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/schema/demo/share-gr",
+  "file:///F:/maneit/prosjekter/filip-webside-prosjekter/brainarea/tests/schema/demo/share-gr"
+ ]
+}

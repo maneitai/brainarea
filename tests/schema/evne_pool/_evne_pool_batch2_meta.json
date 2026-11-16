@@ -1,0 +1,4706 @@
+{
+  "schemaVersion": 1,
+  "id": "evne-pool-batch2-meta",
+  "type": "evne-pool-meta",
+  "batch": 2,
+  "boardLeaf": "#3750",
+  "spec": "tests/schema/_evne_itemspec_spec.json",
+  "themes": {
+    "T3": "evne-t3-verbal",
+    "T4": "evne-t4-romlig"
+  },
+  "counts": {
+    "T3": 50,
+    "T4": 40
+  },
+  "bands": {
+    "T3": {
+      "L": 17,
+      "M": 17,
+      "H": 16
+    },
+    "T4": {
+      "L": 14,
+      "M": 13,
+      "H": 13
+    }
+  },
+  "authoring": {
+    "T3": "SEPARAT per spraak (konstrukt-ekvivalens: samme band+subtype per indeks, ikke oversatt)",
+    "T4": "prompt+valg oversatt; fasit-formulering parallel/identisk per variant"
+  },
+  "items": [
+    {
+      "id": "vr-0001",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "gulrot",
+      "correct_en": "carrot",
+      "correctIndex": 3,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "eple",
+        "gulrot",
+        "banan",
+        "pære",
+        "drue"
+      ],
+      "violationTags_no": [
+        "oddone-set-member",
+        "none",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_en": [
+        "apple",
+        "carrot",
+        "banana",
+        "pear",
+        "grape"
+      ],
+      "violationTags_en": [
+        "oddone-set-member",
+        "none",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ]
+    },
+    {
+      "id": "vr-0002",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "rund",
+      "correct_en": "round",
+      "correctIndex": 3,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "rød",
+        "grønn",
+        "blå",
+        "gul",
+        "rund"
+      ],
+      "violationTags_no": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "none"
+      ],
+      "optionOrder_en": [
+        "red",
+        "green",
+        "blue",
+        "yellow",
+        "round"
+      ],
+      "violationTags_en": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0003",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "stein",
+      "correct_en": "stone",
+      "correctIndex": 4,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "stein",
+        "bok",
+        "avis",
+        "blad",
+        "brev"
+      ],
+      "violationTags_no": [
+        "none",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_en": [
+        "stone",
+        "book",
+        "newspaper",
+        "magazine",
+        "letter"
+      ],
+      "violationTags_en": [
+        "none",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ]
+    },
+    {
+      "id": "vr-0004",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "trombone",
+      "correct_en": "trumpet",
+      "correctIndex": 2,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "fiolin",
+        "cello",
+        "bratsj",
+        "kontrabass",
+        "trombone"
+      ],
+      "violationTags_no": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "none"
+      ],
+      "optionOrder_en": [
+        "violin",
+        "cello",
+        "viola",
+        "double bass",
+        "trumpet"
+      ],
+      "violationTags_en": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0005",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "ørn",
+      "correct_en": "eagle",
+      "correctIndex": 4,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "hund",
+        "katt",
+        "ørn",
+        "hest",
+        "kanin"
+      ],
+      "violationTags_no": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "none",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_en": [
+        "dog",
+        "cat",
+        "eagle",
+        "horse",
+        "rabbit"
+      ],
+      "violationTags_en": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "none",
+        "oddone-set-member",
+        "oddone-set-member"
+      ]
+    },
+    {
+      "id": "vr-0006",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "spiker",
+      "correct_en": "nail",
+      "correctIndex": 4,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "hammer",
+        "spiker",
+        "sag",
+        "skrutrekker",
+        "boremaskin"
+      ],
+      "violationTags_no": [
+        "oddone-set-member",
+        "none",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_en": [
+        "hammer",
+        "nail",
+        "saw",
+        "screwdriver",
+        "drill"
+      ],
+      "violationTags_en": [
+        "oddone-set-member",
+        "none",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ]
+    },
+    {
+      "id": "vr-0007",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "lue",
+      "correct_en": "sock",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cat",
+        "part-whole",
+        "assoc",
+        "assoc",
+        "part-whole"
+      ],
+      "tagsEn": [
+        "cat",
+        "part-whole",
+        "assoc",
+        "assoc",
+        "part-whole"
+      ],
+      "optionOrder_no": [
+        "sko",
+        "belte",
+        "skjerf",
+        "lue",
+        "briller"
+      ],
+      "violationTags_no": [
+        "assoc",
+        "assoc",
+        "part-whole",
+        "none",
+        "part-whole"
+      ],
+      "optionOrder_en": [
+        "head",
+        "belt",
+        "scarf",
+        "sock",
+        "knee"
+      ],
+      "violationTags_en": [
+        "assoc",
+        "assoc",
+        "part-whole",
+        "none",
+        "part-whole"
+      ]
+    },
+    {
+      "id": "vr-0008",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "katt",
+      "correct_en": "cat",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cat",
+        "cat",
+        "assoc",
+        "cat",
+        "cat"
+      ],
+      "tagsEn": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "optionOrder_no": [
+        "ulv",
+        "katt",
+        "løve",
+        "mus",
+        "geit"
+      ],
+      "violationTags_no": [
+        "cat",
+        "none",
+        "assoc",
+        "cat",
+        "cat"
+      ],
+      "optionOrder_en": [
+        "wolf",
+        "cat",
+        "lion",
+        "mouse",
+        "goat"
+      ],
+      "violationTags_en": [
+        "cat",
+        "none",
+        "cat",
+        "cat",
+        "cat"
+      ]
+    },
+    {
+      "id": "vr-0009",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "hav",
+      "correct_en": "water",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cat",
+        "surface-shift",
+        "cat",
+        "cat",
+        "surface-shift"
+      ],
+      "tagsEn": [
+        "cat",
+        "surface-shift",
+        "cat",
+        "cat",
+        "surface-shift"
+      ],
+      "optionOrder_no": [
+        "land",
+        "jernbane",
+        "garasje",
+        "vei",
+        "hav"
+      ],
+      "violationTags_no": [
+        "cat",
+        "surface-shift",
+        "cat",
+        "surface-shift",
+        "none"
+      ],
+      "optionOrder_en": [
+        "land",
+        "railway",
+        "garage",
+        "road",
+        "water"
+      ],
+      "violationTags_en": [
+        "cat",
+        "surface-shift",
+        "cat",
+        "surface-shift",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0010",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "vegg",
+      "correct_en": "wall",
+      "correctIndex": 0,
+      "tagsNo": [
+        "surface-mismatch",
+        "tool-swap",
+        "container",
+        "assoc",
+        "agent"
+      ],
+      "tagsEn": [
+        "surface-mismatch",
+        "tool-swap",
+        "container",
+        "assoc",
+        "agent"
+      ],
+      "optionOrder_no": [
+        "pensel",
+        "bøtte",
+        "vegg",
+        "viskelær",
+        "hånd"
+      ],
+      "violationTags_no": [
+        "tool-swap",
+        "container",
+        "none",
+        "agent",
+        "surface-mismatch"
+      ],
+      "optionOrder_en": [
+        "brush",
+        "bucket",
+        "wall",
+        "eraser",
+        "hand"
+      ],
+      "violationTags_en": [
+        "tool-swap",
+        "container",
+        "none",
+        "agent",
+        "surface-mismatch"
+      ]
+    },
+    {
+      "id": "vr-0011",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "hund",
+      "correct_en": "dog",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "tagsEn": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "optionOrder_no": [
+        "fugl",
+        "hund",
+        "hest",
+        "sau",
+        "mus"
+      ],
+      "violationTags_no": [
+        "cat",
+        "none",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "optionOrder_en": [
+        "bird",
+        "dog",
+        "horse",
+        "sheep",
+        "mouse"
+      ],
+      "violationTags_en": [
+        "cat",
+        "none",
+        "cat",
+        "cat",
+        "cat"
+      ]
+    },
+    {
+      "id": "vr-0012",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "sønn",
+      "correct_en": "son",
+      "correctIndex": 0,
+      "tagsNo": [
+        "gender-flip",
+        "relation-shift",
+        "assoc",
+        "generation",
+        "generation"
+      ],
+      "tagsEn": [
+        "gender-flip",
+        "relation-shift",
+        "assoc",
+        "generation",
+        "generation"
+      ],
+      "optionOrder_no": [
+        "mor",
+        "bror",
+        "onkel",
+        "sønn",
+        "farfar"
+      ],
+      "violationTags_no": [
+        "assoc",
+        "generation",
+        "generation",
+        "none",
+        "relation-shift"
+      ],
+      "optionOrder_en": [
+        "mother",
+        "brother",
+        "uncle",
+        "son",
+        "grandfather"
+      ],
+      "violationTags_en": [
+        "assoc",
+        "generation",
+        "generation",
+        "none",
+        "relation-shift"
+      ]
+    },
+    {
+      "id": "vr-0013",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "klass",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[klass] == EN[klass] samme band+subtype per indeks",
+      "correct_no": "fly",
+      "correct_en": "plane",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "tagsEn": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "optionOrder_no": [
+        "spade",
+        "fly",
+        "seng",
+        "kopp",
+        "stein"
+      ],
+      "violationTags_no": [
+        "cat",
+        "none",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "optionOrder_en": [
+        "spade",
+        "plane",
+        "bed",
+        "cup",
+        "stone"
+      ],
+      "violationTags_en": [
+        "cat",
+        "none",
+        "cat",
+        "cat",
+        "cat"
+      ]
+    },
+    {
+      "id": "vr-0014",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "klass",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[klass] == EN[klass] samme band+subtype per indeks",
+      "correct_no": "banan",
+      "correct_en": "banana",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat-ambiguous"
+      ],
+      "tagsEn": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat-ambiguous"
+      ],
+      "optionOrder_no": [
+        "gulrot",
+        "potet",
+        "løk",
+        "tomat",
+        "banan"
+      ],
+      "violationTags_no": [
+        "cat",
+        "cat-ambiguous",
+        "cat",
+        "cat",
+        "none"
+      ],
+      "optionOrder_en": [
+        "carrot",
+        "potato",
+        "onion",
+        "tomato",
+        "banana"
+      ],
+      "violationTags_en": [
+        "cat",
+        "cat-ambiguous",
+        "cat",
+        "cat",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0015",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "klass",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[klass] == EN[klass] samme band+subtype per indeks",
+      "correct_no": "bjørk",
+      "correct_en": "birch",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "tagsEn": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "optionOrder_no": [
+        "rose",
+        "gress",
+        "bjørk",
+        "mose",
+        "tang"
+      ],
+      "violationTags_no": [
+        "cat",
+        "cat",
+        "none",
+        "cat",
+        "cat"
+      ],
+      "optionOrder_en": [
+        "rose",
+        "grass",
+        "birch",
+        "moss",
+        "seaweed"
+      ],
+      "violationTags_en": [
+        "cat",
+        "cat",
+        "none",
+        "cat",
+        "cat"
+      ]
+    },
+    {
+      "id": "vr-0016",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "klass",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[klass] == EN[klass] samme band+subtype per indeks",
+      "correct_no": "gul",
+      "correct_en": "yellow",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "tagsEn": [
+        "cat",
+        "cat",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "optionOrder_no": [
+        "bord",
+        "gul",
+        "rask",
+        "kald",
+        "boks"
+      ],
+      "violationTags_no": [
+        "cat",
+        "none",
+        "cat",
+        "cat",
+        "cat"
+      ],
+      "optionOrder_en": [
+        "table",
+        "yellow",
+        "fast",
+        "cold",
+        "box"
+      ],
+      "violationTags_en": [
+        "cat",
+        "none",
+        "cat",
+        "cat",
+        "cat"
+      ]
+    },
+    {
+      "id": "vr-0017",
+      "theme": "T3",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "klass",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[klass] == EN[klass] samme band+subtype per indeks",
+      "correct_no": "juli",
+      "correct_en": "July",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cat",
+        "assoc",
+        "season-superclass",
+        "cat",
+        "assoc"
+      ],
+      "tagsEn": [
+        "cat",
+        "assoc",
+        "month-superclass",
+        "cat",
+        "assoc"
+      ],
+      "optionOrder_no": [
+        "tirsdag",
+        "jul",
+        "vår",
+        "juli",
+        "fredag"
+      ],
+      "violationTags_no": [
+        "season-superclass",
+        "cat",
+        "assoc",
+        "none",
+        "assoc"
+      ],
+      "optionOrder_en": [
+        "Tuesday",
+        "Christmas",
+        "summer",
+        "July",
+        "Friday"
+      ],
+      "violationTags_en": [
+        "month-superclass",
+        "cat",
+        "assoc",
+        "none",
+        "assoc"
+      ]
+    },
+    {
+      "id": "vr-0018",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "høre",
+      "correct_en": "hear",
+      "correctIndex": 0,
+      "tagsNo": [
+        "sense-swap",
+        "function-shift",
+        "part-whole",
+        "part-whole",
+        "part-whole"
+      ],
+      "tagsEn": [
+        "sense-swap",
+        "function-shift",
+        "part-whole",
+        "part-whole",
+        "part-whole"
+      ],
+      "optionOrder_no": [
+        "lukte",
+        "høre",
+        "snakke",
+        "hode",
+        "munn"
+      ],
+      "violationTags_no": [
+        "sense-swap",
+        "none",
+        "part-whole",
+        "part-whole",
+        "part-whole"
+      ],
+      "optionOrder_en": [
+        "smell",
+        "hear",
+        "speak",
+        "head",
+        "mouth"
+      ],
+      "violationTags_en": [
+        "sense-swap",
+        "none",
+        "part-whole",
+        "part-whole",
+        "part-whole"
+      ]
+    },
+    {
+      "id": "vr-0019",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "drikke",
+      "correct_en": "drink",
+      "correctIndex": 0,
+      "tagsNo": [
+        "need-mismatch",
+        "assoc",
+        "assoc",
+        "assoc",
+        "assoc"
+      ],
+      "tagsEn": [
+        "need-mismatch",
+        "assoc",
+        "assoc",
+        "assoc",
+        "assoc"
+      ],
+      "optionOrder_no": [
+        "sove",
+        "gå",
+        "lese",
+        "skynde seg",
+        "drikke"
+      ],
+      "violationTags_no": [
+        "assoc",
+        "assoc",
+        "need-mismatch",
+        "assoc",
+        "none"
+      ],
+      "optionOrder_en": [
+        "sleep",
+        "walk",
+        "read",
+        "hurry",
+        "drink"
+      ],
+      "violationTags_en": [
+        "assoc",
+        "assoc",
+        "need-mismatch",
+        "assoc",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0020",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "symfoni",
+      "correct_en": "symphony",
+      "correctIndex": 0,
+      "tagsNo": [
+        "tool",
+        "performer",
+        "venue",
+        "medium"
+      ],
+      "tagsEn": [
+        "tool",
+        "performer",
+        "venue",
+        "medium"
+      ],
+      "optionOrder_no": [
+        "batong",
+        "orkester",
+        "symfoni",
+        "sal",
+        "instrument"
+      ],
+      "violationTags_no": [
+        "performer",
+        "venue",
+        "none",
+        "medium",
+        "tool"
+      ],
+      "optionOrder_en": [
+        "baton",
+        "orchestra",
+        "symphony",
+        "hall",
+        "instrument"
+      ],
+      "violationTags_en": [
+        "performer",
+        "venue",
+        "none",
+        "medium",
+        "tool"
+      ]
+    },
+    {
+      "id": "vr-0021",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "sykehus",
+      "correct_en": "hospital",
+      "correctIndex": 0,
+      "tagsNo": [
+        "treatment",
+        "client",
+        "condition",
+        "venue-sub"
+      ],
+      "tagsEn": [
+        "treatment",
+        "client",
+        "condition",
+        "venue-sub"
+      ],
+      "optionOrder_no": [
+        "medisin",
+        "sykehus",
+        "pasient",
+        "sykdom",
+        "venterom"
+      ],
+      "violationTags_no": [
+        "treatment",
+        "none",
+        "condition",
+        "venue-sub",
+        "venue-sub"
+      ],
+      "optionOrder_en": [
+        "medicine",
+        "hospital",
+        "patient",
+        "disease",
+        "waiting room"
+      ],
+      "violationTags_en": [
+        "treatment",
+        "none",
+        "condition",
+        "venue-sub",
+        "venue-sub"
+      ]
+    },
+    {
+      "id": "vr-0022",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "melk",
+      "correct_en": "milk",
+      "correctIndex": 0,
+      "tagsNo": [
+        "offspring-not-product",
+        "input",
+        "habitat",
+        "habitat"
+      ],
+      "tagsEn": [
+        "offspring-not-product",
+        "input",
+        "habitat",
+        "habitat"
+      ],
+      "optionOrder_no": [
+        "kalv",
+        "gress",
+        "eng",
+        "melk",
+        "fjøs"
+      ],
+      "violationTags_no": [
+        "habitat",
+        "habitat",
+        "habitat",
+        "none",
+        "input"
+      ],
+      "optionOrder_en": [
+        "calf",
+        "grass",
+        "meadow",
+        "milk",
+        "barn"
+      ],
+      "violationTags_en": [
+        "habitat",
+        "habitat",
+        "habitat",
+        "none",
+        "input"
+      ]
+    },
+    {
+      "id": "vr-0023",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Orkidéen trenger vanning hver morgen.",
+      "correct_en": "The orchid is watered each morning.",
+      "correctIndex": 0,
+      "tagsNo": [
+        "negation-flip",
+        "weaker",
+        "category-break",
+        "subject-shift"
+      ],
+      "tagsEn": [
+        "negation-flip",
+        "weaker",
+        "category-break",
+        "subject-shift"
+      ],
+      "optionOrder_no": [
+        "Orkidéen trenger ikke vanning.",
+        "Orkidéen trenger vanning hver morgen.",
+        "Noen planter i drivhuset trenger vanning.",
+        "Orkidéen er ikke en plante.",
+        "Drivhuset trenger vanning."
+      ],
+      "violationTags_no": [
+        "negation-flip",
+        "none",
+        "category-break",
+        "subject-shift",
+        "subject-shift"
+      ],
+      "optionOrder_en": [
+        "The orchid is not watered.",
+        "The orchid is watered each morning.",
+        "Some plants in the greenhouse are watered.",
+        "The orchid is not a plant.",
+        "The greenhouse is watered."
+      ],
+      "violationTags_en": [
+        "negation-flip",
+        "none",
+        "category-break",
+        "subject-shift",
+        "subject-shift"
+      ]
+    },
+    {
+      "id": "vr-0024",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Jon er medlem.",
+      "correct_en": "Jon is a member.",
+      "correctIndex": 0,
+      "tagsNo": [
+        "premise-misread",
+        "negation-flip",
+        "over-strong",
+        "role-invent"
+      ],
+      "tagsEn": [
+        "premise-misread",
+        "negation-flip",
+        "over-strong",
+        "role-invent"
+      ],
+      "optionOrder_no": [
+        "Jon bor på Solvoll.",
+        "Jon kan ikke låne der.",
+        "Alle med lånekort jobber der.",
+        "Jon eier biblioteket.",
+        "Jon er medlem."
+      ],
+      "violationTags_no": [
+        "role-invent",
+        "role-invent",
+        "premise-misread",
+        "negation-flip",
+        "none"
+      ],
+      "optionOrder_en": [
+        "Jon lives in Solvoll.",
+        "Jon may not borrow there.",
+        "Everyone with a card works there.",
+        "Jon owns the library.",
+        "Jon is a member."
+      ],
+      "violationTags_en": [
+        "role-invent",
+        "role-invent",
+        "premise-misread",
+        "negation-flip",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0025",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Koret samles i menighetshuset nå.",
+      "correct_en": "The choir is meeting in the parish hall now.",
+      "correctIndex": 0,
+      "tagsNo": [
+        "over-strong",
+        "invent",
+        "time-shift",
+        "day-shift"
+      ],
+      "tagsEn": [
+        "over-strong",
+        "invent",
+        "time-shift",
+        "day-shift"
+      ],
+      "optionOrder_no": [
+        "Koret øver hver kveld.",
+        "Menighetshuset er stengt.",
+        "Koret samles i menighetshuset nå.",
+        "Koret samler seg klokken ni.",
+        "I dag er søndag."
+      ],
+      "violationTags_no": [
+        "invent",
+        "time-shift",
+        "none",
+        "day-shift",
+        "over-strong"
+      ],
+      "optionOrder_en": [
+        "The choir rehearses every evening.",
+        "The parish hall is closed.",
+        "The choir is meeting in the parish hall now.",
+        "The choir meets at nine.",
+        "Today is Sunday."
+      ],
+      "violationTags_en": [
+        "invent",
+        "time-shift",
+        "none",
+        "day-shift",
+        "over-strong"
+      ]
+    },
+    {
+      "id": "vr-0026",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Espen er høyere enn Nils.",
+      "correct_en": "Espen is taller than Nils.",
+      "correctIndex": 0,
+      "tagsNo": [
+        "reversed",
+        "rank-flip",
+        "parity-invent",
+        "rank-flip"
+      ],
+      "tagsEn": [
+        "reversed",
+        "rank-flip",
+        "parity-invent",
+        "rank-flip"
+      ],
+      "optionOrder_no": [
+        "Nils er høyere enn Espen.",
+        "Espen er høyere enn Nils.",
+        "Vera er den høyeste.",
+        "Nils og Espen er like høy.",
+        "Vera er den korteste."
+      ],
+      "violationTags_no": [
+        "reversed",
+        "none",
+        "parity-invent",
+        "rank-flip",
+        "rank-flip"
+      ],
+      "optionOrder_en": [
+        "Nils is taller than Espen.",
+        "Espen is taller than Nils.",
+        "Vera is the tallest.",
+        "Nils and Espen are equally tall.",
+        "Vera is the shortest."
+      ],
+      "violationTags_en": [
+        "reversed",
+        "none",
+        "parity-invent",
+        "rank-flip",
+        "rank-flip"
+      ]
+    },
+    {
+      "id": "vr-0027",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Det lar seg ikke fastslå fra teksten.",
+      "correct_en": "It cannot be determined from the text.",
+      "correctIndex": 0,
+      "tagsNo": [
+        "premise-misread",
+        "over-strong",
+        "scope-flip",
+        "premise-misread"
+      ],
+      "tagsEn": [
+        "premise-misread",
+        "over-strong",
+        "scope-flip",
+        "premise-misread"
+      ],
+      "optionOrder_no": [
+        "Kari trener fem ganger i uken.",
+        "Kari trener aldri.",
+        "Ingen deltakere trener fem ganger i uken.",
+        "Det lar seg ikke fastslå fra teksten.",
+        "Kari løper maraton."
+      ],
+      "violationTags_no": [
+        "scope-flip",
+        "premise-misread",
+        "premise-misread",
+        "none",
+        "over-strong"
+      ],
+      "optionOrder_en": [
+        "Kari trains five times a week.",
+        "Kari never trains.",
+        "No participants train five times a week.",
+        "It cannot be determined from the text.",
+        "Kari runs the marathon."
+      ],
+      "violationTags_en": [
+        "scope-flip",
+        "premise-misread",
+        "premise-misread",
+        "none",
+        "over-strong"
+      ]
+    },
+    {
+      "id": "vr-0028",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Ferjeferden legges om til den lange ruta nå.",
+      "correct_en": "The ferry is being rerouted to the long crossing now.",
+      "correctIndex": 0,
+      "tagsNo": [
+        "negation-flip",
+        "instrument-break",
+        "invent",
+        "unsupported-condition"
+      ],
+      "tagsEn": [
+        "negation-flip",
+        "instrument-break",
+        "invent",
+        "unsupported-condition"
+      ],
+      "optionOrder_no": [
+        "Ferjeferden går den korte ruta nå.",
+        "Ferjeferden legges om til den lange ruta nå.",
+        "Vindmåleren er ødelagt.",
+        "Ferga ligger i dokk i dag.",
+        "Den lange ruta brukes bare om sommeren."
+      ],
+      "violationTags_no": [
+        "negation-flip",
+        "none",
+        "invent",
+        "unsupported-condition",
+        "unsupported-condition"
+      ],
+      "optionOrder_en": [
+        "The ferry is taking the short crossing now.",
+        "The ferry is being rerouted to the long crossing now.",
+        "The gauge is broken.",
+        "The ferry is in dry dock today.",
+        "The long crossing is used only in summer."
+      ],
+      "violationTags_en": [
+        "negation-flip",
+        "none",
+        "invent",
+        "unsupported-condition",
+        "unsupported-condition"
+      ]
+    },
+    {
+      "id": "vr-0029",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "harpe",
+      "correct_en": "harp",
+      "correctIndex": 3,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "fiolin",
+        "bratsj",
+        "cello",
+        "kontrabass",
+        "harpe"
+      ],
+      "violationTags_no": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "none"
+      ],
+      "optionOrder_en": [
+        "violin",
+        "viola",
+        "cello",
+        "double bass",
+        "harp"
+      ],
+      "violationTags_en": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0030",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "metall",
+      "correct_en": "metal",
+      "correctIndex": 3,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "syre",
+        "base",
+        "metall",
+        "salt",
+        "oksid"
+      ],
+      "violationTags_no": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "none",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_en": [
+        "acid",
+        "base",
+        "metal",
+        "salt",
+        "oxide"
+      ],
+      "violationTags_en": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "none",
+        "oddone-set-member",
+        "oddone-set-member"
+      ]
+    },
+    {
+      "id": "vr-0031",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "skodde",
+      "correct_en": "fog",
+      "correctIndex": 4,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "regn",
+        "skodde",
+        "snø",
+        "sludd",
+        "hagl"
+      ],
+      "violationTags_no": [
+        "oddone-set-member",
+        "none",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_en": [
+        "rain",
+        "fog",
+        "snow",
+        "sleet",
+        "hail"
+      ],
+      "violationTags_en": [
+        "oddone-set-member",
+        "none",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ]
+    },
+    {
+      "id": "vr-0032",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "arkitekt",
+      "correct_en": "architect",
+      "correctIndex": 4,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "murer",
+        "tømrer",
+        "rørlegger",
+        "arkitekt",
+        "elektriker"
+      ],
+      "violationTags_no": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "none",
+        "oddone-set-member"
+      ],
+      "optionOrder_en": [
+        "bricklayer",
+        "carpenter",
+        "plumber",
+        "architect",
+        "electrician"
+      ],
+      "violationTags_en": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "none",
+        "oddone-set-member"
+      ]
+    },
+    {
+      "id": "vr-0033",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "ulv",
+      "correct_en": "wolf",
+      "correctIndex": 4,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "ulv",
+        "løve",
+        "tiger",
+        "gepard",
+        "jaguar"
+      ],
+      "violationTags_no": [
+        "none",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_en": [
+        "wolf",
+        "lion",
+        "tiger",
+        "cheetah",
+        "jaguar"
+      ],
+      "violationTags_en": [
+        "none",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ]
+    },
+    {
+      "id": "vr-0034",
+      "theme": "T3",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "oddone",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[oddone] == EN[oddone] samme band+subtype per indeks",
+      "correct_no": "kilometer",
+      "correct_en": "kilometre",
+      "correctIndex": 2,
+      "tagsNo": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "tagsEn": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member"
+      ],
+      "optionOrder_no": [
+        "termometer",
+        "barometer",
+        "hygrometer",
+        "hastighetsmåler",
+        "kilometer"
+      ],
+      "violationTags_no": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "none"
+      ],
+      "optionOrder_en": [
+        "thermometer",
+        "barometer",
+        "hygrometer",
+        "speedometer",
+        "kilometre"
+      ],
+      "violationTags_en": [
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "oddone-set-member",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0035",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "sommerfugl",
+      "correct_en": "butterfly",
+      "correctIndex": 0,
+      "tagsNo": [
+        "earlier-stage",
+        "stage-shell",
+        "unrelated",
+        "unrelated"
+      ],
+      "tagsEn": [
+        "earlier-stage",
+        "stage-shell",
+        "unrelated",
+        "unrelated"
+      ],
+      "optionOrder_no": [
+        "larve",
+        "kokong",
+        "sommerfugl",
+        "honning",
+        "fjær"
+      ],
+      "violationTags_no": [
+        "stage-shell",
+        "unrelated",
+        "none",
+        "unrelated",
+        "earlier-stage"
+      ],
+      "optionOrder_en": [
+        "larva",
+        "cocoon",
+        "butterfly",
+        "honey",
+        "feather"
+      ],
+      "violationTags_en": [
+        "stage-shell",
+        "unrelated",
+        "none",
+        "unrelated",
+        "earlier-stage"
+      ]
+    },
+    {
+      "id": "vr-0036",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "lyd",
+      "correct_en": "sound",
+      "correctIndex": 0,
+      "tagsNo": [
+        "assoc-sense",
+        "assoc-sense",
+        "assoc-sense",
+        "assoc-sense"
+      ],
+      "tagsEn": [
+        "assoc-sense",
+        "assoc-sense",
+        "assoc-sense",
+        "assoc-sense"
+      ],
+      "optionOrder_no": [
+        "bevegelse",
+        "lyd",
+        "vann",
+        "vind",
+        "varme"
+      ],
+      "violationTags_no": [
+        "assoc-sense",
+        "none",
+        "assoc-sense",
+        "assoc-sense",
+        "assoc-sense"
+      ],
+      "optionOrder_en": [
+        "movement",
+        "sound",
+        "water",
+        "wind",
+        "heat"
+      ],
+      "violationTags_en": [
+        "assoc-sense",
+        "none",
+        "assoc-sense",
+        "assoc-sense",
+        "assoc-sense"
+      ]
+    },
+    {
+      "id": "vr-0037",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "kart",
+      "correct_en": "maps",
+      "correctIndex": 0,
+      "tagsNo": [
+        "globe-form",
+        "mapped-topic",
+        "container",
+        "format"
+      ],
+      "tagsEn": [
+        "globe-form",
+        "mapped-topic",
+        "container",
+        "format"
+      ],
+      "optionOrder_no": [
+        "globus",
+        "land",
+        "hylle",
+        "kart",
+        "hefte"
+      ],
+      "violationTags_no": [
+        "container",
+        "format",
+        "format",
+        "none",
+        "mapped-topic"
+      ],
+      "optionOrder_en": [
+        "globe",
+        "countries",
+        "shelf",
+        "maps",
+        "booklet"
+      ],
+      "violationTags_en": [
+        "container",
+        "format",
+        "format",
+        "none",
+        "mapped-topic"
+      ]
+    },
+    {
+      "id": "vr-0038",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "analogi",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[analogi] == EN[analogi] samme band+subtype per indeks",
+      "correct_no": "kropp",
+      "correct_en": "body",
+      "correctIndex": 0,
+      "tagsNo": [
+        "prep-place",
+        "part",
+        "need-signal",
+        "instructions"
+      ],
+      "tagsEn": [
+        "prep-place",
+        "part",
+        "need-signal",
+        "instructions"
+      ],
+      "optionOrder_no": [
+        "kjøkken",
+        "kropp",
+        "mage",
+        "sult",
+        "oppskrift"
+      ],
+      "violationTags_no": [
+        "prep-place",
+        "none",
+        "need-signal",
+        "instructions",
+        "instructions"
+      ],
+      "optionOrder_en": [
+        "kitchen",
+        "body",
+        "stomach",
+        "hunger",
+        "recipe"
+      ],
+      "violationTags_en": [
+        "prep-place",
+        "none",
+        "need-signal",
+        "instructions",
+        "instructions"
+      ]
+    },
+    {
+      "id": "vr-0039",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "rød, grønn, gul",
+      "correct_en": "red, green, yellow",
+      "correctIndex": 0,
+      "tagsNo": [
+        "adjacent-swap",
+        "anchor-moved",
+        "full-reverse",
+        "block-swap"
+      ],
+      "tagsEn": [
+        "adjacent-swap",
+        "anchor-moved",
+        "full-reverse",
+        "block-swap"
+      ],
+      "optionOrder_no": [
+        "rød, gul, grønn",
+        "grønn, rød, gul",
+        "gul, grønn, rød",
+        "grønn, gul, rød",
+        "rød, grønn, gul"
+      ],
+      "violationTags_no": [
+        "block-swap",
+        "block-swap",
+        "adjacent-swap",
+        "anchor-moved",
+        "none"
+      ],
+      "optionOrder_en": [
+        "red, yellow, green",
+        "green, red, yellow",
+        "yellow, green, red",
+        "green, yellow, red",
+        "red, green, yellow"
+      ],
+      "violationTags_en": [
+        "block-swap",
+        "block-swap",
+        "adjacent-swap",
+        "anchor-moved",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0040",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Carmen har den høyeste stemmen.",
+      "correct_en": "Carmen has the highest voice.",
+      "correctIndex": 0,
+      "tagsNo": [
+        "rank-flip",
+        "rank-flip",
+        "unsupported-parity",
+        "parity-invent"
+      ],
+      "tagsEn": [
+        "rank-flip",
+        "rank-flip",
+        "unsupported-parity",
+        "parity-invent"
+      ],
+      "optionOrder_no": [
+        "Anna har den høyeste stemmen.",
+        "Bente synger like lavt som Carmen.",
+        "Carmen har den høyeste stemmen.",
+        "Dina har lavere stemme enn Bente.",
+        "Carmen og Anna er like."
+      ],
+      "violationTags_no": [
+        "rank-flip",
+        "unsupported-parity",
+        "none",
+        "parity-invent",
+        "rank-flip"
+      ],
+      "optionOrder_en": [
+        "Anna has the highest voice.",
+        "Bente sings as low as Carmen.",
+        "Carmen has the highest voice.",
+        "Dina has a lower voice than Bente.",
+        "Carmen and Anna are equal."
+      ],
+      "violationTags_en": [
+        "rank-flip",
+        "unsupported-parity",
+        "none",
+        "parity-invent",
+        "rank-flip"
+      ]
+    },
+    {
+      "id": "vr-0041",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Odd",
+      "correct_en": "Ben",
+      "correctIndex": 0,
+      "tagsNo": [
+        "premise-misread",
+        "order-flip",
+        "order-flip",
+        "parity-invent"
+      ],
+      "tagsEn": [
+        "premise-misread",
+        "order-flip",
+        "order-flip",
+        "parity-invent"
+      ],
+      "optionOrder_no": [
+        "Mia",
+        "Odd",
+        "Leif",
+        "Kai",
+        "Odd og Mia er like gamle"
+      ],
+      "violationTags_no": [
+        "premise-misread",
+        "none",
+        "order-flip",
+        "parity-invent",
+        "parity-invent"
+      ],
+      "optionOrder_en": [
+        "Rita",
+        "Ben",
+        "Sue",
+        "Tom",
+        "Ben and Rita are the same age"
+      ],
+      "violationTags_en": [
+        "premise-misread",
+        "none",
+        "order-flip",
+        "parity-invent",
+        "parity-invent"
+      ]
+    },
+    {
+      "id": "vr-0042",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Det var en fjellgaupe.",
+      "correct_en": "It was a mountain lynx.",
+      "correctIndex": 0,
+      "tagsNo": [
+        "negation-flip",
+        "over-strong",
+        "definition-flip",
+        "premise-misread"
+      ],
+      "tagsEn": [
+        "negation-flip",
+        "over-strong",
+        "definition-flip",
+        "premise-misread"
+      ],
+      "optionOrder_no": [
+        "Det var ingen fjellgaupe.",
+        "Fjellgauper lever bare på Hardangervidda.",
+        "Gauper under skoggrenen er fjellgauper.",
+        "Det var en fjellgaupe.",
+        "Hardangervidda ligger under skoggrenen."
+      ],
+      "violationTags_no": [
+        "definition-flip",
+        "premise-misread",
+        "premise-misread",
+        "none",
+        "over-strong"
+      ],
+      "optionOrder_en": [
+        "It was not a mountain lynx.",
+        "Mountain lynxes live only on the Hardangervidda.",
+        "Lynxes below the forest line are mountain lynxes.",
+        "It was a mountain lynx.",
+        "The Hardangervidda lies below the forest line."
+      ],
+      "violationTags_en": [
+        "definition-flip",
+        "premise-misread",
+        "premise-misread",
+        "none",
+        "over-strong"
+      ]
+    },
+    {
+      "id": "vr-0043",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Per mister ikke plassen i juni.",
+      "correct_en": "Per does not lose his place in June.",
+      "correctIndex": 0,
+      "tagsNo": [
+        "negation-flip",
+        "wrong-month",
+        "cross-month-sum",
+        "threshold-misread"
+      ],
+      "tagsEn": [
+        "negation-flip",
+        "wrong-month",
+        "cross-month-sum",
+        "threshold-misread"
+      ],
+      "optionOrder_no": [
+        "Per mister plassen i juni.",
+        "Per mister ikke plassen i juni.",
+        "Per mister plassen i mai.",
+        "April og mai telles sammen til tre senheter.",
+        "En enkel senhet i mai utløser tap av plassen."
+      ],
+      "violationTags_no": [
+        "negation-flip",
+        "none",
+        "cross-month-sum",
+        "threshold-misread",
+        "threshold-misread"
+      ],
+      "optionOrder_en": [
+        "Per loses his place in June.",
+        "Per does not lose his place in June.",
+        "Per loses his place in May.",
+        "April and May are counted together as three.",
+        "A single lateness in May triggers the loss."
+      ],
+      "violationTags_en": [
+        "negation-flip",
+        "none",
+        "cross-month-sum",
+        "threshold-misread",
+        "threshold-misread"
+      ]
+    },
+    {
+      "id": "vr-0044",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "Sjøen ligger mellom tårnet og koia.",
+      "correct_en": "The lake lies between the tower and the cabin.",
+      "correctIndex": 0,
+      "tagsNo": [
+        "direction-flip",
+        "direction-flip",
+        "adjacency-assume",
+        "invent-bearing"
+      ],
+      "tagsEn": [
+        "direction-flip",
+        "direction-flip",
+        "adjacency-assume",
+        "invent-bearing"
+      ],
+      "optionOrder_no": [
+        "Tårnet ligger sør for sjøen.",
+        "Koia ligger nord for sjøen.",
+        "Tårnet og koia ligger side om side.",
+        "Koia ligger øst for tårnet.",
+        "Sjøen ligger mellom tårnet og koia."
+      ],
+      "violationTags_no": [
+        "invent-bearing",
+        "invent-bearing",
+        "direction-flip",
+        "direction-flip",
+        "none"
+      ],
+      "optionOrder_en": [
+        "The tower lies south of the lake.",
+        "The cabin lies north of the lake.",
+        "The tower and the cabin stand side by side.",
+        "The cabin lies east of the tower.",
+        "The lake lies between the tower and the cabin."
+      ],
+      "violationTags_en": [
+        "invent-bearing",
+        "invent-bearing",
+        "direction-flip",
+        "direction-flip",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0045",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "6",
+      "correct_en": "5",
+      "correctIndex": 0,
+      "tagsNo": [
+        "half-total",
+        "apple-count",
+        "double-total",
+        "wrong-base"
+      ],
+      "tagsEn": [
+        "half-total",
+        "apple-count",
+        "double-total",
+        "wrong-base"
+      ],
+      "optionOrder_no": [
+        "9",
+        "12",
+        "6",
+        "36",
+        "4"
+      ],
+      "violationTags_no": [
+        "apple-count",
+        "double-total",
+        "none",
+        "wrong-base",
+        "half-total"
+      ],
+      "optionOrder_en": [
+        "10",
+        "15",
+        "5",
+        "30",
+        "3"
+      ],
+      "violationTags_en": [
+        "apple-count",
+        "double-total",
+        "none",
+        "wrong-base",
+        "half-total"
+      ]
+    },
+    {
+      "id": "vr-0046",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "leksikalsk",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
+      "correct_no": "18:45",
+      "correct_en": "19:35",
+      "correctIndex": 0,
+      "tagsNo": [
+        "omit-pause",
+        "one-round-short",
+        "wrong-round",
+        "added-extra-pause"
+      ],
+      "tagsEn": [
+        "pause-miss-one",
+        "all-pauses-omitted",
+        "extra-pause",
+        "pause-after-last-included"
+      ],
+      "optionOrder_no": [
+        "18:40",
+        "18:45",
+        "18:25",
+        "19:10",
+        "18:50"
+      ],
+      "violationTags_no": [
+        "omit-pause",
+        "none",
+        "wrong-round",
+        "added-extra-pause",
+        "added-extra-pause"
+      ],
+      "optionOrder_en": [
+        "19:30",
+        "19:35",
+        "19:20",
+        "20:00",
+        "19:15"
+      ],
+      "violationTags_en": [
+        "pause-miss-one",
+        "none",
+        "extra-pause",
+        "pause-after-last-included",
+        "pause-after-last-included"
+      ]
+    },
+    {
+      "id": "vr-0047",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "klass",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[klass] == EN[klass] samme band+subtype per indeks",
+      "correct_no": "skynde seg",
+      "correct_en": "dash",
+      "correctIndex": 0,
+      "tagsNo": [
+        "antonym",
+        "antonym",
+        "antonym",
+        "antonym"
+      ],
+      "tagsEn": [
+        "antonym",
+        "antonym",
+        "antonym",
+        "antonym"
+      ],
+      "optionOrder_no": [
+        "slappe av",
+        "rusle",
+        "dvæle",
+        "skynde seg",
+        "vente"
+      ],
+      "violationTags_no": [
+        "antonym",
+        "antonym",
+        "antonym",
+        "none",
+        "antonym"
+      ],
+      "optionOrder_en": [
+        "linger",
+        "stroll",
+        "wait",
+        "dash",
+        "loiter"
+      ],
+      "violationTags_en": [
+        "antonym",
+        "antonym",
+        "antonym",
+        "none",
+        "antonym"
+      ]
+    },
+    {
+      "id": "vr-0048",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "klass",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[klass] == EN[klass] samme band+subtype per indeks",
+      "correct_no": "omfattende",
+      "correct_en": "spacious",
+      "correctIndex": 0,
+      "tagsNo": [
+        "antonym",
+        "antonym",
+        "antonym-frame",
+        "antonym"
+      ],
+      "tagsEn": [
+        "antonym",
+        "antonym",
+        "antonym-frame",
+        "antonym"
+      ],
+      "optionOrder_no": [
+        "spinkel",
+        "omfattende",
+        "smal",
+        "kortlivet",
+        "lettvekts"
+      ],
+      "violationTags_no": [
+        "antonym",
+        "none",
+        "antonym-frame",
+        "antonym",
+        "antonym"
+      ],
+      "optionOrder_en": [
+        "slender",
+        "spacious",
+        "narrow",
+        "short-lived",
+        "lightweight"
+      ],
+      "violationTags_en": [
+        "antonym",
+        "none",
+        "antonym-frame",
+        "antonym",
+        "antonym"
+      ]
+    },
+    {
+      "id": "vr-0049",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "klass",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[klass] == EN[klass] samme band+subtype per indeks",
+      "correct_no": "krumning",
+      "correct_en": "curvature",
+      "correctIndex": 0,
+      "tagsNo": [
+        "antonym",
+        "angle-not-curve",
+        "point-not-line",
+        "tool"
+      ],
+      "tagsEn": [
+        "antonym",
+        "angle-not-curve",
+        "point-not-line",
+        "tool"
+      ],
+      "optionOrder_no": [
+        "rett strek",
+        "spiss vinkel",
+        "flat prikk",
+        "linjale",
+        "krumning"
+      ],
+      "violationTags_no": [
+        "tool",
+        "tool",
+        "antonym",
+        "angle-not-curve",
+        "none"
+      ],
+      "optionOrder_en": [
+        "straight line",
+        "sharp angle",
+        "flat dot",
+        "ruler",
+        "curvature"
+      ],
+      "violationTags_en": [
+        "tool",
+        "tool",
+        "antonym",
+        "angle-not-curve",
+        "none"
+      ]
+    },
+    {
+      "id": "vr-0050",
+      "theme": "T3",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "klass",
+      "lang": "both-authored-separately",
+      "constructEquivalence": "NO[klass] == EN[klass] samme band+subtype per indeks",
+      "correct_no": "månering",
+      "correct_en": "moon ring",
+      "correctIndex": 0,
+      "tagsNo": [
+        "no-moon-root",
+        "no-moon-root",
+        "no-moon-root",
+        "no-moon-root"
+      ],
+      "tagsEn": [
+        "no-moon-root",
+        "no-moon-root",
+        "no-moon-root",
+        "no-moon-root"
+      ],
+      "optionOrder_no": [
+        "søndag",
+        "havbølge",
+        "månering",
+        "døgnrytme",
+        "årstid"
+      ],
+      "violationTags_no": [
+        "no-moon-root",
+        "no-moon-root",
+        "none",
+        "no-moon-root",
+        "no-moon-root"
+      ],
+      "optionOrder_en": [
+        "Sunday",
+        "sea wave",
+        "moon ring",
+        "daily rhythm",
+        "season"
+      ],
+      "violationTags_en": [
+        "no-moon-root",
+        "no-moon-root",
+        "none",
+        "no-moon-root",
+        "no-moon-root"
+      ]
+    },
+    {
+      "id": "sp-0001",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "posisjon",
+      "correct_no": "den blå ballen",
+      "correct_en": "the blue ball",
+      "correctIndex": 0,
+      "tagsNo": [
+        "hand-swap",
+        "hand-swap",
+        "negation-flip",
+        "both-hands",
+        "invent-color"
+      ],
+      "tagsEn": [
+        "hand-swap",
+        "hand-swap",
+        "negation-flip",
+        "both-hands",
+        "invent-color"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "den røde ballen",
+        "den blå ballen",
+        "ingen ball",
+        "begge ballene",
+        "en grønn ball"
+      ],
+      "violationTags_no": [
+        "hand-swap",
+        "none",
+        "negation-flip",
+        "both-hands",
+        "invent-color"
+      ],
+      "optionOrder_en": [
+        "the red ball",
+        "the blue ball",
+        "no ball",
+        "both balls",
+        "a green ball"
+      ],
+      "violationTags_en": [
+        "hand-swap",
+        "none",
+        "negation-flip",
+        "both-hands",
+        "invent-color"
+      ]
+    },
+    {
+      "id": "sp-0002",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "retning",
+      "correct_no": "øst",
+      "correct_en": "east",
+      "correctIndex": 0,
+      "tagsNo": [
+        "west",
+        "south",
+        "axis-swap",
+        "face-dir",
+        "negation-flip"
+      ],
+      "tagsEn": [
+        "west",
+        "south",
+        "axis-swap",
+        "face-dir",
+        "negation-flip"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "vest",
+        "sør",
+        "nord",
+        "øst",
+        "ingen — han vender mot nord"
+      ],
+      "violationTags_no": [
+        "axis-swap",
+        "face-dir",
+        "negation-flip",
+        "none",
+        "south"
+      ],
+      "optionOrder_en": [
+        "west",
+        "south",
+        "north",
+        "east",
+        "none — he faces north"
+      ],
+      "violationTags_en": [
+        "axis-swap",
+        "face-dir",
+        "negation-flip",
+        "none",
+        "south"
+      ]
+    },
+    {
+      "id": "sp-0003",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "posisjon",
+      "correct_no": "peisen",
+      "correct_en": "the stove",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cat",
+        "dog",
+        "negation-flip",
+        "invent-object"
+      ],
+      "tagsEn": [
+        "cat",
+        "dog",
+        "negation-flip",
+        "invent-object"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "peisen",
+        "katten",
+        "hunden",
+        "ingenting",
+        "et teppe"
+      ],
+      "violationTags_no": [
+        "none",
+        "cat",
+        "dog",
+        "negation-flip",
+        "invent-object"
+      ],
+      "optionOrder_en": [
+        "the stove",
+        "the cat",
+        "the dog",
+        "nothing",
+        "a rug"
+      ],
+      "violationTags_en": [
+        "none",
+        "cat",
+        "dog",
+        "negation-flip",
+        "invent-object"
+      ]
+    },
+    {
+      "id": "sp-0004",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "ko",
+      "correct_no": "Per",
+      "correct_en": "Per",
+      "correctIndex": 0,
+      "tagsNo": [
+        "rank-flip",
+        "rank-flip",
+        "rank-flip",
+        "parity-invent"
+      ],
+      "tagsEn": [
+        "rank-flip",
+        "rank-flip",
+        "rank-flip",
+        "parity-invent"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "Kari",
+        "Nils",
+        "Per og Nils er like fremme",
+        "rekkefølgen kan ikke avgjøres",
+        "Per"
+      ],
+      "violationTags_no": [
+        "parity-invent",
+        "parity-invent",
+        "rank-flip",
+        "rank-flip",
+        "none"
+      ],
+      "optionOrder_en": [
+        "Kari",
+        "Nils",
+        "Per and Nils are equally far forward",
+        "the order cannot be determined",
+        "Per"
+      ],
+      "violationTags_en": [
+        "parity-invent",
+        "parity-invent",
+        "rank-flip",
+        "rank-flip",
+        "none"
+      ]
+    },
+    {
+      "id": "sp-0005",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "speil",
+      "correct_no": "R speilvendt",
+      "correct_en": "R mirrored",
+      "correctIndex": 0,
+      "tagsNo": [
+        "normal-R",
+        "letter-swap",
+        "letter-swap",
+        "rotation-swap"
+      ],
+      "tagsEn": [
+        "normal-R",
+        "letter-swap",
+        "letter-swap",
+        "rotation-swap"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "R som normalt",
+        "bokstaven P",
+        "R speilvendt",
+        "bokstaven B",
+        "R opp-ned"
+      ],
+      "violationTags_no": [
+        "letter-swap",
+        "letter-swap",
+        "none",
+        "rotation-swap",
+        "normal-R"
+      ],
+      "optionOrder_en": [
+        "R as normal",
+        "the letter P",
+        "R mirrored",
+        "the letter B",
+        "R upside down"
+      ],
+      "violationTags_en": [
+        "letter-swap",
+        "letter-swap",
+        "none",
+        "rotation-swap",
+        "normal-R"
+      ]
+    },
+    {
+      "id": "sp-0006",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "posisjon",
+      "correct_no": "gaffelen",
+      "correct_en": "the fork",
+      "correctIndex": 0,
+      "tagsNo": [
+        "left-end",
+        "right-end",
+        "negation-flip",
+        "over-strong"
+      ],
+      "tagsEn": [
+        "left-end",
+        "right-end",
+        "negation-flip",
+        "over-strong"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "kniven",
+        "gaffelen",
+        "skeen",
+        "ingen ligger i midten",
+        "de ligger i vilkårlig rekkefølge"
+      ],
+      "violationTags_no": [
+        "left-end",
+        "none",
+        "negation-flip",
+        "over-strong",
+        "over-strong"
+      ],
+      "optionOrder_en": [
+        "the knife",
+        "the fork",
+        "the spoon",
+        "none lies in the middle",
+        "the order is arbitrary"
+      ],
+      "violationTags_en": [
+        "left-end",
+        "none",
+        "negation-flip",
+        "over-strong",
+        "over-strong"
+      ]
+    },
+    {
+      "id": "sp-0007",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "retning",
+      "correct_no": "butikken",
+      "correct_en": "the shop",
+      "correctIndex": 0,
+      "tagsNo": [
+        "north-end",
+        "middle",
+        "parity-invent",
+        "line-claim"
+      ],
+      "tagsEn": [
+        "north-end",
+        "middle",
+        "parity-invent",
+        "line-claim"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "skolen",
+        "hjemmet",
+        "butikken og skolen er like",
+        "butikken",
+        "alle tre ligger på linje øst-vest"
+      ],
+      "violationTags_no": [
+        "parity-invent",
+        "line-claim",
+        "line-claim",
+        "none",
+        "middle"
+      ],
+      "optionOrder_en": [
+        "the school",
+        "the home",
+        "the shop and the school are equal",
+        "the shop",
+        "all three lie on an east-west line"
+      ],
+      "violationTags_en": [
+        "parity-invent",
+        "line-claim",
+        "line-claim",
+        "none",
+        "middle"
+      ]
+    },
+    {
+      "id": "sp-0008",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "rotasjon",
+      "correct_no": "mot høyre, mot klokken tre",
+      "correct_en": "to the right, at three",
+      "correctIndex": 0,
+      "tagsNo": [
+        "ccw-90",
+        "angle-zero",
+        "angle-180",
+        "stopped"
+      ],
+      "tagsEn": [
+        "ccw-90",
+        "angle-zero",
+        "angle-180",
+        "stopped"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "mot høyre, mot klokken tre",
+        "mot venstre, mot klokken ni",
+        "fortsatt mot tolv",
+        "mot klokken seks",
+        "den står stille"
+      ],
+      "violationTags_no": [
+        "none",
+        "ccw-90",
+        "angle-zero",
+        "angle-180",
+        "stopped"
+      ],
+      "optionOrder_en": [
+        "to the right, at three",
+        "to the left, at nine",
+        "still at twelve",
+        "at six",
+        "it stands still"
+      ],
+      "violationTags_en": [
+        "none",
+        "ccw-90",
+        "angle-zero",
+        "angle-180",
+        "stopped"
+      ]
+    },
+    {
+      "id": "sp-0009",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "posisjon",
+      "correct_no": "døren",
+      "correct_en": "the door",
+      "correctIndex": 0,
+      "tagsNo": [
+        "rotation-180",
+        "both",
+        "none",
+        "irrelevant-speed"
+      ],
+      "tagsEn": [
+        "rotation-180",
+        "both",
+        "none",
+        "irrelevant-speed"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "vinduet",
+        "både døren og vinduet",
+        "hverken døren eller vinduet",
+        "det avhenger av hvor raskt hun snur seg",
+        "døren"
+      ],
+      "violationTags_no": [
+        "irrelevant-speed",
+        "irrelevant-speed",
+        "rotation-180",
+        "both",
+        "none"
+      ],
+      "optionOrder_en": [
+        "the window",
+        "both the door and the window",
+        "neither the door nor the window",
+        "it depends on how fast she turns",
+        "the door"
+      ],
+      "violationTags_en": [
+        "irrelevant-speed",
+        "irrelevant-speed",
+        "rotation-180",
+        "both",
+        "none"
+      ]
+    },
+    {
+      "id": "sp-0010",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "speil",
+      "correct_no": "på vår høyre side",
+      "correct_en": "on our right side",
+      "correctIndex": 0,
+      "tagsNo": [
+        "mirror-flip",
+        "center-assume",
+        "both",
+        "impossible-claim"
+      ],
+      "tagsEn": [
+        "mirror-flip",
+        "center-assume",
+        "both",
+        "impossible-claim"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "på vår venstre side",
+        "like foran oss",
+        "på vår høyre side",
+        "på begge sider",
+        "han kan ikke løfte en hånd med ryggen til"
+      ],
+      "violationTags_no": [
+        "center-assume",
+        "both",
+        "none",
+        "impossible-claim",
+        "mirror-flip"
+      ],
+      "optionOrder_en": [
+        "on our left side",
+        "right in front of us",
+        "on our right side",
+        "on both sides",
+        "he cannot raise a hand with his back to us"
+      ],
+      "violationTags_en": [
+        "center-assume",
+        "both",
+        "none",
+        "impossible-claim",
+        "mirror-flip"
+      ]
+    },
+    {
+      "id": "sp-0011",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "retning",
+      "correct_no": "hagen",
+      "correct_en": "the garden",
+      "correctIndex": 0,
+      "tagsNo": [
+        "direction-confusion",
+        "object-not-direction",
+        "assoc",
+        "surface-anchor",
+        "negation-flip"
+      ],
+      "tagsEn": [
+        "direction-confusion",
+        "object-not-direction",
+        "assoc",
+        "surface-anchor",
+        "negation-flip"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "gjerdet",
+        "hagen",
+        "hjemme",
+        "vest",
+        "siden du vender mot øst har du ingenting bak deg"
+      ],
+      "violationTags_no": [
+        "direction-confusion",
+        "none",
+        "assoc",
+        "surface-anchor",
+        "negation-flip"
+      ],
+      "optionOrder_en": [
+        "the fence",
+        "the garden",
+        "home",
+        "west",
+        "since you face east there is nothing behind you"
+      ],
+      "violationTags_en": [
+        "direction-confusion",
+        "none",
+        "assoc",
+        "surface-anchor",
+        "negation-flip"
+      ]
+    },
+    {
+      "id": "sp-0012",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "rotasjon",
+      "correct_no": "mot klokken seks",
+      "correct_en": "at six o'clock",
+      "correctIndex": 0,
+      "tagsNo": [
+        "ccw-90",
+        "angle-zero",
+        "angle-180",
+        "ccw-270-as-up"
+      ],
+      "tagsEn": [
+        "ccw-90",
+        "angle-zero",
+        "angle-180",
+        "ccw-270-as-up"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "mot klokken tolv",
+        "fortsatt mot tre",
+        "mot klokken ni",
+        "mot klokken seks",
+        "den peker skrått opp"
+      ],
+      "violationTags_no": [
+        "angle-180",
+        "ccw-270-as-up",
+        "ccw-270-as-up",
+        "none",
+        "angle-zero"
+      ],
+      "optionOrder_en": [
+        "at twelve o'clock",
+        "still at three",
+        "at nine o'clock",
+        "at six o'clock",
+        "it points diagonally up"
+      ],
+      "violationTags_en": [
+        "angle-180",
+        "ccw-270-as-up",
+        "ccw-270-as-up",
+        "none",
+        "angle-zero"
+      ]
+    },
+    {
+      "id": "sp-0013",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "stabling",
+      "correct_no": "blå",
+      "correct_en": "blue",
+      "correctIndex": 0,
+      "tagsNo": [
+        "bottom",
+        "top",
+        "negation-flip",
+        "all-layers"
+      ],
+      "tagsEn": [
+        "bottom",
+        "top",
+        "negation-flip",
+        "all-layers"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "blå",
+        "rød",
+        "gul",
+        "ingen — det er bare to kuber",
+        "alle tre fargene"
+      ],
+      "violationTags_no": [
+        "none",
+        "bottom",
+        "top",
+        "negation-flip",
+        "all-layers"
+      ],
+      "optionOrder_en": [
+        "blue",
+        "red",
+        "yellow",
+        "none — there are only two cubes",
+        "all three colours"
+      ],
+      "violationTags_en": [
+        "none",
+        "bottom",
+        "top",
+        "negation-flip",
+        "all-layers"
+      ]
+    },
+    {
+      "id": "sp-0014",
+      "theme": "T4",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "posisjon",
+      "correct_no": "døra",
+      "correct_en": "the door",
+      "correctIndex": 0,
+      "tagsNo": [
+        "surface",
+        "negation-flip",
+        "endpoint",
+        "endpoint"
+      ],
+      "tagsEn": [
+        "surface",
+        "negation-flip",
+        "endpoint",
+        "endpoint"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "veggen",
+        "ingenting",
+        "bordet",
+        "hylla",
+        "døra"
+      ],
+      "violationTags_no": [
+        "endpoint",
+        "endpoint",
+        "surface",
+        "negation-flip",
+        "none"
+      ],
+      "optionOrder_en": [
+        "the wall",
+        "nothing",
+        "the table",
+        "the shelf",
+        "the door"
+      ],
+      "violationTags_en": [
+        "endpoint",
+        "endpoint",
+        "surface",
+        "negation-flip",
+        "none"
+      ]
+    },
+    {
+      "id": "sp-0015",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "rotasjon",
+      "correct_no": "mot klokken tre",
+      "correct_en": "at three o'clock",
+      "correctIndex": 0,
+      "tagsNo": [
+        "angle-zero",
+        "angle-90",
+        "angle-180",
+        "surface-anchor"
+      ],
+      "tagsEn": [
+        "angle-zero",
+        "angle-90",
+        "angle-180",
+        "surface-anchor"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "fortsatt mot ni",
+        "mot klokken tolv",
+        "mot klokken tre",
+        "mot klokken seks",
+        "den peker rett opp"
+      ],
+      "violationTags_no": [
+        "angle-90",
+        "angle-180",
+        "none",
+        "surface-anchor",
+        "angle-zero"
+      ],
+      "optionOrder_en": [
+        "still at nine",
+        "at twelve o'clock",
+        "at three o'clock",
+        "at six o'clock",
+        "it points straight up"
+      ],
+      "violationTags_en": [
+        "angle-90",
+        "angle-180",
+        "none",
+        "surface-anchor",
+        "angle-zero"
+      ]
+    },
+    {
+      "id": "sp-0016",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "ko",
+      "correct_no": "Berit",
+      "correct_en": "Berit",
+      "correctIndex": 0,
+      "tagsNo": [
+        "rank-flip",
+        "rank-flip",
+        "rank-flip",
+        "circle-claim"
+      ],
+      "tagsEn": [
+        "rank-flip",
+        "rank-flip",
+        "rank-flip",
+        "circle-claim"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "Ane",
+        "Berit",
+        "Camilla",
+        "Dina",
+        "rekken er sirkelformet, så det finnes ikke en nummer to"
+      ],
+      "violationTags_no": [
+        "rank-flip",
+        "none",
+        "rank-flip",
+        "circle-claim",
+        "circle-claim"
+      ],
+      "optionOrder_en": [
+        "Ane",
+        "Berit",
+        "Camilla",
+        "Dina",
+        "the line is circular, so there is no number two"
+      ],
+      "violationTags_en": [
+        "rank-flip",
+        "none",
+        "rank-flip",
+        "circle-claim",
+        "circle-claim"
+      ]
+    },
+    {
+      "id": "sp-0017",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "bretting",
+      "correct_no": "to hull",
+      "correct_en": "two holes",
+      "correctIndex": 0,
+      "tagsNo": [
+        "fold-miss",
+        "depth-double",
+        "negation-flip",
+        "half-only"
+      ],
+      "tagsEn": [
+        "fold-miss",
+        "depth-double",
+        "negation-flip",
+        "half-only"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "ett hull",
+        "fire hull",
+        "ingen hull",
+        "to hull",
+        "hullene ligger bare på den ene halvdelen"
+      ],
+      "violationTags_no": [
+        "negation-flip",
+        "half-only",
+        "half-only",
+        "none",
+        "depth-double"
+      ],
+      "optionOrder_en": [
+        "one hole",
+        "four holes",
+        "no holes",
+        "two holes",
+        "the holes lie only on one half"
+      ],
+      "violationTags_en": [
+        "negation-flip",
+        "half-only",
+        "half-only",
+        "none",
+        "depth-double"
+      ]
+    },
+    {
+      "id": "sp-0018",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "retning",
+      "correct_no": "verken kirken eller vindmøllen",
+      "correct_en": "neither the church nor the windmill",
+      "correctIndex": 0,
+      "tagsNo": [
+        "quarter-away",
+        "axis-swap",
+        "axis-swap",
+        "over-inclusive"
+      ],
+      "tagsEn": [
+        "quarter-away",
+        "axis-swap",
+        "axis-swap",
+        "over-inclusive"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "verken kirken eller vindmøllen",
+        "kirken",
+        "vindmøllen",
+        "både kirken og vindmøllen",
+        "himlen"
+      ],
+      "violationTags_no": [
+        "none",
+        "quarter-away",
+        "axis-swap",
+        "axis-swap",
+        "over-inclusive"
+      ],
+      "optionOrder_en": [
+        "neither the church nor the windmill",
+        "the church",
+        "the windmill",
+        "both the church and the windmill",
+        "the sky"
+      ],
+      "violationTags_en": [
+        "none",
+        "quarter-away",
+        "axis-swap",
+        "axis-swap",
+        "over-inclusive"
+      ]
+    },
+    {
+      "id": "sp-0019",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "sti",
+      "correct_no": "nordøst",
+      "correct_en": "north-east",
+      "correctIndex": 0,
+      "tagsNo": [
+        "antipode",
+        "axis-only",
+        "axis-only",
+        "parity-invent"
+      ],
+      "tagsEn": [
+        "antipode",
+        "axis-only",
+        "axis-only",
+        "parity-invent"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "sørøst",
+        "nord",
+        "øst",
+        "Z ligger like langt fra X i alle retninger",
+        "nordøst"
+      ],
+      "violationTags_no": [
+        "parity-invent",
+        "parity-invent",
+        "antipode",
+        "axis-only",
+        "none"
+      ],
+      "optionOrder_en": [
+        "south-east",
+        "north",
+        "east",
+        "Z is equally far from X in every direction",
+        "north-east"
+      ],
+      "violationTags_en": [
+        "parity-invent",
+        "parity-invent",
+        "antipode",
+        "axis-only",
+        "none"
+      ]
+    },
+    {
+      "id": "sp-0020",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "bord",
+      "correct_no": "Ragna",
+      "correct_en": "Ragna",
+      "correctIndex": 0,
+      "tagsNo": [
+        "neighbor",
+        "neighbor",
+        "seat-count",
+        "self"
+      ],
+      "tagsEn": [
+        "neighbor",
+        "neighbor",
+        "seat-count",
+        "self"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "Quentin",
+        "Signe",
+        "Ragna",
+        "ingen — bordet har bare tre plasser",
+        "Pernille"
+      ],
+      "violationTags_no": [
+        "neighbor",
+        "seat-count",
+        "none",
+        "self",
+        "neighbor"
+      ],
+      "optionOrder_en": [
+        "Quentin",
+        "Signe",
+        "Ragna",
+        "none — the table has only three seats",
+        "Pernille"
+      ],
+      "violationTags_en": [
+        "neighbor",
+        "seat-count",
+        "none",
+        "self",
+        "neighbor"
+      ]
+    },
+    {
+      "id": "sp-0021",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "sti",
+      "correct_no": "1 km mot nord",
+      "correct_en": "1 km north",
+      "correctIndex": 0,
+      "tagsNo": [
+        "direction-flip",
+        "cancellation-full",
+        "leg-sum",
+        "first-leg"
+      ],
+      "tagsEn": [
+        "direction-flip",
+        "cancellation-full",
+        "leg-sum",
+        "first-leg"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "1 km mot sør",
+        "1 km mot nord",
+        "på startpunktet",
+        "5 km mot nord",
+        "3 km mot sør"
+      ],
+      "violationTags_no": [
+        "direction-flip",
+        "none",
+        "leg-sum",
+        "first-leg",
+        "first-leg"
+      ],
+      "optionOrder_en": [
+        "1 km south",
+        "1 km north",
+        "at the starting point",
+        "5 km north",
+        "3 km south"
+      ],
+      "violationTags_en": [
+        "direction-flip",
+        "none",
+        "leg-sum",
+        "first-leg",
+        "first-leg"
+      ]
+    },
+    {
+      "id": "sp-0022",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "rett",
+      "correct_no": "i nordvest-hjørnet",
+      "correct_en": "in the north-west corner",
+      "correctIndex": 0,
+      "tagsNo": [
+        "ne-quadrant",
+        "sw-quadrant",
+        "se-quadrant",
+        "center"
+      ],
+      "tagsEn": [
+        "ne-quadrant",
+        "sw-quadrant",
+        "se-quadrant",
+        "center"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "i nordøst-hjørnet",
+        "i sørvest-hjørnet",
+        "i sørøst-hjørnet",
+        "i nordvest-hjørnet",
+        "midt i krysset"
+      ],
+      "violationTags_no": [
+        "se-quadrant",
+        "center",
+        "center",
+        "none",
+        "sw-quadrant"
+      ],
+      "optionOrder_en": [
+        "in the north-east corner",
+        "in the south-west corner",
+        "in the south-east corner",
+        "in the north-west corner",
+        "in the middle of the junction"
+      ],
+      "violationTags_en": [
+        "se-quadrant",
+        "center",
+        "center",
+        "none",
+        "sw-quadrant"
+      ]
+    },
+    {
+      "id": "sp-0023",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "ko",
+      "correct_no": "to hus — nummer 1 og 2",
+      "correct_en": "two houses — number 1 and 2",
+      "correctIndex": 0,
+      "tagsNo": [
+        "self-count",
+        "all-count",
+        "negation-flip",
+        "off-by-one"
+      ],
+      "tagsEn": [
+        "self-count",
+        "all-count",
+        "negation-flip",
+        "off-by-one"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "to hus — nummer 1 og 2",
+        "tre hus",
+        "fem hus",
+        "ingen hus",
+        "fire hus"
+      ],
+      "violationTags_no": [
+        "none",
+        "self-count",
+        "all-count",
+        "negation-flip",
+        "off-by-one"
+      ],
+      "optionOrder_en": [
+        "two houses — number 1 and 2",
+        "three houses",
+        "five houses",
+        "no houses",
+        "four houses"
+      ],
+      "violationTags_en": [
+        "none",
+        "self-count",
+        "all-count",
+        "negation-flip",
+        "off-by-one"
+      ]
+    },
+    {
+      "id": "sp-0024",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "bretting",
+      "correct_no": "fire hull",
+      "correct_en": "four holes",
+      "correctIndex": 0,
+      "tagsNo": [
+        "single-fold",
+        "double-depth",
+        "fold-miss",
+        "edge-only"
+      ],
+      "tagsEn": [
+        "single-fold",
+        "double-depth",
+        "fold-miss",
+        "edge-only"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "to hull",
+        "åtte hull",
+        "ett hull",
+        "hullene ligger bare langs kanten",
+        "fire hull"
+      ],
+      "violationTags_no": [
+        "edge-only",
+        "edge-only",
+        "single-fold",
+        "double-depth",
+        "none"
+      ],
+      "optionOrder_en": [
+        "two holes",
+        "eight holes",
+        "one hole",
+        "the holes lie only along the edge",
+        "four holes"
+      ],
+      "violationTags_en": [
+        "edge-only",
+        "edge-only",
+        "single-fold",
+        "double-depth",
+        "none"
+      ]
+    },
+    {
+      "id": "sp-0025",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "rotasjon",
+      "correct_no": "mot klokken ni",
+      "correct_en": "at nine o'clock",
+      "correctIndex": 0,
+      "tagsNo": [
+        "cw-90",
+        "half-angle",
+        "angle-zero",
+        "angle-180"
+      ],
+      "tagsEn": [
+        "cw-90",
+        "half-angle",
+        "angle-zero",
+        "angle-180"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "mot klokken tre",
+        "like mellom elleve og ett",
+        "mot klokken ni",
+        "fortsatt mot tolv",
+        "mot klokken seks"
+      ],
+      "violationTags_no": [
+        "half-angle",
+        "angle-zero",
+        "none",
+        "angle-180",
+        "cw-90"
+      ],
+      "optionOrder_en": [
+        "at three o'clock",
+        "between eleven and one",
+        "at nine o'clock",
+        "still at twelve",
+        "at six o'clock"
+      ],
+      "violationTags_en": [
+        "half-angle",
+        "angle-zero",
+        "none",
+        "angle-180",
+        "cw-90"
+      ]
+    },
+    {
+      "id": "sp-0026",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "sti",
+      "correct_no": "på startpunktet",
+      "correct_en": "at the starting point",
+      "correctIndex": 0,
+      "tagsNo": [
+        "partial-cancel",
+        "partial-cancel-axis",
+        "distance-sum",
+        "axis-miss"
+      ],
+      "tagsEn": [
+        "partial-cancel",
+        "partial-cancel-axis",
+        "distance-sum",
+        "axis-miss"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "1 km øst for startpunktet",
+        "på startpunktet",
+        "2 km nord for startpunktet",
+        "4 km fra startpunktet",
+        "vest for startpunktet"
+      ],
+      "violationTags_no": [
+        "partial-cancel",
+        "none",
+        "distance-sum",
+        "axis-miss",
+        "axis-miss"
+      ],
+      "optionOrder_en": [
+        "1 km east of the starting point",
+        "at the starting point",
+        "2 km north of the starting point",
+        "4 km from the starting point",
+        "west of the starting point"
+      ],
+      "violationTags_en": [
+        "partial-cancel",
+        "none",
+        "distance-sum",
+        "axis-miss",
+        "axis-miss"
+      ]
+    },
+    {
+      "id": "sp-0027",
+      "theme": "T4",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "retning",
+      "correct_no": "østover",
+      "correct_en": "eastwards",
+      "correctIndex": 0,
+      "tagsNo": [
+        "wrong-person",
+        "midpoint",
+        "antipode",
+        "split-claim"
+      ],
+      "tagsEn": [
+        "wrong-person",
+        "midpoint",
+        "antipode",
+        "split-claim"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "sørover",
+        "sørøstover",
+        "vestover",
+        "østover",
+        "de må skille lag ved krysset"
+      ],
+      "violationTags_no": [
+        "antipode",
+        "split-claim",
+        "split-claim",
+        "none",
+        "midpoint"
+      ],
+      "optionOrder_en": [
+        "southwards",
+        "south-eastwards",
+        "westwards",
+        "eastwards",
+        "they must part ways at the crossing"
+      ],
+      "violationTags_en": [
+        "antipode",
+        "split-claim",
+        "split-claim",
+        "none",
+        "midpoint"
+      ]
+    },
+    {
+      "id": "sp-0028",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "sti",
+      "correct_no": "nordøst",
+      "correct_en": "north-east",
+      "correctIndex": 0,
+      "tagsNo": [
+        "antipode",
+        "axis-only-north",
+        "axis-only-east",
+        "loop-claim"
+      ],
+      "tagsEn": [
+        "antipode",
+        "axis-only-north",
+        "axis-only-east",
+        "loop-claim"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "nordøst",
+        "sørøst",
+        "nord",
+        "øst",
+        "ruten danner en sirkel"
+      ],
+      "violationTags_no": [
+        "none",
+        "antipode",
+        "axis-only-north",
+        "axis-only-east",
+        "loop-claim"
+      ],
+      "optionOrder_en": [
+        "north-east",
+        "south-east",
+        "north",
+        "east",
+        "the route forms a circle"
+      ],
+      "violationTags_en": [
+        "none",
+        "antipode",
+        "axis-only-north",
+        "axis-only-east",
+        "loop-claim"
+      ]
+    },
+    {
+      "id": "sp-0029",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "rotasjon",
+      "correct_no": "mot nord",
+      "correct_en": "north",
+      "correctIndex": 0,
+      "tagsNo": [
+        "angle-zero",
+        "angle-90",
+        "angle-90-neg",
+        "erasure-claim"
+      ],
+      "tagsEn": [
+        "angle-zero",
+        "angle-90",
+        "angle-90-neg",
+        "erasure-claim"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "fortsatt mot sør",
+        "mot øst",
+        "mot vest",
+        "armen er nå skjult bak korset",
+        "mot nord"
+      ],
+      "violationTags_no": [
+        "erasure-claim",
+        "erasure-claim",
+        "angle-zero",
+        "angle-90",
+        "none"
+      ],
+      "optionOrder_en": [
+        "still south",
+        "east",
+        "west",
+        "the arm is now hidden behind the cross",
+        "north"
+      ],
+      "violationTags_en": [
+        "erasure-claim",
+        "erasure-claim",
+        "angle-zero",
+        "angle-90",
+        "none"
+      ]
+    },
+    {
+      "id": "sp-0030",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "retning",
+      "correct_no": "øst",
+      "correct_en": "east",
+      "correctIndex": 0,
+      "tagsNo": [
+        "mirror-flip",
+        "axis-confusion",
+        "face-dir",
+        "over-strong"
+      ],
+      "tagsEn": [
+        "mirror-flip",
+        "axis-confusion",
+        "face-dir",
+        "over-strong"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "vest",
+        "nord",
+        "øst",
+        "sør",
+        "hender peker ikke mot himmelretninger"
+      ],
+      "violationTags_no": [
+        "axis-confusion",
+        "face-dir",
+        "none",
+        "over-strong",
+        "mirror-flip"
+      ],
+      "optionOrder_en": [
+        "west",
+        "north",
+        "east",
+        "south",
+        "hands do not point toward compass directions"
+      ],
+      "violationTags_en": [
+        "axis-confusion",
+        "face-dir",
+        "none",
+        "over-strong",
+        "mirror-flip"
+      ]
+    },
+    {
+      "id": "sp-0031",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "avstand",
+      "correct_no": "5 km",
+      "correct_en": "5 km",
+      "correctIndex": 0,
+      "tagsNo": [
+        "leg-sum",
+        "axis-only",
+        "sum-all",
+        "diff"
+      ],
+      "tagsEn": [
+        "leg-sum",
+        "axis-only",
+        "sum-all",
+        "diff"
+      ],
+      "note": "3-4-5-trekanten er geometrisk, ikke aritmetikk-serien i T2",
+      "optionOrder_no": [
+        "7 km",
+        "5 km",
+        "4 km",
+        "12 km",
+        "1 km"
+      ],
+      "violationTags_no": [
+        "leg-sum",
+        "none",
+        "sum-all",
+        "diff",
+        "diff"
+      ],
+      "optionOrder_en": [
+        "7 km",
+        "5 km",
+        "4 km",
+        "12 km",
+        "1 km"
+      ],
+      "violationTags_en": [
+        "leg-sum",
+        "none",
+        "sum-all",
+        "diff",
+        "diff"
+      ]
+    },
+    {
+      "id": "sp-0032",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "bretting",
+      "correct_no": "åtte hull",
+      "correct_en": "eight holes",
+      "correctIndex": 0,
+      "tagsNo": [
+        "power-two",
+        "power-one",
+        "negation-flip",
+        "erasure-claim"
+      ],
+      "tagsEn": [
+        "power-two",
+        "power-one",
+        "negation-flip",
+        "erasure-claim"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "fire hull",
+        "to hull",
+        "ett hull",
+        "åtte hull",
+        "hullet blir borte ved foldingen"
+      ],
+      "violationTags_no": [
+        "negation-flip",
+        "erasure-claim",
+        "erasure-claim",
+        "none",
+        "power-one"
+      ],
+      "optionOrder_en": [
+        "four holes",
+        "two holes",
+        "one hole",
+        "eight holes",
+        "the hole disappears in the folding"
+      ],
+      "violationTags_en": [
+        "negation-flip",
+        "erasure-claim",
+        "erasure-claim",
+        "none",
+        "power-one"
+      ]
+    },
+    {
+      "id": "sp-0033",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "sti",
+      "correct_no": "på startpunktet",
+      "correct_en": "at the starting point",
+      "correctIndex": 0,
+      "tagsNo": [
+        "partial-path",
+        "partial-path-axis",
+        "leg-sum",
+        "open-path"
+      ],
+      "tagsEn": [
+        "partial-path",
+        "partial-path-axis",
+        "leg-sum",
+        "open-path"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "på startpunktet",
+        "4 km mot øst",
+        "4 km mot nord",
+        "8 km fra startpunktet",
+        "ruten er åpen i én ende"
+      ],
+      "violationTags_no": [
+        "none",
+        "partial-path",
+        "partial-path-axis",
+        "leg-sum",
+        "open-path"
+      ],
+      "optionOrder_en": [
+        "at the starting point",
+        "4 km east",
+        "4 km north",
+        "8 km from the starting point",
+        "the route is open at one end"
+      ],
+      "violationTags_en": [
+        "none",
+        "partial-path",
+        "partial-path-axis",
+        "leg-sum",
+        "open-path"
+      ]
+    },
+    {
+      "id": "sp-0034",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "ko",
+      "correct_no": "nummer fem",
+      "correct_en": "number five",
+      "correctIndex": 0,
+      "tagsNo": [
+        "off-by-one",
+        "mirror-miss",
+        "queue-length",
+        "dual-number"
+      ],
+      "tagsEn": [
+        "off-by-one",
+        "mirror-miss",
+        "queue-length",
+        "dual-number"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "nummer fire",
+        "nummer seks",
+        "nummer ni",
+        "Mia har to:nummer fra hver ende",
+        "nummer fem"
+      ],
+      "violationTags_no": [
+        "dual-number",
+        "dual-number",
+        "off-by-one",
+        "mirror-miss",
+        "none"
+      ],
+      "optionOrder_en": [
+        "number four",
+        "number six",
+        "number nine",
+        "Mia has two numbers, one from either end",
+        "number five"
+      ],
+      "violationTags_en": [
+        "dual-number",
+        "dual-number",
+        "off-by-one",
+        "mirror-miss",
+        "none"
+      ]
+    },
+    {
+      "id": "sp-0035",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "retning",
+      "correct_no": "nordvest",
+      "correct_en": "north-west",
+      "correctIndex": 0,
+      "tagsNo": [
+        "antipode",
+        "axis-only",
+        "axis-only",
+        "underdetermined"
+      ],
+      "tagsEn": [
+        "antipode",
+        "axis-only",
+        "axis-only",
+        "underdetermined"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "sørøst",
+        "nord",
+        "nordvest",
+        "vest",
+        "det kan ikke avgjøres uten kart"
+      ],
+      "violationTags_no": [
+        "axis-only",
+        "axis-only",
+        "none",
+        "underdetermined",
+        "antipode"
+      ],
+      "optionOrder_en": [
+        "south-east",
+        "north",
+        "north-west",
+        "west",
+        "it cannot be determined without a map"
+      ],
+      "violationTags_en": [
+        "axis-only",
+        "axis-only",
+        "none",
+        "underdetermined",
+        "antipode"
+      ]
+    },
+    {
+      "id": "sp-0036",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "rotasjon",
+      "correct_no": "mot øst",
+      "correct_en": "east",
+      "correctIndex": 0,
+      "tagsNo": [
+        "dir-flip",
+        "half-sum",
+        "angle-zero",
+        "antipode"
+      ],
+      "tagsEn": [
+        "dir-flip",
+        "half-sum",
+        "angle-zero",
+        "antipode"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "mot vest",
+        "mot øst",
+        "mellom nord og øst",
+        "fortsatt mot nord",
+        "mot sør"
+      ],
+      "violationTags_no": [
+        "dir-flip",
+        "none",
+        "angle-zero",
+        "antipode",
+        "antipode"
+      ],
+      "optionOrder_en": [
+        "west",
+        "east",
+        "between north and east",
+        "still north",
+        "south"
+      ],
+      "violationTags_en": [
+        "dir-flip",
+        "none",
+        "angle-zero",
+        "antipode",
+        "antipode"
+      ]
+    },
+    {
+      "id": "sp-0037",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "avstand",
+      "correct_no": "6 km",
+      "correct_en": "6 km",
+      "correctIndex": 0,
+      "tagsNo": [
+        "one-leg",
+        "zero",
+        "no-detour",
+        "all-legs"
+      ],
+      "tagsEn": [
+        "one-leg",
+        "zero",
+        "no-detour",
+        "all-legs"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "3 km",
+        "5 km",
+        "8 km",
+        "6 km",
+        "turen blir ikke lengre"
+      ],
+      "violationTags_no": [
+        "no-detour",
+        "all-legs",
+        "all-legs",
+        "none",
+        "zero"
+      ],
+      "optionOrder_en": [
+        "3 km",
+        "5 km",
+        "8 km",
+        "6 km",
+        "the trip is not longer"
+      ],
+      "violationTags_en": [
+        "no-detour",
+        "all-legs",
+        "all-legs",
+        "none",
+        "zero"
+      ]
+    },
+    {
+      "id": "sp-0038",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "speil",
+      "correct_no": "speilvendt — venstre og høyre byttet",
+      "correct_en": "mirrored — left and right swapped",
+      "correctIndex": 0,
+      "tagsNo": [
+        "no-change",
+        "vertical-flip",
+        "rotation",
+        "erasure-claim"
+      ],
+      "tagsEn": [
+        "no-change",
+        "vertical-flip",
+        "rotation",
+        "erasure-claim"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "speilvendt — venstre og høyre byttet",
+        "uendret",
+        "opp-ned, med topp og bunn byttet",
+        "rotert 90 grader",
+        "teksten er borte — papiret lysner bare"
+      ],
+      "violationTags_no": [
+        "none",
+        "no-change",
+        "vertical-flip",
+        "rotation",
+        "erasure-claim"
+      ],
+      "optionOrder_en": [
+        "mirrored — left and right swapped",
+        "unchanged",
+        "upside down, with top and bottom swapped",
+        "rotated 90 degrees",
+        "the text is gone — the paper is just lighter"
+      ],
+      "violationTags_en": [
+        "none",
+        "no-change",
+        "vertical-flip",
+        "rotation",
+        "erasure-claim"
+      ]
+    },
+    {
+      "id": "sp-0039",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "rotasjon",
+      "correct_no": "2",
+      "correct_en": "2",
+      "correctIndex": 0,
+      "tagsNo": [
+        "unchanged",
+        "bottom-up",
+        "side-face",
+        "opposite-face"
+      ],
+      "tagsEn": [
+        "unchanged",
+        "bottom-up",
+        "side-face",
+        "opposite-face"
+      ],
+      "note": "konvensjon: motstaende par er 1-6, 2-5, 3-4; kvart omgang framover lofter foran-siden (2) til topp",
+      "optionOrder_no": [
+        "1 — terningen står fortsatt på samme side",
+        "6 — undersiden kommer opp",
+        "3",
+        "5",
+        "2"
+      ],
+      "violationTags_no": [
+        "opposite-face",
+        "opposite-face",
+        "unchanged",
+        "bottom-up",
+        "none"
+      ],
+      "optionOrder_en": [
+        "1 — the die is still on the same side",
+        "6 — the bottom comes up",
+        "3",
+        "5",
+        "2"
+      ],
+      "violationTags_en": [
+        "opposite-face",
+        "opposite-face",
+        "unchanged",
+        "bottom-up",
+        "none"
+      ]
+    },
+    {
+      "id": "sp-0040",
+      "theme": "T4",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "rett",
+      "correct_no": "vestdøren",
+      "correct_en": "the west door",
+      "correctIndex": 0,
+      "tagsNo": [
+        "north-still",
+        "cc-180",
+        "locked-door-kept",
+        "over-strong"
+      ],
+      "tagsEn": [
+        "north-still",
+        "cc-180",
+        "locked-door-kept",
+        "over-strong"
+      ],
+      "note": null,
+      "optionOrder_no": [
+        "norddøren",
+        "sørdøren",
+        "vestdøren",
+        "østdøren",
+        "midt i rommet finnes ikke retninger"
+      ],
+      "violationTags_no": [
+        "cc-180",
+        "locked-door-kept",
+        "none",
+        "over-strong",
+        "north-still"
+      ],
+      "optionOrder_en": [
+        "the north door",
+        "the south door",
+        "the west door",
+        "the east door",
+        "directions do not exist in the middle of a room"
+      ],
+      "violationTags_en": [
+        "cc-180",
+        "locked-door-kept",
+        "none",
+        "over-strong",
+        "north-still"
+      ]
+    }
+  ]
+}

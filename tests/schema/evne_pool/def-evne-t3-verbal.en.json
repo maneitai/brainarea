@@ -1,0 +1,1774 @@
+{
+  "schemaVersion": 1,
+  "id": "evne-t3-verbal",
+  "type": "test-definition",
+  "family": "evner",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "g-score",
+    "metric": "z100",
+    "ci95": true
+  },
+  "dimensions": [
+    {
+      "id": "g",
+      "label": "g score",
+      "labelLanguage": "en",
+      "description": "General ability, reported as IQ-style metric."
+    }
+  ],
+  "items": [
+    {
+      "id": "vr-0001",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: apple, banana, pear, carrot, grape?",
+          "options": [
+            {
+              "label": "apple"
+            },
+            {
+              "label": "carrot"
+            },
+            {
+              "label": "banana"
+            },
+            {
+              "label": "pear"
+            },
+            {
+              "label": "grape"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "vr-0002",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: red, green, blue, round, yellow?",
+          "options": [
+            {
+              "label": "red"
+            },
+            {
+              "label": "green"
+            },
+            {
+              "label": "blue"
+            },
+            {
+              "label": "yellow"
+            },
+            {
+              "label": "round"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "vr-0003",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: book, newspaper, magazine, letter, stone?",
+          "options": [
+            {
+              "label": "stone"
+            },
+            {
+              "label": "book"
+            },
+            {
+              "label": "newspaper"
+            },
+            {
+              "label": "magazine"
+            },
+            {
+              "label": "letter"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "vr-0004",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: violin, cello, trumpet, viola, double bass?",
+          "options": [
+            {
+              "label": "violin"
+            },
+            {
+              "label": "cello"
+            },
+            {
+              "label": "viola"
+            },
+            {
+              "label": "double bass"
+            },
+            {
+              "label": "trumpet"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "vr-0005",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: dog, cat, horse, rabbit, eagle?",
+          "options": [
+            {
+              "label": "dog"
+            },
+            {
+              "label": "cat"
+            },
+            {
+              "label": "eagle"
+            },
+            {
+              "label": "horse"
+            },
+            {
+              "label": "rabbit"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "vr-0006",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: hammer, saw, screwdriver, drill, nail?",
+          "options": [
+            {
+              "label": "hammer"
+            },
+            {
+              "label": "nail"
+            },
+            {
+              "label": "saw"
+            },
+            {
+              "label": "screwdriver"
+            },
+            {
+              "label": "drill"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "vr-0007",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: hand : glove :: foot : ?",
+          "options": [
+            {
+              "label": "head"
+            },
+            {
+              "label": "belt"
+            },
+            {
+              "label": "scarf"
+            },
+            {
+              "label": "sock"
+            },
+            {
+              "label": "knee"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "vr-0008",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: puppy : dog :: kitten : ?",
+          "options": [
+            {
+              "label": "wolf"
+            },
+            {
+              "label": "cat"
+            },
+            {
+              "label": "lion"
+            },
+            {
+              "label": "mouse"
+            },
+            {
+              "label": "goat"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "vr-0009",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: plane : sky :: boat : ?",
+          "options": [
+            {
+              "label": "land"
+            },
+            {
+              "label": "railway"
+            },
+            {
+              "label": "garage"
+            },
+            {
+              "label": "road"
+            },
+            {
+              "label": "water"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "vr-0010",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: pencil : paper :: paint : ?",
+          "options": [
+            {
+              "label": "brush"
+            },
+            {
+              "label": "bucket"
+            },
+            {
+              "label": "wall"
+            },
+            {
+              "label": "eraser"
+            },
+            {
+              "label": "hand"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "vr-0011",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: meow : cat :: bark : ?",
+          "options": [
+            {
+              "label": "bird"
+            },
+            {
+              "label": "dog"
+            },
+            {
+              "label": "horse"
+            },
+            {
+              "label": "sheep"
+            },
+            {
+              "label": "mouse"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "vr-0012",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: mother : daughter :: father : ?",
+          "options": [
+            {
+              "label": "mother"
+            },
+            {
+              "label": "brother"
+            },
+            {
+              "label": "uncle"
+            },
+            {
+              "label": "son"
+            },
+            {
+              "label": "grandfather"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "vr-0013",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word goes with the others: car, bus, bicycle, train?",
+          "options": [
+            {
+              "label": "spade"
+            },
+            {
+              "label": "plane"
+            },
+            {
+              "label": "bed"
+            },
+            {
+              "label": "cup"
+            },
+            {
+              "label": "stone"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "vr-0014",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word goes with the others: apple, pear, plum, apricot?",
+          "options": [
+            {
+              "label": "carrot"
+            },
+            {
+              "label": "potato"
+            },
+            {
+              "label": "onion"
+            },
+            {
+              "label": "tomato"
+            },
+            {
+              "label": "banana"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "vr-0015",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word goes with the others: oak, spruce, pine?",
+          "options": [
+            {
+              "label": "rose"
+            },
+            {
+              "label": "grass"
+            },
+            {
+              "label": "birch"
+            },
+            {
+              "label": "moss"
+            },
+            {
+              "label": "seaweed"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "vr-0016",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word goes with the others: red, blue, green?",
+          "options": [
+            {
+              "label": "table"
+            },
+            {
+              "label": "yellow"
+            },
+            {
+              "label": "fast"
+            },
+            {
+              "label": "cold"
+            },
+            {
+              "label": "box"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "vr-0017",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word goes with the others: January, March, May?",
+          "options": [
+            {
+              "label": "Tuesday"
+            },
+            {
+              "label": "Christmas"
+            },
+            {
+              "label": "summer"
+            },
+            {
+              "label": "July"
+            },
+            {
+              "label": "Friday"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "vr-0018",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: eye : see :: ear : ?",
+          "options": [
+            {
+              "label": "smell"
+            },
+            {
+              "label": "hear"
+            },
+            {
+              "label": "speak"
+            },
+            {
+              "label": "head"
+            },
+            {
+              "label": "mouth"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0019",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: hungry : eat :: thirsty : ?",
+          "options": [
+            {
+              "label": "sleep"
+            },
+            {
+              "label": "walk"
+            },
+            {
+              "label": "read"
+            },
+            {
+              "label": "hurry"
+            },
+            {
+              "label": "drink"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "vr-0020",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: painter : picture :: composer : ?",
+          "options": [
+            {
+              "label": "baton"
+            },
+            {
+              "label": "orchestra"
+            },
+            {
+              "label": "symphony"
+            },
+            {
+              "label": "hall"
+            },
+            {
+              "label": "instrument"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "vr-0021",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: teacher : school :: doctor : ?",
+          "options": [
+            {
+              "label": "medicine"
+            },
+            {
+              "label": "hospital"
+            },
+            {
+              "label": "patient"
+            },
+            {
+              "label": "disease"
+            },
+            {
+              "label": "waiting room"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0022",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: hen : egg :: cow : ?",
+          "options": [
+            {
+              "label": "calf"
+            },
+            {
+              "label": "grass"
+            },
+            {
+              "label": "meadow"
+            },
+            {
+              "label": "milk"
+            },
+            {
+              "label": "barn"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0023",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Every plant in the greenhouse is watered each morning. The orchid is in the greenhouse. What follows?",
+          "options": [
+            {
+              "label": "The orchid is not watered."
+            },
+            {
+              "label": "The orchid is watered each morning."
+            },
+            {
+              "label": "Some plants in the greenhouse are watered."
+            },
+            {
+              "label": "The orchid is not a plant."
+            },
+            {
+              "label": "The greenhouse is watered."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "vr-0024",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Only members may borrow from the Solvoll library. Jon has a library card there. What follows?",
+          "options": [
+            {
+              "label": "Jon lives in Solvoll."
+            },
+            {
+              "label": "Jon may not borrow there."
+            },
+            {
+              "label": "Everyone with a card works there."
+            },
+            {
+              "label": "Jon owns the library."
+            },
+            {
+              "label": "Jon is a member."
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "vr-0025",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Every Wednesday at eight the choir meets in the parish hall. Today is Wednesday at eight. What follows?",
+          "options": [
+            {
+              "label": "The choir rehearses every evening."
+            },
+            {
+              "label": "The parish hall is closed."
+            },
+            {
+              "label": "The choir is meeting in the parish hall now."
+            },
+            {
+              "label": "The choir meets at nine."
+            },
+            {
+              "label": "Today is Sunday."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0026",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Espen is taller than Vera. Vera is taller than Nils. What follows?",
+          "options": [
+            {
+              "label": "Nils is taller than Espen."
+            },
+            {
+              "label": "Espen is taller than Nils."
+            },
+            {
+              "label": "Vera is the tallest."
+            },
+            {
+              "label": "Nils and Espen are equally tall."
+            },
+            {
+              "label": "Vera is the shortest."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0027",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Kari does not take part in the marathon. Everyone who takes part in the marathon trains five times a week. What follows about Kari's training?",
+          "options": [
+            {
+              "label": "Kari trains five times a week."
+            },
+            {
+              "label": "Kari never trains."
+            },
+            {
+              "label": "No participants train five times a week."
+            },
+            {
+              "label": "It cannot be determined from the text."
+            },
+            {
+              "label": "Kari runs the marathon."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "vr-0028",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Whenever the wind blows from the north-west, the ferry is rerouted to the long crossing. The gauge at the pier now shows a north-westerly wind. What follows?",
+          "options": [
+            {
+              "label": "The ferry is taking the short crossing now."
+            },
+            {
+              "label": "The ferry is being rerouted to the long crossing now."
+            },
+            {
+              "label": "The gauge is broken."
+            },
+            {
+              "label": "The ferry is in dry dock today."
+            },
+            {
+              "label": "The long crossing is used only in summer."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "vr-0029",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: violin, viola, cello, harp, double bass?",
+          "options": [
+            {
+              "label": "violin"
+            },
+            {
+              "label": "viola"
+            },
+            {
+              "label": "cello"
+            },
+            {
+              "label": "double bass"
+            },
+            {
+              "label": "harp"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0030",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: acid, base, salt, metal, oxide?",
+          "options": [
+            {
+              "label": "acid"
+            },
+            {
+              "label": "base"
+            },
+            {
+              "label": "metal"
+            },
+            {
+              "label": "salt"
+            },
+            {
+              "label": "oxide"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0031",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: rain, snow, sleet, hail, fog?",
+          "options": [
+            {
+              "label": "rain"
+            },
+            {
+              "label": "fog"
+            },
+            {
+              "label": "snow"
+            },
+            {
+              "label": "sleet"
+            },
+            {
+              "label": "hail"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "vr-0032",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: bricklayer, carpenter, plumber, electrician, architect?",
+          "options": [
+            {
+              "label": "bricklayer"
+            },
+            {
+              "label": "carpenter"
+            },
+            {
+              "label": "plumber"
+            },
+            {
+              "label": "architect"
+            },
+            {
+              "label": "electrician"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "vr-0033",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: lion, tiger, cheetah, jaguar, wolf?",
+          "options": [
+            {
+              "label": "wolf"
+            },
+            {
+              "label": "lion"
+            },
+            {
+              "label": "tiger"
+            },
+            {
+              "label": "cheetah"
+            },
+            {
+              "label": "jaguar"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0034",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word does not belong with the others: thermometer, barometer, kilometre, hygrometer, speedometer?",
+          "options": [
+            {
+              "label": "thermometer"
+            },
+            {
+              "label": "barometer"
+            },
+            {
+              "label": "hygrometer"
+            },
+            {
+              "label": "speedometer"
+            },
+            {
+              "label": "kilometre"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0035",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: seed : plant :: chrysalis : ?",
+          "options": [
+            {
+              "label": "larva"
+            },
+            {
+              "label": "cocoon"
+            },
+            {
+              "label": "butterfly"
+            },
+            {
+              "label": "honey"
+            },
+            {
+              "label": "feather"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "vr-0036",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: shadow : light :: silence : ?",
+          "options": [
+            {
+              "label": "movement"
+            },
+            {
+              "label": "sound"
+            },
+            {
+              "label": "water"
+            },
+            {
+              "label": "wind"
+            },
+            {
+              "label": "heat"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "vr-0037",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: dictionary : words :: atlas : ?",
+          "options": [
+            {
+              "label": "globe"
+            },
+            {
+              "label": "countries"
+            },
+            {
+              "label": "shelf"
+            },
+            {
+              "label": "maps"
+            },
+            {
+              "label": "booklet"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "vr-0038",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Complete the analogy: fuel : engine :: food : ?",
+          "options": [
+            {
+              "label": "kitchen"
+            },
+            {
+              "label": "body"
+            },
+            {
+              "label": "stomach"
+            },
+            {
+              "label": "hunger"
+            },
+            {
+              "label": "recipe"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "vr-0039",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "On the shelf the books stand in blocks by colour. The outermost block on the left is red. The yellow block stands to the right of the green one. The green block stands to the right of the red one. No other colour is used. Which order do the books stand in, from the left?",
+          "options": [
+            {
+              "label": "red, yellow, green"
+            },
+            {
+              "label": "green, red, yellow"
+            },
+            {
+              "label": "yellow, green, red"
+            },
+            {
+              "label": "green, yellow, red"
+            },
+            {
+              "label": "red, green, yellow"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "vr-0040",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "In the choir, Anna has a lower voice than Bente, and Bente has a lower voice than Carmen. Dina sings exactly as low as Anna. What follows?",
+          "options": [
+            {
+              "label": "Anna has the highest voice."
+            },
+            {
+              "label": "Bente sings as low as Carmen."
+            },
+            {
+              "label": "Carmen has the highest voice."
+            },
+            {
+              "label": "Dina has a lower voice than Bente."
+            },
+            {
+              "label": "Carmen and Anna are equal."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "vr-0041",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Tom is older than Sue. Sue is older than Rita. Ben is younger than Rita. Who is the youngest?",
+          "options": [
+            {
+              "label": "Rita"
+            },
+            {
+              "label": "Ben"
+            },
+            {
+              "label": "Sue"
+            },
+            {
+              "label": "Tom"
+            },
+            {
+              "label": "Ben and Rita are the same age"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "vr-0042",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "In this text, a \"mountain lynx\" is a lynx that lives above the forest line. The lynx photographed on the Hardangervidda lives above the forest line. What follows?",
+          "options": [
+            {
+              "label": "It was not a mountain lynx."
+            },
+            {
+              "label": "Mountain lynxes live only on the Hardangervidda."
+            },
+            {
+              "label": "Lynxes below the forest line are mountain lynxes."
+            },
+            {
+              "label": "It was a mountain lynx."
+            },
+            {
+              "label": "The Hardangervidda lies below the forest line."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "vr-0043",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The club has a rule: anyone who is late three times within the same month loses their place the following month. Per was late twice in April and once in May. What follows about June?",
+          "options": [
+            {
+              "label": "Per loses his place in June."
+            },
+            {
+              "label": "Per does not lose his place in June."
+            },
+            {
+              "label": "Per loses his place in May."
+            },
+            {
+              "label": "April and May are counted together as three."
+            },
+            {
+              "label": "A single lateness in May triggers the loss."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "vr-0044",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The lookout tower stands due north of the lake. The cabin stands due south of the lake. What follows?",
+          "options": [
+            {
+              "label": "The tower lies south of the lake."
+            },
+            {
+              "label": "The cabin lies north of the lake."
+            },
+            {
+              "label": "The tower and the cabin stand side by side."
+            },
+            {
+              "label": "The cabin lies east of the tower."
+            },
+            {
+              "label": "The lake lies between the tower and the cabin."
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "vr-0045",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A basket contains only apples and pears. The number of apples is twice the number of pears, and there are fifteen fruits in total. How many pears are there?",
+          "options": [
+            {
+              "label": "10"
+            },
+            {
+              "label": "15"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "30"
+            },
+            {
+              "label": "3"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "vr-0046",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A tournament consists of four rounds. Each round lasts 20 minutes with a 5-minute break between rounds. The tournament started at 18:00. When does round four end?",
+          "options": [
+            {
+              "label": "19:30"
+            },
+            {
+              "label": "19:35"
+            },
+            {
+              "label": "19:20"
+            },
+            {
+              "label": "20:00"
+            },
+            {
+              "label": "19:15"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "vr-0047",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word goes with the others: hurry, rush, speed?",
+          "options": [
+            {
+              "label": "linger"
+            },
+            {
+              "label": "stroll"
+            },
+            {
+              "label": "wait"
+            },
+            {
+              "label": "dash"
+            },
+            {
+              "label": "loiter"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "vr-0048",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word goes with the others: big, wide, tall, thick?",
+          "options": [
+            {
+              "label": "slender"
+            },
+            {
+              "label": "spacious"
+            },
+            {
+              "label": "narrow"
+            },
+            {
+              "label": "short-lived"
+            },
+            {
+              "label": "lightweight"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "vr-0049",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word goes with the others: hook, bend, arc, curve?",
+          "options": [
+            {
+              "label": "straight line"
+            },
+            {
+              "label": "sharp angle"
+            },
+            {
+              "label": "flat dot"
+            },
+            {
+              "label": "ruler"
+            },
+            {
+              "label": "curvature"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "vr-0050",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Which word goes with the others: moonlight, lunar eclipse, moon phase?",
+          "options": [
+            {
+              "label": "Sunday"
+            },
+            {
+              "label": "sea wave"
+            },
+            {
+              "label": "moon ring"
+            },
+            {
+              "label": "daily rhythm"
+            },
+            {
+              "label": "season"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.7
+        }
+      ]
+    }
+  ]
+}

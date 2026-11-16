@@ -1,0 +1,1424 @@
+{
+  "schemaVersion": 1,
+  "id": "evne-t4-romlig",
+  "type": "test-definition",
+  "family": "evner",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "g-score",
+    "metric": "z100",
+    "ci95": true
+  },
+  "dimensions": [
+    {
+      "id": "g",
+      "label": "g-skår",
+      "labelLanguage": "no",
+      "description": "Generell evne, rapportert som IQ-stil-metrikk."
+    }
+  ],
+  "items": [
+    {
+      "id": "sp-0001",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Nilla holder en rød ball i venstre hånd og en blå ball i høyre hånd. Hva har hun i høyre hånd?",
+          "options": [
+            {
+              "label": "den røde ballen"
+            },
+            {
+              "label": "den blå ballen"
+            },
+            {
+              "label": "ingen ball"
+            },
+            {
+              "label": "begge ballene"
+            },
+            {
+              "label": "en grønn ball"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sp-0002",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Ola står og vender ansiktet mot nord. Hvilken himmelretning er på hans høyre side?",
+          "options": [
+            {
+              "label": "vest"
+            },
+            {
+              "label": "sør"
+            },
+            {
+              "label": "nord"
+            },
+            {
+              "label": "øst"
+            },
+            {
+              "label": "ingen — han vender mot nord"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sp-0003",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Katten ligger foran peisen. Hunden ligger bak peisen. Hva ligger mellom dem, hvis ingenting annet er i rommet?",
+          "options": [
+            {
+              "label": "peisen"
+            },
+            {
+              "label": "katten"
+            },
+            {
+              "label": "hunden"
+            },
+            {
+              "label": "ingenting"
+            },
+            {
+              "label": "et teppe"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "sp-0004",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Per står foran Kari i køen, og Nils står bak Kari. Hvem står lengst fremme?",
+          "options": [
+            {
+              "label": "Kari"
+            },
+            {
+              "label": "Nils"
+            },
+            {
+              "label": "Per og Nils er like fremme"
+            },
+            {
+              "label": "rekkefølgen kan ikke avgjøres"
+            },
+            {
+              "label": "Per"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "sp-0005",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Du ser bokstaven R i et speil. Hva ser du?",
+          "options": [
+            {
+              "label": "R som normalt"
+            },
+            {
+              "label": "bokstaven P"
+            },
+            {
+              "label": "R speilvendt"
+            },
+            {
+              "label": "bokstaven B"
+            },
+            {
+              "label": "R opp-ned"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sp-0006",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Kniven ligger til venstre for gaffelen. Skeen ligger til høyre for gaffelen. Hvilket redskap ligger i midten?",
+          "options": [
+            {
+              "label": "kniven"
+            },
+            {
+              "label": "gaffelen"
+            },
+            {
+              "label": "skeen"
+            },
+            {
+              "label": "ingen ligger i midten"
+            },
+            {
+              "label": "de ligger i vilkårlig rekkefølge"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sp-0007",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Skolen ligger nord for hjemmet. Butikken ligger sør for hjemmet. Hva ligger lengst sør?",
+          "options": [
+            {
+              "label": "skolen"
+            },
+            {
+              "label": "hjemmet"
+            },
+            {
+              "label": "butikken og skolen er like"
+            },
+            {
+              "label": "butikken"
+            },
+            {
+              "label": "alle tre ligger på linje øst-vest"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "sp-0008",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Minuttviseren peker rett opp, mot klokken tolv. Femten minutter senere — hvor peker den?",
+          "options": [
+            {
+              "label": "mot høyre, mot klokken tre"
+            },
+            {
+              "label": "mot venstre, mot klokken ni"
+            },
+            {
+              "label": "fortsatt mot tolv"
+            },
+            {
+              "label": "mot klokken seks"
+            },
+            {
+              "label": "den står stille"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "sp-0009",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Døren er rett foran Anna. Vinduet er rett bak henne. Hva ser Anna når hun har snudd seg en hel omgang?",
+          "options": [
+            {
+              "label": "vinduet"
+            },
+            {
+              "label": "både døren og vinduet"
+            },
+            {
+              "label": "hverken døren eller vinduet"
+            },
+            {
+              "label": "det avhenger av hvor raskt hun snur seg"
+            },
+            {
+              "label": "døren"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sp-0010",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Bjørn vender oss ryggen. Han løfter høyre hånd. På hvilken side ser vi hånden?",
+          "options": [
+            {
+              "label": "på vår venstre side"
+            },
+            {
+              "label": "like foran oss"
+            },
+            {
+              "label": "på vår høyre side"
+            },
+            {
+              "label": "på begge sider"
+            },
+            {
+              "label": "han kan ikke løfte en hånd med ryggen til"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sp-0011",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Du står ved gjerdet og vender ansiktet mot øst. Hagen ligger vest for gjerdet. Hva har du bak deg?",
+          "options": [
+            {
+              "label": "gjerdet"
+            },
+            {
+              "label": "hagen"
+            },
+            {
+              "label": "hjemme"
+            },
+            {
+              "label": "vest"
+            },
+            {
+              "label": "siden du vender mot øst har du ingenting bak deg"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "sp-0012",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "En pil peker mot klokken tre. Den roteres 90 grader med urviseren. Hvor peker pilen nå?",
+          "options": [
+            {
+              "label": "mot klokken tolv"
+            },
+            {
+              "label": "fortsatt mot tre"
+            },
+            {
+              "label": "mot klokken ni"
+            },
+            {
+              "label": "mot klokken seks"
+            },
+            {
+              "label": "den peker skrått opp"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "sp-0013",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Kubene stables slik: den røde kuben ligger nederst, den blå kommer ovenpå, og den gule ligger øverst. Hvilken farge har kuben i midten?",
+          "options": [
+            {
+              "label": "blå"
+            },
+            {
+              "label": "rød"
+            },
+            {
+              "label": "gul"
+            },
+            {
+              "label": "ingen — det er bare to kuber"
+            },
+            {
+              "label": "alle tre fargene"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sp-0014",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Både hylla og bordet står langs veggen. Hylla står til venstre for døra, og bordet står til høyre for døra. Hva står mellom hylla og bordet?",
+          "options": [
+            {
+              "label": "veggen"
+            },
+            {
+              "label": "ingenting"
+            },
+            {
+              "label": "bordet"
+            },
+            {
+              "label": "hylla"
+            },
+            {
+              "label": "døra"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sp-0015",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Et skilt med pil peker mot klokken ni. Skiltet roteres en halv omgang. Hvor peker pilen nå?",
+          "options": [
+            {
+              "label": "fortsatt mot ni"
+            },
+            {
+              "label": "mot klokken tolv"
+            },
+            {
+              "label": "mot klokken tre"
+            },
+            {
+              "label": "mot klokken seks"
+            },
+            {
+              "label": "den peker rett opp"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0016",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fire personer står i rekke: Ane står foran Berit, Berit foran Camilla, og Camilla foran Dina. Hvem står som nummer to fra fremst?",
+          "options": [
+            {
+              "label": "Ane"
+            },
+            {
+              "label": "Berit"
+            },
+            {
+              "label": "Camilla"
+            },
+            {
+              "label": "Dina"
+            },
+            {
+              "label": "rekken er sirkelformet, så det finnes ikke en nummer to"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "sp-0017",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Et ark foldes én gang fra venstre mot høyre, så det blir dobbelt. Deretter lages ett hull gjennom arket. Hvor mange hull er det når arket foldes ut igjen?",
+          "options": [
+            {
+              "label": "ett hull"
+            },
+            {
+              "label": "fire hull"
+            },
+            {
+              "label": "ingen hull"
+            },
+            {
+              "label": "to hull"
+            },
+            {
+              "label": "hullene ligger bare på den ene halvdelen"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "sp-0018",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fra tårnet ser du kirken mot nord og vindmøllen mot sør. Du snur deg 90 grader med urviseren. Hva ser du nå?",
+          "options": [
+            {
+              "label": "verken kirken eller vindmøllen"
+            },
+            {
+              "label": "kirken"
+            },
+            {
+              "label": "vindmøllen"
+            },
+            {
+              "label": "både kirken og vindmøllen"
+            },
+            {
+              "label": "himlen"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0019",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fra X går veien 2 km nord til Y, og derfra 2 km øst til Z. Hvilken retning er Z fra X?",
+          "options": [
+            {
+              "label": "sørøst"
+            },
+            {
+              "label": "nord"
+            },
+            {
+              "label": "øst"
+            },
+            {
+              "label": "Z ligger like langt fra X i alle retninger"
+            },
+            {
+              "label": "nordøst"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0020",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fire personer sitter rundt et rundt bord, i rekkefølge med urviseren: Pernille, Quentin, Ragna, Signe. Hvem sitter rett overfor Pernille?",
+          "options": [
+            {
+              "label": "Quentin"
+            },
+            {
+              "label": "Signe"
+            },
+            {
+              "label": "Ragna"
+            },
+            {
+              "label": "ingen — bordet har bare tre plasser"
+            },
+            {
+              "label": "Pernille"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "sp-0021",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "En bil kjører 3 km mot nord, snur og kjører 2 km mot sør. Hvor langt fra startpunktet ender bilen, og i hvilken retning?",
+          "options": [
+            {
+              "label": "1 km mot sør"
+            },
+            {
+              "label": "1 km mot nord"
+            },
+            {
+              "label": "på startpunktet"
+            },
+            {
+              "label": "5 km mot nord"
+            },
+            {
+              "label": "3 km mot sør"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "sp-0022",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Ved en korsvei går en vei øst-vest og en vei nord-sør. Kirken ligger nord for øst-vest-veien og vest for nord-sør-veien. I hvilket hjørne ligger kirken?",
+          "options": [
+            {
+              "label": "i nordøst-hjørnet"
+            },
+            {
+              "label": "i sørvest-hjørnet"
+            },
+            {
+              "label": "i sørøst-hjørnet"
+            },
+            {
+              "label": "i nordvest-hjørnet"
+            },
+            {
+              "label": "midt i krysset"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0023",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fem hus ligger langs veien, nummerert 1 til 5, der hus 1 er nærmest krysset og hus 5 er det fjerneste. Du går fra krysset til hus 3. Hvor mange hus har du passert på veien?",
+          "options": [
+            {
+              "label": "to hus — nummer 1 og 2"
+            },
+            {
+              "label": "tre hus"
+            },
+            {
+              "label": "fem hus"
+            },
+            {
+              "label": "ingen hus"
+            },
+            {
+              "label": "fire hus"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0024",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Et kvadratisk ark foldes én gang fra venstre til høyre og deretter én gang nedenfra og opp. Så lages ett hull. Hvor mange hull er det når arket foldes ut?",
+          "options": [
+            {
+              "label": "to hull"
+            },
+            {
+              "label": "åtte hull"
+            },
+            {
+              "label": "ett hull"
+            },
+            {
+              "label": "hullene ligger bare langs kanten"
+            },
+            {
+              "label": "fire hull"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "sp-0025",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Viseren peker mot klokken tolv. Den roteres 90 grader mot urviseren. Hvor peker den nå?",
+          "options": [
+            {
+              "label": "mot klokken tre"
+            },
+            {
+              "label": "like mellom elleve og ett"
+            },
+            {
+              "label": "mot klokken ni"
+            },
+            {
+              "label": "fortsatt mot tolv"
+            },
+            {
+              "label": "mot klokken seks"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "sp-0026",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Gå 1 km øst, 2 km nord, 1 km vest og 2 km sør. Hvor befinner du deg da?",
+          "options": [
+            {
+              "label": "1 km øst for startpunktet"
+            },
+            {
+              "label": "på startpunktet"
+            },
+            {
+              "label": "2 km nord for startpunktet"
+            },
+            {
+              "label": "4 km fra startpunktet"
+            },
+            {
+              "label": "vest for startpunktet"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0027",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Eva bor øst for skolen, og Fred bor sør for skolen. De møtes på skolen og går sammen til Eva. Hvilken retning går de?",
+          "options": [
+            {
+              "label": "sørover"
+            },
+            {
+              "label": "sørøstover"
+            },
+            {
+              "label": "vestover"
+            },
+            {
+              "label": "østover"
+            },
+            {
+              "label": "de må skille lag ved krysset"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0028",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "En buss ruter fra terminalen: først 3 km nord, deretter 2 km øst, og til slutt 3 km nord. Hvilken retning er endestasjonen fra terminalen?",
+          "options": [
+            {
+              "label": "nordøst"
+            },
+            {
+              "label": "sørøst"
+            },
+            {
+              "label": "nord"
+            },
+            {
+              "label": "øst"
+            },
+            {
+              "label": "ruten danner en sirkel"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "sp-0029",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Et kors har én arm malt rød. Den røde armen peker mot sør. Korset roteres 180 grader. Hvor peker den røde armen nå?",
+          "options": [
+            {
+              "label": "fortsatt mot sør"
+            },
+            {
+              "label": "mot øst"
+            },
+            {
+              "label": "mot vest"
+            },
+            {
+              "label": "armen er nå skjult bak korset"
+            },
+            {
+              "label": "mot nord"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "sp-0030",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Du vender ansiktet mot sør. Hvilken himmelretning peker din venstre hånd mot?",
+          "options": [
+            {
+              "label": "vest"
+            },
+            {
+              "label": "nord"
+            },
+            {
+              "label": "øst"
+            },
+            {
+              "label": "sør"
+            },
+            {
+              "label": "hender peker ikke mot himmelretninger"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "sp-0031",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fra hytta er det 3 km i luftlinje til elva, rett nord. Fra elva er det 4 km i luftlinje til fjellet, rett øst. Hvor langt er det i luftlinje fra hytta til fjellet?",
+          "options": [
+            {
+              "label": "7 km"
+            },
+            {
+              "label": "5 km"
+            },
+            {
+              "label": "4 km"
+            },
+            {
+              "label": "12 km"
+            },
+            {
+              "label": "1 km"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "sp-0032",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Et strøket ark foldes tre ganger, hver gang fra venstre mot høyre. Så lages ett hull. Hvor mange hull er det når arket foldes ut?",
+          "options": [
+            {
+              "label": "fire hull"
+            },
+            {
+              "label": "to hull"
+            },
+            {
+              "label": "ett hull"
+            },
+            {
+              "label": "åtte hull"
+            },
+            {
+              "label": "hullet blir borte ved foldingen"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "sp-0033",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Du går 4 km mot nord, snur 90 grader til høyre og går 4 km, snur 90 grader til høyre og går 4 km, snur 90 grader til høyre og går 4 km. Hvor befinner du deg i forhold til startpunktet?",
+          "options": [
+            {
+              "label": "på startpunktet"
+            },
+            {
+              "label": "4 km mot øst"
+            },
+            {
+              "label": "4 km mot nord"
+            },
+            {
+              "label": "8 km fra startpunktet"
+            },
+            {
+              "label": "ruten er åpen i én ende"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "sp-0034",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Ni personer står i en kø. Mia står midt i køen. Hvilket nummer har Mia fra fremst?",
+          "options": [
+            {
+              "label": "nummer fire"
+            },
+            {
+              "label": "nummer seks"
+            },
+            {
+              "label": "nummer ni"
+            },
+            {
+              "label": "Mia har to:nummer fra hver ende"
+            },
+            {
+              "label": "nummer fem"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "sp-0035",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Kirken ligger rett nord for punktet P, 3 km unna. Stasjonen ligger rett øst for P, 4 km unna. I hvilken retning fra stasjonen ligger kirken?",
+          "options": [
+            {
+              "label": "sørøst"
+            },
+            {
+              "label": "nord"
+            },
+            {
+              "label": "nordvest"
+            },
+            {
+              "label": "vest"
+            },
+            {
+              "label": "det kan ikke avgjøres uten kart"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "sp-0036",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Et skilt peker mot nord. Det roteres 30 grader med urviseren, tre ganger på rad. Hvor peker skiltet etterpå?",
+          "options": [
+            {
+              "label": "mot vest"
+            },
+            {
+              "label": "mot øst"
+            },
+            {
+              "label": "mellom nord og øst"
+            },
+            {
+              "label": "fortsatt mot nord"
+            },
+            {
+              "label": "mot sør"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "sp-0037",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Vanligvis går stien 5 km rett sør fra huset til stranda. Broen er stengt, så du må først gå 3 km vest, deretter 5 km sør og til slutt 3 km øst. Hvor mye lengre blir turen?",
+          "options": [
+            {
+              "label": "3 km"
+            },
+            {
+              "label": "5 km"
+            },
+            {
+              "label": "8 km"
+            },
+            {
+              "label": "6 km"
+            },
+            {
+              "label": "turen blir ikke lengre"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "sp-0038",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Et ord er skrevet på et papir. Du holder papiret opp mot et sterkt lys og leser teksten gjennom papiret, bakfra. Hvordan ser teksten ut fra denne siden?",
+          "options": [
+            {
+              "label": "speilvendt — venstre og høyre byttet"
+            },
+            {
+              "label": "uendret"
+            },
+            {
+              "label": "opp-ned, med topp og bunn byttet"
+            },
+            {
+              "label": "rotert 90 grader"
+            },
+            {
+              "label": "teksten er borte — papiret lysner bare"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "sp-0039",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "En terning ligger med «1» på toppen og «2» mot deg (foran). Terningen rulles en kvart omgang framover, så den foran-siden blir topp. Hvilken side vender nå opp?",
+          "options": [
+            {
+              "label": "1 — terningen står fortsatt på samme side"
+            },
+            {
+              "label": "6 — undersiden kommer opp"
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "2"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "sp-0040",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Et firkantet rom har fire dører, én i hver vegg. Du står midt i rommet og vender mot norddøren. Østdøren er låst, og du vender deg 90 grader til venstre for å gå mot neste dør. Mot hvilken dør vender du da?",
+          "options": [
+            {
+              "label": "norddøren"
+            },
+            {
+              "label": "sørdøren"
+            },
+            {
+              "label": "vestdøren"
+            },
+            {
+              "label": "østdøren"
+            },
+            {
+              "label": "midt i rommet finnes ikke retninger"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.6
+        }
+      ]
+    }
+  ]
+}

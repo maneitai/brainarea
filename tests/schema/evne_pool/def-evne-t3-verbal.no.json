@@ -1,0 +1,1774 @@
+{
+  "schemaVersion": 1,
+  "id": "evne-t3-verbal",
+  "type": "test-definition",
+  "family": "evner",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "g-score",
+    "metric": "z100",
+    "ci95": true
+  },
+  "dimensions": [
+    {
+      "id": "g",
+      "label": "g-skår",
+      "labelLanguage": "no",
+      "description": "Generell evne, rapportert som IQ-stil-metrikk."
+    }
+  ],
+  "items": [
+    {
+      "id": "vr-0001",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: eple, banan, pære, gulrot, drue?",
+          "options": [
+            {
+              "label": "eple"
+            },
+            {
+              "label": "gulrot"
+            },
+            {
+              "label": "banan"
+            },
+            {
+              "label": "pære"
+            },
+            {
+              "label": "drue"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "vr-0002",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: rød, grønn, blå, rund, gul?",
+          "options": [
+            {
+              "label": "rød"
+            },
+            {
+              "label": "grønn"
+            },
+            {
+              "label": "blå"
+            },
+            {
+              "label": "gul"
+            },
+            {
+              "label": "rund"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "vr-0003",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: bok, avis, blad, brev, stein?",
+          "options": [
+            {
+              "label": "stein"
+            },
+            {
+              "label": "bok"
+            },
+            {
+              "label": "avis"
+            },
+            {
+              "label": "blad"
+            },
+            {
+              "label": "brev"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "vr-0004",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: fiolin, cello, trombone, bratsj, kontrabass?",
+          "options": [
+            {
+              "label": "fiolin"
+            },
+            {
+              "label": "cello"
+            },
+            {
+              "label": "bratsj"
+            },
+            {
+              "label": "kontrabass"
+            },
+            {
+              "label": "trombone"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "vr-0005",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: hund, katt, hest, kanin, ørn?",
+          "options": [
+            {
+              "label": "hund"
+            },
+            {
+              "label": "katt"
+            },
+            {
+              "label": "ørn"
+            },
+            {
+              "label": "hest"
+            },
+            {
+              "label": "kanin"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "vr-0006",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: hammer, sag, skrutrekker, boremaskin, spiker?",
+          "options": [
+            {
+              "label": "hammer"
+            },
+            {
+              "label": "spiker"
+            },
+            {
+              "label": "sag"
+            },
+            {
+              "label": "skrutrekker"
+            },
+            {
+              "label": "boremaskin"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "vr-0007",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: hånd : hanske :: hode : ?",
+          "options": [
+            {
+              "label": "sko"
+            },
+            {
+              "label": "belte"
+            },
+            {
+              "label": "skjerf"
+            },
+            {
+              "label": "lue"
+            },
+            {
+              "label": "briller"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "vr-0008",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: valp : hund :: kattunge : ?",
+          "options": [
+            {
+              "label": "ulv"
+            },
+            {
+              "label": "katt"
+            },
+            {
+              "label": "løve"
+            },
+            {
+              "label": "mus"
+            },
+            {
+              "label": "geit"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "vr-0009",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: fly : himmel :: skip : ?",
+          "options": [
+            {
+              "label": "land"
+            },
+            {
+              "label": "jernbane"
+            },
+            {
+              "label": "garasje"
+            },
+            {
+              "label": "vei"
+            },
+            {
+              "label": "hav"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "vr-0010",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: blyant : papir :: maling : ?",
+          "options": [
+            {
+              "label": "pensel"
+            },
+            {
+              "label": "bøtte"
+            },
+            {
+              "label": "vegg"
+            },
+            {
+              "label": "viskelær"
+            },
+            {
+              "label": "hånd"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "vr-0011",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: mjau : katt :: bjeff : ?",
+          "options": [
+            {
+              "label": "fugl"
+            },
+            {
+              "label": "hund"
+            },
+            {
+              "label": "hest"
+            },
+            {
+              "label": "sau"
+            },
+            {
+              "label": "mus"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "vr-0012",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: mor : datter :: far : ?",
+          "options": [
+            {
+              "label": "mor"
+            },
+            {
+              "label": "bror"
+            },
+            {
+              "label": "onkel"
+            },
+            {
+              "label": "sønn"
+            },
+            {
+              "label": "farfar"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "vr-0013",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører sammen med de andre: bil, buss, sykkel, tog?",
+          "options": [
+            {
+              "label": "spade"
+            },
+            {
+              "label": "fly"
+            },
+            {
+              "label": "seng"
+            },
+            {
+              "label": "kopp"
+            },
+            {
+              "label": "stein"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "vr-0014",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører sammen med de andre: eple, pære, plomme, aprikos?",
+          "options": [
+            {
+              "label": "gulrot"
+            },
+            {
+              "label": "potet"
+            },
+            {
+              "label": "løk"
+            },
+            {
+              "label": "tomat"
+            },
+            {
+              "label": "banan"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "vr-0015",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører sammen med de andre: eik, gran, furu?",
+          "options": [
+            {
+              "label": "rose"
+            },
+            {
+              "label": "gress"
+            },
+            {
+              "label": "bjørk"
+            },
+            {
+              "label": "mose"
+            },
+            {
+              "label": "tang"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "vr-0016",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører sammen med de andre: rød, blå, grønn?",
+          "options": [
+            {
+              "label": "bord"
+            },
+            {
+              "label": "gul"
+            },
+            {
+              "label": "rask"
+            },
+            {
+              "label": "kald"
+            },
+            {
+              "label": "boks"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "vr-0017",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører sammen med de andre: januar, mars, mai?",
+          "options": [
+            {
+              "label": "tirsdag"
+            },
+            {
+              "label": "jul"
+            },
+            {
+              "label": "vår"
+            },
+            {
+              "label": "juli"
+            },
+            {
+              "label": "fredag"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "vr-0018",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: øye : se :: øre : ?",
+          "options": [
+            {
+              "label": "lukte"
+            },
+            {
+              "label": "høre"
+            },
+            {
+              "label": "snakke"
+            },
+            {
+              "label": "hode"
+            },
+            {
+              "label": "munn"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0019",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: sulten : spise :: tørst : ?",
+          "options": [
+            {
+              "label": "sove"
+            },
+            {
+              "label": "gå"
+            },
+            {
+              "label": "lese"
+            },
+            {
+              "label": "skynde seg"
+            },
+            {
+              "label": "drikke"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "vr-0020",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: maler : bilde :: komponist : ?",
+          "options": [
+            {
+              "label": "batong"
+            },
+            {
+              "label": "orkester"
+            },
+            {
+              "label": "symfoni"
+            },
+            {
+              "label": "sal"
+            },
+            {
+              "label": "instrument"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "vr-0021",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: lærer : skole :: lege : ?",
+          "options": [
+            {
+              "label": "medisin"
+            },
+            {
+              "label": "sykehus"
+            },
+            {
+              "label": "pasient"
+            },
+            {
+              "label": "sykdom"
+            },
+            {
+              "label": "venterom"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0022",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: høne : egg :: ku : ?",
+          "options": [
+            {
+              "label": "kalv"
+            },
+            {
+              "label": "gress"
+            },
+            {
+              "label": "eng"
+            },
+            {
+              "label": "melk"
+            },
+            {
+              "label": "fjøs"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0023",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle planter i drivhuset trenger vanning hver morgen. Orkidéen står i drivhuset. Hva følger?",
+          "options": [
+            {
+              "label": "Orkidéen trenger ikke vanning."
+            },
+            {
+              "label": "Orkidéen trenger vanning hver morgen."
+            },
+            {
+              "label": "Noen planter i drivhuset trenger vanning."
+            },
+            {
+              "label": "Orkidéen er ikke en plante."
+            },
+            {
+              "label": "Drivhuset trenger vanning."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "vr-0024",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Kun medlemmer kan låne fra biblioteket på Solvoll. Jon har lånekort der. Hva følger?",
+          "options": [
+            {
+              "label": "Jon bor på Solvoll."
+            },
+            {
+              "label": "Jon kan ikke låne der."
+            },
+            {
+              "label": "Alle med lånekort jobber der."
+            },
+            {
+              "label": "Jon eier biblioteket."
+            },
+            {
+              "label": "Jon er medlem."
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "vr-0025",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hver onsdag klokken åtte samles koret i menighetshuset. I dag er onsdag klokken åtte. Hva følger?",
+          "options": [
+            {
+              "label": "Koret øver hver kveld."
+            },
+            {
+              "label": "Menighetshuset er stengt."
+            },
+            {
+              "label": "Koret samles i menighetshuset nå."
+            },
+            {
+              "label": "Koret samler seg klokken ni."
+            },
+            {
+              "label": "I dag er søndag."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0026",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Espen er høyere enn Vera. Vera er høyere enn Nils. Hva følger?",
+          "options": [
+            {
+              "label": "Nils er høyere enn Espen."
+            },
+            {
+              "label": "Espen er høyere enn Nils."
+            },
+            {
+              "label": "Vera er den høyeste."
+            },
+            {
+              "label": "Nils og Espen er like høy."
+            },
+            {
+              "label": "Vera er den korteste."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0027",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Kari deltar ikke i maratonløpet. Alle som deltar i maratonløpet trener fem ganger i uken. Hva følger om Karis trening?",
+          "options": [
+            {
+              "label": "Kari trener fem ganger i uken."
+            },
+            {
+              "label": "Kari trener aldri."
+            },
+            {
+              "label": "Ingen deltakere trener fem ganger i uken."
+            },
+            {
+              "label": "Det lar seg ikke fastslå fra teksten."
+            },
+            {
+              "label": "Kari løper maraton."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "vr-0028",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hver gang det blåser fra nordvest, legges ferjeferden om til den lange ruta. Vindmåleren på kaia viser nordvestvind nå. Hva følger?",
+          "options": [
+            {
+              "label": "Ferjeferden går den korte ruta nå."
+            },
+            {
+              "label": "Ferjeferden legges om til den lange ruta nå."
+            },
+            {
+              "label": "Vindmåleren er ødelagt."
+            },
+            {
+              "label": "Ferga ligger i dokk i dag."
+            },
+            {
+              "label": "Den lange ruta brukes bare om sommeren."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "vr-0029",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: fiolin, bratsj, cello, harpe, kontrabass?",
+          "options": [
+            {
+              "label": "fiolin"
+            },
+            {
+              "label": "bratsj"
+            },
+            {
+              "label": "cello"
+            },
+            {
+              "label": "kontrabass"
+            },
+            {
+              "label": "harpe"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0030",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: syre, base, salt, metall, oksid?",
+          "options": [
+            {
+              "label": "syre"
+            },
+            {
+              "label": "base"
+            },
+            {
+              "label": "metall"
+            },
+            {
+              "label": "salt"
+            },
+            {
+              "label": "oksid"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0031",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: regn, snø, sludd, hagl, skodde?",
+          "options": [
+            {
+              "label": "regn"
+            },
+            {
+              "label": "skodde"
+            },
+            {
+              "label": "snø"
+            },
+            {
+              "label": "sludd"
+            },
+            {
+              "label": "hagl"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "vr-0032",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: murer, tømrer, rørlegger, elektriker, arkitekt?",
+          "options": [
+            {
+              "label": "murer"
+            },
+            {
+              "label": "tømrer"
+            },
+            {
+              "label": "rørlegger"
+            },
+            {
+              "label": "arkitekt"
+            },
+            {
+              "label": "elektriker"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "vr-0033",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: løve, tiger, gepard, jaguar, ulv?",
+          "options": [
+            {
+              "label": "ulv"
+            },
+            {
+              "label": "løve"
+            },
+            {
+              "label": "tiger"
+            },
+            {
+              "label": "gepard"
+            },
+            {
+              "label": "jaguar"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0034",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører ikke hjemme med de andre: termometer, barometer, kilometer, hygrometer, hastighetsmåler?",
+          "options": [
+            {
+              "label": "termometer"
+            },
+            {
+              "label": "barometer"
+            },
+            {
+              "label": "hygrometer"
+            },
+            {
+              "label": "hastighetsmåler"
+            },
+            {
+              "label": "kilometer"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "vr-0035",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: frø : plante :: puppe : ?",
+          "options": [
+            {
+              "label": "larve"
+            },
+            {
+              "label": "kokong"
+            },
+            {
+              "label": "sommerfugl"
+            },
+            {
+              "label": "honning"
+            },
+            {
+              "label": "fjær"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "vr-0036",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: skygge : lys :: stille : ?",
+          "options": [
+            {
+              "label": "bevegelse"
+            },
+            {
+              "label": "lyd"
+            },
+            {
+              "label": "vann"
+            },
+            {
+              "label": "vind"
+            },
+            {
+              "label": "varme"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "vr-0037",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: ordbok : ord :: atlas : ?",
+          "options": [
+            {
+              "label": "globus"
+            },
+            {
+              "label": "land"
+            },
+            {
+              "label": "hylle"
+            },
+            {
+              "label": "kart"
+            },
+            {
+              "label": "hefte"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "vr-0038",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fullfør analogien: brensel : motor :: mat : ?",
+          "options": [
+            {
+              "label": "kjøkken"
+            },
+            {
+              "label": "kropp"
+            },
+            {
+              "label": "mage"
+            },
+            {
+              "label": "sult"
+            },
+            {
+              "label": "oppskrift"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "vr-0039",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "På hylla står bøkene i blokker etter farge. Blokken ytterst til venstre er rød. Den gule blokken står til høyre for den grønne. Den grønne blokken står til høyre for den røde. Ingen annen farge brukes. Hvilken rekkefølge får bøkene i, fra venstre?",
+          "options": [
+            {
+              "label": "rød, gul, grønn"
+            },
+            {
+              "label": "grønn, rød, gul"
+            },
+            {
+              "label": "gul, grønn, rød"
+            },
+            {
+              "label": "grønn, gul, rød"
+            },
+            {
+              "label": "rød, grønn, gul"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "vr-0040",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "I koret har Anna lavere stemme enn Bente, og Bente har lavere stemme enn Carmen. Dina synger akkurat like lavt som Anna. Hva følger?",
+          "options": [
+            {
+              "label": "Anna har den høyeste stemmen."
+            },
+            {
+              "label": "Bente synger like lavt som Carmen."
+            },
+            {
+              "label": "Carmen har den høyeste stemmen."
+            },
+            {
+              "label": "Dina har lavere stemme enn Bente."
+            },
+            {
+              "label": "Carmen og Anna er like."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "vr-0041",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Kai er eldre enn Leif. Leif er eldre enn Mia. Odd er yngre enn Mia. Hvem er yngst?",
+          "options": [
+            {
+              "label": "Mia"
+            },
+            {
+              "label": "Odd"
+            },
+            {
+              "label": "Leif"
+            },
+            {
+              "label": "Kai"
+            },
+            {
+              "label": "Odd og Mia er like gamle"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "vr-0042",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "En «fjellgaupe» er i denne teksten en gaupe som lever over skoggrenen. Gaupen som ble fotografert på Hardangervidda lever over skoggrenen. Hva følger?",
+          "options": [
+            {
+              "label": "Det var ingen fjellgaupe."
+            },
+            {
+              "label": "Fjellgauper lever bare på Hardangervidda."
+            },
+            {
+              "label": "Gauper under skoggrenen er fjellgauper."
+            },
+            {
+              "label": "Det var en fjellgaupe."
+            },
+            {
+              "label": "Hardangervidda ligger under skoggrenen."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "vr-0043",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Klubben har regelen: den som er sen tre ganger i én og samme måned, mister plassen den følgende måneden. Per var sen to ganger i april og én gang i mai. Hva følger om juni?",
+          "options": [
+            {
+              "label": "Per mister plassen i juni."
+            },
+            {
+              "label": "Per mister ikke plassen i juni."
+            },
+            {
+              "label": "Per mister plassen i mai."
+            },
+            {
+              "label": "April og mai telles sammen til tre senheter."
+            },
+            {
+              "label": "En enkel senhet i mai utløser tap av plassen."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "vr-0044",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Utsiktstårnet ligger rett nord for sjøen. Koia ligger rett sør for sjøen. Hva følger?",
+          "options": [
+            {
+              "label": "Tårnet ligger sør for sjøen."
+            },
+            {
+              "label": "Koia ligger nord for sjøen."
+            },
+            {
+              "label": "Tårnet og koia ligger side om side."
+            },
+            {
+              "label": "Koia ligger øst for tårnet."
+            },
+            {
+              "label": "Sjøen ligger mellom tårnet og koia."
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "vr-0045",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "En kurv inneholder bare epler og pærer. Antall epler er det dobbelte av antall pærer, og det er atten frukter til sammen. Hvor mange pærer er det?",
+          "options": [
+            {
+              "label": "9"
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "36"
+            },
+            {
+              "label": "4"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "vr-0046",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "En turnering består av fire runder. Hver runde varer 20 minutter, og det er 5 minutters pause mellom rundene. Turneringen startet klokken 18:00. Når slutter runde to?",
+          "options": [
+            {
+              "label": "18:40"
+            },
+            {
+              "label": "18:45"
+            },
+            {
+              "label": "18:25"
+            },
+            {
+              "label": "19:10"
+            },
+            {
+              "label": "18:50"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "vr-0047",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører sammen med de andre: ile, haste, skunde?",
+          "options": [
+            {
+              "label": "slappe av"
+            },
+            {
+              "label": "rusle"
+            },
+            {
+              "label": "dvæle"
+            },
+            {
+              "label": "skynde seg"
+            },
+            {
+              "label": "vente"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "vr-0048",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører sammen med de andre: stor, bred, høy, tykk?",
+          "options": [
+            {
+              "label": "spinkel"
+            },
+            {
+              "label": "omfattende"
+            },
+            {
+              "label": "smal"
+            },
+            {
+              "label": "kortlivet"
+            },
+            {
+              "label": "lettvekts"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "vr-0049",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører sammen med de andre: hake, krok, bue, sving?",
+          "options": [
+            {
+              "label": "rett strek"
+            },
+            {
+              "label": "spiss vinkel"
+            },
+            {
+              "label": "flat prikk"
+            },
+            {
+              "label": "linjale"
+            },
+            {
+              "label": "krumning"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "vr-0050",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvilket ord hører sammen med de andre: måneskinn, måneformørkelse, månefase?",
+          "options": [
+            {
+              "label": "søndag"
+            },
+            {
+              "label": "havbølge"
+            },
+            {
+              "label": "månering"
+            },
+            {
+              "label": "døgnrytme"
+            },
+            {
+              "label": "årstid"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.7
+        }
+      ]
+    }
+  ]
+}

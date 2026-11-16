@@ -1,0 +1,1424 @@
+{
+  "schemaVersion": 1,
+  "id": "evne-t4-romlig",
+  "type": "test-definition",
+  "family": "evner",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "g-score",
+    "metric": "z100",
+    "ci95": true
+  },
+  "dimensions": [
+    {
+      "id": "g",
+      "label": "g score",
+      "labelLanguage": "en",
+      "description": "General ability, reported as IQ-style metric."
+    }
+  ],
+  "items": [
+    {
+      "id": "sp-0001",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Nilla holds a red ball in her left hand and a blue ball in her right hand. What does she have in her right hand?",
+          "options": [
+            {
+              "label": "the red ball"
+            },
+            {
+              "label": "the blue ball"
+            },
+            {
+              "label": "no ball"
+            },
+            {
+              "label": "both balls"
+            },
+            {
+              "label": "a green ball"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sp-0002",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Ola is standing facing north. Which compass direction is on his right-hand side?",
+          "options": [
+            {
+              "label": "west"
+            },
+            {
+              "label": "south"
+            },
+            {
+              "label": "north"
+            },
+            {
+              "label": "east"
+            },
+            {
+              "label": "none — he faces north"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sp-0003",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The cat lies in front of the stove. The dog lies behind the stove. What lies between them, if nothing else is in the room?",
+          "options": [
+            {
+              "label": "the stove"
+            },
+            {
+              "label": "the cat"
+            },
+            {
+              "label": "the dog"
+            },
+            {
+              "label": "nothing"
+            },
+            {
+              "label": "a rug"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "sp-0004",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Per stands in front of Kari in the queue, and Nils stands behind Kari. Who stands furthest forward?",
+          "options": [
+            {
+              "label": "Kari"
+            },
+            {
+              "label": "Nils"
+            },
+            {
+              "label": "Per and Nils are equally far forward"
+            },
+            {
+              "label": "the order cannot be determined"
+            },
+            {
+              "label": "Per"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "sp-0005",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "You see the letter R in a mirror. What do you see?",
+          "options": [
+            {
+              "label": "R as normal"
+            },
+            {
+              "label": "the letter P"
+            },
+            {
+              "label": "R mirrored"
+            },
+            {
+              "label": "the letter B"
+            },
+            {
+              "label": "R upside down"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sp-0006",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The knife lies to the left of the fork. The spoon lies to the right of the fork. Which utensil lies in the middle?",
+          "options": [
+            {
+              "label": "the knife"
+            },
+            {
+              "label": "the fork"
+            },
+            {
+              "label": "the spoon"
+            },
+            {
+              "label": "none lies in the middle"
+            },
+            {
+              "label": "the order is arbitrary"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sp-0007",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The school is north of the home. The shop is south of the home. What lies furthest south?",
+          "options": [
+            {
+              "label": "the school"
+            },
+            {
+              "label": "the home"
+            },
+            {
+              "label": "the shop and the school are equal"
+            },
+            {
+              "label": "the shop"
+            },
+            {
+              "label": "all three lie on an east-west line"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "sp-0008",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The minute hand points straight up, at twelve. Fifteen minutes later — where does it point?",
+          "options": [
+            {
+              "label": "to the right, at three"
+            },
+            {
+              "label": "to the left, at nine"
+            },
+            {
+              "label": "still at twelve"
+            },
+            {
+              "label": "at six"
+            },
+            {
+              "label": "it stands still"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "sp-0009",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The door is straight in front of Anna. The window is straight behind her. What does Anna see after turning all the way around?",
+          "options": [
+            {
+              "label": "the window"
+            },
+            {
+              "label": "both the door and the window"
+            },
+            {
+              "label": "neither the door nor the window"
+            },
+            {
+              "label": "it depends on how fast she turns"
+            },
+            {
+              "label": "the door"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sp-0010",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Bjørn has his back to us. He raises his right hand. On which side do we see the hand?",
+          "options": [
+            {
+              "label": "on our left side"
+            },
+            {
+              "label": "right in front of us"
+            },
+            {
+              "label": "on our right side"
+            },
+            {
+              "label": "on both sides"
+            },
+            {
+              "label": "he cannot raise a hand with his back to us"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sp-0011",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "You are standing at the fence facing east. The garden lies west of the fence. What is behind you?",
+          "options": [
+            {
+              "label": "the fence"
+            },
+            {
+              "label": "the garden"
+            },
+            {
+              "label": "home"
+            },
+            {
+              "label": "west"
+            },
+            {
+              "label": "since you face east there is nothing behind you"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "sp-0012",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "An arrow points at three o'clock. It rotates 90 degrees clockwise. Where does it point now?",
+          "options": [
+            {
+              "label": "at twelve o'clock"
+            },
+            {
+              "label": "still at three"
+            },
+            {
+              "label": "at nine o'clock"
+            },
+            {
+              "label": "at six o'clock"
+            },
+            {
+              "label": "it points diagonally up"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "sp-0013",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The cubes are stacked like this: the red cube at the bottom, the blue one on top of it, and the yellow one at the top. Which colour is the cube in the middle?",
+          "options": [
+            {
+              "label": "blue"
+            },
+            {
+              "label": "red"
+            },
+            {
+              "label": "yellow"
+            },
+            {
+              "label": "none — there are only two cubes"
+            },
+            {
+              "label": "all three colours"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "sp-0014",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Both the shelf and the table stand along the wall. The shelf stands to the left of the door, and the table stands to the right of the door. What stands between the shelf and the table?",
+          "options": [
+            {
+              "label": "the wall"
+            },
+            {
+              "label": "nothing"
+            },
+            {
+              "label": "the table"
+            },
+            {
+              "label": "the shelf"
+            },
+            {
+              "label": "the door"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "sp-0015",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A sign with an arrow points at nine o'clock. The sign is rotated half a turn. Where does the arrow point now?",
+          "options": [
+            {
+              "label": "still at nine"
+            },
+            {
+              "label": "at twelve o'clock"
+            },
+            {
+              "label": "at three o'clock"
+            },
+            {
+              "label": "at six o'clock"
+            },
+            {
+              "label": "it points straight up"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0016",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Four people stand in a line: Ane in front of Berit, Berit in front of Camilla, and Camilla in front of Dina. Who stands second from the front?",
+          "options": [
+            {
+              "label": "Ane"
+            },
+            {
+              "label": "Berit"
+            },
+            {
+              "label": "Camilla"
+            },
+            {
+              "label": "Dina"
+            },
+            {
+              "label": "the line is circular, so there is no number two"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "sp-0017",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A sheet is folded once from left to right, making it double. Then one hole is punched through it. How many holes are there when the sheet is unfolded again?",
+          "options": [
+            {
+              "label": "one hole"
+            },
+            {
+              "label": "four holes"
+            },
+            {
+              "label": "no holes"
+            },
+            {
+              "label": "two holes"
+            },
+            {
+              "label": "the holes lie only on one half"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "sp-0018",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "From the tower you see the church to the north and the windmill to the south. You turn 90 degrees clockwise. What do you see now?",
+          "options": [
+            {
+              "label": "neither the church nor the windmill"
+            },
+            {
+              "label": "the church"
+            },
+            {
+              "label": "the windmill"
+            },
+            {
+              "label": "both the church and the windmill"
+            },
+            {
+              "label": "the sky"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0019",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "From X the road runs 2 km north to Y, and from there 2 km east to Z. In which direction is Z from X?",
+          "options": [
+            {
+              "label": "south-east"
+            },
+            {
+              "label": "north"
+            },
+            {
+              "label": "east"
+            },
+            {
+              "label": "Z is equally far from X in every direction"
+            },
+            {
+              "label": "north-east"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0020",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Four people sit around a round table, clockwise: Pernille, Quentin, Ragna, Signe. Who sits directly opposite Pernille?",
+          "options": [
+            {
+              "label": "Quentin"
+            },
+            {
+              "label": "Signe"
+            },
+            {
+              "label": "Ragna"
+            },
+            {
+              "label": "none — the table has only three seats"
+            },
+            {
+              "label": "Pernille"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "sp-0021",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A car drives 3 km north, turns around and drives 2 km south. How far from the starting point does the car end up, and in which direction?",
+          "options": [
+            {
+              "label": "1 km south"
+            },
+            {
+              "label": "1 km north"
+            },
+            {
+              "label": "at the starting point"
+            },
+            {
+              "label": "5 km north"
+            },
+            {
+              "label": "3 km south"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "sp-0022",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "At a junction an east-west road crosses a north-south road. The church lies north of the east-west road and west of the north-south road. In which corner does the church lie?",
+          "options": [
+            {
+              "label": "in the north-east corner"
+            },
+            {
+              "label": "in the south-west corner"
+            },
+            {
+              "label": "in the south-east corner"
+            },
+            {
+              "label": "in the north-west corner"
+            },
+            {
+              "label": "in the middle of the junction"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0023",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Five houses lie along the road, numbered 1 to 5, where house 1 is nearest the junction and house 5 the furthest away. You walk from the junction to house 3. How many houses do you pass on the way?",
+          "options": [
+            {
+              "label": "two houses — number 1 and 2"
+            },
+            {
+              "label": "three houses"
+            },
+            {
+              "label": "five houses"
+            },
+            {
+              "label": "no houses"
+            },
+            {
+              "label": "four houses"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0024",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A square sheet is folded once from left to right and then once from bottom to top. Then one hole is punched. How many holes are there when the sheet is unfolded?",
+          "options": [
+            {
+              "label": "two holes"
+            },
+            {
+              "label": "eight holes"
+            },
+            {
+              "label": "one hole"
+            },
+            {
+              "label": "the holes lie only along the edge"
+            },
+            {
+              "label": "four holes"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "sp-0025",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The hand points at twelve o'clock. It rotates 90 degrees counterclockwise. Where does it point now?",
+          "options": [
+            {
+              "label": "at three o'clock"
+            },
+            {
+              "label": "between eleven and one"
+            },
+            {
+              "label": "at nine o'clock"
+            },
+            {
+              "label": "still at twelve"
+            },
+            {
+              "label": "at six o'clock"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "sp-0026",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Walk 1 km east, 2 km north, 1 km west and 2 km south. Where are you then?",
+          "options": [
+            {
+              "label": "1 km east of the starting point"
+            },
+            {
+              "label": "at the starting point"
+            },
+            {
+              "label": "2 km north of the starting point"
+            },
+            {
+              "label": "4 km from the starting point"
+            },
+            {
+              "label": "west of the starting point"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0027",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Eva lives east of the school, and Fred lives south of the school. They meet at the school and walk together to Eva's. In which direction do they walk?",
+          "options": [
+            {
+              "label": "southwards"
+            },
+            {
+              "label": "south-eastwards"
+            },
+            {
+              "label": "westwards"
+            },
+            {
+              "label": "eastwards"
+            },
+            {
+              "label": "they must part ways at the crossing"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "sp-0028",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A bus route runs from the terminal: first 3 km north, then 2 km east, and finally 3 km north. In which direction is the final stop from the terminal?",
+          "options": [
+            {
+              "label": "north-east"
+            },
+            {
+              "label": "south-east"
+            },
+            {
+              "label": "north"
+            },
+            {
+              "label": "east"
+            },
+            {
+              "label": "the route forms a circle"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "sp-0029",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A cross has one arm painted red. The red arm points south. The cross is rotated 180 degrees. Where does the red arm point now?",
+          "options": [
+            {
+              "label": "still south"
+            },
+            {
+              "label": "east"
+            },
+            {
+              "label": "west"
+            },
+            {
+              "label": "the arm is now hidden behind the cross"
+            },
+            {
+              "label": "north"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "sp-0030",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "You are facing south. Which compass direction does your left hand point toward?",
+          "options": [
+            {
+              "label": "west"
+            },
+            {
+              "label": "north"
+            },
+            {
+              "label": "east"
+            },
+            {
+              "label": "south"
+            },
+            {
+              "label": "hands do not point toward compass directions"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "sp-0031",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "From the cabin it is 3 km as the crow flies to the river, due north. From the river it is 4 km as the crow flies to the mountain, due east. How far is it as the crow flies from the cabin to the mountain?",
+          "options": [
+            {
+              "label": "7 km"
+            },
+            {
+              "label": "5 km"
+            },
+            {
+              "label": "4 km"
+            },
+            {
+              "label": "12 km"
+            },
+            {
+              "label": "1 km"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "sp-0032",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A blank sheet is folded three times, each time from left to right. Then one hole is punched. How many holes are there when the sheet is unfolded?",
+          "options": [
+            {
+              "label": "four holes"
+            },
+            {
+              "label": "two holes"
+            },
+            {
+              "label": "one hole"
+            },
+            {
+              "label": "eight holes"
+            },
+            {
+              "label": "the hole disappears in the folding"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "sp-0033",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "You walk 4 km north, turn 90 degrees right and walk 4 km, turn 90 degrees right and walk 4 km, turn 90 degrees right and walk 4 km. Where are you in relation to the starting point?",
+          "options": [
+            {
+              "label": "at the starting point"
+            },
+            {
+              "label": "4 km east"
+            },
+            {
+              "label": "4 km north"
+            },
+            {
+              "label": "8 km from the starting point"
+            },
+            {
+              "label": "the route is open at one end"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "sp-0034",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Nine people stand in a queue. Mia stands in the middle of the queue. Which number does Mia have from the front?",
+          "options": [
+            {
+              "label": "number four"
+            },
+            {
+              "label": "number six"
+            },
+            {
+              "label": "number nine"
+            },
+            {
+              "label": "Mia has two numbers, one from either end"
+            },
+            {
+              "label": "number five"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "sp-0035",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "The church lies due north of the point P, 3 km away. The station lies due east of P, 4 km away. In which direction from the station does the church lie?",
+          "options": [
+            {
+              "label": "south-east"
+            },
+            {
+              "label": "north"
+            },
+            {
+              "label": "north-west"
+            },
+            {
+              "label": "west"
+            },
+            {
+              "label": "it cannot be determined without a map"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "sp-0036",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A sign points north. It is rotated 30 degrees clockwise, three times in a row. Where does the sign point afterwards?",
+          "options": [
+            {
+              "label": "west"
+            },
+            {
+              "label": "east"
+            },
+            {
+              "label": "between north and east"
+            },
+            {
+              "label": "still north"
+            },
+            {
+              "label": "south"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "sp-0037",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Normally the path runs 5 km due south from the house to the beach. The bridge is closed, so you must first walk 3 km west, then 5 km south and finally 3 km east. How much longer does the trip become?",
+          "options": [
+            {
+              "label": "3 km"
+            },
+            {
+              "label": "5 km"
+            },
+            {
+              "label": "8 km"
+            },
+            {
+              "label": "6 km"
+            },
+            {
+              "label": "the trip is not longer"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "sp-0038",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A word is written on a sheet of paper. You hold the paper up to a strong light and read the text through the paper, from behind. What does the text look like from this side?",
+          "options": [
+            {
+              "label": "mirrored — left and right swapped"
+            },
+            {
+              "label": "unchanged"
+            },
+            {
+              "label": "upside down, with top and bottom swapped"
+            },
+            {
+              "label": "rotated 90 degrees"
+            },
+            {
+              "label": "the text is gone — the paper is just lighter"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "sp-0039",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A die lies with \"1\" on top and \"2\" facing you (front). The die is rolled a quarter turn forward, so the front side becomes the top. Which side now faces up?",
+          "options": [
+            {
+              "label": "1 — the die is still on the same side"
+            },
+            {
+              "label": "6 — the bottom comes up"
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "5"
+            },
+            {
+              "label": "2"
+            }
+          ],
+          "correctIndex": 4,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "sp-0040",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A square room has four doors, one in each wall. You stand in the middle of the room facing the north door. The east door is locked, and you turn 90 degrees to the left to walk toward the next door. Toward which door are you facing then?",
+          "options": [
+            {
+              "label": "the north door"
+            },
+            {
+              "label": "the south door"
+            },
+            {
+              "label": "the west door"
+            },
+            {
+              "label": "the east door"
+            },
+            {
+              "label": "directions do not exist in the middle of a room"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.6
+        }
+      ]
+    }
+  ]
+}

@@ -2,10 +2,10 @@
   "specVersion": 1,
   "id": "fase3-evne-no-translation-verdict-utkast",
   "type": "translation-qa-verdict",
-  "status": "UTKAST_A",
+  "status": "GJELDENDE",
   "date": "2026-11-16",
   "run": "TR-D2CA262EE725",
-  "phase": "fase3-evne [3-VEIS] steg 1 av 3 (utkast-verdikt)",
+  "phase": "fase3-evne [3-VEIS] fullfoert: utkast-verdikt (A) -> anonym kritikk (B) -> syntese (C), 2026-11-16",
   "scope": "230 items i evne_pool (t1 50, t2 50, t3 50, t4 40, t5 40). t3 er forfattet separat per spraak per spec.languagePlan ? deler av t3 er parallelle originaler (vr-0007 hode/fot, vr-0041 navn, vr-0045 15->18 frukter), ikke oversettelser: forskjell i stimulus-styrke mellom spraakpar er der MED design, ikke avvik. EN-side er frossen i dette steget (t1/t2/t4/t5 er spraknoytrale i valg; prompt-baaring EN->NO per konvensjon).",
   "metode": "Full lesing av alt NO-tekstinnhold (230 prompts + 1150 labels) med handkontroll av alle svarnoekler t2/t4/t5; uavhengig programmatisk re-avledning av t2 (50/50 fasit bekreftet under generatorens dokumenterte familievalk: arith/geom/alternate/diffchain/muladd/dual/fib-pairsum/quadratic-inc); struktur-paritet EN==NO per pool (id-mengder, kind, correctIndex, options-antall); korrekturskann (svensk/dansk-former, dobbeltbestemt form, tverrbokstav); duplikat- og vanskelighetsanalyse over identisk stimulus.",
   "rettelser": [
@@ -17,8 +17,8 @@
       "after": "Følgen",
       "grunn": "dobbelbestemt form feil: 'sekvensen/følgen' er -en bestemt; 'Følgjen' er ugyldig form (kun -a-/neuter-ord får -et). Traf alle 17 seq-malitems og prompt-gjentakelsen i update/track-items.",
       "familie": "A",
-      "stoerer": 17,
-      "bevis": "gen_evne_pool_t5.py hadde samme feil i malstrengen ? rettet ogsaa der, ellers gjeninnfoeres ved regenerering; def-evne-t5-sekvens.no.json 17 hopp -> 0"
+      "bevis": "gen_evne_pool_t5.py hadde samme feil i malstrengen ? rettet ogsaa der, ellers gjengjeninnf?res ved regenerering; def-evne-t5-sekvens.no.json 17 hopp -> 0",
+      "trefrekvens": 17
     },
     {
       "pool": "t4",
@@ -28,8 +28,8 @@
       "after": "himmelen",
       "grunn": "dansk/svensk form; bokmaal er 'himmelen'",
       "familie": "A",
-      "stoerer": 1,
-      "bevis": "gen_evne_pool_batch2.py hadde samme feil ? rettet ogsaa der; batch2-metatext speilet"
+      "bevis": "gen_evne_pool_batch2.py hadde samme feil ? rettet ogsaa der; batch2-metatext speilet",
+      "trefrekvens": 1
     },
     {
       "pool": "t4",
@@ -39,8 +39,30 @@
       "after": "Mia har to numre, ett fra hver ende",
       "grunn": "kolon/typo: 'to:nummer' er en brutt frase ? mangler mellomrom, kolon er skrivefeil, 'ett nummer fra hver ende' er den korrekte konstruksjonen for en person midt i 5-punkt-kao",
       "familie": "A",
-      "stoerer": 1,
-      "bevis": "EN har 'Mia has two numbers, one from either end'; NO-option 3 var eneste med kolon-tegn i hele NO-korpuset (verifisert)"
+      "bevis": "EN har 'Mia has two numbers, one from either end'; NO-option 3 var eneste med kolon-tegn i hele NO-korpuset (verifisert)",
+      "trefrekvens": 1
+    },
+    {
+      "pool": "t3",
+      "n": 12,
+      "klasse": "iii",
+      "before": "Hvilket ord hører ikke hjemme med de andre: ...",
+      "after": "Hvilket ord hører ikke sammen med de andre: ...",
+      "grunn": "calque av EN 'does not belong with the others'; 'hører ikke hjemme' er norsk steds-idiom. POS-malen i samme pool er allerede 'hører sammen med de andre' (9 items) — neg-malen er naa speilet og idiomatisk. Register-neutralt, ingen stimulus-endring",
+      "familie": "B",
+      "trefrekvens": 12,
+      "bevis": "gen_evne_pool_batch2.py hadde de samme 12 q-strengene — rettet der samtidig; batch2-selftest ALL PASS etter"
+    },
+    {
+      "pool": "t3",
+      "item": "vr-0028",
+      "klasse": "iii",
+      "before": "Ferjeferden / ferjeferden (2 labels + 1 meta-felt)",
+      "after": "Fergeferden / fergeferden",
+      "grunn": "nynorsk-form i bokmaal-korpus; samme item bruker allerede 'Ferga'; kilden 'the ferry' er nøytral. Konsistens: hele korpuset er bokmaal",
+      "familie": "B",
+      "trefrekvens": 3,
+      "bevis": "rettet i def + generator + meta (ferje 0 treff etter); batch2 ALL PASS etter"
     }
   ],
   "avkreftet": [
@@ -77,7 +99,73 @@
         "mx-0010",
         "mx-0016"
       ],
-      "sammendrag": "identisk stimulus (samme aksjer, samme violations-orden i meta) men mx-0016 har b=-1.15 vs mx-0010 b=-1.55 ? vanskelighetsbandidt feiltildelt: meta-konvensjonen gir k0=3 -> b=-1.55 (alle tolv count-down-L items foelger malen). mx-0016 avviker fra egen konvensjon uten dokumentert grunn"
+      "sammendrag": "identisk stimulus (samme aksjer, samme violations-orden, samme correctIndex) men mx-0016 har b=-1.15 vs mx-0010 b=-1.55. VIKTIG korreksjon foer B-familien: det finnes IKKE dokumentert k0->b-konvensjon ? alle 8 count-down-L-items (mx-0010..0017) viser b fritt variert paa tvers av k0 (k0=3 forekommer med b=-1.55 og -1.15; k0=1 med -1.75/-1.55/-1.35; k0=2 med -1.75/-1.35/-1.15). bandDiff er tildelt sammensetningsmessig (L-bandet trenger fordeling paa 4 nivaaer), ikke per-item avledet. Anomalien er da: stimulus-identiske items med ulik tildelt b (ikke regelbrudd, men identitetsbevaringssporsmaal under IRT).",
+      "tabell": [
+        [
+          "mx-0010",
+          "count-down",
+          "L",
+          -1.55,
+          0,
+          3
+        ],
+        [
+          "mx-0011",
+          "count-down",
+          "L",
+          -1.35,
+          0,
+          1
+        ],
+        [
+          "mx-0012",
+          "count-down",
+          "L",
+          -1.15,
+          0,
+          2
+        ],
+        [
+          "mx-0013",
+          "count-down",
+          "L",
+          -1.75,
+          0,
+          1
+        ],
+        [
+          "mx-0014",
+          "count-down",
+          "L",
+          -1.55,
+          0,
+          1
+        ],
+        [
+          "mx-0015",
+          "count-down",
+          "L",
+          -1.35,
+          0,
+          2
+        ],
+        [
+          "mx-0016",
+          "count-down",
+          "L",
+          -1.15,
+          0,
+          3
+        ],
+        [
+          "mx-0017",
+          "count-down",
+          "L",
+          -1.75,
+          0,
+          2
+        ]
+      ]
     },
     {
       "pool": "t1",
@@ -96,7 +184,7 @@
       "sammendrag": "samme stimulus, ulike option-sets, b spriyer inntil 1.7 ? samme spor-klasse (stimulus-identitet mangler, option-set fører fasit-identiteten); annerledes: t2-parene har konsekvent ULIK correctIndex og option-orden, t1-parene har IDENTISK correctIndex med rotert option-orden"
     },
     {
-      "vurdering": "[Utkast-verdict] Ikke et oversettelsesavvik og ikke i korrige-mandatet (EN frossen; pools er allerede validert av FASE 2-selvtester som ikke setter stimulus-uniqueness-krav). Anbefaling til syntese: registrer som pin til FASE 4 normering ? parvis responsdata paa stimulus-identiske items med b-spreng 1.7 gaar utover IRT-håndterbarhet. Alternativ B-fam-kritikk-utfall: oekonomi ved regenerering av 2-3 items med variantstimulus"
+      "vurdering": "[Utkast-verdict] Ikke et oversettelsesavvik og ikke i korrige-mandatet (EN frossen; pools er allerede validert av FASE 2-selvtester som ikke setter stimulus-uniqueness-krav). Anbefaling til syntese: registrer som pin til FASE 4 normering ? parvis responsdata paa stimulus-identiske items med b-spreng 1.7 g?r utover IRT-håndterbarhet. Alternativ B-fam-kritikk-utfall: oekonomi ved regenerering av 2-3 items med variantstimulus"
     }
   ],
   "holds": [
@@ -137,15 +225,48 @@
   "puzzle_99_fiks": "harness-miljoe, ikke pool",
   "pins": [
     {
-      "pin": "stimulus-uniqueness i evne_pool (10 t1 + 5 t2 grupper)",
+      "pin": "stimulus-uniqueness i evne_pool (10 t1 + 5 t2 grupper identisk stimulus; b-tildeling varierer mellom stimulus-identiske t2-items inntil 1.7)",
       "hvor": "FASE 4 normering / pool-design-revisjon",
-      "hvorfor": "IRT-baaring krever enten stimulus-uniqueness eller dokumentert multi-stimulus-haandtering; b-spreng paa 1.7 mellom stimulus-identiske t2-items er den stoerte risikoen"
+      "hvorfor": "IRT-baaring krever stimulus-uniqueness eller dokumentert fler-stimulus-haandtering; parvis responsdata paa identiske b-forskjellige items gir idiosynkratisk kalibrering"
     },
     {
-      "pin": "mx-0016 b=-1.15 vs egen -1.55-konvensjon",
+      "pin": "mx-0016 vs mx-0010: identiske items (violations-orden identisk, korrekt lik) men b -1.15 vs -1.55",
       "hvor": "FASE 4 normering",
-      "hvorfor": "moet mot L-band malen; eneste violations-identiske par"
+      "hvorfor": "identiske items boere dele b til empirisk re-kalibrering finner sted; pool-design-defekt-klassen, ikke oversettelse"
     }
   ],
-  "avslutning": "Utkast-verdikt for fase3-evne. 3 klasse-i-rettinger anvendt (t5 17x, t4 1x + 1x) + generatorene + batch2-meta synkronisert for regenerability. 5 mistanker avkreftet med bevis. Regressjonsbrettet fullt groennt etter 3 miljoe-fikser i harness-laget (nd/puzzle/normering/hreflang) ? ingen av dem pool-feil, alle pre-eksisterende Windows-miljoe-gaps i samme klasse som #3737 herdet."
+  "avslutning": "Utkast-verdikt for fase3-evne. 3 klasse-i-rettinger anvendt (t5 17x, t4 1x + 1x) + generatorene + batch2-meta synkronisert for regenerability. 5 mistanker avkreftet med bevis. Regressjonsbrettet fullt groennt etter 3 miljoe-fikser i harness-laget (nd/puzzle/normering/hreflang) ? ingen av dem pool-feil, alle pre-eksisterende Windows-miljoe-gaps i samme klasse som #3737 herdet.",
+  "uttalelserExtra": {
+    "mx-0016_b": "UTKAST-verdikt krevde korreksjon: tidligere paastand 'k0=3 -> -1.55-konvensjon' trekkes ? full tabell viser fri b-tildeling; klagepunktet er reformulert til stimulus-identitet + b-tildeling"
+  },
+  "summary": {
+    "rettelser": 5,
+    "klasse_i": 3,
+    "klasse_ii": 0,
+    "klasse_iii": 2,
+    "holds": 3,
+    "avkreftet": 5,
+    "pins": 2
+  },
+  "kritikkB": {
+    "metode": "anonym critiker-ramme med egen mekanisk skann (calque-former, nordiske varianter, registerbrudd) over post-A-korpus + full dossier-lesing",
+    "bekreftelser": [
+      "alle 5 avkreftinger X1-X5 bekreftet",
+      "poolDesignSpor-korreksjonen (k0->b-konvensjon finnes ikke; tabellen viser fri b-tildeling) bekreftet",
+      "miljoe-fiks-klassifiseringen (nd/puzzle/normering/hreflang Windows-gaps, ikke pool-defekter) bekreftet"
+    ],
+    "tillegg": [
+      "R4 calque-malen i t3 NEG (12x) — A-familien hadde skannet feil-/svenskformer og dobbeltbestemt form, men ikke calque-strukturen",
+      "R5 ferje-varianten i vr-0028 (3x med meta) — skjult fordi skannmoensteret brukte 'ferjeferden' lowercase og A-familiens JSON-scan ikke flagget caps-formen i labels"
+    ],
+    "innvendinger": "ingen — A-familiens t3-parallell-original-konklusjon (vr-0007/0041/0045/0046) stoer mot spec.languagePlan og bekreftes"
+  },
+  "syntese": {
+    "verdict": "FASE 3 evne NO-oversettelse GODKJENT efter 5 rettelser (3 klasse-i, 2 klasse-iii); alle anvendt i def + generator + meta for regenerability; full regresjon groenn etter hver endring",
+    "omfang": "230 items; EN-side uendret (frosset); t3 parallelle originaler er designtilstand per spec",
+    "restanser": [
+      "FASE 4 normering: stimulus-uniqueness-pin (10 t1 + 5 t2 grupper) og mx-0016/mx-0010 b-divergens-pin skal behandles med parvis responsdata (#3724-kjeden)"
+    ],
+    "gjenstaende": "ingen oversettelses-arbeid gjenstaar i evne-poolen; t6 (formell deduksjon) er ikke bygget (aapent per FASE 2-spec, ikke FASE 3-mandat)"
+  }
 }

@@ -1468,7 +1468,7 @@
       "subtype": "leksikalsk",
       "lang": "both-authored-separately",
       "constructEquivalence": "NO[leksikalsk] == EN[leksikalsk] samme band+subtype per indeks",
-      "correct_no": "Ferjeferden legges om til den lange ruta nå.",
+      "correct_no": "Fergeferden legges om til den lange ruta nå.",
       "correct_en": "The ferry is being rerouted to the long crossing now.",
       "correctIndex": 0,
       "tagsNo": [
@@ -1484,8 +1484,8 @@
         "unsupported-condition"
       ],
       "optionOrder_no": [
-        "Ferjeferden går den korte ruta nå.",
-        "Ferjeferden legges om til den lange ruta nå.",
+        "Fergeferden går den korte ruta nå.",
+        "Fergeferden legges om til den lange ruta nå.",
         "Vindmåleren er ødelagt.",
         "Ferga ligger i dokk i dag.",
         "Den lange ruta brukes bare om sommeren."

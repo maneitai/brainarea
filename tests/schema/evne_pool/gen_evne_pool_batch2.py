@@ -36,12 +36,12 @@ def bval(band, i_in_band):
 #       tags (4 distraktor-koder; oddone: faste 'set-member').
 T3_NO = [
  # ---- L: 6 odd-one-out
- {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: eple, banan, pære, gulrot, drue?','opts':['eple','banan','pære','gulrot','drue'],'odd':3},
- {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: rød, grønn, blå, rund, gul?','opts':['rød','grønn','blå','rund','gul'],'odd':3},
- {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: bok, avis, blad, brev, stein?','opts':['bok','avis','blad','brev','stein'],'odd':4},
- {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: fiolin, cello, trombone, bratsj, kontrabass?','opts':['fiolin','cello','trombone','bratsj','kontrabass'],'odd':2},
- {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: hund, katt, hest, kanin, ørn?','opts':['hund','katt','hest','kanin','ørn'],'odd':4},
- {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: hammer, sag, skrutrekker, boremaskin, spiker?','opts':['hammer','sag','skrutrekker','boremaskin','spiker'],'odd':4},
+ {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: eple, banan, pære, gulrot, drue?','opts':['eple','banan','pære','gulrot','drue'],'odd':3},
+ {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: rød, grønn, blå, rund, gul?','opts':['rød','grønn','blå','rund','gul'],'odd':3},
+ {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: bok, avis, blad, brev, stein?','opts':['bok','avis','blad','brev','stein'],'odd':4},
+ {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: fiolin, cello, trombone, bratsj, kontrabass?','opts':['fiolin','cello','trombone','bratsj','kontrabass'],'odd':2},
+ {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: hund, katt, hest, kanin, ørn?','opts':['hund','katt','hest','kanin','ørn'],'odd':4},
+ {'band':'L','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: hammer, sag, skrutrekker, boremaskin, spiker?','opts':['hammer','sag','skrutrekker','boremaskin','spiker'],'odd':4},
  # ---- L: 6 analogi
  {'band':'L','sub':'analogi','q':'Fullfør analogien: hånd : hanske :: hode : ?','opts':['lue','sko','belte','skjerf','briller'],'tags':['cat','part-whole','assoc','assoc','part-whole']},
  {'band':'L','sub':'analogi','q':'Fullfør analogien: valp : hund :: kattunge : ?','opts':['katt','ulv','løve','mus','geit'],'tags':['cat','cat','assoc','cat','cat']},
@@ -70,14 +70,14 @@ T3_NO_M = [
  {'band':'M','sub':'leksikalsk','q':'Hver onsdag klokken åtte samles koret i menighetshuset. I dag er onsdag klokken åtte. Hva følger?','opts':['Koret samles i menighetshuset nå.','Koret øver hver kveld.','Menighetshuset er stengt.','Koret samler seg klokken ni.','I dag er søndag.'],'tags':['over-strong','invent','time-shift','day-shift']},
  {'band':'M','sub':'leksikalsk','q':'Espen er høyere enn Vera. Vera er høyere enn Nils. Hva følger?','opts':['Espen er høyere enn Nils.','Nils er høyere enn Espen.','Vera er den høyeste.','Nils og Espen er like høy.','Vera er den korteste.'],'tags':['reversed','rank-flip','parity-invent','rank-flip']},
  {'band':'M','sub':'leksikalsk','q':'Kari deltar ikke i maratonløpet. Alle som deltar i maratonløpet trener fem ganger i uken. Hva følger om Karis trening?','opts':['Det lar seg ikke fastslå fra teksten.','Kari trener fem ganger i uken.','Kari trener aldri.','Ingen deltakere trener fem ganger i uken.','Kari løper maraton.'],'tags':['premise-misread','over-strong','scope-flip','premise-misread']},
- {'band':'M','sub':'leksikalsk','q':'Hver gang det blåser fra nordvest, legges ferjeferden om til den lange ruta. Vindmåleren på kaia viser nordvestvind nå. Hva følger?','opts':['Ferjeferden legges om til den lange ruta nå.','Ferjeferden går den korte ruta nå.','Vindmåleren er ødelagt.','Ferga ligger i dokk i dag.','Den lange ruta brukes bare om sommeren.'],'tags':['negation-flip','instrument-break','invent','unsupported-condition']},
+ {'band':'M','sub':'leksikalsk','q':'Hver gang det blåser fra nordvest, legges fergeferden om til den lange ruta. Vindmåleren på kaia viser nordvestvind nå. Hva følger?','opts':['Fergeferden legges om til den lange ruta nå.','Fergeferden går den korte ruta nå.','Vindmåleren er ødelagt.','Ferga ligger i dokk i dag.','Den lange ruta brukes bare om sommeren.'],'tags':['negation-flip','instrument-break','invent','unsupported-condition']},
  # ---- M: 6 odd-one-out
- {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: fiolin, bratsj, cello, harpe, kontrabass?','opts':['fiolin','bratsj','cello','harpe','kontrabass'],'odd':3},
- {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: syre, base, salt, metall, oksid?','opts':['syre','base','salt','metall','oksid'],'odd':3},
- {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: regn, snø, sludd, hagl, skodde?','opts':['regn','snø','sludd','hagl','skodde'],'odd':4},
- {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: murer, tømrer, rørlegger, elektriker, arkitekt?','opts':['murer','tømrer','rørlegger','elektriker','arkitekt'],'odd':4},
- {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: løve, tiger, gepard, jaguar, ulv?','opts':['løve','tiger','gepard','jaguar','ulv'],'odd':4},
- {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke hjemme med de andre: termometer, barometer, kilometer, hygrometer, hastighetsmåler?','opts':['termometer','barometer','kilometer','hygrometer','hastighetsmåler'],'odd':2},
+ {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: fiolin, bratsj, cello, harpe, kontrabass?','opts':['fiolin','bratsj','cello','harpe','kontrabass'],'odd':3},
+ {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: syre, base, salt, metall, oksid?','opts':['syre','base','salt','metall','oksid'],'odd':3},
+ {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: regn, snø, sludd, hagl, skodde?','opts':['regn','snø','sludd','hagl','skodde'],'odd':4},
+ {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: murer, tømrer, rørlegger, elektriker, arkitekt?','opts':['murer','tømrer','rørlegger','elektriker','arkitekt'],'odd':4},
+ {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: løve, tiger, gepard, jaguar, ulv?','opts':['løve','tiger','gepard','jaguar','ulv'],'odd':4},
+ {'band':'M','sub':'oddone','q':'Hvilket ord hører ikke sammen med de andre: termometer, barometer, kilometer, hygrometer, hastighetsmåler?','opts':['termometer','barometer','kilometer','hygrometer','hastighetsmåler'],'odd':2},
 ]
 
 T3_NO_H = [

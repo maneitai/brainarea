@@ -32,7 +32,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: eple, banan, pære, gulrot, drue?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: eple, banan, pære, gulrot, drue?",
           "options": [
             {
               "label": "eple"
@@ -67,7 +67,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: rød, grønn, blå, rund, gul?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: rød, grønn, blå, rund, gul?",
           "options": [
             {
               "label": "rød"
@@ -102,7 +102,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: bok, avis, blad, brev, stein?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: bok, avis, blad, brev, stein?",
           "options": [
             {
               "label": "stein"
@@ -137,7 +137,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: fiolin, cello, trombone, bratsj, kontrabass?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: fiolin, cello, trombone, bratsj, kontrabass?",
           "options": [
             {
               "label": "fiolin"
@@ -172,7 +172,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: hund, katt, hest, kanin, ørn?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: hund, katt, hest, kanin, ørn?",
           "options": [
             {
               "label": "hund"
@@ -207,7 +207,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: hammer, sag, skrutrekker, boremaskin, spiker?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: hammer, sag, skrutrekker, boremaskin, spiker?",
           "options": [
             {
               "label": "hammer"
@@ -977,13 +977,13 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hver gang det blåser fra nordvest, legges ferjeferden om til den lange ruta. Vindmåleren på kaia viser nordvestvind nå. Hva følger?",
+          "prompt": "Hver gang det blåser fra nordvest, legges fergeferden om til den lange ruta. Vindmåleren på kaia viser nordvestvind nå. Hva følger?",
           "options": [
             {
-              "label": "Ferjeferden går den korte ruta nå."
+              "label": "Fergeferden går den korte ruta nå."
             },
             {
-              "label": "Ferjeferden legges om til den lange ruta nå."
+              "label": "Fergeferden legges om til den lange ruta nå."
             },
             {
               "label": "Vindmåleren er ødelagt."
@@ -1012,7 +1012,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: fiolin, bratsj, cello, harpe, kontrabass?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: fiolin, bratsj, cello, harpe, kontrabass?",
           "options": [
             {
               "label": "fiolin"
@@ -1047,7 +1047,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: syre, base, salt, metall, oksid?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: syre, base, salt, metall, oksid?",
           "options": [
             {
               "label": "syre"
@@ -1082,7 +1082,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: regn, snø, sludd, hagl, skodde?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: regn, snø, sludd, hagl, skodde?",
           "options": [
             {
               "label": "regn"
@@ -1117,7 +1117,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: murer, tømrer, rørlegger, elektriker, arkitekt?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: murer, tømrer, rørlegger, elektriker, arkitekt?",
           "options": [
             {
               "label": "murer"
@@ -1152,7 +1152,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: løve, tiger, gepard, jaguar, ulv?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: løve, tiger, gepard, jaguar, ulv?",
           "options": [
             {
               "label": "ulv"
@@ -1187,7 +1187,7 @@
       "variants": [
         {
           "lang": "no",
-          "prompt": "Hvilket ord hører ikke hjemme med de andre: termometer, barometer, kilometer, hygrometer, hastighetsmåler?",
+          "prompt": "Hvilket ord hører ikke sammen med de andre: termometer, barometer, kilometer, hygrometer, hastighetsmåler?",
           "options": [
             {
               "label": "termometer"

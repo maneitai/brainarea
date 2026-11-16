@@ -61,3 +61,52 @@ estimat 75, rel-verify 25 — ikke antatt.
 - NAOB persentil/proentil/skår (hentet 2026-11-16 — substrat-kilder og web_fetch).
 - tests/schema/_rel_itemspec_spec.json (dim-vokabular-lock, engineMapping, defFilePlan).
 - tests/schema/_fase3_rel_no_verdict.json (rel-oversettelses-QC-verdikt, F4 speil-sync).
+## VERIFISER (søster-leaf #3785-konvensjon, run TR-379C6007F82B)
+
+Uavhengig tredjepartslesbarhets-verifikasjon av leveransen over — egen vinkel, ikke
+repetisjon av C-kjeden. Harness: tests/schema/_fase3_rel_resulttext_3rdparty_verify.mjs.
+
+### Metode (4 prover)
+
+- **V3 — fallback-lagen begge veier:** renderer viser rå dim-id når config-etiketter
+  mangler (renderer.mjs:120-121 fallback verbatim), og 4/4 rel-etiketter byte-eksakt
+  når de finnes. F1-diagnosen dermed bevist i begge retninger, ikke bare antatt.
+- **V1 — ekstremprofiler gjennom ekte scoringpath:** uniform pos=1/neg=5 (alle motsvar)
+  og pos=5/neg=1 (alle maks): +-+- per dimensjon gir 0/100 per skala og kompositt 0/100
+  (null-normaliserte ekstremer). 12 renders (3 rammer × no/en × 2 ekstremer): alle uten
+  kast, 0 rå id, 4/4 etiketter, midtpunktstreken uforandret.
+- **V4 — forbudsord-skann med negasjonsvindu:** plain-tekst skann over 12 renders —
+  'prosentil' 0 treff; iq/intelligens/mensa/diagnos/personlighetsforstyrrelse/klinisk
+  evaluert kun i negert kontekst («ikke et intelligensmål», «ikke diagnostiske», osv.).
+- **V2 — ærlighetsprøven:** out/ har relasjoner + evne + persona, ingen triage-flate;
+  enumerasjonen '(personlighet, relasjoner, triage)' er klarering av rapporttypespekteret
+  (renderer-kontrakt), ikke en lovnad om at tre tester er offentlige i dag. Dokumentert
+  som kildesannhet med existsSync-anker; flipper til bevis når triage-ruten kommer.
+
+### Resultat
+
+- Egen harness: **214 PASS / 0 FAIL** (Node v22.22.1, 2026-11-16).
+- Bygg-leafens harness re-kjørt urørt: 88 PASS / 0 FAIL.
+- Søster-tvilling evner: _fase3_estimat_verify.mjs 76 PASS / 0 FAIL.
+- Regresjon i økten: report 74/74, i18n 22/22; SSG-rebuild byte-identisk (md5 ×19 filer);
+  git-status additiv (kun verifier-harness + denne verdict-filen ny).
+
+### Avkreftet (2)
+
+1. «Renderer kan fabrikere profiltekst ved skalaens endepunkter» — avkreftet: 12/12
+   ekstrem-renders gir ingen tolkning, ingen kvantifiserings-påstand, ingen
+   profilnavn/band-navn.
+2. «Forbudsskann finner påstående bruk av diagnose/intelligens-ord» — avkreftet: alle
+   forekomster ligger i negert kontekst i alle 6 ramme/språk-kombinasjoner.
+
+### Verdict
+
+**TREDJEPARTSLESBARHET-VERDIKT: PASS** for relasjons-resultattekster: etikett-lag,
+ekstremprofil-toleranse, persentil-form og forbudsord-klassen rene. Én ny pin:
+
+- **Triage-flate-pin:** når triage-ruten lanseres må enumerasjonen + V2-ankeret
+  åpnes (dokumentert-gap → bevis). Inntil da lover tekstlaget ikke mer enn UI-et viser,
+  fordi teksten beskriver rapporttyper, ikke tester — les full begrunnelse i
+  _fase3_rel_resulttext_3rdparty_verdict.json (GJELDENDE).
+
+Full regnskap og ekte bevis-kontekster i _fase3_rel_resulttext_3rdparty_verdict.json.

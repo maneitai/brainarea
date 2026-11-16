@@ -1,0 +1,52 @@
+{
+  "doc": "_fase3_rel_resulttext_3rdparty_verdict (søster-verdict til _fase3_rel_resulttext_verdict.json, bygg-leafen)",
+  "status": "GJELDENDE",
+  "date": "2026-11-16",
+  "steg": "[VERIFISER FASE 3] Resultattekst relasjoner — tredjepartslesbarhet, egen familie (søster-leaf #3785-konvensjon parallelt med #3783-verifikatoren, run TR-379C6007F82B, iterasjon 1)",
+  "posisjon-i-kjeden": "Bygg-leafen (TR-FAE96A45F277, A/B/C-kjede in-context) leverte etikett-lag + terminologi + enumerasjon med 88-sjekk-harness og GJELDENDE-verdikt. Dette er den uavhengige VERIFISER-leafen: egen vinkel mot EKTE scoringpath og EKSTREME profiler, ikke kopi av bygg-leafens kontroller — mønsteret til _fase3_estimat_verify.mjs s.o.m. evne-tvillingen.",
+  "harness": "tests/schema/_fase3_rel_resulttext_3rdparty_verify.mjs — 214 checks / 214 PASS / 0 FAIL (2026-11-16, Node v22.22.1):",
+  "checks": {
+    "V3_fallback-lagen": "config UTEN dimensions.labels => renderer viser raat dim-id (renderer.mjs:120-121 fallback dokumentert); config MED labels => 4/4 rel-etiketter byte-eksakt. Beviser bygg-leafens F1-diagnose i begge retninger: uten etikett-laget ville rel-resultater ha vist 'closeness' osv. i grafen.",
+    "V1_ekstremprofiler": "uniform pos=1/neg=5 (alle motsvar) og pos=5/neg=1 (alle maks) gjennom EKTE scoreTest: +-+- per dim gir 0/100 per skala og kompositt 0/100 (null-normaliserte ekstremer, spenn-isomorfi). 12 renders (3 rammer x no/en x 2 ekstremer) ALLE rendrer uten kast, 0 raat id, 4/4 etiketter, midtpunktstreken uroet.",
+    "V4_forbud-skann": "plain-tekst skann over 12 renders med negasjonsvindu (60 tegn / <=4 ord): 'prosentil' 0 treff; iq/intelligens/mensa/diagnos/personlighetsforstyrrelse/klinisk evaluert KUN i negert kontekst ('ikke et intelligensmaal', 'ikke en helhetsvurdering av intelligens', 'ikke diagnostiske', 'ikke en diagnose', 'ikke en klinisk vurdering' — kontekstene hankrefet mot configs).",
+    "V2_aerlighetsproven": "enumerasjonen '(personlighet, relasjoner, triage)' er avklaring av rapporttypespekteret (renderer stoeetter trait + evnerester), ikke lovnad om at tre offentlige tester finnes i dag: out har relasjoner + evne + persona, INGEN triage-flate (triage er bygget som pool #3828, offentlig flate naar rute-kjeden leverer). Dokumentert som kildesannhet med existsSync-anker — hvis triage-flaten kommer, maa V2-kommentaren oppdateres (assert fanget i harness)."
+  },
+  "metode-notater": [
+    "Ekstremprofilen krever pos/neg atskilt svar: uniform 1 eller 5 paa +-+- skala gir 50 (tegnene kansellerer) — foerste kjoering viste dette; harnessen setter value per sign. Sjekken er derfor en reell grense-prov, ikke en tom-formell.",
+    "Forbudsskann kjoeerer paa markup-strippet plain-tekst, ikke raat HTML ('ikke et <strong>intelligensmaal</strong>' ville ellers bomme paa negasjonen)."
+  ],
+  "funn-egen-vinkel": [],
+  "avkreftet": [
+    "Hypotese 'renderer kan fabrikere profiltekst ved skalaens endepunkter (0/100)' AVKREFTET: 12/12 ekstrem-renders gir ingen tolkning, ingen kvantifikasjons-pastand, ingen band/navn — bare faerdigdes og midtpunkts-geometri.",
+    "Hypotese 'forbudsskann vil finne pastaaende bruk av diagnose/intelligens-ord' AVKREFTET: alle forekomster ligger i negert kontekst i alle 6 frame/lang-kombinasjoner (bade ved uniform midt og ekstremer)."
+  ],
+  "holds": [
+    "Same 2 holds som bygg-leafens verdikt: item-laget finnes ikke ennå (pool #3822-#3825); 'prosentiler' i scoring.js dev-notes beholdt (aldri rendret).",
+    "V2-kildesannheten: 'triage' i enumerasjonen peker mot et spor uten offentlig flate i dag. Ikke et avvik i dette steget (renderer stoeetter typen), men teksten lover mer enn UI-et viser inntil triage-ruten finnes — dokumentert heller enn fixet her, utenfor mandat (tekstlaget er bygg-leafens leveranse rørt kun av den)."
+  ],
+  "pins-videreforet-eller-nye": [
+    "PIN (ny, smaal): triage-ruten naar den lanseres => aapne '(personlighet, relasjoner, triage)'-enumerasjonen og V2-ankeret (out/triage existsSync-assert) — maa flippes fra dokumentert-gap til bevis.",
+    "PIN (viderefert fra bygg-leafen): normerings-binding FASE 4/GAP-1 — persentil-avvisningene maa re-leses ved norms=published.",
+    "PIN (viderefert): _fase3_rel_resulttext_verify.mjs (88) + denne (214) gjenbrukes ved #3822-#3825-verifisering."
+  ],
+  "regresjon-live-i-oekt": {
+    "egen_harness": "214 PASS / 0 FAIL",
+    "bygg-leafens_harness": "_fase3_rel_resulttext_verify.mjs 88 PASS / 0 FAIL (re-kjoeert uroet)",
+    "evne-tvilling": "_fase3_estimat_verify.mjs 76 PASS / 0 FAIL (levd 70 i bygg-leafen; 76 nå etter #3783-retteslene)",
+    "report_selftest": "74 PASS / 0 FAIL",
+    "i18n_selftest": "22/22 PASS",
+    "ssg": "node app/build.js => out/ byte-identisk (md5 before/after i 19 filer) — config-filer er ikke kilde for out/; leveransen er additiv (1 ny fil + 1 rapport-utvidelse, git-status beviser: kun ?? på egen fil)."
+  },
+  "verdikt": {
+    "etikett-lag": "OK — 4/4 rel-dims byte-laast i begge retninger (med/uten config-labels) mot FASE 1-locked vokabular.",
+    "ekstrem-toleranse": "OK — rapporten tolker ikke, lovgjør ikke, fabriserer ikke ved 0/100; midtpunktstreken oppfoeres konsistent.",
+    "terminologi": "OK — persentil-form uniform i rendret lag; 'prosentil' 0 treff over 12 renders.",
+    "aerlighet": "OK med dokumentert kildesannhet — enumerasjonen beskriver rapporttyper (renderers kontrakt), ikke lanserte tester; V2-anker dokumenterer gapet inntil triage-flaten finnes.",
+    "SAMLET": "TREDJEPARTSLESBARHET-VERDIKT: PASS. Etikett-laget, ekstremprofilene og forbuds-orden-klassen er rene for relasjonssporet. Ingen prod-skriving fra verifieren utenom rapport-utvidelse."
+  },
+  "leveranse-eksplisitt": [
+    "tests/schema/_fase3_rel_resulttext_3rdparty_verify.mjs (214 checks)",
+    "tests/schema/_fase3_rel_resulttext_3rdparty_verdict.json (denne)",
+    "report/2026-11-16-fase3-resultattekst-relasjoner.md (utvidet med VERIFISER-del)"
+  ]
+}

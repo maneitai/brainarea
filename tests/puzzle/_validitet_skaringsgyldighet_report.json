@@ -1,0 +1,144 @@
+{
+ "script": "_validitet_skaringsgyldighet.mjs",
+ "runDate": "2026-11-16",
+ "scoringVersion": "1.0.0",
+ "playerVersion": "0.1.0",
+ "poolVersion": "puzzle-pool-v1",
+ "sim": {
+  "prng": "mulberry32 seed 20261116 (+ person-seed deriv), N=200 per nivaa, nivaaer [-2,-1,0,1,2]",
+  "armer": [
+   "as-is-selfconsistent-X-leser",
+   "san-regel-leser-moter-bygglet",
+   "fixed-instrument"
+  ]
+ },
+ "verdict": {
+  "s3SlotAvvikBekreftet": true,
+  "fixRetningVerifisert": true,
+  "note": "bygglet as-is belonner X p4-lesing paa s3 og straffer konsistent prompt-lesing; kontrafaktisk fix (fasit=pos7=Y p3) gjenoppretter theta-hjelp"
+ },
+ "results": [
+  {
+   "name": "V1 s1: eksakt-én fra prompten for alle 30",
+   "pass": true,
+   "detail": "{\"ok\":30,\"amb\":0,\"unsol\":0} "
+  },
+  {
+   "name": "V1 s2: eksakt-én fra prompten for alle 30",
+   "pass": true,
+   "detail": "{\"ok\":30,\"amb\":0,\"unsol\":0} "
+  },
+  {
+   "name": "V2 s3: KJENT AVVIK kvantifisert — fasit er IKKJE eksakt-én fra prompten (forventet: flertall tvetydige)",
+   "pass": true,
+   "detail": "{\"ok\":1,\"amb\":29,\"unsol\":0,\"fixed_ok\":30}"
+  },
+  {
+   "name": "V3 s3 kontrafaktisk: fix-fasiten (Y p3) er eksakt-én per item (strict paritet-leser)",
+   "pass": true,
+   "detail": "fix_ok=30 "
+  },
+  {
+   "name": "V1b kurve-etasjer: 4 av 16 (E3/E6/E10/E15) er s3-ambig per spilltest-funnet",
+   "pass": true,
+   "detail": "s3-ambig: pz-s3h01 → 6○|0○, pz-s3h02 → 5□|8□, pz-s3h04 → 5◇|4◇, pz-s3h05 → 6○|2○, pz-s3h06 → 5□|0□, pz-s3h07 → 6△|8△, pz-s3h08 → 5◇|6◇, pz-s3h09 → 6○|4○, pz-s3h10 → 5□|2□, pz-s3l01 → 8△|5○, pz-s3l02 → 3◇|8□, pz-s3l03 → 8○|1△, pz-s3l04 → 3□|4◇, pz-s3l05 → 8△|7○, pz-s3l06 → 3◇|0□, pz-s3l07 → 8○|3△, pz-s3l08 → 3□|6◇, pz-s3l09 → 8△|9○, pz-s3l10 → 3◇|2□, pz-s3m01 → 4□|0○, pz-s3m02 → 9△|3□, pz-s3m03 → 4◇|6△, pz-s3m04 → 9○|9◇, pz-s3m05 → 4□|2○, pz-s3m06 → 9△|5□, pz-s3m07 → 4◇|8△, pz-s3m08 → 9○|1◇, pz-s3m09 → 4□|4○, pz-s3m10 → 9△|7□"
+  },
+  {
+   "name": "V4 s1 distraktor-policy 1-rule-off: 3/3 per item (alle 30)",
+   "pass": true,
+   "detail": "{\"3\":30}"
+  },
+  {
+   "name": "V4 s2 distraktor-policy kvantifisert: d1/d2 1-rule-off, d3 begge-regler-av (meta-deklarasjon avvik per item)",
+   "pass": true,
+   "detail": "{\"2\":30}"
+  },
+  {
+   "name": "V4b s3: Y-fasit (fix) gaar 1-rule-off-siden i distraktorrommet — d3 er lesar-trell (alternativ lesing, ikke 1-rule-off) per design",
+   "pass": true,
+   "detail": "s3 oneOff per item: {\"2\":20,\"3\":10}"
+  },
+  {
+   "name": "V0 prompt-parse",
+   "pass": true,
+   "detail": "parsefeil: 0"
+  },
+  {
+   "name": "V5 fixed-instrument: theta-hat stigande i theta* (hjelp-rekonstruksjon)",
+   "pass": true,
+   "detail": "[[-2,\"-2.07\"],[-1,\"-1.05\"],[0,\"0.10\"],[1,\"1.00\"],[2,\"1.80\"]]"
+  },
+  {
+   "name": "V7 fixed-instrument: SE ved theta*=0 dokumentert",
+   "pass": true,
+   "detail": "SE=0.605 -> ci95 bredde +/- 1.18 i theta-metrikken"
+  },
+  {
+   "name": "V5-top fixed-instrument: theta*=2 gjenkjennes (theta-hat > 1.2)",
+   "pass": true,
+   "detail": "theta-hat(2)=1.80"
+  },
+  {
+   "name": "V5-straff: konsistent prompt-leser pa bygglet: count-tak ~12 (s3 faar aldri poeng)",
+   "pass": true,
+   "detail": "countMean(theta*=2)=11.1 (spilltest punktmaling: 12/16)"
+  },
+  {
+   "name": "V5-straff-top: theta-hat(konsistent leser, theta*=2) tydeleg lavere enn fixed",
+   "pass": true,
+   "detail": "fixed 1.80 vs straff 0.24"
+  },
+  {
+   "name": "V6a Rasch-tilstrekkeligheit: 8 riktige uavhengig av MoENSTER gir eksakt lik theta-hat (A=B=C)",
+   "pass": true,
+   "detail": "theta(A)=theta(B)=theta(C)=-0.7816 (dokumentert 1PL-eigenskap, ikkje bug)"
+  },
+  {
+   "name": "V6a2 15/16 uavhengig av kva item som feiler gir eksakt lik theta-hat (D=E)",
+   "pass": true,
+   "detail": "theta(D)=theta(E)=2.3559"
+  },
+  {
+   "name": "V6a3 theta-hat monoton i count: theta(8) < theta(15)",
+   "pass": true,
+   "detail": "theta(8)=-0.78 < theta(15)=2.36"
+  },
+  {
+   "name": "V6b lik count -> null theta-hat-variasjon gjennom ekte player-API (tilstrekkeligheit)",
+   "pass": true,
+   "detail": "[{\"count\":4,\"n\":6,\"sd\":0},{\"count\":6,\"n\":7,\"sd\":2.026980648162706e-16},{\"count\":7,\"n\":13,\"sd\":2.7940000073818173e-16},{\"count\":10,\"n\":6,\"sd\":1.7554167342883506e-17},{\"count\":11,\"n\":8,\"sd\":5.139333957141231e-17},{\"count\":13,\"n\":11,\"sd\":1.6467268631127714e-16}]"
+  },
+  {
+   "name": "V6c SE varierer over count (maalingsfeilen er reell og posisjonsavhengig)",
+   "pass": true,
+   "detail": "[[4,\"0.622\"],[6,\"0.572\"],[7,\"0.563\"],[10,\"0.575\"],[11,\"0.595\"],[13,\"0.686\"],[14,\"0.793\"],[15,\"1.059\"]]"
+  },
+  {
+   "name": "V6d theta-hat er eksakt funksjon av count (spread < 1e-8 per count) og monoton i count — deterministic mapping i 1PL",
+   "pass": true,
+   "detail": "spread-max=4.44e-16 mapping=1:-3.873 <=2:-3.067 <=3:-2.539 <=4:-2.119 <=5:-1.754 <=6:-1.417 <=7:-1.096 <=8:-0.782 <=9:-0.466 <=10:-0.142 <=11:0.199 <=12:0.571 <=13:1.000 <=14:1.538 <=15:2.356"
+  },
+  {
+   "name": "V5c corr(theta*, theta-hat-midler) > 0.9 (gruppe-nivaa rekonstruksjon)",
+   "pass": true,
+   "detail": "r=0.998"
+  },
+  {
+   "name": "V6e alle-riktig -> theta null (aeleg tak: raa-skyr + warning, ingen fabrikkert verdi)",
+   "pass": true,
+   "detail": "n count=16 (theta null): 0/100"
+  },
+  {
+   "name": "V8 første-respons-kontrakt: de 2 retry-etasjene scorer FEIL første-respons (14/16), retry-svaret aldri i payload",
+   "pass": true,
+   "detail": "count=14 theta=1.538 retried=pz-s2m01,pz-s3m01 first=sanne feilvalg"
+  },
+  {
+   "name": "V8b attempts i state, ikke payload",
+   "pass": true,
+   "detail": "retrySeen=2 attempts={\"pz-s2m01\":[0],\"pz-s3m01\":[0]}"
+  }
+ ],
+ "passed": 24,
+ "total": 24
+}

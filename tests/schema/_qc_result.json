@@ -1,0 +1,3852 @@
+{
+ "meta": {
+  "todo": "#3770",
+  "version": "1",
+  "date": "2026-11-16",
+  "seed": 20261116,
+  "simN": 300,
+  "engine": "tests/engine/attention.js v1.0.0 (EKTE modul, ingen re-implementering)",
+  "model": "sister-model _alpha_sim.py v3: graderingsmodell over samme λ/seed/grid/kutt",
+  "contract": "#3715 leser dette; puzzle-player melder _qc_result.json som opts-kilde",
+  "attentionConfig": "default flyt (ingen att-items, ingen item-tider) — flaggkilder: straightline run>=6, fast-session 0.5×Σgulv"
+ },
+ "pools": {
+  "persona-e-a": {
+   "def": "tests/schema/persona_pool/def-persona-pool-e-a.en.json",
+   "attentionProfiles": {
+    "config": {
+     "host_scale": "extraversion",
+     "attentionItems": [
+      {
+       "id": "e-0001",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "e-0002",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "e-0003",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "e-0004",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "e-0005",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "e-0006",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "e-0007",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "e-0008",
+       "accepted": [
+        5
+       ]
+      }
+     ],
+     "n_picked": 8,
+     "note": "dokumentert forhåndsvalg: +keyed items fra største skala, accepted=[5] (siste anker); IKKE kalibrert — FASE 4-kalibrering mangler data"
+    },
+    "profiles": [
+     {
+      "profile": "alt3_att5",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "e-0009",
+          "e-0010",
+          "e-0011",
+          "e-0012",
+          "e-0013",
+          "e-0014",
+          "e-0015",
+          "e-0016",
+          "e-0017",
+          "e-0018",
+          "e-0019",
+          "e-0020",
+          "e-0021",
+          "e-0022",
+          "e-0023",
+          "e-0024",
+          "e-0025",
+          "e-0026",
+          "e-0027",
+          "e-0028",
+          "e-0029",
+          "e-0030",
+          "e-0031",
+          "e-0032",
+          "e-0033",
+          "e-0034",
+          "e-0035",
+          "e-0036",
+          "e-0037",
+          "e-0038",
+          "e-0039",
+          "e-0040",
+          "e-0041",
+          "e-0042",
+          "e-0043",
+          "e-0044",
+          "e-0045",
+          "e-0046",
+          "e-0047",
+          "e-0048",
+          "e-0049",
+          "e-0050",
+          "a-0001",
+          "a-0002",
+          "a-0003",
+          "a-0004",
+          "a-0005",
+          "a-0006",
+          "a-0007",
+          "a-0008",
+          "a-0009",
+          "a-0010",
+          "a-0011",
+          "a-0012",
+          "a-0013",
+          "a-0014",
+          "a-0015",
+          "a-0016",
+          "a-0017",
+          "a-0018",
+          "a-0019",
+          "a-0020",
+          "a-0021",
+          "a-0022",
+          "a-0023",
+          "a-0024",
+          "a-0025",
+          "a-0026",
+          "a-0027",
+          "a-0028",
+          "a-0029",
+          "a-0030",
+          "a-0031",
+          "a-0032",
+          "a-0033",
+          "a-0034",
+          "a-0035",
+          "a-0036",
+          "a-0037",
+          "a-0038",
+          "a-0039",
+          "a-0040",
+          "a-0041",
+          "a-0042",
+          "a-0043",
+          "a-0044",
+          "a-0045",
+          "a-0046",
+          "a-0047",
+          "a-0048",
+          "a-0049",
+          "a-0050"
+         ],
+         "longstring": 92
+        }
+       ],
+       "metrics": {
+        "longstring": 92,
+        "sessionFlagged": false,
+        "perItemFast": null,
+        "attentionChecks": [
+         {
+          "id": "e-0001",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "e-0002",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "e-0003",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "e-0004",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "e-0005",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "e-0006",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "e-0007",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "e-0008",
+          "given": 5,
+          "ok": true
+         }
+        ],
+        "flagsFull": [
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 92
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "all1_incl_att",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "e-0001",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "e-0002",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "e-0003",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "e-0004",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "e-0005",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "e-0006",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "e-0007",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "e-0008",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "e-0001",
+          "e-0002",
+          "e-0003",
+          "e-0004",
+          "e-0005",
+          "e-0006",
+          "e-0007",
+          "e-0008",
+          "e-0009",
+          "e-0010",
+          "e-0011",
+          "e-0012",
+          "e-0013",
+          "e-0014",
+          "e-0015",
+          "e-0016",
+          "e-0017",
+          "e-0018",
+          "e-0019",
+          "e-0020",
+          "e-0021",
+          "e-0022",
+          "e-0023",
+          "e-0024",
+          "e-0025",
+          "e-0026",
+          "e-0027",
+          "e-0028",
+          "e-0029",
+          "e-0030",
+          "e-0031",
+          "e-0032",
+          "e-0033",
+          "e-0034",
+          "e-0035",
+          "e-0036",
+          "e-0037",
+          "e-0038",
+          "e-0039",
+          "e-0040",
+          "e-0041",
+          "e-0042",
+          "e-0043",
+          "e-0044",
+          "e-0045",
+          "e-0046",
+          "e-0047",
+          "e-0048",
+          "e-0049",
+          "e-0050",
+          "a-0001",
+          "a-0002",
+          "a-0003",
+          "a-0004",
+          "a-0005",
+          "a-0006",
+          "a-0007",
+          "a-0008",
+          "a-0009",
+          "a-0010",
+          "a-0011",
+          "a-0012",
+          "a-0013",
+          "a-0014",
+          "a-0015",
+          "a-0016",
+          "a-0017",
+          "a-0018",
+          "a-0019",
+          "a-0020",
+          "a-0021",
+          "a-0022",
+          "a-0023",
+          "a-0024",
+          "a-0025",
+          "a-0026",
+          "a-0027",
+          "a-0028",
+          "a-0029",
+          "a-0030",
+          "a-0031",
+          "a-0032",
+          "a-0033",
+          "a-0034",
+          "a-0035",
+          "a-0036",
+          "a-0037",
+          "a-0038",
+          "a-0039",
+          "a-0040",
+          "a-0041",
+          "a-0042",
+          "a-0043",
+          "a-0044",
+          "a-0045",
+          "a-0046",
+          "a-0047",
+          "a-0048",
+          "a-0049",
+          "a-0050"
+         ],
+         "longstring": 100
+        }
+       ],
+       "metrics": {
+        "longstring": 100,
+        "sessionFlagged": false,
+        "perItemFast": null,
+        "attentionChecks": [
+         {
+          "id": "e-0001",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "e-0002",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "e-0003",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "e-0004",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "e-0005",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "e-0006",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "e-0007",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "e-0008",
+          "given": 1,
+          "ok": false
+         }
+        ],
+        "flagsFull": [
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "e-0001",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "e-0002",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "e-0003",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "e-0004",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "e-0005",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "e-0006",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "e-0007",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "e-0008",
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 100
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "time-null",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "fast-session",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": null,
+         "longstring": 92
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "e-0009",
+          "e-0010",
+          "e-0011",
+          "e-0012",
+          "e-0013",
+          "e-0014",
+          "e-0015",
+          "e-0016",
+          "e-0017",
+          "e-0018",
+          "e-0019",
+          "e-0020",
+          "e-0021",
+          "e-0022",
+          "e-0023",
+          "e-0024",
+          "e-0025",
+          "e-0026",
+          "e-0027",
+          "e-0028",
+          "e-0029",
+          "e-0030",
+          "e-0031",
+          "e-0032",
+          "e-0033",
+          "e-0034",
+          "e-0035",
+          "e-0036",
+          "e-0037",
+          "e-0038",
+          "e-0039",
+          "e-0040",
+          "e-0041",
+          "e-0042",
+          "e-0043",
+          "e-0044",
+          "e-0045",
+          "e-0046",
+          "e-0047",
+          "e-0048",
+          "e-0049",
+          "e-0050",
+          "a-0001",
+          "a-0002",
+          "a-0003",
+          "a-0004",
+          "a-0005",
+          "a-0006",
+          "a-0007",
+          "a-0008",
+          "a-0009",
+          "a-0010",
+          "a-0011",
+          "a-0012",
+          "a-0013",
+          "a-0014",
+          "a-0015",
+          "a-0016",
+          "a-0017",
+          "a-0018",
+          "a-0019",
+          "a-0020",
+          "a-0021",
+          "a-0022",
+          "a-0023",
+          "a-0024",
+          "a-0025",
+          "a-0026",
+          "a-0027",
+          "a-0028",
+          "a-0029",
+          "a-0030",
+          "a-0031",
+          "a-0032",
+          "a-0033",
+          "a-0034",
+          "a-0035",
+          "a-0036",
+          "a-0037",
+          "a-0038",
+          "a-0039",
+          "a-0040",
+          "a-0041",
+          "a-0042",
+          "a-0043",
+          "a-0044",
+          "a-0045",
+          "a-0046",
+          "a-0047",
+          "a-0048",
+          "a-0049",
+          "a-0050"
+         ],
+         "longstring": 92
+        }
+       ],
+       "metrics": {
+        "longstring": 92,
+        "sessionFlagged": true,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "fast-session",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 92
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "time-omitted",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "e-0009",
+          "e-0010",
+          "e-0011",
+          "e-0012",
+          "e-0013",
+          "e-0014",
+          "e-0015",
+          "e-0016",
+          "e-0017",
+          "e-0018",
+          "e-0019",
+          "e-0020",
+          "e-0021",
+          "e-0022",
+          "e-0023",
+          "e-0024",
+          "e-0025",
+          "e-0026",
+          "e-0027",
+          "e-0028",
+          "e-0029",
+          "e-0030",
+          "e-0031",
+          "e-0032",
+          "e-0033",
+          "e-0034",
+          "e-0035",
+          "e-0036",
+          "e-0037",
+          "e-0038",
+          "e-0039",
+          "e-0040",
+          "e-0041",
+          "e-0042",
+          "e-0043",
+          "e-0044",
+          "e-0045",
+          "e-0046",
+          "e-0047",
+          "e-0048",
+          "e-0049",
+          "e-0050",
+          "a-0001",
+          "a-0002",
+          "a-0003",
+          "a-0004",
+          "a-0005",
+          "a-0006",
+          "a-0007",
+          "a-0008",
+          "a-0009",
+          "a-0010",
+          "a-0011",
+          "a-0012",
+          "a-0013",
+          "a-0014",
+          "a-0015",
+          "a-0016",
+          "a-0017",
+          "a-0018",
+          "a-0019",
+          "a-0020",
+          "a-0021",
+          "a-0022",
+          "a-0023",
+          "a-0024",
+          "a-0025",
+          "a-0026",
+          "a-0027",
+          "a-0028",
+          "a-0029",
+          "a-0030",
+          "a-0031",
+          "a-0032",
+          "a-0033",
+          "a-0034",
+          "a-0035",
+          "a-0036",
+          "a-0037",
+          "a-0038",
+          "a-0039",
+          "a-0040",
+          "a-0041",
+          "a-0042",
+          "a-0043",
+          "a-0044",
+          "a-0045",
+          "a-0046",
+          "a-0047",
+          "a-0048",
+          "a-0049",
+          "a-0050"
+         ],
+         "longstring": 92
+        }
+       ],
+       "metrics": {
+        "longstring": 92,
+        "sessionFlagged": null,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 92
+         }
+        ]
+       },
+       "notes": [
+        "note.time.unavailable"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "no-time",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "fast-session",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": null,
+         "longstring": 92
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "e-0009",
+          "e-0010",
+          "e-0011",
+          "e-0012",
+          "e-0013",
+          "e-0014",
+          "e-0015",
+          "e-0016",
+          "e-0017",
+          "e-0018",
+          "e-0019",
+          "e-0020",
+          "e-0021",
+          "e-0022",
+          "e-0023",
+          "e-0024",
+          "e-0025",
+          "e-0026",
+          "e-0027",
+          "e-0028",
+          "e-0029",
+          "e-0030",
+          "e-0031",
+          "e-0032",
+          "e-0033",
+          "e-0034",
+          "e-0035",
+          "e-0036",
+          "e-0037",
+          "e-0038",
+          "e-0039",
+          "e-0040",
+          "e-0041",
+          "e-0042",
+          "e-0043",
+          "e-0044",
+          "e-0045",
+          "e-0046",
+          "e-0047",
+          "e-0048",
+          "e-0049",
+          "e-0050",
+          "a-0001",
+          "a-0002",
+          "a-0003",
+          "a-0004",
+          "a-0005",
+          "a-0006",
+          "a-0007",
+          "a-0008",
+          "a-0009",
+          "a-0010",
+          "a-0011",
+          "a-0012",
+          "a-0013",
+          "a-0014",
+          "a-0015",
+          "a-0016",
+          "a-0017",
+          "a-0018",
+          "a-0019",
+          "a-0020",
+          "a-0021",
+          "a-0022",
+          "a-0023",
+          "a-0024",
+          "a-0025",
+          "a-0026",
+          "a-0027",
+          "a-0028",
+          "a-0029",
+          "a-0030",
+          "a-0031",
+          "a-0032",
+          "a-0033",
+          "a-0034",
+          "a-0035",
+          "a-0036",
+          "a-0037",
+          "a-0038",
+          "a-0039",
+          "a-0040",
+          "a-0041",
+          "a-0042",
+          "a-0043",
+          "a-0044",
+          "a-0045",
+          "a-0046",
+          "a-0047",
+          "a-0048",
+          "a-0049",
+          "a-0050"
+         ],
+         "longstring": 92
+        }
+       ],
+       "metrics": {
+        "longstring": 92,
+        "sessionFlagged": true,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "fast-session",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 92
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     }
+    ]
+   },
+   "sessionGate": {
+    "floorsSum": 200.0,
+    "gate": 100.0,
+    "kindMix": {
+     "likert": 100
+    },
+    "lese-konklusjon": "full besvarelse raskere enn gate-sekunder → fast-session flagg (sesjons-nivå, render v0.5.0 leverer kun timeSpentSec)"
+   },
+   "straightlining": {
+    "agreeableness": {
+     "k": 50,
+     "keying": "25+/25-",
+     "lam": 0.5812,
+     "flagRate": 0.04666666666666667,
+     "runMean": 3.513333333333333,
+     "runMax": 15,
+     "p99": 7
+    },
+    "extraversion": {
+     "k": 50,
+     "keying": "30+/20-",
+     "lam": 0.6566,
+     "flagRate": 0.14333333333333334,
+     "runMean": 4.06,
+     "runMax": 21,
+     "p99": 15
+    }
+   }
+  },
+  "persona-o-c": {
+   "def": "tests/schema/persona_pool/def-persona-pool-o-c.en.json",
+   "attentionProfiles": {
+    "config": {
+     "host_scale": "openness",
+     "attentionItems": [
+      {
+       "id": "o-0001",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "o-0003",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "o-0005",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "o-0006",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "o-0008",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "o-0010",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "o-0011",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "o-0013",
+       "accepted": [
+        5
+       ]
+      }
+     ],
+     "n_picked": 8,
+     "note": "dokumentert forhåndsvalg: +keyed items fra største skala, accepted=[5] (siste anker); IKKE kalibrert — FASE 4-kalibrering mangler data"
+    },
+    "profiles": [
+     {
+      "profile": "alt3_att5",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "o-0014",
+          "o-0015",
+          "o-0016",
+          "o-0017",
+          "o-0018",
+          "o-0019",
+          "o-0020",
+          "o-0021",
+          "o-0022",
+          "o-0023",
+          "o-0024",
+          "o-0025",
+          "o-0026",
+          "o-0027",
+          "o-0028",
+          "o-0029",
+          "o-0030",
+          "o-0031",
+          "o-0032",
+          "o-0033",
+          "o-0034",
+          "o-0035",
+          "o-0036",
+          "o-0037",
+          "o-0038",
+          "o-0039",
+          "o-0040",
+          "o-0041",
+          "o-0042",
+          "o-0043",
+          "o-0044",
+          "o-0045",
+          "o-0046",
+          "o-0047",
+          "o-0048",
+          "o-0049",
+          "o-0050",
+          "c-0001",
+          "c-0002",
+          "c-0003",
+          "c-0004",
+          "c-0005",
+          "c-0006",
+          "c-0007",
+          "c-0008",
+          "c-0009",
+          "c-0010",
+          "c-0011",
+          "c-0012",
+          "c-0013",
+          "c-0014",
+          "c-0015",
+          "c-0016",
+          "c-0017",
+          "c-0018",
+          "c-0019",
+          "c-0020",
+          "c-0021",
+          "c-0022",
+          "c-0023",
+          "c-0024",
+          "c-0025",
+          "c-0026",
+          "c-0027",
+          "c-0028",
+          "c-0029",
+          "c-0030",
+          "c-0031",
+          "c-0032",
+          "c-0033",
+          "c-0034",
+          "c-0035",
+          "c-0036",
+          "c-0037",
+          "c-0038",
+          "c-0039",
+          "c-0040",
+          "c-0041",
+          "c-0042",
+          "c-0043",
+          "c-0044",
+          "c-0045",
+          "c-0046",
+          "c-0047",
+          "c-0048",
+          "c-0049",
+          "c-0050"
+         ],
+         "longstring": 87
+        }
+       ],
+       "metrics": {
+        "longstring": 87,
+        "sessionFlagged": false,
+        "perItemFast": null,
+        "attentionChecks": [
+         {
+          "id": "o-0001",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "o-0003",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "o-0005",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "o-0006",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "o-0008",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "o-0010",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "o-0011",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "o-0013",
+          "given": 5,
+          "ok": true
+         }
+        ],
+        "flagsFull": [
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 87
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "all1_incl_att",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "o-0001",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "o-0003",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "o-0005",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "o-0006",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "o-0008",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "o-0010",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "o-0011",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "o-0013",
+         "itemIds": null,
+         "longstring": 100
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "o-0001",
+          "o-0002",
+          "o-0003",
+          "o-0004",
+          "o-0005",
+          "o-0006",
+          "o-0007",
+          "o-0008",
+          "o-0009",
+          "o-0010",
+          "o-0011",
+          "o-0012",
+          "o-0013",
+          "o-0014",
+          "o-0015",
+          "o-0016",
+          "o-0017",
+          "o-0018",
+          "o-0019",
+          "o-0020",
+          "o-0021",
+          "o-0022",
+          "o-0023",
+          "o-0024",
+          "o-0025",
+          "o-0026",
+          "o-0027",
+          "o-0028",
+          "o-0029",
+          "o-0030",
+          "o-0031",
+          "o-0032",
+          "o-0033",
+          "o-0034",
+          "o-0035",
+          "o-0036",
+          "o-0037",
+          "o-0038",
+          "o-0039",
+          "o-0040",
+          "o-0041",
+          "o-0042",
+          "o-0043",
+          "o-0044",
+          "o-0045",
+          "o-0046",
+          "o-0047",
+          "o-0048",
+          "o-0049",
+          "o-0050",
+          "c-0001",
+          "c-0002",
+          "c-0003",
+          "c-0004",
+          "c-0005",
+          "c-0006",
+          "c-0007",
+          "c-0008",
+          "c-0009",
+          "c-0010",
+          "c-0011",
+          "c-0012",
+          "c-0013",
+          "c-0014",
+          "c-0015",
+          "c-0016",
+          "c-0017",
+          "c-0018",
+          "c-0019",
+          "c-0020",
+          "c-0021",
+          "c-0022",
+          "c-0023",
+          "c-0024",
+          "c-0025",
+          "c-0026",
+          "c-0027",
+          "c-0028",
+          "c-0029",
+          "c-0030",
+          "c-0031",
+          "c-0032",
+          "c-0033",
+          "c-0034",
+          "c-0035",
+          "c-0036",
+          "c-0037",
+          "c-0038",
+          "c-0039",
+          "c-0040",
+          "c-0041",
+          "c-0042",
+          "c-0043",
+          "c-0044",
+          "c-0045",
+          "c-0046",
+          "c-0047",
+          "c-0048",
+          "c-0049",
+          "c-0050"
+         ],
+         "longstring": 100
+        }
+       ],
+       "metrics": {
+        "longstring": 100,
+        "sessionFlagged": false,
+        "perItemFast": null,
+        "attentionChecks": [
+         {
+          "id": "o-0001",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "o-0003",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "o-0005",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "o-0006",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "o-0008",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "o-0010",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "o-0011",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "o-0013",
+          "given": 1,
+          "ok": false
+         }
+        ],
+        "flagsFull": [
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "o-0001",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "o-0003",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "o-0005",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "o-0006",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "o-0008",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "o-0010",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "o-0011",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "o-0013",
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 100
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "time-null",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "fast-session",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": null,
+         "longstring": 87
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "o-0014",
+          "o-0015",
+          "o-0016",
+          "o-0017",
+          "o-0018",
+          "o-0019",
+          "o-0020",
+          "o-0021",
+          "o-0022",
+          "o-0023",
+          "o-0024",
+          "o-0025",
+          "o-0026",
+          "o-0027",
+          "o-0028",
+          "o-0029",
+          "o-0030",
+          "o-0031",
+          "o-0032",
+          "o-0033",
+          "o-0034",
+          "o-0035",
+          "o-0036",
+          "o-0037",
+          "o-0038",
+          "o-0039",
+          "o-0040",
+          "o-0041",
+          "o-0042",
+          "o-0043",
+          "o-0044",
+          "o-0045",
+          "o-0046",
+          "o-0047",
+          "o-0048",
+          "o-0049",
+          "o-0050",
+          "c-0001",
+          "c-0002",
+          "c-0003",
+          "c-0004",
+          "c-0005",
+          "c-0006",
+          "c-0007",
+          "c-0008",
+          "c-0009",
+          "c-0010",
+          "c-0011",
+          "c-0012",
+          "c-0013",
+          "c-0014",
+          "c-0015",
+          "c-0016",
+          "c-0017",
+          "c-0018",
+          "c-0019",
+          "c-0020",
+          "c-0021",
+          "c-0022",
+          "c-0023",
+          "c-0024",
+          "c-0025",
+          "c-0026",
+          "c-0027",
+          "c-0028",
+          "c-0029",
+          "c-0030",
+          "c-0031",
+          "c-0032",
+          "c-0033",
+          "c-0034",
+          "c-0035",
+          "c-0036",
+          "c-0037",
+          "c-0038",
+          "c-0039",
+          "c-0040",
+          "c-0041",
+          "c-0042",
+          "c-0043",
+          "c-0044",
+          "c-0045",
+          "c-0046",
+          "c-0047",
+          "c-0048",
+          "c-0049",
+          "c-0050"
+         ],
+         "longstring": 87
+        }
+       ],
+       "metrics": {
+        "longstring": 87,
+        "sessionFlagged": true,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "fast-session",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 87
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "time-omitted",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "o-0014",
+          "o-0015",
+          "o-0016",
+          "o-0017",
+          "o-0018",
+          "o-0019",
+          "o-0020",
+          "o-0021",
+          "o-0022",
+          "o-0023",
+          "o-0024",
+          "o-0025",
+          "o-0026",
+          "o-0027",
+          "o-0028",
+          "o-0029",
+          "o-0030",
+          "o-0031",
+          "o-0032",
+          "o-0033",
+          "o-0034",
+          "o-0035",
+          "o-0036",
+          "o-0037",
+          "o-0038",
+          "o-0039",
+          "o-0040",
+          "o-0041",
+          "o-0042",
+          "o-0043",
+          "o-0044",
+          "o-0045",
+          "o-0046",
+          "o-0047",
+          "o-0048",
+          "o-0049",
+          "o-0050",
+          "c-0001",
+          "c-0002",
+          "c-0003",
+          "c-0004",
+          "c-0005",
+          "c-0006",
+          "c-0007",
+          "c-0008",
+          "c-0009",
+          "c-0010",
+          "c-0011",
+          "c-0012",
+          "c-0013",
+          "c-0014",
+          "c-0015",
+          "c-0016",
+          "c-0017",
+          "c-0018",
+          "c-0019",
+          "c-0020",
+          "c-0021",
+          "c-0022",
+          "c-0023",
+          "c-0024",
+          "c-0025",
+          "c-0026",
+          "c-0027",
+          "c-0028",
+          "c-0029",
+          "c-0030",
+          "c-0031",
+          "c-0032",
+          "c-0033",
+          "c-0034",
+          "c-0035",
+          "c-0036",
+          "c-0037",
+          "c-0038",
+          "c-0039",
+          "c-0040",
+          "c-0041",
+          "c-0042",
+          "c-0043",
+          "c-0044",
+          "c-0045",
+          "c-0046",
+          "c-0047",
+          "c-0048",
+          "c-0049",
+          "c-0050"
+         ],
+         "longstring": 87
+        }
+       ],
+       "metrics": {
+        "longstring": 87,
+        "sessionFlagged": null,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 87
+         }
+        ]
+       },
+       "notes": [
+        "note.time.unavailable"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "no-time",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "fast-session",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": null,
+         "longstring": 87
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "o-0014",
+          "o-0015",
+          "o-0016",
+          "o-0017",
+          "o-0018",
+          "o-0019",
+          "o-0020",
+          "o-0021",
+          "o-0022",
+          "o-0023",
+          "o-0024",
+          "o-0025",
+          "o-0026",
+          "o-0027",
+          "o-0028",
+          "o-0029",
+          "o-0030",
+          "o-0031",
+          "o-0032",
+          "o-0033",
+          "o-0034",
+          "o-0035",
+          "o-0036",
+          "o-0037",
+          "o-0038",
+          "o-0039",
+          "o-0040",
+          "o-0041",
+          "o-0042",
+          "o-0043",
+          "o-0044",
+          "o-0045",
+          "o-0046",
+          "o-0047",
+          "o-0048",
+          "o-0049",
+          "o-0050",
+          "c-0001",
+          "c-0002",
+          "c-0003",
+          "c-0004",
+          "c-0005",
+          "c-0006",
+          "c-0007",
+          "c-0008",
+          "c-0009",
+          "c-0010",
+          "c-0011",
+          "c-0012",
+          "c-0013",
+          "c-0014",
+          "c-0015",
+          "c-0016",
+          "c-0017",
+          "c-0018",
+          "c-0019",
+          "c-0020",
+          "c-0021",
+          "c-0022",
+          "c-0023",
+          "c-0024",
+          "c-0025",
+          "c-0026",
+          "c-0027",
+          "c-0028",
+          "c-0029",
+          "c-0030",
+          "c-0031",
+          "c-0032",
+          "c-0033",
+          "c-0034",
+          "c-0035",
+          "c-0036",
+          "c-0037",
+          "c-0038",
+          "c-0039",
+          "c-0040",
+          "c-0041",
+          "c-0042",
+          "c-0043",
+          "c-0044",
+          "c-0045",
+          "c-0046",
+          "c-0047",
+          "c-0048",
+          "c-0049",
+          "c-0050"
+         ],
+         "longstring": 87
+        }
+       ],
+       "metrics": {
+        "longstring": 87,
+        "sessionFlagged": true,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "fast-session",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 87
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     }
+    ]
+   },
+   "sessionGate": {
+    "floorsSum": 200.0,
+    "gate": 100.0,
+    "kindMix": {
+     "likert": 100
+    },
+    "lese-konklusjon": "full besvarelse raskere enn gate-sekunder → fast-session flagg (sesjons-nivå, render v0.5.0 leverer kun timeSpentSec)"
+   },
+   "straightlining": {
+    "conscientiousness": {
+     "k": 50,
+     "keying": "30+/20-",
+     "lam": 0.5435,
+     "flagRate": 0.006666666666666667,
+     "runMean": 3.0766666666666667,
+     "runMax": 6,
+     "p99": 5
+    },
+    "openness": {
+     "k": 50,
+     "keying": "30+/20-",
+     "lam": 0.6092,
+     "flagRate": 0.03,
+     "runMean": 3.19,
+     "runMax": 7,
+     "p99": 6
+    }
+   }
+  },
+  "persona-n-rest": {
+   "def": "tests/schema/persona_pool/def-persona-pool-n-rest.en.json",
+   "attentionProfiles": {
+    "config": {
+     "host_scale": "neuroticism",
+     "attentionItems": [
+      {
+       "id": "n-0001",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "n-0003",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "n-0005",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "n-0006",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "n-0007",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "n-0008",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "n-0009",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "n-0010",
+       "accepted": [
+        5
+       ]
+      }
+     ],
+     "n_picked": 8,
+     "note": "dokumentert forhåndsvalg: +keyed items fra største skala, accepted=[5] (siste anker); IKKE kalibrert — FASE 4-kalibrering mangler data"
+    },
+    "profiles": [
+     {
+      "profile": "alt3_att5",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "n-0011",
+          "n-0012",
+          "n-0013",
+          "n-0014",
+          "n-0015",
+          "n-0016",
+          "n-0017",
+          "n-0018",
+          "n-0019",
+          "n-0020",
+          "n-0021",
+          "n-0022",
+          "n-0023",
+          "n-0024",
+          "n-0025",
+          "n-0026",
+          "n-0027",
+          "n-0028",
+          "n-0029",
+          "n-0030",
+          "n-0031",
+          "n-0032",
+          "n-0033",
+          "n-0034",
+          "n-0035",
+          "n-0036",
+          "n-0037",
+          "n-0038",
+          "n-0039",
+          "n-0040",
+          "n-0041",
+          "n-0042",
+          "n-0043",
+          "n-0044",
+          "n-0045",
+          "n-0046",
+          "n-0047",
+          "n-0048",
+          "n-0049",
+          "n-0050",
+          "n-0051",
+          "n-0052",
+          "n-0053",
+          "n-0054",
+          "n-0055",
+          "e-0001",
+          "e-0002",
+          "e-0003",
+          "e-0004",
+          "e-0005",
+          "a-0001",
+          "a-0002",
+          "a-0003",
+          "a-0004",
+          "a-0005",
+          "o-0001",
+          "o-0002",
+          "o-0003",
+          "o-0004",
+          "o-0005",
+          "c-0001",
+          "c-0002",
+          "c-0003",
+          "c-0004",
+          "c-0005"
+         ],
+         "longstring": 65
+        }
+       ],
+       "metrics": {
+        "longstring": 65,
+        "sessionFlagged": false,
+        "perItemFast": null,
+        "attentionChecks": [
+         {
+          "id": "n-0001",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "n-0003",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "n-0005",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "n-0006",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "n-0007",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "n-0008",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "n-0009",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "n-0010",
+          "given": 5,
+          "ok": true
+         }
+        ],
+        "flagsFull": [
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 65
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "all1_incl_att",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "n-0001",
+         "itemIds": null,
+         "longstring": 75
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "n-0003",
+         "itemIds": null,
+         "longstring": 75
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "n-0005",
+         "itemIds": null,
+         "longstring": 75
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "n-0006",
+         "itemIds": null,
+         "longstring": 75
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "n-0007",
+         "itemIds": null,
+         "longstring": 75
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "n-0008",
+         "itemIds": null,
+         "longstring": 75
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "n-0009",
+         "itemIds": null,
+         "longstring": 75
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "n-0010",
+         "itemIds": null,
+         "longstring": 75
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "n-0001",
+          "n-0002",
+          "n-0003",
+          "n-0004",
+          "n-0005",
+          "n-0006",
+          "n-0007",
+          "n-0008",
+          "n-0009",
+          "n-0010",
+          "n-0011",
+          "n-0012",
+          "n-0013",
+          "n-0014",
+          "n-0015",
+          "n-0016",
+          "n-0017",
+          "n-0018",
+          "n-0019",
+          "n-0020",
+          "n-0021",
+          "n-0022",
+          "n-0023",
+          "n-0024",
+          "n-0025",
+          "n-0026",
+          "n-0027",
+          "n-0028",
+          "n-0029",
+          "n-0030",
+          "n-0031",
+          "n-0032",
+          "n-0033",
+          "n-0034",
+          "n-0035",
+          "n-0036",
+          "n-0037",
+          "n-0038",
+          "n-0039",
+          "n-0040",
+          "n-0041",
+          "n-0042",
+          "n-0043",
+          "n-0044",
+          "n-0045",
+          "n-0046",
+          "n-0047",
+          "n-0048",
+          "n-0049",
+          "n-0050",
+          "n-0051",
+          "n-0052",
+          "n-0053",
+          "n-0054",
+          "n-0055",
+          "e-0001",
+          "e-0002",
+          "e-0003",
+          "e-0004",
+          "e-0005",
+          "a-0001",
+          "a-0002",
+          "a-0003",
+          "a-0004",
+          "a-0005",
+          "o-0001",
+          "o-0002",
+          "o-0003",
+          "o-0004",
+          "o-0005",
+          "c-0001",
+          "c-0002",
+          "c-0003",
+          "c-0004",
+          "c-0005"
+         ],
+         "longstring": 75
+        }
+       ],
+       "metrics": {
+        "longstring": 75,
+        "sessionFlagged": false,
+        "perItemFast": null,
+        "attentionChecks": [
+         {
+          "id": "n-0001",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "n-0003",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "n-0005",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "n-0006",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "n-0007",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "n-0008",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "n-0009",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "n-0010",
+          "given": 1,
+          "ok": false
+         }
+        ],
+        "flagsFull": [
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "n-0001",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "n-0003",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "n-0005",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "n-0006",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "n-0007",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "n-0008",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "n-0009",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "n-0010",
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 75
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "time-null",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "fast-session",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": null,
+         "longstring": 65
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "n-0011",
+          "n-0012",
+          "n-0013",
+          "n-0014",
+          "n-0015",
+          "n-0016",
+          "n-0017",
+          "n-0018",
+          "n-0019",
+          "n-0020",
+          "n-0021",
+          "n-0022",
+          "n-0023",
+          "n-0024",
+          "n-0025",
+          "n-0026",
+          "n-0027",
+          "n-0028",
+          "n-0029",
+          "n-0030",
+          "n-0031",
+          "n-0032",
+          "n-0033",
+          "n-0034",
+          "n-0035",
+          "n-0036",
+          "n-0037",
+          "n-0038",
+          "n-0039",
+          "n-0040",
+          "n-0041",
+          "n-0042",
+          "n-0043",
+          "n-0044",
+          "n-0045",
+          "n-0046",
+          "n-0047",
+          "n-0048",
+          "n-0049",
+          "n-0050",
+          "n-0051",
+          "n-0052",
+          "n-0053",
+          "n-0054",
+          "n-0055",
+          "e-0001",
+          "e-0002",
+          "e-0003",
+          "e-0004",
+          "e-0005",
+          "a-0001",
+          "a-0002",
+          "a-0003",
+          "a-0004",
+          "a-0005",
+          "o-0001",
+          "o-0002",
+          "o-0003",
+          "o-0004",
+          "o-0005",
+          "c-0001",
+          "c-0002",
+          "c-0003",
+          "c-0004",
+          "c-0005"
+         ],
+         "longstring": 65
+        }
+       ],
+       "metrics": {
+        "longstring": 65,
+        "sessionFlagged": true,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "fast-session",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 65
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "time-omitted",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "n-0011",
+          "n-0012",
+          "n-0013",
+          "n-0014",
+          "n-0015",
+          "n-0016",
+          "n-0017",
+          "n-0018",
+          "n-0019",
+          "n-0020",
+          "n-0021",
+          "n-0022",
+          "n-0023",
+          "n-0024",
+          "n-0025",
+          "n-0026",
+          "n-0027",
+          "n-0028",
+          "n-0029",
+          "n-0030",
+          "n-0031",
+          "n-0032",
+          "n-0033",
+          "n-0034",
+          "n-0035",
+          "n-0036",
+          "n-0037",
+          "n-0038",
+          "n-0039",
+          "n-0040",
+          "n-0041",
+          "n-0042",
+          "n-0043",
+          "n-0044",
+          "n-0045",
+          "n-0046",
+          "n-0047",
+          "n-0048",
+          "n-0049",
+          "n-0050",
+          "n-0051",
+          "n-0052",
+          "n-0053",
+          "n-0054",
+          "n-0055",
+          "e-0001",
+          "e-0002",
+          "e-0003",
+          "e-0004",
+          "e-0005",
+          "a-0001",
+          "a-0002",
+          "a-0003",
+          "a-0004",
+          "a-0005",
+          "o-0001",
+          "o-0002",
+          "o-0003",
+          "o-0004",
+          "o-0005",
+          "c-0001",
+          "c-0002",
+          "c-0003",
+          "c-0004",
+          "c-0005"
+         ],
+         "longstring": 65
+        }
+       ],
+       "metrics": {
+        "longstring": 65,
+        "sessionFlagged": null,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 65
+         }
+        ]
+       },
+       "notes": [
+        "note.time.unavailable"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "no-time",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "fast-session",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": null,
+         "longstring": 65
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "n-0011",
+          "n-0012",
+          "n-0013",
+          "n-0014",
+          "n-0015",
+          "n-0016",
+          "n-0017",
+          "n-0018",
+          "n-0019",
+          "n-0020",
+          "n-0021",
+          "n-0022",
+          "n-0023",
+          "n-0024",
+          "n-0025",
+          "n-0026",
+          "n-0027",
+          "n-0028",
+          "n-0029",
+          "n-0030",
+          "n-0031",
+          "n-0032",
+          "n-0033",
+          "n-0034",
+          "n-0035",
+          "n-0036",
+          "n-0037",
+          "n-0038",
+          "n-0039",
+          "n-0040",
+          "n-0041",
+          "n-0042",
+          "n-0043",
+          "n-0044",
+          "n-0045",
+          "n-0046",
+          "n-0047",
+          "n-0048",
+          "n-0049",
+          "n-0050",
+          "n-0051",
+          "n-0052",
+          "n-0053",
+          "n-0054",
+          "n-0055",
+          "e-0001",
+          "e-0002",
+          "e-0003",
+          "e-0004",
+          "e-0005",
+          "a-0001",
+          "a-0002",
+          "a-0003",
+          "a-0004",
+          "a-0005",
+          "o-0001",
+          "o-0002",
+          "o-0003",
+          "o-0004",
+          "o-0005",
+          "c-0001",
+          "c-0002",
+          "c-0003",
+          "c-0004",
+          "c-0005"
+         ],
+         "longstring": 65
+        }
+       ],
+       "metrics": {
+        "longstring": 65,
+        "sessionFlagged": true,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "fast-session",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 65
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     }
+    ]
+   },
+   "sessionGate": {
+    "floorsSum": 150.0,
+    "gate": 75.0,
+    "kindMix": {
+     "likert": 75
+    },
+    "lese-konklusjon": "full besvarelse raskere enn gate-sekunder → fast-session flagg (sesjons-nivå, render v0.5.0 leverer kun timeSpentSec)"
+   },
+   "straightlining": {
+    "agreeableness": {
+     "k": 5,
+     "keying": "3+/2-",
+     "lam": 0.5812,
+     "flagRate": 0.0,
+     "runMean": 1.7333333333333334,
+     "runMax": 4,
+     "p99": 3
+    },
+    "conscientiousness": {
+     "k": 5,
+     "keying": "3+/2-",
+     "lam": 0.5435,
+     "flagRate": 0.0,
+     "runMean": 1.76,
+     "runMax": 5,
+     "p99": 3
+    },
+    "extraversion": {
+     "k": 5,
+     "keying": "3+/2-",
+     "lam": 0.6566,
+     "flagRate": 0.0,
+     "runMean": 1.78,
+     "runMax": 5,
+     "p99": 4
+    },
+    "neuroticism": {
+     "k": 55,
+     "keying": "33+/22-",
+     "lam": 0.64,
+     "flagRate": 0.11,
+     "runMean": 3.8866666666666667,
+     "runMax": 24,
+     "p99": 12
+    },
+    "openness": {
+     "k": 5,
+     "keying": "3+/2-",
+     "lam": 0.6092,
+     "flagRate": 0.0,
+     "runMean": 1.7033333333333334,
+     "runMax": 4,
+     "p99": 4
+    }
+   }
+  },
+  "nd-triage": {
+   "def": "tests/schema/nd_pool/def-nd-triage-pool.en.json",
+   "attentionProfiles": {
+    "config": {
+     "host_scale": "adhd",
+     "attentionItems": [
+      {
+       "id": "ta-0001",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "ta-0002",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "ta-0003",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "ta-0004",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "ta-0005",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "ta-0006",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "ta-0007",
+       "accepted": [
+        5
+       ]
+      },
+      {
+       "id": "ta-0008",
+       "accepted": [
+        5
+       ]
+      }
+     ],
+     "n_picked": 8,
+     "note": "dokumentert forhåndsvalg: +keyed items fra største skala, accepted=[5] (siste anker); IKKE kalibrert — FASE 4-kalibrering mangler data"
+    },
+    "profiles": [
+     {
+      "profile": "alt3_att5",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "ta-0009",
+          "ta-0010",
+          "ta-0011",
+          "ta-0012",
+          "ta-0013",
+          "ta-0014",
+          "ta-0015",
+          "ta-0016",
+          "ta-0017",
+          "ta-0018",
+          "ta-0019",
+          "ta-0020",
+          "ts-0001",
+          "ts-0002",
+          "ts-0003",
+          "ts-0004",
+          "ts-0005",
+          "ts-0006",
+          "ts-0007",
+          "ts-0008",
+          "ts-0009",
+          "ts-0010",
+          "ts-0011",
+          "ts-0012",
+          "ts-0013",
+          "ts-0014",
+          "ts-0015",
+          "ts-0016",
+          "ts-0017",
+          "ts-0018",
+          "ts-0019",
+          "ts-0020"
+         ],
+         "longstring": 32
+        }
+       ],
+       "metrics": {
+        "longstring": 32,
+        "sessionFlagged": false,
+        "perItemFast": null,
+        "attentionChecks": [
+         {
+          "id": "ta-0001",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "ta-0002",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "ta-0003",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "ta-0004",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "ta-0005",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "ta-0006",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "ta-0007",
+          "given": 5,
+          "ok": true
+         },
+         {
+          "id": "ta-0008",
+          "given": 5,
+          "ok": true
+         }
+        ],
+        "flagsFull": [
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 32
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "all1_incl_att",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "ta-0001",
+         "itemIds": null,
+         "longstring": 40
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "ta-0002",
+         "itemIds": null,
+         "longstring": 40
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "ta-0003",
+         "itemIds": null,
+         "longstring": 40
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "ta-0004",
+         "itemIds": null,
+         "longstring": 40
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "ta-0005",
+         "itemIds": null,
+         "longstring": 40
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "ta-0006",
+         "itemIds": null,
+         "longstring": 40
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "ta-0007",
+         "itemIds": null,
+         "longstring": 40
+        },
+        {
+         "kind": "attention-failed",
+         "severity": "high",
+         "itemId": "ta-0008",
+         "itemIds": null,
+         "longstring": 40
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "ta-0001",
+          "ta-0002",
+          "ta-0003",
+          "ta-0004",
+          "ta-0005",
+          "ta-0006",
+          "ta-0007",
+          "ta-0008",
+          "ta-0009",
+          "ta-0010",
+          "ta-0011",
+          "ta-0012",
+          "ta-0013",
+          "ta-0014",
+          "ta-0015",
+          "ta-0016",
+          "ta-0017",
+          "ta-0018",
+          "ta-0019",
+          "ta-0020",
+          "ts-0001",
+          "ts-0002",
+          "ts-0003",
+          "ts-0004",
+          "ts-0005",
+          "ts-0006",
+          "ts-0007",
+          "ts-0008",
+          "ts-0009",
+          "ts-0010",
+          "ts-0011",
+          "ts-0012",
+          "ts-0013",
+          "ts-0014",
+          "ts-0015",
+          "ts-0016",
+          "ts-0017",
+          "ts-0018",
+          "ts-0019",
+          "ts-0020"
+         ],
+         "longstring": 40
+        }
+       ],
+       "metrics": {
+        "longstring": 40,
+        "sessionFlagged": false,
+        "perItemFast": null,
+        "attentionChecks": [
+         {
+          "id": "ta-0001",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "ta-0002",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "ta-0003",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "ta-0004",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "ta-0005",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "ta-0006",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "ta-0007",
+          "given": 1,
+          "ok": false
+         },
+         {
+          "id": "ta-0008",
+          "given": 1,
+          "ok": false
+         }
+        ],
+        "flagsFull": [
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "ta-0001",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "ta-0002",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "ta-0003",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "ta-0004",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "ta-0005",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "ta-0006",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "ta-0007",
+          "nIds": null
+         },
+         {
+          "kind": "attention-failed",
+          "severity": "high",
+          "itemId": "ta-0008",
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 40
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "time-null",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "fast-session",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": null,
+         "longstring": 32
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "ta-0009",
+          "ta-0010",
+          "ta-0011",
+          "ta-0012",
+          "ta-0013",
+          "ta-0014",
+          "ta-0015",
+          "ta-0016",
+          "ta-0017",
+          "ta-0018",
+          "ta-0019",
+          "ta-0020",
+          "ts-0001",
+          "ts-0002",
+          "ts-0003",
+          "ts-0004",
+          "ts-0005",
+          "ts-0006",
+          "ts-0007",
+          "ts-0008",
+          "ts-0009",
+          "ts-0010",
+          "ts-0011",
+          "ts-0012",
+          "ts-0013",
+          "ts-0014",
+          "ts-0015",
+          "ts-0016",
+          "ts-0017",
+          "ts-0018",
+          "ts-0019",
+          "ts-0020"
+         ],
+         "longstring": 32
+        }
+       ],
+       "metrics": {
+        "longstring": 32,
+        "sessionFlagged": true,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "fast-session",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 32
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "time-omitted",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "ta-0009",
+          "ta-0010",
+          "ta-0011",
+          "ta-0012",
+          "ta-0013",
+          "ta-0014",
+          "ta-0015",
+          "ta-0016",
+          "ta-0017",
+          "ta-0018",
+          "ta-0019",
+          "ta-0020",
+          "ts-0001",
+          "ts-0002",
+          "ts-0003",
+          "ts-0004",
+          "ts-0005",
+          "ts-0006",
+          "ts-0007",
+          "ts-0008",
+          "ts-0009",
+          "ts-0010",
+          "ts-0011",
+          "ts-0012",
+          "ts-0013",
+          "ts-0014",
+          "ts-0015",
+          "ts-0016",
+          "ts-0017",
+          "ts-0018",
+          "ts-0019",
+          "ts-0020"
+         ],
+         "longstring": 32
+        }
+       ],
+       "metrics": {
+        "longstring": 32,
+        "sessionFlagged": null,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 32
+         }
+        ]
+       },
+       "notes": [
+        "note.time.unavailable"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     },
+     {
+      "profile": "no-time",
+      "engine": {
+       "ok": true,
+       "errors": [],
+       "status": "flagged",
+       "flags": [
+        {
+         "kind": "fast-session",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": null,
+         "longstring": 32
+        },
+        {
+         "kind": "straightline",
+         "severity": "medium",
+         "itemId": null,
+         "itemIds": [
+          "ta-0009",
+          "ta-0010",
+          "ta-0011",
+          "ta-0012",
+          "ta-0013",
+          "ta-0014",
+          "ta-0015",
+          "ta-0016",
+          "ta-0017",
+          "ta-0018",
+          "ta-0019",
+          "ta-0020",
+          "ts-0001",
+          "ts-0002",
+          "ts-0003",
+          "ts-0004",
+          "ts-0005",
+          "ts-0006",
+          "ts-0007",
+          "ts-0008",
+          "ts-0009",
+          "ts-0010",
+          "ts-0011",
+          "ts-0012",
+          "ts-0013",
+          "ts-0014",
+          "ts-0015",
+          "ts-0016",
+          "ts-0017",
+          "ts-0018",
+          "ts-0019",
+          "ts-0020"
+         ],
+         "longstring": 32
+        }
+       ],
+       "metrics": {
+        "longstring": 32,
+        "sessionFlagged": true,
+        "perItemFast": null,
+        "attentionChecks": null,
+        "flagsFull": [
+         {
+          "kind": "fast-session",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": null
+         },
+         {
+          "kind": "straightline",
+          "severity": "medium",
+          "itemId": null,
+          "nIds": 32
+         }
+        ]
+       },
+       "notes": [
+        "note.time.session-only"
+       ],
+       "attVersion": "1.0.0",
+       "defaults": {
+        "straightlineRun": 6,
+        "timeFloor": {
+         "likert": 2,
+         "ability": 3,
+         "order": 3
+        },
+        "sessionFastFactor": 0.5
+       }
+      }
+     }
+    ]
+   },
+   "sessionGate": {
+    "floorsSum": 80.0,
+    "gate": 40.0,
+    "kindMix": {
+     "likert": 40
+    },
+    "lese-konklusjon": "full besvarelse raskere enn gate-sekunder → fast-session flagg (sesjons-nivå, render v0.5.0 leverer kun timeSpentSec)"
+   },
+   "straightlining": {
+    "adhd": {
+     "k": 20,
+     "keying": "20+/0-",
+     "lam": 0.65,
+     "flagRate": 0.06,
+     "runMean": 3.02,
+     "runMax": 12,
+     "p99": 7
+    },
+    "autism": {
+     "k": 20,
+     "keying": "20+/0-",
+     "lam": 0.65,
+     "flagRate": 0.05,
+     "runMean": 3.006666666666667,
+     "runMax": 18,
+     "p99": 7
+    }
+   }
+  },
+  "evne-t1-matrise": {
+   "def": "tests/schema/evne_pool/def-evne-t1-matrise.en.json",
+   "sessionGate": {
+    "floorsSum": 150.0,
+    "gate": 75.0,
+    "kindMix": {
+     "ability": 50
+    },
+    "lese-konklusjon": "full besvarelse raskere enn gate-sekunder → fast-session flagg (sesjons-nivå, render v0.5.0 leverer kun timeSpentSec)"
+   }
+  },
+  "evne-t2-numerisk": {
+   "def": "tests/schema/evne_pool/def-evne-t2-numerisk.en.json",
+   "sessionGate": {
+    "floorsSum": 150.0,
+    "gate": 75.0,
+    "kindMix": {
+     "ability": 50
+    },
+    "lese-konklusjon": "full besvarelse raskere enn gate-sekunder → fast-session flagg (sesjons-nivå, render v0.5.0 leverer kun timeSpentSec)"
+   }
+  },
+  "evne-t3-verbal": {
+   "def": "tests/schema/evne_pool/def-evne-t3-verbal.en.json",
+   "sessionGate": {
+    "floorsSum": 150.0,
+    "gate": 75.0,
+    "kindMix": {
+     "ability": 50
+    },
+    "lese-konklusjon": "full besvarelse raskere enn gate-sekunder → fast-session flagg (sesjons-nivå, render v0.5.0 leverer kun timeSpentSec)"
+   }
+  },
+  "evne-t4-romlig": {
+   "def": "tests/schema/evne_pool/def-evne-t4-romlig.en.json",
+   "sessionGate": {
+    "floorsSum": 120.0,
+    "gate": 60.0,
+    "kindMix": {
+     "ability": 40
+    },
+    "lese-konklusjon": "full besvarelse raskere enn gate-sekunder → fast-session flagg (sesjons-nivå, render v0.5.0 leverer kun timeSpentSec)"
+   }
+  },
+  "evne-t5-sekvens": {
+   "def": "tests/schema/evne_pool/def-evne-t5-sekvens.en.json",
+   "sessionGate": {
+    "floorsSum": 120.0,
+    "gate": 60.0,
+    "kindMix": {
+     "ability": 40
+    },
+    "lese-konklusjon": "full besvarelse raskere enn gate-sekunder → fast-session flagg (sesjons-nivå, render v0.5.0 leverer kun timeSpentSec)"
+   }
+  }
+ },
+ "selftest": [
+  {
+   "check": "S-QC1 python-longstring ≡ engine straightlineIndex (200 sekvenser)",
+   "pass": true,
+   "detail": "mismatches=0"
+  },
+  {
+   "check": "S-QC2 payload-kontrakt: testId/itemIds/answers-kinde",
+   "pass": true,
+   "detail": "persona-pool-n-rest vs persona-pool-n-rest"
+  },
+  {
+   "check": "S-QC3 rate_sim determinisme",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "S-QC4 θ-styringsretning",
+   "pass": true,
+   "detail": "θ=3→6; θ=-3→1"
+  },
+  {
+   "check": "S-QC5 gulv-sum n-rest: 75 likert × 2.0 = 150",
+   "pass": true,
+   "detail": "150.0 {'likert': 75}"
+  },
+  {
+   "check": "S-QC6 alpha_q faller i rho_qq",
+   "pass": true,
+   "detail": "alpha_q ved .001/.01/.05/.1: [0.9989, 0.9895, 0.9475, 0.8953]"
+  }
+ ],
+ "notes": [],
+ "qcWeights": {
+  "extraversion": [
+   {
+    "rho_qq": 0.001,
+    "alpha_q": 0.9989701646397791,
+    "v_over_se2": 0.001
+   },
+   {
+    "rho_qq": 0.005,
+    "alpha_q": 0.9948514382507246,
+    "v_over_se2": 0.005
+   },
+   {
+    "rho_qq": 0.01,
+    "alpha_q": 0.9897044137178391,
+    "v_over_se2": 0.01
+   },
+   {
+    "rho_qq": 0.02,
+    "alpha_q": 0.979414973548241,
+    "v_over_se2": 0.02
+   },
+   {
+    "rho_qq": 0.05,
+    "alpha_q": 0.9485834747287778,
+    "v_over_se2": 0.05
+   }
+  ],
+  "agreeableness": [
+   {
+    "rho_qq": 0.001,
+    "alpha_q": 0.9989560955719557,
+    "v_over_se2": 0.001
+   },
+   {
+    "rho_qq": 0.005,
+    "alpha_q": 0.9947813952566014,
+    "v_over_se2": 0.005
+   },
+   {
+    "rho_qq": 0.01,
+    "alpha_q": 0.9895650830984607,
+    "v_over_se2": 0.01
+   },
+   {
+    "rho_qq": 0.02,
+    "alpha_q": 0.979139330497673,
+    "v_over_se2": 0.02
+   },
+   {
+    "rho_qq": 0.05,
+    "alpha_q": 0.9479169379326149,
+    "v_over_se2": 0.05
+   }
+  ],
+  "conscientiousness": [
+   {
+    "rho_qq": 0.001,
+    "alpha_q": 0.9989468701243378,
+    "v_over_se2": 0.001
+   },
+   {
+    "rho_qq": 0.005,
+    "alpha_q": 0.994735470556803,
+    "v_over_se2": 0.005
+   },
+   {
+    "rho_qq": 0.01,
+    "alpha_q": 0.9894737396118968,
+    "v_over_se2": 0.01
+   },
+   {
+    "rho_qq": 0.02,
+    "alpha_q": 0.9789586642960095,
+    "v_over_se2": 0.02
+   },
+   {
+    "rho_qq": 0.05,
+    "alpha_q": 0.9474803707885822,
+    "v_over_se2": 0.05
+   }
+  ],
+  "neuroticism": [
+   {
+    "rho_qq": 0.001,
+    "alpha_q": 0.9989704823918,
+    "v_over_se2": 0.001
+   },
+   {
+    "rho_qq": 0.005,
+    "alpha_q": 0.9948530202734385,
+    "v_over_se2": 0.005
+   },
+   {
+    "rho_qq": 0.01,
+    "alpha_q": 0.9897075609286662,
+    "v_over_se2": 0.01
+   },
+   {
+    "rho_qq": 0.02,
+    "alpha_q": 0.9794212006906244,
+    "v_over_se2": 0.02
+   },
+   {
+    "rho_qq": 0.05,
+    "alpha_q": 0.9485985391704832,
+    "v_over_se2": 0.05
+   }
+  ],
+  "openness": [
+   {
+    "rho_qq": 0.001,
+    "alpha_q": 0.9989619413440805,
+    "v_over_se2": 0.001
+   },
+   {
+    "rho_qq": 0.005,
+    "alpha_q": 0.99481049753317,
+    "v_over_se2": 0.005
+   },
+   {
+    "rho_qq": 0.01,
+    "alpha_q": 0.9896229714206256,
+    "v_over_se2": 0.01
+   },
+   {
+    "rho_qq": 0.02,
+    "alpha_q": 0.9792538437441003,
+    "v_over_se2": 0.02
+   },
+   {
+    "rho_qq": 0.05,
+    "alpha_q": 0.9481937760002487,
+    "v_over_se2": 0.05
+   }
+  ],
+  "adhd": [
+   {
+    "rho_qq": 0.001,
+    "alpha_q": 0.9989227293126862,
+    "v_over_se2": 0.001
+   },
+   {
+    "rho_qq": 0.005,
+    "alpha_q": 0.9946153125434141,
+    "v_over_se2": 0.005
+   },
+   {
+    "rho_qq": 0.01,
+    "alpha_q": 0.9892347871394461,
+    "v_over_se2": 0.01
+   },
+   {
+    "rho_qq": 0.02,
+    "alpha_q": 0.9784862032021135,
+    "v_over_se2": 0.02
+   },
+   {
+    "rho_qq": 0.05,
+    "alpha_q": 0.946339840522006,
+    "v_over_se2": 0.05
+   }
+  ],
+  "autism": [
+   {
+    "rho_qq": 0.001,
+    "alpha_q": 0.9989227293126862,
+    "v_over_se2": 0.001
+   },
+   {
+    "rho_qq": 0.005,
+    "alpha_q": 0.9946153125434141,
+    "v_over_se2": 0.005
+   },
+   {
+    "rho_qq": 0.01,
+    "alpha_q": 0.9892347871394461,
+    "v_over_se2": 0.01
+   },
+   {
+    "rho_qq": 0.02,
+    "alpha_q": 0.9784862032021135,
+    "v_over_se2": 0.02
+   },
+   {
+    "rho_qq": 0.05,
+    "alpha_q": 0.946339840522006,
+    "v_over_se2": 0.05
+   }
+  ]
+ },
+ "selftestSummary": {
+  "total": 6,
+  "pass": 6
+ }
+}

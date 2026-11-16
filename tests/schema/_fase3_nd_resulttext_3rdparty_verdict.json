@@ -1,0 +1,66 @@
+{
+  "doc": "_fase3_nd_resulttext_3rdparty_verdict (strex VERIFISER-verdict til #3786/#3787-mandatet; soester til _fase3_nd_resulttext_verdict.json (bygg-leafen) og _fase3_rel_resulttext_3rdparty_verdict.json)",
+  "status": "GJELDENDE",
+  "date": "2026-11-16",
+  "steg": "[VERIFISER FASE 3] Neurodivergent-resultattekst: streng kontroll - ingen setning som kan leses som diagnose eller henvisning fra oss (soester-leaf til #3786-bygget; kjort som todo-run-leaf i TR-153341E33660, iterasjon 1)",
+  "posisjon-i-kjeden": "Bygg-leafen (TR-FB95AD82C8FC, commit 1475652, #3786) leverte deling-/henvisning-laget med 226-sjekk C-harness og GJELDENDE verdikt. Denne leafen er den STRENGE kontrollen itemspec boardRefs.resultText krever (#3787-territoriet): egen vinkel - bred vokabular-skann (47 termer, ~2x C-kjedens BANNED) over FULL plain-html korpus, profil-invarians over triage-modellens fire utfall + OBSERVED-midt, meta/def-lekkasje-prover, henvis-aksjon-nullregul og profileId-fabrikasjonsproven. Ikke kopi av bygg-harnessen.",
+  "harness": "tests/schema/_fase3_nd_resulttext_3rdparty_verify.mjs - 326 checks / 326 PASS / 0 FAIL (2026-11-16, Node v22.22.1, to kjoeringer identiske). Dump: tests/schema/_fase3_nd_3rdparty_term_dump.json (245 treff-rows, alle negert-klassifisert, 49 unike term/ramme-kontekster haandrefert).",
+  "checks": {
+    "W0_score-og-triage": "5 profiler (lav/midt/adhd-hoy/autism-hoy/begge) gjennom EKTE scoreTest mot live pool-def (40 items): ok=true, triage-modellens outcodes = forventet (out-none x2, out-adhd, out-autism, out-adhd-autism).",
+    "W1_bred-vokabular": "47 termer (diagnos*/henvis*/referral/utredning/assessment/klinisk/clinical/medisin/behandling/symptom/syndrom/forstyrrelse/lidelse/pasient/persentil/prosentil/percentile/iq/mensa/normal/abnormal/mild/moderat/alvorlig/severity/sindssyg/helsepersonell osv.) skannet over plain-tekst av ALLE 30 renders (5 profiler x 3 rammer x no/en): 245 forekomster ALLE i negert kontekst (token-vindu ELLER setningsnivaa-negasjon). Haandrefert: alle 49 unike kontekster er fraskrivelses/normnote-formuleringer ('aldri en henvisning', 'ingen anbefaling om utredning', 'not medically, psychologically or clinically assessed', 'not percentiles', 'no recommendation for further assessment', 'not documentation or an assessment of a person'). 'prosentil' 0 treff (form-homogenitet viderefort fra #3785-R2).",
+    "W4_henvis-nullregul": "ALLE henvis/utredning/referral-treff ligger i not-referral-disclosureen (carrier-prov). Henvis-AKSJON ('ta kontakt', 'kontakt lege', 'soek hjelp', 'seek help', 'contact your', 'referred to', 'we recommend', 'oppfordrer', 'bor ta' osv. - 17 mote): 0 treff i hele korpuset. Resultatteksten gaar aldri fra fraskrivelse til aksjon.",
+    "W2_profil-invarians": "Plain html (uten svg) for lav vs begge vs adhd-hoy vs autism-hoy vs midt: identiske tekstelement-multimengder ved tallnormalisering i ALLE 6 ramme-spraak - teksten er profil-uavhengig (ingen profilbetinget formulering kan leses som diagnose). W2b: ADHD/Autisme-etikett-swap mellom profiler forekommer KUN i personal-rammen (sort=desc, skaarstyrt), aldri i standard/employer (sort=def) - config-sort-kontrakt bekreftet begge veier.",
+    "W3_lekkasjer": "nearNotes (meta, FASE 4-utvalg) og def.dimensions-beskrivelser forekommer ALDRI i rendret output (30 renders kombinert). Meta er ikke brukersynlig.",
+    "W5_fabrikasjons-proven": "profileText er tom i dag ({}); renderReport med profileId='adhd-high' KASTER ('aldri oppfinne tekst'-kontrakten hevdet i praksis). Renderer nekter a fabrikere diagnostiske profilhistorier.",
+    "W6_korpus-kraft": "18 korpus-rows (3 profiler x 6 ramme-spraak), >15000 tegn - proven er reell, ikke tom-formell."
+  },
+  "metode-notater": [
+    "KORPUS-VALG: skannen gaar over plain-tekst av full rendret html, ikke over rendererens strings-sank. Bakgrunn er funn F1 (under): strings-sanken har et dekningshull, saa strings som korpus ville gitt falsk trygghet. Samme metodevalg som soester-harnessene (rel-3rdparty V4, nd C-kjede V4).",
+    "NEGASJONS-KLASSIFISERING: token-vindu (negator <=4 ord foran treffet) ELLER setningsnivaa-negasjon (enumerasjoner som 'not a selection, medical or psychological assessment' og klausul-negasjoner ligger utenfor det rene vinduet). Alle 49 unike kontekster haandrefert i tillegg - mekanisk regel og menneskelig lesing samstemt.",
+    "W2-gaeten: foerste kjoering viste etikett-bytte ADHD/Autisme mellom profiler - ikke en tekstendre, men personal-rammens sort=desc (skaarstyrt barrekkefoelge). Bevist og laast som W2b-kontrakt i stedet for aa ignoreres."
+  ],
+  "funn-egen-vinkel": [
+    {
+      "id": "F1",
+      "klasse": "avvik (dekningshull i vokter/sank-laget)",
+      "hvor": "report/renderer.mjs",
+      "funn": "Docstring-lovet 'strings = ALLE synlige renderede strenger (for ban-scan og QA)' er brutt: Strings.push tar kun ETT argument, saa multi-arg-kall faller ut av sanken - strings.push(h, ...body) (leseguide-kropper, renderer.mjs:322), strings.push(h, b) (thirdParty.body, :335), strings.push(scoreTxt, bandTxt) (threshold, :199) og SVG-etikettene (pctLabel/midpointLegend/notComputable, :101-105 samt labelOf fallback :121) er aldri i strings.list (provet: 'For deg som ikke tok testen'-body, 'klinisk', 'ADHD', 'Prosent av skalaens omfang' finnes i html men ikke i strings). Konsekvens: employer-vokteren scanBanned(strings.list, ...) (:361) ser aldri leseguide/thirdParty/graf-lagene - i dag ufarlig (ingen forbuds-term i de ulandete lagene), men vokteren har blindsoner. Rammer også meta.strings-kontrakten (QA-avhengigheter).",
+      "rettelse": "IKKE rettet her - motorroerende, og VERIFISER-leaves i denne kjeden ror ingen motorfiler (konvensjon: bygg-leafen trenger oppfoelging, ikke verifisatoren). Pin til neste renderer-bygg (forsoelget #3837 eller FASE 4): extend Strings.push til variadisk (og/eller sank SVG-etikettene eksplisitt), laast med negasjonstest paa alle tre lag.",
+      "bevis": "harness-dekningsprov i denne leafen; renderer.mjs:52-58 (class Strings; push(s)), :101-105, :121, :199, :322, :335, :361"
+    }
+  ],
+  "avkreftet": [
+    "Hypotese 'rapporten fabrikkerer diagnostiske profilhistorier for flaggede profiler (begge/adhd-hoy/autism-hoy)' AVKREFTET: alle 5 profiler gir bitvis samme tekstmengde (kun tall endres) - ingen utfalls-lesestekst finnes i dag (utfalls-lese-tekster er FASE 4-pin).",
+    "Hypotese 'pastaande diagnose/henvis-spraak finnes i rapportteksten' AVKREFTET: 47-term skann over 30 renders - alle 245 forekomster negert, alle 49 unike kontekster haandrefert; 0 aksjonsformuleringer.",
+    "Hypotese 'profileId-kall kan faa renderer til aa oppfinne diagnostisk profiltekst' AVKREFTET: hard-kast paa tom profileText."
+  ],
+  "holds": [
+    "ASRS-blokken finnes i ingen def (verdict #3732 s.4) - anker-skjerm med adskilt disclaimer er FASE-lagets oppgave naar den livesettes; dette steget ror den ikke.",
+    "Utfalls-lese-tekster per outcode + OBSERVED-band 40-54 mangler fortsatt - FASE 4 resultat-surface (pin viderefort fra bygg-leafen). Streng kontroll av at teksten IKKE forutsier den teksten er gjort her (W2+W5).",
+    "W1-skannen dekker ND-sporet i rapporttekst-laget; item-tekstlagene (dyp-pooler ADHD/autisme, hjem #3826-#3831) er ikke bygget og ikke skannet her - deres vokabular-kontroll folger egen leaf-kjede."
+  ],
+  "pins-viderefoert-eller-nye": [
+    "PIN (ny, hovedfunn): renderer strings-sank dekningshull (F1) - extend Strings.push til variadisk + sank SVG-etiketter, med negasjonstest (et forbudt ord i leseguide/thirdParty/graf ma ga gjennom); folger neste renderer-bygg, ikke dette steget.",
+    "PIN (viderefort fra bygg-leafen): FASE 4 utfalls-lese-tekster + OBSERVED-band + navngitte profiler; ASRS-live re-lesing; normerings-binding (persentil-avvisninger re-leses ved norms=published).",
+    "PIN (viderefort): #3794 fragment-transport konvensjonen - generic-share-loeftet hviler paa den; denne leafen verifiserer kun tekstlaget.",
+    "PIN (smal): bevis-maate W2b - hvis dimensions.sort endres i configs, maa W2b-kontrakten re-leses (assert fanget automatisk: swap-proven bommer da og leafen feiler)."
+  ],
+  "regresjon-live-i-oekt": {
+    "egen_harness": "326 PASS / 0 FAIL (2 kjoeringer identiske)",
+    "bygg-leafens_harness": "_fase3_nd_resulttext_verify.mjs 226 PASS / 0 FAIL (re-kjort uroet)",
+    "rel_soestertvillinger": "_fase3_rel_resulttext_verify.mjs 88 PASS; _fase3_rel_resulttext_3rdparty_verify.mjs 214 PASS; _fase3_estimat_verify.mjs 76 PASS",
+    "report_selftest": "74 PASS / 0 FAIL",
+    "engine": "selftest 72/72, scoring 27+27, integrasjon 5/5, attention 57/57",
+    "i18n": "22/22 PASS",
+    "nd_pool": "selftest 78/78 PASS"
+  },
+  "verdikt": {
+    "ingen-diagnose-lesning": "OK - 47 termer, 30 renders, alle treff i negerte fraskrivelses/normnote-formuleringer; 0 pastaende kontekster.",
+    "ingen-henvisning": "OK - henvis-vokabular kun i not-referral-fraskrivelsen (negert); henvis-aksjon 0 treff; ingen kontakt/utredning-anbefaling i noe sprak, ramme eller utfall.",
+    "noe-generisk-deling": "OK - generic-share/not-referral disclosures rendres i alle 6 ramme-spraak-kombinasjoner; rendret output identifikoerfritt (payload har ingen identifikator; meta/def-lekkasjer 0).",
+    "profil-svarians": "OK - tekstmengde profil-uavhengig; etikett-swap begrenset til personal desc-sort (kontrakt); ingenting i tekstlaget tilskriver diagnose ved noe utfall.",
+    "fabrikasjons-motstand": "OK - renderer kaster ved ukjent profileId (tom profileText i dag); FASE 4-avhengighet pinnet.",
+    "vokter-lagets-hull": "AVVIK REGISTRERT (F1): strings-sanken dekker ikke alle synlige strenger - motorroerende, epint til neste renderer-bygg. Ikke blokkerende for #3786/#3787-mandatet: den strenge kontrollen er gjort over full html-korpus istedenfor."
+  },
+  "leveranse-eksplisitt": "2 nye filer (harness + dump) + 1 verdikt-fil + rapportutvidelse i report/2026-11-16-fase3-resultattekst-neurodivergent.md. Ingen motorfiler roert (renderer.mjs, configs, def-filer urort - md5-verifisert i rapporten). finding_add-registrert (local/code/renderer strings-hull). Soester-konvensjon fulgt: eigen vinkel, byggets 226-harness urtert, fuld regresjon groenn."
+}

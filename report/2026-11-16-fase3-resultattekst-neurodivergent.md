@@ -124,3 +124,76 @@ rapporten + verdikt `tests/schema/_fase3_nd_resulttext_verdict.json` + harness
 re-kjørt), ikke håndredigert. out/ ikke bemoet: report-configs er ikke kilde for
 out/, og ND-sporet har ingen offentlig testflate ennå (V2-kontrakt i
 _fase3_rel_resulttext_3rdparty_verify.mjs flipper ved triage-lansering).
+
+## VERIFISER (streng kontroll — søster-leaf, TR-153341E33660, 2026-11-16)
+
+Uavhengig streng kontroll av leveransen over — «ingen setning som kan leses som
+diagnose eller henvisning fra oss» (itemspec #3787-territoriet). Harness:
+tests/schema/_fase3_nd_resulttext_3rdparty_verify.mjs — **326 PASS / 0 FAIL**
+(Node v22.22.1, to kjøringer identiske). Verdict:
+tests/schema/_fase3_nd_resulttext_3rdparty_verdict.json (GJELDENDE).
+
+### Metode (6 prøver, egen vinkel — ikke bygg-harnessens kopi)
+
+- **W1 — bred vokabular-skann:** 47 termer (~2× C-kjedens BANNED, pluss medisin/
+  behandling/symptom/syndrom/forstyrrelse/lidelse/pasient/mensa/normal/abnormal/
+  mild/moderat/alvorlig/severity osv.) over plain-tekst av ALLE 30 renders
+  (5 triage-profiler × 3 rammer × no/en). Korpus er full rendret HTML strippet
+  for markup — ikke rendererens strings-sank (se F1). 245 forekomster, og ALLE
+  ligger i negert kontekst (token-vindu + setningsnivå-fallback). Alle 49 unike
+  term/ramme-kontekster håndrefert: fraskrivelses- og normnote-formuleringer
+  («aldri en henvisning», «ingen anbefaling om utredning», «not medically,
+  psychologically or clinically assessed», «not percentiles», «no recommendation
+  for further assessment», «ikke dokumentasjon eller vurdering av en person»).
+  'prosentil': 0 treff (form-homogenitet videreført fra #3785-R2).
+- **W4 — henvis-nullregul:** alle henvis/utredning/referral-treff ligger i
+  not-referral-disclosureen (carrier-bevis). Henvis-AKSJON (17 mønstre: «ta
+  kontakt», «kontakt lege», «søk hjelp», «seek help», «contact your», «referred
+  to», «we recommend», «oppfordrer», «bør ta» …): **0 treff** i hele korpuset.
+  Teksten går aldri fra fraskrivelse til aksjon.
+- **W2 — profil-invarians:** plain html (uten svg) for lav/midt/adhd-høy/
+  autism-høy/begge: identiske tekstelement-multimengder ved tallnormalisering i
+  alle 6 ramme/språk-kombinasjoner — teksten er profil-uavhengig; ingenting kan
+  leses som diagnose ved noe utfall. W2b beviser at ADHD/Autisme-etikett-swap
+  mellom profiler forekommer KUN i personal-rammen (sort=desc, skårstyrt), aldri
+  standard/employer (sort=def) — config-sort-kontrakten bekreftet begge veier.
+- **W3 — lekkasjer:** nearNotes (meta, FASE 4-utvalg) og def.dimensions-
+  beskrivelser forekommer aldri i rendret output (30 renders kombinert).
+- **W5 — fabrikasjons-prøven:** profileText er tom i dag; renderReport med
+  profileId kaster («aldri oppfinne tekst»-kontrakten hevdet i praksis).
+- **W6 — korpus-kraft:** 18 korpus-rader, >15 000 tegn — prøven er reell.
+
+### Funn (1, avvik i vokter/sank-laget — IKKE rettet her, motorrorende)
+
+- **F1 — renderer strings-sanken har dekningshull** (renderer.mjs:
+  class Strings:52-58, push tar kun ett argument): multi-arg-kall renner aldri
+  inn i sanken — `strings.push(h, ...body)` (leseguide-kropper, :322),
+  `strings.push(h, b)` (thirdParty.body, :335), `strings.push(scoreTxt,
+  bandTxt)` (threshold, :199) og SVG-etikettene (:101-105, :121) mangler i
+  `strings.list`, til tross for docstring-løftet «ALLE synlige renderede
+  strenger (for ban-scan og QA)». Konsekvens: employer-vokteren
+  `scanBanned(strings.list, prohibitions)` (:361) har blindsoner mot
+  leseguide/thirdParty/graf-lagene — i dag ufarlig (skann over full korpus finner
+  ingen forbuds-term i de ulandete lagene), men kontrakten er brutt og
+  meta.strings-QA-avhengigheter underrapporteres. Rettelse følger neste
+  renderer-bygg (variadisk push + sank av SVG-etiketter, låst med negasjonstest);
+  VERIFISER-leaves i denne kjeden rører ingen motorfiler.
+  Bevis: dekningsprov i harnessen + md5-anker under.
+
+### Avkreftet (3)
+
+1. «Rapporten fabrikkerer diagnostiske profilhistorier for flaggede profiler» —
+   avkreftet: alle 5 profiler gir identisk tekstmengde (kun tall endres); utfalls-
+   lese-tekster finnes ikke i dag (FASE 4-pin).
+2. «Påstående diagnose/henvis-spraak finnes i rapportteksten» — avkreftet:
+   47-term × 30-render-skann, alle 245 forekomster negert, 0 aksjonsformuleringer.
+3. «profileId-kall kan få renderer til å oppfinne diagnostisk profiltekst» —
+   avkreftet: hard-kast på tom profileText.
+
+### Regresjon (kjørt live i økten)
+
+report 74/74 · engine 72/72 · scoring 27+27 · integrasjon 5/5 · attention 57/57 ·
+i18n 22/22 · nd-pool 78/78 · bygg-harness 226/226 (uroet) · rel-søstre 88 + 214 ·
+estimat 76. Leveranse additiv: harness + dump + verdict + rapportutvidelse;
+renderer.mjs/configs/def-filer urørt (md5-verifisert). Funn registrert via
+finding_add (local, code, renderer strings-sank).

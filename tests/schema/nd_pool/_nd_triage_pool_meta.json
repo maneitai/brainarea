@@ -1,0 +1,286 @@
+{
+  "metaVersion": 1,
+  "id": "nd-triage-pool",
+  "date": "2026-11-15",
+  "boardLeaf": "#3758 [3-VEIS] FASE 2: Triage-pool (~40 items) — startes når lisenssjekken (#3732) er bekreftet.",
+  "spec": "tests/schema/_nd_itemspec_spec.json (nd-itemspec-v1, PROPOSED; GJELDENDE ved #3813)",
+  "licenseBasis": "DOC-C8C02AD272 (ENDLIG VERDIKT, todo #3732): ASRS v1.1 6Q er ADHD-anker i live-def (#3760), IKKE i denne poolen; AQ/RAADS-R gjengis aldri (kun navn+cutoff+kilde som referanselinje); DSM-5-kriterietekst aldri parafrasert eller gjengitt som items; alle 40 supplement-items er 100% originale konstrukt-forfattede, ingen kloning.",
+  "authoringRule": "Første-person, presens, 8–14 ord, én setning, ingen dobbeltspørsmål, ingen absolutter (alltid/aldri/always/never), ingen diagnostisk språkbruk (DSM/diagnose/symptom-ordforråd), ingen ekstremrisiko/selvskade/medisinering. NO og EN separat forfattet med konstrukt-ekvivalens: samme id-rekkefølge, samme akse+tema per id, samme asrsNear per id.",
+  "optionsSource": "def-ipip50-big5.<lang>.json items[*].options — byte-identisk per fil (verifisert i selftest S5).",
+  "keyingRule": "Alle skala-referanser sign 1 — screening i én retning; NG-4-avvik (ingen reverserte items) er dokumentert i spec-en engineGaps.",
+  "themeCounts": {
+    "adhd": {
+      "t1": 7,
+      "t2": 7,
+      "t3": 6
+    },
+    "autism": {
+      "t1": 7,
+      "t2": 7,
+      "t3": 6
+    }
+  },
+  "items": [
+    {
+      "id": "ta-0001",
+      "axis": "adhd",
+      "theme": "adhd-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0002",
+      "axis": "adhd",
+      "theme": "adhd-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0003",
+      "axis": "adhd",
+      "theme": "adhd-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0004",
+      "axis": "adhd",
+      "theme": "adhd-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0005",
+      "axis": "adhd",
+      "theme": "adhd-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0006",
+      "axis": "adhd",
+      "theme": "adhd-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0007",
+      "axis": "adhd",
+      "theme": "adhd-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0008",
+      "axis": "adhd",
+      "theme": "adhd-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0009",
+      "axis": "adhd",
+      "theme": "adhd-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0010",
+      "axis": "adhd",
+      "theme": "adhd-t2",
+      "asrsNear": true,
+      "nearNoteNo": "ASRS-6Q-anker-betegner sitte-uro (fidget); observabelen her er å forlate bordet — samme familie, ulikt vinkel.",
+      "noteEn": "The ASRS 6Q anchor covers seated fidgeting; this item observes leaving the table — same family, different angle."
+    },
+    {
+      "id": "ta-0011",
+      "axis": "adhd",
+      "theme": "adhd-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0012",
+      "axis": "adhd",
+      "theme": "adhd-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0013",
+      "axis": "adhd",
+      "theme": "adhd-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0014",
+      "axis": "adhd",
+      "theme": "adhd-t2",
+      "asrsNear": false,
+      "noteEn": "NOTE-EN (ikke-nær men notert): ASRS langform har en kø-vinkel; ikke blant 6Q-ankrets seks — beholdt som impuls-vinkel."
+    },
+    {
+      "id": "ta-0015",
+      "axis": "adhd",
+      "theme": "adhd-t3",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-3 dekker huske-avtaler; item er utsettelse av avtaler og regninger — nær familie, ulikt vinkel.",
+      "noteEn": "Anchor item 3 covers remembering appointments; this item is postponing bills and appointments — near family, different angle."
+    },
+    {
+      "id": "ta-0016",
+      "axis": "adhd",
+      "theme": "adhd-t3",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-1 dekker avslutning av oppgaver; item er halvferdig husarbeid — samme familie.",
+      "noteEn": "Anchor item 1 covers wrapping up tasks; this item is half-finished laundry — same family."
+    },
+    {
+      "id": "ta-0017",
+      "axis": "adhd",
+      "theme": "adhd-t3",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-1-familien (ufullførte oppgaver), vinkel: gjenoppdagede halvferdige starter.",
+      "noteEn": "Anchor item 1 family (unfinished tasks), angle: rediscovered half-started tasks."
+    },
+    {
+      "id": "ta-0018",
+      "axis": "adhd",
+      "theme": "adhd-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0019",
+      "axis": "adhd",
+      "theme": "adhd-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "ta-0020",
+      "axis": "adhd",
+      "theme": "adhd-t3",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-3-familien (huske forpliktelser; termenen glipper).",
+      "noteEn": "Anchor item 3 family (remembering obligations; the deadline slips the mind)."
+    },
+    {
+      "id": "ts-0001",
+      "axis": "autism",
+      "theme": "autism-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0002",
+      "axis": "autism",
+      "theme": "autism-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0003",
+      "axis": "autism",
+      "theme": "autism-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0004",
+      "axis": "autism",
+      "theme": "autism-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0005",
+      "axis": "autism",
+      "theme": "autism-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0006",
+      "axis": "autism",
+      "theme": "autism-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0007",
+      "axis": "autism",
+      "theme": "autism-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0008",
+      "axis": "autism",
+      "theme": "autism-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0009",
+      "axis": "autism",
+      "theme": "autism-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0010",
+      "axis": "autism",
+      "theme": "autism-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0011",
+      "axis": "autism",
+      "theme": "autism-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0012",
+      "axis": "autism",
+      "theme": "autism-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0013",
+      "axis": "autism",
+      "theme": "autism-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0014",
+      "axis": "autism",
+      "theme": "autism-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0015",
+      "axis": "autism",
+      "theme": "autism-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0016",
+      "axis": "autism",
+      "theme": "autism-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0017",
+      "axis": "autism",
+      "theme": "autism-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0018",
+      "axis": "autism",
+      "theme": "autism-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0019",
+      "axis": "autism",
+      "theme": "autism-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "ts-0020",
+      "axis": "autism",
+      "theme": "autism-t3",
+      "asrsNear": false
+    }
+  ],
+  "provenance": {
+    "authoringDate": "2026-11-15",
+    "originality": "Alle items forfattet fra spec-en poolDesign.themesTriage* — ingen ekstern skala, ingen formell oversettelse, ingen scraping.",
+    "asrsNearPolicy": "Flaggede ta-items er ikke kloninger — de markerer symptomfamilie-nære vinkler slik at FASE 4-utvelgelsen (live-def 3 per akse) kan velge bort dem mot ASRS-ankerets seks formuleringer.",
+    "engineFactsVerified": [
+      "scoring.js trait-sti: normalized per skala, komposit over skalaer med data (lest i økten)",
+      "render.js sessionSizeFor(likert) => alle items shuffles (lest i økten)",
+      "validateTestDef håndhever IKKE reverseringskravet — NG-4 bekreftet mot koden (grep 'reverse' i tests/engine)"
+    ]
+  }
+}

@@ -1,0 +1,1399 @@
+{
+  "schemaVersion": 1,
+  "id": "nd-triage-pool",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "adhd",
+        "weight": 1
+      },
+      {
+        "id": "autism",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "adhd",
+      "label": "ADHD",
+      "labelLanguage": "en",
+      "description": "Everyday attention, restlessness and follow-through on daily tasks."
+    },
+    {
+      "id": "autism",
+      "label": "Autism",
+      "labelLanguage": "en",
+      "description": "Social reciprocity, routines and sensory tolerance in daily life."
+    }
+  ],
+  "items": [
+    {
+      "id": "ta-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I lose my thread in conversations when something else happens around me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I have to read the same paragraph a few times before it sticks.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0003",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My thoughts wander off in the middle of what I am doing.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0004",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Notifications pull me away while I am working on something else.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0005",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I forget what I came into a room to get.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0006",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I catch only half of what is said when several people talk at once.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0007",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I miss a question and have to ask for it again.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0008",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I answer before the person asking has finished their question.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0009",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I wander into another topic mid-sentence without noticing it.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0010",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I leave the table before the others are done eating.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0011",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I buy things I had no plan to buy.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0012",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I switch topics the moment a new idea shows up.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0013",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I start using things without reading the manual through.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0014",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I find it hard to wait until it is my turn.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0015",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I push bills and appointments to another day.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0016",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I leave laundry half-finished until I have to start over.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0017",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I find tasks I started weeks ago, still halfway done.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0018",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I lose receipts and papers I will need in the coming weeks.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0019",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I grab the wrong bag or the wrong keys when I rush out.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0020",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I pay late because the deadline slips my mind.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I feel unsure how to keep a conversation going.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I work out my facial expressions instead of them coming on their own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0003",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I miss the point of a joke while everyone around me laughs.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0004",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I think about where to look while I am talking with people.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0005",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I do not know when it is my turn to speak in a group.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0006",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I stay on my own topics longer than the conversation calls for.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0007",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I miss what people mean when their words say something else.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0008",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep to the same order of steps every morning.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0009",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I lose my appetite when food looks different from usual.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0010",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I move away when there is a lot of noise around me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0011",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I feel tags and seams in my clothes long after getting dressed.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0012",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I get unsettled when plans I counted on change suddenly.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0013",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I buy the same groceries and use them the same way.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0014",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I need my quiet hour at a fixed time to recover.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0015",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I am out of words after a whole day around people.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0016",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I need quiet time alone after every day at work or school.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0017",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I rehearse conversations in my head before I step into them.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0018",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I leave gatherings before the others think it is time.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0019",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The day after a gathering I spend putting everything back in place.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0020",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let the phone ring out rather than answer unprepared.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

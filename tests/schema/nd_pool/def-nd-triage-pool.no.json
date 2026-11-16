@@ -1,0 +1,1399 @@
+{
+  "schemaVersion": 1,
+  "id": "nd-triage-pool",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "adhd",
+        "weight": 1
+      },
+      {
+        "id": "autism",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "adhd",
+      "label": "ADHD",
+      "labelLanguage": "no",
+      "description": "Daglig oppmerksomhet, uro og oppfølging i hverdagslige gjøremål."
+    },
+    {
+      "id": "autism",
+      "label": "Autisme",
+      "labelLanguage": "no",
+      "description": "Sosialt samspill, vaner og sensorisk toleranse i hverdagen."
+    }
+  ],
+  "items": [
+    {
+      "id": "ta-0001",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg mister tråden i samtaler når noe annet skjer rundt meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0002",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg må lese samme avsnitt flere ganger før det fester seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0003",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Mine tanker vandrer av gårde midt i det jeg holder på med.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0004",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg blir dratt inn i meldinger og notiser mens jeg jobber med noe annet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0005",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg glemmer hvorfor jeg gikk inn på et rom.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0006",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg hører bare halvparten når det snakkes fra flere hold samtidig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0007",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg må spørre igjen fordi jeg ikke fikk med meg spørsmålet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0008",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg svarer før spørsmålet jeg svarer på er ferdig stilt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0009",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg snakker om noe annet midt i en setning uten å merke det.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0010",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg reiser meg fra bordet før de andre er ferdige.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0011",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kjøper ting jeg ikke hadde planlagt å kjøpe.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0012",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg bytter tema i samtalen så snart en ny idè dukker opp.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0013",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg går rett på ting uten å lese bruksanvisningen ferdig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0014",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg finner det vanskelig å vente til det er min tur.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0015",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg skyver avtaler og regninger til en annen dag.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0016",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar klesvasken ligge halvferdig frem til jeg må begynne på nytt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0017",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg finner oppgaver jeg startet på for uker siden, halvveis.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0018",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg mister kvitteringer og papirer jeg trenger i ukene etterpå.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0019",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar med meg feil veske eller feil nøkler når jeg skynder meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0020",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg betaler for sent fordi fristen glipper av tanken min.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0001",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg blir usikker på hvordan jeg skal holde samtalen i gang.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0002",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg må tenke ut ansiktsuttrykk i stedet for at de kommer av seg selv.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0003",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg misser vitsen selv om alle rundt meg ler.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0004",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tenker på hvor jeg skal se hen mens jeg snakker med folk.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0005",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg vet ikke når det er min tur til å si noe i gruppe.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0006",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder på mine egne temaer lenger enn samtalen ber om.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0007",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg blir tatt på sengen av at folk mener noe annet enn de sier.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0008",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg legger omgangen min i samme rekkefølge hver dag.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0009",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg mister matlysten hvis maten ser annerledes ut enn vanlig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0010",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trekker meg unna når det står mye støy rundt meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0011",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg merker klesmerker og sømmer lenge etter at jeg har kledd meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0012",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg blir urolig når planer jeg hadde regnet med endres brått.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0013",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kjøper de samme matvarene og bruker dem på samme måte.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0014",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trenger pausen min på et fast tidspunkt for å hente meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0015",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg er tom for ord etter en hel dag med folk rundt meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0016",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trenger en rolig stund alene etter hver dag på jobb eller skole.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0017",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg øver på samtaler i hodet mitt før jeg går inn i dem.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0018",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trekker meg fra selskap før de andre synes det er på tide.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0019",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Dagen etter et selskap bruker jeg på å legge ting tilbake på plass.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0020",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar heller telefonen ringe ut enn å svare uten forberedelse.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

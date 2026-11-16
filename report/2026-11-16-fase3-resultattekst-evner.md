@@ -83,3 +83,68 @@ Baselinje re-avledet i økten før endring: report 74/74, scoring 27+27, integra
 
 Leveranse: tests/schema/_fase3_gscore_verdict.json (GJELDENDE) + rettelser i
 report/configs/*.json + renderer 1.0.1 + scoring/i18n note-synk + rapport (denne filen).
+
+---
+
+## VERIFISER (søster-steg, beslutning 14, TR-BA7FC4DC775A) — 2026-11-16
+
+Metode: A = fremmedlesing av alle rendret evne-tekster via ekte scoringpath
+(6 ramme/språk-kombinasjoner), B = uavhengig estimat-harness
+tests/schema/_fase3_estimat_verify.mjs, C = syntese med rettelse + re-verifisering.
+
+Beslutningsgrunnlag rekonstruert fra arkivert samtalehistorikk (CHT-480D2D880C,
+turer 14974–15024): beslutning 14 er IQ-premisset — «IQ måler bare hvor god du er
+til å ta IQ-tester ... men det er det verden bruker» + preplan-konkretiseringen
+(«vi selger ikke intelligens, vi selger et estimat i den skalaen verden kjenner»),
+med retest-praksiseffekten som eksplisitt del av premissen.
+
+### Funn V1 (klasse i, RETTET)
+
+**Employer-rammens g-score normNote manglet retest-erkjennelsen som standard og
+personal fikk i dette steget.** Produksjonsrapporten sier eksplisitt «standard og
+personal sier nå ærlig at en ny gjennomføring kan gi et annet estimat» — employer
+fikk kun IQ-nekting og utvelgelses-forbud. Beslutning 14s kjerne (score øker ved
+gjentak) rammer nettopp mottakerleseren i employer-rammen, og #3782 oppgir
+retest-intervall som krav uten ramme-unntak. Ingen selftest fanget det.
+
+Rettelse: én setning no/en lagt til med søster-rammenes eksakte ordvalg —
+«En ny gjennomføring kan gi et noe annet estimat.» / «A retake can give a somewhat
+different estimate.» Ingen tall, ingen ny kvantifisering (beslutning-15-disiplin).
+Whitelistet diff: kun de to strengene rørt.
+
+### Estimat-harness (70/70 PASS etter rettelse)
+
+- V1: estimat-/usikkerhets-/råtrekk-vokabular til stede i alle 6 kombinasjoner.
+- V2/V3: forbudsord (IQ, intelligens, persentil, validert, sertifisering, Mensa,
+  målekvalitets- og talllovnader) forekommer KUN i negert kontekst.
+- V5: retest-erkjennelse til stede i alle tre rammer, no + en.
+- V6: identiteter bevart; degenerat-path (alle feil) → 0/50 uten θ-tekst, retest-
+  tekst beholdt; ingen IQ-tall i rendret output.
+- V7: «Generell evne (g)»-etikett i alle 6.
+
+### Re-verifisering og regresjon etter rettelse
+
+Produsent-harness 54/54 uroet · report selftest 74/74 · engine 72/72 · scoring
+27+27 · integrasjon 5/5 · attention 57/57 · resume 27/27 · repeat 25/25 ·
+handcalc 27/27 · glm-three-resumes 46/46 · i18n 22/22 · ipip50/evne itemspec +
+batch1/2 ALL · normering 107/107 · ads 42/42 + dims 67/67 · puzzle 99/99 +
+validitet 24/24 · hreflang 171/171 · SSG 14 pages byte-identisk ut/ · demo
+regenerert byte-identisk.
+
+### Avkreftinger (2)
+
+1. De 15 regexp-treffene på «diagnose/klinisk» i configs er forbidWord/
+   prohibitions-lister — bevisste forbudsord, ikke lovninger.
+2. «Ikke psykometrisk validert i denne implementasjonen» i standard-/personal-
+   metodeblokken er eksplisitt negasjon (NV-markering), ikke lovning.
+
+### Holds/pins
+
+- H1 arvet uendret: note-id-prefiks («note.gscore.not-normed» som synlig token)
+  er renderer-kontrakt siden #3728 — krever egen versjon/punch.
+- Pin videreført: ved normerings-endpoint-binding (GAP-1, FASE 4) re-leses alle
+  g-score-tekster mot beslutning 14 på nytt.
+
+Leveranse: tests/schema/_fase3_gscore_verify_verdict.json (GJELDENDE) +
+_fase3_estimat_verify.mjs + employer-normNote-rettelse + rapport-utvidelse
+(denne seksjonen).

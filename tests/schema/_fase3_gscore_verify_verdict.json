@@ -1,0 +1,38 @@
+{
+  "_kommentar": "[VERIFISER FASE 3] Evner-resultattekst: hvert estimat-ord kontroll mot beslutning 14 (todo #3783, todo-run TR-BA7FC4DC775A, iter 1). Uavhengig verifier over produsentens #3782-leveranse (TR-4CF9780358E4): re-lesing som fremmed + deterministisk estimat-harness mot låst beslutning 14 (IQ = indikativt estimat, aldri intelligensmål/lovnad; retest-effekt erkjent; ingen tall/sertifisering uten målegrunnlag — beslutning-15-disiplin).",
+  "verdictId": "fase3-gscore-estimat-verify-verdict",
+  "type": "estimate-language-verify-verdict",
+  "status": "GJELDENDE",
+  "date": "2026-11-16",
+  "beslutning14-grunnlag": "Rekonstruert fra samtalehistorikken (CHT-480D2D880C, turer 14974-15024, arkivert ARCH-D16555F9C7): operatørens IQ-premiss (IQ 'måler bare hvor god du er til å ta iq tester', score øker ved gjentak, men er 'det verden bruker') + preplan-konkretiseringen ('vi selger ikke intelligens, vi selger et estimat i den skalaen verden kjenner, med ærlig merknad; store pooler for retest; praksiseffekt erkjent'). Stegteksten #3783 sitter dette inn i kravet: ingen setning i evneresultat-tekstene kan love mer enn testen holder.",
+  "metoder": [
+    "A: fremmedlesing av alle rendret evne-tekster (6 rammekonfig x no/en via ekte scoringpath scoreTest(def-evne-t1-matrise.no, 50 ability-svar, hver-5-feil -> 40/50, theta estimert med CI95)) — setning-per-setning mot beslutning 14.",
+    "B: deterministisk estimat-harness tests/schema/_fase3_estimat_verify.mjs — 70 sjekker: V1 estimat-vokabular til stede i alle 6; V2/V3 forbudsord (IQ, intelligens, persentil, validert, certifi/sertifis, Mensa, målekvalitetslovnad, talllovnad +-N/IQ-N) KUN i negert kontekst (±60/90-tegns negasjonsvindu); V5 retest-erkjennelse i ALLE tre rammer no/en; V6 identitet ('Ditt evneresultat', employer beholdt) + degenerat-path (alle feil -> theta null, 0/50, retest-tekst beholdt); V7 etikett 'Generell evne (g)' i alle 6.",
+    "C: syntese: 1 funn (F-V1, klasse i) RETTET + re-verifisert; 2 avkreftinger; 1 hold arvet."
+  ],
+  "funn": [
+    {
+      "id": "F-V1",
+      "klasse": "i (mangler) på produsent-steg #3782",
+      "status": "RETTET",
+      "funn": "Employer-rammens total.g-score.normNote manglet retest-erkjennelsen som standard og personal fikk i #3782 ('En ny gjennomføring kan gi et noe annet estimat'): rettelsen i produksjonsrapporten sier eksplisitt at standard og personal har retest-setningen, men employer fikk bare IQ-nekting + utvelgelses-forbud. Beslutning 14 kjerneverdien (IQ-score øker jo flere ganger man tar tester — praksiseffekten) rammer nettopp mottaker-leseren i employer-rammen (samtalegrunnlag fremfor en gang målt), og stegteksten #3782 oppgir retest-intervall som krav uten ramme-unntak. Ingen selftest fanget det (produsentens harness piner ikke retest-feltet i employer).",
+      "rettelse": "én setning no/en lagt til employer-rammens g-score normNote, med søster-rammenes eksakte ordvalg (NO 'En ny gjennomføring kan gi et noe annet estimat.', EN 'A retake can give a somewhat different estimate.') — ingen tall, ingen kvantifisering (beslutning-15-disiplin). Whitelistet felt-diff: kun de 2 strengene rørt."
+    }
+  ],
+  "avkreftinger": [
+    "Ikke-funn: de 15 regex-treffene på 'diagnos*'/d'klinisk' i configs er total.threshold.forbidWord/employer.prohibitions-lister — bevisste forbudsord, ikke lovninger.",
+    "Ikke-funn: 'validert/psykometrisk validert' i standard-/personal-metodeblokken står i eksplisitt negasjon ('ikke psykometrisk validert i denne implementasjonen') — korrekt NV-markering, ikke lovning."
+  ],
+  "holds": [
+    "H1 arvet: note-id-prefiks ('note.gscore.not-normed' som synlig token) er renderer-kontrakt siden #3728 — uendret, krever egen versjon/punch."
+  ],
+  "pins": [
+    "P-V1 (videreført til normering-binding): ved normerings-endpoint-kontraktbinding (GAP-1, FASE 4) skal ALLE g-score-tekster re-leses mot beslutning 14 på nytt — normdata inn fjerner ikke estimat-kravet, men endrer tekstgrunnlaget."
+  ],
+  "verifiseringsbevis": {
+    "estimat-harness": "tests/schema/_fase3_estimat_verify.mjs — 70/70 PASS (etter rettelse; før rettelsen 63 PASS / 9 'FAIL' derav 9 var falske positive i egen forbuds-skann (negasjonsvinduet for kort) og 0 reelle prod-funn; skann justert → 70/70).",
+    "producent-harness-re-run": "tests/schema/_fase3_gscore_verify.mjs — 54/54 PASS mot rettet config (uroet).",
+    "regresjon-etter-rettelse": "report selftest 74/74 · engine 72/72 · scoring 27+27 · integrasjon 5/5 · attention 57/57 · resume 27/27 · repeat 25/25 · handcalc 27/27 · glm-three-resumes 46/46 · i18n 22/22 · ipip50 ALL · evne itemspec + batch1/2 ALL · normering 107/107 · ads 42/42 + dims 67/67 · puzzle 99/99 + validitet 24/24 · hreflang 171/171 · SSG build 14 pages byte-identisk ut/ · demo regenerert byte-identisk (trait-fixture, g-score-blokken ikke i standard-demo)."
+  },
+  "konklusjon": "Alle rendret evneresultat-tekster i alle 3 rammekonfiger x no/en holder beslutning 14: estimat-språk med usikkerhetsintervall, IQ kun i negert form, intelligens kun nektet som mål, praksiseffekt/gjentak erkjent i alle rammer, ingen tall eller sertifisering uten målegrunnlag. 0 åpne avvik."
+}

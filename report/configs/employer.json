@@ -39,8 +39,8 @@
         "en": "Result — groundwork for a conversation"
       },
       "normNote": {
-        "no": "Resultatet er råtrekk (antall riktige svar) og et estimat av evnenivå (theta) med usikkerhetsintervall. Det er ikke et normert IQ-tall, ikke et sertifikat, og det kan ikke brukes til utvelgelse.",
-        "en": "The result is a raw count (number of correct answers) and an estimated ability level (theta) with an uncertainty interval. It is not a normed IQ number, not a certificate, and must not be used for selection."
+        "no": "Resultatet er råtrekk (antall riktige svar) og et estimat av evnenivå (theta) med usikkerhetsintervall. Det er ikke et normert IQ-tall, ikke et sertifikat, og det kan ikke brukes til utvelgelse. En ny gjennomføring kan gi et noe annet estimat.",
+        "en": "The result is a raw count (number of correct answers) and an estimated ability level (theta) with an uncertainty interval. It is not a normed IQ number, not a certificate, and must not be used for selection. A retake can give a somewhat different estimate."
       }
     }
   },

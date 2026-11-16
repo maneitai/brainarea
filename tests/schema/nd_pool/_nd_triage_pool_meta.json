@@ -81,7 +81,7 @@
       "theme": "adhd-t2",
       "asrsNear": true,
       "nearNoteNo": "ASRS-6Q-anker-betegner sitte-uro (fidget); observabelen her er å forlate bordet — samme familie, ulikt vinkel.",
-      "noteEn": "The ASRS 6Q anchor covers seated fidgeting; this item observes leaving the table — same family, different angle."
+      "nearNoteEn": "The ASRS 6Q anchor covers seated fidgeting; this item observes leaving the table — same family, different angle."
     },
     {
       "id": "ta-0011",
@@ -106,7 +106,7 @@
       "axis": "adhd",
       "theme": "adhd-t2",
       "asrsNear": false,
-      "noteEn": "NOTE-EN (ikke-nær men notert): ASRS langform har en kø-vinkel; ikke blant 6Q-ankrets seks — beholdt som impuls-vinkel."
+      "nearNoteEn": "NOTE-EN (ikke-nær men notert): ASRS langform har en kø-vinkel; ikke blant 6Q-ankrets seks — beholdt som impuls-vinkel."
     },
     {
       "id": "ta-0015",
@@ -114,7 +114,7 @@
       "theme": "adhd-t3",
       "asrsNear": true,
       "nearNoteNo": "Anker-3 dekker huske-avtaler; item er utsettelse av avtaler og regninger — nær familie, ulikt vinkel.",
-      "noteEn": "Anchor item 3 covers remembering appointments; this item is postponing bills and appointments — near family, different angle."
+      "nearNoteEn": "Anchor item 3 covers remembering appointments; this item is postponing bills and appointments — near family, different angle."
     },
     {
       "id": "ta-0016",
@@ -122,7 +122,7 @@
       "theme": "adhd-t3",
       "asrsNear": true,
       "nearNoteNo": "Anker-1 dekker avslutning av oppgaver; item er halvferdig husarbeid — samme familie.",
-      "noteEn": "Anchor item 1 covers wrapping up tasks; this item is half-finished laundry — same family."
+      "nearNoteEn": "Anchor item 1 covers wrapping up tasks; this item is half-finished laundry — same family."
     },
     {
       "id": "ta-0017",
@@ -130,7 +130,7 @@
       "theme": "adhd-t3",
       "asrsNear": true,
       "nearNoteNo": "Anker-1-familien (ufullførte oppgaver), vinkel: gjenoppdagede halvferdige starter.",
-      "noteEn": "Anchor item 1 family (unfinished tasks), angle: rediscovered half-started tasks."
+      "nearNoteEn": "Anchor item 1 family (unfinished tasks), angle: rediscovered half-started tasks."
     },
     {
       "id": "ta-0018",
@@ -149,8 +149,8 @@
       "axis": "adhd",
       "theme": "adhd-t3",
       "asrsNear": true,
-      "nearNoteNo": "Anker-3-familien (huske forpliktelser; termenen glipper).",
-      "noteEn": "Anchor item 3 family (remembering obligations; the deadline slips the mind)."
+      "nearNoteNo": "Anker-3-familien (huske forpliktelser; terminen glipper).",
+      "nearNoteEn": "Anchor item 3 family (remembering obligations; the deadline slips the mind)."
     },
     {
       "id": "ts-0001",

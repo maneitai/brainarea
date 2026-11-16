@@ -413,7 +413,7 @@
       "id": "ta-0012",
       "kind": "likert",
       "lang": "no",
-      "text": "Jeg bytter tema i samtalen så snart en ny idè dukker opp.",
+      "text": "Jeg bytter tema i samtalen så snart en ny idé dukker opp.",
       "options": [
         {
           "label": "Veldig unøyaktig",
@@ -685,7 +685,7 @@
       "id": "ta-0020",
       "kind": "likert",
       "lang": "no",
-      "text": "Jeg betaler for sent fordi fristen glipper av tanken min.",
+      "text": "Jeg betaler for sent fordi fristen glipper fra tanken min.",
       "options": [
         {
           "label": "Veldig unøyaktig",

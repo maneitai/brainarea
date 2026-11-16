@@ -53,7 +53,7 @@ ITEMS = [
      "Jeg kjøper ting jeg ikke hadde planlagt å kjøpe.",
      "I buy things I had no plan to buy."),
     ("ta-0012", "adhd", 2, False, None, None,
-     "Jeg bytter tema i samtalen så snart en ny idè dukker opp.",
+     "Jeg bytter tema i samtalen så snart en ny idé dukker opp.",
      "I switch topics the moment a new idea shows up."),
     ("ta-0013", "adhd", 2, False, None, None,
      "Jeg går rett på ting uten å lese bruksanvisningen ferdig.",
@@ -86,9 +86,9 @@ ITEMS = [
      "Jeg tar med meg feil veske eller feil nøkler når jeg skynder meg.",
      "I grab the wrong bag or the wrong keys when I rush out."),
     ("ta-0020", "adhd", 3, True,
-     "Anker-3-familien (huske forpliktelser; termenen glipper).",
+     "Anker-3-familien (huske forpliktelser; terminen glipper).",
      "Anchor item 3 family (remembering obligations; the deadline slips the mind).",
-     "Jeg betaler for sent fordi fristen glipper av tanken min.",
+     "Jeg betaler for sent fordi fristen glipper fra tanken min.",
      "I pay late because the deadline slips my mind."),
     # --- Autisme akse — tema 1: Sosialt samspill og resiprositet kortform (7)
     ("ts-0001", "autism", 1, False, None, None,
@@ -235,7 +235,7 @@ def build_meta():
         row = {"id": iid, "axis": axis, "theme": axis + "-t" + str(theme_i)}
         row["asrsNear"] = bool(near)
         if nn_no: row["nearNoteNo"] = nn_no
-        if nn_en: row["noteEn"] = nn_en if near else nn_en
+        if nn_en: row["nearNoteEn"] = nn_en
         rows.append(row)
     counts = {"adhd": {}, "autism": {}}
     for axis in ("adhd", "autism"):

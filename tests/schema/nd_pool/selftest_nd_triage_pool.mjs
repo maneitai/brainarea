@@ -181,7 +181,7 @@ const tc = meta.themeCounts;
 ok(tc.adhd.t1 === 7 && tc.adhd.t2 === 7 && tc.adhd.t3 === 6 && tc.autism.t1 === 7 && tc.autism.t2 === 7 && tc.autism.t3 === 6, 'S10b tema 7/7/6 per akse (fikk ' + JSON.stringify(tc) + ')');
 const nearIds = meta.items.filter((r) => r.asrsNear).map((r) => r.id);
 ok(JSON.stringify(nearIds) === JSON.stringify(['ta-0010', 'ta-0015', 'ta-0016', 'ta-0017', 'ta-0020']), 'S10c asrsNear-flaglisten eksakt (fikk ' + JSON.stringify(nearIds) + ')');
-ok(meta.items.every((r) => !r.asrsNear || (r.nearNoteNo || r.noteEn)), 'S10d nærflagg har notat');
+ok(meta.items.every((r) => !r.asrsNear || (r.nearNoteNo || r.nearNoteEn)), 'S10d nærflagg har notat');
 ok(meta.items.filter((r) => r.axis === 'autism').every((r) => !r.asrsNear), 'S10e ingen autisme-items nær-flagget (autisme-anker er originalt, ingen ekstern skala å klone fra)');
 ok(/DOC-C8C02AD272/.test(meta.licenseBasis), 'S10f lisensforankring dokumentert i meta');
 ok(/NG-4/.test(meta.keyingRule), 'S10g NG-4-avviket dokumentert i meta');

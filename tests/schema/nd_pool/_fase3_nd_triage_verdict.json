@@ -1,0 +1,144 @@
+{
+  "specVersion": 1,
+  "id": "fase3-nd-triage-no-translation-verdict",
+  "type": "translation-qa-verdict",
+  "status": "GJELDENDE",
+  "date": "2026-11-16",
+  "run": "TR-1E0F3E50D2BE",
+  "phase": "fase3-nd [3-VEIS] fullfoert i én todo-run: A-utkast-verdikt (full korpus-lesing 80 tekster + nearNotes) -> B-kritikk (deterministisk verify-harness _fase3_nd_verify.mjs) -> C-syntese (denne verdikten). Metodeskille: A leste korpuset, B leser mot disk-artefakter. Ingen separat ask_agent-familie ble spawnet fra worker-konteksten (kjent 'ukjent chat'-feilmodus, samme dokumenterte modus som personlighet-kjeden) — metodeskiftet er registrert som pin #P2.",
+  "scope": "ND-sporets eksisterende NO/EN-tekslag ved stegstart: triage-poolen (40 originale likert-items x NO/EN, ta-0001..0020 + ts-0001..0020, bygd #3758 commit 65096b3, NO/EN separat forfattet per spec.languagePlan) + metaens asrsNear-nearNotes (5 rader) + dimensions-beskrivelsene (2 per språk). Dyppoolene ADHD/autisme (100+100 items) er IKKE bygget (hjem #3826-#3831) — item-oversettelse/QC for dem kan ikke skje her. ASRS-blokken (6Q) er lisensbundet verbatim-adopsjon fra NYUs offisielle 6Q_Norwegian_final.pdf (FASE 3-kontrakt i spec.languagePlan.asrsSpecial) og tar ikke del i fri oversettelse — den eksisterer ennå ikke i noen def (holdes utenfor live per verdikt #3732 §4). Dimensions-etikettene (ADHD/Autisme) er låste kontrakt-id-er fra itemspec/domainDecision og er ikke oversettelsesobjekt i dette steget.",
+  "metode": "Full lesing av alle 80 item-tekster (NO+EN) og 10 nearNotes; mekanisk skann (dobbelord, dobbeltmellomrom, mellomrom-for-tegn, doblete tegn, svenske vokaler ö/ä, ø->Å-korrupsjon, halvbokstavsformer, ordantall 8-14, slutttegn, absolutter); full ordliste-gjennomgang; NAOB-oppslag for ordvalgs-suspekter (glippe, idè/idé, halvferdig/halvveis: hentet 2026-11-16); kryssles EN<->NO konstrukt-ekvivalens; B-harness med 9 sjekkfamilier (V0-V9) inkl. regenerability-byte-paritet, selftest-rekjoring, klinisk/lisens-voktering og options-paritet; full regresjon over selftest-settet.",
+  "rettelser": [
+    {
+      "id": "ta-0012",
+      "klasse": "i",
+      "pool": "nd-triage",
+      "before": "Jeg bytter tema i samtalen så snart en ny idè dukker opp.",
+      "after": "Jeg bytter tema i samtalen så snart en ny idé dukker opp.",
+      "grunn": "halvbokstav-form: 'idè' finnes ikke i norsk ordliste; 'idé' er formen. Rettet i def-no via generator ('idè' x1 -> 'idé' x1); selftest S13 byte-paritet bekrefter regenerability.",
+      "familie": "A+B (funnet i A-lesing, bekreftet i B-harness V3a)"
+    },
+    {
+      "id": "ta-0020",
+      "klasse": "iii",
+      "pool": "nd-triage",
+      "before": "Jeg betaler for sent fordi fristen glipper av tanken min.",
+      "after": "Jeg betaler for sent fordi fristen glipper fra tanken min.",
+      "grunn": "preposisjonsvalg: NAOB (hentet 2026-11-16) gir 'glippe' ('ikke holde, gli, smette (fra noen)') med fra-konstruksjon; 'glippe av tanken' er ikke dokumentert konstruksjon. 'glippe fra tanken' er den vanlige norske formen (i tråd med 'glippe fra minne'/'glippe fra hodet').",
+      "familie": "A (NAOB-forankret)"
+    },
+    {
+      "id": "ta-0020",
+      "klasse": "iii",
+      "pool": "nd-triage-meta",
+      "before": "Anker-3-familien (huske forpliktelser; termenen glipper). [nearNoteNo]",
+      "after": "Anker-3-familien (huske forpliktelser; terminen glipper). [nearNoteNo]",
+      "grunn": "stavefeil: 'termenen' -> 'terminen'. Meta-only (brukersynlig tekst i pool-def; nearNotes er FASE 4-utvalgs-notater). Rettet i generator, re-generert inn i meta.",
+      "familie": "A+B (B-harness V3c/V3c2)"
+    },
+    {
+      "id": "meta",
+      "klasse": "i",
+      "pool": "nd-triage-meta",
+      "before": "row[\"noteEn\"] = nn_en if near else nn_en  (død ternary + asymmetrisk nøkkel mot nearNoteNo)",
+      "after": "row[\"nearNoteEn\"] = nn_en  (symmetrisk nøkkel, død grene fjernet)",
+      "grunn": "generator-bygg-defekt funnet i B-øyne: begge ternary-grener identiske og EN-nøkkelen het noteEn mens NO-nøkkelen het nearNoteNo. Konsekvens: meta-nøkkel-symmetri var i stykker (5 nær-rader). Rettet i generator + selftest S10d referanse oppdatert ('noteEn' -> 'nearNoteEn'), re-generert. Ingen brukersynlig teksten endret — mekanisk nøkkel-konsolidering.",
+      "familie": "B (harness-funn), C-syntese godkjente"
+    },
+    {
+      "id": "selftest",
+      "klasse": "i",
+      "pool": "nd-triage-selftest",
+      "before": "S10d: 'r.nearNoteNo || r.noteEn'",
+      "after": "S10d: 'r.nearNoteNo || r.nearNoteEn'",
+      "grunn": "følger R4: selftest-referansen må peke på den nye symmetriske nøkkelen. 78/78 ALL PASS etter endring.",
+      "familie": "B (harness-funn)"
+    }
+  ],
+  "avkreftet": [
+    {
+      "mistanke": "'halvferdig' (ta-0016) og 'halvveis' (ta-0017) er halvbokstavs-former samme klasse som 'idè'",
+      "verdict": "RENT — 'halvferdig'/'halvveis' er korrekte norske sammensetninger (halv- + adjektiv/adverb); ingen NAOB-basis for å endre. Mistanken oppsto ved at 'idè'-scan-flagget grep dem overfladisk."
+    },
+    {
+      "mistanke": "NO/EN-tekst-parene er oversettelser av hverandre (bryter 'separat forfattet'-konvensjonen)",
+      "verdict": "RENT — alle 40 par konstrukt-ekvivalente men ordret forskjellige (S6b/S6c bekreftet i selftest + B-harness recount); NO-side leser naturlig norsk, ikke calque."
+    },
+    {
+      "mistanke": "dyppool-oversettelser mangler her og er et hull i steget",
+      "verdict": "IKKE ET STEG-HULL — dyppoolene er ikke bygget; deres hjem er [BYGG]-leddene #3826-#3831 (NO+EN separat forfattet, ikke oversettelse). Verdicten er komplett for sitt eksisterende omfang (triage + nearNotes + dimensions)."
+    }
+  ],
+  "holds": [
+    {
+      "id": "H1",
+      "faktum": "ta-0014 har nearNoteEn-note med asrsNear=False ('NOTE-EN (ikke-nær men notert): ASRS langform har en kø-vinkel...')",
+      "status": "FORPLEVET SOM FORFATTERVALG, INGEN ENDRING",
+      "grunn": "nearNote-teksten er selvforklarende ('ikke-nær men notert') og gir FASE 4-utvalget kontekst; å nullstille den ville miste informasjon. Symmetri-kravet gjelder 'samme notat-innhold på begge språk for nær-flaggede rader', ikke 'alle rader har begge'."
+    },
+    {
+      "id": "H2",
+      "faktum": "ASRS-6Q-blokken er ikke til stede i noen def og dens NO-tekst er lisensbundet verbatim-adopsjon (NYU 6Q_Norwegian_final.pdf)",
+      "status": "URETINTET I STEGET — EIER ET ANNET LEDD",
+      "grunn": "spec.languagePlan.asrsSpecial-kontrakten gjør ASRS-tekst til verbatim-adopsjon, ikke oversettelse; blokken er holdt utenfor live per verdikt #3732 §4 til NYU-skriftlig bekreftelse om skjermbasert remediering foreligger. Ingen FASE 3-oversettelses-objekt finnes — registrert som scope-avgrensning, ikke hull."
+    },
+    {
+      "id": "H3",
+      "faktum": "FASE 1-mikro-bygget ('skåren'->'scoren' + 'fÅr'->'før' + 'spÅrsmå'->'spørsmål') er fortsatt ufixet i prod i18n",
+      "status": "FORPLEVET (sammen kallende pin fra personlighet- og relasjons-kjedene)",
+      "grunn": "Samme status som relasjons-kjedens F2/F3: FASE 1-live-eid tekst, mikrob BYGG med rebuild + regresjon er eskalert i pin-liste. Rettelse her ville krysset eierskaps-grensen uten operatøren."
+    },
+    {
+      "id": "H4",
+      "faktum": "ts-0020 'Jeg lar heller telefonen ringe ut enn å svare uten forberedelse.' — 'lar heller ... enn' er komprimert konstruksjon ('lar heller telefonen ringe ut' vs 'svarer heller ikke uten forberedelse')",
+      "status": "GODKJENT SOM DESIGN, DOKUMENTERT",
+      "grunn": "Konstruksjonen er grammatisk ('lar X stedet for Y') og lesbar; alternativet ('Jeg velger å la telefonen ringe ut...') er lengre uten å flytte konstruktet. EN-par 'I let the phone ring out rather than answer unprepared' speiler samme struktur. Forfattervalg beholdt etter B-critikk; ikke et avvik."
+    }
+  ],
+  "uttalelser": [
+    "Korpuset (80 tekster) var mekanisk rent foruten 3 funn: 0 dobbeltord, 0 dobbeltmellomrom, 0 mellomrom-for-tegn, 0 doblete tegn, 0 svenske vokaler, 0 ø->Å-korrupsjon (AV-1-klassen bor i ads-nøkkelen i i18n, ikke i ND-korpuset).",
+    "NO/EN-konstrukt-ekvivalens er intakt etter rettelsene: samme id-rekkefølge, samme akse+tema per id (S6d-recount i B-harness), samme asrsNear per id, og options har byte-paritet mot def-ipip50-big5 (S5-konvensjonen).",
+    "Alle 5 rettelser er anvendt i generator + re-generert inn i def/meta for regenerability (S13 byte-paritet grønn ved re-kjoring).",
+    "Triagemodellen (tests/schema/_nd_triage_model.mjs, FLAGGED>=55, OBSERVED 40-54, outcodes out-none/out-adhd/out-autism/out-adhd-autism) er uroet: ingen av rettelsene berører skårelogikk — dette steget er ren tekst-QC.",
+    "Klinisk språk-kontroll (#3779-forberedelse): ingenting i de 80 item-tekstene kan leses som diagnose, henvisning eller alvorlighetsvurdering; diagnostisk/instrumentsvokabular-skann = 0 treff; i18n-disclaimerens 'Screening, ikke diagnose'-form er intakt. Dette er A-lesing + B-harness V7, foreløpig inntil #3779's egen familie-kontroll."
+  ],
+  "regresjon": {
+    "nd_selftest": "78/78 ALL PASS (etter rettelsene; S13 byte-paritet bekrefter regenerability)",
+    "verify_harness": "_fase3_nd_verify.mjs 44/44 PASS — VERIFY OK (kjort etter verdict-skriving; 3 midlertidige FAIL under herding ble rettet: \\b rundt é i JS-regex (2 ledd) og threshold.screening bor i note-ns (1 ledd) — ingen korpus-feil)",
+    "itemspecs": "nd-itemspec / ipip50 / rel-itemspec / evne-itemspec: ALL PASS x4",
+    "engine": "engine 72/72, scoring del1 27/27, del2 27/27, integrasjon 5/5, attention 57/57",
+    "pooler": "evne b1/b2/t5 ALL PASS x3, persona b1/b2/b3 ALL PASS x3, nd triage 78/78",
+    "funksjoner": "normering 107/107, i18n 22/22, ads 42/42, puzzle 99 PASS",
+    "soster_kontrakter": "fase3-rel verify VERIFY OK, fase3 psykometrisk verify 31/31 (uroet)",
+    "ssg": "app/build.js: 14 pages byte-identisk output; hreflang VERIFY OK"
+  },
+  "poolDesignSpor": {
+    "registrert_ikke_rettet": [
+      "ta-0014 nearNoteEn uten asrsNear-flagg (H1): forfattervalg beholdt, dokumentert i meta-notatet selv",
+      "dimensions.description-tekstene ('Daglig oppmerksomhet, uro og oppfølging...'/'Sosialt samspill, vaner og sensorisk toleranse...') er korte og lesbar, men bare 12-13 ord — FASE 4-utvalget kan ønske lengre beskrivelser når live-def bygges"
+    ]
+  },
+  "pins": [
+    {
+      "id": "P1",
+      "for": "operatøren",
+      "innhold": "FASE 1-mikro-bygg (sammenfallende pin fra personlighet/evne/relasjons/ND-kjedene): 'skåren'->'scoren' (rel.methodBody + home.disclaimer), 'fÅr'->'før' + 'spÅrsmå'->'spørsmål' (ad.disclaimer + kommentar), rebuild + full regresjon. Én billig build håndterer alle."
+    },
+    {
+      "id": "P2",
+      "for": "operatøren",
+      "innhold": "3-VEIS-metode: ask_agent-spawning fra todo-run-kontekst feiler ('ukjent chat'); uavhengigheten er metodeskilt (A-lesing vs B-harness), ikke kontekstkilt. Samme dokumenterte modus som personlighet-verdikten. Hvis ekte kontekstskilt-uavhengighet ønskes for #3779-verifiseringen: kjør den fra hovedchatten."
+    },
+    {
+      "id": "P3",
+      "for": "operatøren",
+      "innhold": "Dyppool-kjeden #3826-#3831 eier fremtidig item-tekst-QC for ADHD/autisme-dyp; ASRS-blokken eies av lisenskjeden (#3760 + NYU-bekreftelse). #3779 (klinisk språk-kontroll) bør lese resultatteksten + denne verdikten sammen."
+    }
+  ],
+  "syntese": {
+    "verdict": "FASE 3 ND (triage) NO-oversettelse GODKJENT etter 5 rettelser (3 klasse-i, 2 klasse-iii); alle anvendt i generator+def+meta for regenerability; selftest 78/78 grønn etter hver endring; B-harness grønn.",
+    "omfang": "40 items x 2 språk (triage-poolen) + 10 nearNotes + 4 dimensions-beskrivelser; dyppoolene og ASRS-blokken er eksplisitt utenfor (H2) med registrerte eiere.",
+    "gjenstaende": "ingen oversettelses-arbeid gjenstaar i triage-korpuset; dyppool-tekst og ASRS-adopsjon hører hjem i neste ledd."
+  },
+  "avslutning": "Utkast-verdikt + B-harness + syntese levert i én todo-run. 3 rettelser anvendt i nd_pool-tekster (ta-0012 idè->idé, ta-0020 glipper av->fra, ta-0020-nearNote termenen->terminen), 2 mekaniske rettelser i meta-generator-bygg (R4 nøkkel-symmetri) og selftest-referanse (R5). Regenerability holdt (S13 byte-paritet). Klinisk voktering ren — klar for #3779."
+}

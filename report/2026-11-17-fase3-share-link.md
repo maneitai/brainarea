@@ -24,3 +24,15 @@ delgraf 46/46, rel-itemspec ALL PASS, nd-itemspec ALL PASS, evne-itemspec ALL PA
 
 - Visningslags-kobling (delgraf + PDF-leser mot `#d=`-lenken) → FASE 4 par-flyten (delgraf-verdikt PIN-3).
 - Route-eierskap for origin/path → `app/locale.js` / FASE 4-leseren.
+
+## [VERIFISER GLM] Browser-load uten lagret tilstand (søster-leaf, TR-C81074672D21, commit 6a41e81)
+
+Spørsmål: «Åpne lenken i ren nettleser uten lagret tilstand — lastes resultatet?»
+
+**Metode.** Chromium-1248 (ekte Windows-binært via Playwright), fersk user-data-dir per løp — ingen cookies, cache eller localStorage. Delings-URL bygget av `_share_link.mjs` med EKTE modell-kjede: `computePairCompatibility` (overall 95.0, band-strong) → rel-encode → `buildShareUrl` (222 tegn URL); `computeTriageOutcome` (out-adhd-autism) → nd-encode (159 tegn URL). file://-URL med `#d=`-fragment mot demo-flatene no/en.
+
+**Resultat — JA, laster.** Begge flatene: status 200, tittel rendret, SVG-render (svgCount=1), ingen pageerror/console-error, `#d=`-fragment intakt etter last. Tom-fragment-kontroll: samme side uten fragment gir identisk bodyLen (551) — flatene laster uavhengig av fragment (de har ingen leser-logikk ennå; #3794-transportkontrakten er det som er bevist). Node-side runde-kontroll av dekoding: eksakt (rows [[60,70,100,50],[60,50,100,60]]).
+
+**Leveranser:** harness `tests/schema/_fase3_share_browserload_verify.mjs` + verdict `tests/schema/_fase3_share_browserload_verdict.json` (GJELDENDE). Speil `_delt/brainarea` synket; speil-selftest re-proven 108/108 PASS (identisk stdout-md5 `4ced62f590e8ef23a79bf3a9cb9ee86e`). Additivt: 2 filer, 0 muterte.
+
+**Grenser:** ikke rendret skår-UI i nettleseren — leserlaget mot `#d=` er FASE 4 par-flyten (delgraf-verdikt PIN-3). Beviset dekker: transportlenke bygges av ekte kjede, og flatene laster reint uten lagret tilstand.

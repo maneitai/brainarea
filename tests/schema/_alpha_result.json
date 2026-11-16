@@ -1,0 +1,625 @@
+{
+ "meta": {
+  "todo": "#3768",
+  "version": "2",
+  "date": "2026-11-16",
+  "seed": 20261116,
+  "simN": 300,
+  "grid": [
+   -7.0,
+   7.0,
+   1400
+  ],
+  "lambdaGrid": [
+   0.6,
+   0.65,
+   0.7,
+   0.75,
+   0.8
+  ],
+  "aGrid": [
+   1.0,
+   1.25,
+   1.5,
+   1.75,
+   2.0
+  ],
+  "model": "likert-gradering(4 kutt)/2PL",
+  "kildetall": "ipip.ori.org/newBigFive5broadKey.htm hentet 2026-11-15"
+ },
+ "pools": {
+  "persona-e-a": {
+   "kind": "likert",
+   "source": "persona_pool/def-persona-pool-e-a.en.json",
+   "scales": {
+    "agreeableness": {
+     "k": 50,
+     "keying": "25+/25-",
+     "lambda": 0.5812,
+     "lambdaSource": "kalibrert mot kildetall 0.82 (a=0.82 for 10 items)",
+     "lambdaSensitivity": {
+      "0.6": 0.961619855258196,
+      "0.65": 0.9700031448225124,
+      "0.7": 0.976778565373116,
+      "0.75": 0.9823334035157933,
+      "0.8": 0.9869469802634243
+     },
+     "theoryAlpha": 0.9579439252332164,
+     "theoryRBar": 15.648854961717698,
+     "simAlpha": 0.9495389623647023,
+     "simN": 300,
+     "flag": null
+    },
+    "extraversion": {
+     "k": 50,
+     "keying": "30+/20-",
+     "lambda": 0.6566,
+     "lambdaSource": "kalibrert mot kildetall 0.87 (a=0.87 for 10 items)",
+     "lambdaSensitivity": {
+      "0.6": 0.9616198552582632,
+      "0.65": 0.9700031448225577,
+      "0.7": 0.9767785653731464,
+      "0.75": 0.9823334035158136,
+      "0.8": 0.9869469802634375
+     },
+     "theoryAlpha": 0.970982142856948,
+     "theoryRBar": 20.046082949225678,
+     "simAlpha": 0.9711835425440896,
+     "simN": 300,
+     "flag": null
+    }
+   },
+   "theoryContentMix": {
+    "extraversion": {
+     "k": 50,
+     "verbatimItems": 39,
+     "verbatimShare": 0.78,
+     "rSource10": 0.4009216589861751,
+     "rOrig": 0.36,
+     "lamOrig": 0.6,
+     "rMix": 0.3919188940092166,
+     "alphaUnbounded": 0.9699029732086063,
+     "flag": null,
+     "rNote": "r_mix = 0.78*0.401(verbatim 39/50) + 0.22*0.36(original)"
+    },
+    "agreeableness": {
+     "k": 50,
+     "verbatimItems": 40,
+     "verbatimShare": 0.8,
+     "rSource10": 0.3129770992366412,
+     "rOrig": 0.36,
+     "lamOrig": 0.6,
+     "rMix": 0.32238167938931295,
+     "alphaUnbounded": 0.9596576572646032,
+     "flag": null,
+     "rNote": "r_mix = 0.80*0.313(verbatim 40/50) + 0.20*0.36(original)"
+    }
+   }
+  },
+  "persona-n-rest": {
+   "kind": "likert",
+   "source": "persona_pool/def-persona-pool-n-rest.en.json",
+   "scales": {
+    "agreeableness": {
+     "k": 5,
+     "keying": "3+/2-",
+     "lambda": 0.5812,
+     "lambdaSource": "kalibrert mot kildetall 0.82 (a=0.82 for 10 items)",
+     "lambdaSensitivity": {
+      "0.6": 0.7147351192863,
+      "0.65": 0.7637990259324103,
+      "0.7": 0.8079274543030568,
+      "0.75": 0.8475702665030473,
+      "0.8": 0.8831920687252017
+     },
+     "theoryAlpha": 0.6949152542353911,
+     "theoryRBar": 1.5648854961735865,
+     "simAlpha": 0.7091921782429065,
+     "simN": 300,
+     "flag": "under-0.70"
+    },
+    "conscientiousness": {
+     "k": 5,
+     "keying": "3+/2-",
+     "lambda": 0.5435,
+     "lambdaSource": "kalibrert mot kildetall 0.79 (a=0.79 for 10 items)",
+     "lambdaSensitivity": {
+      "0.6": 0.7147351192863,
+      "0.65": 0.7637990259324103,
+      "0.7": 0.8079274543030568,
+      "0.75": 0.8475702665030473,
+      "0.8": 0.8831920687252017
+     },
+     "theoryAlpha": 0.6528925619811679,
+     "theoryRBar": 1.3667820069103216,
+     "simAlpha": 0.6437647584429274,
+     "simN": 300,
+     "flag": "under-0.70"
+    },
+    "extraversion": {
+     "k": 5,
+     "keying": "3+/2-",
+     "lambda": 0.6566,
+     "lambdaSource": "kalibrert mot kildetall 0.87 (a=0.87 for 10 items)",
+     "lambdaSensitivity": {
+      "0.6": 0.7147351192863,
+      "0.65": 0.7637990259324103,
+      "0.7": 0.8079274543030568,
+      "0.75": 0.8475702665030473,
+      "0.8": 0.8831920687252017
+     },
+     "theoryAlpha": 0.7699115044235127,
+     "theoryRBar": 2.004608294922292,
+     "simAlpha": 0.7644010041361738,
+     "simN": 300,
+     "flag": null
+    },
+    "neuroticism": {
+     "k": 55,
+     "keying": "33+/22-",
+     "lambda": 0.64,
+     "lambdaSource": "kalibrert mot kildetall 0.86 (a=0.86 for 10 items)",
+     "lambdaSensitivity": {
+      "0.6": 0.9649867946083481,
+      "0.65": 0.9726555637391957,
+      "0.7": 0.9788449457292444,
+      "0.75": 0.9839136221465188,
+      "0.8": 0.9881195205911066
+     },
+     "theoryAlpha": 0.9712525667349106,
+     "theoryRBar": 20.92920353972901,
+     "simAlpha": 0.9737061008355167,
+     "simN": 300,
+     "flag": null
+    },
+    "openness": {
+     "k": 5,
+     "keying": "3+/2-",
+     "lambda": 0.6092,
+     "lambdaSource": "kalibrert mot kildetall 0.84 (a=0.84 for 10 items)",
+     "lambdaSensitivity": {
+      "0.6": 0.7147351192863,
+      "0.65": 0.7637990259324103,
+      "0.7": 0.8079274543030568,
+      "0.75": 0.8475702665030473,
+      "0.8": 0.8831920687252017
+     },
+     "theoryAlpha": 0.7241379310328455,
+     "theoryRBar": 1.7213114754005847,
+     "simAlpha": 0.6853451274130542,
+     "simN": 300,
+     "flag": null
+    }
+   },
+   "theoryContentMix": {
+    "neuroticism": {
+     "k": 55,
+     "verbatimItems": 41,
+     "verbatimShare": 0.745,
+     "rSource10": 0.38053097345132747,
+     "rOrig": 0.36,
+     "lamOrig": 0.6,
+     "rMix": 0.37530490748189865,
+     "alphaUnbounded": 0.9706253440616509,
+     "flag": null,
+     "rNote": "r_mix = 0.75*0.381(verbatim 41/55) + 0.25*0.36(original)"
+    },
+    "extraversion": {
+     "k": 5,
+     "verbatimItems": 2,
+     "verbatimShare": 0.4,
+     "rSource10": 0.4009216589861751,
+     "rOrig": 0.36,
+     "lamOrig": 0.6,
+     "rMix": 0.3763686635944701,
+     "alphaUnbounded": 0.7510925383675932,
+     "flag": null,
+     "rNote": "r_mix = 0.40*0.401(verbatim 2/5) + 0.60*0.36(original)"
+    },
+    "agreeableness": {
+     "k": 5,
+     "verbatimItems": 5,
+     "verbatimShare": 1.0,
+     "rSource10": 0.3129770992366412,
+     "rOrig": 0.36,
+     "lamOrig": 0.6,
+     "rMix": 0.3129770992366412,
+     "alphaUnbounded": 0.6949152542372881,
+     "flag": "under-0.70",
+     "rNote": "r_mix = 1.00*0.313(verbatim 5/5) + 0.00*0.36(original)"
+    },
+    "openness": {
+     "k": 5,
+     "verbatimItems": 0,
+     "verbatimShare": 0.0,
+     "rSource10": 0.34426229508196715,
+     "rOrig": 0.36,
+     "lamOrig": 0.6,
+     "rMix": 0.36,
+     "alphaUnbounded": 0.7377049180327868,
+     "flag": null,
+     "rNote": "r_mix = 0.00*0.344(verbatim 0/5) + 1.00*0.36(original)"
+    },
+    "conscientiousness": {
+     "k": 5,
+     "verbatimItems": 2,
+     "verbatimShare": 0.4,
+     "rSource10": 0.27335640138408307,
+     "rOrig": 0.36,
+     "lamOrig": 0.6,
+     "rMix": 0.3253425605536332,
+     "alphaUnbounded": 0.7068453275918063,
+     "flag": null,
+     "rNote": "r_mix = 0.40*0.273(verbatim 2/5) + 0.60*0.36(original)"
+    }
+   }
+  },
+  "persona-o-c": {
+   "kind": "likert",
+   "source": "persona_pool/def-persona-pool-o-c.en.json",
+   "scales": {
+    "conscientiousness": {
+     "k": 50,
+     "keying": "30+/20-",
+     "lambda": 0.5435,
+     "lambdaSource": "kalibrert mot kildetall 0.79 (a=0.79 for 10 items)",
+     "lambdaSensitivity": {
+      "0.6": 0.9616198552582632,
+      "0.65": 0.9700031448225577,
+      "0.7": 0.9767785653731464,
+      "0.75": 0.9823334035158136,
+      "0.8": 0.9869469802634375
+     },
+     "theoryAlpha": 0.949519230768757,
+     "theoryRBar": 13.667820069105987,
+     "simAlpha": 0.940226139276058,
+     "simN": 300,
+     "flag": null
+    },
+    "openness": {
+     "k": 50,
+     "keying": "30+/20-",
+     "lambda": 0.6092,
+     "lambdaSource": "kalibrert mot kildetall 0.84 (a=0.84 for 10 items)",
+     "lambdaSensitivity": {
+      "0.6": 0.9616198552582632,
+      "0.65": 0.9700031448225577,
+      "0.7": 0.9767785653731464,
+      "0.75": 0.9823334035158136,
+      "0.8": 0.9869469802634375
+     },
+     "theoryAlpha": 0.963302752293297,
+     "theoryRBar": 17.21311475400863,
+     "simAlpha": 0.9643325625447676,
+     "simN": 300,
+     "flag": null
+    }
+   },
+   "theoryContentMix": {
+    "openness": {
+     "k": 50,
+     "verbatimItems": 45,
+     "verbatimShare": 0.9,
+     "rSource10": 0.34426229508196715,
+     "rOrig": 0.36,
+     "lamOrig": 0.6,
+     "rMix": 0.34583606557377045,
+     "alphaUnbounded": 0.9635481372133472,
+     "flag": null,
+     "rNote": "r_mix = 0.90*0.344(verbatim 45/50) + 0.10*0.36(original)"
+    },
+    "conscientiousness": {
+     "k": 50,
+     "verbatimItems": 42,
+     "verbatimShare": 0.84,
+     "rSource10": 0.27335640138408307,
+     "rOrig": 0.36,
+     "lamOrig": 0.6,
+     "rMix": 0.2872193771626298,
+     "alphaUnbounded": 0.9527137807526069,
+     "flag": null,
+     "rNote": "r_mix = 0.84*0.273(verbatim 42/50) + 0.16*0.36(original)"
+    }
+   }
+  },
+  "nd-triage": {
+   "kind": "likert",
+   "source": "nd_pool/def-nd-triage-pool.en.json",
+   "scales": {
+    "adhd": {
+     "k": 20,
+     "keying": "20+/0-",
+     "lambda": 0.65,
+     "lambdaSource": "dokumentert forhåndsvalg (ingen publisert nd-kildetall)",
+     "lambdaSensitivity": {
+      "0.6": 0.9092728215100528,
+      "0.65": 0.9282368646252578,
+      "0.7": 0.9439004804228899,
+      "0.75": 0.9569737011789833,
+      "0.8": 0.967994110911684
+     },
+     "theoryAlpha": 0.9282368646252578,
+     "theoryRBar": 7.854766512968841,
+     "simAlpha": 0.927637131405861,
+     "simN": 300,
+     "note": "alle items sign 1 (NG-4-dokumentert avvik i #3758-rapporten); ingen reverserte",
+     "flag": null
+    },
+    "autism": {
+     "k": 20,
+     "keying": "20+/0-",
+     "lambda": 0.65,
+     "lambdaSource": "dokumentert forhåndsvalg (ingen publisert nd-kildetall)",
+     "lambdaSensitivity": {
+      "0.6": 0.9092728215100528,
+      "0.65": 0.9282368646252578,
+      "0.7": 0.9439004804228899,
+      "0.75": 0.9569737011789833,
+      "0.8": 0.967994110911684
+     },
+     "theoryAlpha": 0.9282368646252578,
+     "theoryRBar": 7.854766512968841,
+     "simAlpha": 0.9235701548068632,
+     "simN": 300,
+     "note": "alle items sign 1 (NG-4-dokumentert avvik i #3758-rapporten); ingen reverserte",
+     "flag": null
+    }
+   }
+  },
+  "evner": {
+   "kind": "ability",
+   "themes": {
+    "t1-matrise": {
+     "k": 50,
+     "metaFile": "_evne_pool_batch1_meta.json",
+     "bRange": [
+      -1.75,
+      1.7
+     ],
+     "missingB": [],
+     "a": 1.5,
+     "aSensitivity": {
+      "1.00": 0.9040934415745407,
+      "1.25": 0.9363469338334999,
+      "1.50": 0.9548096482049708,
+      "1.75": 0.9666133123068774,
+      "2.00": 0.9747668519762467
+     },
+     "theoryAlpha": 0.9548096482049708,
+     "theoryKR20infinite": 0.9548096482049708,
+     "meanP": 0.5344392321485508,
+     "simAlpha": 0.934201966092853,
+     "simN": 300,
+     "note": "2PL med felles a (ingen publisert diskriminering); b-verdier er poolens bandDiff-lisens",
+     "flag": null
+    },
+    "t2-numerisk": {
+     "k": 50,
+     "metaFile": "_evne_pool_batch1_meta.json",
+     "bRange": [
+      -1.75,
+      1.7
+     ],
+     "missingB": [],
+     "a": 1.5,
+     "aSensitivity": {
+      "1.00": 0.9040934415745407,
+      "1.25": 0.9363469338334999,
+      "1.50": 0.9548096482049708,
+      "1.75": 0.9666133123068774,
+      "2.00": 0.9747668519762467
+     },
+     "theoryAlpha": 0.9548096482049708,
+     "theoryKR20infinite": 0.9548096482049708,
+     "meanP": 0.5344392321485508,
+     "simAlpha": 0.9387442102049658,
+     "simN": 300,
+     "note": "2PL med felles a (ingen publisert diskriminering); b-verdier er poolens bandDiff-lisens",
+     "flag": null
+    },
+    "t3-verbal": {
+     "k": 50,
+     "metaFile": "_evne_pool_batch2_meta.json",
+     "bRange": [
+      -1.75,
+      1.7
+     ],
+     "missingB": [],
+     "a": 1.5,
+     "aSensitivity": {
+      "1.00": 0.9040934415745407,
+      "1.25": 0.9363469338334999,
+      "1.50": 0.9548096482049708,
+      "1.75": 0.9666133123068774,
+      "2.00": 0.9747668519762467
+     },
+     "theoryAlpha": 0.9548096482049708,
+     "theoryKR20infinite": 0.9548096482049708,
+     "meanP": 0.5344392321485508,
+     "simAlpha": 0.9388684332249376,
+     "simN": 300,
+     "note": "2PL med felles a (ingen publisert diskriminering); b-verdier er poolens bandDiff-lisens",
+     "flag": null
+    },
+    "t4-romlig": {
+     "k": 40,
+     "metaFile": "_evne_pool_batch2_meta.json",
+     "bRange": [
+      -1.75,
+      1.7
+     ],
+     "missingB": [],
+     "a": 1.5,
+     "aSensitivity": {
+      "1.00": 0.8792809838459846,
+      "1.25": 0.9198170516481557,
+      "1.50": 0.9430244673902607,
+      "1.75": 0.9578648634801872,
+      "2.00": 0.9681191889114569
+     },
+     "theoryAlpha": 0.9430244673902607,
+     "theoryKR20infinite": 0.9430244673902607,
+     "meanP": 0.5400457499225946,
+     "simAlpha": 0.920506595380594,
+     "simN": 300,
+     "note": "2PL med felles a (ingen publisert diskriminering); b-verdier er poolens bandDiff-lisens",
+     "flag": null
+    },
+    "t5-sekvens": {
+     "k": 40,
+     "metaFile": "_evne_pool_t5_meta.json",
+     "bRange": [
+      -1.75,
+      1.7
+     ],
+     "missingB": [],
+     "a": 1.5,
+     "aSensitivity": {
+      "1.00": 0.8792809838459846,
+      "1.25": 0.9198170516481557,
+      "1.50": 0.9430244673902607,
+      "1.75": 0.9578648634801872,
+      "2.00": 0.9681191889114569
+     },
+     "theoryAlpha": 0.9430244673902607,
+     "theoryKR20infinite": 0.9430244673902607,
+     "meanP": 0.5400457499225946,
+     "simAlpha": 0.9255404635761878,
+     "simN": 300,
+     "note": "2PL med felles a (ingen publisert diskriminering); b-verdier er poolens bandDiff-lisens",
+     "flag": null
+    }
+   }
+  },
+  "puzzle": {
+   "kind": "ability",
+   "k": 90,
+   "bRange": [
+    -1.925,
+    1.775
+   ],
+   "bands": {
+    "H": {
+     "k": 30,
+     "theoryAlpha": 0.9287845491793164,
+     "meanP": 0.2265850073214513,
+     "simAlpha": 0.9155996539340328,
+     "simN": 300
+    },
+    "L": {
+     "k": 30,
+     "theoryAlpha": 0.9229666489157436,
+     "meanP": 0.8008175897616897,
+     "simAlpha": 0.9013571654311583,
+     "simN": 300
+    },
+    "M": {
+     "k": 30,
+     "theoryAlpha": 0.9500528630543367,
+     "meanP": 0.5196414783019113,
+     "simAlpha": 0.9208180550667995,
+     "simN": 300
+    }
+   },
+   "whole": {
+    "theoryAlpha": 0.9758174381350893,
+    "meanP": 0.5156813584616841,
+    "simAlpha": 0.9701011406572456,
+    "simN": 300,
+    "aSensitivity": {
+     "1.00": 0.9479659874355713,
+     "1.25": 0.9656879234090828,
+     "1.50": 0.9758174381350893,
+     "1.75": 0.9822806914690322,
+     "2.00": 0.9867346262255082
+    }
+   },
+   "notes": [
+    "as-is b-verdier; s3-slot-avviket (DOC-29CC9CFE0D/DOC-6FCBBA7126, BLOKKERENDE) er IKKE modellert:",
+    "simuleringen antar at fasiten er slik agents leser; reell responsprosess for s3 forventes Å SENKE alpha i blandede økter"
+   ]
+  }
+ },
+ "selftest": [
+  {
+   "check": "S1a mulberry32: gj.snitt=0.4997 (|d|<.01)",
+   "pass": true
+  },
+  {
+   "check": "S1b lag-1-korrelasjon -0.000235 (|c|<.01) — v1-bug-fangedefensen",
+   "pass": true
+  },
+  {
+   "check": "S1c 10-bin-symmetri, maks avvik 0.0040 (<.02)",
+   "pass": true
+  },
+  {
+   "check": "S2 alpha<->r runde-tur eksakt",
+   "pass": true
+  },
+  {
+   "check": "S3 persona-e-a/agreeableness: |teori-sim|=0.0084 (<.06) (teori 0.9579, sim 0.9495)",
+   "pass": true
+  },
+  {
+   "check": "S3 persona-e-a/extraversion: |teori-sim|=0.0002 (<.06) (teori 0.9710, sim 0.9712)",
+   "pass": true
+  },
+  {
+   "check": "S3 nd-triage/adhd: |teori-sim|=0.0006 (<.06) (teori 0.9282, sim 0.9276)",
+   "pass": true
+  },
+  {
+   "check": "S3 nd-triage/autism: |teori-sim|=0.0047 (<.06) (teori 0.9282, sim 0.9236)",
+   "pass": true
+  },
+  {
+   "check": "S4 evner/t1-matrise: |KR20-sim|=0.0206 (<.07)",
+   "pass": true
+  },
+  {
+   "check": "S4 evner/t2-numerisk: |KR20-sim|=0.0161 (<.07)",
+   "pass": true
+  },
+  {
+   "check": "S4 evner/t3-verbal: |KR20-sim|=0.0159 (<.07)",
+   "pass": true
+  },
+  {
+   "check": "S4 evner/t4-romlig: |KR20-sim|=0.0225 (<.07)",
+   "pass": true
+  },
+  {
+   "check": "S4 evner/t5-sekvens: |KR20-sim|=0.0175 (<.07)",
+   "pass": true
+  },
+  {
+   "check": "S4 puzzle: |KR20-sim|=0.0057 (<.07)",
+   "pass": true
+  },
+  {
+   "check": "S5a teori-reverserings-invarians eksakt (0.982333403516 vs 0.982333403516)",
+   "pass": true
+  },
+  {
+   "check": "S5b sim-reversering: |gj-flip|=0.00061 (<.02 over 4 seeds)(0.9822 vs 0.9828)",
+   "pass": true
+  },
+  {
+   "check": "S7a theta var=0.9948 (≈1, |d|<.03) — Box-Muller begge grener i bruk",
+   "pass": true
+  },
+  {
+   "check": "S7b theta kurt=2.993 (≈3, |d|<.15)",
+   "pass": true
+  },
+  {
+   "check": "S6 ingen negative alpha-verdier (v1-buggen fanges her)",
+   "pass": true
+  }
+ ],
+ "selftestSummary": {
+  "total": 19,
+  "pass": 19
+ }
+}

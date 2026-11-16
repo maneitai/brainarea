@@ -1,0 +1,51 @@
+{
+ "_kommentar": "VERIFISER-steget (les som fremmed) for FASE 3 resultattekst personlighet — søster til #3780. Kjøringer i run TR-93FA84F1D79E iterasjon 1.",
+ "verdictId": "fase3-personality-resultattekst-verify-verdict",
+ "type": "translation-qa-verdict",
+ "status": "GJELDENDE",
+ "date": "2026-11-16",
+ "metoder": [
+  "A: les-som-fremmed-gjennomgang av rendret output (3 rammekonfiger x no/en, både demo og EKTE scoringpath)",
+  "B: deterministisk harness i økten — scoreTest(def-ipip50-big5.no, 50x likert=4) -> renderReport alle 6 kombinasjoner",
+  "C: syntese med ett funn + rettelse + re-verifikasjon"
+ ],
+ "ekte-scoringpath": "komposit 57 %, 5/5 Big-Five-etiketter rendret no+en, 0 rå dim-id synlige, scanBanned 0 treff i alle 6 rendringer",
+ "funn": [
+  {
+   "id": "V1",
+   "klasse": "i (mangler)",
+   "status": "RETTET",
+   "funn": "Komposit-tallet ('57 %') rendret uten eksplisitt forklaring: normNote forklarer prosent-begrepet generelt, leseguiden forklarer stolpene — men ingen tekst sier at samletallet er (vektet) gjennomsnittet av dimensjonsprosentene. En fremmed som leser side-4-rapporten kan tolke 55/57 % som persentil, nivå eller andel riktige.",
+   "rettelse": "Ett avklarende setning lagt til normNote i alle 3 configs (no+en): 'Samletallet er gjennomsnittet av dimensjonsprosentene dine (like vekter).' / 'The overall figure is the average of your dimension percentages (equal weights).' Employer-variant ordet til 'leses som en del av samtalegrunnlaget — ikke som en karakter'; 'karakter'-ordet ble valgt i stedet for forbudsord fordi scanBanned er negasjonsbevisst og uttrykket er genuint negert.",
+   "bevis": "standard normNote no/en, personal normNote no/en, employer normNote no/en"
+  }
+ ],
+ "holds": [
+  {
+   "id": "H1",
+   "status": "GJELDENDE dokumentert",
+   "tekst": "note.trait.not-normed rendres med rå note-id som synlig prefiks (ba-rep-note-id) — dette er renderer-kontrakt (#3728, notat skal kunne matches på id i employer-paraphrase-logikk; FASE 1-selftester S11.K-ankeret). Fremmedleseren ser 'note.trait.not-normed' som token. Hold: ingen endring utenom egen renderer-versjonering + schema-endring (note-id er del av rapportkontrakt)."
+  },
+  {
+   "id": "H2",
+   "status": "GJELDENDE dokumentert",
+   "tekst": "'[standard] fixture-big5'/'[standard] ipip50-big5' rendres som testId-fotnote. Demo-side har også gul fixture-banner. Hold: tilsiktet sporbarhet; demo-banner dekker fremmed-leseren i demo-kontekst."
+  },
+  {
+   "id": "H3",
+   "status": "GJELDENDE",
+   "tekst": "profileText forblir tom (navngitte profiler ikke levert av noen pool) — allerede HOLD/pin fra #3780, bekreftet her: renderer nekter å oppfinne tekst."
+  }
+ ],
+ "regresjon": {
+  "report": "74/74",
+  "demo": "regenerert byte-fersk (9667/9540B, composite-expl til stede)",
+  "i18n": "22/22",
+  "ipip50": "ALL PASS",
+  "persona_pool": "ALL PASS",
+  "scoring": "27/27",
+  "hreflang": "171 PASS",
+  "SSG": "14 pages OK"
+ },
+ "pin": "Navngitte profiltekster (profileText) — allerede pinn-et fra #3780; bekreftes av denne verifiseringen."
+}

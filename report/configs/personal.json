@@ -9,8 +9,8 @@
         "en": "Your personal picture"
       },
       "normNote": {
-        "no": "Samme skårberegning som standard-rammen: prosent av skalaens omfang, ikke normert. Det personlige er lesingen av hva skårene kan si om deg — med alle forbeholdene fra standard-rammen intakt.",
-        "en": "Same score computation as the standard frame: percent of scale range, not normed. The personal part is the reading of what scores may say about you — with all standard-frame caveats intact."
+        "no": "Samme skårberegning som standard-rammen: prosent av skalaens omfang, ikke normert. Samletallet er gjennomsnittet av dimensjonsprosentene dine (like vekter). Det personlige er lesingen av hva skårene kan si om deg — med alle forbeholdene fra standard-rammen intakt.",
+        "en": "Same score computation as the standard frame: percent of scale range, not normed. The overall figure is the average of your dimension percentages (equal weights). The personal part is the reading of what scores may say about you — with all standard-frame caveats intact."
       },
       "showBar": true
     },

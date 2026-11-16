@@ -66,3 +66,54 @@ formatet; alle er data i configs.
   Forelå posisjon: FASE 4-resultat-surface (sammen med #3722-rest ad-plasser).
 - Metode-lignende pin (kjent fra #3764/#3772): re-kjør ekte 3-familier-simulering via
   ask_agent fra hovedchat-kontekst når run-løsningen tillater det.
+
+---
+
+## VERIFISER (sister-steg, les som fremmed, TR-93FA84F1D79E) — 2026-11-16
+
+Metode: A = les-som-fremmed-gjennomgang av rendret output, B = deterministisk harness
+(scoreTest(def-ipip50-big5.no, 50× likert=4) → renderReport alle 6 kombinasjoner
+standard/personal/employer × no/en; samt fixture-path), C = syntese med rettelse +
+re-verifikasjon.
+
+Ekte scoringpath: komposit 57 %, 5/5 Big-Five-etiketter rendret i alle 6, 0 rå dim-id
+synlige, scanBanned 0 treff i alle 6 rendringer.
+
+### Funn V1 (klasse i, RETTET)
+
+**Komposit-tallet manglet leserforankring.** «55 %»/«57 %» rendret uten at noen
+tekst sier hva tallet er: normNote forklarer prosent-begrepet for skårene generelt,
+leseguiden forklarer stolpene — men ikke at samletallet er (vektet) gjennomsnittet
+av dimensjonsprosentene. En fremmed kan tolke det som persentil eller ferdighetsnivå
+— akkurat det rapporten lover å ikke være.
+
+Rettelse (ett setning no+en per ramme, anvendt):
+
+- standard: «Samletallet er gjennomsnittet av dimensjonsprosentene dine (like
+  vekter).» / «The overall figure is the average of your dimension percentages
+  (equal weights).»
+- personal: samme setning innfelt i eksisterende normNote (før «Det personlige er
+  lesingen …»).
+- employer: «Samletallet er gjennomsnittet av dimensjonsprosentene (like vekter),
+  og leses som en del av samtalegrunnlaget — ikke som en karakter.» / «The overall
+  figure is the average of the dimension percentages (equal weights) and is read as
+  part of the groundwork for conversation — not as a grade.»
+
+Re-verifikasjon: report-selftest 74/74 (uroert), ekte-path 6/6 rendringer med
+composite-expl til stede + forbud ren + etiketter rendret, demo regenerert
+(9667/9540 B) + composite-expl til stede i begge, i18n 22/22, ipip50 ALL,
+persona_pool ALL, scoring 27/27, hreflang 171 PASS, SSG 14 pages OK.
+
+### Holds (3)
+
+1. **note.trait.not-normed rendres med rå note-id som synlig prefiks** —
+   renderer-kontrakt siden #3728 (notat matchbar på id; noteParaphrases-logikken i
+   employer-rammen krever id-en). Fremmedleseren møter tokenet; endring krever egen
+   renderer-versjon + schema-punch — utenfor dette steget.
+2. **testId-fotnoten («[standard] ipip50-big5») + demo-fixture-banner** er tilsiktet
+   sporbarhet, ikke støy.
+3. **profileText forblir tom** — bekrefter #3780-HOLD: ingen pool leverer navngitte
+   profiler; pin videreføres (FASE 4 resultat-surface).
+
+Leveranse: tests/schema/persona_pool/_fase3_resultattekst_verify_verdict.json
+(GJELDENDE) + rettelsene i report/configs/*.json + re-genererte demo-sider.

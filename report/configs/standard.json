@@ -9,8 +9,8 @@
         "en": "Your profile"
       },
       "normNote": {
-        "no": "Skårene angir prosent av skalaens omfang (0–100) — de er ikke prosentiler, ikke normert mot en befolkningsgruppe og ikke diagnostiske. Midtpunktet på skalaen (50) er skalaens midt, ikke et gjennomsnitt over andre.",
-        "en": "Scores are percent of the scale range (0–100) — not percentiles, not normed against a population, and not diagnostic. The scale midpoint (50) is the middle of the scale, not an average over others."
+        "no": "Skårene angir prosent av skalaens omfang (0–100) — de er ikke prosentiler, ikke normert mot en befolkningsgruppe og ikke diagnostiske. Midtpunktet på skalaen (50) er skalaens midt, ikke et gjennomsnitt over andre. Samletallet er gjennomsnittet av dimensjonsprosentene dine (like vekter).",
+        "en": "Scores are percent of the scale range (0–100) — not percentiles, not normed against a population, and not diagnostic. The scale midpoint (50) is the middle of the scale, not an average over others. The overall figure is the average of your dimension percentages (equal weights)."
       },
       "showBar": true
     },

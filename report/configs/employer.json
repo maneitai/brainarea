@@ -9,8 +9,8 @@
         "en": "Result — groundwork for a conversation"
       },
       "normNote": {
-        "no": "Skårene er prosent av skalaens omfang (0–100), ikke normert og ikke sammenlignet med andre. Midtpunktet (50) er skalaens midt, ikke gjennomsnittet i noen gruppe. Rapporten er utarbeidet som et felles, åpent utgangspunkt for en samtale mellom den testede og mottakeren.",
-        "en": "Scores are percent of the scale range (0–100), not normed and not compared with anyone. The midpoint (50) is the scale's middle, not any group's average. The report is prepared as one shared, open starting point for a conversation between the test-taker and the recipient."
+        "no": "Skårene er prosent av skalaens omfang (0–100), ikke normert og ikke sammenlignet med andre. Midtpunktet (50) er skalaens midt, ikke gjennomsnittet i noen gruppe. Samletallet er gjennomsnittet av dimensjonsprosentene (like vekter), og leses som en del av samtalegrunnlaget — ikke som en karakter.",
+        "en": "Scores are percent of the scale range (0–100), not normed and not compared with anyone. The midpoint (50) is the scale's middle, not any group's average. The overall figure is the average of the dimension percentages (equal weights) and is read as part of the groundwork for conversation — not as a grade."
       },
       "showBar": true
     },

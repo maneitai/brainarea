@@ -1,0 +1,55 @@
+{
+  "specVersion": 1,
+  "id": "fase3-pdf-verdict",
+  "mandat": "todo-run leaf [BYGG] FASE 3: PDF-nedlasting av resultat (soester til #3790-delgrafen i beslutning 16-kjeden)",
+  "date": "2026-11-16",
+  "leveranse": [
+    "report/pdf/brainarea-pdf.mjs (PDF-writer + layout v1.0.0, 730 linjer etter vedlikehold)",
+    "report/pdf/pdffont.mjs (TTF-parser + TrueType subsetter v1.0.0, 415 linjer; input-kopi-fix)",
+    "report/pdf/fonts/DejaVuSans.ttf + DejaVuSans-Bold.ttf (kaller-levert fontkontrakt: byttes aldri runtime)",
+    "tests/schema/_fase3_pdf_selftest.mjs (105/105 PASS, 2 kjoeringer stdout-md5-identiske: 5258a54ceb3910674204bc87a7aa3274)",
+    "report/demo/_pdf_demo.mjs + report/demo/pdf-demo-no.pdf (91226 B) + pdf-demo-en.pdf (90787 B), byte-deterministisk regenererbar",
+    "report/2026-11-16-fase3-pdf.md (rapport med bevis, pins og funn)"
+  ],
+  "kontrakt": {
+    "inngang": "renderReportPdf(result[schemaVersion 1], config[report-config.schema.json], { lang, fontRegular: TTF-bytes, fontBold: TTF-bytes, profileId? }) — ingen fs/nett, ingen dependencies, kast paa konfigfeil (renderer-konvensjon).",
+    "utgang": "{ bytes: Uint8Array (PDF 1.4), meta: { version, lang, frame, testId, pages, objects(=11+2*pages), fontGlyphs, pdfBytes }, strings: alle synlige strenger i tegnerorden (forbudsskann-sink). }",
+    "identifikatorfrihet": "input er kun result + config + fonter; ingen navn/ids kan lekke utover testId i ctxLine og Info-title (dokumentert).",
+    "kjente grenser (dokumentert i modulhodet): flat rendring uten lenker/ankere; DejaVu Sans/Bold eneste skrift; BMP-tegn kreves i rendret tekst (>BMP kaster)."
+  },
+  "result": {
+    "PDF": "Type0/CIDFontType2 med Identity-H, subset-fonts innebaked som FlateDecode/FontFile2, ToUnicode CMap (code==unicode), egen zlib-implementasjon (stored blocks — byte-deterministisk valg), Info med fast produsent, ingen CreationDate. Layout: A4 595.28x841.89, margin 48pt, badge/total-blokk per scoringtype (trait/threshold/g-score), dims-bar-graf med akse + midtpunkt-dash [2 2] nullstilt etter bruk, prosentbar-rad med etikett, disclosures, profiltekst, leseveiledning, tredjepartsdel, employer-blokk, disclaimer.",
+    "fonts": "subsetFont: glyf-lukking (kompositt-glyfer rekursivt), re-encoding med ny gid-map, cmap format 4, hmtx/loca/head/hhea/maxp/post-v3 synkroniserte. Eier-kopi ved inngang (Buffer.slice-aliasing-fix). Det eksponerte kodepunktsettet provet komplett i G7 (cmap-union dekker alle sink-tegn).",
+    "determinisme": "G2: md5 over 2 kjoeringer likt for ALLE 7 cases; demo byte-identisk over regenerering.",
+    "sink": "strings = alle synlige strenger; ban-scan (scanPdfBanned) negasjonsbevisst (renderer-NEG_CUE-arv, avvik registrert under); employer-prohibitions kaster; threshold-forbidWord kaster."
+  },
+  "bevis": {
+    "harness": "node tests/schema/_fase3_pdf_selftest.mjs -> PDF SELFTEST 105 PASS / 0 FAIL (2 kjoeringer identiske stdout-md5)",
+    "ekteScoring": "G1: ipip50-big5 (50 items likert=3), nd-triage (40 items likert=3), evne-t1-matrise (50 ability-items, alternert korrekt/heilt), mini-threshold (18 items likert=3, band 'Moderat'. gscore-matrix er 1-item og gir theta=null — byttet til REAL evne-def i G1c).",
+    "struktur": "G5: %PDF-1.4-header + %%EOF + xref-offsets peker byte-presist paa '<id> 0 obj' i alle cases.",
+    "tekst": "G6/G6b: per-line-dekod av alle Tj-hex; alle sink-strenger dekket (token-pushes og wrapper-'• ' inkludert); §7-ctx-linje beviset pushet-og-ikke-tegnet (avvik F-A).",
+    "font": "G7: begge FontFile2 dekomprimert, re-parses, maxp.numGlyphs == meta.fontGlyphs, cmap-union dekker alle sink-kodepunkt (ingen .notdef-tomme bokser i rendret tekst).",
+    "raster": "pymupdf-raster av trait-standard-no, g-standard-no, thr-personal-no og demo-no side 1: badge, normNote, skaar, grafer, theta/CI95 og band-tekst visuell GLM-verifisert. Tekst-ekstraksjon matcher sink-nokler.",
+    "regresjon": "report 74, engine 27+27, integrasjon 5, attention 57, ipip50 ALL, delgraf 46, rel/nd/estimat/3rdparty/nd-itemspec/rel-itemspec-suitene — ALLE groenne; prod-tre uroet utover de nye filene (git-status)."
+  },
+  "funn": {
+    "fikset_i_steg": [
+      "F1 (klasse i): siste side ble aldri flushed — endPage() kalles kun ved sideskift, kort rapport ga pages=0 og HELE dokumentet var kastet. Fix: eksplisitt flush + tom-utdata => kast (regresjonslaast i G9: pages >= 1).",
+      "F2 (klasse i): subsetFont muterte anroperens font-buffer via Buffer.slice-aliasing (Node-Buffer deler minne ved slice; head-skrivingene overskrev originalen => neste subset leste oedelagt indexToLocFormat -> RangeError). Fix: eier-kopi ved inngang (regresjonslaast i G3).",
+      "F3 (klasse ii): paraT valgte alltid F1-reguler ved tross opts.bold (ternary sammenlignet 'bold' mot allerede resolvant fontKey). Fix: fontKey brukes direkte.",
+      "F4 (klasse ii): midtpunkt-dash satte dash-array uten aa nullstille — alle senere linjer (axer, regler) ville arvet stipling. Fix: '[] 0 d' etter S.",
+      "F5 (klasse iii): doed kode med brutte signaturer fjernet (Surface.text/para/badge + wrapText/stringWidth-globale + top-nivaa-tilordninger som krasjet import).",
+      "F6 (klasse iii): EN-fixedliste manglet '• ', '[', ']' (charset-assert slo ut ved en-render)."
+    ],
+    "registrerte_avvik_ikke_rette": [
+      "F-A (klasse i, pin): §7-tredjepartskontekstlinjen ('[frame] testId') pushes i strings-sinken men TEGNES aldri som egen linje (G6b beviser per case: ctxPushes=1, ctxDrawnAlone=false). Headerkontrakten 'kontekstlinje [frame] testId paa side 1' er ikke levert; §1-linjen ([frame] testId · lang) dekker informativt behovet. Eierskapet er neste PDF-bygg (BYGG-konvensjonen).",
+      "F-B (klasse ii, avvil laast, ikke rettet): scanPdfBanned arver renderer-NEG_CUE — 'ingen'/'mangler' er ikke negasjonsmarkoerer der, mens fase3-3rdparty-verifikatoren bruker bredere vokabular. Atferd laast i G8.negasjon-semantikk; unificering eies av renderer-bygget (samme pin som ND-verifiser-funn F1)."
+    ]
+  },
+  "pins": {
+    "neste_pdf_bygg": "F-A: tegn §7-ctx-linjen (eller fjen duplicate push) + ev. unifer scanPdfBanned-vokabular (F-B).",
+    "prod_integrasjon": "kaller i app/server maa lese fonts/ som Uint8Array (Buffer OK — modulen kopierer) og aapne bytes som Blob('application/pdf') eller server-multipart; ingen andre endringer.",
+    "skrift": "DejaVu Sans/Bold valgt: kompakt subset (~30-90KB PDF), dekker no/en + θ ≈ — — · « » •. Annen skrift = byte-swap av fonts/-filene, ingen kodeendring."
+  },
+  "verdict": "GJELDENDE — PDF-nedlasting av resultat er levert, deterministisk, sink-dekket og fullt verifisert mot ekte scoringpath; 105/105 selftest + full regresjon groenn."
+}

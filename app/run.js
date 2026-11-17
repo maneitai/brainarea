@@ -40,6 +40,7 @@ import { evaluateAttention } from '@BA@/tests/engine/attention.js';
 import { registerOverlay, makeT } from '@BA@/i18n/index.js';
 import { KEYS as NO_KEYS } from '@BA@/i18n/no.js';
 import { renderReport } from '@BA@/report/renderer.mjs';
+import { mountPuzzleGames } from '@BA@/puzzle.mjs';
 
 const RUN_NS = 'ba-run:';
 
@@ -96,6 +97,7 @@ const DEFS = {
   iq: 'def-evne-g-44',
   relational: 'def-rel-16',
 };
+const PUZZLE_TESTS = new Set(['puzzle']);
 async function loadDef(test, lang) {
   const name = DEFS[test];
   if (!name) throw new DefMissingError('ukjent test: ' + test);
@@ -166,6 +168,11 @@ async function boot() {
   };
 
   container.textContent = '';
+
+  if (PUZZLE_TESTS.has(mark.test)) {
+    await mountPuzzleGames(container, tt, mark);
+    return;
+  }
 
   let def, degraded;
   try {

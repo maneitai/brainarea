@@ -17,7 +17,7 @@ export const RUTE_LISTE = [
   { route: 'persona', testId: 'persona' },
   { route: 'evne', testId: 'iq' },
   { route: 'rel', testId: 'relational' },
-  { route: 'play', testId: null },
+  { route: 'play', testId: 'puzzle' },
   { route: 'about', testId: null },
   { route: 'privacy', testId: null },
 ];
@@ -48,10 +48,6 @@ const AD_PLACEMENTS = {
   home: [
     { format: 'in_feed', slot: 'home-after-cards' },
     { format: 'leaderboard', slot: 'home-bottom' },
-  ],
-  play: [
-    { format: 'in_feed', slot: 'play-intro-after' },
-    { format: 'leaderboard', slot: 'play-bottom' },
   ],
   about: [
     { format: 'in_feed', slot: 'about-intro-after' },
@@ -171,8 +167,10 @@ export function layout(route, locale, t) {
     return [
       { kind: 'node', tag: 'h1', cls: 'text-3xl font-extrabold tracking-tight', text: t('page.play.h1') },
       { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-500', text: t('page.play.intro') },
+      { kind: 'test-mount', testId: RUTE_LISTE.find((r) => r.route === route).testId },
       { kind: 'cards' },
-      ...adSlots('play'),
+      /* [BYGG] #3841: play er naa test-rute (puzzle-mount) — beslutning 11:
+         testflyten er alltid annonsesfri. adSlots('play') ville kastet hardt. */
     ];
   }
 

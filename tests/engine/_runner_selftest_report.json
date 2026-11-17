@@ -1,5 +1,5 @@
 {
-  "run": "2026-11-17T06:49:42.418Z",
+  "run": "2026-11-17T07:33:09.348Z",
   "scenarios": [
     {
       "scenario": "persona:no",
@@ -380,7 +380,7 @@
         {
           "name": "S3.opt-6",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-7",
@@ -390,22 +390,22 @@
         {
           "name": "S3.opt-8",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-9",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-10",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-11",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-12",
@@ -420,7 +420,7 @@
         {
           "name": "S3.opt-14",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-15",
@@ -440,12 +440,12 @@
         {
           "name": "S3.opt-18",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-19",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-20",
@@ -460,17 +460,17 @@
         {
           "name": "S3.opt-22",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-23",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-24",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-25",
@@ -480,7 +480,7 @@
         {
           "name": "S3.opt-26",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-27",
@@ -490,32 +490,32 @@
         {
           "name": "S3.opt-28",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-29",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-30",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-31",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-32",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-33",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-34",
@@ -540,17 +540,17 @@
         {
           "name": "S3.opt-38",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-39",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-40",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-41",
@@ -560,12 +560,12 @@
         {
           "name": "S3.opt-42",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-43",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 6"
         },
         {
           "name": "S3.resultat-etter-fullføring",
@@ -809,9 +809,521 @@
           "detail": "Testen kunne ikke lastes (spørsmålsdata mangler). Prøv å las"
         }
       ]
+    },
+    {
+      "scenario": "puzzle:no",
+      "pass": 52,
+      "fail": 0,
+      "checks": [
+        {
+          "name": "S1.css-injisert",
+          "ok": true
+        },
+        {
+          "name": "P1.start-knapp",
+          "ok": true
+        },
+        {
+          "name": "P1.startskjerm-tekst",
+          "ok": true
+        },
+        {
+          "name": "P2.spill-synlig",
+          "ok": true,
+          "detail": "tiles=7 opts=4"
+        },
+        {
+          "name": "P2.flis-a11y",
+          "ok": true
+        },
+        {
+          "name": "P3.velg-0-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-0",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-1-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-1",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-2-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-2",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-3-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-3",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-4-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-4",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-5-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-5",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-6-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-6",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-7-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-7",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-8-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-8",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-9-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-9",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-10-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.velg-10-1",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-10",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 2 valg"
+        },
+        {
+          "name": "P3.velg-11-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.velg-11-1",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-11",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 2 valg"
+        },
+        {
+          "name": "P3.velg-12-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-12",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-13-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-13",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-14-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-14",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-15-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.velg-15-1",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-15",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 2 valg"
+        },
+        {
+          "name": "P4.resultat-synlig",
+          "ok": true
+        },
+        {
+          "name": "P4.theta-tekst",
+          "ok": true,
+          "detail": "ResultatSkåringen gir et estimat og et usikkerhetsbånd. Usik"
+        },
+        {
+          "name": "P4.nivaa",
+          "ok": true,
+          "detail": "sikkerhetsbånd. Usikkerhetsbåndet er bredt ved 16 spørsmål. Resultatet er ikke n"
+        },
+        {
+          "name": "P4.ikke-IQ-disclaimer",
+          "ok": true
+        },
+        {
+          "name": "P5.runState-lagret",
+          "ok": true
+        },
+        {
+          "name": "P5.finished",
+          "ok": true
+        },
+        {
+          "name": "P5.foerste-respons-16",
+          "ok": true
+        },
+        {
+          "name": "P5.ingen-runner-resultat",
+          "ok": true
+        },
+        {
+          "name": "P6.deletekst",
+          "ok": true,
+          "detail": "Jeg nådde etasje 16 av 16 i Sekvensmeste"
+        },
+        {
+          "name": "P7.endless-knapp",
+          "ok": true
+        },
+        {
+          "name": "P7.endless-highscore",
+          "ok": true,
+          "detail": "Sekvensen:Endless-rekord: 0 riktige på radEndless-rekord: 0 "
+        },
+        {
+          "name": "P8.normering-POST",
+          "ok": true,
+          "detail": "[{\"method\":\"POST\",\"path\":\"/brainarea/normering\"}]"
+        }
+      ]
+    },
+    {
+      "scenario": "puzzle:en",
+      "pass": 52,
+      "fail": 0,
+      "checks": [
+        {
+          "name": "S1.css-injisert",
+          "ok": true
+        },
+        {
+          "name": "P1.start-knapp",
+          "ok": true
+        },
+        {
+          "name": "P1.startskjerm-tekst",
+          "ok": true
+        },
+        {
+          "name": "P2.spill-synlig",
+          "ok": true,
+          "detail": "tiles=7 opts=4"
+        },
+        {
+          "name": "P2.flis-a11y",
+          "ok": true
+        },
+        {
+          "name": "P3.velg-0-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-0",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-1-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-1",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-2-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-2",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-3-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-3",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-4-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-4",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-5-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-5",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-6-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-6",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-7-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-7",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-8-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-8",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-9-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-9",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-10-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.velg-10-1",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-10",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 2 valg"
+        },
+        {
+          "name": "P3.velg-11-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.velg-11-1",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-11",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 2 valg"
+        },
+        {
+          "name": "P3.velg-12-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-12",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-13-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-13",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-14-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-14",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 1 valg"
+        },
+        {
+          "name": "P3.velg-15-0",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.velg-15-1",
+          "ok": true,
+          "detail": "fant 4"
+        },
+        {
+          "name": "P3.etasje-lukket-15",
+          "ok": true,
+          "detail": " NEXT ikke synlig etter 2 valg"
+        },
+        {
+          "name": "P4.resultat-synlig",
+          "ok": true
+        },
+        {
+          "name": "P4.theta-tekst",
+          "ok": true,
+          "detail": "ResultScoring gives an estimate and an uncertainty band. In "
+        },
+        {
+          "name": "P4.nivaa",
+          "ok": true,
+          "detail": "ncertainty band. In this version the uncertainty band is wide at 16 questions. T"
+        },
+        {
+          "name": "P4.ikke-IQ-disclaimer",
+          "ok": true
+        },
+        {
+          "name": "P5.runState-lagret",
+          "ok": true
+        },
+        {
+          "name": "P5.finished",
+          "ok": true
+        },
+        {
+          "name": "P5.foerste-respons-16",
+          "ok": true
+        },
+        {
+          "name": "P5.ingen-runner-resultat",
+          "ok": true
+        },
+        {
+          "name": "P6.deletekst",
+          "ok": true,
+          "detail": "I reached floor 16 of 16 in Sequence Mas"
+        },
+        {
+          "name": "P7.endless-knapp",
+          "ok": true
+        },
+        {
+          "name": "P7.endless-highscore",
+          "ok": true,
+          "detail": "The sequence:Endless record: 0 correct in a rowEndless recor"
+        },
+        {
+          "name": "P8.normering-POST",
+          "ok": true,
+          "detail": "[{\"method\":\"POST\",\"path\":\"/brainarea/normering\"}]"
+        }
+      ]
     }
   ],
-  "passes": 162,
+  "passes": 266,
   "fails": 0,
   "allPass": true
 }

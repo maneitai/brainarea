@@ -82,6 +82,11 @@ function byClass(root, cls) {
   walk(root, (e) => { if (typeof e.className === 'string' && e.className.split(/\s+/).includes(cls)) out.push(e); });
   return out;
 }
+function byDataset(root, key, val) {
+  const out = [];
+  walk(root, (e) => { if (e._attrs && e._attrs.get(key) === val) out.push(e); });
+  return out;
+}
 
 const realTest = { rel: 'relational' }[test] || test;
 const mount = new E('div');
@@ -110,9 +115,12 @@ const storageStub = {
 };
 
 /* ---------------- fetch-stub (disk over out/_app + 404-flagg) ---------------- */
-async function fetchStub(input) {
+const fetchCalls = [];
+async function fetchStub(input, opts) {
+  const method = (opts && opts.method) || 'GET';
   const url = new URL(String(input instanceof URL ? input.href : input));
   const path = decodeURIComponent(url.pathname);
+  fetchCalls.push({ method, path });
   let miss = false;
   if (flag === 'degraded' && path.includes('def-evne-g-44.')) miss = true;
   if (flag === 'missingdef' && path.includes(`def-${{persona:'ipip50-big5',relational:'rel-16',iq:'evne-g-44'}[realTest]}.`)) miss = true;
@@ -135,7 +143,7 @@ globalThis.document = documentStub;
 globalThis.localStorage = storageStub;
 globalThis.fetch = fetchStub;
 globalThis.Blob = BlobStub;
-globalThis.location = { reload() { globalThis.__reloaded = true; } };
+globalThis.location = { origin: 'https://selftest.local', reload() { globalThis.__reloaded = true; } };
 globalThis.URL = class extends URL { static createObjectURL(u) { createdObjectUrls.push(String(u)); return 'blob:stub:' + createdObjectUrls.length; } static revokeObjectURL() {} };
 globalThis.window = globalThis.clicklog = undefined;
 
@@ -143,6 +151,88 @@ globalThis.window = globalThis.clicklog = undefined;
 const checks = [];
 const ck = async (name, cond, detail) => { checks.push({ name, ok: Boolean(cond), detail: detail === undefined ? undefined : String(detail) }); };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/* ---------------- puzzle-flyten (#3841) ---------------- */
+/* Full spillgjennomgang i stub-DOM: start -> 16 etasjer (foerste valg + retry
+   der det trengs) -> resultat (theta aehrlig) -> delekort -> endless -> POST. */
+async function puzzleFlow() {
+  const isNo = lang === 'no';
+  const start = byDataset(mount, 'data-puz', 'start')[0];
+  ck('P1.start-knapp', Boolean(start));
+  if (!start) return;
+  ck('P1.startskjerm-tekst', mount.textContent.includes(isNo ? 'Sekvensmester' : 'Sequence Master'));
+
+  start.click(); await sleep(20);
+  let tiles = byClass(mount, 'puz-tiles').flatMap((d) => d.children);
+  let optBtns = byClass(mount, 'puz-opts').flatMap((d) => d.children).filter((b) => b.tagName === 'BUTTON');
+  ck('P2.spill-synlig', tiles.length >= 4 && optBtns.length === 4, `tiles=${tiles.length} opts=${optBtns.length}`);
+  ck('P2.flis-a11y', (tiles[0].getAttribute('aria-label') || '').length > 3);
+
+  /* P3: spalle 16 etasjer — foerste valg = alternativ 0; der retry finnes, extra = alternativ 1 */
+  let clicks = 0;
+  for (let floor = 0; floor < 16; floor++) {
+    const nb = byDataset(mount, 'data-puz', 'next')[0];
+    if (nb && !nb._classes.includes('puz-hidden')) { /* lukket allerede (skulle vaert umulig her) */ }
+    let tries = 0;
+    for (; tries < 2; tries++) {
+      const nextB = byDataset(mount, 'data-puz', 'next')[0];
+      if (nextB && !nextB._classes.includes('puz-hidden')) break;
+      const optsNow = byClass(mount, 'puz-opts').flatMap((d) => d.children).filter((b) => b.tagName === 'BUTTON' && !b.disabled);
+      ck(`P3.velg-${floor}-${tries}`, optsNow.length === 4, 'fant ' + optsNow.length);
+      if (optsNow.length < 4) return;
+      optsNow[tries === 0 ? 0 : 1].click(); clicks++;
+      await sleep(0);
+    }
+    const nb2 = byDataset(mount, 'data-puz', 'next')[0];
+    ck(`P3.etasje-lukket-${floor}`, Boolean(nb2) && !nb2._classes.includes('puz-hidden'), ' NEXT ikke synlig etter ' + tries + ' valg');
+    if (!nb2 || nb2._classes.includes('puz-hidden')) return;
+    nb2.click(); await sleep(0);
+  }
+
+  /* P4: resultatet */
+  const res = byClass(mount, 'puz-result')[0];
+  ck('P4.resultat-synlig', Boolean(res) && !res._classes.includes('puz-hidden'));
+  const allTxt = res ? res.textContent : '';
+  ck('P4.theta-tekst', allTxt.includes(isNo ? 'estimat ' : 'estimate '), allTxt.slice(0, 60));
+  ck('P4.nivaa', /etasje 16 av 16|floor 16 of 16/i.test(allTxt), allTxt.slice(40, 120));
+  ck('P4.ikke-IQ-disclaimer', /ikke et IQ-tall|not an IQ number/.test(allTxt));
+
+  /* P5: persistens-kontrakten */
+  ck('P5.runState-lagret', mem.has('brainarea:puzzle-v1:runState:standard'));
+  try {
+    const st = JSON.parse(mem.get('brainarea:puzzle-v1:runState:standard'));
+    ck('P5.finished', st.finished === true);
+    ck('P5.foerste-respons-16', Object.keys(st.firstAnswers || {}).length === 16);
+  } catch (e) { ck('P5.finished', false, String(e).slice(0, 80)); }
+  ck('P5.ingen-runner-resultat', ![...mem.keys()].some((k) => k.startsWith('ba-run:result:')));
+
+  /* P6: delekort */
+  const sb = byDataset(mount, 'data-puz', 'share')[0];
+  if (sb) { sb.click(); await sleep(0); }
+  const shareEl = byClass(mount, 'puz-shareText')[0];
+  ck('P6.deletekst', Boolean(shareEl) && shareEl.textContent.length > 10, shareEl ? shareEl.textContent.slice(0, 40) : 'mangler');
+
+  /* P7: endless — klikk til run-et er over (feil avslutter) */
+  const eb = byDataset(mount, 'data-puz', 'endless')[0];
+  ck('P7.endless-knapp', Boolean(eb));
+  if (eb) {
+    eb.click(); await sleep(0);
+    for (let i = 0; i < 40; i++) {
+      /* SISTE puz-opts = endless-seksjonens (spill-seksjonens opts er disabled-
+         rester fra siste etasje — stub-DOM ignorerer disabled ved klikk). */
+      const optRows = byClass(mount, 'puz-opts');
+      const eob = (optRows[optRows.length - 1] || { children: [] }).children.filter((b) => b.tagName === 'BUTTON');
+      if (eob.length === 0) break; /* ferdig-run: opts tømt */
+      eob[eob.length - 1].click(); await sleep(0);
+    }
+    const esec = byClass(mount, 'puz-endless')[0];
+    ck('P7.endless-highscore', Boolean(esec) && /Endless-rekord|Endless record/.test(esec.textContent), esec ? esec.textContent.slice(0, 60) : 'mangler');
+  }
+
+  /* P8: normering-POST logget (FASE 4-endepunkt; stub svarer 404, svelges) */
+  ck('P8.normering-POST', fetchCalls.some((c) => c.method === 'POST' && c.path.includes('/normering')),
+    JSON.stringify(fetchCalls.filter((c) => c.method === 'POST')));
+}
 
 async function main() {
   await import('file://' + join(APP, 'run.js'));
@@ -159,6 +249,8 @@ async function main() {
     finish();
     return;
   }
+
+  if (test === 'puzzle') { await puzzleFlow(); finish(); return; }
 
   /* S2: motor mountet (main.ba-test) og første spørsmål synlig */
   let mains = byClass(mount, 'ba-test');

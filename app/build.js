@@ -249,6 +249,15 @@ async function main() {
     writeFileSync(dst, src.split('@BA@/').join('./'));
   }
   for (const f of ['render.js', 'scoring.js', 'attention.js', 'randomize.js']) copyIf(join(REPO, 'tests', 'engine', f), join('_app', 'tests', 'engine', f));
+  /* [BYGG] #3841: puzzle-pakken — boot-modul (med '@BA@/'->'./' rewrite, samme
+     konvensjon som run.js), player (ren state machine). Defs kommer i defTargets. */
+  copyIf(join(__dirname, 'puzzle.mjs'), join('_app', 'puzzle.mjs'));
+  {
+    const dst = join(OUT, '_app', 'puzzle.mjs');
+    const src = readFileSync(dst, 'utf8');
+    writeFileSync(dst, src.split('@BA@/').join('./'));
+  }
+  copyIf(join(REPO, 'tests', 'puzzle', 'puzzle-player.mjs'), join('_app', 'tests', 'puzzle', 'puzzle-player.mjs'));
   for (const f of ['index.js', 'en.js', 'no.js']) copyIf(join(REPO, 'i18n', f), join('_app', 'i18n', f));
   copyIf(join(REPO, 'report', 'renderer.mjs'), join('_app', 'report', 'renderer.mjs'));
   copyIf(join(REPO, 'report', 'configs', 'standard.json'), join('_app', 'report', 'configs', 'standard.json'));
@@ -262,6 +271,8 @@ async function main() {
     [join(REPO, 'tests', 'schema', 'composite', 'def-evne-g-44.en.json'), '_app/defs/def-evne-g-44.en.json'],
     [join(REPO, 'tests', 'schema', 'composite', 'def-rel-16.no.json'), '_app/defs/def-rel-16.no.json'],
     [join(REPO, 'tests', 'schema', 'composite', 'def-rel-16.en.json'), '_app/defs/def-rel-16.en.json'],
+    [join(REPO, 'tests', 'puzzle', 'def-puzzle-v1.no.json'), '_app/defs/pool/puzzle/def-puzzle-v1.no.json'],
+    [join(REPO, 'tests', 'puzzle', 'def-puzzle-v1.en.json'), '_app/defs/pool/puzzle/def-puzzle-v1.en.json'],
   ];
   for (const [src, rel] of defTargets) { if (!existsSync(src)) throw new Error('runner-pakke: mangler ' + rel); copyIf(src, rel); }
   /* fallback-pooler (evne runtime-fallbacks): kopieres forstoerst — de er ogsaa levekår for #3841-wiring */
@@ -296,7 +307,7 @@ async function main() {
       const ogImageUrl = ogCard.png.url;
       /* [BYGG] #3840: boot-tag for test-ruter — runner-en monterer i BA-RUN-slotten */
       let bootScript = '';
-      if (route !== 'home' && route !== 'play' && route !== 'about' && route !== 'privacy') {
+      if (RUTE_LISTE.find((r) => r.route === route).testId !== null) {
         bootScript = `<script id="ba-run-boot" type="module" src="${relPrefix(path)}_app/run.js" data-ba-run="${RUTE_LISTE.find((r) => r.route === route).testId}:${locale}"></script>`;
       }
       const ogImageTags = ogMetaLines({ locale, route, title: meta.ogTitle, desc: meta.ogDesc, alt: ogCard.alt }).join('\n  ');

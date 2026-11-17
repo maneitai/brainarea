@@ -76,3 +76,16 @@ nøkler hver), 2 regenerte selftest-rapport-JSON-er (dato/nøkkeltall).
 2. CI deploy mangler fortsatt i tre (pages.yml-fallback placeholder) — ikke dette leafet.
 3. Dynamisk skår-forhåndsvisning mot #d=-lenker er FASE 4 (par-flyten PIN-3);
    dette leafet leverer kun statiske rute-kort.
+
+## VERIFISER (DeepSeek-steg 5/20, TR-BF0669B27CBA, iter 1) — 2026-11-17
+
+Selvstendig re-verifisering av leveransen mot OG-spes (kilde: opengraphdebug.com 2026-11-17):
+
+- **Selftest re-kjørt i prod-tre** (node v22.22.1): 163/163 PASS, 0 FAIL.
+- **Manifest re-verifisert uavhengig** (vert-Python, egen md5-beregning): 14/14 PNG md5+bytes + svgmd5 OK, 0 formatavvik. Alle PNG 1200×630, maks 45 263 B (<5 MB). Alle SVG-master viewBox `0 0 1200 630`.
+- **out/-kopier**: 14/14 PNG byte-identiske med assets/og. SVG-master bevisst ikke i out/ (kun PNG deployes — SVG er forbudt som og:image).
+- **Meta per side ×14**: unik `og:image` per rute/locale som peker på egen fil, absolutt URL under canonical-roten, eksplisitte dimensjoner + type, alt fra i18n `page.<route>.og.alt`; `og:title`/`og:description` unike per side og locale; twitter `summary_large_image` på plass.
+- **Verdict: PASS** — bilde, tittel og beskrivelse på plass per test. Verdict-fil: `_fase3_og_verify_verdict.json`.
+- **Avvik OGV-A1 (sev 1)**: twitter-taggene emittes dobbelt per side — `ogMetaLines()` og `pageShell()` overlapper på card/image/image:alt (identisk content, funksjonelt ufarlig). Ryddes i egen micro-fix; selftest G7 justes da.
+- **Avvik OGV-A2 (sev 1, fakta)**: deployed URL 404 — live-siden er fortsatt «Under gjenoppbygging.»-placeholderen; deploy mangler i kjeden. Lokal bygg komplett; 404 er ikke kortfeil.
+- Observasjon: `og:url` emittes ikke; `link rel=canonical` på plass per side (lav prioritet, ikke i OP-spes-utdraget).

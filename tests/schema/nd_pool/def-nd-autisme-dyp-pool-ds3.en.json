@@ -1,0 +1,879 @@
+{
+  "schemaVersion": 1,
+  "id": "nd-autisme-dyp-pool-ds3",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "ds3",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "ds3",
+      "label": "Daily life, energy and adaptation",
+      "labelLanguage": "en",
+      "description": "Energy cost in social settings, masking-like adaptation, recovery, environmental accommodations, self-reported."
+    }
+  ],
+  "items": [
+    {
+      "id": "ds-0076",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Socialising with many people weighs on my body like a long day.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0077",
+      "kind": "likert",
+      "lang": "en",
+      "text": "After an hour among people my battery is spent.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0078",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I need rest after company for my head to empty.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0079",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Parties and festival weekends cost me days to come round.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0080",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Familiar and easy meetups cost much less energy than big ones.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0081",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Among strangers my face imitates the expressions the room expects.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0082",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I build my replies out of what people want to hear.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0083",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep an outward voice that is not my own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0084",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The surface talk flows because I run the machinery behind it.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0085",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A full day of fitting in with people leaves me blank.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0086",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Time in an empty room is what fills me up again.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0087",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A quiet evening ahead of me rebalances the whole week.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0088",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I set aside hours without people to gather my strength.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0089",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Recharging through my interests works better for me than sleep does.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0090",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The tiredness after social time lingers inside me for long.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0091",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A quiet room without background noise makes company possible for me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0092",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I run my errands while people are away in my own hours.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0093",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A fixed workplace with my own things makes the workday bearable.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0094",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My calendar needs white gaps between meetings for my head to follow.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0095",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A new place requires that I walk its floors first.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0096",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A day I set aside for rest fills up with other tasks.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0097",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Messages and papers I mean to answer wait for weeks.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0098",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The piles of everyday tasks grow taller over the weeks.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0099",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Deferred chores make my evenings narrower than they need to be.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0100",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A week with people leaves behind a week of drained energy.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

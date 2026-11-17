@@ -14,6 +14,6 @@
     "auto-seed avhenger av Date.now/Math.random — bevisst ulik per økt; reproduserbarhet gjelder eksplisitt seed",
     "seed-reproduserbarhet gjelder mot uendret pool-innhold (pool-versjon knyttes på delbarhets-steg)"
   ],
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "builtBy": "worker — todo leaf 'Randomisering: seed-basert stokk av spørsmål + svaralternativer'"
 }

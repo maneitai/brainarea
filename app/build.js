@@ -10,13 +10,14 @@
  *
  * Kjoer: node app/build.js [--out <dir>]
  */
-import { mkdirSync, readFileSync, writeFileSync, rmSync, existsSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync, rmSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getT } from '../i18n/index.js';
 import { BASE, canonicalUrl, langSwitchHref, pathToLocale, localizedPath } from './locale.js';
 import { RUTE_LISTE, layout, homeCards, langSwitcher, adSlots } from './pages-data.js';
 import { renderAd } from './ads.js';
+import { ogCardForRoute, ogMetaLines } from './og.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO = resolve(__dirname, '..');
@@ -147,7 +148,7 @@ function relPrefix(path) {
 }
 
 /** Full HTML-side: doctype, head, header med språkvelger, main, footer. */
-function pageShell({ locale, route, path, title, desc, ogTitle, ogDesc, mainHtml }) {
+function pageShell({ locale, route, path, title, desc, ogTitle, ogDesc, imageAlt, ogImageTags, ogImageUrl, mainHtml }) {
   const assets = relPrefix(path);
   const homeHref = localizedPath(locale, 'home');
   const ogLocale = locale === 'no' ? 'nb_NO' : 'en_US';
@@ -168,9 +169,12 @@ function pageShell({ locale, route, path, title, desc, ogTitle, ogDesc, mainHtml
   <meta property="og:locale:alternate" content="${ogAlt}"/>
   <meta property="og:title" content="${esc(ogTitle)}"/>
   <meta property="og:description" content="${esc(ogDesc)}"/>
-  <meta name="twitter:card" content="summary"/>
+  ${ogImageTags}
+  <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="${esc(ogTitle)}"/>
   <meta name="twitter:description" content="${esc(ogDesc)}"/>
+  <meta name="twitter:image" content="${ogImageUrl}"/>
+  <meta name="twitter:image:alt" content="${esc(imageAlt)}"/>
 </head>
 <body class="min-h-screen antialiased">
   <div class="flex min-h-screen flex-col">
@@ -217,6 +221,16 @@ async function main() {
   mkdirSync(OUT, { recursive: true });
   writeFileSync(join(OUT, 'site.css'), css);
   writeFileSync(join(OUT, 'favicon.ico'), favicon);
+  /* OG-kortene (assets/og/*.png) er git-trackede statiske assets — kopieres
+     til out/ slik at og:image-URL-ene peker på de deployede filene.
+     Raster-regenerering skjer via app/_og_raster.mjs (krever sharp), aldri her. */
+  const ogDir = join(REPO, 'assets', 'og');
+  if (existsSync(ogDir)) {
+    mkdirSync(join(OUT, 'assets', 'og'), { recursive: true });
+    for (const f of readdirSync(ogDir)) {
+      if (f.endsWith('.png')) writeFileSync(join(OUT, 'assets', 'og', f), readFileSync(join(ogDir, f)));
+    }
+  }
   writeFileSync(join(OUT, 'robots.txt'), robotsTxt());
   writeFileSync(join(OUT, 'sitemap.xml'), sitemapXml([])); /* fylles under */
   writeFileSync(join(OUT, '404.html'), notFoundHtml());
@@ -231,14 +245,18 @@ async function main() {
       const file = rel ? join(OUT, ...rel.split('/'), 'index.html') : join(OUT, 'index.html');
       const slots = layout(route, locale, tt);
       const mainHtml = renderSlots(slots, { t: tt, locale, route, path });
+      const ogCard = ogCardForRoute({ locale, route, t: tt });
       const meta = {
         title: tt(`page.${route}.title`),
         desc: tt(`page.${route}.desc`),
         ogTitle: tt(`page.${route}.og.title`),
         ogDesc: tt(`page.${route}.og.desc`),
+        imageAlt: ogCard.alt,
       };
+      const ogImageUrl = ogCard.png.url;
+      const ogImageTags = ogMetaLines({ locale, route, title: meta.ogTitle, desc: meta.ogDesc, alt: ogCard.alt }).join('\n  ');
       mkdirSync(dirname(file), { recursive: true });
-      writeFileSync(file, pageShell({ locale, route, path, mainHtml, ...meta }));
+      writeFileSync(file, pageShell({ locale, route, path, mainHtml, ogImageTags, ogImageUrl, ...meta }));
       pagePaths.push(path);
       console.log('  page', path, '->', rel ? rel + '/index.html' : 'index.html');
     }

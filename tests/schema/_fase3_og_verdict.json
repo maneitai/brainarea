@@ -1,0 +1,33 @@
+{
+  "verdictId": "FASE3-OG-KORT-VERDICT-v1",
+  "status": "GJELDENDE",
+  "dato": "2026-11-17",
+  "leaf": "[BYGG] FASE 3: OG-kort per test (statisk SVG/HTML) — leaf i TR-8834DDCC1B74 (steg 4/20), søster til #3790-delgrafen, #3794-delingslenke og PDF-bygget",
+  "leveranse": {
+    "modul": "app/og.js — OG-kort-modul v1: renderOgSvg (deterministisk SVG-master 1200x630), ogStringWidth/wrapMeasured (EKTE hmtx-vidder fra DejaVu TTF), ogCardForRoute (i18n-resolve), ogCardOrder (7 ruter × no/en), ogMetaLines (og:image + dim/type/alt + twitter-bildesett), strings-sink (ogGraphStrings via card.strings)",
+    "i18n": "7 nye 'page.<route>.og.alt'-nøkler per språk (EN base + NO overlay) — imageAlt-kontrakten; eksisterende og.title/og.desc-nøkler brukt som kort-materiale",
+    "raster": "app/_og_raster.mjs — SVG-master -> PNG 1200x630 via sharp (librsvg), 14 PNG + 14 SVG-master + MANIFEST.md5 i assets/og/ (kanonisk leveranse, GIT-TRACKED)",
+    "buildWire": "app/build.js: pageShell emitterer og:image-dims/type/alt + twitter summary_large_image/image/alt; kopierer assets/og/*.png til out/ (read+write-kopi, WSL/Windows-robust); CI trenger aldri sharp"
+  },
+  "bevis": {
+    "selftest": "tests/schema/_fase3_og_selftest.mjs — 163/163 PASS (G1 ekte kjede over 14 kort, G2 måling, G3 byte-determinisme, G4 kast-batteri, G5 identifikatorfrihet, G6 sink-dekning, G7 meta-kontrakt, G8 build-wire, G9 raster-manifest vs filer, G10 forbudsvokabular)",
+    "maal-kryss": "uavhengig Python-hmtx-parse + PIL getlength: i/w/M/å/Æ/space — ALLE identiske med modulens verdier (0 avvik, samme gid-mapping). Fann og fikset 2 ekte feil underveis: format-12-cmap manglet intra-gruppe gid-offset (gid + cp - startCp) - alle tegn fikk første glyfs vidde; nGroups-offset-konfusjon",
+    "raster": "14/14 PNG-er 1200x630 RGBA, ink-zoner verifisert (brand/tittel/accent-bar), visuell lesing av rel-no + home-en godkjent; home-no == play-no md5 (identiske strenger -> identisk kort, G9), home-en != play-en korrekt ulike (ulike og.title-nøkler)",
+    "webKilde": "opengraphdebug.com/posts/og-image-requirements (hentet 2026-11-17): anbefalt 1200x630, min 600x315, PNG/JPG, absolutt URL — SVG er IKKE gyldig og:image-format; dermed PNG-leveranse med SVG som deterministisk master"
+  },
+  "sporsmaal": "Spørsmålet var 'statisk SVG/HTML' — svaret er PNG-leveranse med statisk SVG-master fra dag én: rå SVG er utelukket som og:image-format per web-kilden (crawlers rendrer den ikke). SVG-masterne beholdes som byte-deterministiske bevis/regenereringsgrunnlag i assets/og/ (aldri referert av meta-taggen).",
+  "grenser": [
+    "PNG-md5 er raster-vertsavhengig (librsvg-systemfonts via sharp): byte-assert gjelder SVG-masterne (maskinuavhengig); PNG-manifestet er per raster-vert (Windows-node, chromium-verten) — regenererbart",
+    "SVG-master bruker font-family='DejaVu Sans' (visuell fallback ved direkte visning uten systemfonten); PNG-ene (leveransen) er rendret med librsvg systemfont-oppslag — ikke @font-face (librsvg laster ikke font-face, probe-verifisert med identisk md5 mot brutt font-URL)"
+  ],
+  "regresjon": {
+    "alleGaenger": "og-selftest 163/163, i18n 22/22 (170 nøkler, +7), share-link 108/108 (md5 4ced62f5 identisk), delgraf 46/46, hreflang 171/171, engine 72/72, integrasjon 5/5, report 74/74, pdf 105/105, nd-resulttext 226/226, nd-3rdparty 326/326, rel-resulttext 88/88, rel-3rdparty 214/214, estimat 76/76, gscore 54/54, itemspec rel/nd/evne ALL PASS, pdf-demo byte-identisk md5 78a08e8a",
+    "prodUroet": "ingen — alle suiter uroet"
+  },
+  "pins": [
+    "Visuell sjekk av alle 14 kort av Kris (2 er lest av modellen, 12 ikke) — anbefales før deploy",
+    "CI/deploy: GitHub Pages-serveringen av assets/og/*.png krever ingen endring (statiske filer); build.yml trenger aldri sharp",
+    "FASE 4 kobler dynamisk skår-forhåndsvisning mot #d=-lenker (eies av par-flyten PIN-3); dette leafet lager KUN statiske rute-kort",
+    "librsvg @font-face-blindhet dokumentert: raster må kjøres på vert der systemfont-fallback gir samme resultat (Windows-verten her); byte-stabilitet på tvers av CI-raster er IKKE påkrevd og IKKE asserert"
+  ]
+}

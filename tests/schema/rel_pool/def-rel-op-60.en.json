@@ -1,0 +1,2069 @@
+{
+  "schemaVersion": 1,
+  "id": "rel-op-pool",
+  "type": "test-definition",
+  "family": "relations",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "openness",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "openness",
+      "label": "Openness",
+      "labelLanguage": "en",
+      "description": "Expressing own needs and boundaries, inviting the other's perspective, willingness to discuss, openness to feedback."
+    }
+  ],
+  "items": [
+    {
+      "id": "op-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say plainly when I need something from the people I love.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I tell people who stand close to me what my boundaries are.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0003",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I bring up my own needs before they grow large.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0004",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let people see what really matters to me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0005",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I speak up when something in our time together wears on me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0006",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I find words for feelings I would otherwise keep inside.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0007",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I remind the people in my life what I actually need from them.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0008",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say when I prefer to think alone before I answer.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0009",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let people know when I need a quiet room to myself.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0010",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask for help when I need it, even when it feels awkward.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0011",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I invite the people close to me to say what they think.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0012",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hear other views out before I settle on something important.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0013",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask people in my life how things look from their side.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0014",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I meet the reservations of others with calm instead of pushback.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0015",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I allow that the people around me are partly right.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0016",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask follow-up questions when I want to understand someone better.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0017",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I try the other viewpoint in my head afterwards.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0018",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I thank people for opposing views instead of waving them off.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0019",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I openly ask for input from others before I finish a plan.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0020",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I assume people mean well, even when we differ.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0021",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask people how I come across during a hard conversation.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0022",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I argue for solutions openly when we sit in the middle of a problem.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0023",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I put feedback to use while it is still fresh.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0024",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I accept being corrected when the feedback shows my mistakes.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0025",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I stay composed when someone challenges the way I think.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0026",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I seek several perspectives before we settle an important decision.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0027",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I would rather have a difficult conversation now than later.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0028",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I voice what I think even when it may meet resistance.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0029",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I care about how conversations with people close to me unfold.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0030",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I read feedback from people I love as connection, not as an attack.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0031",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep my own needs under cover inside close relationships.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0032",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let people think all is fine even when I bend under it.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0033",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I stick to rigid plans since moving from them feels risky.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0034",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let people guess at what I actually want.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0035",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I talk about practical matters instead of my own needs.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0036",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I slip away from conversations that ask something of me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0037",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I leave my needs unspoken until they have grown heavy.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0038",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say it all works, even when neither time nor setting works.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0039",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I swallow the discomfort instead of asking for something else.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0040",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hide my wishes behind a growing list of practical reasons.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0041",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep my different views to myself to save the mood.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0042",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I nod along with criticism even when it seems off to me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0043",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I change my stance on the spot when someone takes theirs.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0044",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I switch topics before a difference can grow.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0045",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say yes faster than I really want when the room is pleasant.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0046",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let others have the last word when a debate heats up.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0047",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I avoid raising things I know we will only clash over.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0048",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I pretend to agree just to get the talk over with.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0049",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I quiet my own views when the room already feels strained.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0050",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say nothing, and my objection vanishes into the silence.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0051",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I turn feedback about me into points about them.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0052",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hear only half the explanation before I settle on a conclusion.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0053",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I brush aside proposals from people close to me before weighing them.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0054",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I find faults in the feedback before testing whether it holds.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0055",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say people misunderstand me when the description hurts.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0056",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I answer input about me with criticism in return.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0057",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hold to my version even when those around me see another picture.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0058",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hear feedback as an accusation of who I am.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0059",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I write off good advice from people closest to me as meddling.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0060",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I shut down conversations I should keep going with people who care.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2069 @@
+{
+  "schemaVersion": 1,
+  "id": "rel-op-pool",
+  "type": "test-definition",
+  "family": "relations",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "openness",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "openness",
+      "label": "Åpenhet",
+      "labelLanguage": "no",
+      "description": "Ytring av egne behov og grenser, invitasjon til motpartens perspektiv, diskusjonsvillighet og åpenhet for tilbakemelding."
+    }
+  ],
+  "items": [
+    {
+      "id": "op-0001",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier tydelig fra når jeg mangler noe fra folk nær meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0002",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg forteller folk som står meg nær hvilke grenser jeg har.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0003",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar opp mine egne behov før de vokser seg store.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0004",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar folk se hva som faktisk betyr noe for meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0005",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg gir beskjed når noe i samværet vårt plager meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0006",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg finner ord for følelser jeg ellers ville holdt inne.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0007",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg minner folk i livet mitt om hva jeg faktisk trenger av dem.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0008",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg forteller når jeg foretrekker å tenke alene før jeg svarer.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0009",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg gir folk beskjed når jeg trenger et rolig rom for meg selv.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0010",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg ber om hjelp når jeg trenger den, selv om det er ubehagelig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0011",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg inviterer folk som står meg nær til å si hva de mener.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0012",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg hører på andres syn før jeg bestemmer meg for noe viktig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0013",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg spør folk i livet mitt hvordan det ser ut fra deres side.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0014",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg møter andres motforestillinger med ro i stedet for motstand.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0015",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg gir rom for at folk rundt meg har delvis rett.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0016",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg stiller oppfølgingsspørsmål når jeg vil forstå noen bedre.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0017",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg prøver motpartens vinkel på saken i hodet mitt etterpå.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0018",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg takker for motstridende synspunkter i stedet for å avfeie dem.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0019",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg ber åpent om andres innspill før jeg avslutter en plan.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0020",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar som utgangspunkt at folk mener det godt, selv når vi er uenige.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0021",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg ber folk si hvordan jeg kommer ut av en diskusjon.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0022",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg diskuterer løsninger åpent når vi befinner oss midt i et problem.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0023",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar tilbakemeldinger i bruk mens de fortsatt er ferske.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0024",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tåler å få rett når tilbakemeldingen viser mine feil.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0025",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg svarer rolig når noen utfordrer måten jeg har tenkt på.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0026",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg spør flere etter synspunkter før vi lander en viktig avgjørelse.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0027",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg vil heller ta en vanskelig samtale nå enn senere.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0028",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier hva jeg tenker om ting selv når det kan skape motstand.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0029",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg går opp i hvordan samtaler med folk nær meg utspiller seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0030",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg ser tilbakemelding som en vei til folk jeg elsker, ikke som angrep.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0031",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder mine egne behov bak lås og slå i nær-relasjoner.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0032",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar folk tro at alt er fint selv når jeg bøyer meg unna.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0033",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder meg strengt til planer fordi det føles tryggere.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0034",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar folk gjette seg frem til hva jeg ønsker meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0035",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg snakker om praktiske ting i stedet for mine egne behov.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0036",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg smetter unna samtaler som ber om noe fra meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0037",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar behovene mine bli stående usagt til de har vokst seg tunge.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0038",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier at alt passer, selv når hverken tid eller form passer.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0039",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar ubehaget i stedet for å be om noe annet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0040",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg skjuler mine ønsker bak voksende praktiske grunner.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0041",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder min uenighet for meg selv for å redde stemningen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0042",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg nikker i møte med kritikk selv når jeg er uenig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0043",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg endrer holdning på sparket når motparten tar plass.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0044",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg bytter tema før uenigheten rekker å vokse.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0045",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier ja raskere enn jeg egentlig vil når stemningen er spent.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0046",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar andres siste ord stå når debatten spisser seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0047",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg unngår å nevne ting jeg vet vi kommer til å stride om.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0048",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg later som jeg er enig for å få snakket ferdig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0049",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg toner ned mine egne synspunkter når stemningen allerede er spent.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0050",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier ingenting, og min uenighet forsvinner i stillheten.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0051",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg gjør tilbakemeldinger om meg til ting om dem.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0052",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg hører bare halve forklaringen før jeg slutter meg til en konklusjon.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0053",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg avviser forslag fra folk nær meg før jeg har veid dem.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0054",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg finner feil i tilbakemeldingen før jeg tester om den stemmer.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0055",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier at folk misforstår meg når beskrivelsen gjør vondt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0056",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg svarer på innspill om meg med motkritikk.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0057",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder fast på mitt selv når alle rundt meg ser det annerledes.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0058",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg hører tilbakemeldinger som klandring av hvem jeg er.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0059",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg avfeier gode råd fra de nærmeste som innblanding.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0060",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lukker samtaler jeg burde tatt videre med folk som bryr seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    }
+  ]
+}

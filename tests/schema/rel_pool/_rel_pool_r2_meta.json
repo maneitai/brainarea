@@ -1,0 +1,554 @@
+{
+  "metaVersion": 1,
+  "id": "rel-op-pool",
+  "date": "2026-11-17",
+  "boardLeaf": "#3825-blokken [3-VEIS] FASE 2 relasjonspool per dimensjon: R2 åpenhet (op) — 60 originale items (worker TR-17BAA4C6A5A0).",
+  "spec": "tests/schema/_rel_itemspec_spec.json (rel-itemspec-v1, PROPOSED; GJELDENDE ved #3813)",
+  "licenseBasis": "DOC-C8C02AD272 (lisensverdikten) er kontrastgrunnlag: ingen kommersielt relasjonsinstrument er lisensiert eller gjengitt — alle 60 items per språk er egne/original forfattet fra itemspec-themes.R2-construct'en. Forbud per spec.copyrightControl: gjenkjennbare formuleringer fra Gottman-programmenes instrumenter, 5 Love Languages, ENRICH, Prepare/Enrich; ASRS/AQ/RAADS-R-formuleringer; instrumentnavn i innhold. Copyright-skann (selftest S11): 0 treff.",
+  "authoringRule": "Første-person presens, ett utsagn, 8–14 ord, ingen dobbeltspørsmål, ingen absolutter (alltid/aldri/always/never), ingen instrument-/diagnose-navn, ingen ekstremrisiko/vold (R3-regelen som prinsipp). NO og EN separat forfattet med konstrukt-ekvivalens: samme id-rekkefølge, samme tema+sign per id; tekstene er IKKE direkte oversettelser (Soester-konvensjonen). Ekstra vakthund ut over R1-konvensjonen: programmert 4-gram-kryss mot hele R1-korpuset (0 sammenfall) + fragment-skann mot kjente instrumentformuleringer.",
+  "optionsSource": "def-ipip50-big5.<lang>.json items[*].options — byte-identisk per fil (verifisert i selftest S5).",
+  "signPolicy": "30 positivt keyede (op-0001..op-0030, sign 1) + 30 negativt keyede (op-0031..op-0060, sign -1). Basis: itemspec.sessionFormDecision låser live +-+- per dimensjon (2 pos + 2 neg velges i FASE 4) — poolen må derfor inneholde begge retninger. Ulik nd-poolen (screening i én retning, NG-4) er dette profilkeying i to retninger, det er et dokumentert designvalg, ikke NG-4-avvik. R2-constructen speiler R1-båndene med negativ retning: op-n1 tildekking av behov/grenser, op-n2 unngåelse av uenighet, op-n3 avvisning av tilbakemelding/motperspektiv.",
+  "themeCounts": {
+    "op-t1": 10,
+    "op-t2": 10,
+    "op-t3": 10,
+    "op-n1": 10,
+    "op-n2": 10,
+    "op-n3": 10
+  },
+  "seedPolicy": "themes.R2 i itemspec har ingen exampleSeed (kun R1 har) — ingen seedNear-flagg i denne poolen; tom seed-liste er låst eksplisitt i selftest S10i. Oppstår en seed for R2 i en senere spec-revisjon, flagges items deretter.",
+  "redundancyPolicy": "redundantWith markerer formuleringsnære par (symmetrisk, 8 par) slik at FASE 4-utvelgelsen velger maks ett item per par inn i live-deffen.",
+  "holes": {
+    "closes": "H-2-delen R2 (samlet faseverifikasjon 2026-11-17: rel-pool 0/240, brett #3825): R2 åpenhet 60/60 levert — H-2 er fortsatt åpen til R3/R4 er levert (R1 levert samme dag)."
+  },
+  "items": [
+    {
+      "id": "op-0001",
+      "dimension": "openness",
+      "theme": "op-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0007"
+      ]
+    },
+    {
+      "id": "op-0002",
+      "dimension": "openness",
+      "theme": "op-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0003",
+      "dimension": "openness",
+      "theme": "op-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0004",
+      "dimension": "openness",
+      "theme": "op-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0005",
+      "dimension": "openness",
+      "theme": "op-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0006",
+      "dimension": "openness",
+      "theme": "op-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0007",
+      "dimension": "openness",
+      "theme": "op-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0001"
+      ]
+    },
+    {
+      "id": "op-0008",
+      "dimension": "openness",
+      "theme": "op-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0009",
+      "dimension": "openness",
+      "theme": "op-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0010",
+      "dimension": "openness",
+      "theme": "op-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0011",
+      "dimension": "openness",
+      "theme": "op-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0012",
+      "dimension": "openness",
+      "theme": "op-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0013",
+      "dimension": "openness",
+      "theme": "op-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0016"
+      ]
+    },
+    {
+      "id": "op-0014",
+      "dimension": "openness",
+      "theme": "op-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0015",
+      "dimension": "openness",
+      "theme": "op-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0016",
+      "dimension": "openness",
+      "theme": "op-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0013"
+      ]
+    },
+    {
+      "id": "op-0017",
+      "dimension": "openness",
+      "theme": "op-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0018",
+      "dimension": "openness",
+      "theme": "op-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0019",
+      "dimension": "openness",
+      "theme": "op-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0020",
+      "dimension": "openness",
+      "theme": "op-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0021",
+      "dimension": "openness",
+      "theme": "op-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0022",
+      "dimension": "openness",
+      "theme": "op-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0023",
+      "dimension": "openness",
+      "theme": "op-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0024",
+      "dimension": "openness",
+      "theme": "op-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0025",
+      "dimension": "openness",
+      "theme": "op-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0026",
+      "dimension": "openness",
+      "theme": "op-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0027",
+      "dimension": "openness",
+      "theme": "op-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0028",
+      "dimension": "openness",
+      "theme": "op-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0029",
+      "dimension": "openness",
+      "theme": "op-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0030",
+      "dimension": "openness",
+      "theme": "op-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0031",
+      "dimension": "openness",
+      "theme": "op-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0037"
+      ]
+    },
+    {
+      "id": "op-0032",
+      "dimension": "openness",
+      "theme": "op-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0033",
+      "dimension": "openness",
+      "theme": "op-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0034",
+      "dimension": "openness",
+      "theme": "op-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0035",
+      "dimension": "openness",
+      "theme": "op-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0040"
+      ]
+    },
+    {
+      "id": "op-0036",
+      "dimension": "openness",
+      "theme": "op-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0037",
+      "dimension": "openness",
+      "theme": "op-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0031"
+      ]
+    },
+    {
+      "id": "op-0038",
+      "dimension": "openness",
+      "theme": "op-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0039",
+      "dimension": "openness",
+      "theme": "op-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0040",
+      "dimension": "openness",
+      "theme": "op-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0035"
+      ]
+    },
+    {
+      "id": "op-0041",
+      "dimension": "openness",
+      "theme": "op-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0048"
+      ]
+    },
+    {
+      "id": "op-0042",
+      "dimension": "openness",
+      "theme": "op-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0043"
+      ]
+    },
+    {
+      "id": "op-0043",
+      "dimension": "openness",
+      "theme": "op-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0042"
+      ]
+    },
+    {
+      "id": "op-0044",
+      "dimension": "openness",
+      "theme": "op-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0045",
+      "dimension": "openness",
+      "theme": "op-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0046",
+      "dimension": "openness",
+      "theme": "op-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0050"
+      ]
+    },
+    {
+      "id": "op-0047",
+      "dimension": "openness",
+      "theme": "op-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0048",
+      "dimension": "openness",
+      "theme": "op-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0041"
+      ]
+    },
+    {
+      "id": "op-0049",
+      "dimension": "openness",
+      "theme": "op-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0050",
+      "dimension": "openness",
+      "theme": "op-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0046"
+      ]
+    },
+    {
+      "id": "op-0051",
+      "dimension": "openness",
+      "theme": "op-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0052",
+      "dimension": "openness",
+      "theme": "op-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0053",
+      "dimension": "openness",
+      "theme": "op-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0054"
+      ]
+    },
+    {
+      "id": "op-0054",
+      "dimension": "openness",
+      "theme": "op-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "op-0053"
+      ]
+    },
+    {
+      "id": "op-0055",
+      "dimension": "openness",
+      "theme": "op-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0056",
+      "dimension": "openness",
+      "theme": "op-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0057",
+      "dimension": "openness",
+      "theme": "op-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0058",
+      "dimension": "openness",
+      "theme": "op-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0059",
+      "dimension": "openness",
+      "theme": "op-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "op-0060",
+      "dimension": "openness",
+      "theme": "op-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    }
+  ],
+  "provenance": {
+    "authoringDate": "2026-11-17",
+    "originality": "Alle items forfattet fra construct-beskrivelsen i _rel_itemspec_spec.json themes.R2 — ingen ekstern skala, ingen formell oversettelse, ingen scraping.",
+    "signCounts": {
+      "pos": 30,
+      "neg": 30
+    },
+    "engineFactsVerified": [
+      "scoring.js trait-sti: normalized = 100*(raw-min)/(max-min) over besvart sett; enkelt-skala-rad for openness; komposit = skalaens normalized (re-verifisert i selftest S7/S8 denne økten)",
+      "scoring.js linje 118-120: sign=-1 -> c=-value, minP=-max, maxP=-min (re-verifisert i selftest S8b)",
+      "render.js sessionSizeFor(likert) => alle 60 items shuffles (re-verifisert i selftest S14a)",
+      "validateTestDef håndhever ikke reverseringskravet — poolens 30/30 keying er forfatter-levert, ikke motor-påtvinget (grep i tests/engine)",
+      "symmetrisk +/- pool: all-3 og konstante svar gir normalized 50.0 (konstant-svar-invarians; span 240 ved 30 pos + 30 neg) — provet i selftest S8",
+      "_rel_compat_model.mjs DIMENSIONS[1].id == 'openness' — openness er modellens mottaksside (selftest S14d/e)"
+    ]
+  }
+}

@@ -18,6 +18,7 @@ import { BASE, canonicalUrl, langSwitchHref, pathToLocale, localizedPath } from 
 import { RUTE_LISTE, layout, homeCards, langSwitcher, adSlots } from './pages-data.js';
 import { renderAd } from './ads.js';
 import { ogCardForRoute, ogMetaLines } from './og.js';
+import { writeCompositeDefs, selftestComposite } from './_composite_defs.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO = resolve(__dirname, '..');
@@ -148,7 +149,7 @@ function relPrefix(path) {
 }
 
 /** Full HTML-side: doctype, head, header med språkvelger, main, footer. */
-function pageShell({ locale, route, path, title, desc, ogTitle, ogDesc, imageAlt, ogImageTags, ogImageUrl, mainHtml }) {
+function pageShell({ locale, route, path, title, desc, ogTitle, ogDesc, imageAlt, ogImageTags, ogImageUrl, mainHtml, bootScript }) {
   const assets = relPrefix(path);
   const homeHref = localizedPath(locale, 'home');
   const ogLocale = locale === 'no' ? 'nb_NO' : 'en_US';
@@ -163,6 +164,7 @@ function pageShell({ locale, route, path, title, desc, ogTitle, ogDesc, imageAlt
   ${hreflangLinkTags(locale, route).join('\n  ')}
   <link rel="stylesheet" href="${assets}site.css"/>
   <link rel="icon" href="${assets}favicon.ico" type="image/x-icon"/>
+${bootScript || ''}
   <meta property="og:site_name" content="Brainarea"/>
   <meta property="og:type" content="website"/>
   <meta property="og:locale" content="${ogLocale}"/>
@@ -213,6 +215,12 @@ function notFoundHtml() {
 }
 
 async function main() {
+  /* [BYGG] #3840: composite-defs (evne 270 -> maxItems 44, rel 4x4) bygges
+     deterministisk fra poolene per bygg og valideres (selftestComposite). */
+  const compositeFiles = writeCompositeDefs();
+  selftestComposite(compositeFiles); /* kaster hardt ved pool-drift (items/trekk/sign-symmetri) */
+  for (const f of compositeFiles) console.log('  composite', f.split('/').slice(-1)[0]);
+
   const css = readFileSync(join(__dirname, 'site.css'));
   const favicon = readFileSync(join(__dirname, 'favicon.ico'));
   const t = { no: await getT('no'), en: await getT('en') };
@@ -229,6 +237,38 @@ async function main() {
     mkdirSync(join(OUT, 'assets', 'og'), { recursive: true });
     for (const f of readdirSync(ogDir)) {
       if (f.endsWith('.png')) writeFileSync(join(OUT, 'assets', 'og', f), readFileSync(join(ogDir, f)));
+    }
+  }
+  /* [BYGG] #3840: runner-pakke — engine, i18n, rapport, composite-defs, fonts.
+     run.js kopieres med '@BA@/' -> './' rewrites (import-konvensjon i run.js). */
+  const copyIf = (src, destRel) => { const d = join(OUT, destRel); mkdirSync(dirname(d), { recursive: true }); writeFileSync(d, readFileSync(src)); };
+  copyIf(join(__dirname, 'run.js'), join('_app', 'run.js')); /* rewrites under */
+  { /* '@BA@/' -> './' */
+    const dst = join(OUT, '_app', 'run.js');
+    const src = readFileSync(OUT + '/_app/run.js', 'utf8');
+    writeFileSync(dst, src.split('@BA@/').join('./'));
+  }
+  for (const f of ['render.js', 'scoring.js', 'attention.js', 'randomize.js']) copyIf(join(REPO, 'tests', 'engine', f), join('_app', 'tests', 'engine', f));
+  for (const f of ['index.js', 'en.js', 'no.js']) copyIf(join(REPO, 'i18n', f), join('_app', 'i18n', f));
+  copyIf(join(REPO, 'report', 'renderer.mjs'), join('_app', 'report', 'renderer.mjs'));
+  copyIf(join(REPO, 'report', 'configs', 'standard.json'), join('_app', 'report', 'configs', 'standard.json'));
+  copyIf(join(REPO, 'report', 'pdf', 'brainarea-pdf.mjs'), join('_app', 'pdf', 'brainarea-pdf.mjs'));
+  copyIf(join(REPO, 'report', 'pdf', 'pdffont.mjs'), join('_app', 'pdf', 'pdffont.mjs'));
+  for (const f of ['DejaVuSans.ttf', 'DejaVuSans-Bold.ttf']) copyIf(join(REPO, 'report', 'pdf', 'fonts', f), join('_app', 'fonts', f));
+  const defTargets = [
+    [join(REPO, 'tests', 'schema', 'def-ipip50-big5.no.json'), '_app/defs/def-ipip50-big5.no.json'],
+    [join(REPO, 'tests', 'schema', 'def-ipip50-big5.en.json'), '_app/defs/def-ipip50-big5.en.json'],
+    [join(REPO, 'tests', 'schema', 'composite', 'def-evne-g-44.no.json'), '_app/defs/def-evne-g-44.no.json'],
+    [join(REPO, 'tests', 'schema', 'composite', 'def-evne-g-44.en.json'), '_app/defs/def-evne-g-44.en.json'],
+    [join(REPO, 'tests', 'schema', 'composite', 'def-rel-16.no.json'), '_app/defs/def-rel-16.no.json'],
+    [join(REPO, 'tests', 'schema', 'composite', 'def-rel-16.en.json'), '_app/defs/def-rel-16.en.json'],
+  ];
+  for (const [src, rel] of defTargets) { if (!existsSync(src)) throw new Error('runner-pakke: mangler ' + rel); copyIf(src, rel); }
+  /* fallback-pooler (evne runtime-fallbacks): kopieres forstoerst — de er ogsaa levekår for #3841-wiring */
+  for (const t of ['t1-matrise', 't2-numerisk', 't3-verbal', 't4-romlig', 't5-sekvens', 't6-deduksjon']) {
+    for (const lang of ['no', 'en']) {
+      const src = join(REPO, 'tests', 'schema', 'evne_pool', `def-evne-${t}.${lang}.json`);
+      if (existsSync(src)) copyIf(src, join('_app', 'defs', 'pool', 'evne', `def-evne-${t}.${lang}.json`));
     }
   }
   writeFileSync(join(OUT, 'robots.txt'), robotsTxt());
@@ -254,9 +294,14 @@ async function main() {
         imageAlt: ogCard.alt,
       };
       const ogImageUrl = ogCard.png.url;
+      /* [BYGG] #3840: boot-tag for test-ruter — runner-en monterer i BA-RUN-slotten */
+      let bootScript = '';
+      if (route !== 'home' && route !== 'play' && route !== 'about' && route !== 'privacy') {
+        bootScript = `<script id="ba-run-boot" type="module" src="${relPrefix(path)}_app/run.js" data-ba-run="${RUTE_LISTE.find((r) => r.route === route).testId}:${locale}"></script>`;
+      }
       const ogImageTags = ogMetaLines({ locale, route, title: meta.ogTitle, desc: meta.ogDesc, alt: ogCard.alt }).join('\n  ');
       mkdirSync(dirname(file), { recursive: true });
-      writeFileSync(file, pageShell({ locale, route, path, mainHtml, ogImageTags, ogImageUrl, ...meta }));
+      writeFileSync(file, pageShell({ locale, route, path, mainHtml, ogImageTags, ogImageUrl, bootScript, ...meta }));
       pagePaths.push(path);
       console.log('  page', path, '->', rel ? rel + '/index.html' : 'index.html');
     }

@@ -1,0 +1,610 @@
+{
+  "schemaVersion": 1,
+  "type": "test-definition",
+  "id": "rel-16",
+  "family": "relations",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "closeness",
+        "weight": 1
+      },
+      {
+        "id": "openness",
+        "weight": 1
+      },
+      {
+        "id": "conflict",
+        "weight": 1
+      },
+      {
+        "id": "independence",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "closeness",
+      "label": "Closeness",
+      "labelLanguage": "en",
+      "description": "Experienced closeness, care and trust that closeness is received, in friendships and partnerships."
+    },
+    {
+      "id": "openness",
+      "label": "Openness",
+      "labelLanguage": "en",
+      "description": "Expressing own needs and boundaries, inviting the other's perspective, willingness to discuss, openness to feedback."
+    },
+    {
+      "id": "conflict",
+      "label": "Conflict handling",
+      "labelLanguage": "en",
+      "description": "Meeting disagreement: following up instead of escalating, direct addressing, repair after conflict, and regulation of one's own reactions."
+    },
+    {
+      "id": "independence",
+      "label": "Independence",
+      "labelLanguage": "en",
+      "description": "Own time, own friends and interests, the degree of autonomy in close relationships, and the balance between togetherness and 'we'."
+    }
+  ],
+  "items": [
+    {
+      "id": "cl-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I enjoy being close to the people I care about.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I feel calmed by time spent with people I feel connected to.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0031",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep at arm's length even the people I am fond of.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0032",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I often feel alone even when I am with other people.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say plainly when I need something from the people I love.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I tell people who stand close to me what my boundaries are.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "op-0031",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep my own needs under cover inside close relationships.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "op-0032",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let people think all is fine even when I bend under it.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "openness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I raise a disagreement early, before it has room to grow.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I speak up when I disagree, even when the moment feels awkward.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0031",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I raise my voice more than the matter calls for, mid-argument.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0032",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I use the sore spots people shared when I want to win the argument.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I set aside time for myself as a regular part of the week.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I enjoy having a few hours of the week that belong to me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0031",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I prefer that most of our free time is spent together.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0032",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I would rather share an experience than have it on my own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    }
+  ],
+  "composite": {
+    "build": "app/_composite_defs.mjs",
+    "version": 1,
+    "perDim": 4,
+    "selection": "deterministisk: 4 per dim i pool-orden, 2+/2− sign-symmetri (FASE 4 item-analyse kan erstatte)",
+    "noTimeBudget": true
+  }
+}

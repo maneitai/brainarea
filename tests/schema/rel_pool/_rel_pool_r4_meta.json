@@ -1,0 +1,546 @@
+{
+  "metaVersion": 1,
+  "id": "rel-iv-pool",
+  "date": "2026-11-17",
+  "boardLeaf": "#3825-blokken [3-VEIS] FASE 2 relasjonspool per dimensjon: R4 selvstendighet (iv) — 60 originale items (worker TR-58667D9E69B0).",
+  "spec": "tests/schema/_rel_itemspec_spec.json (rel-itemspec-v1, PROPOSED; GJELDENDE ved #3813)",
+  "licenseBasis": "DOC-C8C02AD272 (lisensverdikten) er kontrastgrunnlag: ingen kommersielt relasjonsinstrument er lisensiert eller gjengitt — alle 60 items per språk er egne/original forfattet fra itemspec-themes.R4-construct'en. Forbud per spec.copyrightControl: gjenkjennbare formuleringer fra Gottman-programmenes instrumenter, 5 Love Languages, ENRICH, Prepare/Enrich; ASRS/AQ/RAADS-R-formuleringer; instrumentnavn i innhold. R4-ekstra regel (themes.R4.itemStyle): ingen item normaliserer enten ekstrem (full fusjon eller full uavhengighet) — begge ender er gyldige profiler — håndhevet via normativ-token-skann (burde/should/sunt/healthy/normal/ideal) og preferanse-basert forfattering i assert_authoring + selftest S11e.",
+  "authoringRule": "Første-person presens, ett utsagn, 8–14 ord, ingen dobbeltspørsmål, ingen absolutter (alltid/aldri/always/never), ingen instrument-/diagnose-navn, ingen normative utsagn (R4-regelen, programmert token-skann). NO og EN separat forfattet med konstrukt-ekvivalens: samme id-rekkefølge, samme tema+sign per id; tekstene er IKKE direkte oversettelser (Soester-konvensjonen). Programmatisk 5-gram-kryss mot hele R1+R2+R3-korpuset (0 sammenfall) + fragment-skann mot kjente instrumentformuleringer.",
+  "optionsSource": "def-ipip50-big5.<lang>.json items[*].options — byte-identisk per fil (verifisert i selftest S5).",
+  "signPolicy": "30 positivt keyede (iv-0001..iv-0030, sign 1) + 30 negativt keyede (iv-0031..iv-0060, sign -1). Basis: itemspec.sessionFormDecision låser live +-+- per dimensjon (2 pos + 2 neg velges i FASE 4) — poolen må derfor inneholde begge retninger. Ulik nd-poolen (screening i én retning, NG-4) er dette profilkeying i to retninger, et dokumentert designvalg, ikke NG-4-avvik. R4-constructen deler negativ retning i tre trekk: iv-n1 sammen-tid trekkes foran egen tid (fusjonstrekk), iv-n2 egen rytme og eget rom løser seg opp (oppgitt autonomi), iv-n3 ubehag med andres autonomi — speilbildene av iv-t1 egen tid og eget rom, iv-t2 egne venner og interesser, iv-t3 balansen mellom 'vi' og 'jeg'. Begge ender av skalaen er gyldige profiler (R4-regelen): poolen keyer preferansegrad, aldri normaliserende 'god oppløsning'.",
+  "themeCounts": {
+    "iv-t1": 10,
+    "iv-t2": 10,
+    "iv-t3": 10,
+    "iv-n1": 10,
+    "iv-n2": 10,
+    "iv-n3": 10
+  },
+  "seedPolicy": "themes.R4 i itemspec har ingen exampleSeed (kun R1 har) — ingen seedNear-flagg i denne poolen; tom seed-liste er låst eksplisitt i selftest S10i. Oppstår en seed for R4 i en senere spec-revisjon, flagges items deretter.",
+  "redundancyPolicy": "redundantWith markerer formuleringsnære par (symmetrisk, 6 par) slik at FASE 4-utvelgelsen velger maks ett item per par inn i live-deffen.",
+  "holes": {
+    "closes": "H-2-delen R4 (rel-pool 240/240 etter R1+R2+R3): R4 selvstendighet 60/60 levert — H-2 er dermed LUKKET; alle fire dimensjonspoolene er levert (60×4 = 240 rel-items)."
+  },
+  "items": [
+    {
+      "id": "iv-0001",
+      "dimension": "independence",
+      "theme": "iv-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0010"
+      ]
+    },
+    {
+      "id": "iv-0002",
+      "dimension": "independence",
+      "theme": "iv-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0003",
+      "dimension": "independence",
+      "theme": "iv-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0004",
+      "dimension": "independence",
+      "theme": "iv-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0005",
+      "dimension": "independence",
+      "theme": "iv-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0006",
+      "dimension": "independence",
+      "theme": "iv-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0007",
+      "dimension": "independence",
+      "theme": "iv-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0008",
+      "dimension": "independence",
+      "theme": "iv-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0009",
+      "dimension": "independence",
+      "theme": "iv-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0043"
+      ]
+    },
+    {
+      "id": "iv-0010",
+      "dimension": "independence",
+      "theme": "iv-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0001"
+      ]
+    },
+    {
+      "id": "iv-0011",
+      "dimension": "independence",
+      "theme": "iv-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0012",
+      "dimension": "independence",
+      "theme": "iv-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0019"
+      ]
+    },
+    {
+      "id": "iv-0013",
+      "dimension": "independence",
+      "theme": "iv-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0014",
+      "dimension": "independence",
+      "theme": "iv-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0015",
+      "dimension": "independence",
+      "theme": "iv-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0016",
+      "dimension": "independence",
+      "theme": "iv-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0017",
+      "dimension": "independence",
+      "theme": "iv-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0018",
+      "dimension": "independence",
+      "theme": "iv-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0019",
+      "dimension": "independence",
+      "theme": "iv-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0012"
+      ]
+    },
+    {
+      "id": "iv-0020",
+      "dimension": "independence",
+      "theme": "iv-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0021",
+      "dimension": "independence",
+      "theme": "iv-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0022",
+      "dimension": "independence",
+      "theme": "iv-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0052"
+      ]
+    },
+    {
+      "id": "iv-0023",
+      "dimension": "independence",
+      "theme": "iv-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0024",
+      "dimension": "independence",
+      "theme": "iv-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0025",
+      "dimension": "independence",
+      "theme": "iv-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0026",
+      "dimension": "independence",
+      "theme": "iv-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0027",
+      "dimension": "independence",
+      "theme": "iv-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0028",
+      "dimension": "independence",
+      "theme": "iv-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0056"
+      ]
+    },
+    {
+      "id": "iv-0029",
+      "dimension": "independence",
+      "theme": "iv-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0030",
+      "dimension": "independence",
+      "theme": "iv-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0031",
+      "dimension": "independence",
+      "theme": "iv-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0032",
+      "dimension": "independence",
+      "theme": "iv-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0033",
+      "dimension": "independence",
+      "theme": "iv-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0034",
+      "dimension": "independence",
+      "theme": "iv-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0035",
+      "dimension": "independence",
+      "theme": "iv-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0036",
+      "dimension": "independence",
+      "theme": "iv-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0038"
+      ]
+    },
+    {
+      "id": "iv-0037",
+      "dimension": "independence",
+      "theme": "iv-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0038",
+      "dimension": "independence",
+      "theme": "iv-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0036"
+      ]
+    },
+    {
+      "id": "iv-0039",
+      "dimension": "independence",
+      "theme": "iv-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0040",
+      "dimension": "independence",
+      "theme": "iv-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0041",
+      "dimension": "independence",
+      "theme": "iv-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0042",
+      "dimension": "independence",
+      "theme": "iv-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0043",
+      "dimension": "independence",
+      "theme": "iv-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0009"
+      ]
+    },
+    {
+      "id": "iv-0044",
+      "dimension": "independence",
+      "theme": "iv-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0045",
+      "dimension": "independence",
+      "theme": "iv-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0046",
+      "dimension": "independence",
+      "theme": "iv-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0047",
+      "dimension": "independence",
+      "theme": "iv-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0048",
+      "dimension": "independence",
+      "theme": "iv-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0049",
+      "dimension": "independence",
+      "theme": "iv-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0050",
+      "dimension": "independence",
+      "theme": "iv-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0051",
+      "dimension": "independence",
+      "theme": "iv-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0052",
+      "dimension": "independence",
+      "theme": "iv-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0022"
+      ]
+    },
+    {
+      "id": "iv-0053",
+      "dimension": "independence",
+      "theme": "iv-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0054",
+      "dimension": "independence",
+      "theme": "iv-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0055",
+      "dimension": "independence",
+      "theme": "iv-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0056",
+      "dimension": "independence",
+      "theme": "iv-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "iv-0028"
+      ]
+    },
+    {
+      "id": "iv-0057",
+      "dimension": "independence",
+      "theme": "iv-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0058",
+      "dimension": "independence",
+      "theme": "iv-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0059",
+      "dimension": "independence",
+      "theme": "iv-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "iv-0060",
+      "dimension": "independence",
+      "theme": "iv-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    }
+  ],
+  "provenance": {
+    "authoringDate": "2026-11-17",
+    "originality": "Alle items forfattet fra construct-beskrivelsen i _rel_itemspec_spec.json themes.R4 — ingen ekstern skala, ingen formell oversettelse, ingen scraping.",
+    "signCounts": {
+      "pos": 30,
+      "neg": 30
+    },
+    "engineFactsVerified": [
+      "scoring.js trait-sti: normalized = 100*(raw-min)/(max-min) over besvart sett; enkelt-skala-rad for independence; komposit = skalaens normalized (re-verifisert i selftest S7/S8 denne økten)",
+      "scoring.js linje 118-120: sign=-1 -> c=-value, minP=-max, maxP=-min (re-verifisert i selftest S8b)",
+      "render.js sessionSizeFor(likert) => alle 60 items shuffles (re-verifisert i selftest S14a)",
+      "validateTestDef håndhever ikke reverseringskravet — poolens 30/30 keying er forfatter-levert, ikke motor-påtvinget (grep i tests/engine)",
+      "symmetrisk +/- pool: all-3 og konstante svar gir normalized 50.0 (konstant-svar-invarians; span 240 ved 30 pos + 30 neg) — provet i selftest S8",
+      "_rel_compat_model.mjs DIMENSIONS[3].id == 'independence' (kind tolerance, tol 0.35) — independence er modellens mottaksside; tolerance-formelen provet med |a-b| <= 0.35 -> s = 1 i selftest S14d"
+    ]
+  }
+}

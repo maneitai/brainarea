@@ -1,0 +1,2069 @@
+{
+  "schemaVersion": 1,
+  "id": "rel-iv-pool",
+  "type": "test-definition",
+  "family": "relations",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "independence",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "independence",
+      "label": "Independence",
+      "labelLanguage": "en",
+      "description": "Own time, own friends and interests, the degree of autonomy in close relationships, and the balance between togetherness and 'we'."
+    }
+  ],
+  "items": [
+    {
+      "id": "iv-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I set aside time for myself as a regular part of the week.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I enjoy having a few hours of the week that belong to me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0003",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I do not rush through the hours I keep for myself.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0004",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep a corner of my week where I am alone.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0005",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I can sit quietly by myself without missing anyone.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0006",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I leave my phone behind when I have made space for myself.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0007",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep routines that are about nobody but me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0008",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I come back in a better mood after time on my own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0009",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say when I need an evening of my own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0010",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I shape my day so there is room in it for me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0011",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I have friends I stay in touch with all on my own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0012",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep interests alive that nobody close to me shares.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0013",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I read, walk or train for reasons that are entirely mine.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0014",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I call old friends without needing anyone to arrange my day.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0015",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep hobbies that fill my evenings on my own terms.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0016",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I pick up new things at my own pace.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0017",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hold opinions that often drift from the people around me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0018",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I join events where I do not know a single soul.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0019",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep a small project of my own going on the side.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0020",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I come home with stories the people around me have not heard.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0021",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I decide the small things in my day without clearing them first.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0022",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I am fine when those around me have plans of their own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0023",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I am at ease in rooms where everyone is doing their own thing.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0024",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I listen to other people's wishes, but the choice stays mine.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0025",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep a sense of who I am inside close relationships.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0026",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I choose my own company without a bad conscience.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0027",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I back the people around me when they do things on their own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0028",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I do not read time apart as a sign of distance.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0029",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let my closest people keep projects I do not follow.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0030",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I make my own decisions about money and everyday choices.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0031",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I prefer that most of our free time is spent together.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0032",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I would rather share an experience than have it on my own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0033",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I shape my week around what we do together, not what I do alone.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0034",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I lose some of my own rhythm when I share my days with someone.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0035",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let my own projects slide when others are around me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0036",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I start missing company soon after I am on my own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0037",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I like hobbies best when they become something we do together.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0038",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I feel a bit empty when others around me are busy elsewhere.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0039",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I give my old friends less of myself than I used to.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0040",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I want us to do most things as a single unit.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0041",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I give up my own morning habits so the day flows as one.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0042",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I forget the appointments I make with myself when others need me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0043",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say yes to proposals even when I had plans of my own.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0044",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I have almost no evenings that stay mine alone.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0045",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I adjust my menus to whatever the whole house prefers.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0046",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I put my own goals to the side once I pair up.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0047",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let my plans melt into the one shared calendar.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0048",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I get a guilty conscience when I keep things to myself.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0049",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I lose track of which interests were ever mine.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0050",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I sit around waiting for someone else to plan the evening.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0051",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I get uneasy when those near me keep plans from me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0052",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I prefer to tag along when my closest people head out.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0053",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask a few questions about evenings that happened without me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0054",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I try to line up free days so we are rarely apart.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0055",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I go quiet when the people around me make their own choices.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0056",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I take it a little personally when people want evenings alone.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0057",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I want to know where people are when we are not together.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0058",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I see plans without me as the smaller ones in the big picture.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0059",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I offer to come along when my closest people go out.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0060",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I want those near me to pick time with me instead.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    }
+  ]
+}

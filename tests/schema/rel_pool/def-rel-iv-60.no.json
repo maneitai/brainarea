@@ -1,0 +1,2069 @@
+{
+  "schemaVersion": 1,
+  "id": "rel-iv-pool",
+  "type": "test-definition",
+  "family": "relations",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "independence",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "independence",
+      "label": "Selvstendighet",
+      "labelLanguage": "no",
+      "description": "Egen tid, egne venner og interesser, graden av autonomi i nære relasjoner og balansen mellom fellesskap og 'vi'."
+    }
+  ],
+  "items": [
+    {
+      "id": "iv-0001",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg setter av tid til meg selv som en fast del av uka.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0002",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trives når noen timer i uka er mine alene.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0003",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg skynder meg ikke gjennom de timene jeg har for meg selv.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0004",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg har en plass i hverdagen der jeg er for meg selv.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0005",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kan sitte stille med egne tanker uten å savne folk.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0006",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar telefonen ligge når jeg har satt av tid til meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0007",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder på vaner som bare handler om meg og dagen min.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0008",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kommer tilbake i bedre humør når jeg har hatt alenetid.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0009",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier fra om når jeg trenger en kveld for meg selv.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0010",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg legger opp dagen slik at det finnes rom for meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0011",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg har venner jeg holder kontakten med på egen hånd.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0012",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder interesser i live som ingen i min krets deler.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0013",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg leser, går eller trener av grunner som er mine egne.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0014",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg ringer gamle venner uten at noen legger opp dagen for det.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0015",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg har hobbyer som fyller kveldene mine på mine premisser.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0016",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lærer meg nye ting i mitt eget tempo.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0017",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg har meninger som gjerne skiller seg fra de rundt meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0018",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg melder meg på arrangementer der jeg ikke kjenner noen fra før.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0019",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg har en interesse jeg driver med på si.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0020",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kommer hjem med historier folk i kretsen min ikke har hørt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0021",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg bestemmer små ting i hverdagen uten å spørre noen først.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0022",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trives med at de rundt meg har planer jeg ikke er med på.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0023",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg er komfortabel i rom der folk gjør ulike ting samtidig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0024",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg hører etter andres ønsker, men ender med mine egne valg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0025",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg har en identitet som står fast, uavhengig av hvem jeg er sammen med.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0026",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg velger mitt eget selskap uten dårlig samvittighet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0027",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg støtter opp om at folk i nærheten har ting på egen hånd.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0028",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg ser ikke at vi er adskilt som et tegn på avstand.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0029",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar den jeg er nærmest ha oppgaver jeg ikke følger med på.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0030",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg rår over egne penger og egne valg i hverdagen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "iv-0031",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg foretrekker at det meste av fritiden brukes sammen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0032",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg vil heller dele en opplevelse enn å ha den for meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0033",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg planlegger uka ut fra det vi gjør sammen, ikke det jeg gjør alene.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0034",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg mister litt av min egen rytme når jeg deler hverdag med folk.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0035",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar mine egne prosjekter ligge når jeg har selskap.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0036",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg savner selskap raskt når jeg er alene.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0037",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg liker interesser best når vi gjør dem samlet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0038",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg blir litt tom når folk rundt meg gjør sine egne ting.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0039",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg ser mine gamle venner sjeldnere enn jeg pleide.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0040",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg ønsker at vi gjør det meste som ett lag.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0041",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg gir opp mine morgenvaner for at dagen skal flyte sammen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0042",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg glemmer avtaler jeg har med meg selv når noen trenger meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0043",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier ja til det som foreslås, selv når jeg hadde egne planer.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0044",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg opplever nesten ingen kvelder som mine alene.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0045",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg justerer menyene mine etter hva hele huset liker.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0046",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg legger mine egne mål til side i et samliv.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0047",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar mine egne planer smelte inn i den felles kalenderen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0048",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg får dårlig samvittighet når jeg holder ting for meg selv.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0049",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg mister oversikten over hva som er min egen interesse.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0050",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg venter på at noen skal bestemme kvelden for meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0051",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg blir urolig når folk nær meg holder planer skjult for meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0052",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg foretrekker å være med når de nærmeste mine drar ut.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0053",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg stiller noen spørsmål om kvelden folk har hatt uten meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0054",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg forsøker å samordne fridager så vi sjelden er hver for oss.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0055",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg blir stille når folk rundt meg tar egne valg for seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0056",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar det litt personlig når folk vil ha kvelder for seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0057",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg vil vite hvor folk er når vi ikke er sammen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0058",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg synes planer uten meg blir mindre viktige i det store bildet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0059",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg melder meg på turen når de nærmeste mine skal ut.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "iv-0060",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg ønsker at de jeg er nær, heller velger tid med meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "independence",
+          "sign": -1
+        }
+      ]
+    }
+  ]
+}

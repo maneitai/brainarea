@@ -1,0 +1,22 @@
+{
+  "todo": "VERIFISER-REL rel-stall item 11 (TR-33F04462C5CE steg 4)",
+  "date": "2026-11-17",
+  "question": "brukervendt bug eller automasjonsartefakt?",
+  "verdict": "ARTEFAKT",
+  "brukervendt_bug": false,
+  "fix_i_renderjs": false,
+  "bevis": {
+    "item11_komponent": "identisk likert-BUTTON som alle andre (disabled:false, pointer-events:auto, 318x44, aria-pressed urørt)",
+    "stall_posisjon": "ikke item 11 — racen er ved final-klikk (idx 15, «spørsmål 16 av 16») i vinduet mellom finish() og showResult-render",
+    "race_bevis": "klikk videre i finish-vinduet henger til locator-timeout; resultatet rendres umiddelbart etterpå med waitForSelector (resultAfterWait=true, finalRes=1)",
+    "attention_ved_probe_tempo": "1 markering (tidsbruk-heuristikk, forventet) — clean ved 2s mellom klikk",
+    "en": "16/16 skjermer grønn, item 11 klikkbar, 0 sidefeil",
+    "no": "16/16 skjermer grønn med menneskelig tempo, 0 sidefeil"
+  },
+  "prober": [
+    "tmp/_rel_stall_probe5.js",
+    "tmp/_rel_stall_probe6.js",
+    "tmp/_rel_en_probe.js"
+  ],
+  "rapport": "report/2026-11-17-rel-stall-verifikasjon.md"
+}

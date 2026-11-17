@@ -1,0 +1,45 @@
+{
+  "todo": "[VERIFISER FASE 2] Samlet faseverifikasjon (TR-5C645ABAC735 iter 1, 2026-11-17)",
+  "verdict": "PASS for de leverte FASE 2-artefaktene; FASE 2-i-helhet IKKE fullført: T6-pool mangler (H-1, ny), rel-pool-batches og nd-dyp-pools ikke påbegynt (H-2/H-3 med brett-hjemmel), puzzle s3-BLOKKERENDE-fix fortsatt uutført (P-1 spot-bekreftet)",
+  "fresh": {
+    "harnesses": 16,
+    "alle_pass": true,
+    "omfang": "itemspec x4, pool x8, puzzle 99, alpha 19/19, qc 6/6 (9 pooler), engine 72/72, attention 57/57 — prod-tre, denne økten"
+  },
+  "levert_pool_sum": 635,
+  "aapne_kontrakter": [
+    {
+      "id": "H-1",
+      "hva": "T6 formell deduksjon 40 items — 0 levert; trekksum-44 uoppnåelig",
+      "eier": "bygg-runde etter #3752 eller eksplisitt descope",
+      "ny": true
+    },
+    {
+      "id": "H-2",
+      "hva": "Rel-pool R1-R4, 240 items",
+      "eier": "brett #3825 (leveranse-runde)",
+      "ny": false
+    },
+    {
+      "id": "H-3",
+      "hva": "ND-dyp ADHD + autisme, ~100 hver, ADHD med ASRS-anker (NG-2-betingelse)",
+      "eier": "#3760/#3762",
+      "ny": false
+    },
+    {
+      "id": "P-1",
+      "hva": "puzzle s3 fasit-fix (Y p3) + re-avledning + re-spilltest",
+      "eier": "[BYGG]-kjeden",
+      "ny": false
+    }
+  ],
+  "lisens": "kryss mot DOC-C8C02AD272: kompatibel — 0 ASRS/AQ/RAADS-tekst i def-filer (grep), ASRS-anker på #3760 per verdikt §3",
+  "blokkerende_for_step": [],
+  "notat": "Ingen kodefiler mutert; additivt rapport + verdict. Metadata-kontroll av leveransen selv: FASE 2-samlet-verifikasjonen ble dobbeltverifisert (iter 2+3), som ga to funn-rader om samme T6-hull — FND-B65DBF651C (id 496, 01:22:30) og FND-D7074C4C83 (id 498, 01:25:37), begge sev 2; 496 kanoniseres foreloepig til 498 til bakkenden deduper. Rapportens §5 N-4 dokumenterer dette + FASE 3-uredd arbeidsfiler som ikke hoerer til leveransen.",
+  "kilder": [
+    "DOC-373E4AFEEB",
+    "DOC-C8C02AD272",
+    "DOC-7C6C0584B8",
+    "report/2026-11-17-fase2-samlet-verifikasjon.md"
+  ]
+}

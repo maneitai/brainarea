@@ -1,0 +1,2277 @@
+{
+  "schemaVersion": 1,
+  "id": "evne-pool-t6-meta",
+  "type": "evne-pool-meta",
+  "batch": "T6",
+  "boardLeaf": "#3820-pool-block (evnepool per tema: T6, lukker H-1/N-1)",
+  "spec": "tests/schema/_evne_itemspec_spec.json",
+  "themes": {
+    "T6": "evne-t6-deduksjon"
+  },
+  "counts": {
+    "T6": 40
+  },
+  "bands": {
+    "T6": {
+      "L": 14,
+      "M": 13,
+      "H": 13
+    }
+  },
+  "subtypes": {
+    "T6": {
+      "syl": 22,
+      "cond": 12,
+      "combi": 6
+    }
+  },
+  "authoring": {
+    "T6": "par-variant: labels oversatt parallell tekst (T4-konvensjon) — samme options-ORDEN og correctIndex per spraakpar; prompter separat forfattet NO/EN",
+    "distractorRule": "kvantorforvirring (alle<->noen) og omvendt antecedent-konklusjon (AC/DA-feller som distraktorer i MP/MT-items; AC/DA-items korrekt = ingen bestemt konklusjon folger, fellene er distraktorer); combi: konstruksjonsnære tellingfeil",
+    "validity": "syl-fasit og distraktorer verifisert med eksakt verdensenum (256/65536 region-verdener); skjeletter (barbara/celarent/darii + 4 3-premiss-kjeder) assert-verifiseres ved hver kjoring; distraktorer refutert baade i FOL og under eksistens-forutsetning",
+    "condTruth": "MP/MT: korrekt = den entailed atomkonklusjonen (modus ponens/tollens); AC/DA: korrekt = ingen bestemt konklusjon folger, AC/DA-svarene er distraktorer; alle distraktorer usann i minst en premiss-verden (4-verdens-sjekken)",
+    "logicConvention": "moderne FOL — tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens; konvensjonen dokumentert her og i selftest",
+    "orderKind": "kind 'ability' eksklusivt per itemspec.orderKindNote"
+  },
+  "holes": {
+    "closes": "H-1/N-1 T6-deduksjons-pool 0/40 (FND-D7074C4C83 / FND-B65DBF651C id 496-498)"
+  },
+  "items": [
+    {
+      "id": "dl-0001",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "syl",
+      "kindCode": "syl2:darii",
+      "rules": {
+        "v": 3,
+        "skeleton": "darii",
+        "prem": [
+          [
+            "I",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          0,
+          3,
+          6
+        ]
+      },
+      "ph": 0,
+      "correctLabelNo": "Noen gardiner er skjerf.",
+      "correctIndex": 2,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Alle gardiner er tønner.",
+        "Alle gardiner er skjerf.",
+        "Noen gardiner er skjerf.",
+        "Alle tønner er gardiner."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "Some curtains are scarves.",
+      "optionOrderEn": [
+        "All curtains are barrels.",
+        "All curtains are scarves.",
+        "Some curtains are scarves.",
+        "All barrels are curtains."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0002",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "syl",
+      "kindCode": "syl2:darii",
+      "rules": {
+        "v": 3,
+        "skeleton": "darii",
+        "prem": [
+          [
+            "I",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          1,
+          4,
+          7
+        ]
+      },
+      "ph": 1,
+      "correctLabelNo": "Noen kaktuser er urtepoter.",
+      "correctIndex": 1,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Alle kaktuser er banjoer.",
+        "Noen kaktuser er urtepoter.",
+        "Alle kaktuser er urtepoter.",
+        "Alle banjoer er kaktuser."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "Some cactuses are flowerpots.",
+      "optionOrderEn": [
+        "All cactuses are banjos.",
+        "Some cactuses are flowerpots.",
+        "All cactuses are flowerpots.",
+        "All banjos are cactuses."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0003",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "syl",
+      "kindCode": "syl2:darii",
+      "rules": {
+        "v": 3,
+        "skeleton": "darii",
+        "prem": [
+          [
+            "I",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          2,
+          5,
+          8
+        ]
+      },
+      "ph": 2,
+      "correctLabelNo": "Noen frimerker er tallerkener.",
+      "correctIndex": 3,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Alle frimerker er poteter.",
+        "Alle frimerker er tallerkener.",
+        "Alle poteter er frimerker.",
+        "Noen frimerker er tallerkener."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none"
+      ],
+      "correctLabelEn": "Some stamps are plates.",
+      "optionOrderEn": [
+        "All stamps are potatoes.",
+        "All stamps are plates.",
+        "All potatoes are stamps.",
+        "Some stamps are plates."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none"
+      ]
+    },
+    {
+      "id": "dl-0004",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "syl",
+      "kindCode": "syl2:darii",
+      "rules": {
+        "v": 3,
+        "skeleton": "darii",
+        "prem": [
+          [
+            "I",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          3,
+          6,
+          9
+        ]
+      },
+      "ph": 3,
+      "correctLabelNo": "Noen tønner er krokuser.",
+      "correctIndex": 0,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Noen tønner er krokuser.",
+        "Alle tønner er skjerf.",
+        "Alle tønner er krokuser.",
+        "Alle skjerf er tønner."
+      ],
+      "tagsNo": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "Some barrels are crocuses.",
+      "optionOrderEn": [
+        "Some barrels are crocuses.",
+        "All barrels are scarves.",
+        "All barrels are crocuses.",
+        "All scarves are barrels."
+      ],
+      "tagsEn": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0005",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "syl",
+      "kindCode": "syl2:celarent",
+      "rules": {
+        "v": 3,
+        "skeleton": "celarent",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "E",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          10,
+          13,
+          16
+        ]
+      },
+      "ph": 0,
+      "correctLabelNo": "Ingen viskelærer er tepotter.",
+      "correctIndex": 2,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen viskelærer er beger.",
+        "Alle viskelærer er tepotter.",
+        "Ingen viskelærer er tepotter.",
+        "Alle beger er viskelærer."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "No erasers are teapots.",
+      "optionOrderEn": [
+        "No erasers are beakers.",
+        "All erasers are teapots.",
+        "No erasers are teapots.",
+        "All beakers are erasers."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0006",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "syl",
+      "kindCode": "syl2:celarent",
+      "rules": {
+        "v": 3,
+        "skeleton": "celarent",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "E",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          11,
+          14,
+          17
+        ]
+      },
+      "ph": 1,
+      "correctLabelNo": "Ingen knapper er stearinlys.",
+      "correctIndex": 1,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen knapper er linjaler.",
+        "Ingen knapper er stearinlys.",
+        "Alle knapper er stearinlys.",
+        "Alle linjaler er knapper."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "No buttons are candles.",
+      "optionOrderEn": [
+        "No buttons are rulers.",
+        "No buttons are candles.",
+        "All buttons are candles.",
+        "All rulers are buttons."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0007",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "syl",
+      "kindCode": "syl2:celarent",
+      "rules": {
+        "v": 3,
+        "skeleton": "celarent",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "E",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          12,
+          15,
+          18
+        ]
+      },
+      "ph": 2,
+      "correctLabelNo": "Ingen nøkkelringer er notatbøker.",
+      "correctIndex": 3,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen nøkkelringer er blyanter.",
+        "Alle nøkkelringer er notatbøker.",
+        "Alle blyanter er nøkkelringer.",
+        "Ingen nøkkelringer er notatbøker."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none"
+      ],
+      "correctLabelEn": "No keyrings are notebooks.",
+      "optionOrderEn": [
+        "No keyrings are pencils.",
+        "All keyrings are notebooks.",
+        "All pencils are keyrings.",
+        "No keyrings are notebooks."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none"
+      ]
+    },
+    {
+      "id": "dl-0008",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "syl",
+      "kindCode": "syl2:celarent",
+      "rules": {
+        "v": 3,
+        "skeleton": "celarent",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "E",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          13,
+          16,
+          19
+        ]
+      },
+      "ph": 3,
+      "correctLabelNo": "Ingen beger er postkort.",
+      "correctIndex": 0,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen beger er postkort.",
+        "Ingen beger er tepotter.",
+        "Alle beger er postkort.",
+        "Alle tepotter er beger."
+      ],
+      "tagsNo": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "No beakers are postcards.",
+      "optionOrderEn": [
+        "No beakers are postcards.",
+        "No beakers are teapots.",
+        "All beakers are postcards.",
+        "All teapots are beakers."
+      ],
+      "tagsEn": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0009",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "cond",
+      "kindCode": "cond-MP",
+      "rules": {
+        "form": "MP",
+        "ki": [
+          1,
+          5
+        ],
+        "ni": 0
+      },
+      "ph": 0,
+      "correctLabelNo": "Da liker Anna poteter.",
+      "correctIndex": 2,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Da liker ikke Anna poteter.",
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Anna og poteter.",
+        "Da liker Anna poteter.",
+        "Da liker også Elin poteter."
+      ],
+      "tagsNo": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor"
+      ],
+      "correctLabelEn": "Then Anna likes potatoes.",
+      "optionOrderEn": [
+        "Then Anna does not like potatoes.",
+        "No definite conclusion about Anna and potatoes necessarily follows.",
+        "Then Anna likes potatoes.",
+        "Then Elsa also likes potatoes."
+      ],
+      "tagsEn": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor"
+      ]
+    },
+    {
+      "id": "dl-0010",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "cond",
+      "kindCode": "cond-MP",
+      "rules": {
+        "form": "MP",
+        "ki": [
+          8,
+          11
+        ],
+        "ni": 1
+      },
+      "ph": 1,
+      "correctLabelNo": "Da liker Bjørn knapper.",
+      "correctIndex": 1,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Bjørn og knapper.",
+        "Da liker Bjørn knapper.",
+        "Da liker også Frank knapper.",
+        "Da liker ikke Bjørn knapper."
+      ],
+      "tagsNo": [
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ],
+      "correctLabelEn": "Then Ben likes buttons.",
+      "optionOrderEn": [
+        "No definite conclusion about Ben and buttons necessarily follows.",
+        "Then Ben likes buttons.",
+        "Then Frank also likes buttons.",
+        "Then Ben does not like buttons."
+      ],
+      "tagsEn": [
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ]
+    },
+    {
+      "id": "dl-0011",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.35,
+      "subtype": "cond",
+      "kindCode": "cond-MP",
+      "rules": {
+        "form": "MP",
+        "ki": [
+          14,
+          19
+        ],
+        "ni": 2
+      },
+      "ph": 2,
+      "correctLabelNo": "Da liker Cecilie postkort.",
+      "correctIndex": 3,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Da liker også Gidske postkort.",
+        "Da liker ikke Cecilie postkort.",
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Cecilie og postkort.",
+        "Da liker Cecilie postkort."
+      ],
+      "tagsNo": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none"
+      ],
+      "correctLabelEn": "Then Clara likes postcards.",
+      "optionOrderEn": [
+        "Then Gina also likes postcards.",
+        "Then Clara does not like postcards.",
+        "No definite conclusion about Clara and postcards necessarily follows.",
+        "Then Clara likes postcards."
+      ],
+      "tagsEn": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none"
+      ]
+    },
+    {
+      "id": "dl-0012",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.15,
+      "subtype": "cond",
+      "kindCode": "cond-MT",
+      "rules": {
+        "form": "MT",
+        "ki": [
+          3,
+          20
+        ],
+        "ni": 3
+      },
+      "ph": 3,
+      "correctLabelNo": "Da liker ikke David tønner.",
+      "correctIndex": 0,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Da liker ikke David tønner.",
+        "Da liker David tønner.",
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om David og tønner.",
+        "Da liker ikke heller Håkon tønner."
+      ],
+      "tagsNo": [
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ],
+      "correctLabelEn": "Then David does not like barrels.",
+      "optionOrderEn": [
+        "Then David does not like barrels.",
+        "Then David likes barrels.",
+        "No definite conclusion about David and barrels necessarily follows.",
+        "Then Henry does not like barrels either."
+      ],
+      "tagsEn": [
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ]
+    },
+    {
+      "id": "dl-0013",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.75,
+      "subtype": "combi",
+      "kindCode": "combi-shirt",
+      "rules": {
+        "kind": "shirt",
+        "a": 3,
+        "b": 4,
+        "formula": "a*b"
+      },
+      "ph": 0,
+      "correctLabelNo": "12",
+      "correctIndex": 2,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "7",
+        "9",
+        "12",
+        "15"
+      ],
+      "tagsNo": [
+        "counting-near-miss",
+        "counting-near-miss",
+        "none",
+        "counting-near-miss"
+      ],
+      "correctLabelEn": "12",
+      "optionOrderEn": [
+        "7",
+        "9",
+        "12",
+        "15"
+      ],
+      "tagsEn": [
+        "counting-near-miss",
+        "counting-near-miss",
+        "none",
+        "counting-near-miss"
+      ]
+    },
+    {
+      "id": "dl-0014",
+      "theme": "T6",
+      "family": "evner",
+      "band": "L",
+      "bandDiff": -1.55,
+      "subtype": "combi",
+      "kindCode": "combi-shirt",
+      "rules": {
+        "kind": "shirt",
+        "a": 2,
+        "b": 5,
+        "formula": "a*b"
+      },
+      "ph": 1,
+      "correctLabelNo": "10",
+      "correctIndex": 1,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "8",
+        "10",
+        "12",
+        "7"
+      ],
+      "tagsNo": [
+        "counting-near-miss",
+        "none",
+        "counting-near-miss",
+        "counting-near-miss"
+      ],
+      "correctLabelEn": "10",
+      "optionOrderEn": [
+        "8",
+        "10",
+        "12",
+        "7"
+      ],
+      "tagsEn": [
+        "counting-near-miss",
+        "none",
+        "counting-near-miss",
+        "counting-near-miss"
+      ]
+    },
+    {
+      "id": "dl-0015",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "syl",
+      "kindCode": "syl2:barbara",
+      "rules": {
+        "v": 3,
+        "skeleton": "barbara",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          0,
+          3,
+          6
+        ]
+      },
+      "ph": 0,
+      "correctLabelNo": "Alle gardiner er skjerf.",
+      "correctIndex": 3,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen gardiner er tønner.",
+        "Ingen gardiner er skjerf.",
+        "Alle tønner er gardiner.",
+        "Alle gardiner er skjerf."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none"
+      ],
+      "correctLabelEn": "All curtains are scarves.",
+      "optionOrderEn": [
+        "No curtains are barrels.",
+        "No curtains are scarves.",
+        "All barrels are curtains.",
+        "All curtains are scarves."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none"
+      ]
+    },
+    {
+      "id": "dl-0016",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "syl",
+      "kindCode": "syl2:barbara",
+      "rules": {
+        "v": 3,
+        "skeleton": "barbara",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          1,
+          4,
+          7
+        ]
+      },
+      "ph": 1,
+      "correctLabelNo": "Alle kaktuser er urtepoter.",
+      "correctIndex": 0,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Alle kaktuser er urtepoter.",
+        "Ingen kaktuser er banjoer.",
+        "Ingen kaktuser er urtepoter.",
+        "Alle banjoer er kaktuser."
+      ],
+      "tagsNo": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "All cactuses are flowerpots.",
+      "optionOrderEn": [
+        "All cactuses are flowerpots.",
+        "No cactuses are banjos.",
+        "No cactuses are flowerpots.",
+        "All banjos are cactuses."
+      ],
+      "tagsEn": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0017",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "syl",
+      "kindCode": "syl2:barbara",
+      "rules": {
+        "v": 3,
+        "skeleton": "barbara",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          2,
+          5,
+          8
+        ]
+      },
+      "ph": 2,
+      "correctLabelNo": "Alle frimerker er tallerkener.",
+      "correctIndex": 2,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen frimerker er poteter.",
+        "Ingen frimerker er tallerkener.",
+        "Alle frimerker er tallerkener.",
+        "Alle poteter er frimerker."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "All stamps are plates.",
+      "optionOrderEn": [
+        "No stamps are potatoes.",
+        "No stamps are plates.",
+        "All stamps are plates.",
+        "All potatoes are stamps."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0018",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "syl",
+      "kindCode": "syl2:barbara",
+      "rules": {
+        "v": 3,
+        "skeleton": "barbara",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          3,
+          6,
+          9
+        ]
+      },
+      "ph": 3,
+      "correctLabelNo": "Alle tønner er krokuser.",
+      "correctIndex": 1,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen tønner er skjerf.",
+        "Alle tønner er krokuser.",
+        "Ingen tønner er krokuser.",
+        "Alle skjerf er tønner."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "All barrels are crocuses.",
+      "optionOrderEn": [
+        "No barrels are scarves.",
+        "All barrels are crocuses.",
+        "No barrels are crocuses.",
+        "All scarves are barrels."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0019",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "syl",
+      "kindCode": "syl2:celarent",
+      "rules": {
+        "v": 3,
+        "skeleton": "celarent",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "E",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          10,
+          13,
+          16
+        ]
+      },
+      "ph": 0,
+      "correctLabelNo": "Ingen viskelærer er tepotter.",
+      "correctIndex": 3,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen viskelærer er beger.",
+        "Alle viskelærer er tepotter.",
+        "Alle beger er viskelærer.",
+        "Ingen viskelærer er tepotter."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none"
+      ],
+      "correctLabelEn": "No erasers are teapots.",
+      "optionOrderEn": [
+        "No erasers are beakers.",
+        "All erasers are teapots.",
+        "All beakers are erasers.",
+        "No erasers are teapots."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none"
+      ]
+    },
+    {
+      "id": "dl-0020",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "syl",
+      "kindCode": "syl2:celarent",
+      "rules": {
+        "v": 3,
+        "skeleton": "celarent",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "E",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          11,
+          14,
+          17
+        ]
+      },
+      "ph": 1,
+      "correctLabelNo": "Ingen knapper er stearinlys.",
+      "correctIndex": 0,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen knapper er stearinlys.",
+        "Ingen knapper er linjaler.",
+        "Alle knapper er stearinlys.",
+        "Alle linjaler er knapper."
+      ],
+      "tagsNo": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "No buttons are candles.",
+      "optionOrderEn": [
+        "No buttons are candles.",
+        "No buttons are rulers.",
+        "All buttons are candles.",
+        "All rulers are buttons."
+      ],
+      "tagsEn": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0021",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "syl",
+      "kindCode": "syl2:darii",
+      "rules": {
+        "v": 3,
+        "skeleton": "darii",
+        "prem": [
+          [
+            "I",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ]
+        ],
+        "ki": [
+          12,
+          15,
+          18
+        ]
+      },
+      "ph": 2,
+      "correctLabelNo": "Noen nøkkelringer er notatbøker.",
+      "correctIndex": 2,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Alle nøkkelringer er blyanter.",
+        "Alle nøkkelringer er notatbøker.",
+        "Noen nøkkelringer er notatbøker.",
+        "Alle blyanter er nøkkelringer."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "Some keyrings are notebooks.",
+      "optionOrderEn": [
+        "All keyrings are pencils.",
+        "All keyrings are notebooks.",
+        "Some keyrings are notebooks.",
+        "All pencils are keyrings."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0022",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "cond",
+      "kindCode": "cond-MP",
+      "rules": {
+        "form": "MP",
+        "ki": [
+          0,
+          9
+        ],
+        "ni": 4
+      },
+      "ph": 0,
+      "correctLabelNo": "Da liker Elin krokuser.",
+      "correctIndex": 1,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Da liker ikke Elin krokuser.",
+        "Da liker Elin krokuser.",
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Elin og krokuser.",
+        "Da liker også Anna krokuser."
+      ],
+      "tagsNo": [
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ],
+      "correctLabelEn": "Then Elsa likes crocuses.",
+      "optionOrderEn": [
+        "Then Elsa does not like crocuses.",
+        "Then Elsa likes crocuses.",
+        "No definite conclusion about Elsa and crocuses necessarily follows.",
+        "Then Anna also likes crocuses."
+      ],
+      "tagsEn": [
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ]
+    },
+    {
+      "id": "dl-0023",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "cond",
+      "kindCode": "cond-MT",
+      "rules": {
+        "form": "MT",
+        "ki": [
+          5,
+          12
+        ],
+        "ni": 5
+      },
+      "ph": 1,
+      "correctLabelNo": "Da liker ikke Frank poteter.",
+      "correctIndex": 3,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Frank og poteter.",
+        "Da liker ikke heller Bjørn poteter.",
+        "Da liker Frank poteter.",
+        "Da liker ikke Frank poteter."
+      ],
+      "tagsNo": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none"
+      ],
+      "correctLabelEn": "Then Frank does not like potatoes.",
+      "optionOrderEn": [
+        "No definite conclusion about Frank and potatoes necessarily follows.",
+        "Then Ben does not like potatoes either.",
+        "Then Frank likes potatoes.",
+        "Then Frank does not like potatoes."
+      ],
+      "tagsEn": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none"
+      ]
+    },
+    {
+      "id": "dl-0024",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": -0.2,
+      "subtype": "cond",
+      "kindCode": "cond-MT",
+      "rules": {
+        "form": "MT",
+        "ki": [
+          10,
+          17
+        ],
+        "ni": 6
+      },
+      "ph": 2,
+      "correctLabelNo": "Da liker ikke Gidske viskelærer.",
+      "correctIndex": 0,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Da liker ikke Gidske viskelærer.",
+        "Da liker ikke heller Cecilie viskelærer.",
+        "Da liker Gidske viskelærer.",
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Gidske og viskelærer."
+      ],
+      "tagsNo": [
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ],
+      "correctLabelEn": "Then Gina does not like erasers.",
+      "optionOrderEn": [
+        "Then Gina does not like erasers.",
+        "Then Clara does not like erasers either.",
+        "Then Gina likes erasers.",
+        "No definite conclusion about Gina and erasers necessarily follows."
+      ],
+      "tagsEn": [
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ]
+    },
+    {
+      "id": "dl-0025",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": 0.0,
+      "subtype": "cond",
+      "kindCode": "cond-MT",
+      "rules": {
+        "form": "MT",
+        "ki": [
+          2,
+          21
+        ],
+        "ni": 7
+      },
+      "ph": 3,
+      "correctLabelNo": "Da liker ikke Håkon frimerker.",
+      "correctIndex": 2,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Da liker Håkon frimerker.",
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Håkon og frimerker.",
+        "Da liker ikke Håkon frimerker.",
+        "Da liker ikke heller David frimerker."
+      ],
+      "tagsNo": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor"
+      ],
+      "correctLabelEn": "Then Henry does not like stamps.",
+      "optionOrderEn": [
+        "Then Henry likes stamps.",
+        "No definite conclusion about Henry and stamps necessarily follows.",
+        "Then Henry does not like stamps.",
+        "Then David does not like stamps either."
+      ],
+      "tagsEn": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor"
+      ]
+    },
+    {
+      "id": "dl-0026",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": 0.4,
+      "subtype": "combi",
+      "kindCode": "combi-pairwise",
+      "rules": {
+        "kind": "pairwise",
+        "a": 5,
+        "b": null,
+        "formula": "C(a,2)"
+      },
+      "ph": 0,
+      "correctLabelNo": "10",
+      "correctIndex": 1,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "5",
+        "10",
+        "20",
+        "11"
+      ],
+      "tagsNo": [
+        "counting-near-miss",
+        "none",
+        "counting-near-miss",
+        "counting-near-miss"
+      ],
+      "correctLabelEn": "10",
+      "optionOrderEn": [
+        "5",
+        "10",
+        "20",
+        "11"
+      ],
+      "tagsEn": [
+        "counting-near-miss",
+        "none",
+        "counting-near-miss",
+        "counting-near-miss"
+      ]
+    },
+    {
+      "id": "dl-0027",
+      "theme": "T6",
+      "family": "evner",
+      "band": "M",
+      "bandDiff": -0.4,
+      "subtype": "combi",
+      "kindCode": "combi-pairwise",
+      "rules": {
+        "kind": "pairwise",
+        "a": 6,
+        "b": null,
+        "formula": "C(a,2)"
+      },
+      "ph": 1,
+      "correctLabelNo": "15",
+      "correctIndex": 3,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "30",
+        "16",
+        "6",
+        "15"
+      ],
+      "tagsNo": [
+        "counting-near-miss",
+        "counting-near-miss",
+        "counting-near-miss",
+        "none"
+      ],
+      "correctLabelEn": "15",
+      "optionOrderEn": [
+        "30",
+        "16",
+        "6",
+        "15"
+      ],
+      "tagsEn": [
+        "counting-near-miss",
+        "counting-near-miss",
+        "counting-near-miss",
+        "none"
+      ]
+    },
+    {
+      "id": "dl-0028",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "syl",
+      "kindCode": "syl3:s3-AAAE",
+      "rules": {
+        "v": 4,
+        "skeleton": "s3-AAAE",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ],
+          [
+            "E",
+            2,
+            3
+          ]
+        ],
+        "ki": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "ph": 0,
+      "correctLabelNo": "Ingen gardiner er tønner.",
+      "correctIndex": 0,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen gardiner er tønner.",
+        "Ingen gardiner er kaktuser.",
+        "Ingen gardiner er frimerker.",
+        "Alle gardiner er tønner."
+      ],
+      "tagsNo": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "No curtains are barrels.",
+      "optionOrderEn": [
+        "No curtains are barrels.",
+        "No curtains are cactuses.",
+        "No curtains are stamps.",
+        "All curtains are barrels."
+      ],
+      "tagsEn": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0029",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "syl",
+      "kindCode": "syl3:s3-AAAE",
+      "rules": {
+        "v": 4,
+        "skeleton": "s3-AAAE",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ],
+          [
+            "E",
+            2,
+            3
+          ]
+        ],
+        "ki": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "ph": 1,
+      "correctLabelNo": "Ingen banjoer er urtepoter.",
+      "correctIndex": 2,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen banjoer er poteter.",
+        "Ingen banjoer er skjerf.",
+        "Ingen banjoer er urtepoter.",
+        "Alle banjoer er urtepoter."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "No banjos are flowerpots.",
+      "optionOrderEn": [
+        "No banjos are potatoes.",
+        "No banjos are scarves.",
+        "No banjos are flowerpots.",
+        "All banjos are flowerpots."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0030",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "syl",
+      "kindCode": "syl3:s3-AAAA",
+      "rules": {
+        "v": 4,
+        "skeleton": "s3-AAAA",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ],
+          [
+            "A",
+            2,
+            3
+          ]
+        ],
+        "ki": [
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "ph": 2,
+      "correctLabelNo": "Alle tallerkener er knapper.",
+      "correctIndex": 1,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen tallerkener er krokuser.",
+        "Alle tallerkener er knapper.",
+        "Ingen tallerkener er viskelærer.",
+        "Ingen tallerkener er knapper."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "All plates are buttons.",
+      "optionOrderEn": [
+        "No plates are crocuses.",
+        "All plates are buttons.",
+        "No plates are erasers.",
+        "No plates are buttons."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0031",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "syl",
+      "kindCode": "syl3:s3-AAAA",
+      "rules": {
+        "v": 4,
+        "skeleton": "s3-AAAA",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ],
+          [
+            "A",
+            2,
+            3
+          ]
+        ],
+        "ki": [
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "ph": 3,
+      "correctLabelNo": "Alle nøkkelringer er blyanter.",
+      "correctIndex": 3,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen nøkkelringer er beger.",
+        "Ingen nøkkelringer er linjaler.",
+        "Ingen nøkkelringer er blyanter.",
+        "Alle nøkkelringer er blyanter."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none"
+      ],
+      "correctLabelEn": "All keyrings are pencils.",
+      "optionOrderEn": [
+        "No keyrings are beakers.",
+        "No keyrings are rulers.",
+        "No keyrings are pencils.",
+        "All keyrings are pencils."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none"
+      ]
+    },
+    {
+      "id": "dl-0032",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "syl",
+      "kindCode": "syl3:s3-IAAA",
+      "rules": {
+        "v": 4,
+        "skeleton": "s3-IAAA",
+        "prem": [
+          [
+            "I",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ],
+          [
+            "A",
+            2,
+            3
+          ]
+        ],
+        "ki": [
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "ph": 0,
+      "correctLabelNo": "Noen tepotter er postkort.",
+      "correctIndex": 0,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Noen tepotter er postkort.",
+        "Alle tepotter er stearinlys.",
+        "Alle tepotter er notatbøker.",
+        "Alle tepotter er postkort."
+      ],
+      "tagsNo": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "Some teapots are postcards.",
+      "optionOrderEn": [
+        "Some teapots are postcards.",
+        "All teapots are candles.",
+        "All teapots are notebooks.",
+        "All teapots are postcards."
+      ],
+      "tagsEn": [
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0033",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "syl",
+      "kindCode": "syl3:s3-IAAA-b",
+      "rules": {
+        "v": 4,
+        "skeleton": "s3-IAAA-b",
+        "prem": [
+          [
+            "I",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ],
+          [
+            "A",
+            2,
+            3
+          ]
+        ],
+        "ki": [
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      "ph": 1,
+      "correctLabelNo": "Noen kopper er bånd.",
+      "correctIndex": 2,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Alle kopper er brikker.",
+        "Alle kopper er korker.",
+        "Noen kopper er bånd.",
+        "Alle kopper er bånd."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "Some cups are ribbons.",
+      "optionOrderEn": [
+        "All cups are placemats.",
+        "All cups are corks.",
+        "Some cups are ribbons.",
+        "All cups are ribbons."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0034",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "syl",
+      "kindCode": "syl3:s3-AAAE",
+      "rules": {
+        "v": 4,
+        "skeleton": "s3-AAAE",
+        "prem": [
+          [
+            "A",
+            0,
+            1
+          ],
+          [
+            "A",
+            1,
+            2
+          ],
+          [
+            "E",
+            2,
+            3
+          ]
+        ],
+        "ki": [
+          21,
+          22,
+          23,
+          10
+        ]
+      },
+      "ph": 2,
+      "correctLabelNo": "Ingen brikker er viskelærer.",
+      "correctIndex": 1,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Ingen brikker er korker.",
+        "Ingen brikker er viskelærer.",
+        "Ingen brikker er bånd.",
+        "Alle brikker er viskelærer."
+      ],
+      "tagsNo": [
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ],
+      "correctLabelEn": "No placemats are erasers.",
+      "optionOrderEn": [
+        "No placemats are corks.",
+        "No placemats are erasers.",
+        "No placemats are ribbons.",
+        "All placemats are erasers."
+      ],
+      "tagsEn": [
+        "quantor-or-reversed",
+        "none",
+        "quantor-or-reversed",
+        "quantor-or-reversed"
+      ]
+    },
+    {
+      "id": "dl-0035",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "cond",
+      "kindCode": "cond-AC",
+      "rules": {
+        "form": "AC",
+        "ki": [
+          2,
+          7
+        ],
+        "ni": 0
+      },
+      "ph": 0,
+      "correctLabelNo": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Anna og frimerker.",
+      "correctIndex": 3,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Da liker Anna frimerker.",
+        "Da liker ikke Anna frimerker.",
+        "Da liker også Elin frimerker.",
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Anna og frimerker."
+      ],
+      "tagsNo": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none"
+      ],
+      "correctLabelEn": "No definite conclusion about Anna and stamps necessarily follows.",
+      "optionOrderEn": [
+        "Then Anna likes stamps.",
+        "Then Anna does not like stamps.",
+        "Then Elsa also likes stamps.",
+        "No definite conclusion about Anna and stamps necessarily follows."
+      ],
+      "tagsEn": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none"
+      ]
+    },
+    {
+      "id": "dl-0036",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "cond",
+      "kindCode": "cond-AC",
+      "rules": {
+        "form": "AC",
+        "ki": [
+          11,
+          15
+        ],
+        "ni": 1
+      },
+      "ph": 1,
+      "correctLabelNo": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Bjørn og knapper.",
+      "correctIndex": 0,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Bjørn og knapper.",
+        "Da liker ikke Bjørn knapper.",
+        "Da liker også Frank knapper.",
+        "Da liker Bjørn knapper."
+      ],
+      "tagsNo": [
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ],
+      "correctLabelEn": "No definite conclusion about Ben and buttons necessarily follows.",
+      "optionOrderEn": [
+        "No definite conclusion about Ben and buttons necessarily follows.",
+        "Then Ben does not like buttons.",
+        "Then Frank also likes buttons.",
+        "Then Ben likes buttons."
+      ],
+      "tagsEn": [
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ]
+    },
+    {
+      "id": "dl-0037",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 0.9,
+      "subtype": "cond",
+      "kindCode": "cond-DA",
+      "rules": {
+        "form": "DA",
+        "ki": [
+          4,
+          18
+        ],
+        "ni": 2
+      },
+      "ph": 2,
+      "correctLabelNo": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Cecilie og notatbøker.",
+      "correctIndex": 2,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Da liker ikke heller Gidske notatbøker.",
+        "Da liker Cecilie notatbøker.",
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Cecilie og notatbøker.",
+        "Da liker ikke Cecilie notatbøker."
+      ],
+      "tagsNo": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor"
+      ],
+      "correctLabelEn": "No definite conclusion about Clara and notebooks necessarily follows.",
+      "optionOrderEn": [
+        "Then Gina does not like notebooks either.",
+        "Then Clara likes notebooks.",
+        "No definite conclusion about Clara and notebooks necessarily follows.",
+        "Then Clara does not like notebooks."
+      ],
+      "tagsEn": [
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor"
+      ]
+    },
+    {
+      "id": "dl-0038",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 1.3,
+      "subtype": "cond",
+      "kindCode": "cond-DA",
+      "rules": {
+        "form": "DA",
+        "ki": [
+          9,
+          23
+        ],
+        "ni": 3
+      },
+      "ph": 3,
+      "correctLabelNo": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om David og bånd.",
+      "correctIndex": 1,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "Da liker David bånd.",
+        "Det trekkes ikke nødvendigvis noen bestemt konklusjon om David og bånd.",
+        "Da liker ikke David bånd.",
+        "Da liker ikke heller Håkon bånd."
+      ],
+      "tagsNo": [
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ],
+      "correctLabelEn": "No definite conclusion about David and ribbons necessarily follows.",
+      "optionOrderEn": [
+        "Then David likes ribbons.",
+        "No definite conclusion about David and ribbons necessarily follows.",
+        "Then David does not like ribbons.",
+        "Then Henry does not like ribbons either."
+      ],
+      "tagsEn": [
+        "reversed-antecedent-or-quantor",
+        "none",
+        "reversed-antecedent-or-quantor",
+        "reversed-antecedent-or-quantor"
+      ]
+    },
+    {
+      "id": "dl-0039",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 1.7,
+      "subtype": "combi",
+      "kindCode": "combi-committee",
+      "rules": {
+        "kind": "committee",
+        "a": 7,
+        "b": 2,
+        "formula": "C(a,2)"
+      },
+      "ph": 0,
+      "correctLabelNo": "21",
+      "correctIndex": 3,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "7",
+        "42",
+        "20",
+        "21"
+      ],
+      "tagsNo": [
+        "counting-near-miss",
+        "counting-near-miss",
+        "counting-near-miss",
+        "none"
+      ],
+      "correctLabelEn": "21",
+      "optionOrderEn": [
+        "7",
+        "42",
+        "20",
+        "21"
+      ],
+      "tagsEn": [
+        "counting-near-miss",
+        "counting-near-miss",
+        "counting-near-miss",
+        "none"
+      ]
+    },
+    {
+      "id": "dl-0040",
+      "theme": "T6",
+      "family": "evner",
+      "band": "H",
+      "bandDiff": 0.6,
+      "subtype": "combi",
+      "kindCode": "combi-committee",
+      "rules": {
+        "kind": "committee",
+        "a": 8,
+        "b": 2,
+        "formula": "C(a,2)"
+      },
+      "ph": 1,
+      "correctLabelNo": "28",
+      "correctIndex": 0,
+      "provenance": "original (fasit programmatisk: verdensenum syl/cond, eksplisitt teller combi)",
+      "codeBasis": "distraktorer = kvantorforvirring (alle<->noen), omvendt antecedent-konklusjon, konstruksjonsnære tellingfeil; alle refutert av modellsjekk",
+      "logicConvention": "moderne FOL: tomme kategorier tillatt (vakuum-sann); «noen» krever eksistens",
+      "optionOrderNo": [
+        "28",
+        "56",
+        "27",
+        "8"
+      ],
+      "tagsNo": [
+        "none",
+        "counting-near-miss",
+        "counting-near-miss",
+        "counting-near-miss"
+      ],
+      "correctLabelEn": "28",
+      "optionOrderEn": [
+        "28",
+        "56",
+        "27",
+        "8"
+      ],
+      "tagsEn": [
+        "none",
+        "counting-near-miss",
+        "counting-near-miss",
+        "counting-near-miss"
+      ]
+    }
+  ]
+}

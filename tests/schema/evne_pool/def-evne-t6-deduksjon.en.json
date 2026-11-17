@@ -1,0 +1,1304 @@
+{
+  "schemaVersion": 1,
+  "id": "evne-t6-deduksjon",
+  "type": "test-definition",
+  "family": "evner",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "g-score",
+    "metric": "z100",
+    "ci95": true
+  },
+  "dimensions": [
+    {
+      "id": "g",
+      "label": "g score",
+      "labelLanguage": "en",
+      "description": "General ability, reported as IQ-style metric."
+    }
+  ],
+  "items": [
+    {
+      "id": "dl-0001",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Some curtains are barrels. All barrels are scarves. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "All curtains are barrels."
+            },
+            {
+              "label": "All curtains are scarves."
+            },
+            {
+              "label": "Some curtains are scarves."
+            },
+            {
+              "label": "All barrels are curtains."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "dl-0002",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Some cactuses are banjos. All banjos are flowerpots. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "All cactuses are banjos."
+            },
+            {
+              "label": "Some cactuses are flowerpots."
+            },
+            {
+              "label": "All cactuses are flowerpots."
+            },
+            {
+              "label": "All banjos are cactuses."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "dl-0003",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Some stamps are potatoes. All potatoes are plates. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "All stamps are potatoes."
+            },
+            {
+              "label": "All stamps are plates."
+            },
+            {
+              "label": "All potatoes are stamps."
+            },
+            {
+              "label": "Some stamps are plates."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "dl-0004",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Some barrels are scarves. All scarves are crocuses. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "Some barrels are crocuses."
+            },
+            {
+              "label": "All barrels are scarves."
+            },
+            {
+              "label": "All barrels are crocuses."
+            },
+            {
+              "label": "All scarves are barrels."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "dl-0005",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All erasers are beakers. No beakers are teapots. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No erasers are beakers."
+            },
+            {
+              "label": "All erasers are teapots."
+            },
+            {
+              "label": "No erasers are teapots."
+            },
+            {
+              "label": "All beakers are erasers."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "dl-0006",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All buttons are rulers. No rulers are candles. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No buttons are rulers."
+            },
+            {
+              "label": "No buttons are candles."
+            },
+            {
+              "label": "All buttons are candles."
+            },
+            {
+              "label": "All rulers are buttons."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "dl-0007",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All keyrings are pencils. No pencils are notebooks. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No keyrings are pencils."
+            },
+            {
+              "label": "All keyrings are notebooks."
+            },
+            {
+              "label": "All pencils are keyrings."
+            },
+            {
+              "label": "No keyrings are notebooks."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "dl-0008",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All beakers are teapots. No teapots are postcards. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No beakers are postcards."
+            },
+            {
+              "label": "No beakers are teapots."
+            },
+            {
+              "label": "All beakers are postcards."
+            },
+            {
+              "label": "All teapots are beakers."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "dl-0009",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes cactuses, the person likes potatoes. The rule applies to both Anna and Elsa. Anna likes cactuses. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "Then Anna does not like potatoes."
+            },
+            {
+              "label": "No definite conclusion about Anna and potatoes necessarily follows."
+            },
+            {
+              "label": "Then Anna likes potatoes."
+            },
+            {
+              "label": "Then Elsa also likes potatoes."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "dl-0010",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes plates, the person likes buttons. The rule applies to both Ben and Frank. Ben likes plates. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "No definite conclusion about Ben and buttons necessarily follows."
+            },
+            {
+              "label": "Then Ben likes buttons."
+            },
+            {
+              "label": "Then Frank also likes buttons."
+            },
+            {
+              "label": "Then Ben does not like buttons."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "dl-0011",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes rulers, the person likes postcards. The rule applies to both Clara and Gina. Clara likes rulers. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "Then Gina also likes postcards."
+            },
+            {
+              "label": "Then Clara does not like postcards."
+            },
+            {
+              "label": "No definite conclusion about Clara and postcards necessarily follows."
+            },
+            {
+              "label": "Then Clara likes postcards."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "dl-0012",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes barrels, the person likes cups. The rule applies to both David and Henry. David does not like cups. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "Then David does not like barrels."
+            },
+            {
+              "label": "Then David likes barrels."
+            },
+            {
+              "label": "No definite conclusion about David and barrels necessarily follows."
+            },
+            {
+              "label": "Then Henry does not like barrels either."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "dl-0013",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A shop sells 3 shirts and 4 trousers. An outfit is one shirt and one pair of trousers. How many different outfits are there?",
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "15"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "dl-0014",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "A shop sells 2 shirts and 5 trousers. An outfit is one shirt and one pair of trousers. How many different outfits are there?",
+          "options": [
+            {
+              "label": "8"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "dl-0015",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All curtains are barrels. All barrels are scarves. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No curtains are barrels."
+            },
+            {
+              "label": "No curtains are scarves."
+            },
+            {
+              "label": "All barrels are curtains."
+            },
+            {
+              "label": "All curtains are scarves."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0016",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All cactuses are banjos. All banjos are flowerpots. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "All cactuses are flowerpots."
+            },
+            {
+              "label": "No cactuses are banjos."
+            },
+            {
+              "label": "No cactuses are flowerpots."
+            },
+            {
+              "label": "All banjos are cactuses."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "dl-0017",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All stamps are potatoes. All potatoes are plates. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No stamps are potatoes."
+            },
+            {
+              "label": "No stamps are plates."
+            },
+            {
+              "label": "All stamps are plates."
+            },
+            {
+              "label": "All potatoes are stamps."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "dl-0018",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All barrels are scarves. All scarves are crocuses. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No barrels are scarves."
+            },
+            {
+              "label": "All barrels are crocuses."
+            },
+            {
+              "label": "No barrels are crocuses."
+            },
+            {
+              "label": "All scarves are barrels."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0019",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All erasers are beakers. No beakers are teapots. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No erasers are beakers."
+            },
+            {
+              "label": "All erasers are teapots."
+            },
+            {
+              "label": "All beakers are erasers."
+            },
+            {
+              "label": "No erasers are teapots."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0020",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All buttons are rulers. No rulers are candles. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No buttons are candles."
+            },
+            {
+              "label": "No buttons are rulers."
+            },
+            {
+              "label": "All buttons are candles."
+            },
+            {
+              "label": "All rulers are buttons."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "dl-0021",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Some keyrings are pencils. All pencils are notebooks. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "All keyrings are pencils."
+            },
+            {
+              "label": "All keyrings are notebooks."
+            },
+            {
+              "label": "Some keyrings are notebooks."
+            },
+            {
+              "label": "All pencils are keyrings."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "dl-0022",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes curtains, the person likes crocuses. The rule applies to both Elsa and Anna. Elsa likes curtains. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "Then Elsa does not like crocuses."
+            },
+            {
+              "label": "Then Elsa likes crocuses."
+            },
+            {
+              "label": "No definite conclusion about Elsa and crocuses necessarily follows."
+            },
+            {
+              "label": "Then Anna also likes crocuses."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0023",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes potatoes, the person likes keyrings. The rule applies to both Frank and Ben. Frank does not like keyrings. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "No definite conclusion about Frank and potatoes necessarily follows."
+            },
+            {
+              "label": "Then Ben does not like potatoes either."
+            },
+            {
+              "label": "Then Frank likes potatoes."
+            },
+            {
+              "label": "Then Frank does not like potatoes."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0024",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes erasers, the person likes candles. The rule applies to both Gina and Clara. Gina does not like candles. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "Then Gina does not like erasers."
+            },
+            {
+              "label": "Then Clara does not like erasers either."
+            },
+            {
+              "label": "Then Gina likes erasers."
+            },
+            {
+              "label": "No definite conclusion about Gina and erasers necessarily follows."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "dl-0025",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes stamps, the person likes placemats. The rule applies to both Henry and David. Henry does not like placemats. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "Then Henry likes stamps."
+            },
+            {
+              "label": "No definite conclusion about Henry and stamps necessarily follows."
+            },
+            {
+              "label": "Then Henry does not like stamps."
+            },
+            {
+              "label": "Then David does not like stamps either."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "dl-0026",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "At a meeting there are 5 people and every two people shake hands exactly once. How many handshakes take place?",
+          "options": [
+            {
+              "label": "5"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "11"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0027",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "At a meeting there are 6 people and every two people shake hands exactly once. How many handshakes take place?",
+          "options": [
+            {
+              "label": "30"
+            },
+            {
+              "label": "16"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "15"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0028",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All curtains are cactuses. All cactuses are stamps. No stamps are barrels. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No curtains are barrels."
+            },
+            {
+              "label": "No curtains are cactuses."
+            },
+            {
+              "label": "No curtains are stamps."
+            },
+            {
+              "label": "All curtains are barrels."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "dl-0029",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All banjos are potatoes. All potatoes are scarves. No scarves are flowerpots. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No banjos are potatoes."
+            },
+            {
+              "label": "No banjos are scarves."
+            },
+            {
+              "label": "No banjos are flowerpots."
+            },
+            {
+              "label": "All banjos are flowerpots."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "dl-0030",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All plates are crocuses. All crocuses are erasers. All erasers are buttons. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No plates are crocuses."
+            },
+            {
+              "label": "All plates are buttons."
+            },
+            {
+              "label": "No plates are erasers."
+            },
+            {
+              "label": "No plates are buttons."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "dl-0031",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All keyrings are beakers. All beakers are rulers. All rulers are pencils. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No keyrings are beakers."
+            },
+            {
+              "label": "No keyrings are rulers."
+            },
+            {
+              "label": "No keyrings are pencils."
+            },
+            {
+              "label": "All keyrings are pencils."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "dl-0032",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Some teapots are candles. All candles are notebooks. All notebooks are postcards. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "Some teapots are postcards."
+            },
+            {
+              "label": "All teapots are candles."
+            },
+            {
+              "label": "All teapots are notebooks."
+            },
+            {
+              "label": "All teapots are postcards."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "dl-0033",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "Some cups are placemats. All placemats are corks. All corks are ribbons. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "All cups are placemats."
+            },
+            {
+              "label": "All cups are corks."
+            },
+            {
+              "label": "Some cups are ribbons."
+            },
+            {
+              "label": "All cups are ribbons."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "dl-0034",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "All placemats are corks. All corks are ribbons. No ribbons are erasers. Which conclusion necessarily follows?",
+          "options": [
+            {
+              "label": "No placemats are corks."
+            },
+            {
+              "label": "No placemats are erasers."
+            },
+            {
+              "label": "No placemats are ribbons."
+            },
+            {
+              "label": "All placemats are erasers."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "dl-0035",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes stamps, the person likes flowerpots. The rule applies to both Anna and Elsa. Anna likes flowerpots. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "Then Anna likes stamps."
+            },
+            {
+              "label": "Then Anna does not like stamps."
+            },
+            {
+              "label": "Then Elsa also likes stamps."
+            },
+            {
+              "label": "No definite conclusion about Anna and stamps necessarily follows."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "dl-0036",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes buttons, the person likes pencils. The rule applies to both Ben and Frank. Ben likes pencils. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "No definite conclusion about Ben and buttons necessarily follows."
+            },
+            {
+              "label": "Then Ben does not like buttons."
+            },
+            {
+              "label": "Then Frank also likes buttons."
+            },
+            {
+              "label": "Then Ben likes buttons."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "dl-0037",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes banjos, the person likes notebooks. The rule applies to both Clara and Gina. Clara does not like banjos. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "Then Gina does not like notebooks either."
+            },
+            {
+              "label": "Then Clara likes notebooks."
+            },
+            {
+              "label": "No definite conclusion about Clara and notebooks necessarily follows."
+            },
+            {
+              "label": "Then Clara does not like notebooks."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "dl-0038",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "If a person likes crocuses, the person likes ribbons. The rule applies to both David and Henry. David does not like crocuses. Which of these conclusions necessarily follows?",
+          "options": [
+            {
+              "label": "Then David likes ribbons."
+            },
+            {
+              "label": "No definite conclusion about David and ribbons necessarily follows."
+            },
+            {
+              "label": "Then David does not like ribbons."
+            },
+            {
+              "label": "Then Henry does not like ribbons either."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "dl-0039",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "From a group of 7 people, 2 are to be chosen for a committee. How many different committees can be formed?",
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "42"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "21"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "dl-0040",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "en",
+          "prompt": "From a group of 8 people, 2 are to be chosen for a committee. How many different committees can be formed?",
+          "options": [
+            {
+              "label": "28"
+            },
+            {
+              "label": "56"
+            },
+            {
+              "label": "27"
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1304 @@
+{
+  "schemaVersion": 1,
+  "id": "evne-t6-deduksjon",
+  "type": "test-definition",
+  "family": "evner",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "g-score",
+    "metric": "z100",
+    "ci95": true
+  },
+  "dimensions": [
+    {
+      "id": "g",
+      "label": "g-skår",
+      "labelLanguage": "no",
+      "description": "Generell evne, rapportert som IQ-stil-metrikk."
+    }
+  ],
+  "items": [
+    {
+      "id": "dl-0001",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Noen gardiner er tønner. Alle tønner er skjerf. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Alle gardiner er tønner."
+            },
+            {
+              "label": "Alle gardiner er skjerf."
+            },
+            {
+              "label": "Noen gardiner er skjerf."
+            },
+            {
+              "label": "Alle tønner er gardiner."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "dl-0002",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Noen kaktuser er banjoer. Alle banjoer er urtepoter. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Alle kaktuser er banjoer."
+            },
+            {
+              "label": "Noen kaktuser er urtepoter."
+            },
+            {
+              "label": "Alle kaktuser er urtepoter."
+            },
+            {
+              "label": "Alle banjoer er kaktuser."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "dl-0003",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Noen frimerker er poteter. Alle poteter er tallerkener. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Alle frimerker er poteter."
+            },
+            {
+              "label": "Alle frimerker er tallerkener."
+            },
+            {
+              "label": "Alle poteter er frimerker."
+            },
+            {
+              "label": "Noen frimerker er tallerkener."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "dl-0004",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Noen tønner er skjerf. Alle skjerf er krokuser. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Noen tønner er krokuser."
+            },
+            {
+              "label": "Alle tønner er skjerf."
+            },
+            {
+              "label": "Alle tønner er krokuser."
+            },
+            {
+              "label": "Alle skjerf er tønner."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "dl-0005",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle viskelærer er beger. Ingen beger er tepotter. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen viskelærer er beger."
+            },
+            {
+              "label": "Alle viskelærer er tepotter."
+            },
+            {
+              "label": "Ingen viskelærer er tepotter."
+            },
+            {
+              "label": "Alle beger er viskelærer."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "dl-0006",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle knapper er linjaler. Ingen linjaler er stearinlys. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen knapper er linjaler."
+            },
+            {
+              "label": "Ingen knapper er stearinlys."
+            },
+            {
+              "label": "Alle knapper er stearinlys."
+            },
+            {
+              "label": "Alle linjaler er knapper."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "dl-0007",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle nøkkelringer er blyanter. Ingen blyanter er notatbøker. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen nøkkelringer er blyanter."
+            },
+            {
+              "label": "Alle nøkkelringer er notatbøker."
+            },
+            {
+              "label": "Alle blyanter er nøkkelringer."
+            },
+            {
+              "label": "Ingen nøkkelringer er notatbøker."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "dl-0008",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle beger er tepotter. Ingen tepotter er postkort. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen beger er postkort."
+            },
+            {
+              "label": "Ingen beger er tepotter."
+            },
+            {
+              "label": "Alle beger er postkort."
+            },
+            {
+              "label": "Alle tepotter er beger."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "dl-0009",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker kaktuser, liker personen poteter. Regelen gjelder både Anna og Elin. Anna liker kaktuser. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Da liker ikke Anna poteter."
+            },
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Anna og poteter."
+            },
+            {
+              "label": "Da liker Anna poteter."
+            },
+            {
+              "label": "Da liker også Elin poteter."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "dl-0010",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker tallerkener, liker personen knapper. Regelen gjelder både Bjørn og Frank. Bjørn liker tallerkener. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Bjørn og knapper."
+            },
+            {
+              "label": "Da liker Bjørn knapper."
+            },
+            {
+              "label": "Da liker også Frank knapper."
+            },
+            {
+              "label": "Da liker ikke Bjørn knapper."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "dl-0011",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker linjaler, liker personen postkort. Regelen gjelder både Cecilie og Gidske. Cecilie liker linjaler. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Da liker også Gidske postkort."
+            },
+            {
+              "label": "Da liker ikke Cecilie postkort."
+            },
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Cecilie og postkort."
+            },
+            {
+              "label": "Da liker Cecilie postkort."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -1.35
+        }
+      ]
+    },
+    {
+      "id": "dl-0012",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker tønner, liker personen kopper. Regelen gjelder både David og Håkon. David liker ikke kopper. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Da liker ikke David tønner."
+            },
+            {
+              "label": "Da liker David tønner."
+            },
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om David og tønner."
+            },
+            {
+              "label": "Da liker ikke heller Håkon tønner."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -1.15
+        }
+      ]
+    },
+    {
+      "id": "dl-0013",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "En bod selger 3 skjorter og 4 bukser. Et antrekk er én skjorte og én bukse. Hvor mange ulike antrekk finnes?",
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "9"
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "15"
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": -1.75
+        }
+      ]
+    },
+    {
+      "id": "dl-0014",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "En bod selger 2 skjorter og 5 bukser. Et antrekk er én skjorte og én bukse. Hvor mange ulike antrekk finnes?",
+          "options": [
+            {
+              "label": "8"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "12"
+            },
+            {
+              "label": "7"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": -1.55
+        }
+      ]
+    },
+    {
+      "id": "dl-0015",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle gardiner er tønner. Alle tønner er skjerf. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen gardiner er tønner."
+            },
+            {
+              "label": "Ingen gardiner er skjerf."
+            },
+            {
+              "label": "Alle tønner er gardiner."
+            },
+            {
+              "label": "Alle gardiner er skjerf."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0016",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle kaktuser er banjoer. Alle banjoer er urtepoter. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Alle kaktuser er urtepoter."
+            },
+            {
+              "label": "Ingen kaktuser er banjoer."
+            },
+            {
+              "label": "Ingen kaktuser er urtepoter."
+            },
+            {
+              "label": "Alle banjoer er kaktuser."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "dl-0017",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle frimerker er poteter. Alle poteter er tallerkener. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen frimerker er poteter."
+            },
+            {
+              "label": "Ingen frimerker er tallerkener."
+            },
+            {
+              "label": "Alle frimerker er tallerkener."
+            },
+            {
+              "label": "Alle poteter er frimerker."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "dl-0018",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle tønner er skjerf. Alle skjerf er krokuser. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen tønner er skjerf."
+            },
+            {
+              "label": "Alle tønner er krokuser."
+            },
+            {
+              "label": "Ingen tønner er krokuser."
+            },
+            {
+              "label": "Alle skjerf er tønner."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0019",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle viskelærer er beger. Ingen beger er tepotter. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen viskelærer er beger."
+            },
+            {
+              "label": "Alle viskelærer er tepotter."
+            },
+            {
+              "label": "Alle beger er viskelærer."
+            },
+            {
+              "label": "Ingen viskelærer er tepotter."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0020",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle knapper er linjaler. Ingen linjaler er stearinlys. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen knapper er stearinlys."
+            },
+            {
+              "label": "Ingen knapper er linjaler."
+            },
+            {
+              "label": "Alle knapper er stearinlys."
+            },
+            {
+              "label": "Alle linjaler er knapper."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "dl-0021",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Noen nøkkelringer er blyanter. Alle blyanter er notatbøker. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Alle nøkkelringer er blyanter."
+            },
+            {
+              "label": "Alle nøkkelringer er notatbøker."
+            },
+            {
+              "label": "Noen nøkkelringer er notatbøker."
+            },
+            {
+              "label": "Alle blyanter er nøkkelringer."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "dl-0022",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker gardiner, liker personen krokuser. Regelen gjelder både Elin og Anna. Elin liker gardiner. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Da liker ikke Elin krokuser."
+            },
+            {
+              "label": "Da liker Elin krokuser."
+            },
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Elin og krokuser."
+            },
+            {
+              "label": "Da liker også Anna krokuser."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0023",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker poteter, liker personen nøkkelringer. Regelen gjelder både Frank og Bjørn. Frank liker ikke nøkkelringer. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Frank og poteter."
+            },
+            {
+              "label": "Da liker ikke heller Bjørn poteter."
+            },
+            {
+              "label": "Da liker Frank poteter."
+            },
+            {
+              "label": "Da liker ikke Frank poteter."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0024",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker viskelærer, liker personen stearinlys. Regelen gjelder både Gidske og Cecilie. Gidske liker ikke stearinlys. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Da liker ikke Gidske viskelærer."
+            },
+            {
+              "label": "Da liker ikke heller Cecilie viskelærer."
+            },
+            {
+              "label": "Da liker Gidske viskelærer."
+            },
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Gidske og viskelærer."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": -0.2
+        }
+      ]
+    },
+    {
+      "id": "dl-0025",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker frimerker, liker personen brikker. Regelen gjelder både Håkon og David. Håkon liker ikke brikker. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Da liker Håkon frimerker."
+            },
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Håkon og frimerker."
+            },
+            {
+              "label": "Da liker ikke Håkon frimerker."
+            },
+            {
+              "label": "Da liker ikke heller David frimerker."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.0
+        }
+      ]
+    },
+    {
+      "id": "dl-0026",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "På et møte er det 5 personer, og alle to personer hilser på hverandre nøyaktig én gang. Hvor mange håndhilsinger blir det?",
+          "options": [
+            {
+              "label": "5"
+            },
+            {
+              "label": "10"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "11"
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0027",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "På et møte er det 6 personer, og alle to personer hilser på hverandre nøyaktig én gang. Hvor mange håndhilsinger blir det?",
+          "options": [
+            {
+              "label": "30"
+            },
+            {
+              "label": "16"
+            },
+            {
+              "label": "6"
+            },
+            {
+              "label": "15"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": -0.4
+        }
+      ]
+    },
+    {
+      "id": "dl-0028",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle gardiner er kaktuser. Alle kaktuser er frimerker. Ingen frimerker er tønner. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen gardiner er tønner."
+            },
+            {
+              "label": "Ingen gardiner er kaktuser."
+            },
+            {
+              "label": "Ingen gardiner er frimerker."
+            },
+            {
+              "label": "Alle gardiner er tønner."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "dl-0029",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle banjoer er poteter. Alle poteter er skjerf. Ingen skjerf er urtepoter. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen banjoer er poteter."
+            },
+            {
+              "label": "Ingen banjoer er skjerf."
+            },
+            {
+              "label": "Ingen banjoer er urtepoter."
+            },
+            {
+              "label": "Alle banjoer er urtepoter."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "dl-0030",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle tallerkener er krokuser. Alle krokuser er viskelærer. Alle viskelærer er knapper. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen tallerkener er krokuser."
+            },
+            {
+              "label": "Alle tallerkener er knapper."
+            },
+            {
+              "label": "Ingen tallerkener er viskelærer."
+            },
+            {
+              "label": "Ingen tallerkener er knapper."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "dl-0031",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle nøkkelringer er beger. Alle beger er linjaler. Alle linjaler er blyanter. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen nøkkelringer er beger."
+            },
+            {
+              "label": "Ingen nøkkelringer er linjaler."
+            },
+            {
+              "label": "Ingen nøkkelringer er blyanter."
+            },
+            {
+              "label": "Alle nøkkelringer er blyanter."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "dl-0032",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Noen tepotter er stearinlys. Alle stearinlys er notatbøker. Alle notatbøker er postkort. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Noen tepotter er postkort."
+            },
+            {
+              "label": "Alle tepotter er stearinlys."
+            },
+            {
+              "label": "Alle tepotter er notatbøker."
+            },
+            {
+              "label": "Alle tepotter er postkort."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "dl-0033",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Noen kopper er brikker. Alle brikker er korker. Alle korker er bånd. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Alle kopper er brikker."
+            },
+            {
+              "label": "Alle kopper er korker."
+            },
+            {
+              "label": "Noen kopper er bånd."
+            },
+            {
+              "label": "Alle kopper er bånd."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "dl-0034",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Alle brikker er korker. Alle korker er bånd. Ingen bånd er viskelærer. Hvilken konklusjon følger nødvendigvis?",
+          "options": [
+            {
+              "label": "Ingen brikker er korker."
+            },
+            {
+              "label": "Ingen brikker er viskelærer."
+            },
+            {
+              "label": "Ingen brikker er bånd."
+            },
+            {
+              "label": "Alle brikker er viskelærer."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "dl-0035",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker frimerker, liker personen urtepoter. Regelen gjelder både Anna og Elin. Anna liker urtepoter. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Da liker Anna frimerker."
+            },
+            {
+              "label": "Da liker ikke Anna frimerker."
+            },
+            {
+              "label": "Da liker også Elin frimerker."
+            },
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Anna og frimerker."
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "dl-0036",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker knapper, liker personen blyanter. Regelen gjelder både Bjørn og Frank. Bjørn liker blyanter. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Bjørn og knapper."
+            },
+            {
+              "label": "Da liker ikke Bjørn knapper."
+            },
+            {
+              "label": "Da liker også Frank knapper."
+            },
+            {
+              "label": "Da liker Bjørn knapper."
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    },
+    {
+      "id": "dl-0037",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker banjoer, liker personen notatbøker. Regelen gjelder både Cecilie og Gidske. Cecilie liker ikke banjoer. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Da liker ikke heller Gidske notatbøker."
+            },
+            {
+              "label": "Da liker Cecilie notatbøker."
+            },
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om Cecilie og notatbøker."
+            },
+            {
+              "label": "Da liker ikke Cecilie notatbøker."
+            }
+          ],
+          "correctIndex": 2,
+          "difficulty": 0.9
+        }
+      ]
+    },
+    {
+      "id": "dl-0038",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Hvis en person liker krokuser, liker personen bånd. Regelen gjelder både David og Håkon. David liker ikke krokuser. Hvilken av disse konklusjonene trekkes nødvendigvis?",
+          "options": [
+            {
+              "label": "Da liker David bånd."
+            },
+            {
+              "label": "Det trekkes ikke nødvendigvis noen bestemt konklusjon om David og bånd."
+            },
+            {
+              "label": "Da liker ikke David bånd."
+            },
+            {
+              "label": "Da liker ikke heller Håkon bånd."
+            }
+          ],
+          "correctIndex": 1,
+          "difficulty": 1.3
+        }
+      ]
+    },
+    {
+      "id": "dl-0039",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fra en gruppe på 7 personer skal 2 velges til en komité. Hvor mange ulike komiteer kan settes sammen?",
+          "options": [
+            {
+              "label": "7"
+            },
+            {
+              "label": "42"
+            },
+            {
+              "label": "20"
+            },
+            {
+              "label": "21"
+            }
+          ],
+          "correctIndex": 3,
+          "difficulty": 1.7
+        }
+      ]
+    },
+    {
+      "id": "dl-0040",
+      "kind": "ability",
+      "scales": [
+        {
+          "id": "g",
+          "sign": 1
+        }
+      ],
+      "variants": [
+        {
+          "lang": "no",
+          "prompt": "Fra en gruppe på 8 personer skal 2 velges til en komité. Hvor mange ulike komiteer kan settes sammen?",
+          "options": [
+            {
+              "label": "28"
+            },
+            {
+              "label": "56"
+            },
+            {
+              "label": "27"
+            },
+            {
+              "label": "8"
+            }
+          ],
+          "correctIndex": 0,
+          "difficulty": 0.6
+        }
+      ]
+    }
+  ]
+}

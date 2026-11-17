@@ -1,5 +1,5 @@
 {
-  "run": "2026-11-17T08:19:09.472Z",
+  "run": "2026-11-17T08:21:09.713Z",
   "scenarios": [
     {
       "scenario": "persona:no",
@@ -355,22 +355,22 @@
         {
           "name": "S3.opt-1",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-2",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-3",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-4",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-5",
@@ -390,7 +390,7 @@
         {
           "name": "S3.opt-8",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-9",
@@ -415,7 +415,7 @@
         {
           "name": "S3.opt-13",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-14",
@@ -430,7 +430,7 @@
         {
           "name": "S3.opt-16",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-17",
@@ -440,22 +440,22 @@
         {
           "name": "S3.opt-18",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-19",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-20",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-21",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-22",
@@ -465,22 +465,22 @@
         {
           "name": "S3.opt-23",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-24",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-25",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-26",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-27",
@@ -495,12 +495,12 @@
         {
           "name": "S3.opt-29",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-30",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-31",
@@ -520,22 +520,22 @@
         {
           "name": "S3.opt-34",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-35",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-36",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-37",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-38",
@@ -550,7 +550,7 @@
         {
           "name": "S3.opt-40",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-41",
@@ -560,12 +560,12 @@
         {
           "name": "S3.opt-42",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-43",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.resultat-etter-fullføring",

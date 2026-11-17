@@ -119,7 +119,7 @@ const fetchCalls = [];
 async function fetchStub(input, opts) {
   const method = (opts && opts.method) || 'GET';
   const url = new URL(String(input instanceof URL ? input.href : input));
-  const path = decodeURIComponent(url.pathname);
+  const path = decodeURIComponent(url.pathname).replace(/^\/([A-Za-z]:\/)/, '$1'); /* Windows: file:/F:/... -> F:/... (POSIX urokket) */
   fetchCalls.push({ method, path });
   let miss = false;
   if (flag === 'degraded' && path.includes('def-evne-g-44.')) miss = true;

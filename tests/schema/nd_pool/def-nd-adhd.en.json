@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 1,
+  "id": "nd-adhd",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "da1",
+        "weight": 1
+      },
+      {
+        "id": "da2",
+        "weight": 1
+      },
+      {
+        "id": "da3",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "da1",
+      "label": "Attention and executive functions",
+      "labelLanguage": "en",
+      "description": "Holding focus, distractions, everyday memory, getting started and organisation, self-reported."
+    },
+    {
+      "id": "da2",
+      "label": "Hyperactivity and impulsiveness",
+      "labelLanguage": "en",
+      "description": "Inner restlessness, motoric restlessness, turn and decision impulses and waiting tolerance, self-reported."
+    },
+    {
+      "id": "da3",
+      "label": "Everyday functioning and consequences",
+      "labelLanguage": "en",
+      "description": "Consequences across work, study, home and admin — functional impact rather than symptom counting, self-reported."
+    }
+  ],
+  "items": [
+    {
+      "id": "da-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I switch to something new before the task I held on to is done.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0008",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Noise from the next flat pushes into my head when I try to concentrate.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0015",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hunt for my keys more often than I like to admit.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0022",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Getting ready takes more of my time than the task itself.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0029",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My projects sit in folders whose names I cannot find again.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0036",
+      "kind": "likert",
+      "lang": "en",
+      "text": "On long projects I lose the thread and rebuild my approach from the start.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My thoughts run off the page, and I have to find my line again.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0009",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I notice the open tab before I notice what I was supposed to do.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0016",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Without a shopping list, half of what I meant to buy slips away.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0023",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Big tasks wait for the right moment, and the moment stays away.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0041",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My body sits still, while inside me the pace picks up right away.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0048",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My knuckles drum the table before I notice I am doing it.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0055",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My answer is out before the question has finished being asked.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0062",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The purchase is through before I finish reading the price.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0069",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Queues turn me into someone scouting a faster route.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0042",
+      "kind": "likert",
+      "lang": "en",
+      "text": "After a long day of holding focus, the calm inside me stays gone.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0049",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I get up halfway through whatever I sat down to do.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0056",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I take over unfinished sentences from people I know well.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0076",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I need one extra read of my co-workers' mail to catch the point.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0081",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Cups and plates sit in the sink until almost noon.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0086",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The bill gets paid at the very last deadline, again.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0091",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The party lost me as guest when my RSVP ran out.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0096",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The backlog sits in the cupboard and brakes every fresh start.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0077",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The deadline passed me by while I was still on the task.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da3",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

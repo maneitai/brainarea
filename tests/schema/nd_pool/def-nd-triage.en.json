@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "id": "nd-triage",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "adhd",
+        "weight": 1
+      },
+      {
+        "id": "autism",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "adhd",
+      "label": "ADHD",
+      "labelLanguage": "en",
+      "description": "Everyday attention, restlessness and follow-through on daily tasks."
+    },
+    {
+      "id": "autism",
+      "label": "Autism",
+      "labelLanguage": "en",
+      "description": "Social reciprocity, routines and sensory tolerance in daily life."
+    }
+  ],
+  "items": [
+    {
+      "id": "ta-0010",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I leave the table before the others are done eating.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0015",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I push bills and appointments to another day.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0016",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I leave laundry half-finished until I have to start over.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I feel unsure how to keep a conversation going.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0008",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep to the same order of steps every morning.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0015",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I am out of words after a whole day around people.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

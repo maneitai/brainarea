@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "id": "nd-triage",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "adhd",
+        "weight": 1
+      },
+      {
+        "id": "autism",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "adhd",
+      "label": "ADHD",
+      "labelLanguage": "no",
+      "description": "Daglig oppmerksomhet, uro og oppfølging i hverdagslige gjøremål."
+    },
+    {
+      "id": "autism",
+      "label": "Autisme",
+      "labelLanguage": "no",
+      "description": "Sosialt samspill, vaner og sensorisk toleranse i hverdagen."
+    }
+  ],
+  "items": [
+    {
+      "id": "ta-0010",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg reiser meg fra bordet før de andre er ferdige.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0015",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg skyver avtaler og regninger til en annen dag.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ta-0016",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar klesvasken ligge halvferdig frem til jeg må begynne på nytt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "adhd",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0001",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg blir usikker på hvordan jeg skal holde samtalen i gang.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0008",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg legger omgangen min i samme rekkefølge hver dag.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ts-0015",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg er tom for ord etter en hel dag med folk rundt meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "autism",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

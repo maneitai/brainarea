@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 1,
+  "id": "nd-autism",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "ds1",
+        "weight": 1
+      },
+      {
+        "id": "ds2",
+        "weight": 1
+      },
+      {
+        "id": "ds3",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "ds1",
+      "label": "Social communication and reciprocity",
+      "labelLanguage": "en",
+      "description": "Conversation rhythm, nonverbal interplay, relationship-building and reading social signals, self-reported."
+    },
+    {
+      "id": "ds2",
+      "label": "Repetitive behavior, sensory needs and interests",
+      "labelLanguage": "en",
+      "description": "Routines and change resistance, focused interests, sensory tolerance and needs, stimulation, self-reported."
+    },
+    {
+      "id": "ds3",
+      "label": "Daily life, energy and adaptation",
+      "labelLanguage": "en",
+      "description": "Energy cost in social settings, masking-like adaptation, recovery, environmental accommodations, self-reported."
+    }
+  ],
+  "items": [
+    {
+      "id": "ds-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Several conversation threads at once slip out of my grip fast.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0009",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I need deliberate effort to hold eye contact while I am talking.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0017",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The words I hear carry less than what the others actually mean.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0025",
+      "kind": "likert",
+      "lang": "en",
+      "text": "New friendships begin where the other one explains how it is done.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0033",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Taking part in conversation costs me more than my body shows.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Conversations in groups stay hard for me even after years of practice.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0010",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Other people's faces give me less than the words they use.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0018",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Play and seriousness do not separate in the voice until it is too late.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0026",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Small random talks rarely turn into contact with people.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0034",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Simple conversations sit heavy on me by the evening.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0041",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My mornings follow the same template day after day.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0048",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A morning cancellation throws the whole day out of line.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0055",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My interests pull me in so deeply that the hours vanish.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0062",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Flickering light and blinking screens tear my eyes off the line.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0069",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My fingers work on something in my pocket while my thoughts stay gathered.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0042",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I set up the order of my tasks and keep it fixed.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0049",
+      "kind": "likert",
+      "lang": "en",
+      "text": "When someone changes the appointment late I need a fresh plan.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0056",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I can read about the same subject for hours without feeling done.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0076",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Socialising with many people weighs on my body like a long day.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0081",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Among strangers my face imitates the expressions the room expects.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0086",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Time in an empty room is what fills me up again.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0091",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A quiet room without background noise makes company possible for me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0096",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A day I set aside for rest fills up with other tasks.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0077",
+      "kind": "likert",
+      "lang": "en",
+      "text": "After an hour among people my battery is spent.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds3",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

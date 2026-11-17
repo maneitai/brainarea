@@ -1,0 +1,176 @@
+{
+  "metaVersion": 1,
+  "id": "nd-live-defs",
+  "date": "2026-11-17",
+  "boardLeaf": "#3839 [BYGG] FASE 2: Triagedef (vare triage-spørsmål) + dyp-defer (ADHD 24, autisme 24) fra poolene.",
+  "spec": "tests/schema/_nd_itemspec_spec.json (nd-itemspec-v1, PROPOSED; GJELDENDE ved #3813)",
+  "licenseBasis": "DOC-C8C02AD272 (ENDLIG VERDIKT, todo #3732): ASRS-blokken (verbatim, shaded patient-versjon) er IKKE med her — kun design-reservert (triageSessionDecision.asrsPlaceholder, traits-entry 'asrs-anchor' ved #3760 + skriftlig NYU-bekreftelse NG-2). AQ/RAADS-R gjengis aldri. Alle items er byte-importert fra egne FASE 2-pooler (100% originale).",
+  "selectionRules": {
+    "nd-triage": {
+      "adhd": "asrsNear-flaggede pool-items, lavest id per ANKER-familie fra nearNote (ikke pool-tema — tema adhd-t3 spriker i anker): asrs-uro (ta-0010), asrs-oppgaver (ta-0016; ta-0017 samme familie), asrs-husk (ta-0015; ta-0020 samme familie). Se ANCHOR_FAMILY i generatoren.",
+      "autism": "ingen ts-items har asrsNear -> temaspredning over t1/t2/t3 med lavest id per tema: ts-0001, ts-0008, ts-0015.",
+      "asrsNearPoolIds": [
+        "ta-0010",
+        "ta-0015",
+        "ta-0016",
+        "ta-0017",
+        "ta-0020"
+      ]
+    },
+    "nd-adhd/nd-autism": "24 items stratifisert 10/8/6 over fasett-poolene (da1/da2/da3 og ds1/ds2/ds3) via round-robin per temabaand i pool-orden, lavest id per baand — deterministisk."
+  },
+  "asrsReserved": "Design-plass for ASRS v1.1 6Q (shaded patient-versjon, verbatim, egen traits-entry 'asrs-anchor'): IKKE live i v1-def-ene (schema additionalProperties:false + NG-2). Utvidelse 6 -> 12 items uten strukturendring per triageSessionDecision.totalLiveItems.",
+  "items": {
+    "nd-triage": {
+      "idOrder": [
+        "ta-0010",
+        "ta-0015",
+        "ta-0016",
+        "ts-0001",
+        "ts-0008",
+        "ts-0015"
+      ],
+      "asrsNearChosen": [
+        "ta-0010",
+        "ta-0015",
+        "ta-0016"
+      ],
+      "families": [
+        "asrs-uro",
+        "asrs-husk",
+        "asrs-oppgaver"
+      ]
+    },
+    "deep": {
+      "da1": {
+        "target": 10,
+        "picked": [
+          "da-0001",
+          "da-0008",
+          "da-0015",
+          "da-0022",
+          "da-0029",
+          "da-0036",
+          "da-0002",
+          "da-0009",
+          "da-0016",
+          "da-0023"
+        ],
+        "themeCounts": {
+          "da1-t1": 2,
+          "da1-t2": 2,
+          "da1-t3": 2,
+          "da1-t4": 2,
+          "da1-t5": 1,
+          "da1-t6": 1
+        },
+        "asrsNearPicked": []
+      },
+      "da2": {
+        "target": 8,
+        "picked": [
+          "da-0041",
+          "da-0048",
+          "da-0055",
+          "da-0062",
+          "da-0069",
+          "da-0042",
+          "da-0049",
+          "da-0056"
+        ],
+        "themeCounts": {
+          "da2-t1": 2,
+          "da2-t2": 2,
+          "da2-t3": 2,
+          "da2-t4": 1,
+          "da2-t5": 1
+        },
+        "asrsNearPicked": []
+      },
+      "da3": {
+        "target": 6,
+        "picked": [
+          "da-0076",
+          "da-0081",
+          "da-0086",
+          "da-0091",
+          "da-0096",
+          "da-0077"
+        ],
+        "themeCounts": {
+          "da3-t1": 2,
+          "da3-t2": 1,
+          "da3-t3": 1,
+          "da3-t4": 1,
+          "da3-t5": 1
+        },
+        "asrsNearPicked": []
+      },
+      "ds1": {
+        "target": 10,
+        "picked": [
+          "ds-0001",
+          "ds-0009",
+          "ds-0017",
+          "ds-0025",
+          "ds-0033",
+          "ds-0002",
+          "ds-0010",
+          "ds-0018",
+          "ds-0026",
+          "ds-0034"
+        ],
+        "themeCounts": {
+          "ds1-t1": 2,
+          "ds1-t2": 2,
+          "ds1-t3": 2,
+          "ds1-t4": 2,
+          "ds1-t5": 2
+        },
+        "asrsNearPicked": []
+      },
+      "ds2": {
+        "target": 8,
+        "picked": [
+          "ds-0041",
+          "ds-0048",
+          "ds-0055",
+          "ds-0062",
+          "ds-0069",
+          "ds-0042",
+          "ds-0049",
+          "ds-0056"
+        ],
+        "themeCounts": {
+          "ds2-t1": 2,
+          "ds2-t2": 2,
+          "ds2-t3": 2,
+          "ds2-t4": 1,
+          "ds2-t5": 1
+        },
+        "asrsNearPicked": []
+      },
+      "ds3": {
+        "target": 6,
+        "picked": [
+          "ds-0076",
+          "ds-0081",
+          "ds-0086",
+          "ds-0091",
+          "ds-0096",
+          "ds-0077"
+        ],
+        "themeCounts": {
+          "ds3-t1": 2,
+          "ds3-t2": 1,
+          "ds3-t3": 1,
+          "ds3-t4": 1,
+          "ds3-t5": 1
+        },
+        "asrsNearPicked": []
+      }
+    }
+  },
+  "construktEquiv": "NO/EN: samme id-rekkefolge, samme skalering, samme sign — tekster byte fra pooler.",
+  "generator": "gen_nd_live_defs.py (deterministisk, ingen RNG; re-kjoring byte-identisk)."
+}

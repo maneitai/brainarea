@@ -1,0 +1,282 @@
+{
+  "metaVersion": 1,
+  "id": "nd-adhd-dyp-pool-da2",
+  "date": "2026-11-17",
+  "items": [
+    {
+      "id": "da-0041",
+      "dimension": "da2",
+      "theme": "da2-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0042",
+      "dimension": "da2",
+      "theme": "da2-t1",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-familien (uro i stillhet); vinkel: uroen kommer når stillheten er ferdig, ikke underveis.",
+      "nearNoteEn": "Anchor family (restlessness in stillness); angle: the restlessness arrives after the stillness is over."
+    },
+    {
+      "id": "da-0043",
+      "dimension": "da2",
+      "theme": "da2-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0044",
+      "dimension": "da2",
+      "theme": "da2-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0045",
+      "dimension": "da2",
+      "theme": "da2-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0046",
+      "dimension": "da2",
+      "theme": "da2-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0047",
+      "dimension": "da2",
+      "theme": "da2-t1",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-familien (ro i stillhet); vinkel: stillheten oppleves som aktiv motstand i kroppen, uten å forlate stedet.",
+      "nearNoteEn": "Anchor family (keeping still); angle: the stillness itself becomes a body-level resistance, without leaving the spot."
+    },
+    {
+      "id": "da-0048",
+      "dimension": "da2",
+      "theme": "da2-t2",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-familien (flikke); vinkel: hendene går automatisk, oppdaget først i etterkant.",
+      "nearNoteEn": "Anchor family (fidgeting); angle: the hands run on their own, noticed only afterwards."
+    },
+    {
+      "id": "da-0049",
+      "dimension": "da2",
+      "theme": "da2-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0050",
+      "dimension": "da2",
+      "theme": "da2-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0051",
+      "dimension": "da2",
+      "theme": "da2-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0052",
+      "dimension": "da2",
+      "theme": "da2-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0053",
+      "dimension": "da2",
+      "theme": "da2-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0054",
+      "dimension": "da2",
+      "theme": "da2-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0055",
+      "dimension": "da2",
+      "theme": "da2-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0056",
+      "dimension": "da2",
+      "theme": "da2-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0057",
+      "dimension": "da2",
+      "theme": "da2-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0058",
+      "dimension": "da2",
+      "theme": "da2-t3",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-familien (bryte inn); vinkel: innspillene står i kø i hodet og bryter ut sammen.",
+      "nearNoteEn": "Anchor family (cutting in); angle: the remarks queue up inside and break out together."
+    },
+    {
+      "id": "da-0059",
+      "dimension": "da2",
+      "theme": "da2-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0060",
+      "dimension": "da2",
+      "theme": "da2-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0061",
+      "dimension": "da2",
+      "theme": "da2-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0062",
+      "dimension": "da2",
+      "theme": "da2-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0063",
+      "dimension": "da2",
+      "theme": "da2-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0064",
+      "dimension": "da2",
+      "theme": "da2-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0065",
+      "dimension": "da2",
+      "theme": "da2-t4",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-familien (bryte inn); vinkel: samme impuls i handling — handlingen bryter inn før andre er ferdige med sin del.",
+      "nearNoteEn": "Anchor family (cutting in); angle: the same impulse in action — the move breaks in before others finish their part."
+    },
+    {
+      "id": "da-0066",
+      "dimension": "da2",
+      "theme": "da2-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0067",
+      "dimension": "da2",
+      "theme": "da2-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0068",
+      "dimension": "da2",
+      "theme": "da2-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0069",
+      "dimension": "da2",
+      "theme": "da2-t5",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0070",
+      "dimension": "da2",
+      "theme": "da2-t5",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-familien (å vente); vinkel: ventingen håndteres med egne bevegelser i stedet for å stå i køen.",
+      "nearNoteEn": "Anchor family (waiting); angle: the wait is managed with own movements instead of holding the line."
+    },
+    {
+      "id": "da-0071",
+      "dimension": "da2",
+      "theme": "da2-t5",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0072",
+      "dimension": "da2",
+      "theme": "da2-t5",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0073",
+      "dimension": "da2",
+      "theme": "da2-t5",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0074",
+      "dimension": "da2",
+      "theme": "da2-t5",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0075",
+      "dimension": "da2",
+      "theme": "da2-t5",
+      "asrsNear": false
+    }
+  ],
+  "boardLeaf": "#3827 [3-VEIS][BYGG] FASE 2 ADHD-dyp pool del 2: DA2 Hyperaktivitet/impulsivitet — 35 originale items (worker TR-044804AEA811).",
+  "spec": "tests/schema/_nd_itemspec_spec.json (nd-itemspec-v1, PROPOSED; GJELDENDE ved #3813)",
+  "licenseBasis": "DOC-C8C02AD272 (ENDLIG VERDIKT, #3732): ASRS v1.1 6Q er ADHD-anker i live-def (#3760-ark), IKKE i denne poolen; poolen inneholder null ASRS-gjengivelse. AQ/RAADS-R gjengis aldri; DSM-5-kriterietekst aldri gjengitt eller parafrasert — items er forfattet fra DA2-konstruktbeskrivelsen i spec-en. DIVA-5/CAADID/Conners/SRS-2/CAT-Q brukt som mal eller kilde: nei. #3826-forbudet arvet: ingen item omfatter ekstrem risiko/selvskade/medisinering (programmert token-skann i assert_authoring og selftest).",
+  "authoringRule": "Første-person presens, ett utsagn, 8–14 ord, ingen dobbeltspørsmål, ingen absolutter (alltid/aldri/always/never), ingen diagnostisk språkbruk, ingen ekstremrisiko/selvskade/medisinering. NO og EN separat forfattet med konstrukt-ekvivalens: samme id-rekkefølge, samme tema per id; tekstene er IKKE direkte oversettelser. Programmatisk 5-gram-kryss mot triage-poolen OG DA1-poolen (def-nd-triage-pool.{no,en}.json, def-nd-adhd-dyp-pool-da1.{no,en}.json), 0 sammenfall.",
+  "optionsSource": "def-ipip50-big5.<lang>.json items[*].options — byte-identisk per fil (verifisert i selftest S5).",
+  "keyingRule": "Alle skala-referanser sign 1 mot skala da2 — screening i én retning; NG-4-avviket (ingen reverse-keyed items) er dokumentert i spec-en engineGaps og arvet fra triage-poolens konvensjon.",
+  "themeLabels": {
+    "1": {
+      "no": "Indre uro",
+      "en": "Inner restlessness"
+    },
+    "2": {
+      "no": "Motorisk rastløshet",
+      "en": "Motoric restlessness"
+    },
+    "3": {
+      "no": "Vending-impuls i samtale",
+      "en": "Conversational turn impulses"
+    },
+    "4": {
+      "no": "Beslutnings-impuls",
+      "en": "Decision impulsiveness"
+    },
+    "5": {
+      "no": "Ventetoleranse",
+      "en": "Tolerance for waiting"
+    }
+  },
+  "dimensionLabel": {
+    "no": "Hyperaktivitet og impulsivitet",
+    "en": "Hyperactivity and impulsiveness"
+  },
+  "dimensionLabelNote": "NO-etikett er byte-låst til deepPoolDecision.adhdThemes[1].name i spec-en; EN-etikett er separat forfattet og låst her",
+  "themeCounts": {
+    "da2-t1": 7,
+    "da2-t2": 7,
+    "da2-t3": 7,
+    "da2-t4": 7,
+    "da2-t5": 7
+  },
+  "asrsNearPolicy": "Flaggede da-items er ikke kloninger — de markerer anker-familienær vinkel mot hyperaktivitets-/impulsivitets-familiene i ankeret (fysisk uro i stillhet, vanskelighet med å vente, å bryte inn) slik at FASE 4-utvelgelsen (trekk 8 av 35 til live-deffen) kan velge med omtanke mot ASRS-blokkens formuleringer; blokken bor per scoringContracts.asrsAnchorShape i live-deffen, aldri i poolen. Familie-nummerering brukes ikke — kun familienavnet, fordi anchorens item-orden transkriberes først ved #3760-bygg.",
+  "provenance": {
+    "authoringDate": "2026-11-17",
+    "originality": "Alle 70 tekster forfattet fra spec-en deepPoolDecision.adhdThemes[1]-konstruktet — ingen ekstern skala, ingen formell oversettelse, ingen scraping, ingen DSM-parafrase.",
+    "engineFactsVerified": [
+      "scoring.js trait-sti: normalized per skala, komposit over skalaer med data (verifisert i itemspec-provenance og re-kjørt i selftest S7/S8)",
+      "render.js sessionSizeFor(likert) => alle items shuffles (verifisert i selftest S14)"
+    ]
+  },
+  "holes": {
+    "closes": "ADHD-dyp del 2 (d2): 35 items levert. ADHD-dyp samlet står i 75/100 — d3 hverdagsfungering/konsekvens (#3828, 25) gjenstår; live-def og ASRS-forankring følger ved brettets del 3 per poolDesign.deepPools liveDefPlan.",
+    "opens": "Samlet ADHD-dyp-pool (def-nd-adhd-dyp-pool.<lang>.json per defFilePlan.naming) materialiseres ved #3828 — der smeltes da1/da2/da3-poolene sammen og får 3-trait-scoringen per scoringContracts.deepPools; kryssles-øster følger brettet."
+  }
+}

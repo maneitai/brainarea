@@ -1,0 +1,1219 @@
+{
+  "schemaVersion": 1,
+  "id": "nd-adhd-dyp-pool-da2",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "da2",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "da2",
+      "label": "Hyperactivity and impulsiveness",
+      "labelLanguage": "en",
+      "description": "Inner restlessness, motoric restlessness, turn and decision impulses and waiting tolerance, self-reported."
+    }
+  ],
+  "items": [
+    {
+      "id": "da-0041",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My body sits still, while inside me the pace picks up right away.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0042",
+      "kind": "likert",
+      "lang": "en",
+      "text": "After a long day of holding focus, the calm inside me stays gone.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0043",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I try to enjoy the quiet, and the pull to move takes over.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0044",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My thoughts keep their speed even when everything around me stops.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0045",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I go looking for something to fuss with to quiet the restlessness.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0046",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I take one extra lap through the flat before I settle down.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0047",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Sitting completely still for a half hour goes against my grain.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0048",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My knuckles drum the table before I notice I am doing it.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0049",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I get up halfway through whatever I sat down to do.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0050",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I pace small loops around the room before a chat is over.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0051",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I dig into my pockets just to have something to do.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0052",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My pen keeps working even when there is nothing to write.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0053",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I rock my chair until someone asks me to stop.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0054",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The coffee has time to go cold because I am out of the chair.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0055",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My answer is out before the question has finished being asked.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0056",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I take over unfinished sentences from people I know well.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0057",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I jump into the conversation before it is my turn.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0058",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My thoughts break into the conversation before they settle down.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0059",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Stories I hear make me quick with my own version.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0060",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A silly remark slips out in the middle of serious moments.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0061",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I talk until the conversation runs dry, then restart it myself.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0062",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The purchase is through before I finish reading the price.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0063",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say yes to things before I have counted the hours they cost.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0064",
+      "kind": "likert",
+      "lang": "en",
+      "text": "The first plan is running before the counter-proposals land.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0065",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I act before everyone in the room has had their say.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0066",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I change my mind right after the choice was mine to make.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0067",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My messages send themselves before the final read-through is done.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0068",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My quick decisions often go fine, with the bill arriving later.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0069",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Queues turn me into someone scouting a faster route.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0070",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I leave the waiting spot just to feel that something moves.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0071",
+      "kind": "likert",
+      "lang": "en",
+      "text": "Loading bars count down slower than my patience holds.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0072",
+      "kind": "likert",
+      "lang": "en",
+      "text": "My phone is out before the waiting has even started.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0073",
+      "kind": "likert",
+      "lang": "en",
+      "text": "A delayed appointment gives my restlessness good time to grow.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0074",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I start doing other people's part when the process drags.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0075",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I skip closing steps just to get things moving onward.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da2",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

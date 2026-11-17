@@ -1,9 +1,9 @@
 {
-  "run": "2026-11-17T16:01:44.805Z",
+  "run": "2026-11-17T16:54:27.913Z",
   "scenarios": [
     {
       "scenario": "persona:no",
-      "pass": 66,
+      "pass": 73,
       "fail": 0,
       "checks": [
         {
@@ -298,8 +298,9 @@
           "detail": "Svarmønsteret er kontrollert — 2 markering(er) registrert. D"
         },
         {
-          "name": "S7.delingslinje",
-          "ok": true
+          "name": "S7.share-kort",
+          "ok": true,
+          "detail": "DELINGBrainareaTester du kan stole på — "
         },
         {
           "name": "S8.pdf-knapp",
@@ -312,6 +313,39 @@
         },
         {
           "name": "S8.object-url",
+          "ok": true
+        },
+        {
+          "name": "VD.identitetslinje",
+          "ok": true,
+          "detail": "PERSONA"
+        },
+        {
+          "name": "VD.band-svg",
+          "ok": true,
+          "detail": "1 band-el"
+        },
+        {
+          "name": "VD.band-fill-identitet",
+          "ok": true,
+          "detail": "fill=109 cap=36"
+        },
+        {
+          "name": "VD.band-caption-semantikk",
+          "ok": true,
+          "detail": "36 % av skalaens omfang"
+        },
+        {
+          "name": "VD.share-seksjon",
+          "ok": true
+        },
+        {
+          "name": "VD.share-hrefs",
+          "ok": true,
+          "detail": "/brainarea/persona/ | /brainarea/relasjoner/ | /brainarea/nevrodiversitet/"
+        },
+        {
+          "name": "VD.share-ingen-falsk-knapp",
           "ok": true
         },
         {
@@ -331,7 +365,7 @@
     },
     {
       "scenario": "iq:en:degraded",
-      "pass": 61,
+      "pass": 66,
       "fail": 0,
       "checks": [
         {
@@ -350,7 +384,7 @@
         {
           "name": "S3.opt-0",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-1",
@@ -360,42 +394,42 @@
         {
           "name": "S3.opt-2",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-3",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-4",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-5",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-6",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-7",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-8",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-9",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-10",
@@ -410,17 +444,17 @@
         {
           "name": "S3.opt-12",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-13",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-14",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-15",
@@ -435,7 +469,7 @@
         {
           "name": "S3.opt-17",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-18",
@@ -445,27 +479,27 @@
         {
           "name": "S3.opt-19",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-20",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-21",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-22",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-23",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-24",
@@ -480,12 +514,12 @@
         {
           "name": "S3.opt-26",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-27",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-28",
@@ -495,12 +529,12 @@
         {
           "name": "S3.opt-29",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-30",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-31",
@@ -515,17 +549,17 @@
         {
           "name": "S3.opt-33",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-34",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-35",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-36",
@@ -545,7 +579,7 @@
         {
           "name": "S3.opt-39",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-40",
@@ -555,17 +589,17 @@
         {
           "name": "S3.opt-41",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-42",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-43",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.resultat-etter-fullføring",
@@ -601,8 +635,9 @@
           "detail": "Response pattern checked — 1 flag(s) registered. This does n"
         },
         {
-          "name": "S7.delingslinje",
-          "ok": true
+          "name": "S7.share-kort",
+          "ok": true,
+          "detail": "SHAREBrainareaTests you can trust — scor"
         },
         {
           "name": "S8.pdf-knapp",
@@ -611,10 +646,33 @@
         {
           "name": "S8.pdf-bytes",
           "ok": true,
-          "detail": "lastLen=91249"
+          "detail": "lastLen=91253"
         },
         {
           "name": "S8.object-url",
+          "ok": true
+        },
+        {
+          "name": "VD.identitetslinje",
+          "ok": true,
+          "detail": "ABILITY"
+        },
+        {
+          "name": "VD.gscore-ingen-band",
+          "ok": true,
+          "detail": "0 band-el på g-score"
+        },
+        {
+          "name": "VD.share-seksjon",
+          "ok": true
+        },
+        {
+          "name": "VD.share-hrefs",
+          "ok": true,
+          "detail": "/brainarea/en/persona/ | /brainarea/en/relations/ | /brainarea/en/neurodiverse/"
+        },
+        {
+          "name": "VD.share-ingen-falsk-knapp",
           "ok": true
         },
         {
@@ -634,7 +692,7 @@
     },
     {
       "scenario": "rel:en",
-      "pass": 32,
+      "pass": 39,
       "fail": 0,
       "checks": [
         {
@@ -759,8 +817,9 @@
           "detail": "Response pattern checked — 2 flag(s) registered. This does n"
         },
         {
-          "name": "S7.delingslinje",
-          "ok": true
+          "name": "S7.share-kort",
+          "ok": true,
+          "detail": "SHAREBrainareaTests you can trust — scor"
         },
         {
           "name": "S8.pdf-knapp",
@@ -773,6 +832,39 @@
         },
         {
           "name": "S8.object-url",
+          "ok": true
+        },
+        {
+          "name": "VD.identitetslinje",
+          "ok": true,
+          "detail": "RELATIONS"
+        },
+        {
+          "name": "VD.band-svg",
+          "ok": true,
+          "detail": "1 band-el"
+        },
+        {
+          "name": "VD.band-fill-identitet",
+          "ok": true,
+          "detail": "fill=152 cap=50"
+        },
+        {
+          "name": "VD.band-caption-semantikk",
+          "ok": true,
+          "detail": "50% of the scale range"
+        },
+        {
+          "name": "VD.share-seksjon",
+          "ok": true
+        },
+        {
+          "name": "VD.share-hrefs",
+          "ok": true,
+          "detail": "/brainarea/en/persona/ | /brainarea/en/relations/ | /brainarea/en/neurodiverse/"
+        },
+        {
+          "name": "VD.share-ingen-falsk-knapp",
           "ok": true
         },
         {
@@ -1324,7 +1416,7 @@
     },
     {
       "scenario": "nd:no",
-      "pass": 24,
+      "pass": 31,
       "fail": 0,
       "checks": [
         {
@@ -1399,8 +1491,9 @@
           "detail": "Svarmønsteret er kontrollert — 2 markering(er) registrert. D"
         },
         {
-          "name": "S7.delingslinje",
-          "ok": true
+          "name": "S7.share-kort",
+          "ok": true,
+          "detail": "DELINGBrainareaTester du kan stole på — "
         },
         {
           "name": "S8.pdf-knapp",
@@ -1426,6 +1519,39 @@
           "detail": "knapper=2"
         },
         {
+          "name": "VD.identitetslinje",
+          "ok": true,
+          "detail": "NEVRODIVERSE SCREENING"
+        },
+        {
+          "name": "VD.band-svg",
+          "ok": true,
+          "detail": "1 band-el"
+        },
+        {
+          "name": "VD.band-fill-identitet",
+          "ok": true,
+          "detail": "fill=0 cap=0"
+        },
+        {
+          "name": "VD.band-caption-semantikk",
+          "ok": true,
+          "detail": "0 % av skalaens omfang"
+        },
+        {
+          "name": "VD.share-seksjon",
+          "ok": true
+        },
+        {
+          "name": "VD.share-hrefs",
+          "ok": true,
+          "detail": "/brainarea/persona/ | /brainarea/relasjoner/ | /brainarea/nevrodiversitet/"
+        },
+        {
+          "name": "VD.share-ingen-falsk-knapp",
+          "ok": true
+        },
+        {
           "name": "S9.to-knapper-eller-nd",
           "ok": true,
           "detail": "2"
@@ -1442,7 +1568,7 @@
     },
     {
       "scenario": "nd:no:max",
-      "pass": 27,
+      "pass": 34,
       "fail": 0,
       "checks": [
         {
@@ -1517,8 +1643,9 @@
           "detail": "Svarmønsteret er kontrollert — 2 markering(er) registrert. D"
         },
         {
-          "name": "S7.delingslinje",
-          "ok": true
+          "name": "S7.share-kort",
+          "ok": true,
+          "detail": "DELINGBrainareaTester du kan stole på — "
         },
         {
           "name": "S8.pdf-knapp",
@@ -1558,6 +1685,39 @@
           "ok": true
         },
         {
+          "name": "VD.identitetslinje",
+          "ok": true,
+          "detail": "NEVRODIVERSE SCREENING"
+        },
+        {
+          "name": "VD.band-svg",
+          "ok": true,
+          "detail": "1 band-el"
+        },
+        {
+          "name": "VD.band-fill-identitet",
+          "ok": true,
+          "detail": "fill=304 cap=100"
+        },
+        {
+          "name": "VD.band-caption-semantikk",
+          "ok": true,
+          "detail": "100 % av skalaens omfang"
+        },
+        {
+          "name": "VD.share-seksjon",
+          "ok": true
+        },
+        {
+          "name": "VD.share-hrefs",
+          "ok": true,
+          "detail": "/brainarea/persona/ | /brainarea/relasjoner/ | /brainarea/nevrodiversitet/"
+        },
+        {
+          "name": "VD.share-ingen-falsk-knapp",
+          "ok": true
+        },
+        {
           "name": "S9.to-knapper-eller-nd",
           "ok": true,
           "detail": "3"
@@ -1574,7 +1734,7 @@
     },
     {
       "scenario": "nd:en:deep",
-      "pass": 42,
+      "pass": 49,
       "fail": 0,
       "checks": [
         {
@@ -1739,8 +1899,9 @@
           "detail": "Response pattern checked — 2 flag(s) registered. This does n"
         },
         {
-          "name": "S7.delingslinje",
-          "ok": true
+          "name": "S7.share-kort",
+          "ok": true,
+          "detail": "SHAREBrainareaTests you can trust — scor"
         },
         {
           "name": "S8.pdf-knapp",
@@ -1765,6 +1926,39 @@
           "ok": true
         },
         {
+          "name": "VD.identitetslinje",
+          "ok": true,
+          "detail": "ADHD DEEP TRACK"
+        },
+        {
+          "name": "VD.band-svg",
+          "ok": true,
+          "detail": "1 band-el"
+        },
+        {
+          "name": "VD.band-fill-identitet",
+          "ok": true,
+          "detail": "fill=0 cap=0"
+        },
+        {
+          "name": "VD.band-caption-semantikk",
+          "ok": true,
+          "detail": "0% of the scale range"
+        },
+        {
+          "name": "VD.share-seksjon",
+          "ok": true
+        },
+        {
+          "name": "VD.share-hrefs",
+          "ok": true,
+          "detail": "/brainarea/en/persona/ | /brainarea/en/relations/ | /brainarea/en/neurodiverse/"
+        },
+        {
+          "name": "VD.share-ingen-falsk-knapp",
+          "ok": true
+        },
+        {
           "name": "S9.to-knapper-eller-nd",
           "ok": true,
           "detail": "2"
@@ -1781,7 +1975,7 @@
     },
     {
       "scenario": "nd-adhd:no:seq",
-      "pass": 44,
+      "pass": 51,
       "fail": 0,
       "checks": [
         {
@@ -1946,8 +2140,9 @@
           "detail": "Svarmønsteret er kontrollert — 2 markering(er) registrert. D"
         },
         {
-          "name": "S7.delingslinje",
-          "ok": true
+          "name": "S7.share-kort",
+          "ok": true,
+          "detail": "DELINGBrainareaTester du kan stole på — "
         },
         {
           "name": "S8.pdf-knapp",
@@ -1982,6 +2177,39 @@
           "ok": true
         },
         {
+          "name": "VD.identitetslinje",
+          "ok": true,
+          "detail": "ADHD-DYPT SPOR"
+        },
+        {
+          "name": "VD.band-svg",
+          "ok": true,
+          "detail": "1 band-el"
+        },
+        {
+          "name": "VD.band-fill-identitet",
+          "ok": true,
+          "detail": "fill=0 cap=0"
+        },
+        {
+          "name": "VD.band-caption-semantikk",
+          "ok": true,
+          "detail": "0 % av skalaens omfang"
+        },
+        {
+          "name": "VD.share-seksjon",
+          "ok": true
+        },
+        {
+          "name": "VD.share-hrefs",
+          "ok": true,
+          "detail": "/brainarea/persona/ | /brainarea/relasjoner/ | /brainarea/nevrodiversitet/"
+        },
+        {
+          "name": "VD.share-ingen-falsk-knapp",
+          "ok": true
+        },
+        {
           "name": "S9.to-knapper-eller-nd",
           "ok": true,
           "detail": "3"
@@ -1998,7 +2226,7 @@
     },
     {
       "scenario": "nd-autism:en",
-      "pass": 40,
+      "pass": 47,
       "fail": 0,
       "checks": [
         {
@@ -2163,8 +2391,9 @@
           "detail": "Response pattern checked — 2 flag(s) registered. This does n"
         },
         {
-          "name": "S7.delingslinje",
-          "ok": true
+          "name": "S7.share-kort",
+          "ok": true,
+          "detail": "SHAREBrainareaTests you can trust — scor"
         },
         {
           "name": "S8.pdf-knapp",
@@ -2177,6 +2406,39 @@
         },
         {
           "name": "S8.object-url",
+          "ok": true
+        },
+        {
+          "name": "VD.identitetslinje",
+          "ok": true,
+          "detail": "AUTISM DEEP TRACK"
+        },
+        {
+          "name": "VD.band-svg",
+          "ok": true,
+          "detail": "1 band-el"
+        },
+        {
+          "name": "VD.band-fill-identitet",
+          "ok": true,
+          "detail": "fill=0 cap=0"
+        },
+        {
+          "name": "VD.band-caption-semantikk",
+          "ok": true,
+          "detail": "0% of the scale range"
+        },
+        {
+          "name": "VD.share-seksjon",
+          "ok": true
+        },
+        {
+          "name": "VD.share-hrefs",
+          "ok": true,
+          "detail": "/brainarea/en/persona/ | /brainarea/en/relations/ | /brainarea/en/neurodiverse/"
+        },
+        {
+          "name": "VD.share-ingen-falsk-knapp",
           "ok": true
         },
         {
@@ -2195,7 +2457,7 @@
       ]
     }
   ],
-  "passes": 443,
+  "passes": 497,
   "fails": 0,
   "allPass": true
 }

@@ -42,6 +42,7 @@ import { KEYS as NO_KEYS } from '@BA@/i18n/no.js';
 import { renderReport } from '@BA@/report/renderer.mjs';
 import { computeTriageOutcome } from '@BA@/tests/schema/_nd_triage_model.mjs';
 import { mountPuzzleGames } from '@BA@/puzzle.mjs';
+import { localizedPath } from '@BA@/locale.js';
 
 const RUN_NS = 'ba-run:';
 
@@ -147,6 +148,21 @@ const RUN_CSS = `
 .ba-run-actions button:disabled{opacity:.5;cursor:not-allowed}
 .ba-run-att{margin:1.1rem 0 0;padding:.7rem .95rem;border-radius:.5rem;border:1px solid #22303f;background:#101822;color:#9fb4c7;font-size:.9rem}
 .ba-run-att--clean{border-left:3px solid #37d67a}
+.ba-run-title{margin:0 0 .55rem;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ba-accent,#4dc3ff)}
+.ba-run-band{margin:-.15rem 0 1rem}
+.ba-run-band svg{display:block;width:100%;max-width:22rem;height:auto}
+.ba-run-band-fill{fill:var(--ba-accent,#4dc3ff)}
+.ba-run-band-cap{display:block;margin-top:.35rem;font-size:.85rem;color:#9fb4c7}
+.ba-run-band-nc{font-size:.85rem;color:#9fb4c7}
+.ba-run-share{margin:1.1rem 0 0;padding:.8rem .95rem;border:1px solid #22303f;border-radius:.5rem;background:#101822}
+.ba-run-share-head{margin:0 0 .45rem;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9fb4c7}
+.ba-run-share-card{display:flex;align-items:center;gap:.8rem;padding:.5rem;border:1px solid #22303f;border-radius:.4rem;background:#0b0f14;margin:0 0 .45rem}
+.ba-run-share-brand{flex:1 1 auto;min-width:0}
+.ba-run-share-name{margin:0;font-size:.95rem;font-weight:700;color:#e9eff5}
+.ba-run-share-tag{margin:0;font-size:.85rem;color:#9fb4c7;overflow-wrap:anywhere}
+.ba-run-share-links{display:flex;flex-wrap:wrap;gap:1.1rem;font-size:.85rem}
+.ba-run-share-links a{padding:.7rem 0}
+.ba-run-share-links a{color:var(--ba-accent,#4dc3ff)}
 `;
 (function injectRunCss() {
   if (!document.head) return;
@@ -211,7 +227,7 @@ async function boot() {
   /* tidligere fullført resultat? → vis det, ikke en ny økt */
   const prior = readResult(localStorage, def.id);
   if (prior && prior.report) {
-    showResult(container, def, tt, prior, {});
+    showResult(container, def, tt, prior, { locale: mark.locale });
     return;
   }
 
@@ -277,13 +293,118 @@ async function handleComplete(container, def, tt, mark, payload) {
   const persist = { result, report };
   if (triage) persist.triage = triage;
   writeResult(localStorage, persist);
-  showResult(container, def, tt, persist, { att });
+  showResult(container, def, tt, persist, { att, locale: mark.locale });
 }
 
-function showResult(container, def, tt, persist, { att } = {}) {
+/* ================================================================ */
+/* resultat-signatur (VISUELL-D, todo #3852)                         */
+/* ================================================================ */
+
+/* Katalognavn for resultat-kortets identitetslinje — resolver utelukkende
+   via i18n (run.title.*) og bare for de seks leverte testId-ene. Ukjent
+   testId => ingen linje (aldri nokkellekkasje, aldri oppfunnet navn). */
+const RESULT_TITLE_IDS = new Set([
+  'ipip50-big5', 'evne-g-44', 'rel-16', 'nd-triage', 'nd-adhd', 'nd-autism',
+]);
+
+/* Band-indikator-data (VISUELL-D): ren funksjon over resultatet — ingen DOM,
+   ingen rng/klokke => deterministisk. Skårene ER prosent av skalaens omfang
+   (config-normnoten); strengen viser posisjon på samme 0–100-akse som
+   dimensjonsgrafen, med samme midtpunkt-semantikk (50 = skalaens midt, ikke
+   gjennomsnitt). Ingen normer/persentiler finnes i dag — strengen antyder
+   ingen (beslutning 13–14-språket står). Metrisk ærlighet: g-score (theta/
+   prosent riktige) og threshold får ingen 0–100-streng — egen metrikk, de
+   forblir tekst som i dag. composite mangler/null => notComputable-tekst
+   (samme frase som grafens notComputable-rader), aldri tom streng. */
+export function bandGaugeData(result) {
+  const total = result && result.total;
+  if (!result || result.scoringType !== 'trait' || !total) return null;
+  const v = typeof total.composite === 'number' && Number.isFinite(total.composite)
+    ? Math.max(0, Math.min(100, total.composite)) : null;
+  if (v === null) return { kind: 'notComputable' };
+  return { kind: 'percent', frac: v / 100 };
+}
+
+const BAND_W = 320, BAND_PAD = 8, BAND_H = 34;
+
+/* DOM-noden: SVG-målestreng + synlig mål-tekst. Geometrien er håndregnet:
+   fill-bredde = (BAND_W - 2*BAND_PAD) * frac; midt-linje ved frac 0.5.
+   SVG-elementer via createElementNS når document har det (ekte nettleser);
+   stub-DOM uten createElementNS => deterministisk attributt-ekvivalent.
+   aria: svg role=img + aria-label = mål-teksten (betydningen bor i teksten,
+   samme mønster som ba-scale-anchors fra VISUELL-B). */
+export function bandGaugeNode(result, tt) {
+  const d = bandGaugeData(result);
+  if (!d) return null;
+  const caption = tt('ui.run.band.percent', { a: String(Math.round((d.frac || 0) * 100)) });
+  const wrap = el('div', d.kind === 'notComputable' ? 'ba-run-band ba-run-band-nc' : 'ba-run-band');
+  if (d.kind === 'notComputable') {
+    wrap.textContent = tt('ui.run.band.notComputable');
+    return wrap;
+  }
+  const sv = svgEl('svg');
+  sv.setAttribute('viewBox', `0 0 ${BAND_W} ${BAND_H}`);
+  sv.setAttribute('role', 'img');
+  sv.setAttribute('aria-label', caption);
+  const title = svgEl('title');
+  title.textContent = caption;
+  sv.appendChild(title);
+  const track = svgEl('rect');
+  track.setAttribute('x', String(BAND_PAD));
+  track.setAttribute('y', '8');
+  track.setAttribute('width', String(BAND_W - BAND_PAD * 2));
+  track.setAttribute('height', '10');
+  track.setAttribute('rx', '5');
+  track.setAttribute('fill', '#1c2633');
+  sv.appendChild(track);
+  const fill = svgEl('rect');
+  fill.setAttribute('class', 'ba-run-band-fill');
+  fill.setAttribute('x', String(BAND_PAD));
+  fill.setAttribute('y', '8');
+  fill.setAttribute('width', String(Math.round((BAND_W - BAND_PAD * 2) * d.frac)));
+  fill.setAttribute('height', '10');
+  fill.setAttribute('rx', '5');
+  fill.setAttribute('fill', '#4dc3ff');
+  sv.appendChild(fill);
+  const mid = svgEl('line');
+  mid.setAttribute('x1', String(Math.round(BAND_PAD + (BAND_W - BAND_PAD * 2) * 0.5)));
+  mid.setAttribute('y1', '4');
+  mid.setAttribute('x2', String(Math.round(BAND_PAD + (BAND_W - BAND_PAD * 2) * 0.5)));
+  mid.setAttribute('y2', '22');
+  mid.setAttribute('stroke', '#9fb4c7');
+  mid.setAttribute('stroke-width', '2');
+  mid.setAttribute('stroke-dasharray', '3 3');
+  sv.appendChild(mid);
+  wrap.appendChild(sv);
+  wrap.appendChild(el('span', 'ba-run-band-cap', caption));
+  return wrap;
+}
+
+/* Ekte intern delingslenke til et spor — localizedPath-eie (locale.js),
+   aldri håndbygde URL-er. Ukjent rute/locale i stub => null (aldri lenke-tekst
+   som peker tom). */
+function shareHref(locale, route) {
+  try { return localizedPath(locale, route); } catch { return null; }
+}
+
+function svgEl(tag) {
+  const NS = 'http://www.w3.org/2000/svg';
+  if (typeof document.createElementNS === 'function') return document.createElementNS(NS, tag);
+  return document.createElement(tag);
+}
+
+function showResult(container, def, tt, persist, { att, locale } = {}) {
   const { report, result } = persist;
   const box = el('div', 'ba-run-result');
+  /* VISUELL-D: identitetslinje ovenfor «Ditt resultat» — i18n-katalognavn for
+     de seks leverte testId-ene, aldri for ukjente (ingen nøkkel lekes ut). */
+  const resultTestId = (result && result.testId) || (def && def.id) || '';
+  if (RESULT_TITLE_IDS.has(resultTestId)) {
+    box.appendChild(el('div', 'ba-run-title', tt('ui.run.title.' + resultTestId)));
+  }
   box.appendChild(el('h2', null, tt('ui.run.result')));
+  const bandNode = bandGaugeNode(result, tt);
+  if (bandNode) box.appendChild(bandNode);
 
   const content = el('div', 'ba-run-report');
   content.innerHTML = report.html; /* renderReport-HTML er deterministisk og esc-et */
@@ -296,8 +417,27 @@ function showResult(container, def, tt, persist, { att } = {}) {
     box.appendChild(div);
   }
 
-  /* deling: dyadisk par-graf er FASE 4 — ærlig tekst, ingen falsk knapp */
-  const share = el('div', 'ba-run-att', tt('ui.run.share.done'));
+  /* deling (VISUELL-D): merkevarekort + de tre ekte intern-lenkene. Ingen falsk
+     delknapp — dyadisk par-graf er FASE 4. Delingsforhåndsvisningen av selve
+     URL-en (og:image) bygges statisk av VISUELL-C-kortene i build.js-headen. */
+  const share = el('div', 'ba-run-share');
+  share.appendChild(el('div', 'ba-run-share-head', tt('ui.run.share.cardTitle')));
+  const card = el('div', 'ba-run-share-card');
+  const brand = el('div', 'ba-run-share-brand');
+  brand.appendChild(el('p', 'ba-run-share-name', tt('ui.run.share.tagName')));
+  brand.appendChild(el('p', 'ba-run-share-tag', tt('ui.run.share.tagline')));
+  card.appendChild(brand);
+  share.appendChild(card);
+  const links = el('div', 'ba-run-share-links');
+  for (const [route, key] of [['persona', 'ui.run.share.linkPersona'], ['rel', 'ui.run.share.linkRel'], ['nd', 'ui.run.share.linkNd']]) {
+    const href = shareHref(locale, route);
+    if (!href) continue; /* aldri en lenke uten mål */
+    const a = el('a', null, tt(key));
+    a.setAttribute('href', href);
+    a.setAttribute('rel', 'noopener');
+    links.appendChild(a);
+  }
+  if (links.children.length > 0) share.appendChild(links);
   box.appendChild(share);
 
   const actions = el('div', 'ba-run-actions');

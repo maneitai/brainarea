@@ -319,8 +319,10 @@ async function main() {
   const att = byClass(mount, 'ba-run-att').map((e) => e.textContent).join(' ');
   ck('S6.attention-linje', /kontrollert|checked/.test(att), att.slice(0, 60));
 
-  /* S7: delingstekst — dyadisk graf er FASE 4 (ærlig tekst, ingen falsk knapp) */
-  ck('S7.delingslinje', /delbar|shareable/i.test(att));
+  /* S7 (VISUELL-D): delingsseksjonen finnes — merkevarekort, ekte lenker,
+     ingen falsk delknapp (dyadisk graf er FASE 4) */
+  const shareTxt = (byClass(mount, 'ba-run-share')[0] || { textContent: '' }).textContent;
+  ck('S7.share-kort', /DELING|SHARE/.test(shareTxt) && shareTxt.length > 15, shareTxt.slice(0, 40));
 
   /* S8: PDF via ekte renderReportPdf */
   const pdfBtn = byClass(mount, 'ba-run-actions').flatMap((a) => a.children).filter((b) => b.tagName === 'BUTTON').find((b) => /PDF/i.test(b.textContent));
@@ -360,6 +362,52 @@ async function main() {
       ck('N6.deep-24-besvart', clicks === 24, 'clicks=' + clicks);
       ck('N6.rett-def-i-rapport', byClass(mount, 'ba-run-report').length === 1);
     }
+  }
+
+  /* ===== VD (VISUELL-D #3852): resultat-signatur på tvers av sporene ===== */
+  {
+    const boxRes = (byClass(mount, 'ba-run-result') || [])[0];
+    /* identitetslinje: alle seks leverte titler resolver; aldri rå i18n-nøkkel */
+    const titleEl = byClass(mount, 'ba-run-title')[0];
+    const effTest = flag === 'deep' ? 'nd-adhd' : realTest; /* deep-fullfoering = nd-adhd-def (flag er 3. argv-segment) */
+    /* dypsporene + nd har NO-titler på no (i18n-overlay), EN-titler på en */
+    const expectTitle = {
+      persona: 'PERSONA', iq: 'ABILITY', relational: 'RELATIONS',
+      nd: { no: 'NEVRODIVERSE SCREENING', en: 'NEURODIVERSE SCREENING' },
+      'nd-adhd': { no: 'ADHD-DYPT SPOR', en: 'ADHD DEEP TRACK' },
+      'nd-autism': { no: 'AUTISME-DYPT SPOR', en: 'AUTISM DEEP TRACK' },
+    }[effTest];
+    const wantTitle = typeof expectTitle === 'string' ? expectTitle : (expectTitle || {})[lang];
+    ck('VD.identitetslinje', Boolean(titleEl) && titleEl._text === wantTitle, titleEl ? titleEl._text : 'mangler');
+    /* band: trait-foreldre (med fullført composite) => band-SVG; g-score => ingen band */
+    const traitScoring = ['persona', 'relational', 'nd', 'nd-adhd', 'nd-autism'].includes(effTest);
+    const bandEls = byClass(mount, 'ba-run-band');
+    if (traitScoring) {
+      const sv = bandEls.length === 1 ? bandEls[0].children.find((c) => c.tagName === 'SVG') : null;
+      ck('VD.band-svg', Boolean(sv) && sv.getAttribute('viewBox') === '0 0 320 34', bandEls.length + ' band-el');
+      const fillR = sv ? sv.children.find((c) => c.tagName === 'RECT' && c.getAttribute('class') === 'ba-run-band-fill') : null;
+      const capEl0 = bandEls[0].children.find((c) => c.className === 'ba-run-band-cap');
+      const m = capEl0 ? (capEl0._text || '').match(/(\d+)\s?%/) : null;
+      const capPct = m ? Number(m[1]) : NaN;
+      const fillW = fillR ? Number(fillR.getAttribute('width')) : NaN;
+      ck('VD.band-fill-identitet', Boolean(fillR) && Number.isFinite(capPct) && fillW === Math.round(304 * capPct / 100) && fillW >= 0 && fillW <= 304,
+        'fill=' + fillW + ' cap=' + (Number.isFinite(capPct) ? capPct : 'ikke-prosent'));
+      const capEl = bandEls[0].children.find((c) => c.className === 'ba-run-band-cap');
+      ck('VD.band-caption-semantikk', Boolean(capEl) && /skalaens omfang|scale range/.test(capEl._text) && !/(persentil|percentile|norm)/i.test(capEl._text), capEl && capEl._text);
+    } else {
+      ck('VD.gscore-ingen-band', bandEls.length === 0, bandEls.length + ' band-el på g-score');
+    }
+    /* delingsseksjon: merkevarekort + ekte intern-lenker (locale-resolved) */
+    const shareEl = byClass(mount, 'ba-run-share')[0];
+    ck('VD.share-seksjon', Boolean(shareEl));
+    const shareLinks = byClass(mount, 'ba-run-share-links')[0];
+    const hrefs = (shareLinks ? shareLinks.children : []).map((a) => a.getAttribute('href'));
+    const wantHref = {
+      no: ['/brainarea/persona/', '/brainarea/relasjoner/', '/brainarea/nevrodiversitet/'],
+      en: ['/brainarea/en/persona/', '/brainarea/en/relations/', '/brainarea/en/neurodiverse/'],
+    }[lang] || [];
+    ck('VD.share-hrefs', wantHref.every((h) => hrefs.includes(h)), hrefs.join(' | '));
+    ck('VD.share-ingen-falsk-knapp', !(byClass(mount, 'ba-run-share')[0] || { children: [] }).children.some((c) => c.tagName === 'BUTTON'));
   }
 
   /* retake-knappen */

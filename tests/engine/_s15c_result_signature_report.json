@@ -1,0 +1,15 @@
+{
+  "step": "S15c VISUELL-D #3852 — resultat-signatur: identitetslinje, band-målestreng, delingsseksjon (stub-DOM over out/_app produksjonskjede)",
+  "total": 37,
+  "pass": 37,
+  "fail": 0,
+  "failures": [],
+  "stubCoverage": [
+    "stub-DOM uten layout/CSS — geometri verifiseres som attributt-identiteter (håndregnet); visuell QA separat i playwright-probe",
+    "boot-sideeffekt: modulen kjører boot() ved import (readyState=complete)",
+    "fetch-stub leser reelle filer fra out/_app (defs/config) — runner-driverens konvensjon",
+    "ikke e2e her: g-score-bandfravær unit-verifisert i S15c-3; nd-kjede-verifisert i runner-selftest N1-N6"
+  ],
+  "date": "2026-11-17",
+  "builtBy": "worker — todo leaf [BYGG][VISUELL-D] #3852"
+}

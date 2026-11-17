@@ -262,6 +262,9 @@ async function main() {
      de tre ND-defene per språk. Utelates en fil, kaster byggeren hardt —
      runneren er ærlig 404 uten defene. */
   copyIf(join(REPO, 'tests', 'schema', '_nd_triage_model.mjs'), join('_app', 'tests', 'schema', '_nd_triage_model.mjs'));
+  /* [BYGG][VISUELL-D] locale.js med i runner-pakken — shareHref resolver
+     delingslenkene gjennom localizedPath (locale.js-eie), aldri håndbygde URL-er. */
+  copyIf(join(__dirname, 'locale.js'), join('_app', 'locale.js'));
   for (const f of ['index.js', 'en.js', 'no.js']) copyIf(join(REPO, 'i18n', f), join('_app', 'i18n', f));
   copyIf(join(REPO, 'report', 'renderer.mjs'), join('_app', 'report', 'renderer.mjs'));
   copyIf(join(REPO, 'report', 'configs', 'standard.json'), join('_app', 'report', 'configs', 'standard.json'));

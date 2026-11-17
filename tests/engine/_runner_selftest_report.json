@@ -1,5 +1,5 @@
 {
-  "run": "2026-11-17T16:54:27.913Z",
+  "run": "2026-11-17T17:08:40.741Z",
   "scenarios": [
     {
       "scenario": "persona:no",
@@ -389,32 +389,32 @@
         {
           "name": "S3.opt-1",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-2",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-3",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-4",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-5",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-6",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-7",
@@ -424,7 +424,7 @@
         {
           "name": "S3.opt-8",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-9",
@@ -444,12 +444,12 @@
         {
           "name": "S3.opt-12",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-13",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-14",
@@ -469,17 +469,17 @@
         {
           "name": "S3.opt-17",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-18",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-19",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-20",
@@ -494,7 +494,7 @@
         {
           "name": "S3.opt-22",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-23",
@@ -509,7 +509,7 @@
         {
           "name": "S3.opt-25",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-26",
@@ -524,7 +524,7 @@
         {
           "name": "S3.opt-28",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-29",
@@ -539,22 +539,22 @@
         {
           "name": "S3.opt-31",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-32",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-33",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-34",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-35",
@@ -564,7 +564,7 @@
         {
           "name": "S3.opt-36",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-37",
@@ -579,7 +579,7 @@
         {
           "name": "S3.opt-39",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-40",
@@ -594,12 +594,12 @@
         {
           "name": "S3.opt-42",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-43",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.resultat-etter-fullføring",
@@ -646,7 +646,7 @@
         {
           "name": "S8.pdf-bytes",
           "ok": true,
-          "detail": "lastLen=91253"
+          "detail": "lastLen=91249"
         },
         {
           "name": "S8.object-url",

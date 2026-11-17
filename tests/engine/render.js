@@ -41,7 +41,7 @@
 
 import { makeCountedRng, newRngState, RNG_FIELD } from './randomize.js';
 
-export const RENDER_VERSION = '0.5.0';
+export const RENDER_VERSION = '0.6.0';
 
 export const STORAGE_NS = 'brainarea:v1:';
 
@@ -397,7 +397,25 @@ function bafGridFigure(rows) {
   return s;
 }
 
-function letterOf(i) { return String.fromCharCode(65 + i); }
+export function letterOf(i) { return String.fromCharCode(65 + i); }
+
+/* anker-lag (VISUELL-B, todo #3851): endeanker for likert-skalaer, lest direkte
+ * fra def-objektets egne options (laveste/hoyeste verdi med label). Ingen nye
+ * datafelt oppfinnes: mangler tallverdier/non-empty labels => ingen anker-rad
+ * (eksakt gammel visning). Ren div/span, ingen rng/klokke => byte-deterministisk. */
+export function bafScaleAnchors(item) {
+  const opts = item && Array.isArray(item.options) ? item.options : null;
+  if (!opts || opts.length < 2) return null;
+  let lo = null, hi = null;
+  for (const o of opts) {
+    if (!o || typeof o.label !== 'string' || !o.label.trim()) return null;
+    if (typeof o.value !== 'number' || !Number.isFinite(o.value)) return null;
+    if (lo === null || o.value < lo.value) lo = o;
+    if (hi === null || o.value > hi.value) hi = o;
+  }
+  if (lo === null || hi === null || lo === hi) return null;
+  return { min: lo, max: hi };
+}
 
 function injectStyles() {
   if (!document.head) return;
@@ -423,12 +441,14 @@ const STYLES = `
 .ba-hint{color:var(--ba-dim);font-size:.85rem;margin:0 0 .5rem}
 .ba-options{display:flex;flex-direction:column;gap:.5rem}
 .ba-opt{display:block;width:100%;text-align:left;min-height:2.75rem;padding:.5rem .75rem;border-radius:.5rem;
-  border:1px solid #22303f;background:#101822;color:var(--ba-fg);font:inherit;cursor:pointer}
-.ba-opt[aria-pressed="true"]{border-color:var(--ba-accent);background:#12233a}
+  border:1px solid #22303f;background:#101822;color:var(--ba-fg);font:inherit;cursor:pointer;
+  transition:border-color .15s ease,background-color .15s ease}
+.ba-opt:hover{border-color:#31445a}
+.ba-opt[aria-pressed="true"]{border-color:var(--ba-accent);background:#12233a;box-shadow:inset 3px 0 0 var(--ba-accent)}
 .ba-opt:focus-visible,.ba-nav button:focus-visible,.ba-order button:focus-visible{outline:2px solid var(--ba-accent);outline-offset:1px}
 .ba-order{display:flex;flex-direction:column;gap:.5rem}
 .ba-order .ba-order-elem{display:flex;gap:.5rem;align-items:center}
-.ba-order button{min-height:2.25rem;min-width:2.25rem;border-radius:.4rem;border:1px solid #22303f;background:#101822;color:var(--ba-fg);cursor:pointer;font:inherit}
+.ba-order button{min-height:2.75rem;min-width:2.75rem;border-radius:.4rem;border:1px solid #22303f;background:#101822;color:var(--ba-fg);cursor:pointer;font:inherit}
 .ba-order .ba-order-elem.sel button.ba-order-move{border-color:var(--ba-accent)}
 .ba-nav{display:flex;justify-content:flex-end;margin-top:.75rem}
 .ba-nav button{min-height:2.75rem;padding:.5rem 1.25rem;border-radius:.5rem;border:1px solid #22303f;background:#12233a;color:var(--ba-fg);font:inherit;cursor:pointer}
@@ -440,12 +460,14 @@ const STYLES = `
   padding:.6rem .8rem;margin-bottom:.75rem;max-width:40rem}
 .ba-resume-text{margin:0}
 .ba-resume-actions{display:flex}
-.ba-resume-quit{min-height:2.25rem;padding:.25rem .75rem;border-radius:.4rem;border:1px solid #22303f;cursor:pointer;font:inherit}
+.ba-resume-quit{min-height:2.75rem;padding:.35rem .85rem;border-radius:.4rem;border:1px solid #22303f;cursor:pointer;font:inherit;background:#101822;color:var(--ba-fg)}
 .ba-resume-quit:focus-visible{outline:2px solid var(--ba-accent);outline-offset:1px}
 .ba-fig{display:block;max-width:100%;height:auto;margin:.25rem 0 .75rem}
 .ba-fig-tile{height:2.6rem}
 .ba-fig-grid{width:min(20rem,100%)}
 .ba-fig-text{display:block;white-space:pre;font:15px/1.35 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ba-fg);margin:0 0 .75rem;overflow-x:auto}
+.ba-scale-anchors{display:flex;justify-content:space-between;gap:1rem;color:var(--ba-dim);font-size:.85rem;line-height:1.4;padding:0 .25rem;margin-top:-.15rem}
+.ba-scale-anchor{min-width:0;overflow:hidden;text-overflow:ellipsis}
 @media (prefers-reduced-motion: reduce){.ba-progressbar-fill{transition:none}}
 `;
 
@@ -646,6 +668,20 @@ export function mountRenderer(rootEl, def, opts = {}) {
       group.appendChild(b);
     });
     itemBox.appendChild(group);
+    /* VISUELL-B (#3851): endeanker under skalaen — defs egne 1/5-labels.
+       Sibling utenfor .ba-options (gruppe-kontrakten til selftests er urort).
+       aria-hidden: betydningen bor i knappene — raden er visuell redundans. */
+    const anch = bafScaleAnchors(item);
+    if (anch) {
+      const row = el('div', 'ba-scale-anchors');
+      row.setAttribute('aria-hidden', 'true');
+      const aLo = el('span', 'ba-scale-anchor');
+      aLo.textContent = `${anch.min.value} · ${anch.min.label}`;
+      const aHi = el('span', 'ba-scale-anchor');
+      aHi.textContent = `${anch.max.value} · ${anch.max.label}`;
+      row.appendChild(aLo); row.appendChild(aHi);
+      itemBox.appendChild(row);
+    }
   }
 
   function renderAbility(item) {

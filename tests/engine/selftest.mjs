@@ -101,7 +101,7 @@ function loadRender(doc) {
     .replace(/\bnewRngState\b(?=\()/g, 'globalThis.__rnd.newRngState')
     .replace(/\bmakeCountedRng\b(?=\()/g, 'globalThis.__rnd.makeCountedRng');
   vm.runInContext(
-    src + "\n;globalThis.__api = Object.assign({ mountRenderer, validateTestDef, sampleSession, sessionSizeFor, shuffleInPlace, resolveLang, fmtTime, memoryStorage, RENDER_VERSION, STORAGE_NS }, globalThis.__rnd);",
+    src + "\n;globalThis.__api = Object.assign({ mountRenderer, validateTestDef, sampleSession, sessionSizeFor, shuffleInPlace, resolveLang, fmtTime, memoryStorage, RENDER_VERSION, STORAGE_NS, letterOf, bafScaleAnchors }, globalThis.__rnd);",
     ctx, { filename: 'render.js' },
   );
   return ctx.__api;
@@ -481,11 +481,71 @@ check('resolveLang direkte', api.resolveLang({ languages: ['no', 'en'] }, 'en') 
   hF5.destroy(); hF6.destroy(); hF7.destroy();
 }
 
+
+/* ============ S15b: VISUELL-B #3851 — valgkort/skala ============ */
+{
+  /* a) anker-hjelper: ren funksjon over def-options (ekte rel-16 def) */
+  const rel = JSON.parse(readFileSync(ROOT + '/tests/schema/composite/def-rel-16.no.json', 'utf8'));
+  const vRel = api.validateTestDef(rel);
+  check('S15b: rel-16 def validerer', vRel.ok === true);
+  const anchors = api.bafScaleAnchors(rel.items[0]);
+  check('S15b: anker fra def-options (min=1, max=5)', Boolean(anchors) && anchors.min.value === 1 && anchors.max.value === 5);
+
+  /* b) full gjennomlokking av rel-16 i stub: anker-sibling under gruppen, ingen attention-avvik ved item 11 */
+  const storeB = api.memoryStorage();
+  const docB = makeDocStub();
+  const apiB = loadRender(docB);
+  let completedB = null;
+  const hB = apiB.mountRenderer(docB.createElement('div'), rel, { lang: 'no', storage: storeB, seedSeed: 606, now: () => 1_700_400_000_000, onComplete: (p) => { completedB = p; } });
+  let sawAnchor = false, orderKinds = new Set();
+  for (let i = 0; i < hB.session.itemIds.length; i++) {
+    const cur = rel.items.find((x) => x.id === hB.session.itemIds[hB.session.idx]);
+    check(`S15b item ${cur.id}: kind=likert (ingen attention-avvik, item 11 inkludert)`, cur.kind === 'likert');
+    orderKinds.add(cur.kind);
+    const group = hB._itemBox.children.find((c) => c.className === 'ba-options');
+    check(`S15b item ${cur.id}: gruppe = ${cur.options.length} knapper (kontrakt urokkelig)`, group.children.length === cur.options.length);
+    const row = hB._itemBox.children.find((c) => c.className === 'ba-scale-anchors');
+    const anchTxt = row ? row.children.map((c) => c._text).join(' ') : '';
+    check(`S15b item ${cur.id}: anker-sibling med def-endepunkter`, Boolean(row) && anchTxt.includes('Veldig un\u00f8yaktig') && anchTxt.includes('Veldig n\u00f8yaktig'));
+    sawAnchor = sawAnchor || Boolean(row);
+    const btn = group.children[cur.options.findIndex((o) => o.value === 4)];
+    btn.click();
+    check(`S15b item ${cur.id}: valgt-tilstand aria-pressed`, btn.getAttribute('aria-pressed') === 'true');
+    check(`S15b item ${cur.id}: Next aktiv etter valg`, hB._nextBtn.disabled === false);
+    hB.next();
+  }
+  check('S15b: alle 16 items likert (rel-16: item 11 = cf-0031 ordin\u00e6r likert)', orderKinds.size === 1 && hB.session.itemIds.length === 16);
+  check('S15b: anker-rad rendret for hver skjerm', sawAnchor === true);
+  check('S15b: svarkontrakt urokkelig likert {kind,value,lang}', Object.values(completedB.answers).length === 16 && Object.values(completedB.answers).every((a) => a.kind === 'likert'));
+  hB.destroy();
+
+  /* c) ability-skjerm (g-fixture) => ingen anker-rad, eksakt gammel visning */
+  const docG = makeDocStub();
+  const apiG = loadRender(docG);
+  const gfix = fixtures.find((f) => f.scoring.type === 'g-score');
+  const hGa = apiG.mountRenderer(docG.createElement('div'), gfix, { lang: 'no', storage: api.memoryStorage(), now: () => 1_700_400_100_000, onComplete: () => {} });
+  const gitem = gfix.items.find((x) => x.id === hGa.session.itemIds[0]);
+  check('S15b: ability-skjerm har ingen anker-rad (kun likert)', gitem.kind === 'ability' && hGa._itemBox.children.every((c) => c.className !== 'ba-scale-anchors'));
+  hGa.destroy();
+
+  /* d) ekte-DOM-sti (createElementNS-monkey-patch, sammet mønster som S15a ekte-SVG): anker-rad samme plass etter gruppen */
+  const docD = makeDocStub();
+  docD.createElementNS = (ns, tag) => { const n = docD.createElement(tag); n.__ns = ns; return n; };
+  const apiD = loadRender(docD);
+  const hD = apiD.mountRenderer(docD.createElement('div'), tdef, { lang: 'no', storage: api.memoryStorage(), now: () => 1_700_400_200_000, onComplete: () => {} });
+  const t0 = tdef.items.find((x) => x.id === hD.session.itemIds[0]);
+  const grpD = hD._itemBox.children.find((c) => c.className === 'ba-options');
+  const rowD = hD._itemBox.children.find((c) => c.className === 'ba-scale-anchors');
+  check('S15b: ekte-DOM-sti gruppe + anker-sibling', Boolean(grpD) && Boolean(rowD) && grpD.children.length === t0.options.length);
+  check('S15b: anker-rad aria-hidden=true', rowD && rowD.getAttribute('aria-hidden') === 'true');
+  hD.destroy();
+}
+
 /* ============ rapport ============ */
 const total = pass + failures.length;
 const report = {
   step: 'Gjenopptak/avbrudd på samme spørsmål (render v0.5): brukt-liste ved øktstart, resume-banner, avslutt-knapp',
-  renderVersion: '0.5.0',
+  renderVersion: '0.6.0',
   randomizeVersion: api.RANDOMIZE_VERSION,
   total, pass, fail: failures.length,
   failures,

@@ -1,9 +1,9 @@
 {
   "step": "Gjenopptak/avbrudd på samme spørsmål (render v0.5): brukt-liste ved øktstart, resume-banner, avslutt-knapp",
-  "renderVersion": "0.5.0",
+  "renderVersion": "0.6.0",
   "randomizeVersion": "1.0.0",
-  "total": 94,
-  "pass": 94,
+  "total": 182,
+  "pass": 182,
   "fail": 0,
   "failures": [],
   "stubCoverage": [

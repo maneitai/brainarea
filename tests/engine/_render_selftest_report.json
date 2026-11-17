@@ -2,18 +2,18 @@
   "step": "Gjenopptak/avbrudd på samme spørsmål (render v0.5): brukt-liste ved øktstart, resume-banner, avslutt-knapp",
   "renderVersion": "0.5.0",
   "randomizeVersion": "1.0.0",
-  "total": 72,
-  "pass": 72,
+  "total": 94,
+  "pass": 94,
   "fail": 0,
   "failures": [],
   "stubCoverage": [
     "DOM-struktur, klikk, klasser/attributter, focus — dekket av stub",
     "setInterval-timer kjøres ikke i selftest — tick drives via _tickForTest (deterministisk)",
-    "visuelt layout/CSS-verifisering er umulig headless — ærlig begrensning, visuell QA senere",
+    "visuelt layout/CSS-verifisering er umulig headless — ærlig begrensning, visuell QA senere; figur-geometri (koordinater) og stub-tekst-ekvivalens verifiseres i S15a",
     "localStorage erstattet av memoryStorage med samme grensesnitt",
     "auto-seed avhenger av Date.now/Math.random — bevisst ulik per økt; reproduserbarhet gjelder eksplisitt seed",
     "seed-reproduserbarhet gjelder mot uendret pool-innhold (pool-versjon knyttes på delbarhets-steg)"
   ],
   "date": "2026-11-17",
-  "builtBy": "worker — todo leaf 'Randomisering: seed-basert stokk av spørsmål + svaralternativer'"
+  "builtBy": "worker — todo leaf 'Randomisering: seed-basert stokk av spørsmål + svaralternativer'; utvidet med VISUELL-A (#3849) evne-figur-selftest (stub + ekte-SVG sti, svar-kontrakt og stroem-pin urokket)"
 }

@@ -259,6 +259,144 @@ function el(tag, cls) {
   return e;
 }
 
+/* ---------------- figur-lag (VISUELL-A, todo #3849) ---------------- */
+/* Matrise-celler og pil-tiles tegnes som vektorfigur (SVG i ekte DOM; tekst-ekvivalent
+ * i stub-DOM uten createElementNS). Defs røres aldri: parseren leser ASCII-formene
+ * i def-JSON; ukjent form -> eksakt gammel visning (textContent). Ingen import,
+ * ingen klokke, ingen rng => byte-deterministisk. Tekst finnes ikke i figuren
+ * (ren linje-geometri) => ingen fontavhengighet. Svarformat urokkelig: klikk lagrer
+ * fortsatt {kind:'ability', abilityOriginalIndex}. */
+
+const BAF_RETN = '<>^v/\\|-';
+
+function bafParseSymbolToken(s) {
+  if (typeof s !== 'string') return null;
+  const re = new RegExp('^\\[(\\?|[' + BAF_RETN + ']+)\\]$');
+  const m = re.exec(s);
+  return m ? m[1] : null;
+}
+
+function bafParseGridCells(raw) {
+  if (typeof raw !== 'string') return null;
+  const lines = raw.split('\n');
+  if (lines.length !== 4) return null;
+  const re = /\[(\?|[<>^v/\\|-]+)\]/g;
+  const rows = [];
+  for (let r = 0; r < 3; r++) {
+    const row = [];
+    let m;
+    while ((m = re.exec(lines[r + 1])) !== null) row.push(m[1]);
+    if (row.length !== 3) return null;
+    rows.push(row);
+  }
+  return rows;
+}
+
+/* pilsegmenter per retningstegn (skoletrom [-1,1]; y ned = nedover):
+ * hovedlinje + vinger ved spissen; ren linje for '|' og '-'. */
+const BAF_SEGS = {
+  '<': [[0.55, 0, -0.45, 0], [-0.45, 0, -0.05, -0.35], [-0.45, 0, -0.05, 0.35]],
+  '>': [[-0.55, 0, 0.45, 0], [0.45, 0, 0.05, -0.35], [0.45, 0, 0.05, 0.35]],
+  '^': [[0, 0.55, 0, -0.45], [0, -0.45, -0.35, -0.05], [0, -0.45, 0.35, -0.05]],
+  'v': [[0, -0.55, 0, 0.45], [0, 0.45, -0.35, 0.05], [0, 0.45, 0.35, 0.05]],
+  '/': [[-0.5, 0.5, 0.5, -0.5], [0.5, -0.5, 0.05, -0.5], [0.5, -0.5, 0.5, -0.05]],
+  '\\': [[-0.5, -0.5, 0.5, 0.5], [0.5, 0.5, 0.05, 0.5], [0.5, 0.5, 0.5, 0.05]],
+  '-': [[-0.6, 0, 0.6, 0]],
+  '|': [[0, -0.6, 0, 0.6]],
+};
+const BAF_FG = '#e9eff5';
+const BAF_FRAME = '#22303f';
+const BAF_Q = '#4dc3ff';
+const BAF_NS = 'http://www.w3.org/2000/svg';
+
+/* SVG-node med deterministisk tekst-ekvivalent i stub-DOM
+ * (stub mangler createElementNS; da returneres <pre>). */
+function bafSvg(tag, attrs, klass) {
+  let n = null;
+  if (typeof document.createElementNS === 'function') {
+    try { n = document.createElementNS(BAF_NS, tag); } catch { n = null; }
+  }
+  if (n && typeof n.setAttribute === 'function' && typeof n.appendChild === 'function') {
+    for (const k of Object.keys(attrs)) n.setAttribute(k, attrs[k]);
+    if (klass) n.setAttribute('class', klass);
+    return n;
+  }
+  const e = el('pre', klass || 'ba-fig-text');
+  e.textContent = attrs.__text || '';
+  return e;
+}
+
+function bafIsSvg(n) {
+  return Boolean(n) && typeof n.tagName === 'string' &&
+    String(n.tagName).toUpperCase() === 'SVG' &&
+    typeof n.appendChild === 'function' &&
+    typeof n.setAttribute === 'function';
+}
+
+/* n identiske symboler i sentrert rad (antalls-lesning, Raven-stil). */
+function bafSymbolRow(s, tokenInner, x, y, w, slotCap) {
+  const n = tokenInner.length;
+  const slot = n === 1 ? slotCap : Math.min(slotCap, (w * 0.92) / n);
+  const half = slot * 0.44;
+  const startX = x + (w - n * slot) / 2;
+  const cw = Math.max(1.5, half * 0.22);
+  const segs = BAF_SEGS[tokenInner[0]] || BAF_SEGS['<'];
+  for (let i = 0; i < n; i++) {
+    const cx = startX + slot * (i + 0.5);
+    for (let k = 0; k < segs.length; k++) {
+      const sg = segs[k];
+      s.appendChild(bafSvg('line', {
+        x1: (cx + sg[0] * half).toFixed(2), y1: (y + sg[1] * half).toFixed(2),
+        x2: (cx + sg[2] * half).toFixed(2), y2: (y + sg[3] * half).toFixed(2),
+        stroke: BAF_FG, 'stroke-width': cw.toFixed(2), 'stroke-linecap': 'round',
+        __text: tokenInner[0],
+      }));
+    }
+  }
+}
+
+function bafSymbolRowText(tokenInner, cellW) {
+  const n = tokenInner.length;
+  const slot = n === 1 ? 18 : Math.min(18, (cellW * 0.92) / n);
+  const pad = Math.max(0, Math.round((cellW - slot * n) / 2));
+  return ' '.repeat(Math.round(pad / 3)) + tokenInner[0].repeat(n);
+}
+
+function bafTileFigure(tokenInner) {
+  const s = bafSvg('svg', { viewBox: '0 0 240 72', role: 'img', __text: '[' + tokenInner + ']' }, 'ba-fig ba-fig-tile');
+  if (bafIsSvg(s)) bafSymbolRow(s, tokenInner, 4, 36, 232, 26);
+  return s;
+}
+
+function bafGridFigure(rows) {
+  const text = rows.map((r) => r.map((c) => '[' + c + ']').join(' ')).join('\n');
+  const s = bafSvg('svg', { viewBox: '0 0 316 316', role: 'img', __text: text }, 'ba-fig ba-fig-grid');
+  if (!bafIsSvg(s)) return s;
+  const cell = 100, gap = 4;
+  for (let r = 0; r < 3; r++) {
+    for (let c = 0; c < 3; c++) {
+      const inner = rows[r][c];
+      const x = gap + c * (cell + gap);
+      const y = gap + r * (cell + gap);
+      s.appendChild(bafSvg('rect', {
+        x: String(x), y: String(y), width: String(cell), height: String(cell), rx: '8',
+        fill: 'none', stroke: inner === '?' ? BAF_Q : BAF_FRAME, 'stroke-width': '2',
+        'stroke-dasharray': inner === '?' ? '5 5' : 'none', __text: '[' + inner + ']',
+      }));
+      if (inner === '?') {
+        s.appendChild(bafSvg('text', {
+          x: String(x + cell / 2), y: String(y + cell * 0.72), 'font-size': '58',
+          fill: BAF_Q, 'text-anchor': 'middle', 'font-family': 'system-ui, sans-serif',
+          __text: '?',
+        }));
+      } else {
+        bafSymbolRow(s, inner, x + 6, y + cell / 2, cell - 12, cell - 24);
+      }
+    }
+  }
+  return s;
+}
+
 function letterOf(i) { return String.fromCharCode(65 + i); }
 
 function injectStyles() {
@@ -304,6 +442,10 @@ const STYLES = `
 .ba-resume-actions{display:flex}
 .ba-resume-quit{min-height:2.25rem;padding:.25rem .75rem;border-radius:.4rem;border:1px solid #22303f;cursor:pointer;font:inherit}
 .ba-resume-quit:focus-visible{outline:2px solid var(--ba-accent);outline-offset:1px}
+.ba-fig{display:block;max-width:100%;height:auto;margin:.25rem 0 .75rem}
+.ba-fig-tile{height:2.6rem}
+.ba-fig-grid{width:min(20rem,100%)}
+.ba-fig-text{display:block;white-space:pre;font:15px/1.35 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ba-fg);margin:0 0 .75rem;overflow-x:auto}
 @media (prefers-reduced-motion: reduce){.ba-progressbar-fill{transition:none}}
 `;
 
@@ -514,17 +656,34 @@ export function mountRenderer(rootEl, def, opts = {}) {
       saveSession(storage, session);
     }
     const displayOrder = session.shuffle[item.id];
+    /* VISUELL-A (#3849): prompt med 3x3 matriseformer tegnes som figur; ukjent form
+       -> eksakt gammel visning (textContent). Svarformat urokkelig. */
+    const gridRows = bafParseGridCells(variant.prompt);
     const h = el('h2');
-    h.textContent = variant.prompt;
     h.tabIndex = -1;
-    itemBox.appendChild(h);
+    if (gridRows) {
+      h.textContent = variant.prompt.split('\n')[0];
+      itemBox.appendChild(h);
+      const fig = bafGridFigure(gridRows);
+      fig.setAttribute('aria-label', variant.prompt);
+      itemBox.appendChild(fig);
+    } else {
+      h.textContent = variant.prompt;
+      itemBox.appendChild(h);
+    }
     const group = el('div', 'ba-options');
     const answered = session.answers[item.id];
     const buttons = [];
     displayOrder.forEach((origIdx, displayIdx) => {
       const b = document.createElement('button');
       b.className = 'ba-opt';
-      b.textContent = `${letterOf(displayIdx)}. ${variant.options[origIdx].label}`;
+      const bafTok = bafParseSymbolToken(variant.options[origIdx].label);
+      if (bafTok !== null) {
+        b.appendChild(bafTileFigure(bafTok));
+        b.setAttribute('aria-label', `${letterOf(displayIdx)}. ${variant.options[origIdx].label}`);
+      } else {
+        b.textContent = `${letterOf(displayIdx)}. ${variant.options[origIdx].label}`;
+      }
       b.setAttribute('aria-pressed', String(Boolean(answered && answered.abilityOriginalIndex === origIdx)));
       b.addEventListener('click', () => {
         session.answers[item.id] = { kind: 'ability', lang: variant.lang, abilityOriginalIndex: origIdx };

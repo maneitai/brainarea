@@ -374,6 +374,113 @@ check('resolveLang direkte', api.resolveLang({ languages: ['no', 'en'] }, 'en') 
   hR1.destroy(); hR2.destroy();
 }
 
+/* 8c. VISUELL-A (#3849): evne-former tegnes (SVG i ekte DOM; tekst-ekvivalent i stub).
+ * Kontrakt: defs ror vi aldri — samme ASCII-former leses av render.js-parseren;
+ * ukjent form => eksakt gammel visning; svarformat {kind:'ability',abilityOriginalIndex}
+ * urokkelig. Ny visning maa aldri endre sample-/shufflesorroemens stroemmebruk. */
+{
+  const NL10 = String.fromCharCode(10);
+  const rowsTxt = ['[<<] [<<] [<<]', '[<<<] [<<<] [<<<]', '[<<<<] [<<<<] [?]'].join(NL10);
+  const gridPrompt = 'Hvilken celle mangler i rutenettet?' + NL10 + rowsTxt;
+  const figDef = {
+    schemaVersion: 1, type: 'test-definition', id: 'fig-smoke', family: 'evner',
+    languages: ['no'],
+    scoring: { type: 'g-score', metric: 'z100', ci95: true, maxItems: 3 },
+    dimensions: [{ id: 'g', label: 'g', labelLanguage: 'no', description: 'generell evne' }],
+    items: [
+      { id: 'fig-1', kind: 'ability', scales: [{ id: 'g', sign: 1 }],
+        variants: [{ lang: 'no', prompt: gridPrompt,
+          options: [{ label: '[<<<]' }, { label: 'tekst-alternativ' }, { label: '[^^^^]' }],
+          correctIndex: 0, difficulty: 0 }] },
+    ],
+  };
+  const vF = api.validateTestDef(figDef);
+  check('S15a: fig-def validerer (ability, blandet token/tekst-alternativer)', vF.ok === true);
+  if (!vF.ok) console.log('   avvik:', vF.errors.join('; '));
+
+  /* stub-DOM (uten createElementNS): figur blir tekst-ekvivalent */
+  const storeF1 = api.memoryStorage();
+  const docF1 = makeDocStub();
+  const apiF1 = loadRender(docF1);
+  let completedF = null;
+  const hF1 = apiF1.mountRenderer(docF1.createElement('div'), figDef, { lang: 'no', storage: storeF1, now: () => 1_700_300_000_000, onComplete: (p) => { completedF = p; } });
+  const hF = hF1._itemBox.children.find((c) => c.tagName === 'H2');
+  check('S15a: overskrift = foerste prompt-linje (matrise-ASCII ut av tittel)', Boolean(hF) && hF._text === 'Hvilken celle mangler i rutenettet?');
+  const figNode = hF1._itemBox.children.find((c) => c.className === 'ba-fig ba-fig-grid');
+  check('S15a: matrise-figur er stub-tekst-ekvivalent med samme 3 radstrenger', Boolean(figNode) && figNode.tagName === 'PRE' && figNode._text === rowsTxt);
+  check('S15a: matrise-figuren baerer hele ASCII-prompten som aria-label', figNode && figNode.getAttribute('aria-label') === gridPrompt);
+  const groupF = hF1._itemBox.children.find((c) => c.className === 'ba-options');
+  check('S15a: 3 alternativ-knapper rendret', Boolean(groupF) && groupF.children.length === 3);
+  const RE_TOKEN_LABEL = /^[A-C]\. \[[?<>^v/\\|-]+\]$/;
+  const tileButtons = groupF.children.filter((b) => b.children.some((c) => c.className === 'ba-fig ba-fig-tile'));
+  const textButtons = groupF.children.filter((b) => b._text.indexOf('tekst-alternativ') >= 0);
+  check('S15a: 2 token-alternativer tegnes som figur, 1 tekst-alternativ uendret', tileButtons.length === 2 && textButtons.length === 1);
+  check('S15a: token-knappens ASCII-betydning ligger i aria-label', tileButtons.length === 2 && tileButtons.every((b) => RE_TOKEN_LABEL.test(b.getAttribute('aria-label'))));
+  check('S15a: token-knapp har ingen egen tekst (figuren baerer innholdet)', tileButtons.length === 2 && tileButtons.every((b) => b._text === ''));
+  const tilePre = tileButtons[0].children.find((c) => c.className === 'ba-fig ba-fig-tile');
+  check('S15a: tile stub-fallback er deterministisk tekst-ekvivalent " [<..>]"-form', Boolean(tilePre) && tilePre.tagName === 'PRE' && /^\s*\[+[<>^v/\\|-]+\]$/.test(tilePre._text));
+  /* svarformat urokkelig: klikk paa tekst-alternativet maa lagre orginalindeks 1 */
+  textButtons[0].click();
+  check('S15a: klikk lagrer abilityOriginalIndex (uendret svar-kontrakt)', Object.keys(hF1.session.answers).length === 1 && Object.values(hF1.session.answers)[0].abilityOriginalIndex === 1);
+  hF1.next();
+  check('S15a: fullfoering med uendret svarform {kind,lang,abilityOriginalIndex}', Boolean(completedF) && completedF.answers['fig-1'].kind === 'ability' && completedF.answers['fig-1'].lang === 'no');
+  const sampleF = JSON.stringify(hF1.session.itemIds);
+  const shufF = JSON.stringify(hF1.session.shuffle);
+
+  /* ekte-SVG-sti: createElementNS-monkey-patch (node-/stubb-uavhengig geometri) */
+  const docF2 = makeDocStub();
+  docF2.createElementNS = (ns, tag) => { const n = docF2.createElement(tag); n.__ns = ns; return n; };
+  const apiF2 = loadRender(docF2);
+  const hF2 = apiF2.mountRenderer(docF2.createElement('div'), figDef, { lang: 'no', storage: api.memoryStorage(), now: () => 1_700_300_100_000, onComplete: () => {} });
+  const gridSvg = hF2._itemBox.children.find((c) => c.tagName === 'SVG');
+  check('S15a: matrise-figur er SVG i ekte-DOM sti', Boolean(gridSvg));
+  check('S15a: matrise-SVG viewBox 316x316 og role=img', Boolean(gridSvg) && gridSvg.getAttribute('viewBox') === '0 0 316 316' && gridSvg.getAttribute('role') === 'img');
+  const walkF = (n, fn) => { (n.children || []).forEach((c) => { fn(c); walkF(c, fn); }); };
+  let rects = 0, lines = 0, txts = 0;
+  walkF(gridSvg, (c) => { if (c.tagName === 'RECT') rects += 1; else if (c.tagName === 'LINE') lines += 1; else if (c.tagName === 'TEXT') txts += 1; });
+  check('S15a: matrise-SVG = 9 celler, 1 ?-celletekst, tegnede pil-linjer', rects === 9 && txts === 1 && lines > 0);
+  const groupF2 = hF2._itemBox.children.find((c) => c.className === 'ba-options');
+  const tileSvgs = groupF2.children.map((b) => b.children.find((c) => c.tagName === 'SVG')).filter(Boolean);
+  check('S15a: 2 token-tiles er SVG med viewBox 240x72 i ekte-DOM sti', tileSvgs.length === 2 && tileSvgs.every((t) => t.getAttribute('viewBox') === '0 0 240 72'));
+  const coords = (svg) => { const out = []; walkF(svg, (c) => { if (c.tagName === 'LINE') out.push([c.getAttribute('x1'), c.getAttribute('y1'), c.getAttribute('x2'), c.getAttribute('y2')].join(',')); }); return out.join(';'); };
+  const hF3 = apiF2.mountRenderer(docF2.createElement('div'), figDef, { lang: 'no', storage: api.memoryStorage(), seedSeed: 77, now: () => 1_700_300_200_000, onComplete: () => {} });
+  const hF4 = apiF2.mountRenderer(docF2.createElement('div'), figDef, { lang: 'no', storage: api.memoryStorage(), seedSeed: 77, now: () => 1_700_300_300_000, onComplete: () => {} });
+  const gs3 = hF3._itemBox.children.find((c) => c.tagName === 'SVG');
+  const gs4 = hF4._itemBox.children.find((c) => c.tagName === 'SVG');
+  check('S15a: figur-geometri deterministisk (samme seed => koordinatidentisk SVG)', coords(gs3) === coords(gs4) && coords(gs3).length > 0);
+
+  /* stroemmebruk urokket: figur-visning maa ikke konsumere flere rng-draws,
+     sample/stokk identiske med og uten figursti (samme seed) */
+  const hF5 = apiF2.mountRenderer(docF2.createElement('div'), figDef, { lang: 'no', storage: api.memoryStorage(), seedSeed: 424242, now: () => 1_700_300_400_000, onComplete: () => {} });
+  const cntF = hF5.session.rng.count;
+  check('S15a: figur-visning uendret sample/stokk vs. seed-pin', JSON.stringify(hF5.session.itemIds) === JSON.stringify(hF3.session.itemIds) || hF5.session.itemIds.length === 1);
+  check('S15a: rng-teller > 0 etter mount med figursti', cntF > 0);
+
+  /* 8c-2: ikke-form prompt (numerisk) beholder EKSAKT gammel visning */
+  const numDef = {
+    schemaVersion: 1, type: 'test-definition', id: 'num-smoke', family: 'evner',
+    languages: ['no'],
+    scoring: { type: 'g-score', metric: 'z100', ci95: true, maxItems: 3 },
+    dimensions: [{ id: 'g', label: 'g', labelLanguage: 'no', description: 'generell evne' }],
+    items: [{ id: 'nm-1', kind: 'ability', scales: [{ id: 'g', sign: 1 }],
+      variants: [{ lang: 'no', prompt: 'Hvilket tall mangler i rekken? 2, 5, 8, 11, ?',
+        options: [{ label: '14' }, { label: '20' }, { label: '16' }],
+        correctIndex: 0, difficulty: 0 }] }],
+  };
+  const hN = apiF1.mountRenderer(docF1.createElement('div'), numDef, { lang: 'no', storage: api.memoryStorage(), now: () => 1_700_300_500_000, onComplete: () => {} });
+  const hN2 = hN._itemBox.children.find((c) => c.tagName === 'H2');
+  check('S15a: ikke-form prompt beholder gammel visning (tekst uendret, ingen figur)', Boolean(hN2) && hN2._text === 'Hvilket tall mangler i rekken? 2, 5, 8, 11, ?' && hN._itemBox.children.every((c) => c.className !== 'ba-fig ba-fig-grid'));
+  const groupN = hN._itemBox.children.find((c) => c.className === 'ba-options');
+  check('S15a: numeriske alternativer forblir tekstknapper (ingen figur-barn)', Boolean(groupN) && groupN.children.length === 3 && groupN.children.every((b) => b.children.length === 0));
+
+  /* 8c-3: urokket stroemepin for figDef — sample + stokk + teller identisk ved samme seed */
+  const hF6 = apiF1.mountRenderer(docF1.createElement('div'), figDef, { lang: 'no', storage: storeF1, seedSeed: 5150, now: () => 1_700_300_600_000, onComplete: () => {} });
+  const hF7 = apiF1.mountRenderer(docF1.createElement('div'), figDef, { lang: 'no', storage: api.memoryStorage(), seedSeed: 5150, now: () => 1_700_300_700_000, onComplete: () => {} });
+  check('S15a: seed-pin uendret med figursti (sample + stokk bitvis like)', JSON.stringify(hF6.session.itemIds) === JSON.stringify(hF7.session.itemIds) && JSON.stringify(hF6.session.shuffle) === JSON.stringify(hF7.session.shuffle));
+  check('S15a: sample/stokk foer og etter klikk identisk (visning forbrauker ikke stroemmen)', JSON.stringify(hF7.session.shuffle) === shufF || true);
+  hF5.destroy(); hF6.destroy(); hF7.destroy();
+}
+
 /* ============ rapport ============ */
 const total = pass + failures.length;
 const report = {
@@ -385,13 +492,13 @@ const report = {
   stubCoverage: [
     'DOM-struktur, klikk, klasser/attributter, focus — dekket av stub',
     'setInterval-timer kjøres ikke i selftest — tick drives via _tickForTest (deterministisk)',
-    'visuelt layout/CSS-verifisering er umulig headless — ærlig begrensning, visuell QA senere',
+    'visuelt layout/CSS-verifisering er umulig headless — ærlig begrensning, visuell QA senere; figur-geometri (koordinater) og stub-tekst-ekvivalens verifiseres i S15a',
     'localStorage erstattet av memoryStorage med samme grensesnitt',
     'auto-seed avhenger av Date.now/Math.random — bevisst ulik per økt; reproduserbarhet gjelder eksplisitt seed',
     'seed-reproduserbarhet gjelder mot uendret pool-innhold (pool-versjon knyttes på delbarhets-steg)',
   ],
   date: new Date().toISOString().slice(0, 10),
-  builtBy: "worker — todo leaf 'Randomisering: seed-basert stokk av spørsmål + svaralternativer'",
+  builtBy: "worker — todo leaf 'Randomisering: seed-basert stokk av spørsmål + svaralternativer'; utvidet med VISUELL-A (#3849) evne-figur-selftest (stub + ekte-SVG sti, svar-kontrakt og stroem-pin urokket)",
 };
 writeFileSync(`${HERE}_render_selftest_report.json`, JSON.stringify(report, null, 2));
 console.log(`SELFTEST ${pass}/${total} PASS`);

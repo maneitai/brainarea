@@ -43,3 +43,6 @@ next-env.d.ts
 # worker-artefakter: speil-tre og pycache holdes ut av repoet
 /_delt/
 __pycache__/
+
+# [VISUELL-A #3849] sandbox-kladd for patch-skript/screenshots (worker-scrap)
+/tmp/

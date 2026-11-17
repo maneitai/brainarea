@@ -1,0 +1,23 @@
+{
+  "task": "[BYGG][VISUELL-D] Resultatside visuell signatur: resultat-kort (testnavn + band-målestreng) + delingsseksjon, playwright-til-resultat, selftest, build, commit/push/deploy",
+  "date": "2026-11-17",
+  "context": "todo-run TR-5A7A9A85F00F (steg 4 av 5 i TR-33F04462C5CE). Commit 549ca00 på main (maneitai/brainarea).",
+  "status": "DONE",
+  "levert": {
+    "identitetslinje": "ba-run-title (testnavn, f.eks. PERSONA) rendres øverst i resultatet, før h2 'Ditt resultat' — verifisert titleOrder=0 i ekte DOM.",
+    "band_målestreng": "SVG-målestreng (viewBox 0 0 320 34): track 304, fill-bredde proporsjonal med skår i skalaens omfang, midtlinje ved 160 (halveis), caption '<skår> % av skalaens omfang'. Språket er skala-beskrivende — antyder verken normer eller persentiler (beslutning 13–14). Gate: band tegnes kun ved scoringType 'trait' med ikke-klippet, ikke-notComputable composite (bandGaugeData-gate i selftets S15c-3).",
+    "rapportgraf": "Eksisterende SVG-dimensjonsgraf (#3790-modulen) vises fortsatt under signaturen (reportSvgPresent=true live).",
+    "delingsseksjon": "ba-run-share: merkevarekort (Brainarea + 'Tester du kan stole på — skåret lokalt, ingenting sendt.' NO / egen EN-tekst) + 3 ekte rute-lenker (persona / relasjoner / nevrodiversitet) per locale, aldri lenke uten mål (shareHref-gate).",
+    "touchmaal": ".ba-run-share-links a padding .7rem 0 => målt 44.1px klikk-høyde i ekte nettleser (≥44px-kravet).",
+    "i18n": "ui.run.share.* + band-tekster EN/NO wired; ingen hardkodede strenger i laget."
+  },
+  "verifikasi": {
+    "selftest": "S15c-suiten 37/37 (fixtur-def, e2e stub-DOM over out/_app-kjeden, metrisk ærlighet-gate, regresjon, kilde-konsistens). Runner-driveren utvidet: 497/497.",
+    "regresjon": "engine-selftest, i18n, scoring, attention, integrasjon alle grønne etter fix av ensureFocusRing null-head-bug (fanges av engine-testene).",
+    "build": "byte-deterministisk dobbelt-bygg (diff tomt); GitHub Actions build #44132674569 = success (9s).",
+    "deploy": "pages-run 44132771764 = success; live-verifisering 2026-11-17: out/_app/run.js på https://maneitai.github.io/brainarea/ inneholder ba-run-signaturen (16 ba-run-share-treff, padding .7rem 0, alle i18n-nøkler).",
+    "live_e2e": "Ekte Chromium-nettleser mot https://maneitai.github.io/brainarea/persona/ : full 50-items-gjennomløkking til resultat. JSON: title=PERSONA (order 0), band viewBox 0 0 320 34, track 304 / fill 109 / midtlinje 160, caption '36 % av skalaens omfang', share-kort med 3 lenker [/brainarea/persona/, /brainarea/relasjoner/, /brainarea/nevrodiversitet/] høyder [44.1,44.1,44.1], ERRS=[] (null JS-feil). Skjermbilder: tmp/vd_live_top.png, tmp/vd_live_share.png (kopiert til _delt)."
+  },
+  "avvik_open": [],
+  "deploy": "Site-innhold uendret av rapport-commit; pages var allerede deployed og live-verifisert. Build-workflow kjører på push (gate)."
+}

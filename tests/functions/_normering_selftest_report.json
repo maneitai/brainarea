@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "step": "[BYGG] FASE 1: Normerings-endpoint (#3724)",
   "selftest": "functions/normering.js v1.0.0",
   "total": 107,

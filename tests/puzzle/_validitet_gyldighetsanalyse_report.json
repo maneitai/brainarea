@@ -1,0 +1,19 @@
+{
+  "module": "brainarea",
+  "todo": "#3767",
+  "harness": "_validitet_gyldighetsanalyse.mjs v1.0.0",
+  "protocol": "_validitet_gyldighetsanalyse_protokoll.json v1.0.0",
+  "contract": "tests/puzzle/_puzzle_design_v1_1.md § 3",
+  "runAt": "2026-11-17T05:39:53.387Z",
+  "arm": "syntetisk-selftest",
+  "selftestsPassed": 52,
+  "selftestsFailed": 0,
+  "fails": [],
+  "answer3767": "IKKE BESVARELSBAR MED TALL I DAG — G1–G4 (protokoll.expectedDataGaps) må lukkes først i FASE 4-livssyklusen. Protokollen er forhåndsregistrert; pipelinen kjører VERBATIM mot KV-eksport når dataene finnes (arm: --data). FASE 2-skåringsgyldigheten (F3) forblir det eneste gyldighetstallet til da: standard-mode-skåren er monoton transformasjon av highscore; konstruktvaliditeten avgjøres i DETTE steget når dataene fins.",
+  "dataGaps": {
+    "G1": "NORMERING_KV finnes ikke i dag — github.io lagrer ingenting (stored:false-kontrakten i functions/normering.js).",
+    "G2": "itemIds er påkrevd i lagret rad (selftest B8); evne-normering-payload inneholder dem ikke i dag.",
+    "G3": "cohortKey droppes av dagens POST-gramatikk (selftest H2) — endpoint må akseptere og persistere feltet.",
+    "G4": "evne-siden har ingen normerings-POST-wiring (grep 2026-11-17)."
+  }
+}

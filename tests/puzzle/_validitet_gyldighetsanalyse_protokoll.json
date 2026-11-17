@@ -1,0 +1,79 @@
+{
+  "module": "brainarea",
+  "contract": "tests/puzzle/_puzzle_design_v1_1.md § 3 (#3767-gyldighetspipeline, B3-INNARBEIDET)",
+  "todo": "#3767",
+  "version": "1.0.0",
+  "kind": "PRE-REGISTERED Sampling & Analysis Contract",
+  "preRegisteredAt": "2026-11-17",
+  "status": "ikke kjørt på ekte data (se runRule) — alle valg under er låst FØR data finnes",
+  "preRegistrationNote": "Formålet med forhåndsregistrering: ingen utvalgsregel eller terskel kan justeres etter at dataene er sett. Etter første kjøring på ekte data låses protokollversjonen; endringer krever ny versjon + ny 3-VEIS.",
+  "question": "Korrelasjon puzzle-theta × evne-theta på parvis responsdata — viser standard-mode-skåren konstrukt-signal (felles latent evne), eller er den bare highscore-lignende karakterisering? FASE 2-skåringsgyldigheten (F3, report/2026-11-16-fase-puzzle-skaringsgyldighet.md) beviste det siste ved fast kurve: skåren er en monoton transformasjon av highscore. Dette korrelasjonssteget er stedet konstruktvaliditeten faktisk avgjøres.",
+  "population": "Ekte parvis respondens fra normering-endpointen (functions/normering.js, NORMERING_KV-roteren) — kun fullførte standard-mode-sesjoner. Endless nøytraliseres konstruksjonsmessig: buildNormeringPayload kaster på endless-state.",
+  "inclusionRules": {
+    "R1-same-unit": {
+      "rule": "Både puzzle-rad og evne-rad bærer samme kohort-nøkkel (cohortKey): en klientsidig, tilfeldig generert par-identifikator som sendes i EKSTRA-feltet i begge POSTene (testId 'puzzle-v1' og evne-spor). Ingen enhetsidentifikator finnes i dag; beslutning 9 (anonymitet) er urokkelig — cohortKey genereres per parring i klienten, lagres bare i de to radene som skal matches, bærer ingen HVEM-semantikk (ikke e-post, ikke IP, ikke cookie, ikke fingeravtrykk).",
+      "gap": "KREVER FASE 4-ENDPUNKTSUTVIDELSE: validatePostPayload + KV-nøkkel må akseptere/persistere cohortKey (valgfritt felt, maks 64 tegn, samme TEST_ID_RE-regel). Uten dette feltet er parring umulig per design og analysen forblir ikke-besvarelsesbar.",
+      "preRegisteredDecision": "Et cohortKey-felt i POST-et er en konservativ, anonymitetsbevarende utvidelse: feltet genereres og huskes bare klientlokalt i parings-sesjonen (puzzle-spill og evne-spiller i samme side-sesjon), aldri persistert i localStorage eller eksportert. Alternativet (tid-nærhetsheuristikk alene) forkastes FORHÅNDS: det matcher fremmede uten identitet og gir ukontrollert paringsfeilrate."
+    },
+    "R2-timeWindow": {
+      "rule": "|t_puzzle - t_evne| <= 7 dager (604800 s), begge retninger; 't' er radens at-tidsstempel (endpoint-satt; KV-nøkkelen bærer ms).",
+      "interpretationNote": "Kontrakt v1.1 §3 sier «tidsvinduet ≤ 7 dager begge» — tolket (PRE-REGISTRERT) som maks 7 døgns mellomrom mellom de to sesjonene i paret, uavhengig av rekkefølge."
+    },
+    "R3-languagePair": {
+      "rule": "language eksakt lik i begge rader (no==no, en==en). Tverrspråklige par (no/en) ekskluderes: 1PL-b-verdiene er pool-sameinte, men språket dokumenteres som covariat — språkmiks tillates ikke i v1-analysen; separat per-språk-rapport er obligatorisk."
+    },
+    "R4-testCoverage": {
+      "rule": "Puzzle-rad: testId 'puzzle-v1', 16/16 besvart. Evne-rad: testId i whitelist ['evne-t1-matrise','evne-t2-numerisk','evne-t3-verbal','evne-t4-romlig','evne-t5-sekvens'], alle sesjonens itemIds besvart (ubesvart rad = ekskludert, ingen delskår). Hvilket evne-spor som er med i paret dokumenteres i raden (itemIds).",
+      "gap": "KREVER FASE 4-WIRING: evne-siden har i dag ingen normerings-POST (grep-verified 2026-11-17). Uten evne-wiring finnes ingen motpart-rader.",
+      "gap2": "KREVER itemIds i lagret rad [G2]: evne-payloadet inneholder i dag bare answers-indeksene, ikke itemIds-innslaget; uten itemIds kan evne-θ ikke rekonstrueres fra en lagret rad (puzzle-siden er deterministisk: STANDARD_FLOOR_IDS). Endpoint-utvidelsen (samme som cohortKey) må lagre itemIds."
+    },
+    "R5-completion": {
+      "rule": "Begge sesjoner fullførte (ikke avbrutt); puzzle-kravet state.finished ligger allerede i payloadet og verifiseres via answers-lengde 16."
+    }
+  },
+  "exclusionRules": {
+    "order": ["X1-attention", "X2-degenerate", "X3-endless", "X4-duplicates", "X5-timefloor"],
+    "X1-attention": "attention.js-flagg (straightlining/tidsbruk) per sesjon ekskluderer paret NÅR per-item-tidslinje finnes i lagret rad (endpoint-evolusjon); i dag lagres kun durationSec — X1 applikeres når timeline-feltet finnes, ellers trer X5-gulvet.",
+    "X2-degenerate": "θ kan ikke estimeres (alle-feil, alle-riktig, tak) på noen av de to sidene → parret ekskluderes. Mekanisk veldefinert: estimateTheta1PL returnerer theta null med reason; correctCount 0 eller 16.",
+    "X3-endless": "testId uten whitelist eller endless-lekkasje: kan ikke oppstå i data (buildNormeringPayload kaster på endless-state) — ekskludering dokumenteres likevel hvis en rad bryter.",
+    "X4-duplicates": "Samme cohortKey + samme testId innen vinduet → kun første-at beholder (AT-orden), resten droppes; duplikat-antall rapporteres.",
+    "X5-timefloor": "durationSec under oppmerksomhets-gulvet per test (QC-gate-tabell, _qc_result.json: puzzle-standard 24 s; evne t1–t3 75 s; t4/t5 60 s) → ekskludert."
+  },
+  "statistics": {
+    "primary": "Pearson r mellom θ_puzzle og θ_evne (begge fra EKTE scoring.js 1PL MLE over rekonstruerte responsmønstre).",
+    "secondary": [
+      "Spearman ρ (rangeringsrobust)",
+      "rCount: Pearson(råscore count_puzzle) × θ_evne som falsifiserings-kryss mot F3-egenskapen (r og rCount skal bevege seg likt; |r - rCount| > 0.15 rapporteres som avvik)",
+      "Fisher-z 95% CI på r (n-avhengig)",
+      "scatter bevares (θθ-punkter) i analyse-output"
+    ],
+    "interpretationThresholds": {
+      "positive": "r >= 0.50 og CI-nedre grense >= 0.30 → konstrukt-signal: skåren er mer enn highscore.",
+      "weak": "0.30 <= r < 0.50 → svakt signal; oppfølging kreves (utvalg, evne-variant-sammenslåing) før noen påstand.",
+      "none": "r < 0.30 → intet signal: standard-mode-skåren forblir highscore-lignende karakterisering; delekortet er allerede tallløst (B7) og resultatspråket holder not-normed-linjen.",
+      "minN": {
+        "full": 50,
+        "exploratory": 30,
+        "cannotAnswer": "< 30",
+        "note": "FULL tolkning krever n >= 50 gyldige par (PRE-REGISTRERT grense; begrunnelse: Fisher-z CI på r ved n=50, r=0.5 er ca. [0.27,0.68] — bredt nok til å skille 0.30-grensen). 30–49 = utforskende (rapporteres, brukes aldri som påstand). n < 30 = «kan ikke besvares» (kun deskriptiv output)."
+      }
+    }
+  },
+  "runRule": {
+    "who": "FASE 4-livssyklusen: brainarea-worker under [VERIFISER FASE 4]-merket, kjører pipeline-skriptet verbatim (tests/puzzle/_validitet_gyldighetsanalyse.mjs --data <kv_eksport.json>)",
+    "when": "FØRSTE kjøring på ekte data tidligst 30 dager etter at (a) endpoint er deployet med NORMERING_KV + cohortKey/itemIds-utvidelse og (b) evne-wiring er live; re-kjøringskadens kvartalsvis; 30-dagers-gulvet er PRE-REGISTRERT (samle-vindu).",
+    "data": "KV-eksport som JSON-array av rader i endpoint-radform (testId, language, at, answers, itemIds, durationSec, demographics?, cohortKey). Klient-nivå: ingen identifikator berøres."
+  },
+  "privacy": "Analysen opererer bare på KV-eksport av anonyme sesjons-rader og leser kun whitelist-feltene (ROW_FIELDS_OK i harnessen). Ingen identifikator leses, produseres eller behandles; beslutning 9 (ingen identitet) er urokkelig i hele kjeden. cohortKey er klient-generert par-nøkkel, ikke enhetsidentitet.",
+  "expectedDataGaps": {
+    "G1-endpointNotDeployed": "NORMERING_KV-binding finnes ikke i dag: på github.io lagres ingenting (stored:false-kontrakten) — ingen rader finnes i dag.",
+    "G2-itemIdsNotStored": "itemIds mangler i normering-payloadet i dag (evne-siden); uten dem er evne-θ ikke rekonstruerbar fra en rad (selftest B8 i harnessen setter kontrakten).",
+    "G3-cohortKeyNotImplemented": "cohortKey-feltet finnes ikke i POST-gramatikken ennå (selftest H2 beviser at feltet droppes) — endpoint-utvidelse kreves før parring.",
+    "G4-evneWiringMissing": "Ingen normerings-POST fra evne-siden ennå (grep-verified 2026-11-17)."
+  },
+  "embeddedAnswer3767": "IKKE BESVARELSBAR MED TALL I DAG — G1–G4 må lukkes først. Protokollen + pipeline + selftest (syntetisk data) er levert, slik at analysen kan kjøres ferdig samme dag dataene finnes — ingen analysdesign-tvil kan utsette FASE 4-korrelasjonssteget.",
+  "verdictLedger": [
+    "CANNOT-ANSWER (i dag, før FASE 4-livssyklus lukker G1–G4)",
+    "POSITIVE / WEAK / NONE (når data fins — per minN og terskler over)"
+  ]
+}

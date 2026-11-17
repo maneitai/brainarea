@@ -1,0 +1,1389 @@
+{
+  "schemaVersion": 1,
+  "id": "nd-adhd-dyp-pool-da1",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "da1",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "da1",
+      "label": "Oppmerksomhet og eksekutive funksjoner",
+      "labelLanguage": "no",
+      "description": "Fokushold, distraksjoner, hukommelse i hverdagen, oppstartsmotstand og organisering, selvrapportert."
+    }
+  ],
+  "items": [
+    {
+      "id": "da-0001",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg bytter over til noe annet før oppgaven jeg holdt på med er ferdig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0002",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Tankene mine stikker av fra det jeg leser, og jeg må finne linjen igjen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0003",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tapper fokus når en oppgave varer lengre enn første kaffepause.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0004",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg mister plasseringen i oppgaven hver gang noen avbryter meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0005",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Instruksjoner med flere steg forsvinner underveis før jeg er halvveis.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0006",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg prøver å gjøre to ting samtidig, og blir dårlig ferdig med begge.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0007",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trenger stillhet rundt meg for å holde tanken på én linje.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0008",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Lyd fra naboleiligheten trenger inn i hodet mitt når jeg prøver å konsentrere meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0009",
+      "kind": "likert",
+      "lang": "no",
+      "text": "En åpen fane merker jeg før jeg merker det jeg egentlig skal gjøre.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0010",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Telefonen skal bare sjekkes en gang, og en halvtime er borte.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0011",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Mine egne tanker tar over når det er rolig rundt meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0012",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Bakgrunnsstøy og samtaler ved nabobordet drar oppmerksomheten min ut av teksten.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0013",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg plukker opp ting som ligger på veien til det jeg egentlig skulle hente.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0014",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Små lyder som summing eller drypp trekker tankene mine ut av det jeg gjorde.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0015",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg leter etter nøklene mine oftere enn jeg liker å innrømme.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0016",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Uten handleliste forsvinner halvparten av det jeg skulle ha kjøpt på veien.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0017",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg merker navnet til en ny person, og det glipper innen neste samtale.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0018",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Maten jeg setter på ovnen blir stående til lukten minner meg på den.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0019",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg glemmer å ta med det jeg la fremme foran døren kvelden før.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0020",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Meldinger jeg planlegger å svare på blir liggende svart i flere dager.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0021",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kjenner igjen ansiktet, men må be om navnet igjen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0022",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Forberedelsen tar lengre tid enn det jeg egentlig skulle gjøre.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0023",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Store oppgaver venter på rett tid, og rett tid kommer ikke av seg selv.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0024",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg må bygge meg opp med små gjøremål før den store begynner.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0025",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Uten en avtale med meg selv om starttid kommer jeg ikke i gang.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0026",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg åpner oppgaven og leser den, og lukker den igjen til senere.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0027",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Starten på kjedelige gjøremål drar jeg ut til det meste av dagen er gått.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0028",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trenger en frist fra andre for å sette punktum for oppstartsfasen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0029",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Mine prosjekter ligger i mapper med navn jeg ikke finner igjen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0030",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Notatene mine spres over flere apper, og ingen av dem har hele bildet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0031",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Pulten min samler hauger av ting jeg planlegger å sortere senere.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0032",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Planen min holder til tirsdag, deretter leverer uka selv.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0033",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kjøper oppbevaring i stedet for å gi tingene mine et fast sted.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0034",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Prioritering av tre like viktige oppgaver tar lengre tid enn en av dem.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0035",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Først tar jeg de lystbetonte gjøremålene, de viktige venter til det blir alvor.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0036",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Underveis i lange prosjekter mister jeg tråd og må finne fremgangsmåten på nytt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0037",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Siste detaljer i en oppgave er det som blir liggende lengst hos meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0038",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Etter en pause i en oppgave må jeg bygge meg inn i den igjen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0039",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Tidsbudsjettet mitt for en gjøring stemmer bare når gjøringen er den eneste.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "da-0040",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Påminnelinger og lapper på døren er det som holder fristene mine i live.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "da1",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

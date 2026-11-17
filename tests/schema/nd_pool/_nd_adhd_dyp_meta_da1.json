@@ -1,0 +1,317 @@
+{
+  "metaVersion": 1,
+  "id": "nd-adhd-dyp-pool-da1",
+  "date": "2026-11-17",
+  "items": [
+    {
+      "id": "da-0001",
+      "dimension": "da1",
+      "theme": "da1-t1",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-1-familien (avslutning av oppgaver); vinkel: bryte av halvveis i stedet for å la siste detalj gå.",
+      "nearNoteEn": "Anchor item 1 family (wrapping up tasks); angle: breaking off midway rather than skipping the final details."
+    },
+    {
+      "id": "da-0002",
+      "dimension": "da1",
+      "theme": "da1-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0003",
+      "dimension": "da1",
+      "theme": "da1-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0004",
+      "dimension": "da1",
+      "theme": "da1-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0005",
+      "dimension": "da1",
+      "theme": "da1-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0006",
+      "dimension": "da1",
+      "theme": "da1-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0007",
+      "dimension": "da1",
+      "theme": "da1-t1",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0008",
+      "dimension": "da1",
+      "theme": "da1-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0009",
+      "dimension": "da1",
+      "theme": "da1-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0010",
+      "dimension": "da1",
+      "theme": "da1-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0011",
+      "dimension": "da1",
+      "theme": "da1-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0012",
+      "dimension": "da1",
+      "theme": "da1-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0013",
+      "dimension": "da1",
+      "theme": "da1-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0014",
+      "dimension": "da1",
+      "theme": "da1-t2",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0015",
+      "dimension": "da1",
+      "theme": "da1-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0016",
+      "dimension": "da1",
+      "theme": "da1-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0017",
+      "dimension": "da1",
+      "theme": "da1-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0018",
+      "dimension": "da1",
+      "theme": "da1-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0019",
+      "dimension": "da1",
+      "theme": "da1-t3",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-3-familien (huske forpliktelser); vinkel: ting pakket og lagt fremme i går, men etterlatt hjemme i dag.",
+      "nearNoteEn": "Anchor item 3 family (remembering obligations); angle: things set by the door last night, left behind today."
+    },
+    {
+      "id": "da-0020",
+      "dimension": "da1",
+      "theme": "da1-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0021",
+      "dimension": "da1",
+      "theme": "da1-t3",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0022",
+      "dimension": "da1",
+      "theme": "da1-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0023",
+      "dimension": "da1",
+      "theme": "da1-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0024",
+      "dimension": "da1",
+      "theme": "da1-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0025",
+      "dimension": "da1",
+      "theme": "da1-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0026",
+      "dimension": "da1",
+      "theme": "da1-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0027",
+      "dimension": "da1",
+      "theme": "da1-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0028",
+      "dimension": "da1",
+      "theme": "da1-t4",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0029",
+      "dimension": "da1",
+      "theme": "da1-t5",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-2-familien (organisering av oppgaver); vinkel: filstruktur som kollapser under egne navn.",
+      "nearNoteEn": "Anchor item 2 family (organizing tasks); angle: a file structure that folds under its own naming."
+    },
+    {
+      "id": "da-0030",
+      "dimension": "da1",
+      "theme": "da1-t5",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0031",
+      "dimension": "da1",
+      "theme": "da1-t5",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0032",
+      "dimension": "da1",
+      "theme": "da1-t5",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-2-familien (organisering av oppgaver); vinkel: ukeplan som holder kort og kollapser midt i uka.",
+      "nearNoteEn": "Anchor item 2 family (organizing tasks); angle: a weekly plan that holds briefly and folds midweek."
+    },
+    {
+      "id": "da-0033",
+      "dimension": "da1",
+      "theme": "da1-t5",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0034",
+      "dimension": "da1",
+      "theme": "da1-t5",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0035",
+      "dimension": "da1",
+      "theme": "da1-t5",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0036",
+      "dimension": "da1",
+      "theme": "da1-t6",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0037",
+      "dimension": "da1",
+      "theme": "da1-t6",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-1-familien (avsluttede detaljer); vinkel: det som blir liggende lengst er nettopp de siste detaljene.",
+      "nearNoteEn": "Anchor item 1 family (finishing details); angle: what lingers longest is exactly the final details."
+    },
+    {
+      "id": "da-0038",
+      "dimension": "da1",
+      "theme": "da1-t6",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0039",
+      "dimension": "da1",
+      "theme": "da1-t6",
+      "asrsNear": false
+    },
+    {
+      "id": "da-0040",
+      "dimension": "da1",
+      "theme": "da1-t6",
+      "asrsNear": true,
+      "nearNoteNo": "Anker-3-familien (huske forpliktelser); vinkel: kompensasjon gjennom ytre påminnelser i stedet for egen hukommelse.",
+      "nearNoteEn": "Anchor item 3 family (remembering obligations); angle: compensation through external reminders rather than own memory."
+    }
+  ],
+  "boardLeaf": "#3826 [3-VEIS][BYGG] FASE 2 ADHD-dyp pool del 1: DA1 Oppmerksomhet/eksekutivt — 40 originale items (worker TR-50A1A38A4C89).",
+  "spec": "tests/schema/_nd_itemspec_spec.json (nd-itemspec-v1, PROPOSED; GJELDENDE ved #3813)",
+  "licenseBasis": "DOC-C8C02AD272 (ENDLIG VERDIKT, #3732): ASRS v1.1 6Q er ADHD-anker i live-def (#3760-ark), IKKE i denne poolen; poolen inneholder null ASRS-gjengivelse. AQ/RAADS-R gjengis aldri; DSM-5-kriterietekst aldri gjengitt eller parafrasert — items er forfattet fra DA1-konstruktbeskrivelsen i spec-en. DIVA-5/CAADID/Conners/SRS-2/CAT-Q brukt som mal eller kilde: nei. #3826-ekstra forbud: ingen item omfatter ekstrem risiko/selvskade/medisinering (programmert token-skann i assert_authoring og selftest).",
+  "authoringRule": "Første-person presens, ett utsagn, 8–14 ord, ingen dobbeltspørsmål, ingen absolutter (alltid/aldri/always/never), ingen diagnostisk språkbruk, ingen ekstremrisiko/selvskade/medisinering. NO og EN separat forfattet med konstrukt-ekvivalens: samme id-rekkefølge, samme tema per id; tekstene er IKKE direkte oversettelser. Programmatisk 5-gram-kryss mot triage-poolen (def-nd-triage-pool.{no,en}.json), 0 sammenfall.",
+  "optionsSource": "def-ipip50-big5.<lang>.json items[*].options — byte-identisk per fil (verifisert i selftest S5).",
+  "keyingRule": "Alle skala-referanser sign 1 mot skala da1 — screening i én retning; NG-4-avviket (ingen reverse-keyed items) er dokumentert i spec-en engineGaps og arvet fra triage-poolens konvensjon.",
+  "themeLabels": {
+    "1": {
+      "no": "Fokushold og gjennomføring av én ting",
+      "en": "Holding focus and completing one thing"
+    },
+    "2": {
+      "no": "Distraksjons-sårbarhet i hverdagen",
+      "en": "Distractibility in daily situations"
+    },
+    "3": {
+      "no": "Hverdagshukommelse",
+      "en": "Everyday memory"
+    },
+    "4": {
+      "no": "Oppstartsmotstand",
+      "en": "Getting-started resistance"
+    },
+    "5": {
+      "no": "Organisering av ting og tid",
+      "en": "Organising things and time"
+    },
+    "6": {
+      "no": "Oppfølging over tid",
+      "en": "Follow-through over time"
+    }
+  },
+  "dimensionLabel": {
+    "no": "Oppmerksomhet og eksekutive funksjoner",
+    "en": "Attention and executive functions"
+  },
+  "dimensionLabelNote": "NO-etikett er byte-låst til deepPoolDecision.adhdThemes[0].name i spec-en; EN-etikett er separat forfattet og låst her",
+  "themeCounts": {
+    "da1-t1": 7,
+    "da1-t2": 7,
+    "da1-t3": 7,
+    "da1-t4": 7,
+    "da1-t5": 7,
+    "da1-t6": 5
+  },
+  "asrsNearPolicy": "Flaggede da-items er ikke kloninger — de markerer anker-familienær vinkel (f1 avslutning, f2 organisering, f3 huske-forpliktelser) slik at FASE 4-utvelgelsen (trekk 8 av 40 til live-deffen) kan velge med omtanke mot ASRS-blokkens formuleringer; blokken bor per scoringContracts.asrsAnchorShape i live-deffen, aldri i poolen.",
+  "provenance": {
+    "authoringDate": "2026-11-17",
+    "originality": "Alle 80 tekster forfattet fra spec-en deepPoolDecision.adhdThemes[0]-konstruktet — ingen ekstern skala, ingen formell oversettelse, ingen scraping, ingen DSM-parafrase.",
+    "engineFactsVerified": [
+      "scoring.js trait-sti: normalized per skala, komposit over skalaer med data (verifisert i itemspec-provenance og re-kjørt i selftest S7/S8)",
+      "render.js sessionSizeFor(likert) => alle items shuffles (verifisert i selftest S14)"
+    ]
+  },
+  "holes": {
+    "closes": "ADHD-dyp del 1 (d1): 40 items levert. ADHD-dyp samlet står i 40/100 — d2 hyperaktivitet/impulsivitet (#3827, ~35) og d3 hverdagsfungering/konsekvens (#3828, ~25) gjenstår; live-def og ASRS-forankring følger ved brettets del 3 per poolDesign.deepPools liveDefPlan.",
+    "opens": "Samlet ADHD-dyp-pool (def-nd-adhd-dyp-pool.<lang>.json per defFilePlan.naming) materialiseres ved #3828; kryssles-øster (kryssles mot lisensbekreftelsen og itemspec) følger brettet."
+  }
+}

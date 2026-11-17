@@ -19,9 +19,10 @@
  * - Determinisme: samme inndata gir byte-lik SVG. Ingen klokke, ingen rng, ingen DOM.
  *   PNG-raster (librsvg via sharp) er deterministisk per raster-vert; PNG-md5
  *   assertes ikke CI-vs-lokal (raster-vertssjikt dokumentert i verdict).
- * - HTML-meta: ogMetaLines() leverer meta-linjene (og:image + dim/type/alt,
- *   twitter:card summary_large_image + tittel/desc/alt). Absolutte URL-er
- *   (canonical-kontrakten), image-path under assets/og/.
+ * - HTML-meta: ogMetaLines() leverer meta-linjene (og:image + dim/type/alt).
+ *   Absolutte URL-er (canonical-kontrakten), image-path under assets/og/.
+ *   Twitter-blokk (card/title/desc/image/image:alt) eies av build.js pageShell
+ *   — kun én kilde per tag (OGV-A1-fix: ingen dobbelt-emitterte twitter-tagger).
  * - Kvalitetskontrakt arvet: alt-tekst er nødvendig (a11y); ingen forbudt
  *   diagnostisk vokabular (renderer-forbudsvokabularet gjenbrukes i selftest);
  *   i18n-plain-strenger: aldri HTML i kortet (esc hele veien).
@@ -59,13 +60,14 @@ export const OG_LAYOUT_MAX_Y = 570;     /* siste baseline-grense (accent-bar und
 const TEXT_W = OG_W - 2 * MARGIN_X;     /* 1072 */
 const BAR_H = 10;                       /* accent-bar nederst */
 
-/* fargepalett — sitens gråskala + én accent (blå #1d4ed8) */
+/* fargepalett — sitens mørke tema, verbatim fra --ba-* i app/site.css
+   (kortene følger siten: bg #101623, accent #8b95f7 — ikke den gamle hvite/blå) */
 const C = {
-  bg: '#ffffff',
-  brand: '#111827',
-  title: '#1e293b',
-  desc: '#374151',
-  bar: '#1d4ed8',
+  bg: '#101623',        /* --ba-bg */
+  brand: '#8b95f7',     /* --ba-accent */
+  title: '#e9e7e2',     /* --ba-text */
+  desc: '#a8b2c6',      /* --ba-text-muted */
+  bar: '#8b95f7',       /* accent-bar: --ba-accent */
 };
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -246,8 +248,12 @@ export function ogCardOrder() {
 /* ---------- HTML-meta-linjer (wire i pageShell) ---------- */
 
 /**
- * Meta-linjene for head. Alt + twitter-stort kort. Absolutte URL-er.
- * Forventer resolvede strenger title/desc/alt (pageShell har dem).
+ * Meta-linjene for head. Absolutte URL-er. Forventer resolvede strenger
+ * title/desc/alt (pageShell har dem).
+ * @param {object} opts - { locale, route, alt }
+ * @param {string|undefined} opts.alt - nødvendig alt-tekst (a11y-kontrakten); kaster ved manglende/tom
+ * @returns {string[]} eksakt 5 og:*-linjer (image/width/height/type/alt) — twitter-tagger emittes KUN av pageShell
+ * @throws Error ved manglende/tom alt
  */
 export function ogMetaLines({ locale, route, title, desc, alt } = {}) {
   if (alt === undefined || alt === null || String(alt).trim() === '') {
@@ -261,8 +267,5 @@ export function ogMetaLines({ locale, route, title, desc, alt } = {}) {
     `<meta property="og:image:height" content="${OG_H}"/>`,
     `<meta property="og:image:type" content="image/png"/>`,
     `<meta property="og:image:alt" content="${esc(alt)}"/>`,
-    `<meta name="twitter:card" content="summary_large_image"/>`,
-    `<meta name="twitter:image" content="${esc(url)}"/>`,
-    `<meta name="twitter:image:alt" content="${esc(alt)}"/>`,
   ];
 }

@@ -1,0 +1,27 @@
+{
+  "task": "[BYGG][VISUELL-C] OG-/delingskort: statiske kort per spor + meta-wire + live-verifisering",
+  "date": "2026-11-17",
+  "context": "todo-run TR-C73417966E3C (steg 2 av 5 i TR-33F04462C5CE) — kortene fantes allerede fullt wiret live (FASE 3, commit de72c02); steget verifiserte live, dokumenterte palett-avviket mot sitens mørke tema, og rettet det",
+  "status": "DONE",
+  "levert": {
+    "palett_korreksjon": "16/16 kort omfarget til sitens mørke tema: bg #101623 (--ba-bg), accent #8b95f7 (--ba-accent), tekst #e9e7e2/--ba-text + #a8b2c6/--ba-text-muted — verbatim fra --ba-* i app/site.css. Det gamle hvite/blå (#ffffff/#1d4ed8) avbildet ikke lenger siten. Taskens eksplisitte palett er dermed oppfylt OG følger siten.",
+    "pixsel_prove": "sharp raw-pixel: bg(5,5)=16,22,35 = #101623; accent-bar(600,625)=139,149,247 = #8b95f7; 1200x630 PNG",
+    "ogv_a1_fix": "twitter-tripletten (card/image/image:alt) fjernet fra ogMetaLines — pageShell beholder den komplette twitter-blokken (card/title/desc/image/image:alt). Byggoutput verifisert: nøyaktig 1 twitter:card og 1 og:image per side (9/9 prøvede sider), 0 duplikater. Selftest G7 utvidet: count-5 + twitter-none + alt-required bevart. JSDoc ryddet (kun dokumentasjon, ingen virkemåteendring).",
+    "ogv_a2_status": "verdictens 404-avvik er UTDATERT: alle 16 PNG-er svarer 200 image/png live (curl-verifisert), byte-likte mot MANIFEST.md5",
+    "raster_regen": "node app/_og_raster.mjs på Windows-node v24.19.0 (sharp): 16/16 PNG + SVG-master + MANIFEST.md5 regenerert; play-no = home-no (md5-lik) som designet"
+  },
+  "verifikasi": {
+    "selftest": "tests/schema/_fase3_og_selftest.mjs: 182/182 PASS, 0 FAIL (181 før fix; +count-5, +twitter-none med twitter-check flyttet fra emittert-output til fraværs-påstand)",
+    "hreflang": "node app/_verify_hreflang.mjs: 194/194 PASS",
+    "i18n": "22/22 PASS",
+    "determinisme": "dobbelt-bygg (out vs out_double): diff -r = 0 linjer, exit 0 — HTML + PNG byte-identiske; PNG-md5 er raster-vertssavhengig (librsvg innebygd i sharp), påstanden gjeldende per vert",
+    "live_meta": "og:image/og:title/og:description + twitter:card summary_large_image verifisert live på NO (/, /persona/, /evne/, /relasjoner/, /nevrodiversitet/, /play/) og EN (/en/persona/, /en/ability/, /en/relations/, /en/neurodiverse/, /en/play/, /en/) — unik per rute/locale, absolutte URL-er",
+    "live_png": "14/14 sjekkede PNG-er (alle unike filer i MANIFEST) = HTTP 200 image/png",
+    "svg_uheldighet_rapportert": "SVG som og:image er upålitelig i delingsplattformer — leveransen er derfor PNG (SVG-master beholdes kun som byte-deterministisk bevis-spor i assets/og/*.svg, aldri referert av meta). Ingen PNG-konvertering-i-bygg (no-npm): rasteren gjøres med sharp ad hoc, CI (pages.yml) trenger aldri sharp."
+  },
+  "kilder": [
+    "opengraphdebug.com/posts/og-image-requirements (hentet 2026-11-17, prosjekt-substrat): PNG (ikke SVG) som og:image, 1200x630, <5MB, absolutt URL"
+  ],
+  "avvik_open": [],
+  "deploy": "push til main trigger build.yml (push-gate); pages.yml er workflow_dispatch — deploy dispatches separat med gh (workflow-scope autentisert)"
+}

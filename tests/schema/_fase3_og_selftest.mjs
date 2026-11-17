@@ -118,13 +118,14 @@ for (const c of cards) {
 }
 ok('G6.sink-covers-textnodes', sinkCovered, sinkExtraMsg);
 
-/* G7 — meta-kontrakt */
+/* G7 — meta-kontrakt: kun én kilde per tag — twitter-blokken eies av pageShell (OGV-A1-fix) */
 const meta = ogMetaLines({ locale: 'no', route: 'rel', title: 'T', desc: 'D', alt: 'Alt' });
+ok('G7.count-5', meta.length === 5, String(meta.length));
 ok('G7.og-image', meta.some((l) => l.includes('og:image" content="https://maneitai.github.io/brainarea/assets/og/rel-no.png')));
 ok('G7.dims', meta.some((l) => l.includes('og:image:width" content="1200')) && meta.some((l) => l.includes('og:image:height" content="630')));
 ok('G7.type', meta.some((l) => l.includes('og:image:type" content="image/png')));
 ok('G7.alt', meta.some((l) => l.includes('og:image:alt" content="Alt')));
-ok('G7.twitter', meta.some((l) => l.includes('twitter:card" content="summary_large_image')) && meta.some((l) => l.includes('twitter:image" content="https://maneitai.github.io/brainarea/assets/og/rel-no.png')));
+ok('G7.twitter-none', meta.every((l) => !l.includes('twitter:')), 'ogMetaLines skal ikke emitte twitter-tagger');
 ok('G7.alt-required', (() => { try { ogMetaLines({ locale: 'no', kroute: 'rel', route: 'rel', title: 'T', desc: 'D' }); return false; } catch { return true; } })());
 
 /* G8 — build-wire (kilde-skann) */

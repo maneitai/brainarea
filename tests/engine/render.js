@@ -304,9 +304,9 @@ const BAF_SEGS = {
   '-': [[-0.6, 0, 0.6, 0]],
   '|': [[0, -0.6, 0, 0.6]],
 };
-const BAF_FG = '#e9eff5';
-const BAF_FRAME = '#22303f';
-const BAF_Q = '#4dc3ff';
+const BAF_FG = 'var(--ba-text)';
+const BAF_FRAME = 'var(--ba-border)';
+const BAF_Q = 'var(--ba-accent-deep)';
 const BAF_NS = 'http://www.w3.org/2000/svg';
 
 /* SVG-node med deterministisk tekst-ekvivalent i stub-DOM
@@ -425,13 +425,13 @@ function injectStyles() {
 }
 
 const STYLES = `
-.ba-test{--ba-bg:#0b0f14;--ba-fg:#e9eff5;--ba-dim:#9fb4c7;--ba-accent:#4dc3ff;--ba-warn:#ffb02e;
-  background:var(--ba-bg);color:var(--ba-fg);font:16px/1.6 system-ui,sans-serif;
+.ba-test{--ba-bg:transparent;--ba-fg:var(--ba-text);--ba-dim:var(--ba-text-muted);--ba-accent:var(--ba-accent-deep);--ba-warn:var(--ba-warn);
+  background:transparent;color:var(--ba-fg);font:inherit;
   max-width:40rem;margin:0 auto;padding:1rem;min-height:12rem}
 .ba-test *,.ba-test *::before{box-sizing:border-box}
 .ba-test-top{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;justify-content:space-between;margin-bottom:.75rem}
 .ba-progress{flex:1 1 10rem;display:flex;align-items:center;gap:.5rem}
-.ba-progressbar{position:relative;flex:1;height:.5rem;border-radius:.25rem;background:#1c2633;overflow:hidden}
+.ba-progressbar{position:relative;flex:1;height:.5rem;border-radius:.25rem;background:var(--ba-surface-2);overflow:hidden}
 .ba-progressbar-fill{position:absolute;inset:0;right:auto;width:0;background:var(--ba-accent);transition:width .25s ease}
 .ba-progress-num{font-size:.85rem;color:var(--ba-dim);white-space:nowrap}
 .ba-time{font-size:.85rem;color:var(--ba-dim);white-space:nowrap;font-variant-numeric:tabular-nums}
@@ -441,26 +441,26 @@ const STYLES = `
 .ba-hint{color:var(--ba-dim);font-size:.85rem;margin:0 0 .5rem}
 .ba-options{display:flex;flex-direction:column;gap:.5rem}
 .ba-opt{display:block;width:100%;text-align:left;min-height:2.75rem;padding:.5rem .75rem;border-radius:.5rem;
-  border:1px solid #22303f;background:#101822;color:var(--ba-fg);font:inherit;cursor:pointer;
+  border:1px solid var(--ba-border);background:var(--ba-surface);color:var(--ba-fg);font:inherit;cursor:pointer;
   transition:border-color .15s ease,background-color .15s ease}
-.ba-opt:hover{border-color:#31445a}
-.ba-opt[aria-pressed="true"]{border-color:var(--ba-accent);background:#12233a;box-shadow:inset 3px 0 0 var(--ba-accent)}
+.ba-opt:hover{border-color:var(--ba-text-dim)}
+.ba-opt[aria-pressed="true"]{border-color:var(--ba-accent);background:var(--ba-surface-2);box-shadow:inset 3px 0 0 var(--ba-accent)}
 .ba-opt:focus-visible,.ba-nav button:focus-visible,.ba-order button:focus-visible{outline:2px solid var(--ba-accent);outline-offset:1px}
 .ba-order{display:flex;flex-direction:column;gap:.5rem}
 .ba-order .ba-order-elem{display:flex;gap:.5rem;align-items:center}
-.ba-order button{min-height:2.75rem;min-width:2.75rem;border-radius:.4rem;border:1px solid #22303f;background:#101822;color:var(--ba-fg);cursor:pointer;font:inherit}
+.ba-order button{min-height:2.75rem;min-width:2.75rem;border-radius:.4rem;border:1px solid var(--ba-border);background:var(--ba-surface);color:var(--ba-fg);cursor:pointer;font:inherit}
 .ba-order .ba-order-elem.sel button.ba-order-move{border-color:var(--ba-accent)}
 .ba-nav{display:flex;justify-content:flex-end;margin-top:.75rem}
-.ba-nav button{min-height:2.75rem;padding:.5rem 1.25rem;border-radius:.5rem;border:1px solid #22303f;background:#12233a;color:var(--ba-fg);font:inherit;cursor:pointer}
+.ba-nav button{min-height:2.75rem;padding:.5rem 1.25rem;border-radius:.5rem;border:1px solid var(--ba-border);background:var(--ba-surface-2);color:var(--ba-fg);font:inherit;cursor:pointer}
 .ba-nav button:disabled{opacity:.45;cursor:not-allowed}
 .ba-ad-slot{min-height:0}
 .ba-terminal{margin-top:.75rem;color:var(--ba-dim)}
 .ba-resume{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;justify-content:space-between;
-  border:1px solid #22303f;border-radius:.5rem;background:#101822;color:var(--ba-fg);
+  border:1px solid var(--ba-border);border-radius:.5rem;background:var(--ba-surface);color:var(--ba-fg);
   padding:.6rem .8rem;margin-bottom:.75rem;max-width:40rem}
 .ba-resume-text{margin:0}
 .ba-resume-actions{display:flex}
-.ba-resume-quit{min-height:2.75rem;padding:.35rem .85rem;border-radius:.4rem;border:1px solid #22303f;cursor:pointer;font:inherit;background:#101822;color:var(--ba-fg)}
+.ba-resume-quit{min-height:2.75rem;padding:.35rem .85rem;border-radius:.4rem;border:1px solid var(--ba-border);cursor:pointer;font:inherit;background:var(--ba-surface);color:var(--ba-fg)}
 .ba-resume-quit:focus-visible{outline:2px solid var(--ba-accent);outline-offset:1px}
 .ba-fig{display:block;max-width:100%;height:auto;margin:.25rem 0 .75rem}
 .ba-fig-tile{height:2.6rem}

@@ -92,32 +92,31 @@ export function layout(route, locale, t) {
 
   if (route === 'home') {
     return [
-      { kind: 'node', tag: 'h1', cls: 'text-3xl leading-tight font-extrabold tracking-tight sm:text-4xl', html: true, parts: [
-        { text: t('page.home.h1.a') },
-        { text: ' ' },
-        { tag: 'span', cls: '', style: 'color:var(--ba-accent)', text: t('page.home.h1.b') },
+      { kind: 'node', tag: 'section', cls: 'ba-hero', children: [
+        { kind: 'node', tag: 'h1', cls: 'ba-hero__title', text: t('page.home.hero.title') },
+        { kind: 'node', tag: 'p', cls: 'ba-hero__lede', text: t('page.home.intro') },
       ] },
-      { kind: 'node', tag: 'p', cls: 'mt-3 text-base leading-relaxed text-gray-600 sm:text-lg', text: t('page.home.intro') },
-      /* kortene + badges legges til i build.js fra CARD_FELT/innholdet over */
+      { kind: 'sample' },
+      /* flaggskip + rader: rendres i build.js fra homeCards() */
       { kind: 'cards', badgeKey: 'page.home.badge.open' },
-      adSlots('home')[0], /* in_feed: mellom kortseksjonen og metode/begrensninger */
-      { kind: 'node', tag: 'p', cls: 'mt-6 text-sm', parts: [
-        { text: t('page.home.methodLink'), tag: 'a', cls: 'font-semibold underline', style: 'color:var(--ba-accent)', href: link('about') },
+      adSlots('home')[0], /* in_feed: mellom testlista og metode/arlighetsblokk */
+      { kind: 'node', tag: 'p', cls: 'ba-note', parts: [
+        { text: t('page.home.methodLink'), tag: 'a', cls: '', href: link('about') },
       ] },
-      { kind: 'node', tag: 'p', cls: 'mt-10 text-xs leading-relaxed text-gray-500', text: t('page.home.disclaimer') },
+      { kind: 'honest' },
       adSlots('home')[1], /* leaderboard: nederst, siste slot foer footer */
     ];
   }
 
   if (route === 'nd') {
     return [
-      { kind: 'node', tag: 'h1', cls: 'text-3xl font-extrabold tracking-tight', text: t('page.nd.h1') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-500', text: t('page.nd.intro') },
+      { kind: 'node', tag: 'h1', cls: 'ba-h1', text: t('page.nd.h1') },
+      { kind: 'node', tag: 'p', cls: 'ba-lede', text: t('page.nd.intro') },
       { kind: 'test-mount', testId: RUTE_LISTE.find((r) => r.route === route).testId },
-      { kind: 'node', tag: 'section', cls: 'mt-8 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:p-6', children: [
-        { kind: 'node', tag: 'h2', cls: 'font-bold', text: t('page.nd.methodHeading') },
-        { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-600', text: t('page.nd.methodBody') },
-        { kind: 'node', tag: 'p', cls: 'mt-4 text-xs leading-relaxed text-gray-500', text: t('page.nd.deepNote') },
+      { kind: 'node', tag: 'section', cls: 'ba-callout', children: [
+        { kind: 'node', tag: 'h2', cls: 'ba-callout__title', text: t('page.nd.methodHeading') },
+        { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.nd.methodBody') },
+        { kind: 'node', tag: 'p', cls: 'ba-note', text: t('page.nd.deepNote') },
       ] },
     ];
   }
@@ -125,18 +124,18 @@ export function layout(route, locale, t) {
     const slots = [];
     if (route === 'persona') {
       slots.push(
-        { kind: 'node', tag: 'h1', cls: 'text-3xl font-extrabold tracking-tight', text: t('page.persona.h1') },
-        { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-500', text: t('page.persona.intro') },
+        { kind: 'node', tag: 'h1', cls: 'ba-h1', text: t('page.persona.h1') },
+        { kind: 'node', tag: 'p', cls: 'ba-lede', text: t('page.persona.intro') },
       );
     } else if (route === 'evne') {
       slots.push(
-        { kind: 'node', tag: 'h1', cls: 'text-3xl font-extrabold tracking-tight', text: t('page.evne.h1') },
-        { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-500', text: t('page.evne.intro') },
+        { kind: 'node', tag: 'h1', cls: 'ba-h1', text: t('page.evne.h1') },
+        { kind: 'node', tag: 'p', cls: 'ba-lede', text: t('page.evne.intro') },
       );
     } else {
       slots.push(
-        { kind: 'node', tag: 'h1', cls: 'text-3xl font-extrabold tracking-tight', text: t('page.rel.h1') },
-        { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-500', text: t('page.rel.intro') },
+        { kind: 'node', tag: 'h1', cls: 'ba-h1', text: t('page.rel.h1') },
+        { kind: 'node', tag: 'p', cls: 'ba-lede', text: t('page.rel.intro') },
       );
     }
     slots.push(
@@ -144,33 +143,33 @@ export function layout(route, locale, t) {
     );
     if (route === 'evne') {
       slots.push(
-        { kind: 'node', tag: 'section', cls: 'mt-8 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:p-6', children: [
-          { kind: 'node', tag: 'h2', cls: 'font-bold', text: t('page.evne.methodHeading') },
-          { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-600', text: t('page.evne.methodBody') },
-          { kind: 'node', tag: 'p', cls: 'mt-3 text-sm leading-relaxed text-gray-600', text: t('page.evne.score') },
-          { kind: 'node', tag: 'p', cls: 'mt-4 text-xs leading-relaxed text-gray-500', text: t('page.evne.nvNote') },
+        { kind: 'node', tag: 'section', cls: 'ba-callout', children: [
+          { kind: 'node', tag: 'h2', cls: 'ba-callout__title', text: t('page.evne.methodHeading') },
+          { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.evne.methodBody') },
+          { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.evne.score') },
+          { kind: 'node', tag: 'p', cls: 'ba-note', text: t('page.evne.nvNote') },
         ] },
       );
     }
     if (route === 'persona') {
       slots.push(
-        { kind: 'node', tag: 'section', cls: 'mt-8 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:p-6', children: [
-          { kind: 'node', tag: 'h2', cls: 'font-bold', text: t('page.persona.methodHeading') },
-          { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', parts: [
+        { kind: 'node', tag: 'section', cls: 'ba-callout', children: [
+          { kind: 'node', tag: 'h2', cls: 'ba-callout__title', text: t('page.persona.methodHeading') },
+          { kind: 'node', tag: 'p', cls: 'ba-p', parts: [
             { text: t('page.persona.methodBody') },
-            { text: t('page.persona.ipipLink'), tag: 'a', cls: 'font-semibold underline', style: 'color:var(--ba-accent)', href: 'https://ipip.ori.org/' },
+            { text: t('page.persona.ipipLink'), tag: 'a', cls: '', style: 'color:var(--ba-accent-deep)', href: 'https://ipip.ori.org/' },
             { text: t('page.persona.p.methodTail') },
           ] },
-          { kind: 'node', tag: 'p', cls: 'mt-4 text-xs leading-relaxed text-gray-500', text: t('page.persona.nonNormed') },
+          { kind: 'node', tag: 'p', cls: 'ba-note', text: t('page.persona.nonNormed') },
         ] },
       );
     }
     if (route === 'rel') {
       slots.push(
-        { kind: 'node', tag: 'section', cls: 'mt-8 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:p-6', children: [
-          { kind: 'node', tag: 'h2', cls: 'font-bold', text: t('page.rel.methodHeading') },
-          { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-600', text: t('page.rel.methodBody') },
-          { kind: 'node', tag: 'p', cls: 'mt-4 text-xs leading-relaxed text-gray-500', text: t('page.rel.nonValidated') },
+        { kind: 'node', tag: 'section', cls: 'ba-callout', children: [
+          { kind: 'node', tag: 'h2', cls: 'ba-callout__title', text: t('page.rel.methodHeading') },
+          { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.rel.methodBody') },
+          { kind: 'node', tag: 'p', cls: 'ba-note', text: t('page.rel.nonValidated') },
         ] },
       );
     }
@@ -179,8 +178,8 @@ export function layout(route, locale, t) {
 
   if (route === 'play') {
     return [
-      { kind: 'node', tag: 'h1', cls: 'text-3xl font-extrabold tracking-tight', text: t('page.play.h1') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-500', text: t('page.play.intro') },
+      { kind: 'node', tag: 'h1', cls: 'ba-h1', text: t('page.play.h1') },
+      { kind: 'node', tag: 'p', cls: 'ba-lede', text: t('page.play.intro') },
       { kind: 'test-mount', testId: RUTE_LISTE.find((r) => r.route === route).testId },
       { kind: 'cards' },
       /* [BYGG] #3841: play er naa test-rute (puzzle-mount) — beslutning 11:
@@ -190,62 +189,62 @@ export function layout(route, locale, t) {
 
   if (route === 'about') {
     return [
-      { kind: 'node', tag: 'p', cls: 'text-sm font-semibold', parts: [
+      { kind: 'node', tag: 'p', cls: 'ba-back', parts: [
         { text: t('page.about.back'), tag: 'a', cls: '', href: sw('home'), tailText: '' },
       ] },
-      { kind: 'node', tag: 'h1', cls: 'text-3xl font-extrabold tracking-tight', text: t('page.about.h1') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-600', text: t('page.about.intro') },
-      { kind: 'node', tag: 'h2', cls: 'mt-8 text-xl font-bold', text: t('page.about.h.how') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.about.p.how') },
-      { kind: 'node', tag: 'h2', cls: 'mt-8 text-xl font-bold', text: t('page.about.h.ipip') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.about.p.ipip'), parts: [
-        { text: t('page.about.ipipLink'), tag: 'a', cls: 'font-semibold underline', style: 'color:var(--ba-accent)', href: 'https://ipip.ori.org/' },
+      { kind: 'node', tag: 'h1', cls: 'ba-h1', text: t('page.about.h1') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.intro') },
+      { kind: 'node', tag: 'h2', cls: 'ba-h2', text: t('page.about.h.how') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.p.how') },
+      { kind: 'node', tag: 'h2', cls: 'ba-h2', text: t('page.about.h.ipip') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.p.ipip'), parts: [
+        { text: t('page.about.ipipLink'), tag: 'a', cls: '', style: 'color:var(--ba-accent-deep)', href: 'https://ipip.ori.org/' },
         { text: t('page.about.p.ipipTail') },
       ] },
-      { kind: 'node', tag: 'p', cls: 'mt-3 leading-relaxed text-gray-600', text: t('page.about.p.mbti') },
-      { kind: 'node', tag: 'h2', cls: 'mt-8 text-xl font-bold', text: t('page.about.h.iq') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.about.p.iq1') },
-      { kind: 'node', tag: 'p', cls: 'mt-3 leading-relaxed text-gray-600', text: t('page.about.p.iq2'), parts: [
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.p.mbti') },
+      { kind: 'node', tag: 'h2', cls: 'ba-h2', text: t('page.about.h.iq') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.p.iq1') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.p.iq2'), parts: [
         { text: t('page.about.em.notValidated'), tag: 'em', tailText: t('page.about.p.iq3') },
       ] },
-      { kind: 'node', tag: 'h2', cls: 'mt-8 text-xl font-bold', text: t('page.about.h.not') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.about.p.not1') },
-      { kind: 'node', tag: 'p', cls: 'leading-relaxed text-gray-600', text: t('page.about.p.not2') },
-      { kind: 'node', tag: 'p', cls: 'leading-relaxed text-gray-600', text: t('page.about.p.not3') },
-      { kind: 'node', tag: 'p', cls: 'leading-relaxed text-gray-600', text: t('page.about.p.not4') },
-      { kind: 'node', tag: 'h2', cls: 'mt-8 text-xl font-bold', text: t('page.about.h.privacy') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.about.p.privacy') },
-      { kind: 'node', tag: 'p', cls: 'mt-8 text-xs leading-relaxed text-gray-500', text: t('page.about.tail') },
+      { kind: 'node', tag: 'h2', cls: 'ba-h2', text: t('page.about.h.not') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.p.not1') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.p.not2') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.p.not3') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.p.not4') },
+      { kind: 'node', tag: 'h2', cls: 'ba-h2', text: t('page.about.h.privacy') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.about.p.privacy') },
+      { kind: 'node', tag: 'p', cls: 'ba-note', text: t('page.about.tail') },
       ...adSlots('about'),
     ];
   }
 
   if (route === 'privacy') {
     return [
-      { kind: 'node', tag: 'p', cls: 'text-sm font-semibold', parts: [
+      { kind: 'node', tag: 'p', cls: 'ba-back', parts: [
         { text: t('page.privacy.back'), tag: 'a', cls: '', href: sw('home'), tailText: '' },
       ] },
-      { kind: 'node', tag: 'h1', cls: 'text-3xl font-extrabold tracking-tight', text: t('page.privacy.h1') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 text-sm font-semibold', text: t('page.privacy.short') },
-      { kind: 'node', tag: 'h2', cls: 'mt-8 text-xl font-bold', text: t('page.privacy.h.data') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.privacy.p.data') },
-      { kind: 'node', tag: 'h2', cls: 'mt-8 text-xl font-bold', text: t('page.privacy.h.future') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.privacy.p.future') },
-      { kind: 'node', tag: 'h2', cls: 'mt-8 text-xl font-bold', text: t('page.privacy.h.ads') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.privacy.p.ads'), parts: [
-        { text: t('page.privacy.adsLink'), tag: 'a', cls: 'font-semibold underline', style: 'color:var(--ba-accent)', href: 'https://policies.google.com/privacy' },
+      { kind: 'node', tag: 'h1', cls: 'ba-h1', text: t('page.privacy.h1') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.privacy.short') },
+      { kind: 'node', tag: 'h2', cls: 'ba-h2', text: t('page.privacy.h.data') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.privacy.p.data') },
+      { kind: 'node', tag: 'h2', cls: 'ba-h2', text: t('page.privacy.h.future') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.privacy.p.future') },
+      { kind: 'node', tag: 'h2', cls: 'ba-h2', text: t('page.privacy.h.ads') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.privacy.p.ads'), parts: [
+        { text: t('page.privacy.adsLink'), tag: 'a', cls: '', style: 'color:var(--ba-accent-deep)', href: 'https://policies.google.com/privacy' },
         { text: t('page.privacy.p.adsTail') },
       ] },
-      { kind: 'node', tag: 'h2', cls: 'mt-8 text-xl font-bold', text: t('page.privacy.h.owner') },
-      { kind: 'node', tag: 'p', cls: 'mt-2 leading-relaxed text-gray-600', text: t('page.privacy.p.owner'), parts: [
-        { text: t('page.privacy.ownerLink'), tag: 'a', cls: 'font-semibold underline', style: 'color:var(--ba-accent)', href: 'mailto:manieten@pm.me', tailText: t('page.privacy.p.ownerTail') },
+      { kind: 'node', tag: 'h2', cls: 'ba-h2', text: t('page.privacy.h.owner') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.privacy.p.owner'), parts: [
+        { text: t('page.privacy.ownerLink'), tag: 'a', cls: '', style: 'color:var(--ba-accent-deep)', href: 'mailto:manieten@pm.me', tailText: t('page.privacy.p.ownerTail') },
       ] },
-      { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-600', text: t('page.privacy.p.responsible') },
-      { kind: 'node', tag: 'section', cls: 'mt-8 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm', children: [
-        { kind: 'node', tag: 'h2', cls: 'text-xl font-bold', text: t('page.privacy.h.consent') },
-        { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-600', text: t('page.privacy.consentLine') },
+      { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.privacy.p.responsible') },
+      { kind: 'node', tag: 'section', cls: 'ba-callout', children: [
+        { kind: 'node', tag: 'h2', cls: 'ba-callout__title', text: t('page.privacy.h.consent') },
+        { kind: 'node', tag: 'p', cls: 'ba-p', text: t('page.privacy.consentLine') },
       ] },
-      { kind: 'node', tag: 'p', cls: 'mt-8 text-xs text-gray-500', text: t('page.privacy.updated') },
+      { kind: 'node', tag: 'p', cls: 'ba-note', text: t('page.privacy.updated') },
     ];
   }
 
@@ -254,5 +253,5 @@ export function layout(route, locale, t) {
 
 /** Språkvelger-descriptor (renderes i build.js; href fra locale.js). */
 export function langSwitcher() {
-  return { activeCls: 'rounded-full px-3 py-1.5 font-semibold text-white', inactiveCls: 'rounded-full px-3 py-1.5 text-gray-400 transition hover:text-gray-600', badges: { no: 'NO', en: 'EN' } };
+  return { activeCls: 'ba-lang__on', inactiveCls: 'ba-lang__off', badges: { no: 'NO', en: 'EN' } };
 }

@@ -140,29 +140,29 @@ function writeResult(store, data) {
 
 /* ---------- runner-CSS (motor-stilene eies av render.js) ---------- */
 const RUN_CSS = `
-.ba-run-result{max-width:40rem;margin:1.5rem auto 0;padding:1.25rem;border:1px solid #22303f;border-radius:.75rem;background:#0b0f14;color:#e9eff5;font:16px/1.6 system-ui,sans-serif}
-.ba-run-result h2{margin:0 0 .75rem;font-size:1.25rem;font-weight:700}
-.ba-run-note{max-width:40rem;margin:0 auto .75rem;padding:.75rem 1rem;border:1px solid #22303f;border-left:3px solid #ffb02e;border-radius:.5rem;background:#0b0f14;color:#9fb4c7;font:14px/1.5 system-ui,sans-serif}
+.ba-run-result{max-width:40rem;margin:1.5rem auto 0;padding:1.25rem;border:1px solid var(--ba-border);border-radius:.75rem;background:transparent;color:var(--ba-text);font:inherit}
+.ba-run-result h2{margin:0 0 .75rem;font:600 1.5rem/1.25 var(--ba-serif);color:var(--ba-text);letter-spacing:-.01em}
+.ba-run-note{max-width:40rem;margin:0 auto .75rem;padding:.75rem 1rem;border:1px solid var(--ba-border);border-left:3px solid var(--ba-warn);border-radius:.5rem;background:var(--ba-bg);color:var(--ba-text-muted);font:inherit}
 .ba-run-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.25rem}
-.ba-run-actions button{border:1px solid #22303f;background:#12233a;color:#e9eff5;border-radius:.5rem;padding:.5rem 1rem;cursor:pointer;font:inherit}
+.ba-run-actions button{border:1px solid var(--ba-border);background:var(--ba-surface-2);color:var(--ba-text);border-radius:.5rem;padding:.5rem 1rem;cursor:pointer;font:inherit}
 .ba-run-actions button:disabled{opacity:.5;cursor:not-allowed}
-.ba-run-att{margin:1.1rem 0 0;padding:.7rem .95rem;border-radius:.5rem;border:1px solid #22303f;background:#101822;color:#9fb4c7;font-size:.9rem}
-.ba-run-att--clean{border-left:3px solid #37d67a}
-.ba-run-title{margin:0 0 .55rem;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ba-accent,#4dc3ff)}
+.ba-run-att{margin:1.1rem 0 0;padding:.7rem .95rem;border-radius:.5rem;border:1px solid var(--ba-border);background:var(--ba-surface);color:var(--ba-text-muted);font-size:.9rem}
+.ba-run-att--clean{border-left:3px solid var(--ba-ok)}
+.ba-run-title{margin:0 0 .55rem;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ba-accent,var(--ba-accent-deep))}
 .ba-run-band{margin:-.15rem 0 1rem}
 .ba-run-band svg{display:block;width:100%;max-width:22rem;height:auto}
-.ba-run-band-fill{fill:var(--ba-accent,#4dc3ff)}
-.ba-run-band-cap{display:block;margin-top:.35rem;font-size:.85rem;color:#9fb4c7}
-.ba-run-band-nc{font-size:.85rem;color:#9fb4c7}
-.ba-run-share{margin:1.1rem 0 0;padding:.8rem .95rem;border:1px solid #22303f;border-radius:.5rem;background:#101822}
-.ba-run-share-head{margin:0 0 .45rem;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9fb4c7}
-.ba-run-share-card{display:flex;align-items:center;gap:.8rem;padding:.5rem;border:1px solid #22303f;border-radius:.4rem;background:#0b0f14;margin:0 0 .45rem}
+.ba-run-band-fill{fill:var(--ba-accent,var(--ba-accent-deep))}
+.ba-run-band-cap{display:block;margin-top:.35rem;font-size:.85rem;color:var(--ba-text-muted)}
+.ba-run-band-nc{font-size:.85rem;color:var(--ba-text-muted)}
+.ba-run-share{margin:1.1rem 0 0;padding:.8rem .95rem;border:1px solid var(--ba-border);border-radius:.5rem;background:var(--ba-surface)}
+.ba-run-share-head{margin:0 0 .45rem;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ba-text-muted)}
+.ba-run-share-card{display:flex;align-items:center;gap:.8rem;padding:.5rem;border:1px solid var(--ba-border);border-radius:.4rem;background:var(--ba-bg);margin:0 0 .45rem}
 .ba-run-share-brand{flex:1 1 auto;min-width:0}
-.ba-run-share-name{margin:0;font-size:.95rem;font-weight:700;color:#e9eff5}
-.ba-run-share-tag{margin:0;font-size:.85rem;color:#9fb4c7;overflow-wrap:anywhere}
+.ba-run-share-name{margin:0;font-size:.95rem;font-weight:700;color:var(--ba-text)}
+.ba-run-share-tag{margin:0;font-size:.85rem;color:var(--ba-text-muted);overflow-wrap:anywhere}
 .ba-run-share-links{display:flex;flex-wrap:wrap;gap:1.1rem;font-size:.85rem}
 .ba-run-share-links a{padding:.7rem 0}
-.ba-run-share-links a{color:var(--ba-accent,#4dc3ff)}
+.ba-run-share-links a{color:var(--ba-accent,var(--ba-accent-deep))}
 `;
 (function injectRunCss() {
   if (!document.head) return;
@@ -355,7 +355,7 @@ export function bandGaugeNode(result, tt) {
   track.setAttribute('width', String(BAND_W - BAND_PAD * 2));
   track.setAttribute('height', '10');
   track.setAttribute('rx', '5');
-  track.setAttribute('fill', '#1c2633');
+  track.setAttribute('fill', 'var(--ba-surface-2)');
   sv.appendChild(track);
   const fill = svgEl('rect');
   fill.setAttribute('class', 'ba-run-band-fill');
@@ -364,14 +364,14 @@ export function bandGaugeNode(result, tt) {
   fill.setAttribute('width', String(Math.round((BAND_W - BAND_PAD * 2) * d.frac)));
   fill.setAttribute('height', '10');
   fill.setAttribute('rx', '5');
-  fill.setAttribute('fill', '#4dc3ff');
+  fill.setAttribute('fill', 'var(--ba-accent-deep)');
   sv.appendChild(fill);
   const mid = svgEl('line');
   mid.setAttribute('x1', String(Math.round(BAND_PAD + (BAND_W - BAND_PAD * 2) * 0.5)));
   mid.setAttribute('y1', '4');
   mid.setAttribute('x2', String(Math.round(BAND_PAD + (BAND_W - BAND_PAD * 2) * 0.5)));
   mid.setAttribute('y2', '22');
-  mid.setAttribute('stroke', '#9fb4c7');
+  mid.setAttribute('stroke', 'var(--ba-text-muted)');
   mid.setAttribute('stroke-width', '2');
   mid.setAttribute('stroke-dasharray', '3 3');
   sv.appendChild(mid);

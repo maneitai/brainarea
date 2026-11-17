@@ -38,6 +38,8 @@ function renderSlots(slots, ctx) {
     if (slot.kind === 'node') html.push(renderNode(slot, 4, ctx));
     else if (slot.kind === 'cards') html.push(renderCards(slot, ctx));
     else if (slot.kind === 'test-mount') html.push(renderTestMount(slot, ctx));
+    else if (slot.kind === 'sample') html.push(renderSample(ctx));
+    else if (slot.kind === 'honest') html.push(renderHonest(ctx));
     else if (slot.kind === 'ad') html.push(renderAd({ format: slot.format, slot: slot.slot, t: ctx.t }));
     else throw new Error('build: ukjent slot-kind ' + slot.kind);
   }
@@ -67,42 +69,103 @@ function renderPart(p) {
   return `<${tag}${attrs}>${esc(p.text)}</${tag}>${p.tailText ? esc(p.tailText) : ''}`;
 }
 
-/** Hjem-kortene og play-tiles: cards-slot. */
+/** Hjem: flaggskip (PERSONA) + nummererte rader. Play: tre rader. */
 function renderCards(slot, ctx) {
   const { t, locale, route } = ctx;
   if (route === 'home') {
-    const badge = t(slot.badgeKey || 'page.home.badge.open');
-    const badgeCls = 'rounded-full px-2.5 py-1 text-[11px] font-semibold whitespace-nowrap text-white';
-    return homeCards().map((card) => {
-      const href = localizedPath(locale, card.route);
-      return [
-        `      <a class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" href="${href}">`,
-        `        <div class="flex items-start justify-between gap-2">`,
-        `          <h2 class="text-lg font-bold">${esc(t(card.titleKey))}</h2>`,
-        `          <span class="${badgeCls}" style="background:var(--ba-accent-strong)">${esc(badge)}</span>`,
-        `        </div>`,
-        `        <p class="mt-2 text-sm leading-relaxed text-gray-600">${esc(t(card.descKey))}</p>`,
-        `      </a>`,
-      ].join('\n');
-    }).join('\n');
+    const rows = homeCards().filter((c) => c.route !== 'persona');
+    const hrefFor = (r) => localizedPath(locale, r);
+    const flag = homeCards().find((c) => c.route === 'persona');
+    const out = [
+      `      <a class="ba-flagship" href="${hrefFor('persona')}">`,
+      `        <span class="ba-flagship__kicker">${esc(t('page.home.flagship.kicker'))}</span>`,
+      `        <span class="ba-flagship__title">${esc(t(flag.titleKey))}</span>`,
+      `        <span class="ba-flagship__desc">${esc(t(flag.descKey))}</span>`,
+      `        <span class="ba-flagship__cta">${esc(t('page.home.flagship.cta'))}</span>`,
+      `      </a>`,
+      `      <ul class="ba-testlist">`,
+    ];
+    const META = { evne: 'page.home.meta.evne', rel: 'page.home.meta.rel', nd: 'page.home.meta.nd', play: 'page.home.meta.play' };
+    rows.forEach((card, ix) => {
+      const num = String(ix + 2).padStart(2, '0');
+      out.push(`        <li><a class="ba-testrow" href="${hrefFor(card.route)}">`);
+      out.push(`          <span class="ba-testrow__num">${num}</span>`);
+      out.push(`          <span class="ba-testrow__body">`);
+      out.push(`            <span class="ba-testrow__title">${esc(t(card.titleKey))}</span>`);
+      out.push(`            <span class="ba-testrow__desc">${esc(t(card.descKey))}</span>`);
+      out.push(`          </span>`);
+      if (META[card.route]) out.push(`          <span class="ba-testrow__meta">${esc(t(META[card.route]))}</span>`);
+      out.push(`        </a></li>`);
+    });
+    out.push('      </ul>');
+    return out.join('\n');
   }
   if (route === 'play') {
-    const badgeCls = 'rounded-full px-2.5 py-1 text-[11px] font-semibold whitespace-nowrap text-white';
     const tiles = ['work', 'press', 'creative'];
-    return tiles.map((tile) => {
+    const out = ['      <ul class="ba-testlist">'];
+    tiles.forEach((tile, ix) => {
       const tk = `page.play.tile.${tile}`;
-      return [
-        `      <div class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">`,
-        `        <div class="flex items-start justify-between gap-2">`,
-        `          <h2 class="text-lg font-bold">${esc(t(tk + '.title'))}</h2>`,
-        `          <span class="${badgeCls}" style="background:var(--ba-accent-strong)">${esc(t('page.play.badge.' + tile))}</span>`,
-        `        </div>`,
-        `        <p class="mt-2 text-sm leading-relaxed text-gray-600">${esc(t(tk + '.desc'))}</p>`,
-        `      </div>`,
-      ].join('\n');
-    }).join('\n');
+      const num = String(ix + 1).padStart(2, '0');
+      out.push(`        <li><div class="ba-testrow">`);
+      out.push(`          <span class="ba-testrow__num">${num}</span>`);
+      out.push(`          <span class="ba-testrow__body">`);
+      out.push(`            <span class="ba-testrow__title">${esc(t(tk + '.title'))}</span>`);
+      out.push(`            <span class="ba-testrow__desc">${esc(t(tk + '.desc'))}</span>`);
+      out.push(`          </span>`);
+      out.push(`          <span class="ba-testrow__meta">${esc(t('page.play.badge.' + tile))}</span>`);
+      out.push(`        </div></li>`);
+    });
+    out.push('      </ul>');
+    return out.join('\n');
   }
   throw new Error('build: cards-slot uten cards-rute (' + route + ')');
+}
+
+/** Eksempelresultat (REDESIGN-A): viser resultatformen for forste handling. */
+const SAMPLE_DIMS = [
+  { key: 'o', v: 72, s: 3.6 },
+  { key: 'c', v: 62, s: 3.1 },
+  { key: 'e', v: 48, s: 2.4 },
+  { key: 'a', v: 78, s: 3.9 },
+  { key: 'n', v: 56, s: 2.8 },
+];
+
+function renderSample(ctx) {
+  const { t, locale } = ctx;
+  const dec = (v) => locale === 'no' ? String(v).replace('.', ',') : String(v);
+  const rows = SAMPLE_DIMS.map((d) => [
+    `        <div class="ba-dim">`,
+    `          <span class="ba-dim__name">${esc(t('page.home.sample.dim.' + d.key))}</span>`,
+    `          <span class="ba-dim__track"><span class="ba-dim__fill" style="--v:${d.v}%"></span></span>`,
+    `          <span class="ba-dim__val">${dec(d.s.toFixed(1))}</span>`,
+    `        </div>`,
+  ].join('\n')).join('\n');
+  return [
+    `      <section class="ba-sample" aria-label="${esc(t('page.home.sample.label'))}">`,
+    `        <p class="ba-sample__label">${esc(t('page.home.sample.label'))}</p>`,
+    `        <div class="ba-sample__head">`,
+    `          <span class="ba-sample__name">${esc(t('page.home.card.persona.title'))}</span>`,
+    `          <span class="ba-sample__band">${esc(t('page.home.sample.band'))}</span>`,
+    `        </div>`,
+    rows,
+    `        <p class="ba-sample__note">${esc(t('page.home.sample.note'))}</p>`,
+    `      </section>`,
+  ].join('\n');
+}
+
+/** /Erlighetsblokken: hva siden ikke er. */
+function renderHonest(ctx) {
+  const { t } = ctx;
+  const items = ['i1', 'i2', 'i3', 'i4'].map((k) =>
+    `          <li class="ba-honest__item">${esc(t('page.home.honest.' + k))}</li>`).join('\n');
+  return [
+    `      <section class="ba-honest">`,
+    `        <h2 class="ba-honest__title">${esc(t('page.home.honest.title'))}</h2>`,
+    `        <ul class="ba-honest__list">`,
+    items,
+    `        </ul>`,
+    `      </section>`,
+  ].join('\n');
 }
 
 /** test-mount: run-HTML injecteres ved deploy, statiske plassholdere med mount-merke. */
@@ -111,7 +174,7 @@ function renderTestMount(slot, ctx) {
   const mountId = `ba-run-${slot.testId}-${locale}`;
   return [
     `      <!--BA-RUN: id=${mountId} test=${slot.testId} locale=${locale}-->`,
-    `      <div id="${mountId}" class="mt-6"></div>`,
+    `      <div id="${mountId}" class="ba-mount"></div>`,
   ].join('\n');
 }
 
@@ -122,12 +185,12 @@ function renderSwitcher(locale, ctx) {
   const otherHref = langSwitchHref(ctx.path);
   if (locale === 'no') {
     return [
-      `        <span class="${sw.activeCls}" style="background:var(--ba-accent-strong)">${sw.badges.no}</span>`,
+      `        <span class="${sw.activeCls}">${sw.badges.no}</span>`,
       `        <a class="${sw.inactiveCls}" href="${otherHref}" hreflang="en">${sw.badges.en}</a>`,
     ].join('\n');
   }
   return [
-    `        <span class="${sw.activeCls}" style="background:var(--ba-accent-strong)">${sw.badges.en}</span>`,
+    `        <span class="${sw.activeCls}">${sw.badges.en}</span>`,
     `        <a class="${sw.inactiveCls}" href="${otherHref}" hreflang="no">${sw.badges.no}</a>`,
   ].join('\n');
 }
@@ -178,18 +241,18 @@ ${bootScript || ''}
   <meta name="twitter:image" content="${ogImageUrl}"/>
   <meta name="twitter:image:alt" content="${esc(imageAlt)}"/>
 </head>
-<body class="min-h-screen antialiased">
-  <div class="flex min-h-screen flex-col">
-    <header class="flex items-center justify-between px-5 pt-6 pb-2 sm:px-8">
-      <a class="text-lg font-extrabold tracking-tight" href="${homeHref}">Brainarea</a>
-      <nav class="flex gap-1 text-sm" aria-label="Language switcher">
+<body class="ba-body">
+  <div class="ba-page">
+    <header class="ba-header">
+      <a class="ba-wordmark" href="${homeHref}">Brainarea</a>
+      <nav class="ba-lang" aria-label="Language switcher">
 ${renderSwitcher(locale, { path })}
       </nav>
     </header>
-    <main class="mx-auto w-full max-w-2xl flex-1 px-5 pt-8 pb-16 sm:px-8">
+    <main class="ba-main">
 ${mainHtml}
     </main>
-    <footer class="px-5 pb-8 text-center text-xs text-gray-400">(c) 2026 Brainarea</footer>
+    <footer class="ba-footer">(c) 2026 Brainarea</footer>
   </div>
 </body>
 </html>

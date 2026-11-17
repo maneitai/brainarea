@@ -125,38 +125,38 @@ export function renderDimensionsSvg(result, config, lang, strings, opts) {
   parts.push(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${LEFT * 2 + BAR_W} ${H}" role="img" aria-label="${esc(pctLabel)}">`);
   parts.push(`<title>${esc(pctLabel)}</title>`);
   /* akse */
-  parts.push(`<line x1="${LEFT}" y1="${TOP - 14}" x2="${LEFT + BAR_W}" y2="${TOP - 14}" stroke="#d4d4d8" stroke-width="1"/>`);
-  parts.push(`<text x="${LEFT}" y="${TOP - 20}" font-size="11" fill="#6b7280" text-anchor="start">${esc(axisStart)}</text>`);
-  parts.push(`<text x="${LEFT + BAR_W}" y="${TOP - 20}" font-size="11" fill="#6b7280" text-anchor="end">${esc(axisEnd)}</text>`);
+  parts.push(`<line x1="${LEFT}" y1="${TOP - 14}" x2="${LEFT + BAR_W}" y2="${TOP - 14}" style="stroke:var(--ba-border)" stroke-width="1"/>`);
+  parts.push(`<text x="${LEFT}" y="${TOP - 20}" font-size="11" style="fill:var(--ba-text-dim)" text-anchor="start">${esc(axisStart)}</text>`);
+  parts.push(`<text x="${LEFT + BAR_W}" y="${TOP - 20}" font-size="11" style="fill:var(--ba-text-dim)" text-anchor="end">${esc(axisEnd)}</text>`);
   for (let v = 0; v <= 100; v += 10) {
     const x = LEFT + (BAR_W * v) / 100;
-    parts.push(`<line x1="${x}" y1="${TOP - 14}" x2="${x}" y2="${TOP - 10}" stroke="#d4d4d8" stroke-width="1"/>`);
+    parts.push(`<line x1="${x}" y1="${TOP - 14}" x2="${x}" y2="${TOP - 10}" style="stroke:var(--ba-border)" stroke-width="1"/>`);
   }
   /* midtpunktmarkør ved 50 — visuelt og verbal adskilt fra prosent-lesingen */
   if (midpointLegend) {
     const xm = LEFT + BAR_W / 2;
-    parts.push(`<line x1="${xm}" y1="${TOP - 16}" x2="${xm}" y2="${TOP + barRows.length * ROW_H - 8}" stroke="#111827" stroke-width="1.5" stroke-dasharray="4 4"/>`);
+    parts.push(`<line x1="${xm}" y1="${TOP - 16}" x2="${xm}" y2="${TOP + barRows.length * ROW_H - 8}" style="stroke:var(--ba-text-dim)" stroke-width="1.5" stroke-dasharray="4 4"/>`);
   }
   let y = TOP;
   for (const r of barRows) {
     const norm = Math.max(0, Math.min(100, Number(r.normalized)));
     const label = labelOf(r.id);
-    parts.push(`<text x="${LEFT}" y="${y + 4}" font-size="12.5" font-weight="600" fill="#111827">${esc(label)}</text>`);
-    parts.push(`<rect x="${LEFT}" y="${y + 10}" width="${BAR_W}" height="${BAR_H}" rx="6" fill="#f1f5f9"/>`);
-    parts.push(`<rect x="${LEFT}" y="${y + 10}" width="${(BAR_W * norm) / 100}" height="${BAR_H}" rx="6" fill="#1e40af"/>`);
+    parts.push(`<text x="${LEFT}" y="${y + 4}" font-size="12.5" font-weight="600" style="fill:var(--ba-text)">${esc(label)}</text>`);
+    parts.push(`<rect x="${LEFT}" y="${y + 10}" width="${BAR_W}" height="${BAR_H}" rx="6" style="fill:var(--ba-surface-2)"/>`);
+    parts.push(`<rect x="${LEFT}" y="${y + 10}" width="${(BAR_W * norm) / 100}" height="${BAR_H}" rx="6" style="fill:var(--ba-accent-deep)"/>`);
     const valTxt = `${Math.round(norm)} %`;
-    parts.push(`<text x="${LEFT + BAR_W + 6}" y="${y + 27}" font-size="12.5" font-weight="600" fill="#111827">${esc(valTxt)}</text>`);
+    parts.push(`<text x="${LEFT + BAR_W + 6}" y="${y + 27}" font-size="12.5" font-weight="600" style="fill:var(--ba-text)">${esc(valTxt)}</text>`);
     strings.push(valTxt);
     y += ROW_H;
   }
   /* midtpunktfortegnelsen — egen linje UNDER grafen, aldri kombinert med prosenttekst */
   if (midpointLegend) {
-    parts.push(`<text x="${LEFT}" y="${y + 2}" font-size="11.5" fill="#374151">${esc(midpointLegend)}</text>`);
+    parts.push(`<text x="${LEFT}" y="${y + 2}" font-size="11.5" style="fill:var(--ba-text-soft)">${esc(midpointLegend)}</text>`);
     y += 22;
   }
   for (const r of ncRows) {
     const label = labelOf(r.id);
-    parts.push(`<text x="${LEFT}" y="${y + 12}" font-size="12" fill="#6b7280">${esc(label)} — ${esc(notComputable)}</text>`);
+    parts.push(`<text x="${LEFT}" y="${y + 12}" font-size="12" style="fill:var(--ba-text-dim)">${esc(label)} — ${esc(notComputable)}</text>`);
     y += 26;
   }
   parts.push('</svg>');
@@ -290,12 +290,12 @@ export function renderReport(result, config, opts = {}) {
       if (!para) throw new Error(`renderer: employer-frame mangler noteParaphrases[${n.id}] — notat kan ikke siteres rått i arbeidsgiver-rammen`);
       const txt = L(para, lang, `employer.noteParaphrases.${n.id}`);
       strings.push(txt);
-      sections.push(`  <p class="ba-rep-note"><span class="ba-rep-note-id">${esc(n.id)}</span> ${esc(txt)}</p>`);
+      sections.push(`  <p class="ba-rep-note" data-note-id="${esc(n.id)}">${esc(txt)}</p>`);
     } else {
       const txt = typeof n[lang] === 'string' && n[lang].trim() ? n[lang] : (typeof n.en === 'string' ? n.en : null);
       if (!txt) throw new Error(`renderer: note ${n.id} har ingen ${lang}-tekst i resultatet`);
       strings.push(txt);
-      sections.push(`  <p class="ba-rep-note"><span class="ba-rep-note-id">${esc(n.id)}</span> ${esc(txt)}</p>`);
+      sections.push(`  <p class="ba-rep-note" data-note-id="${esc(n.id)}">${esc(txt)}</p>`);
     }
   }
 

@@ -43,6 +43,10 @@ const flat = (K) => { const o = []; for (const [ns, names] of Object.entries(K))
 const ALLOW = new Set(['Brainarea', '(c) 2026 Brainarea']);
 /* switcher-chrome kommer fra pages-data.langSwitcher(), ikke i18n-katalogen: */
 ALLOW.add('NO'); ALLOW.add('EN');
+/* REDESIGN-A: tall er data, ikke spraak. Rad-nummer (02-05, 01-03) og
+   eksempel-skalaaer (3,0-3,9 / 3.0-3.9) staar i markup med vilje. */
+for (const n of ['01','02','03','04','05']) ALLOW.add(n);
+for (const n of ['2,4','2,8','3,1','3,6','3,9','2.4','2.8','3.1','3.6','3.9']) ALLOW.add(n);
 
 /* V2 — hreflang/canonical/switcher per side + V3 tekstkilde-inventar. */
 for (const { locale, route, path, file } of built) {
@@ -60,7 +64,7 @@ for (const { locale, route, path, file } of built) {
   ok(`V2.langattr:${route}:${locale}`, langAttr && langAttr[1] === locale);
 
   /* switcher: aktiv span + inaktiv lenke til motsatt språk, samme rute */
-  const swA = s.match(/<a class="rounded-full px-3 py-1\.5 text-gray-400 transition hover:text-gray-600" href="([^"]+)" hreflang="([^"]+)"/);
+  const swA = s.match(/<a class="ba-lang__off" href="([^"]+)" hreflang="([^"]+)"/);
   const want = langSwitchHref(path);
   ok(`V2.switcher:${route}:${locale}`, swA && swA[1] === want, swA?.[1] + ' vs ' + want);
   if (swA) ok(`V2.switcher-target-exists:${route}:${locale}`, existsSync(join(OUT, ...swA[1].slice(BASE.length).split('/'), 'index.html')), swA[1]);

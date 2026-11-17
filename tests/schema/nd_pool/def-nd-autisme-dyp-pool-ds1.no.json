@@ -1,0 +1,1389 @@
+{
+  "schemaVersion": 1,
+  "id": "nd-autisme-dyp-pool-ds1",
+  "type": "test-definition",
+  "family": "pool",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "ds1",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "ds1",
+      "label": "Sosial kommunikasjon og resiprositet",
+      "labelLanguage": "no",
+      "description": "Samtale-rytme, nonverbalt samspill, relasjonsbygging og tolking av sosiale signaler, selvrapportert."
+    }
+  ],
+  "items": [
+    {
+      "id": "ds-0001",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Flere samtaletråder samtidig mister jeg grepet på raskt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0002",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Samtaler i gruppe forblir vanskelige selv etter mange års praksis.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0003",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg vet ikke hvor lang en pause i samtalen har lov til å vare.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0004",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder fram med emnet mitt lenge etter at lytterne har vendt seg bort.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0005",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Mine turer i en samtale må planlegges frem, stillheten setter dem i gang.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0006",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Folk må be meg om å vende tilbake til temaet samtalen startet med.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0007",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg hører hvor samtalepartnere tar pauser, men forstår ikke hvorfor.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0008",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg bygger setningene mine mens jeg snakker, og det høres som opplesing.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0009",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trenger bevisst anstrengelse for å holde blikkontakt mens jeg snakker.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0010",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Andre menneskers ansikter gir meg mindre enn ordene de bruker.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0011",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Mimikk og blikk må oversettes i tankene mine før jeg reagerer.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0012",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg fanger tonefallet først når ordene har gjentatt det.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0013",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg merker mitt eget ansiktsuttrykk oftest når folk spør om det.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0014",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Riktig avstand til folk er noe jeg velger med hodet, ikke med kroppen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0015",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Hender og kropp under samtalen følger ikke planen min.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0016",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg vet ikke hva et skuldertrekk fra den andre skulle bety.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0017",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Ordene jeg hører bærer mindre enn det folk faktisk mener.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0018",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Spøk og alvor skiller seg ikke ut i stemmen før det er for sent.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0019",
+      "kind": "likert",
+      "lang": "no",
+      "text": "En kommentar som virker vennlig i hodet mitt kan gjøre rommet sure.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0020",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg oppdager at folk ble skuffet over meg lenge etterpå.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0021",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Hint og forslag oppleves som vanlige setninger til jeg får det forklart.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0022",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg vet ikke hvilke temaer som regnes som private i samtalens første minutter.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0023",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Et smil på leppene gjør det vanskelig å skjønne at personen er irritert.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0024",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Reglene for hvem som hilser på hvem først glipper hos meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0025",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Nye vennskap begynner der den andre forklarer hvordan det gjøres.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0026",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Små tilfeldige samtaler blir sjelden til kontakt med folk.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0027",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Delt interesse gjør samtaler enklere enn personlige spørsmål.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0028",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg har mistet vennskap på grunn av et svar jeg ikke visste var feil.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0029",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trenger en plan for hvordan jeg nærmer meg folk jeg vil kjenne.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0030",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg vet ikke når et bekjentskap har blitt til et vennskap.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0031",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Etter møter med nye folk går jeg gjennom hvert valg jeg tok i samtalen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0032",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Varmen jeg har for folk kommer svakere på plass enn jeg vil.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0033",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Å delta i samtalen koster mer enn kroppen min viser.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0034",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Enkle samtaler legger seg tunge på meg utpå kvelden.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0035",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg må planlegge hviledager etter selskap andre bare koser seg i.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0036",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder avstand til folk fordi kreftene tar slutt før samtalen gjør.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0037",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Mengden jeg har talt i løpet av dagen svir om natten.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0038",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Sosialt samvær med flere folk gir meg halvparten for hver person som tilkommer.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0039",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Etter en dag av samtaler trenger jeg taushet for å hente meg inn.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "ds-0040",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg går tom for sosiale krefter der andre bare blir i gangen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "ds1",
+          "sign": 1
+        }
+      ]
+    }
+  ]
+}

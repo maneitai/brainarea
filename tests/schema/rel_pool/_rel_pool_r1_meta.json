@@ -1,0 +1,544 @@
+{
+  "metaVersion": 1,
+  "id": "rel-cl-pool",
+  "date": "2026-11-17",
+  "boardLeaf": "#3825-blokken [3-VEIS] FASE 2 relasjonspool per dimensjon: R1 nærhet (cl) — 60 originale items (worker TR-9D6F8798C5A9).",
+  "spec": "tests/schema/_rel_itemspec_spec.json (rel-itemspec-v1, PROPOSED; GJELDENDE ved #3813)",
+  "licenseBasis": "DOC-C8C02AD272 (lisensverdikten) er kontrastgrunnlag: ingen kommersielt relasjonsinstrument er lisensiert eller gjengitt — alle 60 items per språk er egne/original forfattet fra itemspec-themes.R1-construct'en. Forbud per spec.copyrightControl: gjenkjennbare formuleringer fra Gottman-programmenes instrumenter, 5 Love Languages, ENRICH, Prepare/Enrich; ASRS/AQ/RAADS-R-formuleringer; instrumentnavn i innhold. Copyright-skann (selftest S11): 0 treff.",
+  "authoringRule": "Første-person presens, ett utsagn, 8–14 ord, ingen dobbeltspørsmål, ingen absolutter (alltid/aldri/always/never), ingen instrument-/diagnose-navn, ingen ekstremrisiko/vold (R3-regelen som prinsipp). NO og EN separat forfattet med konstrukt-ekvivalens: samme id-rekkefølge, samme tema+sign per id; tekstene er IKKE direkte oversettelser (Soester-konvensjonen).",
+  "optionsSource": "def-ipip50-big5.<lang>.json items[*].options — byte-identisk per fil (verifisert i selftest S5).",
+  "signPolicy": "30 positivt keyede (cl-0001..cl-0030, sign 1) + 30 negativt keyede (cl-0031..cl-0060, sign -1). Basis: itemspec.sessionFormDecision låser live +-+- per dimensjon (2 pos + 2 neg velges i FASE 4) — poolen må derfor inneholde begge retninger. Ulik nd-poolen (screening i én retning, NG-4) er dette profilkeying i to retninger, det er et dokumentert designvalg, ikke NG-4-avvik.",
+  "themeCounts": {
+    "cl-t1": 10,
+    "cl-t2": 10,
+    "cl-t3": 10,
+    "cl-n1": 10,
+    "cl-n2": 10,
+    "cl-n3": 10
+  },
+  "seedPolicy": "seedNear=true markerer items i formuleringssfæren av itemspec-themes.R1.exampleSeed («fortelle en nær person hvordan jeg har det») — både positive ekko (cl-0011) og formuleringens negasjons-side (cl-0043). FASE 4-utvelgelsen bruker flagget for å unngå rene gjentakelser/mirrored-par i live 16-item-settet. Ikke et lisensflagg (seed-en er egen).",
+  "redundancyPolicy": "redundantWith markerer formuleringsnære par (symmetrisk) slik at FASE 4-utvelgelsen velger maks ett item per par inn i live-deffen.",
+  "holes": {
+    "closes": "H-2-delen R1 (samlet faseverifikasjon 2026-11-17: rel-pool 0/240, brett #3825): R1 nærhet 60/60 levert — H-2 er fortsatt åpen til R2/R3/R4 er levert."
+  },
+  "items": [
+    {
+      "id": "cl-0001",
+      "dimension": "closeness",
+      "theme": "cl-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0002",
+      "dimension": "closeness",
+      "theme": "cl-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0003",
+      "dimension": "closeness",
+      "theme": "cl-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0004",
+      "dimension": "closeness",
+      "theme": "cl-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0005",
+      "dimension": "closeness",
+      "theme": "cl-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0006",
+      "dimension": "closeness",
+      "theme": "cl-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0007",
+      "dimension": "closeness",
+      "theme": "cl-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0008",
+      "dimension": "closeness",
+      "theme": "cl-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0009",
+      "dimension": "closeness",
+      "theme": "cl-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0010",
+      "dimension": "closeness",
+      "theme": "cl-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0011",
+      "dimension": "closeness",
+      "theme": "cl-t2",
+      "sign": 1,
+      "seedNear": true,
+      "redundantWith": [
+        "cl-0019"
+      ]
+    },
+    {
+      "id": "cl-0012",
+      "dimension": "closeness",
+      "theme": "cl-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0013",
+      "dimension": "closeness",
+      "theme": "cl-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0014",
+      "dimension": "closeness",
+      "theme": "cl-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0015",
+      "dimension": "closeness",
+      "theme": "cl-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0016",
+      "dimension": "closeness",
+      "theme": "cl-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "cl-0045"
+      ]
+    },
+    {
+      "id": "cl-0017",
+      "dimension": "closeness",
+      "theme": "cl-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0018",
+      "dimension": "closeness",
+      "theme": "cl-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0019",
+      "dimension": "closeness",
+      "theme": "cl-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "cl-0011"
+      ]
+    },
+    {
+      "id": "cl-0020",
+      "dimension": "closeness",
+      "theme": "cl-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0021",
+      "dimension": "closeness",
+      "theme": "cl-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0022",
+      "dimension": "closeness",
+      "theme": "cl-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0023",
+      "dimension": "closeness",
+      "theme": "cl-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0024",
+      "dimension": "closeness",
+      "theme": "cl-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0025",
+      "dimension": "closeness",
+      "theme": "cl-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0026",
+      "dimension": "closeness",
+      "theme": "cl-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0027",
+      "dimension": "closeness",
+      "theme": "cl-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0028",
+      "dimension": "closeness",
+      "theme": "cl-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0029",
+      "dimension": "closeness",
+      "theme": "cl-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0030",
+      "dimension": "closeness",
+      "theme": "cl-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0031",
+      "dimension": "closeness",
+      "theme": "cl-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cl-0038"
+      ]
+    },
+    {
+      "id": "cl-0032",
+      "dimension": "closeness",
+      "theme": "cl-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0033",
+      "dimension": "closeness",
+      "theme": "cl-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0034",
+      "dimension": "closeness",
+      "theme": "cl-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0035",
+      "dimension": "closeness",
+      "theme": "cl-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0036",
+      "dimension": "closeness",
+      "theme": "cl-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0037",
+      "dimension": "closeness",
+      "theme": "cl-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0038",
+      "dimension": "closeness",
+      "theme": "cl-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cl-0031"
+      ]
+    },
+    {
+      "id": "cl-0039",
+      "dimension": "closeness",
+      "theme": "cl-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0040",
+      "dimension": "closeness",
+      "theme": "cl-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0041",
+      "dimension": "closeness",
+      "theme": "cl-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0042",
+      "dimension": "closeness",
+      "theme": "cl-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cl-0046"
+      ]
+    },
+    {
+      "id": "cl-0043",
+      "dimension": "closeness",
+      "theme": "cl-n2",
+      "sign": -1,
+      "seedNear": true,
+      "redundantWith": [
+        "cl-0056"
+      ]
+    },
+    {
+      "id": "cl-0044",
+      "dimension": "closeness",
+      "theme": "cl-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0045",
+      "dimension": "closeness",
+      "theme": "cl-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cl-0016"
+      ]
+    },
+    {
+      "id": "cl-0046",
+      "dimension": "closeness",
+      "theme": "cl-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cl-0042"
+      ]
+    },
+    {
+      "id": "cl-0047",
+      "dimension": "closeness",
+      "theme": "cl-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0048",
+      "dimension": "closeness",
+      "theme": "cl-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0049",
+      "dimension": "closeness",
+      "theme": "cl-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0050",
+      "dimension": "closeness",
+      "theme": "cl-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0051",
+      "dimension": "closeness",
+      "theme": "cl-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0052",
+      "dimension": "closeness",
+      "theme": "cl-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0053",
+      "dimension": "closeness",
+      "theme": "cl-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cl-0054"
+      ]
+    },
+    {
+      "id": "cl-0054",
+      "dimension": "closeness",
+      "theme": "cl-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cl-0053"
+      ]
+    },
+    {
+      "id": "cl-0055",
+      "dimension": "closeness",
+      "theme": "cl-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0056",
+      "dimension": "closeness",
+      "theme": "cl-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cl-0043"
+      ]
+    },
+    {
+      "id": "cl-0057",
+      "dimension": "closeness",
+      "theme": "cl-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0058",
+      "dimension": "closeness",
+      "theme": "cl-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0059",
+      "dimension": "closeness",
+      "theme": "cl-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cl-0060",
+      "dimension": "closeness",
+      "theme": "cl-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    }
+  ],
+  "provenance": {
+    "authoringDate": "2026-11-17",
+    "originality": "Alle items forfattet fra construct-beskrivelsen i _rel_itemspec_spec.json themes.R1 — ingen ekstern skala, ingen formell oversettelse, ingen scraping.",
+    "signCounts": {
+      "pos": 30,
+      "neg": 30
+    },
+    "engineFactsVerified": [
+      "scoring.js trait-sti: normalized = 100*(raw-min)/(max-min) over besvart sett; enkelt-skala-rad for closeness; komposit = skalaens normalized (lest i økten)",
+      "render.js sessionSizeFor(likert) => alle 60 items shuffles (lest i økten)",
+      "validateTestDef håndhever ikke reverseringskravet — poolens 30/30 keying er forfatter-levert, ikke motor-påtvinget (grep i tests/engine)",
+      "symmetrisk +/- pool: all-5 og all-1 gir normalized 50.0 (konstant-svar-invarians) — håndregnet og provet i selftest S8"
+    ]
+  }
+}

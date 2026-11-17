@@ -1,0 +1,2069 @@
+{
+  "schemaVersion": 1,
+  "id": "rel-cl-pool",
+  "type": "test-definition",
+  "family": "relations",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "closeness",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "closeness",
+      "label": "Closeness",
+      "labelLanguage": "en",
+      "description": "Experienced closeness, care and trust that closeness is received, in friendships and partnerships."
+    }
+  ],
+  "items": [
+    {
+      "id": "cl-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I enjoy being close to the people I care about.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I feel calmed by time spent with people I feel connected to.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0003",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I seek company when I want to feel less alone.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0004",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I notice how closeness grows slowly within a friendship.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0005",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I like that we can sit quietly together without discomfort.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0006",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I feel at home when I am with people I trust.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0007",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I want to hold on to the relationships that matter to me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0008",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I find it easy to relax in the company of a close friend.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0009",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I value small everyday moments of shared closeness.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0010",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I feel warmth when someone shows me that they care.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0011",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I happily tell a close friend how my day has been.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0012",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I show care through actions when people in my life struggle.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0013",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say it out loud when someone means a lot to me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0014",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I listen with full attention when a close person shares something important.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0015",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask the people I love how they are really doing.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0016",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I offer hugs or a gentle touch when it feels right.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0017",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let people come close to my everyday life.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0018",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I stand by my friends when they need support.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0019",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I share small details of my life with people I am fond of.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0020",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I take the initiative to meet people I feel close to.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0021",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I dare to say clearly when I miss someone.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0022",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I believe my closest people accept me as I am.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0023",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I share worries with a person I trust.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0024",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I can let tears show around people I feel safe with.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0025",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I move toward people instead of away when talk becomes personal.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0026",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I expect the warmth I give to be received well.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0027",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I accept that closeness brings vulnerability into my relationships.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0028",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let new acquaintances come nearer when it feels safe.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0029",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I have people around me with whom I am entirely myself.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0030",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I reach out deliberately when I need emotional support.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0031",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep at arm's length even the people I am fond of.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0032",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I often feel alone even when I am with other people.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0033",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I need a pause from closeness after long stretches of time together.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0034",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I pull away when relationships become more intimate than I like.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0035",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep people at some distance because it feels safer.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0036",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I find being together with others draining when it lasts long.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0037",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I prefer being by myself with no one around.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0038",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I make sure people do not come too close to me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0039",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I gladly plan whole days without any social contact.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0040",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I step back when someone wants to get close to me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0041",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I find it difficult to accept care from other people.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0042",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I cool conversations down when they become too caring.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0043",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I avoid telling those close to me how I truly feel.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0044",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I change the subject when people ask how I am inside.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0045",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I receive hugs stiffly without really being present in them.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0046",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep a guarded tone when people near me show warmth.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0047",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I give short answers when someone tries to come close.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0048",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I experience displays of care more as pressure than warmth.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0049",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I answer warmth from friends with cooler engagement.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0050",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I round off conversations before they become too personal.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0051",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I expect rejection when I show people that I care.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0052",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I regret it afterwards when I have shared something personal.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0053",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I cannot let people see me when I am struggling.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0054",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I wait for proof before I let anyone see me vulnerable.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0055",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I defend myself by keeping away from emotionally close conversations.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0056",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hide what I feel to avoid having to explain myself.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0057",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I feel uncomfortable when people show me obvious care.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0058",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hold back trust even with people I have known long.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0059",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I dismiss my own needs for closeness as unimportant.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0060",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep to small talk when people want to know me better.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    }
+  ]
+}

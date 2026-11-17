@@ -1,0 +1,2069 @@
+{
+  "schemaVersion": 1,
+  "id": "rel-cl-pool",
+  "type": "test-definition",
+  "family": "relations",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "closeness",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "closeness",
+      "label": "Nærhet",
+      "labelLanguage": "no",
+      "description": "Opplevd nærhet, omsorg og tillit til at nærhet blir mottatt i vennskap og samliv."
+    }
+  ],
+  "items": [
+    {
+      "id": "cl-0001",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trives med å være nær folk jeg bryr meg om.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0002",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg får ro av å tilbringe tid med mennesker jeg føler meg knyttet til.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0003",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg søker selskap når jeg vil føle meg mindre alene.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0004",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg merker meg hvordan nærhet vokser i et vennskap over tid.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0005",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg liker at vi kan sitte stille sammen uten at det blir ubehagelig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0006",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg føler meg hjemme når jeg er sammen med folk jeg stoler på.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0007",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg vil gjerne holde fast på de relasjonene som betyr noe for meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0008",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg finner det lett å slappe av i nærvær av en nær venn.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0009",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg setter pris på små øyeblikk av felles nærhet i hverdagen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0010",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg opplever varme når noen viser at de bryr seg om meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0011",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg forteller gjerne en nær venn hvordan dagen min har vært.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0012",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg viser omsorg i handling når folk i mitt liv har det vanskelig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0013",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier fra når noen betyr mye for meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0014",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lytter med hele meg når en nær person deler noe viktig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0015",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg spør hvordan folk jeg er glad i faktisk har det.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0016",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg gir klemmer eller en berørende gest når det passer seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0017",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar folk komme meg nært inn på livet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0018",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg støtter opp om vennene mine når de trenger det.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0019",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg deler små detaljer fra livet mitt med folk jeg er glad i.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0020",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar initiativ til å treffe folk jeg har nær relasjon til.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0021",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tør å si tydelig fra når jeg savner noen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0022",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tror mine nærmeste tar imot meg slik jeg er.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0023",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg deler bekymringer med en person jeg stoler på.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0024",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kan vise tårer i nærvær av folk jeg føler meg trygg hos.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0025",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg går mot folk i stedet for bort når samtalen blir personlig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0026",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg forventer at varme jeg deler blir tatt godt imot.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0027",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tåler at nærhet kan skape sårbarhet i relasjoner.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0028",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar nye bekjentskaper bli nærmere når det føles trygt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0029",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg har folk rundt meg som jeg føler meg helt meg selv hos.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0030",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg oppsøker bevisst kontakt når jeg trenger følelsesmessig støtte.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cl-0031",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder en armlengdes avstand selv til folk jeg er glad i.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0032",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg føler meg ofte alene selv når jeg er sammen med andre.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0033",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trenger pause fra nærhet når samværet har vart lenge.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0034",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trekker meg unna når relasjoner blir mer intime enn jeg liker.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0035",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder folk på litt avstand for at det skal være trygt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0036",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg finner felles samvær anstrengende når det varer for lenge.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0037",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trives best når jeg er alene uten folk rundt meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0038",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sørger for at folk ikke kommer meg altfor nært.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0039",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg planlegger gjerne dager helt uten sosialt samvær.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0040",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar avstand når noen vil komme meg tett på.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0041",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg opplever det som vanskelig å ta imot omsorg fra andre.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0042",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kjøler ned samtaler når de blir for omsorgsfulle.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0043",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg unngår å fortelle folk nær meg hvordan jeg egentlig har det.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0044",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg endrer tema når folk spør hvordan jeg har det på innsiden.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0045",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg mottar klemmer stivt uten egentlig å være til stede.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0046",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder en avvisende tone når folk nær meg vil uttrykke varme.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0047",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg svarer kort når noen forsøker å komme meg tett på.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0048",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg opplever omsorgssignaler mer som press enn som varme.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0049",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg svarer på varme fra venner med kaldere engasjement.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0050",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg avrunder gjerne samtaler før de blir for personlige.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0051",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg forventer avvisning når jeg viser folk at jeg bryr meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0052",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg angrer etterpå når jeg har delt noe personlig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0053",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg klarer ikke la folk se meg når jeg sliter.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0054",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg venter på bevis før jeg lar noen se meg sårbar.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0055",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg beskytter meg selv ved å holde avstand til følelsesnære samtaler.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0056",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg skjuler det jeg føler for å slippe å forklare meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0057",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg blir ubehagelig berørt når folk viser meg tydelig omsorg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0058",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder tilbake tillit selv med folk jeg har kjent lenge.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0059",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg avfeier mine egne behov for nærhet som uvesentlige.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cl-0060",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder meg til det overflatiske når folk vil bli bedre kjent med meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "closeness",
+          "sign": -1
+        }
+      ]
+    }
+  ]
+}

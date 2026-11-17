@@ -40,6 +40,7 @@ import { evaluateAttention } from '@BA@/tests/engine/attention.js';
 import { registerOverlay, makeT } from '@BA@/i18n/index.js';
 import { KEYS as NO_KEYS } from '@BA@/i18n/no.js';
 import { renderReport } from '@BA@/report/renderer.mjs';
+import { computeTriageOutcome } from '@BA@/tests/schema/_nd_triage_model.mjs';
 import { mountPuzzleGames } from '@BA@/puzzle.mjs';
 
 const RUN_NS = 'ba-run:';
@@ -96,8 +97,19 @@ const DEFS = {
   persona: 'def-ipip50-big5',
   iq: 'def-evne-g-44',
   relational: 'def-rel-16',
+  nd: 'def-nd-triage',
+  'nd-adhd': 'def-nd-adhd',
+  'nd-autism': 'def-nd-autism',
 };
 const PUZZLE_TESTS = new Set(['puzzle']);
+/* ND deep-flyt: triage-utfall -> neste spors testId (modellen eier mappingen;
+   'begge' gir sekvensiell rekkefolge adhd -> autisme — ingen parallell spor). */
+const ND_NEXT = {
+  'out-adhd': { next: 'nd-adhd', label: 'ui.nd.deep.adhd' },
+  'out-autism': { next: 'nd-autism', label: 'ui.nd.deep.autism' },
+  'out-adhd-autism': { next: 'nd-adhd', label: 'ui.nd.deep.both', then: 'nd-autism', thenLabel: 'ui.nd.deep.autismAfter' },
+  'out-none': null,
+};
 async function loadDef(test, lang) {
   const name = DEFS[test];
   if (!name) throw new DefMissingError('ukjent test: ' + test);
@@ -174,9 +186,22 @@ async function boot() {
     return;
   }
 
+  /* ND deep-flyt: på nd-siden kan et flagg sende boot-et videre til dypsporet
+     (satt av startNdDeep; ryddes av retake på triage). Ingen side-URL-er —
+     alltid samme rute, reload-et gjør jobben. */
+  let runTest = mark.test;
+  if (runTest === 'nd') {
+    let deep = null;
+    try { deep = JSON.parse(localStorage.getItem(RUN_NS + 'nd-deep') || 'null'); } catch { deep = null; }
+    if (deep && deep.test && DEFS[deep.test]) {
+      runTest = deep.test;
+      localStorage.removeItem(RUN_NS + 'nd-deep'); /* read-once: videre reload viser triagen igjen */
+    }
+  }
+
   let def, degraded;
   try {
-    ({ def, degraded } = await loadDef(mark.test, mark.locale));
+    ({ def, degraded } = await loadDef(runTest, mark.locale));
   } catch (e) {
     container.appendChild(el('div', 'ba-run-result',
       e instanceof DefMissingError ? tt('ui.run.err.defMissing') : tt('ui.run.err.generic')));
@@ -225,6 +250,16 @@ async function handleComplete(container, def, tt, mark, payload) {
   }
   const result = scored.result;
 
+  /* ND-triage: utfall + per-akse band beregnes av modellen (kast-aldri-kontrakt),
+     lagres på persistensen slik at deep-flytten kan lese det ved boot. */
+  let triage = null;
+  if (def.id === 'nd-triage') {
+    const adhd = (result.scales || []).find((s) => s.id === 'adhd') || null;
+    const autism = (result.scales || []).find((s) => s.id === 'autism') || null;
+    triage = computeTriageOutcome({ adhd: adhd ? adhd.normalized : null, autism: autism ? autism.normalized : null });
+    if (!triage.ok) triage = null;
+  }
+
   /* attention: vises aldri som eksklusjon — bare status */
   let att = null;
   try { att = evaluateAttention(def, payload, {}); } catch { att = null; }
@@ -240,6 +275,7 @@ async function handleComplete(container, def, tt, mark, payload) {
   }
 
   const persist = { result, report };
+  if (triage) persist.triage = triage;
   writeResult(localStorage, persist);
   showResult(container, def, tt, persist, { att });
 }
@@ -266,6 +302,39 @@ function showResult(container, def, tt, persist, { att } = {}) {
 
   const actions = el('div', 'ba-run-actions');
 
+  /* ND deep-flyt: triage-utfallet styrer neste spor (ND_NEXT). Kortet renderer
+     kun utfallet (kontrakten: resultattekst er #3786/#3787-eie); knappene
+     starter dypsporet med et flagg + reload — boot bytter test. */
+  /* ND-kjede-kontekst: triage-resultatet bærer eget utfall; dypresultatene
+     leser triage-utfallet fra persistensen (nd-triage-resultatet i lagret). */
+  const ctxTriage = (persist.triage && persist.triage.ok) ? persist.triage
+    : (() => { const tri = readResult(localStorage, 'nd-triage'); return (tri && tri.triage && tri.triage.ok) ? tri.triage : null; })();
+  if (ctxTriage) {
+    const nx = ND_NEXT[ctxTriage.outcode];
+    if (persist.triage) {
+      /* triage-resultatvisning: utfallskort + knapp til next spor */
+      const outText = {
+        'out-none': 'ui.nd.out.none', 'out-adhd': 'ui.nd.out.adhd',
+        'out-autism': 'ui.nd.out.autism', 'out-adhd-autism': 'ui.nd.out.both',
+      }[persist.triage.outcode];
+      if (outText) {
+        const card = el('div', 'ba-run-att');
+        card.textContent = tt(outText);
+        box.appendChild(card);
+      }
+      if (nx && nx.next && def.id === 'nd-triage') {
+        const db = el('button', null, tt(nx.label));
+        db.addEventListener('click', () => startNdDeep(nx.next));
+        actions.appendChild(db);
+      }
+    } else if (nx && nx.then && def.id === nx.next) {
+      /* dypresultat i 'begge'-tilfelle: sekvens adhd -> autisme, ærlig knapp */
+      const tb = el('button', null, tt(nx.thenLabel));
+      tb.addEventListener('click', () => startNdDeep(nx.then));
+      actions.appendChild(tb);
+    }
+  }
+
   const pdfBtn = el('button', null, tt('ui.run.pdf.button'));
   pdfBtn.addEventListener('click', () => downloadPdf(result, markLocale(def), tt, pdfBtn));
   actions.appendChild(pdfBtn);
@@ -285,14 +354,26 @@ function markLocale(def) {
 }
 
 function retake(def) {
-  /* tøm kun denne testens motor-tilstand + resultat, behold alt annet */
+  /* tøm kun denne testens motor-tilstand + resultat, behold alt annet.
+     Retake på triage rydder HELE nd-kjeden (dypsporene er avledet av triagen)
+     og fjerner deep-flagget; retake på et dypspor gjenoppretter flagget slik at
+     reload retter seg mot samme spor på nytt. */
+  const extra = def.id === 'nd-triage' ? ['nd-adhd', 'nd-autism'] : [];
+  const ids = [def.id, ...extra];
   const keys = [];
   for (let i = 0; i < localStorage.length; i++) keys.push(localStorage.key(i));
   for (const k of keys) {
-    if (k.startsWith(STORAGE_NS + 'session:' + def.id) || k.startsWith(STORAGE_NS + 'used:' + def.id) || k === RUN_NS + 'result:' + def.id) {
+    if (k === RUN_NS + 'nd-deep') localStorage.removeItem(k);
+    else if (ids.some((id) => k.startsWith(STORAGE_NS + 'session:' + id) || k.startsWith(STORAGE_NS + 'used:' + id) || k === RUN_NS + 'result:' + id)) {
       localStorage.removeItem(k);
     }
   }
+  location.reload();
+}
+
+/* deep-av: flagg + reload — boot på nd-siden leser flagget og kjører sporett */
+function startNdDeep(testId) {
+  try { localStorage.setItem(RUN_NS + 'nd-deep', JSON.stringify({ test: testId })); } catch { /* ignore */ }
   location.reload();
 }
 

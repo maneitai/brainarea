@@ -54,7 +54,7 @@ const cards = [];
 for (const { route, locale } of ogCardOrder()) cards.push(ogCardForRoute({ locale, route, t: t[locale] }));
 
 /* G1 — ekte kjede over alle 14 kort */
-ok('G1.count', cards.length === 14, String(cards.length));
+ok('G1.count', cards.length === 16, String(cards.length));
 ok('G1.og-version', OG_VERSION === 'v1');
 for (const c of cards) {
   const id = `G1.${c.route}-${c.locale}`;
@@ -130,7 +130,7 @@ ok('G7.alt-required', (() => { try { ogMetaLines({ locale: 'no', kroute: 'rel', 
 /* G8 — build-wire (kilde-skann) */
 const bs = readFileSync(join(REPO, 'app', 'build.js'), 'utf8');
 ok('G8.import', bs.includes("import { ogCardForRoute, ogMetaLines } from './og.js'"));
-ok('G8.shell-props', bs.includes('ogImageTags, ogImageUrl, mainHtml') && bs.includes('...meta }));'.replace('.meta', 'meta')) && bs.includes('ogImageUrl, ...meta'));
+ok('G8.shell-props', bs.includes('mainHtml, ogImageTags, ogImageUrl, bootScript, ...meta')); /* pin oppdatert for #3840-boot-rekkefoelge */
 ok('G8.twitter', bs.includes('summary_large_image'));
 ok('G8.main-wire', bs.includes('ogCardForRoute({ locale, route, t: tt })'));
 
@@ -140,7 +140,7 @@ const hasMan = existsSync(manPath);
 ok('G9.manifest', hasMan);
 if (hasMan) {
   const man = readFileSync(manPath, 'utf8').trim().split('\n');
-  ok('G9.man-count', man.length === 14 && man.every((l) => l.includes('png md5=')), String(man.length));
+  ok('G9.man-count', man.length === 16 && man.every((l) => l.includes('png md5=')), String(man.length));
   const md5map = new Map(man.map((l) => [l.split(' ')[0], { png: l.match(/md5=([0-9a-f]{32})/)?.[1], svg: l.match(/svgmd5=([0-9a-f]{32})/)?.[1], bytes: Number(l.match(/bytes=(\d+)/)?.[1]) }]));
   for (const c of cards) {
     const f = `${c.route}-${c.locale}.png`;

@@ -235,6 +235,15 @@ async function puzzleFlow() {
 }
 
 async function main() {
+  /* pre-seed for ND-flyt-scenarioene (foer boot): deep = flagg til dypspor,
+     seq = avsluttet triage-oeskt som dyp-resultatet leser kontekst fra. */
+  if (flag === 'deep') mem.set('ba-run:nd-deep', JSON.stringify({ test: 'nd-adhd' }));
+  if (flag === 'seq') mem.set('ba-run:result:nd-triage', JSON.stringify({
+    result: { schemaVersion: 1, testId: 'nd-triage' }, report: { html: '' },
+    triage: { ok: true, version: '1.0.0', outcode: 'out-adhd-autism',
+      perAxis: { adhd: { bandId: 'band-flagged' }, autism: { bandId: 'band-flagged' } },
+      nextSteps: { deepPoolId: 'nd-adhd-autism' } },
+  }));
   await import('file://' + join(APP, 'run.js'));
 
   /* S1: css injisert, boot leste markøren */
@@ -270,7 +279,7 @@ async function main() {
     ck('S2.degraded-banner', /Nedgradert modus/.test(note) || /Degraded mode/.test(note), 'note=[' + note.slice(0,60) + '] klasser=' + classDump.join(',').slice(0,120));
   }
 
-  const expectedLen = test === 'persona' ? 50 : test === 'iq' ? 44 : 16;
+  const expectedLen = flag === 'deep' ? 24 : { persona: 50, iq: 44, relational: 16, nd: 6, 'nd-adhd': 24, 'nd-autism': 24 }[realTest];
 
   /* S3: besvar alt (første alternativ + Neste) til resultatet vises */
   let clicks = 0;
@@ -280,7 +289,7 @@ async function main() {
     const opts = byClass(mount, 'ba-opt').filter((b) => !b._classes.includes('ba-resume-quit'));
     ck(`S3.opt-${i}`, opts.length >= 2, 'fant ' + opts.length);
     if (opts.length < 2) { finish(); return; }
-    opts[0].click(); clicks++;
+    (flag === 'max' ? opts[opts.length - 1] : opts[0]).click(); clicks++;
     await sleep(0);
     const nav = byClass(mount, 'ba-nav');
     const nextBtn = nav.flatMap((n) => n.children).find((c) => c.tagName === 'BUTTON' && !c.disabled);
@@ -295,8 +304,8 @@ async function main() {
 
   /* S4: rapportinnhold — esc-et renderReport-HTML med testId + normNote */
   const reportHtml = resultBoxes[0].children.flatMap((c) => (c.className || '').includes('ba-run-report') ? [c._innerHTML] : []).join('');
-  const idMap = { persona: 'ipip50-big5', iq: 'evne-g-44', relational: 'rel-16' };
-  const defId = idMap[realTest] || idMap[test];
+  const idMap = { persona: 'ipip50-big5', iq: 'evne-g-44', relational: 'rel-16', nd: 'nd-triage', 'nd-adhd': 'nd-adhd', 'nd-autism': 'nd-autism' };
+  const defId = flag === 'deep' ? 'nd-adhd' : (idMap[realTest] || idMap[test]);
   ck('S4.testId-i-rapport', reportHtml.includes(`[${defId}`) || reportHtml.includes(defId), defId + ' fantes ikke');
   const normMarkers = { persona: 'prosent av skalaens omfang', iq: 'IQ', relational: 'prosent av skalaens omfang' };
   const nm = normMarkers[realTest] || normMarkers[test] || 'skala';
@@ -314,7 +323,7 @@ async function main() {
   ck('S7.delingslinje', /delbar|shareable/i.test(att));
 
   /* S8: PDF via ekte renderReportPdf */
-  const pdfBtn = byClass(mount, 'ba-run-actions').flatMap((a) => a.children).find((b) => b.tagName === 'BUTTON');
+  const pdfBtn = byClass(mount, 'ba-run-actions').flatMap((a) => a.children).filter((b) => b.tagName === 'BUTTON').find((b) => /PDF/i.test(b.textContent));
   ck('S8.pdf-knapp', Boolean(pdfBtn));
   if (pdfBtn) {
     pdfBtn.click();
@@ -322,10 +331,41 @@ async function main() {
     ck('S8.pdf-bytes', BlobStub.lastLen > 1000, 'lastLen=' + BlobStub.lastLen);
     ck('S8.object-url', createdObjectUrls.length >= 1);
   }
+  /* ===== N: ND-kjede (nd/nd-adhd/nd-autism) ===== */
+  if (test === 'nd' || test === 'nd-adhd' || test === 'nd-autism') {
+    const ndBtns = byClass(mount, 'ba-run-actions').flatMap((a) => a.children).filter((b) => b.tagName === 'BUTTON');
+    const allTxt = byClass(mount, 'ba-run-att').map((e) => e.textContent).join(' | ');
+    if (test === 'nd' && flag === 'max') {
+      /* begge akser 100 -> out-adhd-autism: utfallskort + deep-knapp */
+      ck('N1.beggekort', /hevet|elevated/i.test(allTxt), allTxt.slice(0, 90));
+      ck('N2.deep-knapp', ndBtns.length === 3, 'knapper=' + ndBtns.length);
+      const deep = ndBtns.find((b) => /dyper|deeper/i.test(b.textContent));
+      ck('N2.deep-tekst', Boolean(deep), deep ? deep.textContent : 'mangler');
+      if (deep) { deep.click(); await sleep(30); }
+      ck('N3.flag-lagret', (mem.get('ba-run:nd-deep') || '').includes('nd-adhd'), mem.get('ba-run:nd-deep') || 'mangler');
+      ck('N3.reload', globalThis.__reloaded === true);
+    } else if (test === 'nd' && flag !== 'deep') {
+      /* alt-1 -> normalized 0 -> out-none: kort 'lave', ingen deep-knapp */
+      ck('N1.lowekort', /lave|low/i.test(allTxt), allTxt.slice(0, 90));
+      ck('N2.ingen-deep', ndBtns.length === 2, 'knapper=' + ndBtns.length);
+    } else if (test === 'nd-adhd' && flag === 'seq') {
+      /* sekvens: 'begge'-utfall gir fortsett-knapp til autismesporet */
+      ck('N4.sekvensknapp', ndBtns.length === 3, 'knapper=' + ndBtns.length);
+      const seq = ndBtns.find((b) => /autisme|autism/i.test(b.textContent));
+      ck('N4.sekvens-tekst', Boolean(seq), seq ? seq.textContent : 'mangler');
+      if (seq) { seq.click(); await sleep(30); }
+      ck('N5.flag-autisme', (mem.get('ba-run:nd-deep') || '').includes('nd-autism'), mem.get('ba-run:nd-deep') || 'mangler');
+      ck('N5.reload', globalThis.__reloaded === true);
+    } else if (flag === 'deep') {
+      ck('N6.deep-24-besvart', clicks === 24, 'clicks=' + clicks);
+      ck('N6.rett-def-i-rapport', byClass(mount, 'ba-run-report').length === 1);
+    }
+  }
+
   /* retake-knappen */
   const btns = byClass(mount, 'ba-run-actions').flatMap((a) => a.children).filter((b) => b.tagName === 'BUTTON');
-  ck('S9.to-knapper', btns.length === 2, String(btns.length));
-  const retakeBtn = btns[1];
+  ck('S9.to-knapper' + (test.startsWith('nd') ? '-eller-nd' : ''), test.startsWith('nd') ? btns.length >= 2 : btns.length === 2, String(btns.length));
+  const retakeBtn = btns.find((b) => /Gjenta|Retake|Again/i.test(b.textContent)) || btns[btns.length - 1];
   if (retakeBtn) {
     retakeBtn.click();
     await sleep(30);

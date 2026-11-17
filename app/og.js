@@ -238,7 +238,7 @@ const BASE_SLASH = '/brainarea/'; /* = app/locale.js BASE — duplikat med vilje
 
 /** Alle ruter × locale i pages-data orden (kildesite-orden). */
 export function ogCardOrder() {
-  return ['home', 'persona', 'evne', 'rel', 'play', 'about', 'privacy']
+  return ['home', 'persona', 'evne', 'rel', 'nd', 'play', 'about', 'privacy']
     .filter((r) => r in ROUTES)
     .flatMap((route) => LOCALES.map((locale) => ({ route, locale })));
 }

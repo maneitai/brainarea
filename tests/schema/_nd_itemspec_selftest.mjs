@@ -227,7 +227,7 @@ ok(/DSM-5/.test(forb.join(' ')) && /DIVA-5|CAADID|Conners/.test(forb.join(' ')),
 const enKeys = (await import('file://' + join(PROD, 'i18n/en.js'))).KEYS;
 const noKeys = (await import('file://' + join(PROD, 'i18n/no.js'))).KEYS;
 ok(typeof enKeys.note['threshold.screening'] === 'string' && typeof noKeys.note['threshold.screening'] === 'string', 'S16a threshold.screening finnes i EN-base og NO-overlay');
-ok(!Object.keys(enKeys.page).some((k) => k.startsWith('nd.')), 'S16b ingen ND-page-nøkler i FASE 1 (NG-3 gap bevisst)');
+ok(Object.keys(enKeys.page).some((k) => k.startsWith('nd.')), 'S16b ND-page-nøkler levert (#ND-WIRE lukket NG-3-gapet; keyene eies av bygg+runner)');
 ok(spec.languagePlan.fase1Gap && spec.languagePlan.fase1Gap.includes('FASE 3'), 'S16c fase1-gap dokumentert i spec');
 
 /* ---------- S17: family-pool begrensning (schema enum) ---------- */

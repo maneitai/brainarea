@@ -22,7 +22,7 @@ const unesc = (s) => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt
 const expectedPairs = [];
 for (const entry of RUTE_LISTE) for (const locale of LOCALES) expectedPairs.push([locale, entry.route]);
 
-/* V1 — struktur: alle 14 index.html finnes, og bare disse. */
+/* V1 — struktur: alle rutenes index.html finnes, og bare disse (+404). */
 const built = [];
 for (const [locale, route] of expectedPairs) {
   const p = '/brainarea/' + (locale === 'en' ? 'en/' : '') + (ROUTES[route][locale] ? ROUTES[route][locale] + '/' : '');
@@ -100,11 +100,11 @@ for (const old of ['en/evne', 'en/relasjoner', 'en/om-testene', 'en/personvern']
 ok('V5.new-en-ability', existsSync(join(OUT, 'en', 'ability', 'index.html')));
 ok('V5.new-en-relations', existsSync(join(OUT, 'en', 'relations', 'index.html')));
 
-/* V6 — sitemap dekker alle 14 */
+/* V6 — sitemap dekker alle ruter (16 etter #ND-WIRE; var 14 hardkodet) */
 const sm = readFileSync(join(OUT, 'sitemap.xml'), 'utf8');
 const locs = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 const wantLocs = built.map((b) => canonicalUrl(b.locale, b.route)).sort();
-ok('V6.sitemap-complete', locs.length === 14 && JSON.stringify(locs.sort()) === JSON.stringify(wantLocs), locs.length + ' locs');
+ok('V6.sitemap-complete', locs.length === expectedPairs.length && JSON.stringify(locs.sort()) === JSON.stringify(wantLocs), locs.length + ' locs');
 
 /* V7 — robots + 404 */
 ok('V7.robots', readFileSync(join(OUT, 'robots.txt'), 'utf8').includes('Sitemap: https://maneitai.github.io/brainarea/sitemap.xml'));

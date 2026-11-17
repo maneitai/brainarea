@@ -17,6 +17,7 @@ export const RUTE_LISTE = [
   { route: 'persona', testId: 'persona' },
   { route: 'evne', testId: 'iq' },
   { route: 'rel', testId: 'relational' },
+  { route: 'nd', testId: 'nd' },
   { route: 'play', testId: 'puzzle' },
   { route: 'about', testId: null },
   { route: 'privacy', testId: null },
@@ -76,6 +77,7 @@ export function homeCards() {
     { route: 'persona', titleKey: 'page.home.card.persona.title', descKey: 'page.home.card.persona.desc' },
     { route: 'evne', titleKey: 'page.home.card.evne.title', descKey: 'page.home.card.evne.desc' },
     { route: 'rel', titleKey: 'page.home.card.rel.title', descKey: 'page.home.card.rel.desc' },
+    { route: 'nd', titleKey: 'page.home.card.nd.title', descKey: 'page.home.card.nd.desc' },
     { route: 'play', titleKey: 'page.home.card.play.title', descKey: 'page.home.card.play.desc' },
   ];
 }
@@ -107,6 +109,18 @@ export function layout(route, locale, t) {
     ];
   }
 
+  if (route === 'nd') {
+    return [
+      { kind: 'node', tag: 'h1', cls: 'text-3xl font-extrabold tracking-tight', text: t('page.nd.h1') },
+      { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-500', text: t('page.nd.intro') },
+      { kind: 'test-mount', testId: RUTE_LISTE.find((r) => r.route === route).testId },
+      { kind: 'node', tag: 'section', cls: 'mt-8 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:p-6', children: [
+        { kind: 'node', tag: 'h2', cls: 'font-bold', text: t('page.nd.methodHeading') },
+        { kind: 'node', tag: 'p', cls: 'mt-2 text-sm leading-relaxed text-gray-600', text: t('page.nd.methodBody') },
+        { kind: 'node', tag: 'p', cls: 'mt-4 text-xs leading-relaxed text-gray-500', text: t('page.nd.deepNote') },
+      ] },
+    ];
+  }
   if (route === 'persona' || route === 'evne' || route === 'rel') {
     const slots = [];
     if (route === 'persona') {

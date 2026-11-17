@@ -19,6 +19,7 @@ export const ROUTES = {
   persona:    { no: 'persona',     en: 'persona' },
   evne:       { no: 'evne',        en: 'ability' },
   rel:        { no: 'relasjoner',  en: 'relations' },
+  nd:         { no: 'nevrodiversitet', en: 'neurodiverse' },
   play:       { no: 'play',        en: 'play' },
   about:      { no: 'om-testene',  en: 'about' },
   privacy:    { no: 'personvern',  en: 'privacy' },

@@ -196,7 +196,7 @@ ${mainHtml}
 `;
 }
 
-const SITEMAP_LASTMOD = '2026-11-15'; /* oppdateres manuelt per release — deterministisk bygg */
+const SITEMAP_LASTMOD = '2026-11-17'; /* #ND-WIRE: nd-rutene live */ /* oppdateres manuelt per release — deterministisk bygg */
 
 function sitemapXml(pagePaths) {
   const urls = pagePaths
@@ -258,6 +258,10 @@ async function main() {
     writeFileSync(dst, src.split('@BA@/').join('./'));
   }
   copyIf(join(REPO, 'tests', 'puzzle', 'puzzle-player.mjs'), join('_app', 'tests', 'puzzle', 'puzzle-player.mjs'));
+  /* [BYGG] #ND-WIRE: ND-runningspakken — triage-modellen (import av run.js) og
+     de tre ND-defene per språk. Utelates en fil, kaster byggeren hardt —
+     runneren er ærlig 404 uten defene. */
+  copyIf(join(REPO, 'tests', 'schema', '_nd_triage_model.mjs'), join('_app', 'tests', 'schema', '_nd_triage_model.mjs'));
   for (const f of ['index.js', 'en.js', 'no.js']) copyIf(join(REPO, 'i18n', f), join('_app', 'i18n', f));
   copyIf(join(REPO, 'report', 'renderer.mjs'), join('_app', 'report', 'renderer.mjs'));
   copyIf(join(REPO, 'report', 'configs', 'standard.json'), join('_app', 'report', 'configs', 'standard.json'));
@@ -273,6 +277,12 @@ async function main() {
     [join(REPO, 'tests', 'schema', 'composite', 'def-rel-16.en.json'), '_app/defs/def-rel-16.en.json'],
     [join(REPO, 'tests', 'puzzle', 'def-puzzle-v1.no.json'), '_app/defs/pool/puzzle/def-puzzle-v1.no.json'],
     [join(REPO, 'tests', 'puzzle', 'def-puzzle-v1.en.json'), '_app/defs/pool/puzzle/def-puzzle-v1.en.json'],
+    [join(REPO, 'tests', 'schema', 'nd_pool', 'def-nd-triage.no.json'), '_app/defs/def-nd-triage.no.json'],
+    [join(REPO, 'tests', 'schema', 'nd_pool', 'def-nd-triage.en.json'), '_app/defs/def-nd-triage.en.json'],
+    [join(REPO, 'tests', 'schema', 'nd_pool', 'def-nd-adhd.no.json'), '_app/defs/def-nd-adhd.no.json'],
+    [join(REPO, 'tests', 'schema', 'nd_pool', 'def-nd-adhd.en.json'), '_app/defs/def-nd-adhd.en.json'],
+    [join(REPO, 'tests', 'schema', 'nd_pool', 'def-nd-autisme.no.json'), '_app/defs/def-nd-autism.no.json'],
+    [join(REPO, 'tests', 'schema', 'nd_pool', 'def-nd-autisme.en.json'), '_app/defs/def-nd-autism.en.json'],
   ];
   for (const [src, rel] of defTargets) { if (!existsSync(src)) throw new Error('runner-pakke: mangler ' + rel); copyIf(src, rel); }
   /* fallback-pooler (evne runtime-fallbacks): kopieres forstoerst — de er ogsaa levekår for #3841-wiring */

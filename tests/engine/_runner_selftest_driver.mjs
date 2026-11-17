@@ -18,7 +18,7 @@ import { join, dirname } from 'node:path';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const CHILD = join(HERE, '_runner_selftest_child.mjs');
-const SCENARIOS = ['persona:no', 'iq:en:degraded', 'rel:en', 'rel:no:missingdef', 'puzzle:no', 'puzzle:en'];
+const SCENARIOS = ['persona:no', 'iq:en:degraded', 'rel:en', 'rel:no:missingdef', 'puzzle:no', 'puzzle:en', 'nd:no', 'nd:no:max', 'nd:en:deep', 'nd-adhd:no:seq', 'nd-autism:en'];
 
 const results = [];
 let fails = 0;

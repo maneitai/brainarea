@@ -1,5 +1,5 @@
 {
-  "run": "2026-11-17T07:33:09.348Z",
+  "run": "2026-11-17T08:19:09.472Z",
   "scenarios": [
     {
       "scenario": "persona:no",
@@ -365,12 +365,12 @@
         {
           "name": "S3.opt-3",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-4",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-5",
@@ -380,7 +380,7 @@
         {
           "name": "S3.opt-6",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-7",
@@ -390,12 +390,12 @@
         {
           "name": "S3.opt-8",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-9",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-10",
@@ -405,7 +405,7 @@
         {
           "name": "S3.opt-11",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-12",
@@ -420,7 +420,7 @@
         {
           "name": "S3.opt-14",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-15",
@@ -430,7 +430,7 @@
         {
           "name": "S3.opt-16",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-17",
@@ -445,17 +445,17 @@
         {
           "name": "S3.opt-19",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-20",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-21",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-22",
@@ -465,12 +465,12 @@
         {
           "name": "S3.opt-23",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-24",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-25",
@@ -480,12 +480,12 @@
         {
           "name": "S3.opt-26",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-27",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-28",
@@ -495,7 +495,7 @@
         {
           "name": "S3.opt-29",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-30",
@@ -505,17 +505,17 @@
         {
           "name": "S3.opt-31",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-32",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-33",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-34",
@@ -530,42 +530,42 @@
         {
           "name": "S3.opt-36",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-37",
           "ok": true,
-          "detail": "fant 5"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-38",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-39",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-40",
           "ok": true,
-          "detail": "fant 4"
+          "detail": "fant 6"
         },
         {
           "name": "S3.opt-41",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.opt-42",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 4"
         },
         {
           "name": "S3.opt-43",
           "ok": true,
-          "detail": "fant 6"
+          "detail": "fant 5"
         },
         {
           "name": "S3.resultat-etter-fullføring",
@@ -611,7 +611,7 @@
         {
           "name": "S8.pdf-bytes",
           "ok": true,
-          "detail": "lastLen=91253"
+          "detail": "lastLen=91249"
         },
         {
           "name": "S8.object-url",
@@ -1321,9 +1321,881 @@
           "detail": "[{\"method\":\"POST\",\"path\":\"/brainarea/normering\"}]"
         }
       ]
+    },
+    {
+      "scenario": "nd:no",
+      "pass": 24,
+      "fail": 0,
+      "checks": [
+        {
+          "name": "S1.css-injisert",
+          "ok": true
+        },
+        {
+          "name": "S2.mount",
+          "ok": true
+        },
+        {
+          "name": "S3.opt-0",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-1",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-2",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-3",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-4",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-5",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.resultat-etter-fullføring",
+          "ok": true,
+          "detail": "clicks=6"
+        },
+        {
+          "name": "S3.antall-svar",
+          "ok": true,
+          "detail": "6 != 6"
+        },
+        {
+          "name": "S4.testId-i-rapport",
+          "ok": true,
+          "detail": "nd-triage fantes ikke"
+        },
+        {
+          "name": "S4.normnote",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "S5.result-lagret",
+          "ok": true
+        },
+        {
+          "name": "S5.økt-tømt",
+          "ok": true
+        },
+        {
+          "name": "S6.attention-linje",
+          "ok": true,
+          "detail": "Svarmønsteret er kontrollert — 2 markering(er) registrert. D"
+        },
+        {
+          "name": "S7.delingslinje",
+          "ok": true
+        },
+        {
+          "name": "S8.pdf-knapp",
+          "ok": true
+        },
+        {
+          "name": "S8.pdf-bytes",
+          "ok": true,
+          "detail": "lastLen=88805"
+        },
+        {
+          "name": "S8.object-url",
+          "ok": true
+        },
+        {
+          "name": "N1.lowekort",
+          "ok": true,
+          "detail": "Svarmønsteret er kontrollert — 2 markering(er) registrert. Det endrer ikke skårene dine; t"
+        },
+        {
+          "name": "N2.ingen-deep",
+          "ok": true,
+          "detail": "knapper=2"
+        },
+        {
+          "name": "S9.to-knapper-eller-nd",
+          "ok": true,
+          "detail": "2"
+        },
+        {
+          "name": "S9.retake-tømmer",
+          "ok": true
+        },
+        {
+          "name": "S9.reload",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "scenario": "nd:no:max",
+      "pass": 27,
+      "fail": 0,
+      "checks": [
+        {
+          "name": "S1.css-injisert",
+          "ok": true
+        },
+        {
+          "name": "S2.mount",
+          "ok": true
+        },
+        {
+          "name": "S3.opt-0",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-1",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-2",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-3",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-4",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-5",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.resultat-etter-fullføring",
+          "ok": true,
+          "detail": "clicks=6"
+        },
+        {
+          "name": "S3.antall-svar",
+          "ok": true,
+          "detail": "6 != 6"
+        },
+        {
+          "name": "S4.testId-i-rapport",
+          "ok": true,
+          "detail": "nd-triage fantes ikke"
+        },
+        {
+          "name": "S4.normnote",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "S5.result-lagret",
+          "ok": true
+        },
+        {
+          "name": "S5.økt-tømt",
+          "ok": true
+        },
+        {
+          "name": "S6.attention-linje",
+          "ok": true,
+          "detail": "Svarmønsteret er kontrollert — 2 markering(er) registrert. D"
+        },
+        {
+          "name": "S7.delingslinje",
+          "ok": true
+        },
+        {
+          "name": "S8.pdf-knapp",
+          "ok": true
+        },
+        {
+          "name": "S8.pdf-bytes",
+          "ok": true,
+          "detail": "lastLen=89015"
+        },
+        {
+          "name": "S8.object-url",
+          "ok": true
+        },
+        {
+          "name": "N1.beggekort",
+          "ok": true,
+          "detail": "Svarmønsteret er kontrollert — 2 markering(er) registrert. Det endrer ikke skårene dine; t"
+        },
+        {
+          "name": "N2.deep-knapp",
+          "ok": true,
+          "detail": "knapper=3"
+        },
+        {
+          "name": "N2.deep-tekst",
+          "ok": true,
+          "detail": "Fortsett til det dypere ADHD-sporet"
+        },
+        {
+          "name": "N3.flag-lagret",
+          "ok": true,
+          "detail": "{\"test\":\"nd-adhd\"}"
+        },
+        {
+          "name": "N3.reload",
+          "ok": true
+        },
+        {
+          "name": "S9.to-knapper-eller-nd",
+          "ok": true,
+          "detail": "3"
+        },
+        {
+          "name": "S9.retake-tømmer",
+          "ok": true
+        },
+        {
+          "name": "S9.reload",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "scenario": "nd:en:deep",
+      "pass": 42,
+      "fail": 0,
+      "checks": [
+        {
+          "name": "S1.css-injisert",
+          "ok": true
+        },
+        {
+          "name": "S2.mount",
+          "ok": true
+        },
+        {
+          "name": "S3.opt-0",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-1",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-2",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-3",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-4",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-5",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-6",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-7",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-8",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-9",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-10",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-11",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-12",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-13",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-14",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-15",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-16",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-17",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-18",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-19",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-20",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-21",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-22",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-23",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.resultat-etter-fullføring",
+          "ok": true,
+          "detail": "clicks=24"
+        },
+        {
+          "name": "S3.antall-svar",
+          "ok": true,
+          "detail": "24 != 24"
+        },
+        {
+          "name": "S4.testId-i-rapport",
+          "ok": true,
+          "detail": "nd-adhd fantes ikke"
+        },
+        {
+          "name": "S4.normnote",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "S5.result-lagret",
+          "ok": true
+        },
+        {
+          "name": "S5.økt-tømt",
+          "ok": true
+        },
+        {
+          "name": "S6.attention-linje",
+          "ok": true,
+          "detail": "Response pattern checked — 2 flag(s) registered. This does n"
+        },
+        {
+          "name": "S7.delingslinje",
+          "ok": true
+        },
+        {
+          "name": "S8.pdf-knapp",
+          "ok": true
+        },
+        {
+          "name": "S8.pdf-bytes",
+          "ok": true,
+          "detail": "lastLen=89112"
+        },
+        {
+          "name": "S8.object-url",
+          "ok": true
+        },
+        {
+          "name": "N6.deep-24-besvart",
+          "ok": true,
+          "detail": "clicks=24"
+        },
+        {
+          "name": "N6.rett-def-i-rapport",
+          "ok": true
+        },
+        {
+          "name": "S9.to-knapper-eller-nd",
+          "ok": true,
+          "detail": "2"
+        },
+        {
+          "name": "S9.retake-tømmer",
+          "ok": true
+        },
+        {
+          "name": "S9.reload",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "scenario": "nd-adhd:no:seq",
+      "pass": 44,
+      "fail": 0,
+      "checks": [
+        {
+          "name": "S1.css-injisert",
+          "ok": true
+        },
+        {
+          "name": "S2.mount",
+          "ok": true
+        },
+        {
+          "name": "S3.opt-0",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-1",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-2",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-3",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-4",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-5",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-6",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-7",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-8",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-9",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-10",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-11",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-12",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-13",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-14",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-15",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-16",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-17",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-18",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-19",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-20",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-21",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-22",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-23",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.resultat-etter-fullføring",
+          "ok": true,
+          "detail": "clicks=24"
+        },
+        {
+          "name": "S3.antall-svar",
+          "ok": true,
+          "detail": "24 != 24"
+        },
+        {
+          "name": "S4.testId-i-rapport",
+          "ok": true,
+          "detail": "nd-adhd fantes ikke"
+        },
+        {
+          "name": "S4.normnote",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "S5.result-lagret",
+          "ok": true
+        },
+        {
+          "name": "S5.økt-tømt",
+          "ok": true
+        },
+        {
+          "name": "S6.attention-linje",
+          "ok": true,
+          "detail": "Svarmønsteret er kontrollert — 2 markering(er) registrert. D"
+        },
+        {
+          "name": "S7.delingslinje",
+          "ok": true
+        },
+        {
+          "name": "S8.pdf-knapp",
+          "ok": true
+        },
+        {
+          "name": "S8.pdf-bytes",
+          "ok": true,
+          "detail": "lastLen=89561"
+        },
+        {
+          "name": "S8.object-url",
+          "ok": true
+        },
+        {
+          "name": "N4.sekvensknapp",
+          "ok": true,
+          "detail": "knapper=3"
+        },
+        {
+          "name": "N4.sekvens-tekst",
+          "ok": true,
+          "detail": "Fortsett til det dypere autismesporet"
+        },
+        {
+          "name": "N5.flag-autisme",
+          "ok": true,
+          "detail": "{\"test\":\"nd-autism\"}"
+        },
+        {
+          "name": "N5.reload",
+          "ok": true
+        },
+        {
+          "name": "S9.to-knapper-eller-nd",
+          "ok": true,
+          "detail": "3"
+        },
+        {
+          "name": "S9.retake-tømmer",
+          "ok": true
+        },
+        {
+          "name": "S9.reload",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "scenario": "nd-autism:en",
+      "pass": 40,
+      "fail": 0,
+      "checks": [
+        {
+          "name": "S1.css-injisert",
+          "ok": true
+        },
+        {
+          "name": "S2.mount",
+          "ok": true
+        },
+        {
+          "name": "S3.opt-0",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-1",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-2",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-3",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-4",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-5",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-6",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-7",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-8",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-9",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-10",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-11",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-12",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-13",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-14",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-15",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-16",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-17",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-18",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-19",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-20",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-21",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-22",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.opt-23",
+          "ok": true,
+          "detail": "fant 5"
+        },
+        {
+          "name": "S3.resultat-etter-fullføring",
+          "ok": true,
+          "detail": "clicks=24"
+        },
+        {
+          "name": "S3.antall-svar",
+          "ok": true,
+          "detail": "24 != 24"
+        },
+        {
+          "name": "S4.testId-i-rapport",
+          "ok": true,
+          "detail": "nd-autism fantes ikke"
+        },
+        {
+          "name": "S4.normnote",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "S5.result-lagret",
+          "ok": true
+        },
+        {
+          "name": "S5.økt-tømt",
+          "ok": true
+        },
+        {
+          "name": "S6.attention-linje",
+          "ok": true,
+          "detail": "Response pattern checked — 2 flag(s) registered. This does n"
+        },
+        {
+          "name": "S7.delingslinje",
+          "ok": true
+        },
+        {
+          "name": "S8.pdf-knapp",
+          "ok": true
+        },
+        {
+          "name": "S8.pdf-bytes",
+          "ok": true,
+          "detail": "lastLen=89122"
+        },
+        {
+          "name": "S8.object-url",
+          "ok": true
+        },
+        {
+          "name": "S9.to-knapper-eller-nd",
+          "ok": true,
+          "detail": "2"
+        },
+        {
+          "name": "S9.retake-tømmer",
+          "ok": true
+        },
+        {
+          "name": "S9.reload",
+          "ok": true
+        }
+      ]
     }
   ],
-  "passes": 266,
+  "passes": 443,
   "fails": 0,
   "allPass": true
 }

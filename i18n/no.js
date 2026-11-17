@@ -175,7 +175,7 @@ export const KEYS = {
     'nd.methodBody': 'Seks hverdagslige utsagn kartlegger ADHD- og autismespor. Avhengig av utfallet kan du fortsette til et dypere spor med 24 utsagn. Skårene er prosent av skalaens omfang — ikke persentiler, ikke normert og ikke en diagnose.',
     'nd.deepNote': 'Dersom begge spor er til stede, kan du ta begge dype sporene etter hverandre. Ingenting skåres mot en befolkning; resultatet handler bare om dine svar.',
     'home.card.nd.title': 'Nevrodiverse',
-    'home.card.nd.desc': 'Kort ADHD- og autisme-screening (6 utsagn), med dypere oppfølgingsspørr. Ikke en diagnose.',
+    'home.card.nd.desc': 'Kort ADHD- og autisme-screening (6 utsagn), med dypere oppfølging. Ikke en diagnose.',
     'play.og.title': 'Brainarea — test deg selv, gratis og ærlig',
     'play.og.desc': 'Gratis tester av personlighet, evner og relasjoner. Svarene dine blir i nettleseren din — ingen konto, ingenting sendes.',    'play.og.alt': "Brainarea Play — korte tester, gratis og ærlig",
     'play.desc': 'Gratis tester av personlighet, evner og relasjoner. Svarene dine blir i nettleseren din — ingen konto, ingenting sendes.',
@@ -257,7 +257,7 @@ export const KEYS = {
        resultat, ingen popup/interstitial/sticky. */
     'ad.label': 'Annonse',
     'ad.mockBadge': 'Mock-annonse',
-    'ad.disclaimer': 'Plassholder — ingen ekte annonser fÅr Google AdSense er godkjent og aktivert.',
+    'ad.disclaimer': 'Plassholder — ingen ekte annonser før Google AdSense er godkjent og aktivert.',
     'ad.mock.medium_rectangle': 'Mock-annonse 300\u00d7250',
     'ad.mock.large_rectangle': 'Mock-annonse 336\u00d7280',
     'ad.mock.leaderboard': 'Mock-annonse 728\u00d790',

@@ -17,7 +17,7 @@ Puzzle-pool-brettsteg (#3765, todo-ekvivalent: det pool-steg #3764-deliberasjone
 
 1. **Band-orden + sum**: 90/90 items; undertyper s1/s2/s3 = 30/30/30; bander L/M/H = 30/30/30; per (band x undertype): 10/10/10 for alle ni celler — >= 4-anankeren oppfylt maksimalt. id-moenstre pz-s<k><band><nn> (pos 4 = undertype, pos 5 = band) verifisert mot def.
 2. **Band-toleranse**: maks |andel - 1/3| per band per undertype = 0.000 <= 0.15 (eksakt 10/30 i alle celler).
-3. **AJV + validateTestDef + ekte motor**: selftest_puzzle.mjs re-kjort i prod-treet — 99/99 PASS (inkl. AJV B1, validateTestDef B2, scoring.js alle-riktig/alle-feil theta-null aerlig, blandet theta+ci95, normering.js POST-validering, endless-nekt, kopyright-skann K1, determinisme L1-L4, trekk M1-M5, motor-regresjon N).
+3. **AJV + validateTestDef + ekte motor**: selftest_puzzle.mjs re-kjort i prod-treet — 99/99 PASS (inkl. AJV B1, validateTestDef B2, scoring.js alle-riktig/alle-feil theta-null aerlig, blandet theta+ci95, normering.js POST-validering, endless-nekt, copyright-skann K1, determinisme L1-L4, trekk M1-M5, motor-regresjon N).
 4. **Fasit-reavledning fra prompt**: korrekt fasit-glyph i meta stemmer med def correctIndex-utdraget for alle 90 items; tilesShown finnes i alle prompts (0 avvik); regelnokkel (kind/a0/c/off osv.) dokumentert per item i maskinlesbar meta.
 5. **NO/EN-paritet — spraaknoytrale tall/form-tiles**: id-paritet NO/EN eksakt; option-glyfer (siffer+form, ingen bokstaver) identiske per item i begge spraak; fasit-glyf lik i begge spraak (form+farve-redundans, a11y-anankret fra designv1.1).
 6. **Copyright-skan 0 treff** (uavhengig re-skan): raven/wais/wisc/mensa/digit-span/n-back/kbit/stanford-binet/cattell — 0 treff i defs + meta.

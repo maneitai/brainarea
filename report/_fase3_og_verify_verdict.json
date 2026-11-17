@@ -1,0 +1,37 @@
+{
+  "task": "[VERIFISER DeepSeek] Valider OG-kort mot OG-spes: bilde, tittel, beskrivelse på plass per test",
+  "date": "2026-11-17",
+  "context": "VERIFISER-steg 5 av 20 (TR-BF0669B27CBA, iterasjon 1); søster til BYGG-steget 4/20 (app/og.js v1)",
+  "status": "PASS_MED_AVVIK",
+  "evidence": {
+    "selftest_prod_tree": "tests/schema/_fase3_og_selftest.mjs re-kjørt i prod-tre (node v22.22.1, WSL): 163/163 PASS, 0 FAIL",
+    "manifest_independent": "assets/og/MANIFEST.md5 re-verifisert uavhengig (vert-Python): 14/14 PNG md5+bytes + svgmd5 OK; formatavvik: 0",
+    "png_dims": "14/14 PNG 1200x630 (P IHDR), maks bytes 45263 (<5MB), PNG-signatur OK",
+    "svg_masters": "14/14 viewBox '0 0 1200 630'",
+    "out_copies": "out/assets/og: 14/14 PNG byte-identiske md5 med assets/og; SVG-master bevisst ikke i out (kun PNG deployes — SVG forbudt som og:image)",
+    "meta_per_page": "14/14 bygde sider: unik og:image peker på egen <route>-<locale>.png, absolutt https://maneitai.github.io/brainarea/assets/og/..., width=1200/height=630, type=image/png, alt fra i18n page.<route>.og.alt; og:title/og:description unike per side og locale",
+    "twitter": "summary_large_image + image + image:alt på plass på alle sider (dobbelt-emittet, se OGV-A1)",
+    "og_spec_source": "opengraphdebug.com/posts/og-image-requirements (hentet 2026-11-17, substrat): PNG (ikke SVG), 1200x630, <5MB, absolutt URL, eksplisitte dimensjoner — oppfylt på alle punkter"
+  },
+  "avvik": [
+    {
+      "id": "OGV-A1",
+      "severity": 1,
+      "kind": "avvik",
+      "subject": "twitter-tagger emittes to ganger per side: app/og.js ogMetaLines() (card/image/image:alt) og app/build.js pageShell (card/title/desc/image/image:alt) overlapper — identisk content, funksjonelt ufarlig, 3 redundante tagger per side",
+      "detail": "Selftest G7/G8 fanger ikke duplikatfrihet i head-meta. Ingen og:*-tagg er duplisert; kun twitter:card, twitter:image, twitter:image:alt.",
+      "fix": "Fjern twitter-tripletten fra én kilde (anbefalt: pageShell beholder komplet twitter-blokk, ogMetaLines slutter å emittere twitter-linjer; da justeres G7-asserts tilsvarende). Egen micro-fix, ikke del av dette steget."
+    },
+    {
+      "id": "OGV-A2",
+      "severity": 1,
+      "kind": "fakta",
+      "subject": "Deployed URL https://maneitai.github.io/brainarea/assets/og/home-no.png gir 404; live-siden viser 'Under gjenoppbygging.'",
+      "detail": "Lokal out/ er komplett (14/14 PNG) og meta-URL-ene peker korrekt mot deployed path; deploy mangler ennå i 20-stegs-kjeden. Kortene er ikke live inntil deploy-steget — 404 skal ikke tolkes som kortfeil.",
+      "fix": "Ingen kodeendring; dekkes av senere deploy-steg i kjeden."
+    }
+  ],
+  "observasjon": "og:url emittes ikke pr. side; link rel=canonical er på plass per side. Kanonisk-rot-bruken er konsistent. Ikke en del av OP-spes-utdraget; lav prioritet.",
+  "blokkering": "ingen",
+  "verdict": "bilde, tittel og beskrivelse på plass per test (14/14 konfiger) verifisert mot kilder og ekte artefakter"
+}

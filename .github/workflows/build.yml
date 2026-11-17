@@ -12,12 +12,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Bygg Next.js-prosjektet hvis det finnes (tomt canvas = hopp over)
+      - name: Bygg statisk site og verifiser output (SSG, null npm-avhengighet)
         run: |
-          if [ -f package.json ]; then
-            npm ci
-            npm test
-            npm run build
-          else
-            echo "Tomt canvas: ingen package.json ennaa, bygg hoppes over."
-          fi
+          node app/build.js --out _ci_out
+          test -f _ci_out/index.html
+          test -f _ci_out/en/index.html
+          test -f _ci_out/persona/index.html
+          test -f _ci_out/sitemap.xml
+          grep -q hreflang _ci_out/index.html
+          grep -q "/brainarea/" _ci_out/en/persona/index.html

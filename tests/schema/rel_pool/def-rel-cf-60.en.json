@@ -1,0 +1,2069 @@
+{
+  "schemaVersion": 1,
+  "id": "rel-cf-pool",
+  "type": "test-definition",
+  "family": "relations",
+  "languages": [
+    "en"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "conflict",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "conflict",
+      "label": "Conflict handling",
+      "labelLanguage": "en",
+      "description": "Meeting disagreement: following up instead of escalating, direct addressing, repair after conflict, and regulation of one's own reactions."
+    }
+  ],
+  "items": [
+    {
+      "id": "cf-0001",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I raise a disagreement early, before it has room to grow.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0002",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I speak up when I disagree, even when the moment feels awkward.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0003",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask what people actually mean before I answer their point.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0004",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep my tone level when a talk about important things turns hard.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0005",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I describe what I react to instead of pointing blame.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0006",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I choose my words with care when I disagree with people.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0007",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I raise the one thing that bothers me, and stay on it.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0008",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say what I want done differently before irritation grows on me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0009",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I lay out the case briefly, even when I expect a reaction.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0010",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I invite people to tell me when something I do does not sit well.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0011",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I give myself a few seconds before I answer when things heat up.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0012",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I notice my anger building before it steers the words I say.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0013",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hold my voice level when a tense exchange starts to build.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0014",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I wonder what set me off before I react any further.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0015",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask for a moment when my feelings start running the room.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0016",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I listen all the way through before I come back with my own objections.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0017",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I try to understand what the disagreement is actually about.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0018",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I stay away from sarcasm when the discussion grows pointed.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0019",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let people finish their thought, also when it stings me a little.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0020",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I step out for the pause I need, and return to the matter.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0021",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I reach out again not long after we have quarreled.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0022",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I find words for an apology when my part came out too hard.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0023",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I reopen the matter we set aside once the mood sits better.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0024",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask people how they are doing after a disagreement.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0025",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I admit my own missteps once the disagreement has settled down.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0026",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I suggest a way forward when the discussion has ground to a halt.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0027",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I suggest something pleasant together after things have felt heavy between us.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0028",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I leave room for a laugh that softens a tight exchange.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0029",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask people if they need more time before we move on.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0030",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I name what we agree on, right in the middle of the conflict.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0031",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I raise my voice more than the matter calls for, mid-argument.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0032",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I use the sore spots people shared when I want to win the argument.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0033",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I push on when people dig in, instead of giving the matter air.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0034",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I repeat my point louder each round people fail to give way.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0035",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I drag up matters from far back when we argue about something new.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0036",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I toss in a sharp remark while the argument hangs unresolved.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0037",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I give back what I take in, meeting fire with my own fire.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0038",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let irritation steer my words once the matter turns personal.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0039",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I ask questions that cut deeper than the matter requires.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0040",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep small disagreements growing by refusing to let them settle.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0041",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I steer to the next topic the moment the conversation tightens.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0042",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I say yes while meaning no, simply to keep the peace.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0043",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I act as though we agree, while doubting it deep down.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0044",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I draw away from conversations that carry a current of tension.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0045",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hold off on saying anything until the tension settles fully.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0046",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep disagreements to myself until they have grown large.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0047",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let people win the matter because I cannot be bothered to quarrel.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0048",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I take the matter into my own head instead of into conversation.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0049",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I answer in short form and wait for the talk to fade out.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0050",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I avoid people I have shared a difficult exchange with.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0051",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let disagreements hang between us for days on end.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0052",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I hold on to my stance long after the friction has died down.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0053",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I leave the matter unsettled when people are hurt or down.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0054",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I wait for the other one to make the first move toward repair.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0055",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I treat the matter as closed and let the strain sit between us.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0056",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I do not accept apologies shortly after a hard exchange.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0057",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I name what people did wrong, and skip my own share.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0058",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I keep to myself how badly their words landed on me.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0059",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I let the exchange end without our saying what we still needed to say.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0060",
+      "kind": "likert",
+      "lang": "en",
+      "text": "I feel remote when people reach out to smooth things over.",
+      "options": [
+        {
+          "label": "Very Inaccurate",
+          "value": 1
+        },
+        {
+          "label": "Moderately Inaccurate",
+          "value": 2
+        },
+        {
+          "label": "Neither Accurate Nor Inaccurate",
+          "value": 3
+        },
+        {
+          "label": "Moderately Accurate",
+          "value": 4
+        },
+        {
+          "label": "Very Accurate",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2069 @@
+{
+  "schemaVersion": 1,
+  "id": "rel-cf-pool",
+  "type": "test-definition",
+  "family": "relations",
+  "languages": [
+    "no"
+  ],
+  "scoring": {
+    "type": "trait",
+    "traits": [
+      {
+        "id": "conflict",
+        "weight": 1
+      }
+    ],
+    "norms": "none"
+  },
+  "dimensions": [
+    {
+      "id": "conflict",
+      "label": "Konflikthåndtering",
+      "labelLanguage": "no",
+      "description": "Møte med uenighet: gjenopptaking i stedet for eskalering, direkte adressering, reparasjon etter konflikt og regulering av egne reaksjoner."
+    }
+  ],
+  "items": [
+    {
+      "id": "cf-0001",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar opp uenigheter med folk nær meg mens de fortsatt er små.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0002",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier fra når jeg er uenig, også når det er ubehagelig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0003",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg spør folk hva de egentlig mener, før jeg legger ut min vinkel.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0004",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder tonen rolig når samtalen om viktige ting blir vanskelig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0005",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg beskriver hva jeg reagerer på i stedet for å anklage.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0006",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg velger ordene mine med omhu når jeg er uenig med folk.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0007",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar opp det som plager meg én sak om gangen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0008",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg forklarer hva jeg ønsker annerledes før irritasjonen får vokse.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0009",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg legger saken frem kort, selv når jeg vet folk reagerer.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0010",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg inviterer folk til å fortelle når jeg gjør noe de ikke liker.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0011",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg gir meg selv noen sekunder før jeg svarer når det brenner.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0012",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg legger merke til sinnet mitt før det styrer ordene mine.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0013",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder stemmen jevn når diskusjonen med folk nær meg tiltar.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0014",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lurer på hva som trigget meg før jeg reagerer videre.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0015",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier at jeg trenger et øyeblikk når følelsene tar overhånd.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0016",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lytter ferdig før jeg kommer med mine egne innvendinger.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0017",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg prøver å forstå hva uenigheten egentlig handler om.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0018",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg unngår å ta sarkasmen i bruk når diskusjonen spisser seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0019",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar folk fullføre tanken sin, også når den gjør meg irritert.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0020",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar pausen jeg trenger, og kommer tilbake til saken.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0021",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar kontakt igjen kort tid etter at vi har kranglet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0022",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg setter ord på en unnskyldning når jeg innser at jeg var hard.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0023",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar opp igjen saken vi la, når stemningen er bedre.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0024",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg spør folk hvordan de har det etter en uenighet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0025",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg innrømmer mine egne feilsteg når uenigheten har lagt seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0026",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg foreslår en vei videre når diskusjonen har gått i stå.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0027",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg foreslår noe hyggelig sammen når det har vært tungt mellom oss.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0028",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg gir folk rom til å le seg ut av en tett situasjon.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0029",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg spør folk om de trenger mer tid før vi går videre.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0030",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg peker på det vi er enige om, midt i uenigheten.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-0031",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg høyner tonen mer enn saken krever, midt i en diskusjon.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0032",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar i bruk folks svakepunkter når jeg vil vinne diskusjonen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0033",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg presser på når folk tviholder, i stedet for å slippe saken.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0034",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg gjentar mitt poeng høyere for hver runde folk ikke gir seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0035",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg oppgraderer uenigheter når vi diskuterer noe helt annet.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0036",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kaster inn en frekk kommentar når diskusjonen henger i luften.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0037",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg gjengjelder med samme mynt når folk går hardt ut mot meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0038",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar irritasjonen styre ordene mine når saken blir personlig.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0039",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg stiller spørsmål som stikker dypere enn saken krever.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0040",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar små uenigheter vokse til store ved å holde dem i gang.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0041",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg smetter rundt til neste emne så snart samtalen blir anspent.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0042",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg sier ja når jeg mener nei, bare for å unngå konflikt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0043",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg later som vi er enige når jeg tviler innerst inne.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0044",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg trekker meg unna samtaler som har litt spenning i seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0045",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg venter med å si noe til anspenningen har lagt seg helt.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0046",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder uenigheter for meg selv til de er blitt store.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0047",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar folk vinne saken fordi jeg ikke gidder å stri.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0048",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg tar saken videre i hjernen min i stedet for i samtalen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0049",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg svarer kort og venter på at samtalen skal dø ut.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0050",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg unngår folk vi har hatt en vanskelig diskusjon med.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0051",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar uenigheter henge mellom oss i flere dager.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0052",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg holder på mitt syn lenge etter at striden har lagt seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0053",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg etterlater saken uavklart når folk er lei seg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0054",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg venter på at den andre skal ta første steg mot forsoning.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0055",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg later som saken er over og lar spenningen bli igjen mellom oss.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0056",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg vil ikke ta imot unnskyldninger kort tid etter en diskusjon.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0057",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg peker på hva folk gjorde galt, i stedet for min egen del.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0058",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar folk gjette hvordan de har såret meg.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0059",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg lar samtalen ende uten at vi har sagt det siste vi trengte.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "cf-0060",
+      "kind": "likert",
+      "lang": "no",
+      "text": "Jeg kjenner meg kald når folk prøver å reparere stemningen.",
+      "options": [
+        {
+          "label": "Veldig unøyaktig",
+          "value": 1
+        },
+        {
+          "label": "Middels unøyaktig",
+          "value": 2
+        },
+        {
+          "label": "Hverken unøyaktig eller nøyaktig",
+          "value": 3
+        },
+        {
+          "label": "Middels nøyaktig",
+          "value": 4
+        },
+        {
+          "label": "Veldig nøyaktig",
+          "value": 5
+        }
+      ],
+      "scales": [
+        {
+          "id": "conflict",
+          "sign": -1
+        }
+      ]
+    }
+  ]
+}

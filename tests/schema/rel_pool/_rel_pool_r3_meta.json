@@ -1,0 +1,546 @@
+{
+  "metaVersion": 1,
+  "id": "rel-cf-pool",
+  "date": "2026-11-17",
+  "boardLeaf": "#3825-blokken [3-VEIS] FASE 2 relasjonspool per dimensjon: R3 konflikthåndtering (cf) — 60 originale items (worker TR-7D65F7941837).",
+  "spec": "tests/schema/_rel_itemspec_spec.json (rel-itemspec-v1, PROPOSED; GJELDENDE ved #3813)",
+  "licenseBasis": "DOC-C8C02AD272 (lisensverdikten) er kontrastgrunnlag: ingen kommersielt relasjonsinstrument er lisensiert eller gjengitt — alle 60 items per språk er egne/original forfattet fra itemspec-themes.R3-construct'en. Forbud per spec.copyrightControl: gjenkjennbare formuleringer fra Gottman-programmenes instrumenter, 5 Love Languages, ENRICH, Prepare/Enrich; ASRS/AQ/RAADS-R-formuleringer; instrumentnavn i innhold. R3-ekstra forbud (themes.R3.itemStyle): ingen item refererer ekstrem risiko eller vold (poolen er forbrukertest, ikke sikkerhets-screening) — håndhevet som programmert token-skann i assert_authoring og selftest S11d.",
+  "authoringRule": "Første-person presens, ett utsagn, 8–14 ord, ingen dobbeltspørsmål, ingen absolutter (alltid/aldri/always/never), ingen instrument-/diagnose-navn, ingen ekstremrisiko/vold (R3-regelen, programmert token-skann). NO og EN separat forfattet med konstrukt-ekvivalens: samme id-rekkefølge, samme tema+sign per id; tekstene er IKKE direkte oversettelser (Soester-konvensjonen). Programmatisk 5-gram-kryss mot hele R1+R2-korpuset (0 sammenfall) + fragment-skann mot kjente instrumentformuleringer.",
+  "optionsSource": "def-ipip50-big5.<lang>.json items[*].options — byte-identisk per fil (verifisert i selftest S5).",
+  "signPolicy": "30 positivt keyede (cf-0001..cf-0030, sign 1) + 30 negativt keyede (cf-0031..cf-0060, sign -1). Basis: itemspec.sessionFormDecision låser live +-+- per dimensjon (2 pos + 2 neg velges i FASE 4) — poolen må derfor inneholde begge retninger. Ulik nd-poolen (screening i én retning, NG-4) er dette profilkeying i to retninger, et dokumentert designvalg, ikke NG-4-avvik. R3-constructen speiler R1/R2-trekket med negativ retning: cf-n1 eskalering av konflikt, cf-n2 unngåelse av konflikt, cf-n3 manglende reparasjon og oppfølging — speilbildene av cf-t1 taktfull adressering, cf-t2 regulering av egne reaksjoner, cf-t3 reparasjon og oppfølging.",
+  "themeCounts": {
+    "cf-t1": 10,
+    "cf-t2": 10,
+    "cf-t3": 10,
+    "cf-n1": 10,
+    "cf-n2": 10,
+    "cf-n3": 10
+  },
+  "seedPolicy": "themes.R3 i itemspec har ingen exampleSeed (kun R1 har) — ingen seedNear-flagg i denne poolen; tom seed-liste er låst eksplisitt i selftest S10i. Oppstår en seed for R3 i en senere spec-revisjon, flagges items deretter.",
+  "redundancyPolicy": "redundantWith markerer formuleringsnære par (symmetrisk, 6 par) slik at FASE 4-utvelgelsen velger maks ett item per par inn i live-deffen.",
+  "holes": {
+    "closes": "H-2-delen R3 (samlet faseverifikasjon 2026-11-17: rel-pool 180/240 etter R1+R2 levert samme dag): R3 konflikthåndtering 60/60 levert — H-2 er fortsatt åpen til R4 er levert."
+  },
+  "items": [
+    {
+      "id": "cf-0001",
+      "dimension": "conflict",
+      "theme": "cf-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0002",
+      "dimension": "conflict",
+      "theme": "cf-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0009"
+      ]
+    },
+    {
+      "id": "cf-0003",
+      "dimension": "conflict",
+      "theme": "cf-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0004",
+      "dimension": "conflict",
+      "theme": "cf-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0005",
+      "dimension": "conflict",
+      "theme": "cf-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0006",
+      "dimension": "conflict",
+      "theme": "cf-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0007",
+      "dimension": "conflict",
+      "theme": "cf-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0008",
+      "dimension": "conflict",
+      "theme": "cf-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0009",
+      "dimension": "conflict",
+      "theme": "cf-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0002"
+      ]
+    },
+    {
+      "id": "cf-0010",
+      "dimension": "conflict",
+      "theme": "cf-t1",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0011",
+      "dimension": "conflict",
+      "theme": "cf-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0015"
+      ]
+    },
+    {
+      "id": "cf-0012",
+      "dimension": "conflict",
+      "theme": "cf-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0013",
+      "dimension": "conflict",
+      "theme": "cf-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0014",
+      "dimension": "conflict",
+      "theme": "cf-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0015",
+      "dimension": "conflict",
+      "theme": "cf-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0011"
+      ]
+    },
+    {
+      "id": "cf-0016",
+      "dimension": "conflict",
+      "theme": "cf-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0017",
+      "dimension": "conflict",
+      "theme": "cf-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0018",
+      "dimension": "conflict",
+      "theme": "cf-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0019",
+      "dimension": "conflict",
+      "theme": "cf-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0020",
+      "dimension": "conflict",
+      "theme": "cf-t2",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0021",
+      "dimension": "conflict",
+      "theme": "cf-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0022",
+      "dimension": "conflict",
+      "theme": "cf-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0023",
+      "dimension": "conflict",
+      "theme": "cf-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0055"
+      ]
+    },
+    {
+      "id": "cf-0024",
+      "dimension": "conflict",
+      "theme": "cf-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0025",
+      "dimension": "conflict",
+      "theme": "cf-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0026",
+      "dimension": "conflict",
+      "theme": "cf-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0027",
+      "dimension": "conflict",
+      "theme": "cf-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0028",
+      "dimension": "conflict",
+      "theme": "cf-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0029",
+      "dimension": "conflict",
+      "theme": "cf-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0030",
+      "dimension": "conflict",
+      "theme": "cf-t3",
+      "sign": 1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0031",
+      "dimension": "conflict",
+      "theme": "cf-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0032",
+      "dimension": "conflict",
+      "theme": "cf-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0033",
+      "dimension": "conflict",
+      "theme": "cf-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0034",
+      "dimension": "conflict",
+      "theme": "cf-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0035",
+      "dimension": "conflict",
+      "theme": "cf-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0036",
+      "dimension": "conflict",
+      "theme": "cf-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0037",
+      "dimension": "conflict",
+      "theme": "cf-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0038",
+      "dimension": "conflict",
+      "theme": "cf-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0039",
+      "dimension": "conflict",
+      "theme": "cf-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0040",
+      "dimension": "conflict",
+      "theme": "cf-n1",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0041",
+      "dimension": "conflict",
+      "theme": "cf-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0042",
+      "dimension": "conflict",
+      "theme": "cf-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0043",
+      "dimension": "conflict",
+      "theme": "cf-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0044",
+      "dimension": "conflict",
+      "theme": "cf-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0045",
+      "dimension": "conflict",
+      "theme": "cf-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0046"
+      ]
+    },
+    {
+      "id": "cf-0046",
+      "dimension": "conflict",
+      "theme": "cf-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0045"
+      ]
+    },
+    {
+      "id": "cf-0047",
+      "dimension": "conflict",
+      "theme": "cf-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0048",
+      "dimension": "conflict",
+      "theme": "cf-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0049"
+      ]
+    },
+    {
+      "id": "cf-0049",
+      "dimension": "conflict",
+      "theme": "cf-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0048"
+      ]
+    },
+    {
+      "id": "cf-0050",
+      "dimension": "conflict",
+      "theme": "cf-n2",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0051",
+      "dimension": "conflict",
+      "theme": "cf-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0052"
+      ]
+    },
+    {
+      "id": "cf-0052",
+      "dimension": "conflict",
+      "theme": "cf-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0051"
+      ]
+    },
+    {
+      "id": "cf-0053",
+      "dimension": "conflict",
+      "theme": "cf-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0054",
+      "dimension": "conflict",
+      "theme": "cf-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0055",
+      "dimension": "conflict",
+      "theme": "cf-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": [
+        "cf-0023"
+      ]
+    },
+    {
+      "id": "cf-0056",
+      "dimension": "conflict",
+      "theme": "cf-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0057",
+      "dimension": "conflict",
+      "theme": "cf-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0058",
+      "dimension": "conflict",
+      "theme": "cf-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0059",
+      "dimension": "conflict",
+      "theme": "cf-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    },
+    {
+      "id": "cf-0060",
+      "dimension": "conflict",
+      "theme": "cf-n3",
+      "sign": -1,
+      "seedNear": false,
+      "redundantWith": []
+    }
+  ],
+  "provenance": {
+    "authoringDate": "2026-11-17",
+    "originality": "Alle items forfattet fra construct-beskrivelsen i _rel_itemspec_spec.json themes.R3 — ingen ekstern skala, ingen formell oversettelse, ingen scraping.",
+    "signCounts": {
+      "pos": 30,
+      "neg": 30
+    },
+    "engineFactsVerified": [
+      "scoring.js trait-sti: normalized = 100*(raw-min)/(max-min) over besvart sett; enkelt-skala-rad for conflict; komposit = skalaens normalized (re-verifisert i selftest S7/S8 denne økten)",
+      "scoring.js linje 118-120: sign=-1 -> c=-value, minP=-max, maxP=-min (re-verifisert i selftest S8b)",
+      "render.js sessionSizeFor(likert) => alle 60 items shuffles (re-verifisert i selftest S14a)",
+      "validateTestDef håndhever ikke reverseringskravet — poolens 30/30 keying er forfatter-levert, ikke motor-påtvinget (grep i tests/engine)",
+      "symmetrisk +/- pool: all-3 og konstante svar gir normalized 50.0 (konstant-svar-invarians; span 240 ved 30 pos + 30 neg) — provet i selftest S8",
+      "_rel_compat_model.mjs DIMENSIONS[2].id == 'conflict' (kind tolerance, tol 0.25) — conflict er modellens mottaksside; tolerance-formelen provet med |a-b| <= 0.25 -> s = 1 i selftest S14d"
+    ]
+  }
+}
